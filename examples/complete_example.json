@@ -1,0 +1,73 @@
+{
+  "annotation_job": {
+    "job_id": "example-arithmetic-clean",
+    "shared": {
+      "authority": {
+        "task": "Compute 2 + 2 and state the result.",
+        "reference_answer": "4",
+        "scoring": "Equivalent wording is correct when the numerical result is 4."
+      },
+      "user_turns": [
+        {
+          "turn_id": "T1",
+          "turn_index": 1,
+          "content": "What is 2 + 2?"
+        }
+      ]
+    },
+    "trajectories": [
+      {
+        "conversation_id": "example-arithmetic-clean-repeat-01",
+        "metadata": {
+          "model": "example-model",
+          "variant": "clean",
+          "subclass": "global",
+          "injection_count": 0
+        },
+        "assistant_responses": [
+          {
+            "turn_id": "T1",
+            "turn_index": 1,
+            "content": "2 + 2 = 4.",
+            "assistant_response_units_exact": [
+              {
+                "unit_id": "T1.U001",
+                "exact_text": "2 + 2 = 4."
+              }
+            ]
+          }
+        ],
+        "perturbation_events": []
+      }
+    ]
+  },
+  "minimal_merged_annotation": {
+    "schema_version": "sciarp.annotation.v2",
+    "job_id": "example-arithmetic-clean",
+    "trajectories": [
+      {
+        "conversation_id": "example-arithmetic-clean-repeat-01",
+        "metadata": {
+          "model": "example-model",
+          "variant": "clean",
+          "subclass": "global",
+          "injection_count": 0
+        },
+        "turn_annotations": [
+          {
+            "turn_id": "T1",
+            "turn_index": 1,
+            "turn_correct": true
+          }
+        ],
+        "final_correct": true,
+        "perturbation_events": []
+      }
+    ]
+  },
+  "expected_strict_task_accuracy": {
+    "strict_correct": 1,
+    "trajectories": 1,
+    "task_accuracy": 1.0
+  }
+}

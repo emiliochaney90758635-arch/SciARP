@@ -7,7 +7,7 @@ the benchmark's perturbation families: **15,073 dialogue records** in total.
 
 This repository intentionally contains only the components needed to inspect
 the dataset, reproduce semantic annotation, and compute the paper-aligned
-strict correctness metric.
+task- and process-level metrics.
 
 ## Repository layout
 
@@ -25,8 +25,7 @@ SciARP/
 │   ├── prompts/
 │   └── src/
 ├── evaluation/
-│   ├── compute_metrics.py
-│   └── metric_definitions.md
+│   └── compute_metrics.py
 ├── examples/
 │   └── complete_example.json
 └── requirements.txt
@@ -53,16 +52,20 @@ and commands.
 
 ## Evaluation
 
-The paper-aligned Task Accuracy criterion is strict: a trajectory is correct
-only when **every annotated assistant turn is correct and the final answer is
-correct**. Missing or indeterminate correctness labels do not count as correct.
+The evaluator computes Task Accuracy (TACC), Information Correctness (IC),
+Task Progression (TP), and Reasoning Validity (RV), plus the paper's position,
+frequency, localization, and propagation analyses. TACC is strict: every
+annotated assistant turn and the final answer must be correct. Process metrics
+begin at the first injected turn, use the same window for the paired clean
+trajectory, and are macro-averaged without sample weighting.
 
 ```bash
-python evaluation/compute_metrics.py path/to/annotations --output metrics.json
+python evaluation/compute_metrics.py path/to/merged_annotations \
+  --output-dir evaluation/results
 ```
 
-The exact definition is in
-[evaluation/metric_definitions.md](evaluation/metric_definitions.md).
+The complete metric definitions and aggregation rules are implemented directly
+in `evaluation/compute_metrics.py`.
 
 ## Citation
 

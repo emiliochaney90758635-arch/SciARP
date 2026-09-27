@@ -43,9 +43,16 @@ authority, the shared user turns, and one or more model trajectories:
       "conversation_id": "task-001__L1.1__repeat-01",
       "metadata": {
         "model": "evaluated-model",
+        "task_id": "task_001",
+        "condition_id": "task_001__1.1__k1__middle",
+        "repeat_id": 1,
         "variant": "perturbed",
         "subclass": "1.1",
-        "injection_count": 1
+        "injection_count": 1,
+        "injection_turn_ids": ["T1"],
+        "overall_eligible": true,
+        "position_eligible": true,
+        "frequency_eligible": false
       },
       "assistant_responses": [
         {
@@ -67,6 +74,11 @@ For perturbed trajectories, provide immutable event boundaries in
 `perturbation_events`; the model is not asked to guess injection locations.
 Exact response units must preserve and cover the visible assistant text.
 
+For evaluation, include the paired clean and perturbed trajectories for every
+repeat. Their `model`, `task_id`, `condition_id`, and `repeat_id` must match;
+only `variant` changes. Keep the evaluation-selection metadata shown above so
+that the overall, position, and frequency panels cannot be mixed accidentally.
+
 ## Run
 
 From the repository root:
@@ -83,4 +95,3 @@ Each job gets atomic `stage_1.json`, `stage_2.json`, optional `stage_3.json`,
 `annotation.json`, and `status.json` files. Restarting reuses a stage only when
 both its canonical input hash and prompt hash match. Ambiguous failures after a
 request may have been billed are not automatically retried.
-

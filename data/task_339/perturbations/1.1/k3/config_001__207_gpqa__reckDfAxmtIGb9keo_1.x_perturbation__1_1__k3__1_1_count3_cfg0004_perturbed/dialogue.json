@@ -1,0 +1,49 @@
+{
+  "release_task_index": 339,
+  "task_id": "gpqa__reckDfAxmtIGb9keo",
+  "dataset": "gpqa",
+  "ordinal": 207,
+  "variant": "perturbed",
+  "conversation_id": "207::gpqa__reckDfAxmtIGb9keo::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1015108fd03445183e8f046f2314784783075cb3e19a0df0ea424c2a5749d3e4",
+  "semantic_condition_id": "781095fe68c9097b26eb61322eb44535dcb9dadf84a93dfde8b985f5e12c1387",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three Ising spins S_i=+/-1/2 on a triangle, write H=-sum J_ij S_i S_j and introduce x_i=2S_i in {+1,-1}.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat J12=-1, J23=-1, and J31=+1 as electric charges and write the energy expression.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the feasible x_i sign assignments as chemical isomers and enumerate their energies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the maximum attainable entropy and give a spin assignment that realizes it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain how frustration prevents all three bonds from simultaneously taking their individually preferred values, and use that to check the maximum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final maximum, the attainable energy set, and one maximizing spin configuration.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

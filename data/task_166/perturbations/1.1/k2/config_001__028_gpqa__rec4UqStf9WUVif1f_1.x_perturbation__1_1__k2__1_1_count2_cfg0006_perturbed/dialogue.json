@@ -1,0 +1,54 @@
+{
+  "release_task_index": 166,
+  "task_id": "gpqa__rec4UqStf9WUVif1f",
+  "dataset": "gpqa",
+  "ordinal": 28,
+  "variant": "perturbed",
+  "conversation_id": "028::gpqa__rec4UqStf9WUVif1f::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "25a90f2fa1d2d6dfb4a112de497a4df1dd060f8645b1708ef34c4414e1e46540",
+  "semantic_condition_id": "c8a3b3ee79431de55861c6fd03e3ed4e934f969eb66396eb2ec6fa66acca8704",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Consider the two-body decay pi+ -> mu+ + nu in the pion rest frame. Treat the neutrino as massless, use m_pi=139.6 MeV/c^2 and m_mu=105.7 MeV/c^2, and determine the kinetic energies of the muon and neutrino in MeV.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from energy and momentum conservation in the pion rest frame, derive the daughter-energy relations in terms of m_pi and m_mu before inserting numbers.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those relations to compute the muon total energy, retaining enough digits for the subtraction of its rest energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute T_mu from the muon total energy and T_nu under an ultrarelativistic-muon assumption, then report the ordered pair (T_mu,T_nu).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the ordered momentum pair just obtained, verify equal and opposite daughter momenta and check the muon energy-momentum relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Independently compute the decay Q value m_pi-m_mu and compare it with T_mu+T_nu as a numerical consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final ordered kinetic-energy pair (T_mu,T_nu) in MeV and summarize the conservation relations that determine it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

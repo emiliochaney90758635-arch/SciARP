@@ -1,0 +1,74 @@
+{
+  "release_task_index": 552,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1866",
+  "dataset": "olympiadbench",
+  "ordinal": 499,
+  "variant": "perturbed",
+  "conversation_id": "499::olympiadbench__OE_TO_maths_en_COMP_1866::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "16841b2c50e4159974e5232a42d2344a4a4fd7d5139ee426daf55a8e97965e4c",
+  "semantic_condition_id": "304e63067b2f6c15a63056752a60d280e475dc7d7f1f8c3ad759a26fc47cabbb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let P(n) = n^2 + n + 1. Determine gcd(P(n), P(n+1)) for an arbitrary integer n.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Next analyze gcd(P(n), P(n+2)). Use a linear combination that eliminates the quadratic term, then determine how the gcd depends on n modulo 7.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Carry out the analogous analysis for gcd(P(n), P(n+3)), including the relevant reduction modulo 3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For positive integers a and b, call {P(a), P(a+1), ..., P(a+b)} fragrant when no term is relatively prime to the product of all the other terms. Translate this definition into an equivalent condition involving pairwise common factors.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Represent the terms of a block as vertices, joining two vertices exactly when the corresponding values have gcd at least 1. Which graph property is equivalent to the block being fragrant?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the graph criterion you just established together with the gcd results, decide whether a fragrant block can contain exactly four consecutive values P(a), P(a+1), P(a+2), and P(a+3).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Apply the same graph criterion to five consecutive values P(a), P(a+1), ..., P(a+4). Decide whether they can form a fragrant block and make clear where the congruence conditions become incompatible.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Construct an explicit fragrant block of six consecutive values. You may use the Chinese remainder theorem; give the starting value a and identify a common-factor partner for every term.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the congruences used in your six-term construction and verify directly that each of its terms shares a nontrivial factor with another term in the block.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Complete the lower-bound argument by explaining why blocks with fewer than four terms are also impossible, and summarize what the four- and five-term analyses establish.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Combine the lower bound with the explicit construction. What is the smallest possible size of a fragrant set?",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

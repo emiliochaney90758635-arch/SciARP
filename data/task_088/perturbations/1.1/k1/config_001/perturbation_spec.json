@@ -1,0 +1,27 @@
+{
+  "task_id": "088-capsule024",
+  "release_task_index": 88,
+  "subclass": "1.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Redefines adjusted significance as raw-p significance."
+  ],
+  "candidate_injection_turns": [
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "12b7bc07acbec026324737b358c1e2be5f1a868d73c7372dd6fbc1143a25b3e0",
+  "configured_evidence_sha256": "12b7bc07acbec026324737b358c1e2be5f1a868d73c7372dd6fbc1143a25b3e0",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 522,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1832",
+  "dataset": "olympiadbench",
+  "ordinal": 469,
+  "variant": "clean",
+  "conversation_id": "469::olympiadbench__OE_TO_maths_en_COMP_1832::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "42bcc1bf3ffefa5e55fa4092ff52b7e08bf0e8c83c65183d2ba4d54e72819a7e",
+  "semantic_condition_id": "5f3554b794ee9791b4dc977091eb79c1ee68a203ac8d5c15b85476236586b9b5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rational number is called short when its decimal expansion terminates. Characterize short rational numbers in terms of the prime factors that may remain in a reduced denominator.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that criterion to (10^t-1)/(cm). After removing factors of 2 and 5 from c and m, express the first qualifying exponent t as a multiplicative order of 10.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the integers c in {1,...,2017} that are coprime to 10, and use this to prove an upper bound for |S(m)|.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Let P be the primes p<=2017 other than 2 and 5. Choose alpha so that every p in P divides 10^alpha-1, and set m=10^alpha-1. Explain why this construction is suitable for attaining the upper bound.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the lifting-the-exponent valuation identity, prove that ord_{cm}(10)=c alpha for every admissible c, so these orders are all distinct.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the upper bound and the attaining construction to report the maximum possible value of |S(m)|.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

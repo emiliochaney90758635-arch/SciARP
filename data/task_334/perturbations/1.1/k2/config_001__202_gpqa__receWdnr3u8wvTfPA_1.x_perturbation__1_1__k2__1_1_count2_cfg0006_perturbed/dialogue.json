@@ -1,0 +1,59 @@
+{
+  "release_task_index": 334,
+  "task_id": "gpqa__receWdnr3u8wvTfPA",
+  "dataset": "gpqa",
+  "ordinal": 202,
+  "variant": "perturbed",
+  "conversation_id": "202::gpqa__receWdnr3u8wvTfPA::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9777954cc5002a96334b6c7b0dd4fa1e0e7ccbaeb75406c975ca655e580b529e",
+  "semantic_condition_id": "3d0b5c83caa0efc3f99732cc9f2b6d6dcf8c880af868a925174e72556ca720cf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A has formula C6H13Br and three proton-NMR signals: one singlet and two triplets. What primary alkyl bromide structure fits those constraints?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compound B has formula C4H6 and one singlet, one triplet, and one quartet in its proton NMR. Identify the terminal alkyne and explain why but-2-yne does not fit.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use an elimination model, despite the stated acetylide and primary alkyl bromide, to derive the coupled C10H18 structure.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the product against the reported mass-spectrometry data, although the supplied observations are five proton-NMR signals: one singlet, three triplets, and one quartet.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the formula and NMR checks to name the product and classify the carbon-carbon bond-forming transformation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly do these observations support a specific microscopic mechanism, given that no kinetic or stereochemical mechanism probe is supplied?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the reactant identities, carbon count, product connectivity, and predicted NMR features are mutually consistent.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the reactants, transformation class, product name, and degree of confidence in the microscopic mechanism.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

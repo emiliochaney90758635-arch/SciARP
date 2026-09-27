@@ -1,0 +1,24 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Three separable scale errors concern significance, counts, and final reporting.",
+  "injection_turns": [
+    "T1",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "12b641a3af65b6051503e1a168d8d78f4a05bb8137cca04dcd638ef23d5d52fa",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Restores the clean numerator while preserving all three unit and scale roots in the surrounding sequence.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

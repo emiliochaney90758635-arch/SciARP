@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can drop P396's zero despite retaining workbook carriers earlier.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "5fd84525cb511e273401e421e43e090f4663e20e67fb7832469bfe49e620c367",
+  "strict_non2x_original_semantic_condition_id": "d0f27b9670cdcd6bed12fb5ce20b74bf582c75dc32462834ca73af41799809e2",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally include P533 as zero at T1, count unique genes at T2, and exclude all zero-count carriers before the median at T3. Remove all generator-facing text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

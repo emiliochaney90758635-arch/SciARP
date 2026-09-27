@@ -1,0 +1,16 @@
+{
+  "task_id": "007-capsule003",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Moves the reported exact p-value by one exponent while keeping it plausible and positive."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "final-versus-baseline p-value"
+    }
+  ],
+  "evidence_change_permitted": true
+}

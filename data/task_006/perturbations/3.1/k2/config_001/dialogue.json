@@ -1,0 +1,35 @@
+{
+  "release_task_index": 6,
+  "task_id": "006-capsule003",
+  "source_id": "bix-3-q3",
+  "dataset": "bixbench",
+  "ordinal": 6,
+  "variant": "perturbed",
+  "conversation_id": "006::006-capsule003::3.1.k2::lane_a_manual",
+  "condition_label": "3.1.k2",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9737720f8c7eaf24b4ee780d79400a2bb479dd28a2a17686e74d324fa7aabd88",
+  "semantic_condition_id": "a04120e5482eb3d4efb4921f52e7f4a0202c5c226d666e5d8068c09986581243",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nAll three Control-tissue comparisons use the same joint filter:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained `GeneID` values are deduplicated within each comparison and treated as sets.\n\n| Comparison | Unique GeneIDs after filtering |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\nDefine:\n\n```text\nF = final blood relative to baseline blood\nB = dentate gyrus relative to baseline blood\nD = dentate gyrus relative to final blood\n```\n\n“Only in dentate gyrus relative to baseline blood” has the set meaning:\n\n\\[\nB \\setminus (D \\cup F).\n\\]\n\n## Three-set overlap transcription\n\nThe archived overlap output reports:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| B only, \\(B \\setminus (D \\cup F)\\) | 766 |\n| D only, \\(D \\setminus (B \\cup F)\\) | 773 |\n| F only, \\(F \\setminus (B \\cup D)\\) | 37 |\n| in both B and D but not F | 10,316 |\n| in all three sets | 429 |\n\nTwo-set and three-set overlap regions are excluded from an “only in B” count.\n\n## Interpretation boundary\n\nThe upstream analysis formed rounded integer pseudo-counts from normalized floating-point values. The overlap counts reproduce that archived exploratory workflow descriptively and are not formal DESeq2 inference from raw counts.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAlthough set elements were defined as unique GeneIDs, retain duplicate rows as separate members when constructing F, B, and D.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Although B-only excludes all membership in F or D, compute B∩D outside F as the requested B-only region.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the GeneID count in that mutually exclusive region.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

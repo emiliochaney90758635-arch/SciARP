@@ -1,0 +1,49 @@
+{
+  "release_task_index": 314,
+  "task_id": "gpqa__recTVnk0jyigx3o9P",
+  "dataset": "gpqa",
+  "ordinal": 182,
+  "variant": "perturbed",
+  "conversation_id": "182::gpqa__recTVnk0jyigx3o9P::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "57191a7d21f0b29ec7499fb86fbc072591fa21806f9b0eb444e7a6ebac4bca33",
+  "semantic_condition_id": "6796b06692e96bc5b3222cf4ba419b645af7138ca66c6fbbca91cfbfe6d1ab4c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "m-Toluidine reacts with the unsymmetrical beta-diketone CH3COCH2COCH2CH3 under acidic heating. Which quinoline-forming synthesis applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Because the diketone ends carry methyl and ethyl groups, how many distinct orientations can place these substituents at quinoline C2 and C4?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In m-toluidine, take the relevant positions to be those ortho to a hydroxyl group: C2 adjacent to methyl and C6 not adjacent to methyl. Are these sites symmetry-equivalent?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the orientation and ring-site analyses, enumerate the resulting target patterns, and count the distinct possibilities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the count by testing whether each source of variation counted in the preceding steps remains distinct under molecular symmetry.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final count with a concise rationale based on the preceding synthesis and symmetry analysis.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

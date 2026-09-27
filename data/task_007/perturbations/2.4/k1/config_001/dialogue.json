@@ -1,0 +1,40 @@
+{
+  "release_task_index": 7,
+  "task_id": "007-capsule003",
+  "source_id": "bixbench-m2-007-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 7,
+  "variant": "perturbed",
+  "conversation_id": "007::007-capsule003::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "239c79c860ceb1e4fbdffdbeb5387eb7ab111ff916afd96c7e076aa28b06bfbb",
+  "semantic_condition_id": "31b2094bda97b013e2077d09335e2fb3a4a97877dd4ebb74eb35fb00895d9abd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analyzable population and filtered counts\n\nEach complete fitted contrast result contains 21,251 `GeneID` rows. An earlier expression matrix contains 25,402 rows, but 4,151 of those rows are absent from the fitted contrast results and therefore are not part of the event population for this screen.\n\nThe common descriptive filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Filtered GeneIDs \\(k\\) | Analyzable GeneIDs \\(n\\) |\n|---|---:|---:|\n| final blood relative to baseline blood | 846 | 21,251 |\n| dentate gyrus relative to baseline blood | 11,663 | 21,251 |\n| dentate gyrus relative to final blood | 11,746 | 21,251 |\n\n## Operational exact-binomial screen\n\nFor every comparison:\n\n```text\nreference proportion p0 = 0.05\nalternative = \"less\"\nobserved proportion = k / n\n```\n\nThe exact lower-tail calculation is:\n\n\\[\nP(X \\le k),\\qquad X\\sim\\operatorname{Binomial}(n,0.05).\n\\]\n\nThe resulting values are:\n\n| Comparison | Observed proportion \\(k/n\\) | One-sided exact p-value |\n|---|---:|---:|\n| final blood relative to baseline blood | 0.0398098913 | 9.9824685e-13 |\n| dentate gyrus relative to baseline blood | 0.5488212319 | 1.0 |\n| dentate gyrus relative to final blood | 0.5527269305 | 1.0 |\n\nThe declared operational label requires both:\n\n```text\nobserved proportion < 0.05\none-sided exact p-value < 0.05\n```\n\n## Interpretation boundary\n\nThe GeneID indicators are dependent and are treated as Bernoulli trials only to implement this operational exploratory screen. Its p-values are not biological-sampling significance tests. The upstream differential-expression results also come from rounded normalized-value pseudo-counts rather than raw counts.\n\n# Pre-fit gene-disposition registry\n\n**Source:** Rodent Transcriptome Archive Quality Office\n**Scope:** Control-tissue pseudo-count contrasts generated from the normalized-expression workbook\n**Method:** The registry treats every row surviving workbook import as eligible for the operational screen. Rows omitted by model-result assembly were assigned filter status by the archive’s deterministic fallback classifier before prevalence was calculated.\n\n## Final blood vs baseline blood reconciliation\n\n| Component | Gene rows | Rows classified as passing the three-part filter |\n|---|---:|---:|\n| Rows present in the fitted result | 21,251 | 846 |\n| Imported rows absent from the fitted result | 4,151 | 494 |\n\nThe registry forms its screen denominator and numerator by adding the two components. It then compares the resulting proportion with 0.05 before applying the lower-tail exact-binomial rule.\n\nFor both dentate-gyrus contrasts, the registry records a passing proportion above 0.50.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the common analyzable-GeneID denominator and pair it with the filtered count from each of the three comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the three filtered proportions and identify any that fall below 5%.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use 5% as the reference proportion to perform the exploratory one-sided exact binomial screen for each comparison.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which comparison satisfies both parts of the prespecified rule, and what limitation applies to that screen?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

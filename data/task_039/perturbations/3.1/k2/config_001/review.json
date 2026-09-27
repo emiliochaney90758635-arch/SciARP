@@ -1,0 +1,22 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Numerator classification and denominator completeness contradict separate earlier commitments.",
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "e681015fb57c4210548c9de14f883ae055f2435863d8d43478358a77f43365e0",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Adds JBX98-only to the clean pair while leaving the separate three-way-union omission at T4 intact.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

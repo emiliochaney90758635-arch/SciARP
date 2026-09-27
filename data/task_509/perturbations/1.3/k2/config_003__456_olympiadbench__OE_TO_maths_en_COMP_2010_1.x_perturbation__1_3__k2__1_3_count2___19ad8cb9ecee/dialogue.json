@@ -1,0 +1,64 @@
+{
+  "release_task_index": 509,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2010",
+  "dataset": "olympiadbench",
+  "ordinal": 456,
+  "variant": "perturbed",
+  "conversation_id": "456::olympiadbench__OE_TO_maths_en_COMP_2010::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "76176c5bdd3dcc3e092be66a271915167503ec9f88ba74d1bb42a8d61a1199d6",
+  "semantic_condition_id": "7984c633b76722acd58da810da181ffc573c73d453fa62a24b584e65b84a573e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let `n = 2022`. Lucy may add two previously written integer `n`-tuples or take their coordinatewise maximum. Consider the three starting tuples `a_i = -i^2`, `b_i = i`, and `b_i = -1`. For fixed `j`, form `d^(j) = 2a + 4j b + (2j^2 - 1)c`. Explain why it is obtainable and compute its `i`-th coordinate.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the formula for `a_i` to determine its value when `i = j` and its bound when `i != j`. What tuple is obtained by taking the coordinatewise maximum of the corresponding copies of `a`?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Starting from that all-ones tuple and `c`, construct the zero tuple. Then show how `d^(j)` and the zero tuple produce the standard basis tuple `e_j` by coordinatewise maximum.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using `c_i = -1` and the standard basis tuples, express an arbitrary integer tuple `v` as a sum with nonnegative integer coefficients. State how to choose the common shift so every coefficient is allowed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the representation coordinate by coordinate and conclude whether the three proposed starting tuples generate every integer-valued 2022-tuple.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Test the construction on a target having both positive and negative coordinates, explaining why a sufficiently large common shift still works. What upper bound on the minimum number of starting tuples follows?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the lower bound, suppose there are only two starting tuples `v` and `w`. Show why universality is impossible if some coordinate has `v_i, w_i >= 0` or has `v_i, w_i <= 0`.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "It remains to consider the case in which `v_i` and `w_i` are nonzero with opposite signs at every coordinate. Use the pigeonhole principle to find two coordinates with the same sign pattern, then derive a fixed nonnegative ratio inequality preserved by both addition and coordinatewise maximum. Why does that prevent universality?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Combine the three-tuple construction with the obstruction for every pair of starting tuples, and determine the smallest possible value of `s`.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

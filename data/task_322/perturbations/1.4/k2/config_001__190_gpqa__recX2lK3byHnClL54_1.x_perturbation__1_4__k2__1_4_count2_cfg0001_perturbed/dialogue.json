@@ -1,0 +1,54 @@
+{
+  "release_task_index": 322,
+  "task_id": "gpqa__recX2lK3byHnClL54",
+  "dataset": "gpqa",
+  "ordinal": 190,
+  "variant": "perturbed",
+  "conversation_id": "190::gpqa__recX2lK3byHnClL54::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "4c92bbc3242cb3e2f42b27d367566305abf26a5845eb399c97c15bd016d314b5",
+  "semantic_condition_id": "3c64097d757598fecce3ab7bb6b00b136ca60261ab8ade2311734e1e78c284e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A muon travels 1000 m in the laboratory before decaying. Which lifetime belongs in the muon's rest frame, and which distance is measured in the laboratory frame?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the relation between the laboratory distance, the particle's proper lifetime, and its speed, including relativistic time dilation, but without specifying whether the speed remains constant over the path.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check that the distance, lifetime, and speed of light are expressed in compatible units before doing the numerical calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the relation you derived to solve for the dimensionless speed beta=v/c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert beta to the particle's speed in metres per second.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the result is subluminal and reproduces the stated 1000 m laboratory path within rounding.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the validated speed and briefly explain why using distance divided by proper lifetime would ignore relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

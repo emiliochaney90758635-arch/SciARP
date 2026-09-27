@@ -1,0 +1,35 @@
+{
+  "release_task_index": 119,
+  "task_id": "119-capsule034",
+  "source_id": "bix-51-q8",
+  "dataset": "bixbench",
+  "ordinal": 119,
+  "variant": "perturbed",
+  "conversation_id": "119::119-capsule034::2.1::k2::perturbed",
+  "condition_label": "2.1.k2",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7264532ebcaca2c6140acfc805ae19a394d6e42cb7df90a424856987107b8065",
+  "semantic_condition_id": "929de62122726001784040ddf1a02f3c1db80ec8a8d41a200e0b37688ad5620a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Age-only coefficient evidence\n\n## Model input\n\nGroup 1, whose efficacy is `PR`, is encoded as `Response=1`; Group 2 is encoded as `Response=0`. All 80 retained records have a numeric age.\n\n```text\nResponse = 1 (n=41), Age in years:\n67, 50, 57, 46, 40, 52, 53, 45, 73, 64, 52, 54, 45, 71, 41, 45,\n43, 57, 51, 74, 52, 49, 74, 57, 74, 67, 47, 50, 59, 57, 63, 51,\n46, 51, 58, 64, 48, 44, 40, 55, 65\n\nResponse = 0 (n=39), Age in years:\n46, 44, 73, 72, 40, 59, 67, 60, 67, 51, 65, 73, 49, 55, 50, 65,\n68, 69, 68, 56, 75, 73, 63, 70, 71, 56, 67, 46, 53, 63, 63, 51,\n65, 75, 65, 69, 73, 73, 64\n```\n\n## Age-only model output\n\n```r\nmodel_age <- glm(Response ~ Age, data = dataset, family = binomial)\n```\n\n| term | Estimate | Std. Error | z value | two-sided `Pr(>|z|)` |\n|---|---:|---:|---:|---:|\n| `(Intercept)` | 4.44656527 | 1.45133 | 3.064 | 0.00219 |\n| Age | -0.07495392 | 0.02435 | -3.078 | 0.00208 |\n\nThe coefficient multiplies age measured in years in:\n\n```text\nlogit[P(Response=1)] = beta_0 + beta_Age × Age\n```\n\nAccordingly, its unit is change in log-odds for a one-year increase. The model-summary display rounds the Age estimate to five digits after the decimal point.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Age-variable unit dictionary\n\nThe numeric `Age` values are measured in decades, so the fitted `Age`\ncoefficient is a change in log-odds per ten years.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDefine the binary response and complete 80-row age analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Response-code dictionary\n\nFor the age-only model, Group 1 partial responders are coded `Response=0` and\nGroup 2 records are coded `Response=1`; the fitted slope therefore describes\nnon-response rather than PR response.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFit the intercept-plus-age logistic regression and locate the age coefficient.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the age coefficient to five decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

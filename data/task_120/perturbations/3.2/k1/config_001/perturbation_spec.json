@@ -1,0 +1,25 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "3.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "Predictive association converted into direct causation.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Transform eta and treat the fitted age association as proof that changing a patient's age directly causes the treatment-response outcome."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

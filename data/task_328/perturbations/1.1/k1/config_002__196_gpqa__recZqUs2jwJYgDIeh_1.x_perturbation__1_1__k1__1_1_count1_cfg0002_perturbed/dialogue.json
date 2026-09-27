@@ -1,0 +1,49 @@
+{
+  "release_task_index": 328,
+  "task_id": "gpqa__recZqUs2jwJYgDIeh",
+  "dataset": "gpqa",
+  "ordinal": 196,
+  "variant": "perturbed",
+  "conversation_id": "196::gpqa__recZqUs2jwJYgDIeh::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0f81bf99024efb7f7dc6d1d1b398d875184b7b17b2ca02cd624c9ea98ea4a6c5",
+  "semantic_condition_id": "e415bc1ccdb3c28f55341473f7be24d55fbf9ea8201b7f981ee7d2bf2e92b342",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Klebsiella pneumoniae lawn on Mueller-Hinton agar was tested with an amoxicillin-clavulanate disc placed 25 mm centre-to-centre from erythromycin and then chloramphenicol discs, with no zone distortion. What assay was intended, and which antibiotic class should its indicator discs belong to?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat an ELISA as producing 950-bp and 1080-bp bands for blaCTX-M-1 and blaTEM, then interpret their identity.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What culture medium and disc geometry are appropriate for a bacterial double-disc synergy test, and how should the genotypic PCR evidence be interpreted alongside the phenotype?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which disc substitution would correctly implement a clavulanate double-disc synergy test for extended-spectrum beta-lactamase activity?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the correction changes the indicator antibiotic class while retaining the bacterial susceptibility medium, useful spacing, and separately qualified PCR evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the experimental improvement and the evidential status of the two expected-size PCR bands.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

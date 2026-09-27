@@ -1,0 +1,42 @@
+{
+  "release_task_index": 48,
+  "task_id": "048-capsule013",
+  "source_id": "bix-17-q2",
+  "dataset": "bixbench",
+  "ordinal": 48,
+  "variant": "perturbed",
+  "conversation_id": "048::048-capsule013::3.3::k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "11568066163a66888f470df803c4ab2fd2e7617f3e90556b18dcf70c7c3025f4",
+  "semantic_condition_id": "690731092630982456f638ac0d0ad564f8800af9725b559446cc777e84923cf9",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "0cefb539e55a6b7e4532815fbed62c55b3210bb7fe63231063fc08cc2408c5b8",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort and statistical unit\n\nThe metadata contain 20 records labeled `BLM Mutation Status = Carrier`. Sample ID `533` has no matched per-sample variant workbook and is excluded rather than imputed as a zero. The 19 carriers with variant data are:\n\n```text\nP184, P185, P285, P287, P353, P354, P381, P396, P397,\nP489, P490, P499, P500, P503, P504, P556, P557, P613, P614\n```\n\nThe statistical unit for the requested summary is one carrier's count of retained sample–variant rows.\n\n## Variant-row eligibility rule\n\nWorkbook fields used by the archived analysis are `Zygosity`, `Sequence Ontology (Combined)`, and `Variant Allele Freq`. For each included carrier:\n\n```text\nexclude Zygosity = Reference or missing Zygosity\nexclude ontology exactly equal to:\n  intron_variant\n  intergenic_variant\n  3_prime_UTR_variant\n  5_prime_UTR_variant\nretain Variant Allele Freq < 0.3\n```\n\nThe VAF comparison is strict. These rows were called putative somatic CHIP variants operationally; no paired-normal confirmation was performed.\n\n## Complete carrier-level retained-row counts\n\nThe table gives the number of sample–variant rows remaining after the complete rule above. A carrier with a workbook but no retained row remains in the table with count zero.\n\n| Carrier | Retained rows |\n|---|---:|\n| P185 | 3 |\n| P184 | 4 |\n| P285 | 1 |\n| P287 | 6 |\n| P353 | 2 |\n| P354 | 2 |\n| P556 | 1 |\n| P557 | 5 |\n| P381 | 1 |\n| P396 | 0 |\n| P397 | 3 |\n| P489 | 3 |\n| P490 | 4 |\n| P499 | 2 |\n| P500 | 1 |\n| P503 | 2 |\n| P504 | 1 |\n| P613 | 5 |\n| P614 | 1 |\n\nFor an odd number of subjects, the median is the central observation after sorting all subject-level counts, including zero.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nInclude sample 533 as zero.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Count unique mutated genes instead of rows.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Exclude every zero-count carrier before taking the median.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

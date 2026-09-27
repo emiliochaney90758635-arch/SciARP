@@ -1,0 +1,54 @@
+{
+  "release_task_index": 369,
+  "task_id": "gpqa__recIDiDKKrN61Auyr",
+  "dataset": "gpqa",
+  "ordinal": 238,
+  "variant": "perturbed",
+  "conversation_id": "238::gpqa__recIDiDKKrN61Auyr::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f9b05c049d58863b4eb83a70964d7af4c3b13a310d076a45d90df82717034492",
+  "semantic_condition_id": "b9858710442c0dab78b421765b283f21ba4d8a4f628a55174716a7beacf8faec",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a synthetic-organic laboratory, a chemist says two compounds are 'on top of each other.' What kind of observation does that idiom most naturally describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What chromatographic behavior would make the compounds appear that way?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use boiling-point proximity as the controlling predictor of similar chromatographic retention rather than considering stationary- and mobile-phase interactions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Integrate the idiom, the observed separation behavior, and the relevant molecular property into one contextual interpretation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What additional observation would be needed to test the interpretation rather than treating it as certain?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which missing method-specific details prevent a more precise conclusion?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the qualification that should accompany the molecular-property inference from chromatographic coelution.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

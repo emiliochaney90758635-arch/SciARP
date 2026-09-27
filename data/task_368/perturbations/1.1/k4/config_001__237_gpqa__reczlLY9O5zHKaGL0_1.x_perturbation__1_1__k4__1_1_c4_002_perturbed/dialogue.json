@@ -1,0 +1,54 @@
+{
+  "release_task_index": 368,
+  "task_id": "gpqa__reczlLY9O5zHKaGL0",
+  "dataset": "gpqa",
+  "ordinal": 237,
+  "variant": "perturbed",
+  "conversation_id": "237::gpqa__reczlLY9O5zHKaGL0::1.x::perturbation__1_1__k4__1_1_c4_002::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "e3927d7b432a6531f4adda0cdd294620ddb2a1c38dbc4c74526314b5f635184e",
+  "semantic_condition_id": "b9aa8d5c8b5d84f23806e817c9d13387f16597b6e9ec7ca783055eb1dfc21d50",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the requested quantity as intercepted stellar-wind power, but derive it from stellar luminosity, orbital distance, and planet radius using the supplied ratios.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Find the luminosity ratio by treating star Y's coronal temperature as twice star X's photospheric temperature, then decide which temperature belongs in the surface-radiation law.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What stellar magnetic-flux factor follows solely from planet Y being twice as close to its star?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Translate the circumference ratio into the planetary cross-sectional-area factor required by the intercepted-power relation. Does the equal rotation rate affect the instantaneous intercepted power?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the preceding radiative factors to determine how many times longer planet Y's orbital period is.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Do any other temperature quantity or the equal rotation rates change the intercepted-power comparison? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the intercepted-power ratio and list the physical assumptions used to obtain it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

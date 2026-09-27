@@ -1,0 +1,54 @@
+{
+  "release_task_index": 341,
+  "task_id": "gpqa__reckyB637GAnW0uRM",
+  "dataset": "gpqa",
+  "ordinal": 209,
+  "variant": "perturbed",
+  "conversation_id": "209::gpqa__reckyB637GAnW0uRM::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "4c964282f858af1efd0e2f9d288dc59b765af93e1d2a815e0fd656f3c50aa4ca",
+  "semantic_condition_id": "cdde975b28411e563b57617d5e7da721dc0f3d7bbb385774d0e93dcb9d6442cf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "4-Aminophenol contains both an aniline amino group and a phenolic hydroxyl group. Compare their nucleophilicity toward propionic anhydride under pyridine conditions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With one equivalent of propionic anhydride, predict the major polymerization product A and explain the proposed chemoselectivity.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For 4-propionamidophenyl propionate under aqueous NaOH, compare the functional groups as sites of oxidative cleavage and identify the expected selectivity.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Predict the major product B after aqueous NaOH treatment, identifying which acyl group is removed and which remains.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the two catalyst assignments and state the structures or unambiguous names of A and B, explaining which acyl group is formed and which is removed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether one equivalent of anhydride or the stated aqueous-base conditions provide any reason to change either product assignment.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identities of A and B and summarize the acylation and hydrolysis selectivity.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

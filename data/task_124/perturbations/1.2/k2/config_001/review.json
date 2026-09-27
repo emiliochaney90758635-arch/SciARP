@@ -1,0 +1,17 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "review_method": "direct human review; packaging script performed no semantic generation",
+  "taxonomy_match": true,
+  "distinct_root_events": true,
+  "downstream_consumers_present": true,
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true,
+  "answer_leakage": false,
+  "notes": "Accepted after task-specific review of naturalness, independence, and scorable impact.",
+  "strict_non2x_original_dialogue_sha256": "f96fc9391b81db3bd972af1f6610fd1fefcb45b0568438f2e8bc34e00f668c65",
+  "strict_non2x_original_semantic_condition_id": "d77aa528ab0f7f5a5541f7723d47e03f2ed51b5ac01e9c986ccf4ba75bbaead0",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the approved perturbation explicit and reproducible from the visible quantities while preserving the remaining independent roots."
+}

@@ -1,0 +1,47 @@
+{
+  "release_task_index": 64,
+  "task_id": "064-capsule017",
+  "source_id": "bix-22-q3",
+  "dataset": "bixbench",
+  "ordinal": 64,
+  "variant": "perturbed",
+  "conversation_id": "064::064-capsule017::1.2::k1::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "02d14232fe41692985c34625ab34ff2b542ad2335d761d5beca20c776f8701be",
+  "semantic_condition_id": "33d4cf4befae50e12dda72e367056e7267956fe2a228e3781612634134c067c0",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "996f7b74a2e9893bb3b9749aac39f1f89e04977ee710738474b62f1c66679c26",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Data axes and CD8 samples\n\nThe expression matrix contains 59,453 genes and 723 samples; the sample metadata contain the same 723 samples; and the gene annotation contains the same 59,453 genes with `Geneid`, `Length`, and `gene_biotype`. Corresponding indices across the three tables have no missing values or duplicates.\n\n| celltype | Number of samples |\n|---|---:|\n| PBMC | 158 |\n| CD4 | 151 |\n| CD8 | 145 |\n| CD14 | 132 |\n| CD19 | 137 |\n\nFirst exclude PBMC to obtain 565 samples; then select the 145 samples whose names contain `CD8`. This set is identical to the set with `celltype == \"CD8\"` in the metadata.\n\n## Gene filtering and pairing definition\n\n```python\nprotein_index = annotation[\n    annotation.gene_biotype.str.contains(\"protein_coding\")\n].index\n\nimmune_protein = immune[protein_index]\nimmune_protein = immune_protein.T[\n    immune_protein.T.sum(axis=1) >= 10\n].T\n\ncd8 = immune_protein[immune_protein.index.str.contains(\"CD8\")]\npaired = cd8.T.join(annotation[[\"Geneid\", \"Length\"]], how=\"inner\")\n```\n\n- `protein_coding` uses substring matching, not exact equality.\n- The low-expression threshold calculates each gene's total expression across all 565 non-PBMC samples and retains `sum >= 10`; it is not calculated within the CD8 subset.\n- Substring matching initially identifies 19,954 genes; 17,819 remain after the threshold and length alignment.\n- Final `Length` and CD8 mean expression contain no missing values, and the gene index has no duplicates.\n- Each CD8 mean expression is the ordinary arithmetic mean for that gene across the 145 CD8 samples.\n\nThe 10 compound-biotype genes retained by substring matching and the threshold are:\n\n```text\nRGS5, CYB561D2, CCDC39, ARMCX5-GPRASP2, KBTBD11-OT1,\nZNF883, SPATA13, GOLGA8M, SLFN12L, ELFN2\n```\n\n## Source-table spot checks\n\n| Gene | Length | Expression sum across 565 samples | CD8 mean expression |\n|---|---:|---:|---:|\n| OR4F29 | 939 | 564 | 1.289655172413793 |\n| OLFML2A | 6,771 | 7,173 | 0.8620689655172413 |\n| AC213203.1 | 510 | 153 | 0.41379310344827586 |\n| AL391987.1 | 201 | 396 | 1.3517241379310345 |\n| TTN | 118,976 | 829,114 | 1,764.0206896551724 |\n| ACTL8 | 1,844 | 15 | 0 |\n| EEF1A1 | 10,063 | 113,979,433 | 239,352.4827586207 |\n| RGS5 | 9,716 | 17,778 | 36.80689655172414 |\n| CYB561D2 | 3,128 | 130,406 | 249.69655172413792 |\n\n## Full-data sufficient statistics for Pearson correlation\n\nLet \\(x_i\\) be the `Length` of a final gene and \\(y_i\\) its CD8 mean expression.\n\n| Statistic | Value |\n|---|---:|\n| \\(n\\) | 17,819 |\n| \\(\\sum x\\) | 101,122,867.0 |\n| \\(\\sum y\\) | 10,767,456.248275861 |\n| \\(\\bar{x}\\) | 5,675.002357034626 |\n| \\(\\bar{y}\\) | 604.2682669215927 |\n| \\(S_{xx}\\) | 331,788,201,143.901 |\n| \\(S_{yy}\\) | 207,619,095,737.67325 |\n| \\(S_{xy}\\) | 11,461,780,551.89141 |\n\n\\[\nr=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}\n\\]\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAlign sample metadata with the expression matrix, remove PBMC samples, and establish the CD8 sample set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply substring matching for protein-coding genes and the low-expression threshold across all non-PBMC samples to define the final gene set.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat Length values as kilobases while leaving their numerical base-pair values unchanged.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the Pearson correlation between gene length and CD8 mean expression across the retained genes.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 279,
+  "task_id": "gpqa__recnawZPumSCLMVgp",
+  "dataset": "gpqa",
+  "ordinal": 147,
+  "variant": "perturbed",
+  "conversation_id": "147::gpqa__recnawZPumSCLMVgp::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "99aa59ba1b86dcefe76a1220250ab9bad720977e242e572d14bdb2ba09b4dc6a",
+  "semantic_condition_id": "a439bd11539a0f12f423b5bca2d20f7f8123a70c76b3cc7ac0fbaac629a3fb45",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A gives 1,2-dimethyl-4-(propan-2-ylidene)cyclopentane in a Wittig reaction and absorbs near 1750 cm^-1. Work backward from the alkene to identify the five-membered-ring carbonyl compound A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the next stated transformation to A to identify B, then follow the subsequent catalytic treatment to determine C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat C with nitric acid rather than nitrous acid, then infer a nitrogen-loss rearrangement to E.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the structure and systematic name of E, and summarize the carbon-skeleton change from the starting material used in this route.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly is that assignment supported given possible selectivity and side products?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether the reaction sequence and spectroscopic evidence are sufficient to identify E, and explain the limits of that conclusion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the assignment of E and the reaction and spectroscopic evidence supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

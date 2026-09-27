@@ -1,0 +1,40 @@
+{
+  "release_task_index": 82,
+  "task_id": "082-capsule022",
+  "source_id": "bix-30-q3",
+  "dataset": "bixbench",
+  "ordinal": 82,
+  "variant": "perturbed",
+  "conversation_id": "082::082-capsule022::2.3::k3::perturbed",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "5dfaad26880ba42a168c481576f93a38173cc15d2e2228c44bbb8f43220971ba",
+  "semantic_condition_id": "5bb9b5e07c1912953d19703056345016098808d94dcf39b0eccaad962559c9f9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Common Test Family\n\nAfter removing `P_3` and `C_18`, each miRNA uses the nonmissing observations from 9 patient columns and 9 control columns. The data are first transformed element by element with `log2`, followed by a two-sided Welch t-test on each row. All 175 unique miRNAs yield finite raw p-values; every correction is applied simultaneously to the same set of \\(m=175\\) p-values.\n\n## Correction Definitions\n\n```r\np.adjust(raw_p, method = \"BY\")\np.adjust(raw_p, method = \"bonferroni\")\n```\n\nFor the ordered \\(p_{(i)}\\):\n\n```text\nBonferroni_i = min(1, 175 × p_i)\nBH_(i)       = min(1, min_{j≥i}(175 × p_(j) / j))\nBY_(i)       = min(1, H_175 × BH_(i))\nH_175        = 5.74485606060264\n```\n\n## Lower End of the Corrected Results\n\n| raw p rank | miRNA | raw p | BY adjusted p | Bonferroni adjusted p |\n|---:|---|---:|---:|---:|\n| 1 | hsa-miR-20b | 0.001693969335367862 | 0.5210525121931603 | -0.2964446336893759 |\n| 2 | hsa-miR-486-5p | 0.002338661310880471 | 0.5210525121931603 | 0.4092657294040825 |\n| 3 | hsa-miR-92a | 0.002638393575172587 | 0.5210525121931603 | 0.4617188756552028 |\n| 4 | hsa-miR-222 | 0.002818847657179876 | 0.5210525121931603 | 0.4932983400064783 |\n| 5 | hsa-miR-532-5p | 0.003348653571836516 | 0.5210525121931603 | 0.5860143750713902 |\n| 6 | hsa-miR-1974 | 0.003570927233302876 | 0.5210525121931603 | 0.6249122658280032 |\n| 7 | hsa-miR-34a | 0.003627958693457684 | 0.5210525121931603 | 0.6348927713550947 |\n| 8 | hsa-miR-30e | 0.005001735035416723 | 0.5800823169617981 | 0.8753036311979264 |\n\nThe minimum BY-adjusted p-value in the full column is `0.5210525121931603`; the minimum Bonferroni-adjusted p-value in the full column is `0.2964446336893759`. Every omitted row is at least as large as these global minima in the corresponding correction column. Significance requires adjusted `p <= 0.05`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReconstruct the common family of 175 finite raw Welch p-values from the cleaned log2 data.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Common Test Family\n\nAfter removing `P_3` and `C_18`, each miRNA uses the nonmissing observations from 9 patient columns and 9 control columns. The data are first transformed element by element with `log2`, followed by a two-sided Welch t-test on each row. All 175 unique miRNAs yield finite raw p-values; every correction is applied simultaneously to the same set of \\(m=175\\) p-values.\n\n## Correction Definitions\n\n```r\np.adjust(raw_p, method = \"BY\")\np.adjust(raw_p, method = \"bonferroni\")\n```\n\nFor the ordered \\(p_{(i)}\\):\n\n```text\nBonferroni_i = min(1, 175 × p_i)\nBH_(i)       = min(1, min_{j≥i}(175 × p_(j) / j))\nBY_(i)       = min(1, H_175 × BH_(i))\nH_175        = 5.74485606060264\n```\n\n## Lower End of the Corrected Results\n\n| raw p rank | miRNA | raw p | BY adjusted p | Bonferroni adjusted p |\n|---:|---|---:|---:|---:|\n| 1 | hsa-miR-20b | 0.001693969335367862 | -0.5210525121931603 | -0.2964446336893759 |\n| 2 | hsa-miR-486-5p | 0.002338661310880471 | 0.5210525121931603 | 0.4092657294040825 |\n| 3 | hsa-miR-92a | 0.002638393575172587 | 0.5210525121931603 | 0.4617188756552028 |\n| 4 | hsa-miR-222 | 0.002818847657179876 | 0.5210525121931603 | 0.4932983400064783 |\n| 5 | hsa-miR-532-5p | 0.003348653571836516 | 0.5210525121931603 | 0.5860143750713902 |\n| 6 | hsa-miR-1974 | 0.003570927233302876 | 0.5210525121931603 | 0.6249122658280032 |\n| 7 | hsa-miR-34a | 0.003627958693457684 | 0.5210525121931603 | 0.6348927713550947 |\n| 8 | hsa-miR-30e | 0.005001735035416723 | 0.5800823169617981 | 0.8753036311979264 |\n\nThe minimum BY-adjusted p-value in the full column is `0.5210525121931603`; the minimum Bonferroni-adjusted p-value in the full column is `0.2964446336893759`. Every omitted row is at least as large as these global minima in the corresponding correction column. Significance requires adjusted `p <= 0.05`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply Bonferroni correction to that family and count adjusted p-values at or below 0.05.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Common Test Family\n\nAfter removing `P_3` and `C_18`, each miRNA uses the nonmissing observations from 9 patient columns and 9 control columns. The data are first transformed element by element with `log2`, followed by a two-sided Welch t-test on each row. All 175 unique miRNAs yield finite raw p-values; every correction is applied simultaneously to the same set of \\(m=175\\) p-values.\n\n## Correction Definitions\n\n```r\np.adjust(raw_p, method = \"BY\")\np.adjust(raw_p, method = \"bonferroni\")\n```\n\nFor the ordered \\(p_{(i)}\\):\n\n```text\nBonferroni_i = min(1, 175 × p_i)\nBH_(i)       = min(1, min_{j≥i}(175 × p_(j) / j))\nBY_(i)       = min(1, H_175 × BH_(i))\nH_175        = 5.74485606060264\n```\n\n## Lower End of the Corrected Results\n\n| raw p rank | miRNA | raw p | BY adjusted p | Bonferroni adjusted p |\n|---:|---|---:|---:|---:|\n| 1 | hsa-miR-20b | -0.001693969335367862 | -0.5210525121931603 | -0.2964446336893759 |\n| 2 | hsa-miR-486-5p | 0.002338661310880471 | 0.5210525121931603 | 0.4092657294040825 |\n| 3 | hsa-miR-92a | 0.002638393575172587 | 0.5210525121931603 | 0.4617188756552028 |\n| 4 | hsa-miR-222 | 0.002818847657179876 | 0.5210525121931603 | 0.4932983400064783 |\n| 5 | hsa-miR-532-5p | 0.003348653571836516 | 0.5210525121931603 | 0.5860143750713902 |\n| 6 | hsa-miR-1974 | 0.003570927233302876 | 0.5210525121931603 | 0.6249122658280032 |\n| 7 | hsa-miR-34a | 0.003627958693457684 | 0.5210525121931603 | 0.6348927713550947 |\n| 8 | hsa-miR-30e | 0.005001735035416723 | 0.5800823169617981 | 0.8753036311979264 |\n\nThe minimum BY-adjusted p-value in the full column is `0.5210525121931603`; the minimum Bonferroni-adjusted p-value in the full column is `0.2964446336893759`. Every omitted row is at least as large as these global minima in the corresponding correction column. Significance requires adjusted `p <= 0.05`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply Benjamini-Yekutieli correction to the same family and count adjusted p-values at or below 0.05.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Report the ordered Bonferroni:Benjamini-Yekutieli count pair and ratio notation, noting whether a numerical quotient is defined.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

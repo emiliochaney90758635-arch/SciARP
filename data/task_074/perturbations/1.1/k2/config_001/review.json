@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "Prediction stream and pairwise denominator are independent concepts.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "fba3919eb334ccc523dcba36a13d2d0e4f91be3051220ceb0cf4bb7bb2188ee0",
+  "strict_non2x_original_semantic_condition_id": "08566916ab043a4be0946ad86240f0f749bb9ff3f1fd6a6f9cb2f783ebd19466",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Preserves the stream and denominator roots while explicitly carrying forward the archived final count.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

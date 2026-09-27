@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Control child, qualifying candidate, and UTR annotation can each receive a wrong definition.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "06128af7f3221b71c895ebd1bca33d3202d3239cdeba65e0ca339245ef7f93f3",
+  "strict_non2x_original_semantic_condition_id": "9a94e9955ef9e593fb6ccaecea9dbe77628b1635cdc0f0990b2b84828c68a534",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally include unaffected parents with unaffected children, at T2 deduplicate to unique genes, and at T3 remove only ontologies exactly equal to the two UTR labels. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

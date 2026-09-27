@@ -1,0 +1,35 @@
+{
+  "config_id": "task045_1.3_k3",
+  "subclass": "1.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Let C denote the shared gene count and G denote the shared cell-line count. Intersect the matrices and report C and G under these symbols."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Define rho=Spearman(expression, Chronos gene effect), dropping the minus sign, and calculate the association for every eligible gene."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "In the boundary table, let p denote the BH-adjusted value and q denote the raw p-value; find the last p below 0.05."
+    }
+  ]
+}

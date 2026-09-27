@@ -1,0 +1,22 @@
+{
+  "task_id": "007-capsule003",
+  "subclass": "3.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Converts an exploratory contrast proportion into a causal effect of collection time."
+  ],
+  "injection_turns": [
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d188dd86b917e4fba23e0cc14af0eac40848f26eaaa3c8326c91ee8289e4d34a",
+  "configured_evidence_sha256": "d188dd86b917e4fba23e0cc14af0eac40848f26eaaa3c8326c91ee8289e4d34a",
+  "evidence_unchanged": true
+}

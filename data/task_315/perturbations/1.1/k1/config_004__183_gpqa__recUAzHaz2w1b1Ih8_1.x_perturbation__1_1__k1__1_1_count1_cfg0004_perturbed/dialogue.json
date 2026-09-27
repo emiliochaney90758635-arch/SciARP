@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "fd988d604331b578570a872b0da1be152eb73c3e874afb2bdaffb4515118f6c3",
+  "semantic_condition_id": "90f76f88f9a23d80afcf4752f8cd6edcc7e5cb47317f2e248636a54a3d1872f1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let FA and FB denote the two bolometric fluxes and dA and dB their luminosity distances. Express LA/LB in terms of these four quantities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At redshifts zA=0.06 and zB=0.02, use the leading low-redshift distance-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the temperature ratio FA/FB from the observed values specified above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 468,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1687",
+  "dataset": "olympiadbench",
+  "ordinal": 415,
+  "variant": "perturbed",
+  "conversation_id": "415::olympiadbench__OE_TO_maths_en_COMP_1687::1.x::perturbation__1_4__k2__1_4_count2_cfg0002::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "e96fc94ddcc394c314fa627045351f4c8af7db541a643b292ddb8ad277ef58e7",
+  "semantic_condition_id": "993c38c1a1a878936d911f08f69c5de3ef729ccbcc2af61f24de31c1168dc50d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let f and g satisfy f^{g(n)+1}(n)+g^{f(n)}(n)=f(n+1)-g(n+1)+1 for every positive integer n, where superscripts denote iterates. What strict inequality follows immediately from positivity, and does deriving it require f to be injective?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let y_1 be the least value attained by f. Use the strict inequality to determine every positive integer x for which f(x)=y_1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "List the distinct image values as y_1<y_2<... . Let Q_j mean y_j=j, and assume Q_1,...,Q_{n-1}. Explain why a next image value y_{n+1} exists.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Choose x with f(x)=y_{n+1}. Apply the strict inequality at x-1 and set b=f^{g(x-1)}(x-1). Show that b lies in {1,...,n}, then use the established preimage facts to rule out b<n.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From b=n, prove Q_n and then peel back the iterates using the unique-preimage facts to obtain x=n+1. Explain how this establishes P_{n+1}.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the base case and induction step to determine f on every positive integer.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Substitute that function into the original equation. What relation remains for g, and what does positivity force g(n) to be for every n?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the resulting pair directly in the original functional equation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Why does the induction also establish that the ordered image values continue indefinitely, rather than assuming in advance that the image of f is infinite? Use this to close the exhaustiveness argument.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "State all pairs (f,g) satisfying the equation on the positive integers.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

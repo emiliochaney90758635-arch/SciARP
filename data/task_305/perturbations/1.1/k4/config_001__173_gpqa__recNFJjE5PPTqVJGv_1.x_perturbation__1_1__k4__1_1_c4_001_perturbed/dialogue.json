@@ -1,0 +1,49 @@
+{
+  "release_task_index": 305,
+  "task_id": "gpqa__recNFJjE5PPTqVJGv",
+  "dataset": "gpqa",
+  "ordinal": 173,
+  "variant": "perturbed",
+  "conversation_id": "173::gpqa__recNFJjE5PPTqVJGv::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "baa3914bc494c70dc12a482a9099c3a7d0401cc9f8741dd2dbe6a7281a64d0d6",
+  "semantic_condition_id": "ace70d0f3254632e5e4a818b30ec191d5d253dcc0c9a6e6a7d83e10bcdccf873",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate hydroxide supplied by the barium chloride, while retaining the Ba(OH)2 formula and two-hydroxide factor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the electron equivalents, rather than acid equivalents, consumed by hydroxide.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the acid-equivalent result twice, rather than comparing hydroxide supply with acid demand, to determine excess OH-.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the hydronium concentration as though it were hydroxide concentration when calculating pOH and pH.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Independently tabulate base equivalents, acid equivalents, excess, and total volume to check that the solution is basic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final pH with the neutralization balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 476,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1750",
+  "dataset": "olympiadbench",
+  "ordinal": 423,
+  "variant": "clean",
+  "conversation_id": "423::olympiadbench__OE_TO_maths_en_COMP_1750::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "5299921d142a54d3324495d216be449d15f377e59bda6f9ecec5169d04a9b8d9",
+  "semantic_condition_id": "5aac52ca27d28faa466809b4a65f8dcba4f03025890f93a4af64219f21a4616a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the vertices of the regular 2006-gon cyclically. Characterize an odd side or diagonal by the parity of the number of boundary edges between its endpoints.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For an isosceles triangle whose two equal sides are odd, explain how the two corresponding boundary arcs constrain the placement of its apex and base.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let AB bound a subpolygon together with the shorter boundary arc L containing s<=1003 sides. Formulate an induction bound for the number of isosceles triangles with two odd sides inside this subpolygon, choosing one with a longest base for the induction step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the induction setup and candidate bound, split the subpolygon along the selected longest-base triangle and account for the resulting boundary pieces.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the lemma to a longest dissecting diagonal XY and its adjacent triangle XYZ to obtain an upper bound for the entire triangulation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give a triangulation that attains the bound established above, describe its core vertex-joining rule, and count the qualifying triangles after the remaining regions are completed.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the upper bound and construction to determine the maximum possible number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

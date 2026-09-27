@@ -1,0 +1,33 @@
+{
+  "task_id": "024-capsule007",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Redefines the observational unit.",
+    "Redefines a contingency category."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "e7e015b70aeccb1996bde7f776b6858b682bea427eeff371b751df80ef9a96a4",
+  "configured_evidence_sha256": "e7e015b70aeccb1996bde7f776b6858b682bea427eeff371b751df80ef9a96a4",
+  "evidence_unchanged": true
+}

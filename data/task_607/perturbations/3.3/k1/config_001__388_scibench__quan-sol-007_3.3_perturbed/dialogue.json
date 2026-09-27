@@ -1,0 +1,54 @@
+{
+  "release_task_index": 607,
+  "task_id": "scibench__quan-sol-007",
+  "dataset": "scibench",
+  "ordinal": 388,
+  "variant": "perturbed",
+  "conversation_id": "388::scibench__quan-sol-007::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "93167ac910bd85737a24613e9a6196fc912b6813d216f6764447485dfe121f94",
+  "semantic_condition_id": "1bb97ff64d9cab6b48548d5ec1f23902964c1b26f943806893bc3d29c59bc0be",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The strongest infrared band of 12C16O occurs at 2143 cm^-1. Under the harmonic-oscillator approximation, explain how a spectroscopic wavenumber is related to ordinary vibrational frequency and angular frequency before using it to estimate the bond force constant.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use k = mu nu^2 directly, treating the ordinary cycles-per-second frequency nu = c times the wavenumber as if it were already the angular frequency omega.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the reduced mass of 12C16O in atomic mass units and kilograms, using m(12C) = 12 u, m(16O) = 15.9949 u, and 1 u = 1.66054 x 10^-27 kg.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert 2143 cm^-1 to the corresponding ordinary vibrational frequency using c = 2.9979 x 10^10 cm/s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the reduced mass and vibrational frequency to calculate the C-O force constant in N/m. Also identify whether the strongest band is assigned to the harmonic fundamental stretch or to an overtone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the calculation by explicitly converting the ordinary frequency to angular frequency with omega = 2 pi nu, and explain why the band assignment is consistent with the harmonic model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the nominal harmonic force constant and band assignment. Briefly state which unmodeled spectroscopic effects prevent treating the estimate as an exact physical potential curvature.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

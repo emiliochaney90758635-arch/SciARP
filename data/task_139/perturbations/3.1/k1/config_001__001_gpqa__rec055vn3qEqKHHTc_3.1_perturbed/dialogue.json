@@ -1,0 +1,44 @@
+{
+  "release_task_index": 139,
+  "task_id": "gpqa__rec055vn3qEqKHHTc",
+  "dataset": "gpqa",
+  "ordinal": 1,
+  "variant": "perturbed",
+  "conversation_id": "001::gpqa__rec055vn3qEqKHHTc::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8c4aa2933ec0bb7a7d69e594ff38b9d30cf1cbc9cffdcccedb0aac897bd0a0d8",
+  "semantic_condition_id": "0f64b26ad258ba48ad58ff0d928d5d84a8cc6825c5a159887b20f0e148d9f4e2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A very large gene contains many exons encoding repeated rod-like domains that connect the cytoskeleton to the sarcolemma; frame-shifting exon deletions cause progressive muscle degeneration. Identify the gene and disease.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A Morpholino binds the 5' end of an out-of-frame exon in the pre-mRNA and blocks spliceosome access. Explain the therapeutic strategy and its immediate RNA-level effect.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Why can skipping one additional exon restore the reading frame and produce a shorter but partly functional dystrophin rather than simply worsening the deletion?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "During transcription, nascent RNA can hybridize to template DNA while displacing the non-template strand. Describe this three-stranded structure and distinguish it from a spliceosomal lariat and Morpholino-pre-mRNA binding.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assume the Morpholino does not block spliceosome recognition at the targeted exon, then identify the transcription-associated structure that is unnecessary for the therapy.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

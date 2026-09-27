@@ -1,0 +1,54 @@
+{
+  "release_task_index": 352,
+  "task_id": "gpqa__recooG6bivTUJpDBz",
+  "dataset": "gpqa",
+  "ordinal": 220,
+  "variant": "perturbed",
+  "conversation_id": "220::gpqa__recooG6bivTUJpDBz::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f586ca7aeaac83e99b0a8396a653993a786da095548fe69950afa9bf9c6ad752",
+  "semantic_condition_id": "a0dc3b99c841deadb6217b6984e9c580cfa67ca29d91400c297853e10c12ec1b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 1:1 mixture of two C10H14 aromatic compounds gives two aromatic singlets in its mass spectrum near 6.7 ppm with equal integrals and three singlets near 2.2 ppm in a 2:1:1 integral ratio. What symmetry and proton-equivalence constraints follow from this pattern?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Predict the aromatic and methyl-region proton-NMR signals, including their integrals, for 1,2,4,5-tetramethylbenzene and 1,2,3,4-tetramethylbenzene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now derive the corresponding patterns for 1,2,3,5-tetramethylbenzene and 1,4-diethylbenzene. Which features of those spectra conflict with the observed number, position, or multiplicity of the signals?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the equal aromatic singlets and the recorded 2:1:1 methyl-singlet ratio, which pair is most consistent with the mixture at this stage? Explain how the component signals combine.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For that proposed 1:1 pair, calculate the combined proton integrals of each aromatic and methyl singlet and reduce the methyl integrals to a ratio. Do they reproduce the observed spectrum?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check every alternative pairing among the four structures against the chemical shifts, multiplicities, signal counts, and integrals. Is the assignment unique?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Identify the two compounds in the mixture and give the concise symmetry and integration argument that supports the assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

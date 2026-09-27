@@ -1,0 +1,19 @@
+{
+  "task_id": "102-capsule029",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Uses 15-character sample identifiers.",
+    "Counts aliquots as patients.",
+    "Includes the discrepancy status row."
+  ],
+  "evidence_mode": "append"
+}

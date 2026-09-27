@@ -1,0 +1,59 @@
+{
+  "release_task_index": 379,
+  "task_id": "gpqa__recNGovj5Pv0yxbfx",
+  "dataset": "gpqa",
+  "ordinal": 248,
+  "variant": "perturbed",
+  "conversation_id": "248::gpqa__recNGovj5Pv0yxbfx::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2835bb6b402eb98d061003f8daba41e3340bfa988744ac89d6dae3dffb1f0b5d",
+  "semantic_condition_id": "c451c6131e409110082918ccf3c88882255066bb81c7d7e0443a52a4e1e30650",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A prepared hexene/C7-aldehyde mixture elutes within 25 minutes in an isothermal 60-degrees-C GC run, but later chronological reaction-sample injections develop irregular small peaks that the first two lack. What does the prepared-mixture test establish, and what association is observed with cumulative injections?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The actual samples come from rhodium-catalysed hydroformylation of 1-hexene. What additional reaction-derived material could be present, and why might it challenge the low-temperature isothermal method?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how retained high-boiling material could produce small peaks at changing retention times in later chromatograms even though the target analytes initially behaved well.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Whenever retained material causes later peaks, classify the stationary phase as unsuitable and require column replacement instead of a temperature-program cleanup.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the selected procedure operationally, including any necessary instrument setting and what should happen before the next analytical run.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Calibrate this source and remedy as best supported rather than uniquely proven by the chronological observations.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which blanks, standards, and controlled comparisons would distinguish column residue from continued vial reaction or an injector artifact?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the diagnosis, corrective procedure, and main validation checks.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

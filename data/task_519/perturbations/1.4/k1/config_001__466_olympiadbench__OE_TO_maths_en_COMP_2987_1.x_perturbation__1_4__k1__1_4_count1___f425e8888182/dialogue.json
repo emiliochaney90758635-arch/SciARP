@@ -1,0 +1,59 @@
+{
+  "release_task_index": 519,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2987",
+  "dataset": "olympiadbench",
+  "ordinal": 466,
+  "variant": "perturbed",
+  "conversation_id": "466::olympiadbench__OE_TO_maths_en_COMP_2987::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "e15ecf4ca110b81c8dfcb3fde23d8e894b227263e1a4566c78fcd3a5a7ab4be8",
+  "semantic_condition_id": "25d48b36a311915fadc7c4ad9e9f4f3c3c405f5719b8db88df05f790bd5088ff",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T=101. In right triangle ABC, angle C is 90 degrees and AC=BC=sqrt(T-3). Place C at the origin, AC on the positive x-axis, and BC on the positive y-axis. Compute the leg length and the equation of AB. Two distinct circles O and P lie inside the triangle with common radius r: O is tangent to both legs, P is externally tangent to O and tangent to AB, and C, O, and P are collinear.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Locate the center of O from its tangencies to the coordinate axes. Then write the center of P as (s,s), using the collinearity and the fact that P lies farther from C toward AB. What inequality relates s and r?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Before solving, write the center-to-center distance and the perpendicular distance from P to AB. Which tangency condition will be imposed on each distance?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Because P also has radius r and the two circles are externally tangent, use the center separation to derive a relation between s and r.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the position of AB to write the remaining distance equation, combine it with the center-separation relation, and solve exactly for r.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result geometrically. If H is the foot of the altitude from C to AB, express CH as CO+OP+PH in terms of r and compare it with the altitude obtained from the coordinate equation of AB.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the value obtained gives the center ordering C-O-P-H and satisfies all three required tangencies with both circles inside the triangle.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final exact value of the common radius and summarize the two distance relations that determine it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

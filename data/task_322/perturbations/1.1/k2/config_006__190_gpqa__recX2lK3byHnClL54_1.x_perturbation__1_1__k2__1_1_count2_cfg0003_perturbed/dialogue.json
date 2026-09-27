@@ -1,0 +1,54 @@
+{
+  "release_task_index": 322,
+  "task_id": "gpqa__recX2lK3byHnClL54",
+  "dataset": "gpqa",
+  "ordinal": 190,
+  "variant": "perturbed",
+  "conversation_id": "190::gpqa__recX2lK3byHnClL54::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a50d92554a3705632327e30460b04663f249814211f263e0fd38d2779b4669c2",
+  "semantic_condition_id": "d34af997093c19f1e81a1fbe268f39108f04c300f6cf34517f4ff31c7d15a39f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A photon has a proper lifetime of 2.0 microseconds and travels 1000 m in the laboratory before decaying. Which lifetime belongs in the photon's rest frame, and which distance is measured in the laboratory frame?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assuming a constant speed along the path, derive the relation between the laboratory distance, the particle's proper lifetime, and its speed, including relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check that the distance, lifetime, and speed of light are expressed in compatible units before doing the numerical calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the relation you derived to solve for the dimensionless speed beta=v/c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert beta to the particle's proper lifetime and report the result in metres per second.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the result is subluminal and reproduces the stated 1000 m laboratory path within rounding.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the validated speed and briefly explain why using distance divided by proper lifetime would ignore relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 430,
+  "task_id": "gpqa__rectXfsCM1dj4Kv2c",
+  "dataset": "gpqa",
+  "ordinal": 299,
+  "variant": "clean",
+  "conversation_id": "299::gpqa__rectXfsCM1dj4Kv2c::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "47b7703507fef7b2fbfc5e643578fdd4f504239e20d0cfc8476e14f0af0d9012",
+  "semantic_condition_id": "f2302777b9266c8b5d25baacc26e2c85d88cc2a1debdda76d8de8457a6123e9d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Draw or describe the connectivity of 6-chloro-9-ethyl-2-methylundeca-3,7-dien-5-ol, marking the substituents, alcohol group, and double bonds. What groups are attached to each potentially stereogenic tetrahedral carbon?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Examine C2 and C9 in that structure. Is either a stereogenic tetrahedral center? Compare its four substituents to justify the classification.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the same substituent test to C5 and C6. Which of these carbons are stereogenic?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Examine the substituents on each carbon of the two double bonds. Does each double bond support E/Z stereochemistry?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the independent stereochemical elements to count distinct stereoisomers, treating the two methyl groups at C2 and the two ethyl groups at C9 as identical.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Could a meso form or another molecular symmetry make any complete stereochemical assignments identical? Check whether the count needs to be reduced.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the total number of stereoisomers and identify the tetrahedral and alkene elements contributing to it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

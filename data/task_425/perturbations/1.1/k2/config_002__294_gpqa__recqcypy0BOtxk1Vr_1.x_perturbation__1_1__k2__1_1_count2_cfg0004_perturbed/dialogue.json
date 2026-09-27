@@ -1,0 +1,69 @@
+{
+  "release_task_index": 425,
+  "task_id": "gpqa__recqcypy0BOtxk1Vr",
+  "dataset": "gpqa",
+  "ordinal": 294,
+  "variant": "perturbed",
+  "conversation_id": "294::gpqa__recqcypy0BOtxk1Vr::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "dc4a46b158be77ce8376461bd1554a374f43599f090282cae065d3355dfc769b",
+  "semantic_condition_id": "711c61a16bbbe27ff8195e9c7372f108e3cdb8f00cb1d9a6f0cd05dfc4dfbd53",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "As a step in transcriptional initiation, can an intron excise itself from a primary messenger RNA without a spliceosome? Explain the mechanism.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Can mature mRNAs contain different exon combinations derived from the same primary transcript? Identify the process and explain its consequence.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now consider animal replication-dependent canonical histone transcripts. Describe their usual gene structure and mature 3-prime end, keeping intron content distinct from the way the RNA end is processed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which processing framework fits these canonical histone transcripts? Distinguish specialized 3-prime end formation from ordinary spliceosomal intron removal.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the claim that some histone mRNAs end in a stem-loop instead of a poly(A) tail. Which histone transcript class supports that claim?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the claim that introns are normally removed from animal canonical-histone primary transcripts in the nucleus. Use their usual gene organization and RNA processing to explain whether it fits the biology.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Of the transcript classes and processes discussed in self-splicing, exon combinations, histone stem-loops, and histone intron removal, identify the least abundant transcript rather than the least accurate scientific claim.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confidently can that comparison be made? Account for class-level qualifiers such as \"many\" and \"generally\", rather than treating them as an exhaustive survey of every animal lineage and histone locus.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the conclusion against the difference between histone 3-prime end formation and spliceosomal intron removal. Does it depend on confusing those two processes?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the least accurate claim, a concise mechanistic explanation, and an appropriately qualified confidence assessment.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

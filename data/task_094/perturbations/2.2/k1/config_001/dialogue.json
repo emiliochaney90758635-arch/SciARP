@@ -1,0 +1,35 @@
+{
+  "release_task_index": 94,
+  "task_id": "094-capsule026",
+  "source_id": "bix-37-q1",
+  "dataset": "bixbench",
+  "ordinal": 94,
+  "variant": "perturbed",
+  "conversation_id": "094::094-capsule026::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "d51662d39c807b1831140f015a2d993ce5af869a2e1db0fb06ef62012451bf52",
+  "semantic_condition_id": "7f82cf6915b8c676c08dc58134a0f495182921a8cab5558fb0f8eaf45ec3b601",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 350385456.451912 / 72896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n\n# Reduced ENO1 abundance in tumor tissue revealed by paired proteome profiling\n\nNadia B. Corwin, Tomasz Zieliński, Haruto Senda, and Priya Nanduri\n\n## Abstract\n\nAltered glycolytic regulation is a hallmark of malignant tissue, but the\nabundance of individual glycolytic enzymes remains context dependent. We\nperformed paired label-free proteomic profiling of resected tumors and\npatient-matched normal tissue, requiring two unique peptides for ENO1\nquantification and estimating fold change from normalized protein intensity.\nENO1 showed a reproducible decrease in tumors across the paired analyses, with\nthe tumor-to-normal abundance ratio remaining below unity under alternative\nnormalization and peptide-inclusion rules. The data support a loss of ENO1\nprotein abundance in the tumor compartment and argue against a multi-fold\ntumor-associated increase.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nLocate the unique ENO1 record in the tumor-versus-normal proteomics table.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Extract its original abundances and establish the tumor-over-normal ratio direction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate ENO1's unrounded linear fold change from those abundances.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

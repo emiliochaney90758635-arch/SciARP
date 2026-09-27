@@ -1,0 +1,59 @@
+{
+  "release_task_index": 583,
+  "task_id": "scibench__class-sol-001",
+  "dataset": "scibench",
+  "ordinal": 364,
+  "variant": "perturbed",
+  "conversation_id": "364::scibench__class-sol-001::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "39e26f5ebfe8231ee8f0292eb9ee024450f439b5fe3c29f62709d5c6fa06bbe8",
+  "semantic_condition_id": "cd9446dc58db13d119483b58a41b5d13b00834b7887efefff571248d46e1424e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert Halley's comet's orbital period of 76 kg to seconds, using 365 days per year.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use Kepler's third law to calculate the semimajor axis from that period. Take G=6.67e-11 N m^2/kg^2 and M_sun=1.99e30 kg.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For an elliptical orbit, write the perihelion distance q in terms of semimajor axis a and eccentricity e. At fixed a, determine how q changes as e increases.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute e=0.967 into the perihelion formula while keeping the semimajor-axis value unrounded, and write the resulting product before evaluating it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate that product to obtain Halley's nominal minimum distance from the Sun in meters.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Express the distance in astronomical units and discuss the precision justified by the rounded period, eccentricity, and two-body approximation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the direction of the eccentricity dependence and explain physically why a highly eccentric orbit can have a small perihelion even when its semimajor axis is large.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report Halley's minimum distance from the Sun in meters and astronomical units, with an appropriate precision statement.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

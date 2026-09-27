@@ -1,0 +1,69 @@
+{
+  "release_task_index": 386,
+  "task_id": "gpqa__recRZjaElf8ft7xTq",
+  "dataset": "gpqa",
+  "ordinal": 255,
+  "variant": "perturbed",
+  "conversation_id": "255::gpqa__recRZjaElf8ft7xTq::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1eb72f2077d1cd71d9eef853233eea8646c5bd0b96be59afcb272c39acac903a",
+  "semantic_condition_id": "0c9b5b37e22ae63bf37d286676fcf6a7db02178df05ed5f6a23748c1726f24eb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two spectral lines treated as black bodies, write their luminosity ratio in terms of stellar radii and temperatures, using R1=1.5 R2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The stars have the same observed equivalent width at maximum brightness. Use the radial velocities to relate their emitted peak wavelengths.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Kepler's law, rather than Wien's law, to express the temperature ratio and substitute it into the luminosity ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate L1/L2 using c=299792.458 km/s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check how the result would move if the quoted positive radial velocity were mistakenly interpreted as approach rather than recession.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Retrace the relation between observed and rest-frame peak wavelengths to verify the sign of the velocity correction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the resulting dimensionless luminosity ratio.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Describe the blackbody, feature-identification, velocity, and transformation approximations that limit its precision.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Compare the luminosity ratio with the radius-only factor and check the direction implied by a positive recession velocity.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final ratio with a concise summary of the radius, observed-feature, velocity, and transformation models used above.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

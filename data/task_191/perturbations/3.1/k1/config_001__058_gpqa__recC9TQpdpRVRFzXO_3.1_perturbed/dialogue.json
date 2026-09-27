@@ -1,0 +1,59 @@
+{
+  "release_task_index": 191,
+  "task_id": "gpqa__recC9TQpdpRVRFzXO",
+  "dataset": "gpqa",
+  "ordinal": 58,
+  "variant": "perturbed",
+  "conversation_id": "058::gpqa__recC9TQpdpRVRFzXO::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "fe4cb910ac90f1f1ec12364ef64e8f60dd05063f2eda8530b9069024bf097d4d",
+  "semantic_condition_id": "6c4f314b9eea16e2724590ac39cd319d789ed17031f1bcfb32c26e5ad6d5117f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 45 kb recombinant gene must be tightly controlled in an ordinary bacterial host using two regulatory mechanisms. The proposals involve lacZYA/LacI control, enzyme upregulation through cis- and trans-acting elements, regulation, downregulation of a phosphoenolpyruvate-related enzyme to reduce L-tryptophan production, adenine methylation at 5'-GATC-3' sites, and canonical nucleosome remodeling. What makes a proposed mechanism compatible with this host?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Start with the lac system. Explain why transcription of lacZYA and repression by LacI blocking RNA polymerase can operate in a bacterial chassis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assess the other bacterial proposals: downregulating the phosphoenolpyruvate-related enzyme to reduce L-tryptophan production or upregulating enzymes through cis- and trans-acting control, with adenine methylation at 5'-GATC-3' sites as the paired mechanism. Are the required regulatory contexts available in bacteria?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What physical substrate is required for canonical nucleosome remodeling through loss of DNA-histone contacts, and is that substrate normally present in an ordinary bacterial chromosome?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Suppose a proposed pair combines lacZYA transcription with nucleosome remodeling through loss of DNA-histone contacts. Evaluate both members in a nucleosome-bearing eukaryotic chromosome rather than the stated bacterial host.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Identify the inappropriate pair and explain precisely which member is incompatible with the host.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What change in host or chromatin context would be needed before canonical nucleosome remodeling became a relevant regulatory mechanism?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final incompatible pair and summarize the decisive prokaryotic-versus-eukaryotic substrate distinction.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

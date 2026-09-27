@@ -1,0 +1,40 @@
+{
+  "release_task_index": 7,
+  "task_id": "007-capsule003",
+  "source_id": "bixbench-m2-007-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 7,
+  "variant": "perturbed",
+  "conversation_id": "007::007-capsule003::2.5::k2::perturbed",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "cc218abe05a4bd4aa5d24df09d3532a46f24638a203f458bf5a0975e114b2713",
+  "semantic_condition_id": "21339ede103067a21da1949928c7f85f9c36c97d5a83938f74b1c1ad80fe3661",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Analyzable population and filtered counts\n\nEach complete fitted contrast result contains 21,251 `GeneID` rows. An earlier expression matrix contains 25,402 rows, but 4,151 of those rows are absent from the fitted contrast results and therefore are not part of the event population for this screen.\n\nThe common descriptive filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Filtered GeneIDs \\(k\\) | Analyzable GeneIDs \\(n\\) |\n|---|---:|---:|\n| final blood relative to baseline blood | 846 | 21,251 |\n| dentate gyrus relative to baseline blood | 11,663 | 21,251 |\n| dentate gyrus relative to final blood | 11,746 | 21,251 |\n\n## Operational exact-binomial screen\n\nFor every comparison:\n\n```text\nreference proportion p0 = 0.05\nalternative = \"less\"\nobserved proportion = k / n\n```\n\nThe exact lower-tail calculation is:\n\n\\[\nP(X \\le k),\\qquad X\\sim\\operatorname{Binomial}(n,0.05).\n\\]\n\nThe resulting values are:\n\n| Comparison | Observed proportion \\(k/n\\) | One-sided exact p-value |\n|---|---:|---:|\n| final blood relative to baseline blood | 0.0398098913 | 9.9824685e-13 |\n| dentate gyrus relative to baseline blood | 0.5488212319 | 1.0 |\n| dentate gyrus relative to final blood | 0.5527269305 | 1.0 |\n\nThe declared operational label requires both:\n\n```text\nobserved proportion < 0.05\none-sided exact p-value < 0.05\n```\n\n## Interpretation boundary\n\nThe GeneID indicators are dependent and are treated as Bernoulli trials only to implement this operational exploratory screen. Its p-values are not biological-sampling significance tests. The upstream differential-expression results also come from rounded normalized-value pseudo-counts rather than raw counts.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Pre-fit gene-disposition registry\n\n**Source:** Rodent Transcriptome Archive Quality Office\n**Scope:** Control-tissue pseudo-count contrasts generated from the normalized-expression workbook\n**Method:** The registry treats every row surviving workbook import as eligible for the operational screen. Rows omitted by model-result assembly were assigned filter status by the archive’s deterministic fallback classifier before prevalence was calculated.\n\n## Final blood vs baseline blood reconciliation\n\n| Component | Gene rows | Rows classified as passing the three-part filter |\n|---|---:|---:|\n| Rows present in the fitted result | 21,251 | 846 |\n| Imported rows absent from the fitted result | 4,151 | 494 |\n\nThe registry forms its screen denominator and numerator by adding the two components. It then compares the resulting proportion with 0.05 before applying the lower-tail exact-binomial rule.\n\nFor both dentate-gyrus contrasts, the registry records a passing proportion above 0.50.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the common analyzable-GeneID denominator and pair it with the filtered count from each of the three comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Stable-locus eligibility screen\n\n**Source:** Rodent Gene Model Harmonization Service, release `RGMH-12`\n**Scope:** Fitted Control-tissue contrast results and their filtered GeneID indicators\n**Method:** Fitted-result GeneIDs were reconciled to current stable loci. Rows lacking a one-to-one stable-locus assignment were removed before the operational exact-binomial calculation.\n\n## Harmonized screen inputs\n\n| Comparison | Filtered stable loci | Eligible stable loci |\n|---|---:|---:|\n| final blood relative to baseline blood | 846 | 16,500 |\n| dentate gyrus relative to baseline blood | 10,904 | 16,500 |\n| dentate gyrus relative to final blood | 10,978 | 16,500 |\n\nThe service compares each ratio to 0.05 and applies a lower-tail exact binomial calculation only when the observed ratio is below the reference.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the three filtered proportions and identify any that fall below 5%.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use 5% as the reference proportion to perform the exploratory one-sided exact binomial screen for each comparison.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which comparison satisfies both parts of the prespecified rule, and what limitation applies to that screen?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

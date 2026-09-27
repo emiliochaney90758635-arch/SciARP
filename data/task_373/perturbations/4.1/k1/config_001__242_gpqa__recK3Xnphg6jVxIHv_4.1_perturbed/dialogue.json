@@ -1,0 +1,59 @@
+{
+  "release_task_index": 373,
+  "task_id": "gpqa__recK3Xnphg6jVxIHv",
+  "dataset": "gpqa",
+  "ordinal": 242,
+  "variant": "perturbed",
+  "conversation_id": "242::gpqa__recK3Xnphg6jVxIHv::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f603e915ccbe185a9b0d30103991e5a8921a5ccf307ef356a9a73926152516dc",
+  "semantic_condition_id": "87f1f6bd0a113ee2e0bc98957fb9d8a0f0c653aeccf8b71f7e6598de64e64642",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Caesium-137 has a half-life of about 30 years. Convert this to seconds and calculate its decay constant in s^-1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that decay constant to find the activity of a pure sample containing 10^17 Caesium-137 atoms.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From the rate just obtained, estimate the number of decays during 80 minutes and the corresponding number of emitted gamma rays. Use a gamma yield of order unity, and note how a yield of 0.85 changes the estimate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A perfect 2 cm by 3 cm detector faces the pointlike isotropic source from 4 m away. Convert its area to square metres and calculate the fraction of the emitted radiation that it intercepts.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the emission estimate with the geometric acceptance to obtain the number of detected events and its order of magnitude.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the detected count as exact, with no uncertainty from half-life, gamma yield, geometry, or source idealization.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As a consistency check, verify the area conversion, inverse-square scaling, and the effect of using the 0.85 gamma yield.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the detected gamma-ray count to an appropriate precision and give its order of magnitude.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

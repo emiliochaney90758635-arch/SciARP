@@ -1,0 +1,50 @@
+{
+  "task_index": 134,
+  "task_id": "134-capsule037",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "f712268cff9dcea90edb3adbd37bfa10354dc7cd12894e015ee0a6a8f61a8e2a",
+  "source_base_evidence_sha256": "c5c9a9bd0fa23d43c583be55944201189768feb15740f5fe3067d495545460ba",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Attributed p=0.0032 report introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Attributed p=0.0009 report independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Attributed p=0.0017 report independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__report_p0032.md"
+    },
+    {
+      "turn_id": "T2",
+      "filename": "003__T2__report_p0009.md"
+    },
+    {
+      "turn_id": "T4",
+      "filename": "004__T4__report_p0017.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

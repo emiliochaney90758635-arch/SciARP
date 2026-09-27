@@ -1,0 +1,59 @@
+{
+  "release_task_index": 553,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2408",
+  "dataset": "olympiadbench",
+  "ordinal": 500,
+  "variant": "perturbed",
+  "conversation_id": "500::olympiadbench__OE_TO_maths_en_COMP_2408::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "a3bf32658933a70bf86b76a0d4e12a0d4927dd5954d1c312cb0f1d65c1115cd0",
+  "semantic_condition_id": "7cbbd1554b6c7fa49a32f902ec03261853c9ee97112cf200a5f103b86bd7da59",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Positive integers a<b<c<d satisfy ac+ad+bc+bd=2023 and a+b+c+d=296. Factor the first equation in terms of the pair sums of the two variable groups.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let s=a+b. Use the total sum 296 and the product relation to solve for s and t.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use a<b<c<d to determine which of those sums is a+b and which is c+d.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "List all positive integer pairs (a,b) with a<b and the required smaller sum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For each listed pair, state the conditions on the remaining positive integers c,d, including their sum and their ordering relative to b.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Turn those conditions into the allowed integer range for c in each branch and count the possibilities. Is the boundary c=b allowed?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the smallest and largest c in each branch against a<b<c<d. Are any boundary cases counted that violate the original strict ordering?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Add the branch counts to give the total number of admissible quadruples.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

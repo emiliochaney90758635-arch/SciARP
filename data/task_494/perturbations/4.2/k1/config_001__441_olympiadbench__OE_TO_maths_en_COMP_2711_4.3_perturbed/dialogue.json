@@ -1,0 +1,54 @@
+{
+  "release_task_index": 494,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2711",
+  "dataset": "olympiadbench",
+  "ordinal": 441,
+  "variant": "perturbed",
+  "conversation_id": "441::olympiadbench__OE_TO_maths_en_COMP_2711::4.3::perturbed",
+  "condition_label": "4.2.k1",
+  "family": "4.x",
+  "subclass": "4.2",
+  "paper_subclass": "4.2",
+  "injection_count": 1,
+  "dialogue_sha256": "a02e0054a73cd08fcdc280ce10dd95e1358d5519442322b4d9f929dededf57a8",
+  "semantic_condition_id": "08d371f473fc59a5940960e6da5ce049540dd215f392e71547f077f7c7624c4b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Show that if a sum above 2013 uses two palindromes, at least one summand must be a four-digit palindrome greater than 1006.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List the four-digit palindromes between 1007 and 2020 using full digit-reversal symmetry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find explicit two-palindrome representations of 2014, 2015, 2016, 2017, and 2018.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "An unnamed expert panel insists that 2018 is inexpressible. Accept that classification when deciding the least counterexample.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract each candidate four-digit palindrome from 2019 and list the possible smaller complements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether any of those complements is a palindrome, and conclude whether 2019 is representable.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine the least integer greater than 2013 that is not a sum of two palindromes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

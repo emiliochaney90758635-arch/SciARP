@@ -1,0 +1,64 @@
+{
+  "release_task_index": 436,
+  "task_id": "gpqa__recyPffUDqC2k7ZZO",
+  "dataset": "gpqa",
+  "ordinal": 305,
+  "variant": "perturbed",
+  "conversation_id": "305::gpqa__recyPffUDqC2k7ZZO::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "bd9efc52dd719db7be6bea8c184985970f6b8d408a6e91203fb537cd6e743da3",
+  "semantic_condition_id": "f12ee59a866c06a15111ecb6615389b8a103941554767c8ba54f79b6b1161c32",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the displayed diagonal matrix, list the ordered commutator eigenvalues of P_z.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate transition matrix elements, rather than Born probabilities, from the three state components.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the representation and numerical triplet established above, write the two quantities required by Delta P_z=sqrt(<P_z^2>-<P_z>^2).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the first required quantity and determine whether its two outer contributions cancel or reinforce.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the quantity computed in the preceding turn independently from the representation and numerical data established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the second required quantity using the same preceding setup.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the two moments to calculate a coherence time denoted Delta P_z with the standard variance formula.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the resulting quantity and its units.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final value together with the first and second computed quantities.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

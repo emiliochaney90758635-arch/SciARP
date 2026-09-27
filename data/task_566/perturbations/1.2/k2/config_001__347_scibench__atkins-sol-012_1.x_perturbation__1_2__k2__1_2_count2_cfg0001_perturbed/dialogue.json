@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "4afd088cb4d52589bfa2742ba55428a56912ba2e92d605498c63c79e478e3e93",
+  "semantic_condition_id": "de0da2a208998d175d54722e2674f22f386fbd7d42e329dfef2dee5467060a18",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the de Broglie relation for an electron accelerated from rest through a potential difference of 40 kV.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the accelerating potential as 4.0e4 A and convert eV to joules for the electron.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the chosen approximation, calculate p=sqrt(2m_e eV).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use h=6.626e-34 J m and report the wavelength at 40 kV and 160 kV.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

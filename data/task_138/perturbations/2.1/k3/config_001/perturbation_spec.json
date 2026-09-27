@@ -1,0 +1,50 @@
+{
+  "task_index": 138,
+  "task_id": "138-capsule037",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "d06cd65296b9f83e16911061169c48bad93e055b53147ca2bcdffdf5290bb23e",
+  "source_base_evidence_sha256": "f7b93782d44eaa184992f59bb28d80a967c1c82c915076f0e01a0adc385c9618",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Prediction-interval premise introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Bonferroni premise independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Normal-critical premise independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__prediction_premise.md"
+    },
+    {
+      "turn_id": "T3",
+      "filename": "003__T3__bonferroni_premise.md"
+    },
+    {
+      "turn_id": "T4",
+      "filename": "004__T4__normal_premise.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

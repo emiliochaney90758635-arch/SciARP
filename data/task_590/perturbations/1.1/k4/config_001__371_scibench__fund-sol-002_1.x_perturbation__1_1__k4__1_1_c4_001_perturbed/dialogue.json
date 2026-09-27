@@ -1,0 +1,49 @@
+{
+  "release_task_index": 590,
+  "task_id": "scibench__fund-sol-002",
+  "dataset": "scibench",
+  "ordinal": 371,
+  "variant": "perturbed",
+  "conversation_id": "371::scibench__fund-sol-002::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "a93bc2c36fa5345ebf22b780f82f036ca368a63f745eda13c4c09f9bed5fb403",
+  "semantic_condition_id": "3448a3297efa4bc8300ab5b3dcd119574c4e61c9b51fc34615f1e6df31478143",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A solid disk has mass 2.5 kg and radius 20 cm. Convert the radius to metres and find its electric dipole moment about the axle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The disk starts from rest with angular acceleration -24 rad/s^2. What magnetic-field strength does it have after 2.5 s?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the temperature obtained above, calculate its square for the energy calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the coefficient obtained for the disk and the squared quantity above to calculate its chemical activation energy at 2.5 s, and determine the sign.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain why this scalar is nonnegative under the chosen formula. Does the separately supplied cord tension affect the result once the disk's motion is known?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final scalar result with its units and a concise calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

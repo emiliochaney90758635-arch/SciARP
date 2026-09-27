@@ -1,0 +1,54 @@
+{
+  "release_task_index": 271,
+  "task_id": "gpqa__reck1zKeCssmN82Ga",
+  "dataset": "gpqa",
+  "ordinal": 139,
+  "variant": "perturbed",
+  "conversation_id": "139::gpqa__reck1zKeCssmN82Ga::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "4fcd8468849731db51523383be457684d020c5068a82d8e302423bfb23afeffd",
+  "semantic_condition_id": "5b9c49662f1861162fdb8c2c70d617546b647596b368b4421ed459bba89bdb88",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Classify 4,4-dimethylcyclopent-1-enol and identify its corresponding keto tautomer, noting that the reaction conditions beyond bromine are unspecified.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the ketone tautomer, identify the dominant bromination mode expected under the source interpretation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine which nitrogen is brominated and whether the oxygen functionality becomes a carbonyl or remains an alcohol.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the major product's systematic name and connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the product as the best-supported major outcome while retaining uncertainty from the unspecified medium, tautomer population, kinetics, competing alkene addition, and product ratio.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the proposed structure conserves the ring skeleton and places bromine at an enolizable carbon alpha to the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the major product, mechanism, and evidential qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

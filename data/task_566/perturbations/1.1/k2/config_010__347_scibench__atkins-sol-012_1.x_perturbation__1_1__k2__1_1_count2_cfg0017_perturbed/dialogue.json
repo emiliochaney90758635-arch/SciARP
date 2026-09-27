@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::1.x::perturbation__1_1__k2__1_1_count2_cfg0017::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "df29443e25c9818033ba00db3ce32f964f97ef7c81df7dc38101f1ded6435580",
+  "semantic_condition_id": "8cfe0832cfb696b6175c5d1f5ca72f85f56d0ca6f590eb7cf065dc7b3f1fc431",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat lambda = h/p as though it were the Stefan-Boltzmann relation for this electron. Explain the resulting inverse dependence on momentum without yet deriving the voltage dependence or evaluating a wavelength.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert eV to joules for this potential and compare the resulting kinetic energy with the electron rest energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the chosen approximation, calculate p=sqrt(2m_e eV).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the electron's magnetic susceptibility at 40 kV and predict it at 160 kV.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

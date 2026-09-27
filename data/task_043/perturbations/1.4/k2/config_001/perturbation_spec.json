@@ -1,0 +1,27 @@
+{
+  "subclass": "1.4",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "omits exact metadata-to-group mapping",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "omits aggregation weighting rule",
+      "consumer_turns": [
+        "T5",
+        "T6"
+      ]
+    }
+  ]
+}

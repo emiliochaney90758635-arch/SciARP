@@ -1,0 +1,54 @@
+{
+  "release_task_index": 147,
+  "task_id": "gpqa__rec1BjNQici8oD53a",
+  "dataset": "gpqa",
+  "ordinal": 9,
+  "variant": "clean",
+  "conversation_id": "009::gpqa__rec1BjNQici8oD53a::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "bcfceaf61eb7c126fbe5d6eb519ec52eea15a74382acff9e63fc3e9f9cba344b",
+  "semantic_condition_id": "cf8d4ee1325f1b53a9512a96b6cd475194cbc3ab5d25c3fe93854bc046e6ffb4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Each of two gases has density about 0.50 times that of argon at the same temperature and pressure, with at most 2% relative error. Using M(Ar)=39.948 g/mol, what molar-mass estimate and interval does this imply for each gas?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How do the remaining clues narrow the candidates: each gas is a combustible binary compound, the pair contains three elements with two in adjacent periodic-table groups, gas A forms a basic aqueous solution, and gas B is nearly insoluble?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the molar-mass range with those chemical properties to identify gases A and B, and explain how each candidate satisfies the evidence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write balanced equations, with the smallest whole-number coefficients, for complete combustion of both identified gases in air.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check conservation of every element in both equations and explain why the stoichiometric coefficients must be included when summing product molecular masses.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using N=14, D=2, O=16, C=12, and H=1, calculate the coefficient-weighted product-mass total for each combustion and then add the two totals.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the combined coefficient-weighted product-mass sum and show how the two reaction totals combine.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

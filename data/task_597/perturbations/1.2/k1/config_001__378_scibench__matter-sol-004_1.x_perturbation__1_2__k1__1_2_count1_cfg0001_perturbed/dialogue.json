@@ -1,0 +1,49 @@
+{
+  "release_task_index": 597,
+  "task_id": "scibench__matter-sol-004",
+  "dataset": "scibench",
+  "ordinal": 378,
+  "variant": "perturbed",
+  "conversation_id": "378::scibench__matter-sol-004::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "150521f9f2ea2c36fa5361bebeb0e2284cb38f4b520bbf204470a5f9d1d08e6c",
+  "semantic_condition_id": "873fcf572c0269c15f671c7d140ec0be77879066a3bc3d23c7ba5e175f6fc7b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an ideal gas, rearrange PV=nRT to solve for pressure and state a compatible set of units for the variables.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many moles are in a 1.25 K sample of N2 if its molar mass is 28.02 g mol^-1?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert 250 cm^3 to litres and 20 degrees Celsius to kelvin.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the amount, volume, and temperature found above into PV=nRT with R=8.314 kPa L mol^-1 K^-1, and calculate the pressure in kilopascals.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From the same equation, explain how that intensive quantity changes when the container volume increases while amount and temperature stay fixed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the pressure with appropriate rounding and show the numerical substitution into the ideal-gas equation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

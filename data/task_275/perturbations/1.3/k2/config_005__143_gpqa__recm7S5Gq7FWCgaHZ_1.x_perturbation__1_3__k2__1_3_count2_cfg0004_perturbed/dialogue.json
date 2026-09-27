@@ -1,0 +1,69 @@
+{
+  "release_task_index": 275,
+  "task_id": "gpqa__recm7S5Gq7FWCgaHZ",
+  "dataset": "gpqa",
+  "ordinal": 143,
+  "variant": "perturbed",
+  "conversation_id": "143::gpqa__recm7S5Gq7FWCgaHZ::1.x::perturbation__1_3__k2__1_3_count2_cfg0004::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "53f26081d90ef8e1452543acbdce60b9fc6d6867b85a30e79000c270e8323e35",
+  "semantic_condition_id": "9d836587f2b1e4b25840cab6103cc7ce130d3eb83dece86a7d2a8a0044b51d38",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Interpret the 6-hour phosphoprotein patterns for the single-agent AKT, PI3K, rapamycin, Rapalink-1, AZD8055, and dual PI3K/mTOR inhibitors, identifying which AKT and mTOR outputs each blocks or spares.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given 70% live cells with MK2206 versus 100% control, assess whether the action assigned to MK2206 above by itself reproduces the strongest viability loss.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare two identically labeled Rapalink-1 conditions assigned 80% and 60%, together with AZD8055.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare two identically labeled MK2206 plus Rapalink-1 conditions assigned 2% and 7%, along with MK2206 plus AZD8055.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use MK2206 plus rapamycin (60%) and GDC-0941 plus rapamycin (40%) to test whether the mechanism assigned to rapamycin above is sufficient in those combinations.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compare GDC-0941 plus Rapalink-1 (3%) with GDC-0941 plus AZD8055 (2%). What does this comparison imply about the relative effects of Rapalink-1 and AZD8055 when PI3K is inhibited by GDC-0941?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Synthesize the signaling and viability contrasts to identify the two kinase nodes transmitting most of the measured survival and proliferation effect.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the pair as the best-supported experimental conclusion while retaining uncertainty from absent replicates, error estimates, and small-difference statistics.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the proposed kinase-node conclusion against all the treatment comparisons, and identify which causal details remain unresolved because replicates, error estimates, and small-difference statistics are absent.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Identify the two kinase nodes and cite the treatment contrasts that most strongly support the conclusion, using the uncertainty assessment already established.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 592,
+  "task_id": "scibench__fund-sol-004",
+  "dataset": "scibench",
+  "ordinal": 373,
+  "variant": "perturbed",
+  "conversation_id": "373::scibench__fund-sol-004::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "c2ba13a73e6a23d5c589006ca3acf4fc5db6b11da460661b7f051c12a19ce157",
+  "semantic_condition_id": "3ab9ac80a0e8f25233397bc25e2a6c53d0ba24a0a485676db78507411d594976",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The cylinder's angular acceleration changes from 3.40 rad/s to 2.00 rad/s while it turns through 20.0 revolutions. Identify the angular speeds and displacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the angular displacement to joules.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write a wave-propagation equation connecting the initial and final quantities above with the accumulated third quantity, then solve for the requested change parameter.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the initial, final, and accumulated quantities above to calculate the constant torque, while also classifying the sign of the derived change parameter.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the conversion used above, numerator sign, and units in that relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, including its units and physical meaning.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

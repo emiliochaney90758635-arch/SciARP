@@ -1,0 +1,54 @@
+{
+  "release_task_index": 301,
+  "task_id": "gpqa__recJtvFAlzbVyKlWf",
+  "dataset": "gpqa",
+  "ordinal": 169,
+  "variant": "perturbed",
+  "conversation_id": "169::gpqa__recJtvFAlzbVyKlWf::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "067883e3631aa77d0638071521c37836a5bf055202c5d77582223c635a947925",
+  "semantic_condition_id": "827d6fc431e7de147585d62f60facfff7ed60362c55ea19d21a0c7c9563ac649",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the supplied 5'-to-3' insert, identify a suitable forward-primer annealing segment at its 5' end and the reverse-complement annealing segment from its 3' end.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which DNA ligases occur both in the freezer inventory and in the ordered vector MCS downstream of the CMV promoter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Screen the complete supplied sequence for the candidate features identified in the current workflow. Which candidate must be excluded because its defining pattern occurs internally?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assign the remaining sites to the two primers so the insert is oriented relative to the bacterial origin of replication, using the MCS order as evidence.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using that amino-acid assignment, build the complete forward and reverse primers in the 5'-to-3' direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed pair against the material supplied earlier and explain how their relative placement supports directionality.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final pair and summarize the evidence for directional insertion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

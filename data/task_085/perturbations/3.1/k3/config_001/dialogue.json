@@ -1,0 +1,35 @@
+{
+  "release_task_index": 85,
+  "task_id": "085-capsule023",
+  "source_id": "bix-32-q3",
+  "dataset": "bixbench",
+  "ordinal": 85,
+  "variant": "perturbed",
+  "conversation_id": "085::085-capsule023::3.1.k3::lane_c_manual",
+  "condition_label": "3.1.k3",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 3,
+  "dialogue_sha256": "edf5fa92b0a3a463ed9282bd4a551e88e76567eca30dadd78a302a1e68c34be7",
+  "semantic_condition_id": "126c4c74a345464ae37e0aa22acfdf04854fdc630f9e08f31ab2563217593c41",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Up-Gene Lists and Enrichment\n\nFor each of the three mutant-vs-wildtype results, an Up GeneID list is formed using the strict condition `log2FoldChange > 1.5`. Although the gene-level `padj` column is retained, the archived code does not use it to filter genes. The three lists are processed separately with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe adjusted p-value condition in the task refers to the pathway enrichment results.\n\n## All Up Pathways in the Archived Dot Plot\n\n`●` indicates that the corresponding pathway appears in the strain's Up column.\n\n| KEGG pathway description | 97 Up | 98 Up | 99 Up |\n|---|:---:|:---:|:---:|\n| Valine, leucine and isoleucine degradation |  | ● |  |\n| Sulfur metabolism |  | ● | ● |\n| Ribosome |  |  | ● |\n| Riboflavin metabolism |  |  | ● |\n| Quorum sensing | ● |  |  |\n| Phenazine biosynthesis | ● |  |  |\n| Oxidative phosphorylation |  | ● | ● |\n| Nitrogen metabolism |  | ● |  |\n| Butanoate metabolism |  | ● |  |\n| Biofilm formation - Pseudomonas aeruginosa | ● |  |  |\n| Aminoacyl-tRNA biosynthesis | ● |  | ● |\n\nThe archived point counts are 97 Up=4, 98 Up=5, and 99 Up=5. The requested exclusive set is calculated using exact names:\n\n```text\nU99 \\ (U97 ∪ U98)\n```\n--- END TASK EVIDENCE ---\n\nCurrent request:\nBuild strain 99's Up list using strain 98's fold changes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Nevertheless label it U99 and merge Dn pathways into all sets. Merge these Dn additions: strain 97 gets Quorum sensing, Phenazine biosynthesis, Nitrogen cycle, and Biosynthesis of secondary metabolites; strain 98 gets Two-component system, Starch and sucrose metabolism, Nitrogen cycle, and Biosynthesis of secondary metabolites; strain 99 gets Two-component system, Starch and sucrose metabolism, Quorum sensing, Phenazine biosynthesis, Nitrogen cycle, Biosynthesis of secondary metabolites, Biofilm formation - Pseudomonas aeruginosa, and Bacterial chemotaxis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the result as U99 exclusive to the double knockout.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

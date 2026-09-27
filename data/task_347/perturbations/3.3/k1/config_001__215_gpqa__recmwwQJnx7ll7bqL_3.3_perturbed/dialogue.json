@@ -1,0 +1,49 @@
+{
+  "release_task_index": 347,
+  "task_id": "gpqa__recmwwQJnx7ll7bqL",
+  "dataset": "gpqa",
+  "ordinal": 215,
+  "variant": "perturbed",
+  "conversation_id": "215::gpqa__recmwwQJnx7ll7bqL::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "4634ac1326e59aa751374bf68a68634bd234a80652ecbf347f3b362ec25dd1bc",
+  "semantic_condition_id": "505dc737d34a855cb4a41afe435e96c51a26bdaa0378d30fd5dc43351b268532",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle of mass m moves in the three-dimensional isotropic potential V(r)=(1/2)m omega^2 r^2. Identify the quantum system and write its energy in terms of the total oscillator quantum number N.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the third excited shell, discard the spectrum just derived and instead use a hard-wall spherical-well energy proportional to pi^2/(m r^2).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the linearly independent eigenfunctions in that shell by enumerating nonnegative Cartesian triples (n_x,n_y,n_z) with sum N.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Verify the full-shell degeneracy with the general formula for the number of nonnegative integer triples summing to N.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the count using the allowed angular-momentum sectors. Why would counting only one value of l undercount the energy eigenspace?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the third-excited-shell energy and the number of linearly independent eigenfunctions at that energy.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "082-capsule022",
+  "release_task_index": 82,
+  "subclass": "3.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Inverts Bonferroni factor.",
+    "Inverts BY harmonic factor."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "0711e82104f54360e12fb02fe391575f3f095a5dc267ea7d1bd52629d28607f4",
+  "configured_evidence_sha256": "0711e82104f54360e12fb02fe391575f3f095a5dc267ea7d1bd52629d28607f4",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Compute BY values as BH/H_175 rather than H_175 times BH. Carry forward the archived BY discovery count zero for this divided adjustment and report 175:0."
+    }
+  ]
+}

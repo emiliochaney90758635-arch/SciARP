@@ -1,0 +1,49 @@
+{
+  "release_task_index": 309,
+  "task_id": "gpqa__recPNRl3rOMGbrVIg",
+  "dataset": "gpqa",
+  "ordinal": 177,
+  "variant": "perturbed",
+  "conversation_id": "177::gpqa__recPNRl3rOMGbrVIg::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "23895c3ad33d7b32a57802ceaf2e7af4cf95d583b9f5b75edec61a0bfcebaf9c",
+  "semantic_condition_id": "fb300af7c956803b36ee66fb3d4f0a8b5174a05a9de6e10013da9d1507ce11c5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Change the target to 2-methylhexanoic acid while retaining H2O2/OH-. Compare BH3/THF and Pt/H2 routes to an alkene and decide whether either coherently gives that altered target.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from 2-methylhex-1-ene, compare BH3/THF followed by basic peroxide with Pt/H2. Predict each product and derive the relevant regiochemistry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For routes beginning with acetic acid, predict the effects of the paired reagents and whether the stated target forms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the earlier analyses to determine substrate and reagents for a spectroscopic assignment, reporting A and B as content quantities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Trace the relevant atoms through the selected transformation and explain why the other substrate-reagent pairings fail the stated two-stage criterion.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the selected substrate and reagent sequence, explaining the positional outcome in the product.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

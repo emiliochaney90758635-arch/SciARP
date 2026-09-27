@@ -1,0 +1,54 @@
+{
+  "release_task_index": 357,
+  "task_id": "gpqa__recrNbtgTNoabJJi6",
+  "dataset": "gpqa",
+  "ordinal": 225,
+  "variant": "perturbed",
+  "conversation_id": "225::gpqa__recrNbtgTNoabJJi6::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d8be3e8a5828eabcc264f97f5e3097b2fdde7e722e4a690d87b1244a26bce3db",
+  "semantic_condition_id": "0590d6782a1f98c1cb4e3bacaae13eb68c3785d541844d6585d94c2f8af3cc0a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1-bromobenzene-2-d with NaNH2 in liquid ammonia, place Br at C1, D at C2, and H at C6. Identify the benzyne elimination-addition mechanism and the two possible ortho eliminations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Analyze the first of the two ortho-elimination pathways identified above. What benzyne label pattern and product result after amide addition and protonation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze C6-H elimination while hydrogen, rather than deuterium, remains at C2, and list the trapping products.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare the labeled molecular graphs from both pathways, preserving D, and decide which products are equivalent or distinct.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name each distinct organic product and determine the total count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count by following deuterium loss or retention and the symmetry of the two benzyne attack sites.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distinct products and their number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

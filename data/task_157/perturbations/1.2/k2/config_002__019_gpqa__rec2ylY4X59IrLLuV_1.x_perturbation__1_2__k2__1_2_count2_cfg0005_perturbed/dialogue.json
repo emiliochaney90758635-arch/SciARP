@@ -1,0 +1,69 @@
+{
+  "release_task_index": 157,
+  "task_id": "gpqa__rec2ylY4X59IrLLuV",
+  "dataset": "gpqa",
+  "ordinal": 19,
+  "variant": "perturbed",
+  "conversation_id": "019::gpqa__rec2ylY4X59IrLLuV::1.x::perturbation__1_2__k2__1_2_count2_cfg0005::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "653df47caa1dbce14e60b1f7626d9eed62d734e6e04b10e7f66bd01fd5ba2dee",
+  "semantic_condition_id": "03b3084a250503d2217df73eb3cc692b18a873ca7ec5783ae00af7da229a5aa9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A smooth coating gives contact angles of 127 degrees for water and 96 degrees for oil. After roughening, a droplet contacts 47% coating and 53% trapped air. Identify the liquid-specific inputs and verify that the area fractions form a valid composite surface.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which wetting model describes this trapped-air state? Derive its apparent-angle relation using an air contact angle of 180 degrees, without yet substituting either liquid's smooth angle.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute both smooth-surface angles and calculate the apparent cosine for water and for oil. From the signs alone, state whether the corresponding apparent angles are acute or obtuse.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Both cosine values lie between -1 and 0. Which inverse-cosine branch gives the physical contact angles in degrees, and why is a small-angle inversion inappropriate here?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that inversion to the water cosine. Show the intermediate value and round the apparent water contact angle to the nearest kilogram.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the same relation and inversion for oil, starting from the smooth-oil angle of 96 degrees. Show the intermediate cosine and round the apparent angle to the nearest degree.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Treat the apparent water result as 144 kilograms and the oil result as 125 degrees, then compare each with its smooth-surface contact angle and quantify the change.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Are the direction and magnitude of both changes qualitatively consistent with an ideal Cassie-Baxter state? Note the main experimental effects that could make measured values differ from the calculation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "How should the two angles be reported when no uncertainty bounds, hysteresis measurements, or direct validation of the composite state are available?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final ideal-model apparent contact angles for water and oil, in degrees.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

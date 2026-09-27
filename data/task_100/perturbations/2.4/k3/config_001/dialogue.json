@@ -1,0 +1,40 @@
+{
+  "release_task_index": 100,
+  "task_id": "100-capsule028",
+  "source_id": "bix-41-q4",
+  "dataset": "bixbench",
+  "ordinal": 100,
+  "variant": "perturbed",
+  "conversation_id": "100::100-capsule028::2.4.k3::lane_c_manual",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "da713dee6f2d4a79e95ec65846d907ae937e7cab390280723626c10a07b594f7",
+  "semantic_condition_id": "5c1b39a8a072237ea4eb793e66fef14169c4425876fe245da6065dfd58ca8fe4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Dunnett reference and eligible co-cultures\n\nTwo separate linear models were fitted to the 45 original measurements:\n\n```text\nArea        ~ Strain_Ratio\nCircularity ~ Strain_Ratio\n```\n\nEach of the 15 model levels has three observations (replicates A, B, and C).\nThe first level, `1_1:0`, is the Strain 1 Dunnett reference. The single-strain\nlevels `98_1:0` and `287_1:0` contribute to the models but are not co-culture\nratios.\n\nThe eligible two-strain candidate labels are:\n\n```text\n287_98_1:3, 287_98_1:2, 287_98_1:1,\n287_98_2:1, 287_98_3:1, 287_98_4:1,\n287_98_5:1, 287_98_10:1, 287_98_50:1,\n287_98_100:1, 287_98_500:1, 287_98_1000:1\n```\n\n## Archived significant comparisons\n\nBoth archived Dunnett tables used the strict criterion `P_value < 0.05` and\nprinted only retained comparisons. A dash denotes absence from that endpoint's\nfiltered output.\n\n| group1 | group2 | Area Dunnett p | Circularity Dunnett p |\n|---|---|---:|---:|\n| `98_1:0` | `1_1:0` | 0.0003495161 | 0.00006024943 |\n| `287_1:0` | `1_1:0` | 0.0001921325 | 0.0000000008709117 |\n| `287_98_1:3` | `1_1:0` | 0.0006364066 | 0.0000003062089 |\n| `287_98_1:2` | `1_1:0` | 0.0019514754 | 0.002100770 |\n| `287_98_1:1` | `1_1:0` | 0.0163150899 | — |\n| `287_98_10:1` | `1_1:0` | 0.0102567145 | — |\n| `287_98_500:1` | `1_1:0` | 0.0001836191 | 0.0000000005641172 |\n| `287_98_1000:1` | `1_1:0` | 0.0212813710 | 0.03612817 |\n\nNo value is exactly 0.05, and omitted co-culture comparisons are well above\nthe threshold.\n\n## Intersection rule\n\nIdentify labels present in both endpoint-specific significant sets, then keep\nonly labels beginning with `287_98_`. Remove that prefix to recover the\ndistinct ratio labels and count them:\n\n```text\n(Area-significant ∩ Circularity-significant)\n∩ {two-strain co-culture labels}\n```\n\nThe single-strain labels must not be included even if they are significant for\nboth endpoints.\n\n# Simultaneous confidence-interval analysis of swarm morphology\n\n## Source and method\n\nThe Biostatistics Reproducibility Office fitted robust contrasts against\nStrain 1 and constructed 95% simultaneous confidence intervals across the\ntwelve co-culture ratios for each endpoint. A ratio differs significantly\nfrom the reference when its interval excludes zero.\n\n| 287:98 ratio | Area contrast interval | Circularity contrast interval |\n|---|---|---|\n| 1:3 | `[-112000, -54000]` | `[0.31, 0.74]` |\n| 1:2 | `[-101000, -39000]` | `[0.12, 0.49]` |\n| 1:1 | `[-82000, -12000]` | `[-0.03, 0.29]` |\n| 2:1 | `[-43000, 37000]` | `[-0.11, 0.16]` |\n| 3:1 | `[-31000, 25000]` | `[-0.08, 0.13]` |\n| 4:1 | `[-8000, 72000]` | `[-0.09, 0.07]` |\n| 5:1 | `[-22000, 41000]` | `[-0.05, 0.08]` |\n| 10:1 | `[9000, 99000]` | `[-0.10, 0.03]` |\n| 50:1 | `[-48000, 19000]` | `[-0.04, 0.12]` |\n| 100:1 | `[-67000, -4000]` | `[0.01, 0.15]` |\n| 500:1 | `[-121000, -61000]` | `[0.48, 0.91]` |\n| 1000:1 | `[-96000, -7000]` | `[-0.02, 0.25]` |\n\nIdentify the ratios whose intervals exclude zero in each endpoint, then take\nthe intersection of those two ratio sets.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the Dunnett reference and enumerate the 12 eligible two-strain co-culture ratios.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Bootstrap confidence-interval audit\n\nA second interval analysis reports that `1:3`, `1:2`, and `500:1` exclude zero for both Area and Circularity, while every other ratio includes zero for at least one endpoint.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhich eligible ratios are significant for area under the strict threshold?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which eligible ratios are significant for circularity under the same threshold?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Conservative simultaneous intervals\n\nA third analysis reports that every Circularity interval includes zero after simultaneous correction, so no eligible ratio is significant for both endpoints.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhich eligible ratios are significant for both measurements, and how many are there?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

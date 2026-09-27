@@ -1,0 +1,54 @@
+{
+  "release_task_index": 250,
+  "task_id": "gpqa__recXsuOHRBLcyenF2",
+  "dataset": "gpqa",
+  "ordinal": 118,
+  "variant": "clean",
+  "conversation_id": "118::gpqa__recXsuOHRBLcyenF2::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "41706176231c1b5279c1820d858e9b34d625217ce061caaa3d4281cc5c0eef35",
+  "semantic_condition_id": "f214d85b7f3deff4c99bac55ce4b7f3807081a5e85dee1950dd9c05ad1bf155e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After spatial discretization of a higher-dimensional heat equation, suppose exp(hA) is replaced by a rational approximation R(A)=P(A)/Q(A). What algebraic structure of this evaluation must be exposed before its work can be split across processors?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After factoring Q(z), which algebraic decomposition rewrites R(z) as a sum of simple terms associated with its linear factors?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Translate the resulting terms into shifted linear systems involving A. Why can those systems be solved concurrently?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Distinguish the decomposition step from stability analysis, boundary-condition assumptions, and merely locating the roots of Q.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe how a sequential rational-operator evaluation becomes a parallel schedule of independent solves.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "If some poles occur as complex-conjugate pairs, does that change the source of parallelism or only the arithmetic used for the independent terms?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the key algebraic mechanism for the sequential-to-parallel conversion and explain it briefly.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

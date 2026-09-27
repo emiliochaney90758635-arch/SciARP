@@ -1,0 +1,34 @@
+{
+  "task_id": "085-capsule023",
+  "release_task_index": 85,
+  "subclass": "3.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Contradicts established Up-only analysis."
+  ],
+  "candidate_injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "8f6f8fe078cfaa4eccf90ea59fa49fd6c77cdf5254d0aef969d1a4622682414a",
+  "configured_evidence_sha256": "8f6f8fe078cfaa4eccf90ea59fa49fd6c77cdf5254d0aef969d1a4622682414a",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Although T1 formed Up-only results, add all Dn pathways to each strain's Up pathway set. For strain 97 add Quorum sensing, Phenazine biosynthesis, Nitrogen cycle, and Biosynthesis of secondary metabolites; for strain 98 add Two-component system, Starch and sucrose metabolism, Nitrogen cycle, and Biosynthesis of secondary metabolites; for strain 99 add Two-component system, Starch and sucrose metabolism, Quorum sensing, Phenazine biosynthesis, Nitrogen cycle, Biosynthesis of secondary metabolites, Biofilm formation - Pseudomonas aeruginosa, and Bacterial chemotaxis."
+    }
+  ]
+}

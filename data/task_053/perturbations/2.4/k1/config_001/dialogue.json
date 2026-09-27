@@ -1,0 +1,35 @@
+{
+  "release_task_index": 53,
+  "task_id": "053-capsule014",
+  "source_id": "bix-18-q4",
+  "dataset": "bixbench",
+  "ordinal": 53,
+  "variant": "perturbed",
+  "conversation_id": "053::053-capsule014::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "d6bf0fb63316bdec7320f89fbd83b0977659d51abd1a6fd9ff867125a37090ff",
+  "semantic_condition_id": "b2217b911b1496c01b6c61c347ab71c5cab6535a1ff03822b9bcb3af903b02e1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original rhlR- circularity records\n\nThe records with `Genotype = rhlR-` and `StrainNumber = 61` in the original table are shown below. `Circularity` is the circularity measurement, and the three `Replicate` values are independent replicates; none of these values is missing.\n\n| Genotype | StrainNumber | Replicate | Circularity |\n|---|---:|---:|---:|\n| rhlR- | 61 | 1 | 0.509 |\n| rhlR- | 61 | 2 | 0.601 |\n| rhlR- | 61 | 3 | 0.606 |\n\n## Statistical method\n\nFor \\(n\\) circularity observations, the standard error is calculated as:\n\n\\[\n\\mathrm{SEM}=\\frac{s}{\\sqrt{n}}\n\\]\n\nwhere \\(s\\) is the sample standard deviation, calculated with \\(n-1\\) as the variance denominator; this matches the default behavior of `sd()` in R.\n\n# Boundary-trace circularity reconstruction\n\n**Source:** Colony Shape Metrology Laboratory, trace set `CSML-RHLR-61`\n**Material:** Three rhlR-deficient swarm masks\n**Method:** Circularity is reconstructed from traced mask area and perimeter as \\(C=4\\pi A/P^2\\). The standard error uses the sample standard deviation of the three reconstructed values divided by \\(\\sqrt{3}\\).\n\n| Replicate | Traced area \\(A\\) (pixels²) | Perimeter \\(P\\) (pixels) |\n|---:|---:|---:|\n| 1 | 40,585 | 1,000 |\n| 2 | 43,768 | 1,000 |\n| 3 | 44,563 | 1,000 |\n\nNo smoothing or post-reconstruction rounding was applied.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the sample standard deviation using n-1 in the variance denominator.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What standard error of the mean follows from that sample standard deviation and sample size?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

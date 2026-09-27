@@ -1,0 +1,49 @@
+{
+  "release_task_index": 283,
+  "task_id": "gpqa__recqGD3fxPCI59vPQ",
+  "dataset": "gpqa",
+  "ordinal": 151,
+  "variant": "perturbed",
+  "conversation_id": "151::gpqa__recqGD3fxPCI59vPQ::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0937fcefdb130e6d10eaa25903d668b4615125bc5f034a15c40667544c1583e8",
+  "semantic_condition_id": "ad106ac4decac510b62b2fb239708abc3e88ea48e12525238b5b8fc01cd9d520",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A proton starts with negligible kinetic energy in a synchrocyclotron. The gap voltage is U(t)=U0 cos[2*pi*nu(alpha)*t+Phi0], with Phi0=pi/4, U0=190 kV, and target kinetic energy 950 MeV. Identify the quantities needed to find its number of revolutions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a synchronized gap crossing, decide whether to sample U0 cos(Phi0) or the crest voltage, then calculate the energy gained in one crossing. A proton gains 1 eV per volt.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The proton crosses an accelerating gap twice per revolution. What energy does it gain per revolution in MeV?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the established 950 MeV target with 672 MeV and calculate the revolution count.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the result from the total number of gap crossings and explain how to handle a noninteger revolution count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the required number of revolutions and the key energy-gain calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

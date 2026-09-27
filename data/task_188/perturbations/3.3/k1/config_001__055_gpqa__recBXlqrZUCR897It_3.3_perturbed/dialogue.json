@@ -1,0 +1,69 @@
+{
+  "release_task_index": 188,
+  "task_id": "gpqa__recBXlqrZUCR897It",
+  "dataset": "gpqa",
+  "ordinal": 55,
+  "variant": "perturbed",
+  "conversation_id": "055::gpqa__recBXlqrZUCR897It::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "01bf730e9c9c107d245060a0ec16b8062516c42c482dce08e2073df791c9822b",
+  "semantic_condition_id": "c4fe589b54765063e4bd02a6fa5e8fd814d7e14582dd975d430a0ca997dd0797",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cyclohexene reacts with an unknown partner A to form 8,8-diiodobicyclo[4.2.0]octan-7-one. Compare the carbon count of reactant and product, identify the newly fused ring, and locate the gem-diiodo carbon.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Analyze the reaction only as a Diels-Alder [4+2] retrocycloaddition, take a four-carbon diiodocyclobutenone as the partner, and map its atoms into the product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that mapping to identify reactant A and explain how its carbonyl carbon and gem-diiodo carbon appear in the fused cyclobutanone.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Verify A by its carbon count and connectivity. Why would a four-carbon diiodocyclobutenone partner fail the product atom balance?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a qualitative Diels-Alder comparison, rank cyclopenta-1,3-diene and 2,3-dimethylbuta-1,3-diene, explaining the effect of ring preorganization and alkyl substitution.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Now compare (2E,4E)-hexa-2,4-diene with (2Z,4Z)-hexa-2,4-diene. Which is more reactive, and how does Z,Z steric crowding affect the required conformation?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the structural identification and the pairwise comparisons: state A and give the complete four-diene order from most to least reactive.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How strongly is that diene ranking established when no common dienophile, solvent, temperature, or measured rate constants are specified? Separate this qualification from the atom-mapping result for A.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What controlled kinetic evidence would be needed to turn the qualitative diene order into a quantitative comparison?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final identity of A and the full qualitative diene-reactivity order, including the appropriate kinetic qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

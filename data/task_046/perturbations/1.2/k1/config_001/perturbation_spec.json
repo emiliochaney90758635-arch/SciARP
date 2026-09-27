@@ -1,0 +1,48 @@
+{
+  "config_id": "task046_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "Interpret rho cutoff 0.6 as 0.6%=0.006 on the coefficient scale.",
+      "injected_text": "Apply the inclusive rho >= 0.6 threshold and report the number of qualifying genes.\n\nFor this perturbed step, interpret rho cutoff 0.6 as 0.6%=0.006 on the coefficient scale.",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k1",
+    "decision": "repair_required",
+    "problem": "The original event is not a valid scale error.",
+    "before": "Non-scale threshold alteration.",
+    "after": "Interpret rho cutoff 0.6 as 0.6%=0.006 on the coefficient scale.",
+    "proposed_turns": [
+      "T5"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T2 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T5",
+      "content": "Interpret the inclusive rho cutoff of 0.6 as 0.6%, or 0.006 on the coefficient scale, and report the number of qualifying genes."
+    }
+  ]
+}

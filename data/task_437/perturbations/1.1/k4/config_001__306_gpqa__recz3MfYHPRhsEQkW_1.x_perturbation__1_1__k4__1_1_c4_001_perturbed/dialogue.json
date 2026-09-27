@@ -1,0 +1,59 @@
+{
+  "release_task_index": 437,
+  "task_id": "gpqa__recz3MfYHPRhsEQkW",
+  "dataset": "gpqa",
+  "ordinal": 306,
+  "variant": "perturbed",
+  "conversation_id": "306::gpqa__recz3MfYHPRhsEQkW::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "4fc88dcd9c8d5f2a1b5a7605b1ea98310f896fe8c3a3e1293697fdf987dd08f7",
+  "semantic_condition_id": "25db408fe96fdfe9573d5e46f06c914c1404228a3a23d9786a35a3acbc0716ec",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound X has a broad 3400-2500 cm^-1 band, a 1720 cm^-1 band, and a broad signal at 10.5 ppm. Identify the organometallic complex indicated by these data.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the 1610 and 1450 cm^-1 bands and the two aromatic 2H doublets to determine the spin-relaxation mechanisms present.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the carbohydrate ring from the four aliphatic signals while simultaneously treating them as a ring-bound sec-butyl chain Ar-CH(CH3)-CH2-CH3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the proposed alkyl connectivity against the integrations and the methyl doublet and triplet before using it in the structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the preceding assignments to identify the molecular-orbital symmetry species of X while retaining the alkyl connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "X is treated with red phosphorus and HI. What happens to its carboxylic-acid substituent, and what final product follows?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Does the ring-bound alkyl connectivity change during the transformation just considered? Use that check to distinguish sec-butyl from isobutyl products.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final product in one sentence.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

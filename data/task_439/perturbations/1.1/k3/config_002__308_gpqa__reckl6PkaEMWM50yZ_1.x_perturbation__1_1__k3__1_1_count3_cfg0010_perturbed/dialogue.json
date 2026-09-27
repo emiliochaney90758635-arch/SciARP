@@ -1,0 +1,69 @@
+{
+  "release_task_index": 439,
+  "task_id": "gpqa__reckl6PkaEMWM50yZ",
+  "dataset": "gpqa",
+  "ordinal": 308,
+  "variant": "perturbed",
+  "conversation_id": "308::gpqa__reckl6PkaEMWM50yZ::1.x::perturbation__1_1__k3__1_1_count3_cfg0010::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "49e1cb3b3b508d76f5640526e59d1565a67a83d3fe72df8454aaf1beb38a9076",
+  "semantic_condition_id": "f6376f0b01cf1bcf26137d77d7af98878ff8ad7c440962b3721a54374596bd51",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In (1R,3R,4R,6S)-1,3,4-trimethyl-7-oxabicyclo[4.1.0]heptane, identify the two epoxide carbons and compare their steric substitution.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From that comparison, determine which epoxide carbon is less hindered and explain the local structural reason.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For reaction with Me2CuLi, apply the organocuprate epoxide-opening rule to select the attacked carbon and state the stereochemical mode of attack.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After workup, identify which original C-N bond has broken, which carbon received the new methyl group, and which carbon now bears the alcohol.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the ring-opened cyclohexanone product, map the original ring atoms onto the product numbering used for the tetramethylcyclohexan-1-ol name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "At the attacked product carbon, report an NMR coupling constant and chemical shift instead of determining the CIP priority order and absolute configuration.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Track the configurations of the remaining stereocenters under the product numbering.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify independently that methyl attack occurred at original C6 while oxygen remained attached to original C1.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Reconcile backside attack at C6 with the product-side R/S assignment, taking account of the changed substituent priorities.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the complete stereochemical name of the ring-opened alcohol and summarize the attack-site and atom-mapping argument.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

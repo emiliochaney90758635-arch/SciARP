@@ -1,0 +1,54 @@
+{
+  "release_task_index": 364,
+  "task_id": "gpqa__recvlnu8BuLmXZhSX",
+  "dataset": "gpqa",
+  "ordinal": 233,
+  "variant": "perturbed",
+  "conversation_id": "233::gpqa__recvlnu8BuLmXZhSX::1.x::perturbation__1_1__k1__1_1_count1_cfg0005::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ea12b87f0bafae282e5e772c8934bbd93aadcf4e4079d996edf8f0ad1464e744",
+  "semantic_condition_id": "2d93c643d6bae9a7cbbe2a31c7fe7d38f025a61f4089f993eada864d1e5fafb4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The state is (-1,2,1)^T and the observable is P=[[0,1/sqrt(2),0],[1/sqrt(2),0,1/sqrt(2)],[0,1/sqrt(2),0]]. Find a vector spanning P's zero-eigenvalue eigenspace.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Normalize the zero-eigenvalue eigenvector found above and verify that applying P gives zero.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Normalize the state (-1,2,1)^T and state its squared norm before normalization.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the inner product of the normalized state with the normalized zero-eigenvalue eigenvector and compute the scalar needed for the Born-rule probability.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the eigenvalue itself lies in a normalized outcome distribution and state the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the norms of the state and zero-eigenvalue eigenvector, and distinguish the projection amplitude from its squared Born-rule probability.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the probability of obtaining the zero outcome.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 277,
+  "task_id": "gpqa__recmzeT93BlfOcNzr",
+  "dataset": "gpqa",
+  "ordinal": 145,
+  "variant": "perturbed",
+  "conversation_id": "145::gpqa__recmzeT93BlfOcNzr::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5cde1edd3e410264808016967ea07ac7214aa543c8295a17d64843f251742181",
+  "semantic_condition_id": "6492e1d54cd8a0877fd507227095f7f12fb772882ae6d209fe4aecc6f23d9ba7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Boc-Phe-Ala(3-N3)-OMe, what intermediate is produced if azide undergoes beta elimination before nucleophilic addition? Assume the L-Phe stereocenter is retained.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What geometry does that intermediate have at the alanine-derived carbon, and what happens to the original alanine stereocenter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If the nucleophile can add from either face after the L-Phe stereocenter has fully racemized, how are the products related?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What experimental observation would most specifically support the proposed pathway, and why is it more diagnostic than a bulk physical change or simple loss of the azide group?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strong is that evidence without structures or stereochemical assignments for the two separated products and without excluding unrelated same-mass isomers?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Name a structural or kinetic follow-up that could distinguish the proposed product pair from unrelated same-mass species and link it to the intermediate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the best-supported mechanistic conclusion and its main evidential limitation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

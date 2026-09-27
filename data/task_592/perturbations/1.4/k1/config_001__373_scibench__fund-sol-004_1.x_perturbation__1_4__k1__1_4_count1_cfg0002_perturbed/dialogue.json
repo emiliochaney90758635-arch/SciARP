@@ -1,0 +1,49 @@
+{
+  "release_task_index": 592,
+  "task_id": "scibench__fund-sol-004",
+  "dataset": "scibench",
+  "ordinal": 373,
+  "variant": "perturbed",
+  "conversation_id": "373::scibench__fund-sol-004::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "5e74df5752f82d8612b33230de423ab8adecbe1e5b6bb090e20a097bb593913d",
+  "semantic_condition_id": "8f9cf75a1c6c50a0790877fa7c28643ebb954eb05912d8c790137837bc2742d1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rotating cylinder slows from 3.40 rad/s to 2.00 rad/s while turning through 20.0 revolutions. Identify the initial speed, final speed, and angular displacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the angular displacement to radians.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the available initial, final, and accumulated quantities to write a relation for the requested rate of change, and determine what the information supports.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the values established above, calculate the requested quantity, and interpret its sign.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the conversion used above, numerator sign, and units in that relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, including its units and physical meaning.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

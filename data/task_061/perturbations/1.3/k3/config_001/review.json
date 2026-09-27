@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Cohort-status, VAF, and Classification fields can each be replaced.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "b584e5835f992676139ea21a36aeb50cf728aada744e36f125a74568b2a08f59",
+  "strict_non2x_original_semantic_condition_id": "2e316520866d50b8275023ee9a11ba7291768e7e84b97b1e7f041b26730821f7",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Select records whose numeric Sample-ID suffix is below 400 instead of using Carrier status; threshold normalized Sample suffix/1,000 below 0.3 at T2; tabulate Sequence Ontology at T3.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

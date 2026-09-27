@@ -1,0 +1,23 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Boundary strictness is necessary for reproducible set membership and is deliberately omitted.",
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "df01b2447e2d17e6192e53e0e003bd7b806cf50a0de84f28c32f32ecd0b6ab90",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Restores the requested regions while retaining the omission of whether the cutoff is strict or inclusive.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

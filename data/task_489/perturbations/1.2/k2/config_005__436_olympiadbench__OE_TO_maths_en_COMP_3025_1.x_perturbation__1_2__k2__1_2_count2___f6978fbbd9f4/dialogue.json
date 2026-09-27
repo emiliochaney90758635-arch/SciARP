@@ -1,0 +1,54 @@
+{
+  "release_task_index": 489,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3025",
+  "dataset": "olympiadbench",
+  "ordinal": 436,
+  "variant": "perturbed",
+  "conversation_id": "436::olympiadbench__OE_TO_maths_en_COMP_3025::1.x::perturbation__1_2__k2__1_2_count2_cfg0006::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "77042749af99158aca819abc379554492e0bc4ba7e03883cc3c5d052720e0bf1",
+  "semantic_condition_id": "e492f6a1cc9f7bd32adc8c49e228f1cb34630a89ea1605dc92d375668357d78f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cube C1 has volume 125. Calculate its edge length a1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Sphere S_n is circumscribed about cube C_n and inscribed in cube C_{n+1}. Relate the diameter of S_n to the edge lengths a_n and a_{n+1}.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the space diagonal of a cube to derive the recurrence for a_{n+1} in terms of a_n.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the recurrence geometrically by comparing the circumsphere radius of C_n with the insphere radius of C_{n+1}.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Derive a closed form for a_n and for the volume V_n measured in square units.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Calculate the edge lengths and volumes of C2 and C3.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Find the least k for which V_k is at least 2019 meters, and give the edge length of C_k.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

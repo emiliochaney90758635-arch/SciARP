@@ -1,0 +1,30 @@
+{
+  "subclass": "1.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Reference becomes variant",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "missing becomes non-reference",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "literal UTR substring becomes semantic UTR association",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "task_index": 130,
+  "task_id": "130-capsule036",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c8fe10daa55e6642ed101d192918d60e94ac8fd4d547b6a95633a7fd7780d470",
+  "source_base_evidence_sha256": "5007ffc73a1dc5573dbcf635ff1b3fec773a1967467b8060a0f82288993520cb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Coefficient symbol remapped.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Inference columns independently swapped.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Identifier variables independently mismatched.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Shrink the intercept rather than `condition[T.WT]`.",
+    "T3": "Swap the `pvalue` and `padj` columns.",
+    "T5": "Intersect the selected Ensembl IDs directly with the KEGG symbol strings instead of using the mapped-symbol field."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

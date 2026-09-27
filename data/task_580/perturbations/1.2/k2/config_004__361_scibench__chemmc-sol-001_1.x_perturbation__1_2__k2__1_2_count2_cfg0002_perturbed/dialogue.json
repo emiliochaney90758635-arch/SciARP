@@ -1,0 +1,64 @@
+{
+  "release_task_index": 580,
+  "task_id": "scibench__chemmc-sol-001",
+  "dataset": "scibench",
+  "ordinal": 361,
+  "variant": "perturbed",
+  "conversation_id": "361::scibench__chemmc-sol-001::1.x::perturbation__1_2__k2__1_2_count2_cfg0002::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "93c7c6a23f60b239ce8eff359de028dc937b3b733a80e7333b9aae43dfd7aef8",
+  "semantic_condition_id": "98409f12d27987e49643faf334f14b18df051fa7cb28f89f7f18bb7d35e571e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use c=2.998e8 m s^-2 and state the de Broglie relation for the electron.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the electron mass, calculate the momentum with the justified approximation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use h=6.626e-34 J s^-1 and the electron momentum calculated above to determine the wavelength.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the dimensions and order of magnitude independently.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the wavelength at 1.00% of light speed and predict it at twice that speed under the same approximation.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

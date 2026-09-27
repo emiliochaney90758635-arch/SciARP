@@ -1,0 +1,28 @@
+{
+  "task_id": "024-capsule007",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "One premise changes the observational unit.",
+    "A second changes expectation construction.",
+    "A third sets df equal to the number of cells."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "analysis-unit premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "expectation premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "cell-count df premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

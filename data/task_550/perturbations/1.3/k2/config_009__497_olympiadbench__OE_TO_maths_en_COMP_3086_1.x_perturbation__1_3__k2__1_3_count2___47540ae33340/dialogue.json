@@ -1,0 +1,54 @@
+{
+  "release_task_index": 550,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3086",
+  "dataset": "olympiadbench",
+  "ordinal": 497,
+  "variant": "perturbed",
+  "conversation_id": "497::olympiadbench__OE_TO_maths_en_COMP_3086::1.x::perturbation__1_3__k2__1_3_count2_cfg0004::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "056c61e099d1acc2a74717bf9b5991598a4529bd2a95092be8904221ef7c7680",
+  "semantic_condition_id": "76c4c65f8bca7c00f66ac23d593bde09bf564775641eaa3c4c35ada29c12546a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the sides s_0 through s_14 of a regular 16-gon and encode three choices by cyclic gaps satisfying the appropriate sum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate the geometric conditions into restrictions on a,b,c: no chosen sides may be adjacent, and no pair may be opposite and hence parallel.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how rotations and reflections act on the gap triple and why congruence is classified by the unordered cyclic gaps of the actual supporting lines, not merely by eight unoriented directions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Enumerate the unordered triples a>=b>=c>=2 satisfying a+b+c=16 with no entry equal to 8.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the resulting congruence classes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that each listed triple produces three nonparallel lines whose pairwise intersections lie off the original polygon vertices.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Based on that congruence criterion and the current congruence criterion, report the count.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

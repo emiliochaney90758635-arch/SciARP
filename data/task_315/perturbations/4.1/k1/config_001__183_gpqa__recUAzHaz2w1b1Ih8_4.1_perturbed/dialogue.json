@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3934a8878e3f63e5f6b1062e0f4bae0a85561c3621b1b62e8e83a3f104398567",
+  "semantic_condition_id": "a5d2c53dd1e348138be0ac4d245b9fd88d849b075dab8624846e6326d29399f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let FA and FB denote the two bolometric fluxes and dA and dB their luminosity distances. Express LA/LB in terms of these four quantities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At redshifts zA=0.06 and zB=0.02, use the leading low-redshift distance-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the two measurements established above, calculate their ratio in the orientation required for LA/LB.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the ratios and report MA/MB as exact, with zero uncertainty from higher-order cosmology, flux calibration, lensing, or Eddington-ratio variation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 518,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2975",
+  "dataset": "olympiadbench",
+  "ordinal": 465,
+  "variant": "perturbed",
+  "conversation_id": "465::olympiadbench__OE_TO_maths_en_COMP_2975::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7bf77c88d592d068c85b3fd0d97eaa38128e2e209c25857d30e7eb8583543fc3",
+  "semantic_condition_id": "726e8976f187b6e37b98f70a8a8fcbf9d22833dfb3496759678c88734fa58b96",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In trapezoid `PAUL`, the adjacent sides have lengths `PA = 36` and `PL = 25`. Choose a convenient coordinate system and give the coordinates of the four vertices.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Point `D` is the midpoint of `UL`. Point `E` lies on `PL` with `PE:EL = 3:2`, and point `F` lies on `PA` with `PF:FA = 2:1`. Determine the coordinates of `D`, `E`, and `F` in your system.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the pentagon with vertices ordered `A, U, D, E, F`, which exact coordinate-area method is most convenient? Explain why the vertex order matters before carrying out the calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that method to `A -> U -> D -> E -> F`, showing the two coordinate sums or the equivalent component areas.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the calculation to find the area of pentagon `AUDEF`.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by subtracting the regions outside `AUDEF` from the rectangle. Identify those regions and compute their areas.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Reconcile the coordinate and subtraction calculations, then report the final area of `AUDEF`.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

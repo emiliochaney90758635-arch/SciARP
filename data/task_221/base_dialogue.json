@@ -1,0 +1,64 @@
+{
+  "release_task_index": 221,
+  "task_id": "gpqa__recIOlKBsOeEcgkA1",
+  "dataset": "gpqa",
+  "ordinal": 89,
+  "variant": "clean",
+  "conversation_id": "089::gpqa__recIOlKBsOeEcgkA1::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b3a9849e18d59289c5934559caf8328aa2f66e14d69d28d2e95eb1a4316bda79",
+  "semantic_condition_id": "6674e9e463ab9109838a2a889eba90918bdd4bb18f5ed190458e18542be88f8d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I want to test whether an anti-diabetes drug affects mitochondrial function in HEK293 cells. I am considering Mito-RTP confocal imaging, JC-1 flow cytometry, a luciferase energy reporter, and a glucose-uptake kit applied to a differential-centrifugation mitochondrial fraction. What makes an assay informative for this question?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Before comparing the four experiments, how should I check whether each assay's compartment, analyte, and controls support an inference about mitochondrial function?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What mitochondrial property can Mito-RTP confocal imaging reveal, and why is that readout relevant here?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What does flow cytometry with 2.5 micromolar JC-1 measure, and how does it relate to mitochondrial function?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What does a recombinant-luciferase reporter measure after 5 micromolar luciferin is added to the supernatant, and how can that readout reflect cellular energy metabolism?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How well does a glucose-uptake colorimetric kit fit a differential-centrifugation mitochondrial fraction? Please consider ATP, respiratory-inhibitor, normalization, and organelle-integrity controls.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Based on those assay properties, which setup appears least informative about the drug's mitochondrial role, and what design limitations make that conclusion provisional?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Cross-check the compartment and substrate requirements of all four assays. Does the same setup still have the weakest direct link to mitochondrial function, and what uncertainty remains?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Identify the least informative experimental setup and explain the assay-compatibility problem that makes it weak evidence for a mitochondrial mechanism.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

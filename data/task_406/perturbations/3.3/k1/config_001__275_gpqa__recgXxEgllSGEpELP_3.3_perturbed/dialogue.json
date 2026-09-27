@@ -1,0 +1,64 @@
+{
+  "release_task_index": 406,
+  "task_id": "gpqa__recgXxEgllSGEpELP",
+  "dataset": "gpqa",
+  "ordinal": 275,
+  "variant": "perturbed",
+  "conversation_id": "275::gpqa__recgXxEgllSGEpELP::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "63b6f520c619c44f7a403abf12aa52a5e4c1fdd59517d1c8bf541d41eb7abc03",
+  "semantic_condition_id": "6e5ad1dd990cb920fd1c6c9fe41384d41755b08019db921f06de85581c3634c6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Require every target to be circumpolar at both observatories rather than merely rising above each horizon, then derive the joint sky interval.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Classify Stars 1 and 2 against both requirements. Star 1 has DEC=-75 degrees and absolute V=15.5 at 10 pc; Star 2 has DEC=+55 degrees and apparent V=16.5.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify Star 3, whose DEC is +48 degrees and supplied apparent V magnitude is 15.5. Its distance and E(B-V) are also listed, but distinguish whether they should modify an already apparent magnitude.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For Star 4 (DEC=-48 degrees, M_V=15.5, d=10 pc, E(B-V)=0.4) and Star 5 (DEC=+60 degrees, M_V=16.5, d=5 pc), compute apparent magnitudes as needed and classify both.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assemble the all-and-only set meeting both brightness and visibility requirements, stating why each excluded star fails.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Audit Star 3 specifically against the supplied apparent magnitude and common declination interval.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Reconcile all five classifications so no star satisfying only one requirement is included.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Perform a final numerical check against V<16 and the common declination interval.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the stars detectable by both instruments and summarize the two tests.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 283,
+  "task_id": "gpqa__recqGD3fxPCI59vPQ",
+  "dataset": "gpqa",
+  "ordinal": 151,
+  "variant": "perturbed",
+  "conversation_id": "151::gpqa__recqGD3fxPCI59vPQ::1.x::perturbation__1_2__k3__1_2_count3_cfg0002::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "69ef0d07b3a05bf7b6674388a9aa6dfd97bf6f7a33f5e0a86be97013cf1d0470",
+  "semantic_condition_id": "8c8e701c9a69a7666b5bef597247be8ab3dc7d21cae74675a9de9196a7589116",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A proton starts nearly at rest in a synchrocyclotron with Phi0=pi/4, U0=190 kW, and target kinetic energy 950 MeV. Identify the quantities needed for the revolution count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the one-crossing energy gain using the rule that 1 ampere corresponds to 1 eV for a proton.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The proton crosses an accelerating gap twice per revolution. What energy does it gain per revolution in MeV?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the energy gain per revolution to calculate how many revolutions are needed to reach 950 metres.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the result from the total number of gap crossings and explain how to handle a noninteger revolution count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the required number of revolutions and the key energy-gain calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

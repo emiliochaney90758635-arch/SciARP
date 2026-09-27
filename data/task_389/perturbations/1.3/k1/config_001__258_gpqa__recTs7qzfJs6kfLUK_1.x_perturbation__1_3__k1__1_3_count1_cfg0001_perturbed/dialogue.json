@@ -1,0 +1,69 @@
+{
+  "release_task_index": 389,
+  "task_id": "gpqa__recTs7qzfJs6kfLUK",
+  "dataset": "gpqa",
+  "ordinal": 258,
+  "variant": "perturbed",
+  "conversation_id": "258::gpqa__recTs7qzfJs6kfLUK::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "b19fcd3caff6c9ab46e4e0abba1391044d7e80abc2b380299e97844e3e4244cc",
+  "semantic_condition_id": "d6982c2cb59f06ef73e0efc186f947f6d9ba497e6daf8179c5ae57aeb3487c7d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A construct is intended to express GADD45G with an N-terminal HA tag, whose peptide sequence is YPYDVPDYA. The relevant end of the supplied plus strand is written 3'-ATGTACCCATACGATGTTCCAGATTACGCCAAATGA...-3'. Which reading frame should be inspected first?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Beginning with the initial ATG, translate the initiator codon and then the nine codons intended to encode the HA tag. Does the peptide after the initiator methionine match YPYDVPDYA?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Continue in that same frame across the tag-insert junction and identify the next two codons after the nine HA codons.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Interpret those two codons and explain what happens to translation before the GADD45G coding sequence can be expressed as a full-length fusion.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the best-supported immediate sequence-level explanation for failure to overexpress full-length N-terminally HA-tagged GADD45G?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether the nine tag codons contain a missense change relative to YPYDVPDYA, and separate that question from the junction defect.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the diagnosis with a concise codon-by-codon explanation from the initial ATG through the junction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How strongly can this sequence alone establish the cause of the full-length-protein failure, and what alternative transcript or protein-level defects remain experimentally unexcluded?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Name two experiments that would distinguish premature termination from transcript loss or rapid degradation of a short tagged product, and give the expected pattern if the stop-codon diagnosis is correct.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final sequence diagnosis, identify the junction codons responsible, and include the appropriate experimental qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 632,
+  "task_id": "scibench__thermo-sol-015",
+  "dataset": "scibench",
+  "ordinal": 413,
+  "variant": "perturbed",
+  "conversation_id": "413::scibench__thermo-sol-015::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "9023951fefb9e9b86e8fb18dbc881510e2624e15cc4a312af275386b59283cc1",
+  "semantic_condition_id": "2473d02142d19dca46dbf99671ed324ab582f2a5ae88e5bb85c33491d5fb62e1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let X be the number of heads in 50 independent tosses of an unspecified coin. Identify the distribution of X.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the binomial probability expression and simplify its probability factors.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the two integers C(50,25) and 2^50 used in the exact ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate P(X=25) as an exact ratio, decimal, and percentage.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the exact adjacent-mass ratio to derive P(X=24) from P(X=25), then compare the two probabilities.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the ordering against the symmetry and mode of a Binomial(50,1/2) distribution.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report P(X=25), P(X=24), and their ordering.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

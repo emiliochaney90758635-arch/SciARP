@@ -1,0 +1,37 @@
+{
+  "task_id": "071-capsule019",
+  "release_task_index": 71,
+  "subclass": "1.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Maps FeMinus to the wrong condition column.",
+    "Reverses the visual-symbol mapping only for the Succ extraction."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "989a52b2e34c8cc38d6f91f4f1ab2e9751ae7f0cf0762724c85b3c95625efee0",
+  "configured_evidence_sha256": "989a52b2e34c8cc38d6f91f4f1ab2e9751ae7f0cf0762724c85b3c95625efee0",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

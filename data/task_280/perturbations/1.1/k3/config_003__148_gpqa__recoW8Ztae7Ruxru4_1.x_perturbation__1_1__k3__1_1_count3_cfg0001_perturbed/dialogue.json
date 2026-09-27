@@ -1,0 +1,54 @@
+{
+  "release_task_index": 280,
+  "task_id": "gpqa__recoW8Ztae7Ruxru4",
+  "dataset": "gpqa",
+  "ordinal": 148,
+  "variant": "perturbed",
+  "conversation_id": "148::gpqa__recoW8Ztae7Ruxru4::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c16ff00e0d9c41e28f69bf8f8d81485cf37a85b0faa0fa37e3364cd843567df4",
+  "semantic_condition_id": "72bb25d23b39441c51dd390c17560c84bb0b3953b9eace61a2416981de795d84",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In carbon tetrachloride, what intermediate normally forms during alkene hydrogenation, and what stereochemical outcome follows for bromine addition? Also note that an alkoxy group can stabilize adjacent positive charge by resonance donation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "2-Methoxybutane is reported to give both cis and trans dihalides on bromination. What does that product mixture say about whether the usual pathway operates exclusively?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How can the nitro substituent stabilize an open positive intermediate in 2-methoxybut-2-ene, and why would that intermediate allow attack from either face?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use this comparison to explain the loss of stereospecificity in the reaction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How confidently can the open-cation pathway be assigned from the product pattern alone, given that no trapping, kinetic, or substituent-series evidence is available?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What stereochemistry would an exclusively bridged bromonium pathway predict, and why does that counterfactual favor the open intermediate here?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the proposed mechanism and the electronic role of the methoxy group.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

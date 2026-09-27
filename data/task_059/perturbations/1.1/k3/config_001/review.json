@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Cohort, qualifying variant, and exact Benign can each receive a wrong definition.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "6318bad9b94d07fc8df147180f805cc3392f52bccce266d886cff3e53a1b3c83",
+  "strict_non2x_original_semantic_condition_id": "b1412840cdc3274a824cac95f41eeef92e96c4e8061375487d142e2c3e620c54",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally retain only listed samples having at least one nonblank qualifying Classification; at T2 deduplicate by Chr:Pos; at T4 count Likely Benign with Benign. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

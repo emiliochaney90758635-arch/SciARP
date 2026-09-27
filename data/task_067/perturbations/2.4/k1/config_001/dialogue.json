@@ -1,0 +1,35 @@
+{
+  "release_task_index": 67,
+  "task_id": "067-capsule018",
+  "source_id": "bix-24-q6",
+  "dataset": "bixbench",
+  "ordinal": 67,
+  "variant": "perturbed",
+  "conversation_id": "067::067-capsule018::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "dc0f50f1761fed7bbb33363918e59b00855cf9e3fdc33d0b37cb7d013cdd8c8e",
+  "semantic_condition_id": "9713c76a75610722f3d56a81e2d298fbec03aa1b9c406986430b4e3b30750a3f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Scope of the CBD-versus-DMSO Comparison\n\nThe CBD model contains the following 12 samples; the direct contrast is `CBD_IC50` versus `DMSO`.\n\n| SampleID | Group |\n|---|---|\n| 3_1 | DMSO |\n| 3_2 | DMSO |\n| 3_3 | DMSO |\n| 4_1 | DMSO_Serum_starvation |\n| 4_2 | DMSO_Serum_starvation |\n| 4_3 | DMSO_Serum_starvation |\n| 7_1 | CBD_IC50 |\n| 7_2 | CBD_IC50 |\n| 7_3 | CBD_IC50 |\n| 8_1 | CBD_IC50_Serum_starvation_16h |\n| 8_2 | CBD_IC50_Serum_starvation_16h |\n| 8_3 | CBD_IC50_Serum_starvation_16h |\n\nThe model formula contains only `Group`. The raw count matrix has 63,677 genes × 30 samples; genes with a count greater than 10 in at least one sample are retained first, leaving 20,130 genes.\n\n## Significant DEGs and Enrichment Input\n\nFor `cbd_vs_dmso = ['Group', 'CBD_IC50', 'DMSO']`, the uniform criteria are:\n\n```python\n(padj < 0.05)\n& (abs(log2FoldChange) >= 0.5)\n& (baseMean >= 10)\n```\n\nThese criteria yield 233 significant DEGs, including both upregulated and downregulated genes. The following 7 IDs fail during Ensembl-to-gene-name mapping:\n\n```text\nENSG00000272482\nENSG00000203306\nENSG00000261428\nENSG00000229729\nENSG00000240875\nENSG00000182319\nENSG00000260822\n```\n\nApplying `dropna()` to the gene names before enrichment leaves 226 non-null gene names as input.\n\n## Native gseapy Results\n\nThe enrichment call requests both `GO_Biological_Process_2021` and `Reactome_2022`; this task considers only the former. The archived results are ordered by ascending `Adjusted P-value`, and the first six GO Biological Process rows are:\n\n| Term | Overlap | P-value | Adjusted P-value | Odds Ratio | Combined Score | Genes |\n|---|---|---:|---:|---:|---:|---|\n| cellular response to decreased oxygen levels (GO:0036294) | 8/69 | 7.721415e-07 | 0.001237 | 12.435687 | 175.021082 | EGLN3; RGCC; FAM162A; BNIP3; HILPDA; PGK1; AQP3; NDRG1 |\n| canonical glycolysis (GO:0061621) | 5/24 | 5.043629e-06 | 0.002503 | 24.650786 | 300.675117 | GPI; PGK1; ALDOC; ENO2; HK2 |\n| glucose catabolic process to pyruvate (GO:0061718) | 5/24 | 5.043629e-06 | 0.002503 | 24.650786 | 300.675117 | GPI; PGK1; ALDOC; ENO2; HK2 |\n| glycolytic process through glucose-6-phosphate (GO:0061620) | 5/25 | 6.249337e-06 | 0.002503 | 23.417062 | 280.607474 | GPI; PGK1; ALDOC; ENO2; HK2 |\n| cellular response to hypoxia (GO:0071456) | 9/131 | 1.280811e-05 | 0.003601 | 7.007128 | 78.938319 | EGLN3; RGCC; FAM162A; BNIP3; HILPDA; PGK1; CA9; AQP3; NDRG1 |\n| glycolytic process (GO:0006096) | 5/29 | 1.348581e-05 | 0.003601 | 19.510269 | 218.785662 | GPI; PGK1; ALDOC; ENO2; HK2 |\n\nThe ranking criterion is `Adjusted P-value`, not `Odds Ratio`, `Combined Score`, or `Overlap`.\n\n# GO permutation-enrichment audit\n\n**Source:** Cancer Systems Biology Core, resampling run `CSBC-CBD-GO23`\n**Input:** 226 mapped significant CBD-versus-DMSO genes\n**Method:** For each GO process, 100,000 size-matched random gene lists were sampled from the expressed background. Family-wise scores were obtained as \\((e+1)/(100001)\\times 420\\), capped at 1, where \\(e\\) is the number of random overlaps at least as large as observed.\n\n| GO process | Observed overlap | Random exceedances \\(e\\) |\n|---|---:|---:|\n| canonical glycolysis | 5 | 0 |\n| cellular response to decreased oxygen levels | 8 | 2 |\n| cellular response to hypoxia | 9 | 8 |\n| glycolytic process | 5 | 4 |\n\nProcesses are ranked by the calculated family-wise score, smallest first.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the CBD-treated CRC and DMSO samples, apply the archived differential-expression filters, and form the non-null gene-name list of significant DEGs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Run gseapy enrichment on that gene list using GO_Biological_Process_2021.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which biological process has the smallest adjusted p-value in those results?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

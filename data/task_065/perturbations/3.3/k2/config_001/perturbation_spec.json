@@ -1,0 +1,57 @@
+{
+  "config_id": "task065_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Use maximum CD14 expression per gene  and omit the Pearson square root at T4",
+      "injected_text": "For the retained genes, compute ordinary mean expression across the selected CD14 samples and pair each value with its gene length.\n\nFor this perturbed step, use maximum CD14 expression per gene  and omit the Pearson square root at T4",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use maximum CD14 expression per gene at T3 and omit the Pearson square root at T4.",
+      "injected_text": "Using the supplied sufficient statistics, calculate Pearson's correlation between gene length and CD14 mean expression and characterize its direction and magnitude.\n\nFor this perturbed step, use maximum CD14 expression per gene at T3 and omit the Pearson square root at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Summing instead of averaging uniformly scales expression and leaves Pearson r unchanged.",
+    "before": "Total expression plus wrong denominator.",
+    "after": "Use maximum CD14 expression per gene at T3 and omit the Pearson square root at T4.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the ten visible genes, use each supplied CD14 mean as though it were that gene's maximum expression and pair it with Length."
+    },
+    {
+      "turn_id": "T4",
+      "content": "On those ten pairs, calculate Sxy/(Sxx*Syy) without taking the square root in the denominator."
+    }
+  ]
+}

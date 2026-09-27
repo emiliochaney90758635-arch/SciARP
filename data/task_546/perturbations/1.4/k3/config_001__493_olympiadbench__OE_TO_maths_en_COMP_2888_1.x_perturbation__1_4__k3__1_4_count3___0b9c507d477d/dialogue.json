@@ -1,0 +1,54 @@
+{
+  "release_task_index": 546,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2888",
+  "dataset": "olympiadbench",
+  "ordinal": 493,
+  "variant": "perturbed",
+  "conversation_id": "493::olympiadbench__OE_TO_maths_en_COMP_2888::1.x::perturbation__1_4__k3__1_4_count3_cfg0001::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "d59385e74616b8595e6491b1225ffad89e28431147e846f63dccbb9a90a7ec8e",
+  "semantic_condition_id": "60365fdfea2e1b4a14d13515e568593f9277ce4a97c339e9e26192daec8b2632",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Triangle ABC has side lengths BC=6 and AC=8. Use the law of cosines to find cos(angle ABC).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place A on the positive x-axis, with C above it, and find the exact coordinates of A and C without fixing the location of B.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the square ABQR, determine the coordinates of Q without being told on which side of AB the square lies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The square BCST is also exterior to the triangle. Determine the coordinates of T in the same coordinate system.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the geometry of the two external squares to find BQ and BT and to relate angle QBT to angle ABC.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that angle relation directly from the vectors BQ and BT, including the sign of its cosine.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the resulting side lengths and included angle to compute QT in exact radical form, and verify the squared distance from the coordinates.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

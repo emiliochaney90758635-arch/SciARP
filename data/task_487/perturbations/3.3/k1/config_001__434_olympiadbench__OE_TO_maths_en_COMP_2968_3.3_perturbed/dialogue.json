@@ -1,0 +1,54 @@
+{
+  "release_task_index": 487,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2968",
+  "dataset": "olympiadbench",
+  "ordinal": 434,
+  "variant": "perturbed",
+  "conversation_id": "434::olympiadbench__OE_TO_maths_en_COMP_2968::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d30b32f46069abafd078a656380dc002fb318fdc60b55ec6b214da3d63a62542",
+  "semantic_condition_id": "00643906d0aa8fe86aded7805e2c0ea28158bbfa520fe6bc5c3888aadc0c498f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In isosceles triangle ABC with AB=AC, an altitude from A meets BC at D. Prove what this implies about the two base segments BD and DC.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Factor x^3-8x^2-8x-9 and identify the value of K suggested by the real linear factor.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute that value into the original cubic, then use the remaining quadratic factor to show that no other real roots exist.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set T=23 and BC=T-K. Use the value of K and the fact that D bisects BC to compute BC and BD.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "The altitude AD has length sqrt(T). Form the right-triangle relation among AB, AD, and BD.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute AD^2=T=23 and the calculated half-base BD into that relation, and simplify the resulting value of AB^2.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Instead of using the right-triangle relation, apply the equilateral-triangle shortcut AB=BC and report AB in simplified exact form.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

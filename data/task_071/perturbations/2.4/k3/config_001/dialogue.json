@@ -1,0 +1,40 @@
+{
+  "release_task_index": 71,
+  "task_id": "071-capsule019",
+  "source_id": "bix-26-q4",
+  "dataset": "bixbench",
+  "ordinal": 71,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::071::071-capsule019::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "05fdf286b461a1704f4cdb8f4ade353ae70e78df469ad9497615cbe963130759",
+  "semantic_condition_id": "3dd343ed7b8f7b65a8c1197c9a0fa0a2d35bd64722910464342de0018b4ae5c1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for This Task\n\n## Gene-List and Pathway Filtering Levels\n\nBoth FeMinus and Succ use MMGluFePlus as the reference. The archived downregulated gene lists use:\n\n```r\nfilter(log2FoldChange < -1.5)\n```\n\nNo gene-level `padj < 0.05` filter is applied. Each GeneID list is then supplied to:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe 0.05 cutoffs apply to pathway-level output. All pathway descriptions are compared only after removal of the same organism suffix.\n\n## `Dn` Point Locations in the Archived Dot Plot\n\n| Cleaned pathway description | FeMinus · Dn | Succ · Dn |\n|---|:---:|:---:|\n| Sulfur metabolism | — | — |\n| Styrene degradation | ● | — |\n| Quorum sensing | ● | — |\n| Porphyrin metabolism | ● | ● |\n| Phenazine biosynthesis | ● | ● |\n| Pentose phosphate pathway | — | ● |\n| Oxidative phosphorylation | ● | ● |\n| Microbial metabolism in diverse environments | ● | ● |\n| Glyoxylate and dicarboxylate metabolism | — | ● |\n| Cyanoamino acid metabolism | ● | — |\n| Cationic antimicrobial peptide (CAMP) resistance | — | ● |\n| Carbon metabolism | — | ● |\n| Biosynthesis of secondary metabolites | ● | ● |\n| Bacterial secretion system | — | — |\n| ABC transporters | — | — |\n\n`●` indicates an enrichment point at the corresponding `Dn` coordinate, whereas `—` indicates no point. The intersection uses strict matching of complete cleaned strings and does not merge names based on similar meaning, color, or point size.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# KEGG identifier overlap export\n\n**Source:** Microbial Pathway Informatics Service, export `MPIS-DN-ID`\n**Scope:** Pathway-level significant Dn results from FeMinus and Succ analyses\n**Method:** Gene lists used log2FC below −1.5; KEGG pathway p- and q-value cutoffs were both 0.05. The export retains stable KEGG map identifiers before description cleaning.\n\n```text\nFeMinus Dn:\npau00190, pau00360, pau00650, pau00860, pau01100, pau01110,\npau02020, pau03070\n\nSucc Dn:\npau00030, pau00190, pau00630, pau00650, pau00860, pau01100,\npau01110, pau01503, pau02020\n```\n\nThe common-pathway count is the cardinality of the strict identifier intersection.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDistinguish the gene-list fold-change filter from the pathway-level p- and q-value cutoffs in the archived analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Archived dot-plot raster extraction report\n\n**Source:** PA14 Imaging Core, coordinate audit `PIC-020-DN`\n**Scope:** FeMinus and Succ downregulated columns of the archived 840 × 840 Cell 020 raster\n**Method:** The image was converted to CIELAB colour space, circular marks were retained at local contrast above 0.42, and detected centroids were assigned to the nearest pathway row and Dn column.\n\n## Structured observations\n\n| Cleaned description | FeMinus Dn centroid | Succ Dn centroid |\n|---|:---:|:---:|\n| Porphyrin metabolism | present | present |\n| Phenazine biosynthesis | present | present |\n| Oxidative phosphorylation | present | present |\n| Microbial metabolism in diverse environments | present | present |\n| Biosynthesis of secondary metabolites | present | below contrast threshold |\n\nAll remaining detected rows occurred in only one Dn column. Applying strict complete-string matching to the retained centroids yields the raster-audit overlap.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply those criteria to assemble the FeMinus `Dn` pathway set.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent preranked pathway-enrichment report\n\n**Source:** PA14 Transcriptome Reanalysis Center, report `PTRC-GSEA-DN-24`\n**Scope:** The same *P. aeruginosa* FeMinus-versus-reference and Succ-versus-reference contrasts, restricted to negatively enriched KEGG pathways\n**Method:** All tested genes were ranked by their signed Wald statistic. A preranked GSEA was run separately for FeMinus and Succ against the center's frozen KEGG gene sets. A pathway was called downregulated when `NES < 0` and permutation FDR `q < 0.05`. Complete displayed pathway names were intersected without semantic collapsing.\n\n## Structured observations\n\n| Complete pathway description | FeMinus negative GSEA | Succ negative GSEA |\n|---|:---:|:---:|\n| Porphyrin metabolism | present | present |\n| Phenazine biosynthesis | present | present |\n| Oxidative phosphorylation | present | present |\n| Microbial metabolism in diverse environments | present | present |\n| Biosynthesis of secondary metabolites | present | present |\n| Citrate cycle (TCA cycle) | present | present |\n| Flagellar assembly | present | present |\n| Quorum sensing | present | absent |\n| Pentose phosphate pathway | absent | present |\n\n## Derived conflicting result\n\nThe strict intersection of this report's two negative-GSEA columns contains seven complete pathway descriptions. This rank-based GSEA report is an independent scientific analysis and is not the archived over-representation dot-plot result requested by the task.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nAssemble the Succ `Dn` pathway set under the same rules.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which complete cleaned pathway descriptions occur in both sets, and how many are shared?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

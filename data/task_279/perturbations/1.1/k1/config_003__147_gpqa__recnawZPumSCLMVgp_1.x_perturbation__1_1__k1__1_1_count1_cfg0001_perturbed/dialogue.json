@@ -1,0 +1,54 @@
+{
+  "release_task_index": 279,
+  "task_id": "gpqa__recnawZPumSCLMVgp",
+  "dataset": "gpqa",
+  "ordinal": 147,
+  "variant": "perturbed",
+  "conversation_id": "147::gpqa__recnawZPumSCLMVgp::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5b301149beb4ca91197b62c34e0755e6f503d0f51fd021d80bc01cbaa14fcc8f",
+  "semantic_condition_id": "8988f29fa69d3d9a3be3ad3786b41667afcf823c0d19cfb8ed22be7d483d62dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A reacts with an unknown phosphoric acid to give the named alkene. Use this supposed Wittig hint and the IR band to identify A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the next stated transformation to A to identify B, then follow the subsequent catalytic treatment to determine C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the stated acid treatment and nitrogen-loss step to C, track the rearrangement, and identify E from the resulting evidence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the structure and systematic name of E, and summarize the carbon-skeleton change from the starting material used in this route.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly is that assignment supported given possible selectivity and side products?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether the reaction sequence and spectroscopic evidence are sufficient to identify E, and explain the limits of that conclusion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the assignment of E and the reaction and spectroscopic evidence supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "perturbed",
+  "conversation_id": "390::scibench__stat-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "519283141f6798889f15d20e4a762f0aebce256d373e9837a3e5830cf50776b4",
+  "semantic_condition_id": "cb0d08b556775c5b5da9bf04823c64b18a56aa4540ebb5509a48f372c01a396e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bridge hand contains 13 cards selected from a standard 52-card deck. Does the hand depend on dealing order, and which counting method applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the number of distinct hands in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand the earlier expression as a falling factorial without an order-correction divisor.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact number of ordered 13-card deal sequences and retain that as the hand count.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

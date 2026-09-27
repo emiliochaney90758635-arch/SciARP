@@ -1,0 +1,69 @@
+{
+  "release_task_index": 396,
+  "task_id": "gpqa__recZ13cwgDQf9jRd9",
+  "dataset": "gpqa",
+  "ordinal": 265,
+  "variant": "perturbed",
+  "conversation_id": "265::gpqa__recZ13cwgDQf9jRd9::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f1d317e92391e6de719e3f7a36b233263109d2580fbfa599659323fc20b5e97b",
+  "semantic_condition_id": "63f9452c66318579d0db3f4782c5d51a25064e304c777cd6dea20d601b4fc227",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Heating 1,3-dibromoadamantane with KOH gives a light-yellow inorganic salt with the listed proton NMR and IR signals. Propose product 1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Heat product 1 with excess aluminum isopropoxide. Determine product 2 and name the transformation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Subject product 2 to ozonolysis at -78 C followed by dimethyl sulfide workup, and determine product 3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For product 3, identify the most deshielded non-exchangeable proton. Its vicinal neighbours form two equivalent axial protons and a separate pair of equivalent equatorial protons, with different coupling constants.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Derive the expected infrared absorption pattern of that proton from the two 2H coupling sets.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For product 3, should the axial and equatorial vicinal couplings be treated as distinct or combined? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Apply successive splitting by the two coupling sets and state the resulting multiplicity.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confident is that idealized response given finite resolution, conformational details, and possible higher-order effects?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the product-3 structure, chosen proton, vicinal-coupling model, and predicted multiplicity are mutually consistent.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the identity assigned to product 3 and its expected proton-NMR splitting pattern.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

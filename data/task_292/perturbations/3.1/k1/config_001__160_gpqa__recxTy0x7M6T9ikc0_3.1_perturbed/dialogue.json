@@ -1,0 +1,49 @@
+{
+  "release_task_index": 292,
+  "task_id": "gpqa__recxTy0x7M6T9ikc0",
+  "dataset": "gpqa",
+  "ordinal": 160,
+  "variant": "perturbed",
+  "conversation_id": "160::gpqa__recxTy0x7M6T9ikc0::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7b035241e5aae8734d16aab37b374502114efae4caf6b0f713b2e9b457900cca",
+  "semantic_condition_id": "2843b051f977dcf83d1ab4a1a3140a60d7dd85c63b9b3eac59969f76923c7ff2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Dimethyl malonate reacts with methyl (E)-3-(p-tolyl)acrylate under NaOEt in ethanol. Determine major product A and justify the Michael-addition regiochemistry.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Analyze the enamine reaction but report product B before the explicitly stated MeOH/H3O+ workup.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A donor C reacts with but-3-en-2-one under KOH/water to give 2-(3-oxobutyl)cyclohexane-1,3-dione. Infer the neutral starting donor C.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the working assignments for A, isolated B, and C from the three analyses.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that A follows malonate conjugate addition, B includes hydrolysis during workup, and C is the neutral 1,3-dicarbonyl donor rather than a base-generated tautomer.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report A, B, and C with one concise mechanistic justification for each.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

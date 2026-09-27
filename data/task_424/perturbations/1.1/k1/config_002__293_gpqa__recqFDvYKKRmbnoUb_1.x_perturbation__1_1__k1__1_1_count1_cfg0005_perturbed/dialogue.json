@@ -1,0 +1,64 @@
+{
+  "release_task_index": 424,
+  "task_id": "gpqa__recqFDvYKKRmbnoUb",
+  "dataset": "gpqa",
+  "ordinal": 293,
+  "variant": "perturbed",
+  "conversation_id": "293::gpqa__recqFDvYKKRmbnoUb::1.x::perturbation__1_1__k1__1_1_count1_cfg0005::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "666f611956496aee4e172b4894c054f63f3be0cd2cbf948e3cc98782cb094c89",
+  "semantic_condition_id": "dc249406bae22e8b673daceda4a14cd2fc6dd39049847d64057b9742de328eb8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the inverse-square radial vector field as f=r-hat/r^2 in spherical coordinates.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute its ordinary divergence for r>0.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "On a sphere of radius R, evaluate f dot dA using the outward element dA=r-hat R^2 sin(theta) dtheta dphi.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The singular point coincides with the origin of the integration region. Reconcile the local result away from that point with the boundary result, using an appropriate treatment of the excluded point.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate a line integral of the divergence over the sphere, including the singular contribution.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the normalization on another concentric boundary.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the divergence description implied by the approach above and verify its integral against the corresponding boundary result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the domain on which the pointwise reasoning used above is valid and explain any limitation at the excluded point.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the integral and the boundary or generalized-function argument supporting it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

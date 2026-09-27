@@ -1,0 +1,57 @@
+{
+  "task_index": 130,
+  "task_id": "130-capsule036",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "c8fe10daa55e6642ed101d192918d60e94ac8fd4d547b6a95633a7fd7780d470",
+  "source_base_evidence_sha256": "5007ffc73a1dc5573dbcf635ff1b3fec773a1967467b8060a0f82288993520cb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "One enumerated overlap symbol is replaced by a duplicate.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "One selected-gene annotation is independently relabeled to a duplicate symbol.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "One pathway-member symbol is independently replaced by a duplicate.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "MGST1, MGST2, MGST3, PGD",
+      "new": "MGST1, MGST2, MGST3, G6PDX"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| Mgst3 | ENSMUSG00000026688 | 459 | 482 | 191 | 278 | 353.261810 | 1.027963 | 2.29984e-09 |",
+      "new": "| G6pdx | ENSMUSG00000026688 | 459 | 482 | 191 | 278 | 353.261810 | 1.027963 | 2.29984e-09 |"
+    },
+    {
+      "turn_id": "T3",
+      "old": "MGST1, MGST2, MGST3, G6PDX",
+      "new": "MGST1, G6PDX, MGST3, G6PDX"
+    }
+  ],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "2.3.k3"
+}

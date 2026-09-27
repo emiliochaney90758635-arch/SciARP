@@ -1,0 +1,54 @@
+{
+  "release_task_index": 547,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2953",
+  "dataset": "olympiadbench",
+  "ordinal": 494,
+  "variant": "perturbed",
+  "conversation_id": "494::olympiadbench__OE_TO_maths_en_COMP_2953::1.x::perturbation__1_3__k1__1_3_count1_cfg0004::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "008f802c46f327e0bcfbd20f419083eb534a74bac3c131a605ed838fd13a0b9d",
+  "semantic_condition_id": "e607a340fd510cf4ab6574869f1015450b8b4a1b61a4d1171350e6c33b61802b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a labeled convex hexagon whose six boundary sides are red and whose diagonals are red or blue, characterize which vertex triples are automatically safe and which can form an all-blue triangle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List all vertex triples whose three connecting edges are diagonals and therefore require a constraint.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each constrained triple, count the colorings of its three diagonals with at least one red edge, and determine whether the two diagonal sets overlap.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the diagonals not used by either constrained triangle and count their independent colorings, without yet multiplying the factors.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Multiply the independent constrained-triangle and free-diagonal factors for the labeled hexagon.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that every other triangle contains at least one red boundary side and that no quotient by rotational symmetry is intended.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the vertex triples themselves, rather than their coloring counts, to report the total number of valid colorings.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

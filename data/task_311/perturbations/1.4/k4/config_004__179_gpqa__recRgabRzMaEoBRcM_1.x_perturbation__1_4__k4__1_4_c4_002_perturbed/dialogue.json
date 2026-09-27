@@ -1,0 +1,59 @@
+{
+  "release_task_index": 311,
+  "task_id": "gpqa__recRgabRzMaEoBRcM",
+  "dataset": "gpqa",
+  "ordinal": 179,
+  "variant": "perturbed",
+  "conversation_id": "179::gpqa__recRgabRzMaEoBRcM::1.x::perturbation__1_4__k4__1_4_c4_002::perturbed",
+  "condition_label": "1.4.k4",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 4,
+  "dialogue_sha256": "12ae86e9f7a8d87fba85398e7b294164ece276491106041f82f39ae4b767f53e",
+  "semantic_condition_id": "4edfe4d5104ea6b828dc98b37d5da8dedc95a343a6210a398e3e5701d22d7471",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "From the dibromide under elevated temperature, infer the reactive species that initiates the sequence.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With two equivalents of that species, describe the framework formed from both double bonds of 7-(tert-butoxy)bicyclo[2.2.1]hepta-2,5-diene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Describe the functional-group change giving product 2 from the preceding intermediate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Describe the functional-group change giving product 3 at the next stage.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Identify the transformation that yields product 4 at the final stage.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the final acene framework established above and its molecular symmetry to count its chemically distinct proton environments.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Group the peripheral hydrogens into symmetry-equivalent sets and verify the count.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final number of distinct proton environments and summarize the symmetry rationale.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

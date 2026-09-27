@@ -1,0 +1,49 @@
+{
+  "release_task_index": 342,
+  "task_id": "gpqa__reclHtd90GlPQJHXg",
+  "dataset": "gpqa",
+  "ordinal": 210,
+  "variant": "perturbed",
+  "conversation_id": "210::gpqa__reclHtd90GlPQJHXg::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1dd4afb804bc3c9b6eed88312d10f05e88c27feb6569eb82428367b78cf944ef",
+  "semantic_condition_id": "d24902c1ba11c6abecdefebfecfc25d667f4f2fdcba900ca01363b15677d6a1b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A spaceship moves at 0.5c along the +x direction relative to Earth. In the spaceship frame, a forward-fired bullet has components (0.3c, 0.1c, 0.3c). Derive the Lorentz velocity-addition formulas needed to obtain the Earth-frame components.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the transformation to Earth, replace the established boost parameter by V=-0.5c, then calculate the Lorentz factor and velocity-addition denominator.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those quantities to calculate all three components of the bullet velocity in the Earth frame.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the magnitude of the Earth-frame velocity vector from those components.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the component arithmetic and verify that the resulting speed is below c.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the Earth-frame components and speed to a sensible precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

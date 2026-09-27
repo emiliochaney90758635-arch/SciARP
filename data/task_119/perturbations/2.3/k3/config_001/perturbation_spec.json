@@ -1,0 +1,57 @@
+{
+  "task_index": 119,
+  "task_id": "119-capsule034",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "34c62ce1a5af7d455ed688023887111e210a3be5404be61e2f816b6e610b82fe",
+  "source_base_evidence_sha256": "13caba5c12b76648bb394b9949ebfc464351d4d8455a259e125f1390d150f92e",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Coefficient value altered.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient-row identity independently altered.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "The reported effect-field identity is independently altered from coefficient to odds ratio.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| Age | -0.07495392 | 0.02435 | -3.078 | 0.00208 |",
+      "new": "| Age | -0.06495392 | 0.02435 | -3.078 | 0.00208 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| Age | -0.06495392 | 0.02435 | -3.078 | 0.00208 |",
+      "new": "| BMI | -0.06495392 | 0.02435 | -3.078 | 0.00208 |"
+    },
+    {
+      "turn_id": "T3",
+      "old": "| term | Estimate | Std. Error | z value | two-sided `Pr(>|z|)` |",
+      "new": "| term | Odds ratio | Std. Error | z value | two-sided `Pr(>|z|)` |"
+    }
+  ],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "2.3.k3"
+}

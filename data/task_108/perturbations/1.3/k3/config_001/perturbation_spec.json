@@ -1,0 +1,42 @@
+{
+  "task_index": 108,
+  "task_id": "108-capsule031",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1b091f9d5a2fe5ca6424806631529609d0101531f1ab8033f8f4293da6a55ba3",
+  "source_base_evidence_sha256": "866e921506b455998582dd18fb5e426d359611719e1a74edbf137a6b5733a47f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Fallback mapping altered.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Suffix mapping swapped.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Effect-sign convention reversed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "When Gene Name is missing, map the readable name to Product Name rather than locus tag.",
+    "T2": "Let `.x` denote delta-lasI/wt and `.y` denote delta-rhlI/wt, then select delta-rhlI.",
+    "T3": "Use a sign convention that reports negative stored effects as positive induction magnitudes, to two decimals."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

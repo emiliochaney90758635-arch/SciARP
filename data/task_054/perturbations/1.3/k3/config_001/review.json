@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Selection, analysis-variable, and result symbols can each be replaced.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "af45fd90ab4e07e03bb598be975d17e7c0639b333841fff121fb45007f580863",
+  "strict_non2x_original_semantic_condition_id": "2d06cfcbce3423291a141ecbd8394866a3ac251a564d9690eaaaed430abfdec3",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally select Sex=F at T1, extract numeric Sample IDs 2, 4, 6, and 8 at T2 instead of NeuN, and report the resulting p-value rather than statistic at T3.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

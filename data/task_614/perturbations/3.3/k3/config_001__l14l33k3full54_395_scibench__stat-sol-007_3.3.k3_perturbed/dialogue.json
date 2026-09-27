@@ -1,0 +1,49 @@
+{
+  "release_task_index": 614,
+  "task_id": "scibench__stat-sol-007",
+  "dataset": "scibench",
+  "ordinal": 395,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::395::scibench__stat-sol-007::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "1271ec484c934bf6cc3644f7abcb9cf7832cf593fe18839f397d3cac29464722",
+  "semantic_condition_id": "bd0690456c471234cef9076607422066f29c0581790cdeefb0ca31a086219744",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Count the total outcomes as ordered five-card sequences while retaining favorable outcomes as unordered hands.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Also assume draws are made with replacement and use 52^5 as the denominator.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Ignore suits and physical-card choices, and count the single rank multiset KKKQQ as the sole favorable outcome.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the probability as the favorable-hand count divided by the total-hand count.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify that the favorable and total counts use the same unordered five-card sample space and that the favorable count enforces exactly three kings and two queens.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact ratio and its decimal value.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

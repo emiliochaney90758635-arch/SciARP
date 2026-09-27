@@ -1,0 +1,49 @@
+{
+  "release_task_index": 141,
+  "task_id": "gpqa__rec0Arme2jcXQZnAW",
+  "dataset": "gpqa",
+  "ordinal": 3,
+  "variant": "clean",
+  "conversation_id": "003::gpqa__rec0Arme2jcXQZnAW::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "702548169965ea54d049a6934818fbfe619216cbfc1a5f39d1d51372434ad563",
+  "semantic_condition_id": "7ec740687f2043fcc3606d1945afb973cb29500bf8043d2b37a663f0481a1653",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For trans-cinnamaldehyde, Ph-CH=CH-CHO, count the ring and side-chain carbons and identify the carbonyl carbon attacked by methylmagnesium bromide.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After methylmagnesium bromide addition and workup, identify product 1's functional class and skeleton. How does the reagent change the carbon count?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Oxidize product 1 with PCC. Give product 2's functional-group change and condensed structure, and state whether this step changes the carbon count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "React product 2 with dimethylsulfoxonium methylide in hot DMSO. What happens to the enone double bond, what carbon fragment is transferred, and what is product 3?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Make a carbon ledger showing which steps add carbon and which only change oxidation state or connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the starting count and added fragments to determine product 3's carbon count and identify its skeleton.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

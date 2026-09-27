@@ -1,0 +1,35 @@
+{
+  "release_task_index": 21,
+  "task_id": "021-capsule007",
+  "source_id": "bix-8-q3",
+  "dataset": "bixbench",
+  "ordinal": 21,
+  "variant": "perturbed",
+  "conversation_id": "021::021-capsule007::3.3.k2::lane_a_manual",
+  "condition_label": "3.3.k2",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 2,
+  "dialogue_sha256": "7052b2777e75bea01c65d8cc8a75cbf7416914872286f6e0c8fd944ae273eac0",
+  "semantic_condition_id": "1715c7bb6ea4c8d7f620472bba81a7f5152570d7d072ab4d58780ace0e83a062",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Data unit and labels\n\nThe source is a result-level table containing 12,754 rows. A row is a transcript/result record; it is not necessarily a unique gene. The fields used here are:\n\n- `gene_name`: gene symbol used to define a unique gene.\n- `m6A`: categorical methylation status, with the exact labels `m6A Hyper`, `m6A Hypo`, and `m6A no sig`.\n\n## Complete independently deduplicated gene-name records\n\nEach block is complete for its exact label and preserves first occurrence order after repeated transcript-level names are removed. Commas delimit individual set elements. Count the two blocks independently and form the requested ordered ratio from those counts.\n\n### `m6A Hyper`\n\n```text\nAC010655.2, AC010655.4, AC026401.3, AC138207.8, ADAM10, ADAM17, ADGRA3, AF127577.4, AFTPH, AL050341.2, AL050404.1, ALDH3B2, ANKHD1, ANKHD1-EIF4EBP3, APOL4, ARHGAP30, ARHGAP32, ATAD2, AURKA, B4GALT3, BIRC2, BPGM, BRI3BP, C11orf24, C1QTNF6, CANT1, CBX3, CCDC34, CCNF, CD3EAP, CDC42BPG, CDCP1, CELSR1, CEP128, CGGBP1, CHAF1A, CHML, CHPF, CIP2A, CLDN1, COA3, COL1A1, COL1A2, COL3A1, COL4A1, COL5A1, COL5A2, COPB2, CRIM1, CSTA, CTTN, DDX46, DGKZ, DHCR24, DSP, EHF, ELOVL1, EMSY, ENC1, FADD, FAM111A, FAM83D, FAM83G, FANCE, FAT1, FAXC, FBXL19, FBXO45, FEN1, FJX1, FNDC1, FOXM1, FUT3, GAB2, GARS1, GCNT4, GFOD2, GGCT, GJB2, GJB6, GNGT1, GOLM1, GPR161, GUCY1A1, H1-0, H1-3, H1-5, H2AX, H2BC6, H2BC9, H3C6, H4C14, H4C15, HEYL, HILPDA, HINFP, HMGB2, HMGB3, HSP90B1, ICMT, IGSF9, IL4I1, ENO1, ISG20L2, JRKL, KATNBL1, KCNG1, KIF18A, KIF26B, KIF3C, KIFC1, LARS2, LINC00205, LPAR3, LPCAT1, LRFN4, LRRC59, LRRN1, LSM3, MACF1, MAP3K9, MARK2, MARVELD3, MCM10, MCM5, METTL15, MEX3D, MIS18BP1, MKI67, MMP14, MPZL1, MSANTD3, MYCL, MYH10, MYLK, MYO10, N4BP3, NDE1, NECTIN1, NEIL3, NHSL1, NRIP1, NUP62, OLFML2B, OPN3, OTULIN, P2RY2, PABPC4, PACC1, PAQR4, PAWR, PCDH1, PCDHB2, PCDHB5, PDE9A, PDGFA, PDIA4, PDP1, PIGM, PIGW, PLEKHF2, PLK4, PLXNA1, POC1A, POGK, POLD3, POLR1A, POLR2I, POMK, POSTN, PPCS, PPME1, PPP2CA, PRELID3B, PRKRIP1, PRPSAP1, PRSS8, PSMC3, PXDN, QTRT2, RAD23B, RALBP1, RBM12B, RCOR1, RNF169, RTKN2, SAC3D1, SCD, SDF2L1, SEC14L1, SEC22A, SEMA4A, SERPINA1, SERPINH1, SFRP4, SFT2D2, SHANK2, SHCBP1, SKIL, SLC20A2, SLC22A23, SLC28A3, SLC7A5, SMYD5, SOX4, SPC24, SPECC1, SPP1, SPTBN2, SQLE, SRSF10, STARD10, STC2, STK17A, STK38L, STMN1, STS, SULF1, TAF2, TENM4, TFAP2A, TFAP2C, TFIP11, THAP12, TICRR, TIFA, TIMM17A, TIMM8B, TINCR, TLCD1, TMEM104, TMEM123, TMEM186, TNC, TOMM5, TOP2A, TPX2, TRMT10C, TRMT12, TSPAN17, TTF2, TTL, UFL1, UQCC3, UTP23, UVRAG, VCAN, WDR53, WDR75, WHAMM, YAP1, ZBED4, ZMAT2, ZNF117, ZNF146, ZNF318, ZNF321P, ZNF486, ZNF675, ZWINT\n```\n\n### `m6A Hypo`\n\n```text\nAC011611.3, AC025164.1, AC036108.2, AC053503.3, ADAMTS1, ADAMTS4, AF001548.2, AHNAK2, AKAP8L, AL445183.1, ANTXR2, AP002490.1, AQP3, BCL3, BTG2, C1QTNF7, CAMK2N1, CAVIN2, CCDC152, CCN1, CCNI, CLEC3B, CLIP3, COL3A1, COL6A2, COL6A3, CSRNP1, CXCL12, DES, DMD, EGR1, EGR2, EGR3, EID1, EIF1, EIF3G, EIF4A2, EP300-AS1, EPB41L2, FGFR1, FGL2, FLJ31356, FLNA, FLNC, FOS, FOSB, FOSL2, FOXF1, GATA5, GATA6, HCG20, HDAC4, HOOK2, IL6, IL6-AS1, ITIH5, IVL, JUN, JUNB, JUND, KANK2, KDM6B, KLF4, KRT7, LIMS2, MCL1, MFAP4, MMP24OS, MYH11, MYL9, NDE1, NDRG1, NDUFS1, NEAT1, NFIA, NFIL3, NFKBIA, NIBAN1, NONO, NOP53, NR2F1, NR4A1, NR4A1AS, NUCB1, OAF, PALLD, PDE4D, PDGFRA, PEX14, PGM5, PGM5-AS1, PHLDA1, PITX2, PLTP, PODN, PPP1R15A, PRELP, RAI2, RASSF5, RBPMS, RBPMS-AS1, RCSD1, RGS2, RNASE1, SCARA5, SELENOP, SET, SLC2A3, SLITRK6, SMIM10, SOCS3, SORBS1, SVIL, SYNM, TBX20, TCIM, TFEB, TLN1, TMEM8B, TNFAIP3, TNFRSF1A, TNS1, TNS2, TNXB, ZFP36, ZFP36L1, ZNF358\n```\n--- END TASK EVIDENCE ---\n\nCurrent request:\nBuild one union of both labels and then assign its size to each category.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the result-row counts for Hyper and Hypo instead of the supplied unique gene-name lists.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is the hypermethylated-to-hypomethylated gene-count ratio?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

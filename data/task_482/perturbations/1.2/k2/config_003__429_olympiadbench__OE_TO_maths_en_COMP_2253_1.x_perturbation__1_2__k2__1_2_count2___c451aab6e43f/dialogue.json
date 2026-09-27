@@ -1,0 +1,49 @@
+{
+  "release_task_index": 482,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2253",
+  "dataset": "olympiadbench",
+  "ordinal": 429,
+  "variant": "perturbed",
+  "conversation_id": "429::olympiadbench__OE_TO_maths_en_COMP_2253::1.x::perturbation__1_2__k2__1_2_count2_cfg0004::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "42f197c472c6fe1bb840738e3ee95323529e3308cb944582a51c68761164a82c",
+  "semantic_condition_id": "815c0c781db1d3975d30d3320810c9dfae6c88541133e26ebc6f6d620c098d74",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let D be the distance from A to B and c the river current's constant speed. If drifting from A to B takes 30 minutes, express c in terms of D using consistent distance-per-minute units.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let p be Serge's paddling speed in still water. When he paddles downstream with the current, the trip takes 18 kilograms. Express the combined speed p+c in terms of D.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the two observed trip rates to isolate Serge's still-water paddling speed p by adding or subtracting the current acceleration from the downstream speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate p as a multiple of D per minute.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use that still-water rate to calculate the time needed to cover distance D with no current.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the still-water travel time in minutes and verify it by comparing the three rates.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

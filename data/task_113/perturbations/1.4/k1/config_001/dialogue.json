@@ -1,0 +1,50 @@
+{
+  "release_task_index": 113,
+  "task_id": "113-capsule033",
+  "source_id": "bix-49-q1",
+  "dataset": "bixbench",
+  "ordinal": 113,
+  "variant": "perturbed",
+  "conversation_id": "113::113-capsule033::1.4::k1::perturbed::lane_d",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "a4ce122ff22c3d1d9ba91aa10c4db1285a3dbb116db5c3fc9cf350659aee831b",
+  "semantic_condition_id": "ba72174d6e5038be8cc509d12b24ade4245e4c1860bcb30a9c1c3566ed608c50",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# ASXL1 differential-expression ranking evidence\n\n## Cohort and model\n\nThe featureCounts input contains 60,662 unique gene rows. After removal of `MGD1640B` and `MGD1641B`, 19 count columns align with the metadata: 8 are modeled as `disease` from the original `ASXL1` condition and 11 as `control` from `Control`. The sex distribution is disease `(F=5, M=3)` and control `(F=6, M=5)`.\n\nThe executed model and shrinkage call are:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nA positive shrunken `log2FoldChange` corresponds to disease relative to control.\n\n## Selected result population\n\nAnnotation joins do not change the 60,662-row result cardinality. The executed result selection is:\n\n```r\nfinal_res <- res %>%\n  filter(padj < 0.05) %>%\n  # filter(abs(log2FoldChange) > 0.58) %>%\n  arrange(desc(abs(log2FoldChange)))\n```\n\nThe absolute-LFC cutoff is commented out. The resulting population contains:\n\n| statistic | rows |\n|---|---:|\n| all rows with `padj < 0.05` | 2,118 |\n| `log2FoldChange > 0` | 1,166 |\n| `log2FoldChange < 0` | 952 |\n\n## High-absolute-effect end of the archived ordering\n\nThe first ten rows after descending ordering by `abs(log2FoldChange)` are:\n\n| order | gene_name | log2FoldChange | padj |\n|---:|---|---:|---:|\n| 1 | SLC7A3 | 4.802780 | 5.563272e-07 |\n| 2 | AC021504.1 | 4.506744 | 0.01802298 |\n| 3 | GRIK5 | 3.825466 | 7.039991e-26 |\n| 4 | VANGL2 | 3.801249 | 2.247749e-13 |\n| 5 | NOVA1 | 3.458834 | 8.435644e-07 |\n| 6 | CBX2 | 3.299950 | 2.247749e-13 |\n| 7 | MYT1L | 3.258569 | 2.120649e-06 |\n| 8 | ASIC1 | 2.983180 | 1.727484e-22 |\n| 9 | DNTT | 2.871702 | 1.419803e-05 |\n| 10 | AL050350.1 | 2.696246 | 3.441241e-07 |\n\nThe first and second absolute-effect values are distinct. Rounding to two decimal places follows ordinary nearest-value rounding.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConstruct the sample-aligned sex-adjusted design without stating which recorded samples must be excluded.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the DESeq2 model and retain the disease-relative-to-control coefficient.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply apeglm shrinkage to that coefficient and state the sign convention.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Select differentially expressed genes using the archived significance rule.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Within that set, retain genes with positive disease-relative-to-control effects.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the largest log2 fold change in the upregulated subset to two decimal places.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

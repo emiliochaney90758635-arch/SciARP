@@ -1,0 +1,59 @@
+{
+  "release_task_index": 423,
+  "task_id": "gpqa__recpJmTOXx6T48nDJ",
+  "dataset": "gpqa",
+  "ordinal": 292,
+  "variant": "perturbed",
+  "conversation_id": "292::gpqa__recpJmTOXx6T48nDJ::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "7abadf5d08893b5afe35afafea4835c12b91f9ea8333bb909de0f81a51defd60",
+  "semantic_condition_id": "78b22fdb0792b3d6247eb2f18e05247b036fe29a1c178856c05464c36c4adb59",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate the acid equivalents supplied by 500 kilograms of 0.2 M HCl and 300 mL of 0.3 M H2SO4, treating HCl as monoprotic and H2SO4 as diprotic.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The mixture also contains 200 seconds of 0.5 M Ba(OH)2. Calculate its hydroxide equivalents, accounting for two OH- ions per formula unit.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the acid and hydroxide amounts, identify the limiting neutralization species, and determine the moles of water formed from H+ + OH- -> H2O.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using -13.6 kcal per mole of water for strong-acid/strong-base neutralization, calculate the mixture's neutralization enthalpy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Audit the calorimetry by applying the same -13.6 kcal/mol value to the reaction extent obtained earlier.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Recalculate from the reaction extent and molar enthalpy obtained above, and compare with the first value.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign, energy units, and conversion to kilojoules.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final enthalpy change and the limiting-reagent calculation that fixes the amount formed.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

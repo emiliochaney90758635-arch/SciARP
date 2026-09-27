@@ -1,0 +1,22 @@
+{
+  "config_id": "task045_3.1_k1",
+  "subclass": "3.1",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Although T1 used complete symbol-and-ID labels, realign the already intersected columns by bare symbols before forming nonmissing cell-line pairs."
+    }
+  ]
+}

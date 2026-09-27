@@ -1,0 +1,19 @@
+{
+  "task_id": "081-capsule022",
+  "subclass": "2.4",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Replicate-balanced audit reports 52/168.",
+    "Permutation calibration reports 45/175."
+  ],
+  "evidence_mode": "append"
+}

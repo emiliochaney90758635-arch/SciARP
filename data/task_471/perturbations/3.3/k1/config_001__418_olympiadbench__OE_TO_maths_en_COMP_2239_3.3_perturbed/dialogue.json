@@ -1,0 +1,54 @@
+{
+  "release_task_index": 471,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2239",
+  "dataset": "olympiadbench",
+  "ordinal": 418,
+  "variant": "perturbed",
+  "conversation_id": "418::olympiadbench__OE_TO_maths_en_COMP_2239::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2d21bf38cdc6f8bb7cf34d458edb94e7a11e2a7042605d8b89bc5947f6a78718",
+  "semantic_condition_id": "05815721b86323c5d85eb25b7d6c41e47d4c58fc20b8372e7fca3166d3756667",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let P be the parents' present combined age, C the children's present combined age, and n the number of children. Translate the statement that P is six times C.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply a single-person age shift directly to the parents' combined total, so P changes by only one year per calendar year even though it represents two parents; derive the corresponding group rates.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how those group-level rates will be used consistently for both the past and future conditions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the equation for two years ago, when the parents' combined age was ten times the children's combined age.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the equation for six years from now, when the parents' combined age will be three times the children's combined age.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the present-age relation established in the first turn into the past and future equations, and simplify both to relations between C and n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Solve the resulting pair of relations for the number of children.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

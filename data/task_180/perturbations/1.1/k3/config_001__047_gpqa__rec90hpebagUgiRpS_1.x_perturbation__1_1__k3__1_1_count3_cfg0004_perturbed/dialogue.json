@@ -1,0 +1,54 @@
+{
+  "release_task_index": 180,
+  "task_id": "gpqa__rec90hpebagUgiRpS",
+  "dataset": "gpqa",
+  "ordinal": 47,
+  "variant": "perturbed",
+  "conversation_id": "047::gpqa__rec90hpebagUgiRpS::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "66619b2ed67bd1cd476a4b337d36d45eff2918b45721542f520565de5d7aebfa",
+  "semantic_condition_id": "675b3171b0de1a253ad14dfe24d8d004f40f3ea9bd2415dccd234cd2fbdaf902",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A uniformly charged ring of radius R and total charge q has axial electrostatic potential Phi(z)=q/[4*pi*epsilon_0*sqrt(R^2+z^2)]. For |z|<<R, factor out R and identify the dimensionless small variable in the remaining factor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write a Fourier-transform procedure for that normalized factor through its first nonconstant term, including the order of the first omitted term.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use exponent -1/2 in the normalized factor, substitute the small variable, and restore the physical prefactor. Simplify through the lowest nonzero power of time and retain the remainder order.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the resulting boundary condition: are the overall units correct, is the correction dimensionless, and is the coefficient of z^2/R^2 consistent with the binomial expansion?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Is this expression exact or a leading near-axis approximation? Explain the residual error due to the omitted terms.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the next order in the dimensionless expansion, and why does |z|<<R make its contribution small?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the near-axis potential through the first nonconstant power of z, including the order of the remainder.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "task_index": 121,
+  "task_id": "121-capsule034",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "f887f569c500300dca4fc497e508fa2336d60d1f2acdef6052f04615572fca73",
+  "source_base_evidence_sha256": "9872a919a30a0585d350cf213044a97138ca69bde0d9cbcb74bc1571b7703aff",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Coefficient altered.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "SE independently altered.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| Age | -0.07951 | 0.02630 | -3.023 | 0.002499543 |",
+      "new": "| Age | -0.06951 | 0.02630 | -3.023 | 0.002499543 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| Age | -0.06951 | 0.02630 | -3.023 | 0.002499543 |",
+      "new": "| Age | -0.06951 | 0.03630 | -3.023 | 0.002499543 |"
+    }
+  ],
+  "extends_existing": null
+}

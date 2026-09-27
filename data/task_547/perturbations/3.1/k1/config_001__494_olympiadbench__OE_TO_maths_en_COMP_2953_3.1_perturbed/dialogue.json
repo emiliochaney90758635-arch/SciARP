@@ -1,0 +1,54 @@
+{
+  "release_task_index": 547,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2953",
+  "dataset": "olympiadbench",
+  "ordinal": 494,
+  "variant": "perturbed",
+  "conversation_id": "494::olympiadbench__OE_TO_maths_en_COMP_2953::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3f20c5228e58e3f308ec9199be4fb3867d38785217cd53189be2d2728611599e",
+  "semantic_condition_id": "f29f4ab7dfd5a129f5861a8ace9a140e18b0c1cada1ffbd4e626308d113bd2b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a labeled convex hexagon whose six boundary sides are red and whose diagonals are red or blue, characterize which vertex triples are automatically safe and which can form an all-blue triangle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List all vertex triples whose three connecting edges are diagonals and therefore require a constraint.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each constrained triple, count the colorings of its three diagonals with at least one red edge, and determine whether the two diagonal sets overlap.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the remaining count, require every diagonal outside the two constrained triangles to be red only.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Multiply the independent constrained-triangle and free-diagonal factors for the labeled hexagon.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that every other triangle contains at least one red boundary side and that no quotient by rotational symmetry is intended.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the number of valid labeled diagonal colorings.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "021-capsule007",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Counts transcript-level identifiers as genes.",
+    "Excludes noncoding-style gene names.",
+    "Deletes every cross-category shared gene from both sets."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "transcript-as-gene premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "noncoding-name exclusion premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "cross-category deletion premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

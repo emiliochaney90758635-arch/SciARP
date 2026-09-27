@@ -1,0 +1,49 @@
+{
+  "release_task_index": 590,
+  "task_id": "scibench__fund-sol-002",
+  "dataset": "scibench",
+  "ordinal": 371,
+  "variant": "clean",
+  "conversation_id": "371::scibench__fund-sol-002::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "1227cd0f023e465fe0a20df66d792a9b33c56783e63fec762a6f47ad11060b4c",
+  "semantic_condition_id": "983fd62ad1a2347f4a8a3d019a9e3862bfd511027376733bd0740900250afad4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A solid disk has mass 2.5 kg and radius 20 cm. Convert the radius to metres and find its moment of inertia about the central axle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The disk starts from rest and the supplied constant rate of change is -24 rad/s^2. Determine the corresponding signed rate after 2.5 s.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Square the angular velocity found above, noting why its sign disappears in the result.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the disk coefficient obtained above and the squared angular velocity to calculate the requested scalar at 2.5 s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain why this scalar is nonnegative under the chosen formula. Does the separately supplied cord tension affect the result once the disk's motion is known?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final scalar result with its units and a concise calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 433,
+  "task_id": "gpqa__recuzuROrJQs1qQvR",
+  "dataset": "gpqa",
+  "ordinal": 302,
+  "variant": "perturbed",
+  "conversation_id": "302::gpqa__recuzuROrJQs1qQvR::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "c4581bdcecff3264e4b63e58a290d58b6f25b9552875ab4207a02f008b1ea15d",
+  "semantic_condition_id": "f7dd98dc1bd0602a32a7a488eae613204d081c980a63beafef64cd413de93ae4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For N-ethyl-N,2,2-trimethylbutanamide, classify the carbonyl functional group and the nitrogen substitution pattern relevant to BH3/THF reduction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that classification and standard borane selectivity, determine major product A from the first substrate and describe the structural change.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the second reaction, identify the functional groups relevant to predicting its response to BH3/THF.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the same BH3/THF selectivity to the second substrate and determine major product B, stating which functional group changes.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the best-supported major product pair A and B.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly is that prediction supported when borane equivalents, temperature, time, and workup are unspecified?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that formation of A replaces the tertiary-amide carbonyl by methylene while retaining both nitrogen substituents.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that formation of B preferentially reduces the lactam while retaining the ethyl ester, and keep the reaction-condition qualification.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report A and B together with the confidence qualification.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 286,
+  "task_id": "gpqa__recrbsjWWBqkjFmS2",
+  "dataset": "gpqa",
+  "ordinal": 154,
+  "variant": "perturbed",
+  "conversation_id": "154::gpqa__recrbsjWWBqkjFmS2::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f06f3def361679c584959e62259042fb1b4bacc37cf2c05efd2de860c8f92b45",
+  "semantic_condition_id": "16dba5fd29f5dcdb343627f9e14de4479bde0c8a095d92d26f14a7372f94ec46",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the light-Majorana exchange description of neutrinoless double-beta decay, the inverse half-life is written as T_{1/2}^{-1}=G|M|^2m_{bb}^2/m_e^2. What physics is represented by G, M, and m_{bb}?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a light-Dirac-neutrino exchange mechanism, why would the effective neutrino mass separate from the nuclear and phase-space factors? Relate the argument to the momentum scales.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Is the remaining separation between the leptonic phase-space factor G and the nuclear matrix element M formally exact? Distinguish a structural factorization approximation from uncertainty in computing M itself.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which separation is therefore responsible for the standard formula's inexactness?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How confidently can that structural explanation be stated when the size and implementation dependence of the nonseparable corrections are not specified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Contrast this source of inexactness with the factorization of the effective light-neutrino mass.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the structural approximation and the light-Majorana regime in which the formula is being used.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

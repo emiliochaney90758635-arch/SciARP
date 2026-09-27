@@ -1,0 +1,41 @@
+{
+  "config_id": "task051_3.1_k1",
+  "subclass": "3.1",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Pool all six observations",
+      "injected_text": "Calculate the arithmetic mean colony area for each genotype.\n\nFor this perturbed step, pool all six observations",
+      "consumer_turns": [
+        "T2"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k1",
+    "decision": "repair_required",
+    "problem": "The hierarchy needs one clear initial root.",
+    "before": "Non-hierarchical event.",
+    "after": "Pool all six observations at T2.",
+    "proposed_turns": [
+      "T2"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Pool all six colony-area observations into one common arithmetic mean and use that value as the summary for both genotypes."
+    }
+  ]
+}

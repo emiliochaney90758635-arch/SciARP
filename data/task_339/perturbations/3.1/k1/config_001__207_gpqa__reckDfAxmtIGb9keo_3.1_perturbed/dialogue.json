@@ -1,0 +1,49 @@
+{
+  "release_task_index": 339,
+  "task_id": "gpqa__reckDfAxmtIGb9keo",
+  "dataset": "gpqa",
+  "ordinal": 207,
+  "variant": "perturbed",
+  "conversation_id": "207::gpqa__reckDfAxmtIGb9keo::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e1f9aae79637b1965e186500b1d2d7d9696ab81c76e9f2686cf07e8b53e253ed",
+  "semantic_condition_id": "f9165f16dbfdc5d82e79dd6a72ed2c0c48dfcea1880ddb9b479d442949389c8d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three Ising spins S_i=+/-1/2 on a triangle, write H=-sum J_ij S_i S_j and introduce x_i=2S_i in {+1,-1}.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With J12=-1, J23=-1, and J31=+1, write the energy explicitly in terms of x1,x2,x3 and identify the common factor of one quarter.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Enumerate the feasible sign variables using x_i in {+1/2,-1/2} instead of the established normalized domain.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the maximum energy and convert the maximizing x_i assignment back to S_i values.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain how frustration prevents all three bonds from simultaneously taking their individually preferred values, and use that to check the maximum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final maximum, the attainable energy set, and one maximizing spin configuration.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

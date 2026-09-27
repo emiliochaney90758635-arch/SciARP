@@ -1,0 +1,35 @@
+{
+  "release_task_index": 5,
+  "task_id": "005-capsule003",
+  "source_id": "bix-3-q4",
+  "dataset": "bixbench",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::005-capsule003::2.1::k2::perturbed",
+  "condition_label": "2.1.k2",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b93fdb38559814af99d6770231366fb1853fc82d5a47047b02f39e07f110add2",
+  "semantic_condition_id": "9221a8d67da41c1667c1fcc27fffe3c809b4f9bb8ddf69085d09fd37922af72a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 766 |\n| D only | 773 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 429 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Comparison-language convention\n\nWithin this archive, a GeneID reported “across all comparisons” is one that appears in at least one of the comparison-specific sets.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify that all three differential-expression comparisons use the same filters and record each unique-GeneID set size.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Set-element identifier note\n\nFor the overlap analysis, each comparison-specific set is keyed by the current gene-symbol alias after removal of any GeneID version suffix. Multiple GeneIDs sharing an alias therefore contribute a single set element.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExpress 'shared across all comparisons' as a three-set operation and identify the corresponding mutually exclusive Venn region.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How many GeneIDs lie in that strict three-way intersection?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

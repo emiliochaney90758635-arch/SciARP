@@ -1,0 +1,27 @@
+{
+  "config_id": "task056_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Treat NeuN counts as thousands of nuclei and divide all values and means by 1,000."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nTreat the NeuN values as already expressed in thousands of nuclei, divide them by 1,000 again, and report the resulting KD and control group means."
+    }
+  ]
+}

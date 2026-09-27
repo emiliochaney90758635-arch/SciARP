@@ -1,0 +1,48 @@
+{
+  "config_id": "task055_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Pool observations by Sex rather than forming Hemisphere-by-Sex cells."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Compute a single marginal Hemisphere difference from those pooled values."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Divide its square by residual SS, not residual MS, and report it as interaction F."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nPool the NeuN observations by Hemisphere alone, forming KD and CTRL groups rather than four Hemisphere-by-Sex cells, and calculate the two marginal means."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Calculate the single marginal difference as mean KD minus mean CTRL."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Square that marginal difference, divide by residual sum of squares rather than residual mean square, and report the result as the Hemisphere-by-Sex interaction F-statistic."
+    }
+  ]
+}

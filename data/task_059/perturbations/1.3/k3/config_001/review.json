@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Cohort-status, VAF, and Classification fields can each be replaced.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "8375197d4e5566fba4cbad78f2f398e5b14c28356bbe8ce1373f097c41996ca6",
+  "strict_non2x_original_semantic_condition_id": "99d465cb390cd53255c2a03b5610b1cdb54c058cbff5ddde34df2fdd1e1439b8",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 select listed records with numeric Sample-ID suffix below 400 instead of using BLM Mutation Status; at T2 threshold normalized numeric Sample suffix (suffix/1,000) below 0.3 instead of VAF; at T3 tabulate Sequence Ontology.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,25 @@
+{
+  "config_id": "task057_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Treat target power as 80 rather than 0.80 in the power solver."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Use target power 0.008, treating 80% as 0.80%, and report the minimum integer sample size per group returned by that power model."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 563,
+  "task_id": "scibench__atkins-sol-009",
+  "dataset": "scibench",
+  "ordinal": 344,
+  "variant": "perturbed",
+  "conversation_id": "344::scibench__atkins-sol-009::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "625c93b5c828fe9c236edfba016b207d6e7000ff2f63d76531d5e84722330c75",
+  "semantic_condition_id": "7ea556e913b80221e5273b349d2bb22ed479b5d71def95f31d28ae2621925435",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For water rotating about the HOH-angle bisector through oxygen, identify each atom's perpendicular distance contribution to the moment of inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With bond angle 104.5 degrees and O-H distance 95.7 pm, calculate the half-angle, convert the distance to metres, and find each hydrogen's perpendicular radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain why the angle-bisector axis also passes through the molecular centre of mass and why the oxygen contribution is zero.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the symbolic moment of inertia about this axis using the geometric conclusions and relevant masses established above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the geometry by projecting both identical O-H bonds perpendicular to the axis and verify the factor of two.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the inertia with both 1.67e-27 kg and 2.66e-26 kg labelled m_O, leaving m_H unspecified.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report I in kg m^2 to three significant figures and identify the contributing atoms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

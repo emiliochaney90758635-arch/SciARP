@@ -1,0 +1,45 @@
+{
+  "release_task_index": 33,
+  "task_id": "033-capsule009",
+  "source_id": "bix-10-q1",
+  "dataset": "bixbench",
+  "ordinal": 33,
+  "variant": "perturbed",
+  "conversation_id": "033::033-capsule009::2.2::k2::perturbed",
+  "condition_label": "2.2.k2",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 2,
+  "dialogue_sha256": "b1b25f30076e10a828b1fe1e4d0152a4a9baefe727159378d2cc1d18ac4dcc71",
+  "semantic_condition_id": "7ac26a11cd92214ae90772d400d1e80ec0262ec68aa7b3451ba770e45e07d652",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Subject-level construction\n\nThe adverse-event source has 2,694 records and 1,000 unique `USUBJID` values. For each subject, duplicate selected rows are removed and maximum `AESEV` is taken over all adverse-event records. There is no `AEPT` or `AECAT` filter, so the four-level ordered endpoint is maximum severity across all recorded adverse events, not COVID-19-specific severity.\n\nThe subject outcome is joined by `USUBJID` to a 1,000-subject table containing `patients_seen` and `expect_interact`. Of the joined subjects, 209 have missing `AESEV`; an unqualified complete-case deletion leaves 791 model records.\n\n## Encodings and compressed model matrix\n\n| Symbol | Variable | Encoding |\n|---|---|---|\n| \\(Y\\) | maximum `AESEV` | \\(1<2<3<4\\) |\n| \\(T\\) | treatment | Placebo = 0, BCG = 1 |\n| \\(E\\) | `expect_interact` | No = 0, Yes = 1 |\n| \\(P\\) | `patients_seen` | `1-50` = 0, `51-100` = 1, `>100` = 2 |\n\nThe nonzero joint frequencies below exactly reconstruct all 791 rows when each row is repeated `n` times:\n\n| T | E | P | Y | n |\n|---:|---:|---:|---:|---:|\n| 0 | 0 | 0 | 1 | 45 |\n| 0 | 0 | 0 | 2 | 55 |\n| 0 | 0 | 0 | 3 | 4 |\n| 0 | 0 | 0 | 4 | 3 |\n| 0 | 0 | 1 | 1 | 4 |\n| 0 | 0 | 1 | 2 | 8 |\n| 0 | 0 | 1 | 3 | 1 |\n| 0 | 0 | 1 | 4 | 1 |\n| 0 | 0 | 2 | 2 | 3 |\n| 0 | 1 | 0 | 1 | 91 |\n| 0 | 1 | 0 | 2 | 81 |\n| 0 | 1 | 0 | 3 | 7 |\n| 0 | 1 | 0 | 4 | 3 |\n| 0 | 1 | 1 | 1 | 25 |\n| 0 | 1 | 1 | 2 | 15 |\n| 0 | 1 | 1 | 3 | 2 |\n| 0 | 1 | 1 | 4 | 1 |\n| 0 | 1 | 2 | 1 | 3 |\n| 0 | 1 | 2 | 2 | 1 |\n| 0 | 1 | 2 | 3 | 1 |\n| 1 | 0 | 0 | 1 | 48 |\n| 1 | 0 | 0 | 2 | 82 |\n| 1 | 0 | 0 | 3 | 10 |\n| 1 | 0 | 0 | 4 | 2 |\n| 1 | 0 | 1 | 1 | 3 |\n| 1 | 0 | 1 | 2 | 8 |\n| 1 | 0 | 1 | 3 | 1 |\n| 1 | 0 | 2 | 1 | 3 |\n| 1 | 0 | 2 | 2 | 4 |\n| 1 | 1 | 0 | 1 | 87 |\n| 1 | 1 | 0 | 2 | 118 |\n| 1 | 1 | 0 | 3 | 17 |\n| 1 | 1 | 0 | 4 | 5 |\n| 1 | 1 | 1 | 1 | 16 |\n| 1 | 1 | 1 | 2 | 21 |\n| 1 | 1 | 1 | 4 | 2 |\n| 1 | 1 | 2 | 1 | 3 |\n| 1 | 1 | 2 | 2 | 6 |\n| 1 | 1 | 2 | 4 | 1 |\n\n## Proportional-odds fit\n\nThe specified logit model is\n\n\\[\nP(Y\\le j\\mid x)\n=\\operatorname{logit}^{-1}(c_j-x^\\mathsf{T}\\beta),\n\\]\n\nwith predictors \\(T,E,P\\). A positive treatment coefficient therefore shifts probability toward higher outcome categories. Fitting the 791 reconstructed observations gives:\n\n| Treatment quantity | Value |\n|---|---:|\n| \\(\\hat\\beta_T\\) | 0.4214970660 |\n| Standard error | 0.139896 |\n| Nominal Wald p-value | 0.002587392 |\n\nBecause \\(T=1\\) denotes BCG and \\(T=0\\) denotes Placebo, obtain the requested conditional proportional odds ratio by exponentiating the fitted treatment coefficient.\n\n## Interpretation boundary\n\nThe endpoint is the maximum of all adverse events rather than a COVID-19-specific severity measure. The proportional-odds assumption was not tested, and the three patient-volume categories enter as one equally spaced 0/1/2 linear term rather than as two indicator variables. This is a model-dependent adjusted association, not a causal treatment effect.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Adjusted Ordinal Safety Outcomes Following BCG Vaccination in Healthcare Workers\n\n**Authors:** Sofie R. Halberg, Malcolm J. Reid, Priyanka Deshmukh, and Carlo E. Venturi\n\n**Abstract**\n\n**Background:** Analyses based on the most severe event experienced by each participant can complement event-level safety summaries in vaccine trials. **Methods:** Adverse-event records from 1,000 randomized healthcare workers were reduced to each participant's highest recorded severity grade across all event types. Complete records were analyzed with a proportional-odds logistic model adjusted for expected patient interaction and the ordered three-level patients-seen measure. Treatment was coded as BCG versus placebo. **Results:** BCG assignment was associated with lower cumulative odds of occupying a higher maximum-severity category (adjusted odds ratio, 0.66; 95% confidence interval, 0.51–0.86). Results were similar after omitting the highest-contact category. **Conclusions:** Conditional on the specified contact covariates, BCG recipients had lower maximum all-event severity than placebo recipients. These estimates describe an adjusted association and do not establish a causal safety effect.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct one ordered maximum-severity outcome per subject. Which adverse events are in scope, and which apparently related endpoint is not being analyzed?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Adjusted maximum-severity association after BCG assignment\n\n**Authors:** Natalie R. Evans, Farid Benali, and Keiko Tanaka\n\n## Abstract\n\nMaximum severity across all recorded adverse events was modeled in 791 complete healthcare-worker records using a proportional-odds logit adjusted for expected interaction and ordered patient volume. With BCG coded 1 and placebo 0, the adjusted BCG-versus-placebo odds ratio for a higher category was 2.08 (95% CI 1.42–3.04). The estimate is an association and depends on the proportional-odds and linear patient-volume assumptions.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nJoin the subject-level outcome to treatment and patient-contact variables, then apply complete-case deletion. How many model records remain?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Specify the encodings for the ordered outcome, BCG treatment, expected interaction, and patient volume that define the regression design.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the stated proportional-odds model and report the BCG coefficient, its standard error, and nominal Wald p-value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the BCG coefficient to the conditional BCG-versus-Placebo odds ratio for a higher maximum-severity category, then state the endpoint and model limitations.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

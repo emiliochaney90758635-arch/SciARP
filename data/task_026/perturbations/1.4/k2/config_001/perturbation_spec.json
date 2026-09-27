@@ -1,0 +1,35 @@
+{
+  "task_id": "026-capsule008",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits the common set-construction rule.",
+    "Omits the set-operation scope."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3e716fbe645f64f3c5d17844a863bcb8b6d9682964890c734426617f0249b4d6",
+  "configured_evidence_sha256": "3e716fbe645f64f3c5d17844a863bcb8b6d9682964890c734426617f0249b4d6",
+  "evidence_unchanged": true
+}

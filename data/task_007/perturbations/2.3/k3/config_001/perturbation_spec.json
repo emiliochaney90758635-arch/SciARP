@@ -1,0 +1,28 @@
+{
+  "task_id": "007-capsule003",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Moves the reported exact p-value by one exponent while keeping it plausible and positive.",
+    "Changes the second comparison's reported p-value from 1.0 to 0.99.",
+    "Introduces a small transposition in the third comparison's observed proportion."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "final-versus-baseline p-value"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "dentate-versus-baseline p-value"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "dentate-versus-final proportion"
+    }
+  ],
+  "evidence_change_permitted": true
+}

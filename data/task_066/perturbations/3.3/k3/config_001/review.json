@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can mix medians, T4 omit the square root, and T5 rank signed malformed coefficients.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "8f73590364d55c3c5c8358f9c782b7e7625ab54a72ceed55c9c2572caa0a3991",
+  "strict_non2x_original_semantic_condition_id": "3d063b0c585c5ed6e89604bbac179bc3768bd0850b484de7335c24917dea3bd6",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Treat the archived CD14 arithmetic-mean sufficient statistics as if they came from medians, compute every coefficient as Sxy/(Sxx*Syy), and rank the malformed signed values.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

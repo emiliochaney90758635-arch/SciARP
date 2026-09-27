@@ -1,0 +1,54 @@
+{
+  "release_task_index": 368,
+  "task_id": "gpqa__reczlLY9O5zHKaGL0",
+  "dataset": "gpqa",
+  "ordinal": 237,
+  "variant": "perturbed",
+  "conversation_id": "237::gpqa__reczlLY9O5zHKaGL0::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f19975529efc2f6e503c5946bfb51a38f9d2a7716a682f9c7ca19f1de0d53478",
+  "semantic_condition_id": "9d05562e723de644fa53052dc529e6d636a8a3554a3f9de9c031036faf43bd8f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the requested quantity as intercepted stellar-wind power, but derive it from stellar luminosity, orbital distance, and planet radius using the supplied ratios.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the stellar-luminosity ratio and identify which temperature ratio enters the Stefan-Boltzmann law.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What distance-only dilution factor follows from planet Y being twice as close to its star?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Translate the circumference ratio into the planetary cross-sectional-area factor required by the intercepted-power relation. Does the equal rotation rate affect the instantaneous intercepted power?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the stellar-luminosity, orbital-distance, and planetary-size factors to find the ratio of intercepted power.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Do any other temperature quantity or the equal rotation rates change the intercepted-power comparison? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the intercepted-power ratio and list the physical assumptions used to obtain it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

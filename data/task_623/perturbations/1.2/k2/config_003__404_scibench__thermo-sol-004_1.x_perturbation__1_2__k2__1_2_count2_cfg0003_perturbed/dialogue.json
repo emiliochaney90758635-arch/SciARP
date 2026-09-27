@@ -1,0 +1,59 @@
+{
+  "release_task_index": 623,
+  "task_id": "scibench__thermo-sol-004",
+  "dataset": "scibench",
+  "ordinal": 404,
+  "variant": "perturbed",
+  "conversation_id": "404::scibench__thermo-sol-004::1.x::perturbation__1_2__k2__1_2_count2_cfg0003::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "a0f7d4dfe903c7092963f590ec0672dcbb5d9b9eafd78afc5996f8d77670898b",
+  "semantic_condition_id": "86e37b029fc31fc1faa15176df99fce68bcbe8c5f8a129d088da6b554dbd06a0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Living matter has a carbon-14 activity of 15.3 decay events per minute, while a fossilized wood sample has 2.4 events per minute. Assuming activity is proportional to the amount of carbon-14, calculate the fraction remaining when the wood is measured.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Carbon-14 has a half-life of 5760 kg. Write the exponential decay law, convert the half-life to seconds using 365 days per year, and calculate the decay constant in s^-1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the remaining fraction and the exponential law to solve algebraically for the elapsed time since the wood stopped exchanging carbon with its surroundings.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the age in meters and convert it to an approximate age in years.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Independently express the observed activity ratio as a number of elapsed half-lives and use that route to check the age obtained above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the checked age and explain, for positive radioactive decay, how a lower remaining activity changes the inferred elapsed time.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Substitute the checked age back into A=A_0 exp(-kt) to verify the observed activity ratio, and confirm the qualitative activity-age direction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final age in seconds and years, together with the activity-age interpretation.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

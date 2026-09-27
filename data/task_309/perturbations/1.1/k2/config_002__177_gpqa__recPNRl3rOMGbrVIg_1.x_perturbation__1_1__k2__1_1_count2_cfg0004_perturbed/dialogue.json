@@ -1,0 +1,49 @@
+{
+  "release_task_index": 309,
+  "task_id": "gpqa__recPNRl3rOMGbrVIg",
+  "dataset": "gpqa",
+  "ordinal": 177,
+  "variant": "perturbed",
+  "conversation_id": "177::gpqa__recPNRl3rOMGbrVIg::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "57f3de2f33519d0dd06346ad2fd6e4fe2175aec56a95a4d0aad45cbc0925eb87",
+  "semantic_condition_id": "0bdf65c7e5be8138fc7483c4200ef092196a25d9090e1c7899c674e5a85e8fd2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The target is 2-methylhexan-1-ol and the final workup is H2O2/OH-. Reason backward from the terminal alcohol: which precursor functional group and reaction family make that workup chemically integral?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For routes beginning with benzene, predict the products of the paired reagent sequences and derive any relevant regiochemistry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For routes beginning with acetic acid, predict the effects of the paired reagents and whether the stated target forms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those product predictions to select the substrate and first-stage reagent set that lead to the target after H2O2/OH-. State the complete two-stage transformation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Trace the relevant atoms through the selected transformation and explain why the other substrate-reagent pairings fail the stated two-stage criterion.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the selected substrate and reagent sequence, explaining the positional outcome in the product.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

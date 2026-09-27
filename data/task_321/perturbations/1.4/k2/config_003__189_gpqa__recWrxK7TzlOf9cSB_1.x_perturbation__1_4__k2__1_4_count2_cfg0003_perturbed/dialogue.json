@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "189::gpqa__recWrxK7TzlOf9cSB::1.x::perturbation__1_4__k2__1_4_count2_cfg0003::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "0edd05656bbb81eac1ba8867b8d31ead8bee19288aa7e58b5db6211b0861bcc7",
+  "semantic_condition_id": "0b4f0d6f8c3668479547191cc0e9292fb2bc8156a0362315dbe39408ca427e19",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has one negative DEPT-135 resonance and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. Interpret the signal and propose a structure that fits its formula and reactivity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the provisional structure of A and the proposed reaction class, identify product B and check whether its reported carbon-signal pattern is internally consistent.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat B with hydrazine and NaOH. Identify the transformation and product C, then assess its carbon-signal pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using product C, predict D and account for two 13C signals below 60 ppm and all remaining signals above 100 ppm.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the systematic name of product D and explain how its carbon environments distinguish the remaining structural alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

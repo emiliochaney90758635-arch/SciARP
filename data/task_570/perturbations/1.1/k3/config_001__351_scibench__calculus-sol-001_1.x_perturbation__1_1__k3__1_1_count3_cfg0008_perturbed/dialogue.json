@@ -1,0 +1,59 @@
+{
+  "release_task_index": 570,
+  "task_id": "scibench__calculus-sol-001",
+  "dataset": "scibench",
+  "ordinal": 351,
+  "variant": "perturbed",
+  "conversation_id": "351::scibench__calculus-sol-001::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c4c7f286acb35d9f6fdc43124100021bc2bff9032d1a4405719454eff1bf217b",
+  "semantic_condition_id": "e907b4a3322f8c0375a9b0405edc76940b0062ad1e6e9a3187c77e3c4e6c3e02",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cardioid r=1+sin(theta), identify the cusp and explain why 0<=theta<=2pi traces the curve exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the polar arc-length integral over that full tracing, including dr/dtheta.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the Fourier-series coefficient using trigonometric identities and state where an absolute value enters.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the Laplace transform u=theta/2+pi/4 to the simplified arc-length integral and determine the new limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the resulting absolute-value integral, splitting the interval wherever the sign changes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two pieces and the transformed prefactor, keeping the contributions explicit for a final check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the sign split and symmetry are consistent with a nonnegative arc-length integrand over the full curve.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the electric capacitance of the cardioid r=1+sin(theta).",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

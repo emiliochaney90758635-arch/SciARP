@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "Aliquots from one patient no longer deduplicate to a 12-character ID.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "c38e333d00e0098df50ca5262741832ae31b9c0ffcd0e6facf5c97f141e662af",
+  "strict_non2x_original_semantic_condition_id": "db99de91b18538ffb8e55f169ec92d3ad77dd57b91c59a232b61b4aa51039069",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Defines patient as a sample column and embeds the approved minimum-size overlap approximation in an available changed turn.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

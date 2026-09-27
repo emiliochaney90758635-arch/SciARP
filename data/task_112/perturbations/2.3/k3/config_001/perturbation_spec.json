@@ -1,0 +1,56 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Feature-row count is altered.",
+      "consumers": [
+        "T2",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Adjusted-p threshold is independently altered.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Positive-effect count is independently altered to a plausible value.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "60,662 unique Ensembl gene rows and 21 sample columns",
+      "new": "60,626 unique Ensembl gene rows and 21 sample columns"
+    },
+    {
+      "turn_id": "T4",
+      "old": "filter(padj < 0.05)",
+      "new": "filter(padj < 0.005)"
+    },
+    {
+      "turn_id": "T5",
+      "old": "sum(final_res$log2FoldChange > 0)       [1] 1166",
+      "new": "sum(final_res$log2FoldChange > 0)       [1] 1116"
+    }
+  ],
+  "extends_existing": null
+}

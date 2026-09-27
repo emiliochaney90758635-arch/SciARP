@@ -1,0 +1,54 @@
+{
+  "release_task_index": 596,
+  "task_id": "scibench__matter-sol-002",
+  "dataset": "scibench",
+  "ordinal": 377,
+  "variant": "perturbed",
+  "conversation_id": "377::scibench__matter-sol-002::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "0ff6a9d8887f58dd917ec6f5e680aa7f96aa422883904fb7c070128db5682c6d",
+  "semantic_condition_id": "3c7cb2fcf8e79a2386afdd061a52bad89919a167e6db3a2ce364a8fcebc11348",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the He+ state R_{3,2}(r)Y_{2,-1}(theta,phi), identify n, l, and m and state which quantum number controls the nonrelativistic Coulomb energy at fixed nuclear charge.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Model the electron as the lowest l=2 state of a spherical infinite well and use its first spherical-Bessel zero for the energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute Z=2 and n=3, and simplify the energy in terms of the hydrogen ground-state energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the electron energy in electronvolts and state whether it depends on l or m in this model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the value as a model estimate for a realized ion, with nonzero unquantified recoil, fine-structure, and environmental uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and Z^2/n^2 scaling without introducing an external field or changing the model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the energy and its approximation status.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

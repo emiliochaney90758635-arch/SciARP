@@ -1,0 +1,76 @@
+{
+  "subclass": "1.4",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "Retain exactly three omissions: workbook matching , recurrence handling at T3, and strict threshold at T4",
+      "injected_text": "Identify the BLM mutation carriers that have matched variant workbooks and define the carrier cohort.\n\nFor this perturbed step, retain exactly three omissions: workbook matching , recurrence handling at T3, and strict threshold at T4",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Retain exactly three omissions: workbook matching at T1, recurrence handling at T3, and strict threshold at T4; restore the clean substring classification request at T5.",
+      "injected_text": "Apply the four stated ontology exclusions to those rows without deduplicating variants across samples.\n\nFor this perturbed step, retain exactly three omissions: workbook matching at T1, recurrence handling at T3, and strict threshold at T4; restore the clean substring classification request at T5.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Retain exactly three omissions: workbook matching at T1, recurrence handling at T3, and strict threshold at T4; restore the clean substring classification request at T5.",
+      "injected_text": "Apply the strict VAF < 0.3 rule and assemble the final retained population.\n\nFor this perturbed step, retain exactly three omissions: workbook matching at T1, recurrence handling at T3, and strict threshold at T4; restore the clean substring classification request at T5.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T3",
+    "T4"
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.4.k3",
+    "decision": "repair_required",
+    "problem": "The dialogue contains four omission roots while declaring k3.",
+    "before": "Omits workbook matching, recurrence handling, strict threshold, and substring-versus-effect semantics.",
+    "after": "Retain exactly three omissions: workbook matching at T1, recurrence handling at T3, and strict threshold at T4; restore the clean substring classification request at T5.",
+    "proposed_turns": [
+      "T1",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nIdentify the BLM mutation carriers and define the carrier cohort."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the four stated ontology exclusions to those rows."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Apply a VAF threshold of 0.3 and assemble the final retained population."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Classify every retained row whose ontology label contains `synonymous` as synonymous, then calculate the fraction of synonymous rows in the final population."
+    }
+  ]
+}

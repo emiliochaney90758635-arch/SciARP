@@ -1,0 +1,34 @@
+{
+  "task_index": 108,
+  "task_id": "108-capsule031",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1b091f9d5a2fe5ca6424806631529609d0101531f1ab8033f8f4293da6a55ba3",
+  "source_base_evidence_sha256": "866e921506b455998582dd18fb5e426d359611719e1a74edbf137a6b5733a47f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Fallback rule omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Contrast direction omitted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Identify the annotation attached to PA14_35160, without applying a missing-name fallback.",
+    "T2": "Select a joined differential-expression column involving rhlI at that locus."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,34 @@
+{
+  "task_index": 131,
+  "task_id": "131-capsule036",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9c1b0fabc60bb79a6ca565e5dac68b9ec878ef1ac8b7ca515a4c215236469b0f",
+  "source_base_evidence_sha256": "e32e2c190a417829565cff410e8e08a79b68931843a296d6fd9582257e7a04c9",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong refit path imposed.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Wrong library independently imposed.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Delete columns from the fitted result instead of refitting.",
+    "T4": "Retrieve KEGG_2021_Human rather than the requested KEGG_2019_Mouse branch."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

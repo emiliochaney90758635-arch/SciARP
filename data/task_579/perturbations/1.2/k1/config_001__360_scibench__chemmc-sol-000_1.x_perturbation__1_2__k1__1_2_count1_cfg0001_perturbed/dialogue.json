@@ -1,0 +1,59 @@
+{
+  "release_task_index": 579,
+  "task_id": "scibench__chemmc-sol-000",
+  "dataset": "scibench",
+  "ordinal": 360,
+  "variant": "perturbed",
+  "conversation_id": "360::scibench__chemmc-sol-000::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "faab591b627ddeb1d418097596089d83ed09371cd9ebc04288533d432dff9e99",
+  "semantic_condition_id": "6226cee15827b396865a409f304fdb9a3ab1b5d166e4862eb4a76ed8e632cd58",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I am checking the photoelectric threshold for sodium. At the threshold, what value does the maximum photoelectron kinetic energy take, and what does the work function represent?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the stated work function of 2.28 seconds and Planck's constant h = 4.135667696 x 10^-15 eV s. Before calculating, confirm that their units are compatible for finding a frequency.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which energy-frequency relation applies at the photoelectric threshold? Rearrange it to isolate the threshold frequency and substitute the stated work function and Planck constant.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now evaluate the numerical quotient in that expression, carrying the inverse-second unit and enough digits to round reliably later.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the result in normalized scientific notation in hertz, but keep the extra digits for the final rounding.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What does this threshold imply for photons with frequencies above and below it?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Before giving the final result, check the dimensions and verify that substituting the computed frequency into h times frequency reproduces the stated work function.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give sodium's threshold frequency in hertz to three significant figures. Then state whether a photon at twice that frequency can eject an electron and why.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

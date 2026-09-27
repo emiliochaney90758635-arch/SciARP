@@ -1,0 +1,28 @@
+{
+  "task_id": "016-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first verification batch supplies conflicting condition minima.",
+    "The second independently reports three positives.",
+    "The third independently reports one positive with different audited minima."
+  ],
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "first audit batch"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third audit table"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "second audit summary"
+    }
+  ],
+  "evidence_change_permitted": true
+}

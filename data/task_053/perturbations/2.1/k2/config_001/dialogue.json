@@ -1,0 +1,35 @@
+{
+  "release_task_index": 53,
+  "task_id": "053-capsule014",
+  "source_id": "bix-18-q4",
+  "dataset": "bixbench",
+  "ordinal": 53,
+  "variant": "perturbed",
+  "conversation_id": "053::053-capsule014::2.1::k2::perturbed::lane_b_review_overlay",
+  "condition_label": "2.1.k2",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 2,
+  "dialogue_sha256": "93e150b2d9c3944fee8f597e66e40e50192a3e73d884b1dbf3dfc3fa6a81901f",
+  "semantic_condition_id": "84754c3dd77573536044e009748f7292c0b72f21c65fd23207849c5ea3ba1f0b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original rhlR- circularity records\n\nThe records with `Genotype = rhlR-` and `StrainNumber = 61` in the original table are shown below. `Circularity` is the circularity measurement, and the three `Replicate` values are independent replicates; none of these values is missing.\n\n| Genotype | StrainNumber | Replicate | Circularity |\n|---|---:|---:|---:|\n| rhlR- | 61 | 1 | 0.509 |\n| rhlR- | 61 | 2 | 0.601 |\n| rhlR- | 61 | 3 | 0.606 |\n\n## Statistical method\n\nFor \\(n\\) circularity observations, the standard error is calculated as:\n\n\\[\n\\mathrm{SEM}=\\frac{s}{\\sqrt{n}}\n\\]\n\nwhere \\(s\\) is the sample standard deviation, calculated with \\(n-1\\) as the variance denominator; this matches the default behavior of `sd()` in R.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Original rhlR- circularity records\n\nThe records with `Genotype = rhlR-` and `StrainNumber = 61` in the original table are shown below. `Circularity` is the circularity measurement, and the three `Replicate` values are independent replicates; none of these values is missing.\n\n| Genotype | StrainNumber | Replicate | Circularity |\n|---|---:|---:|---:|\n| rhlR- | 61 | 1 | 0.509 |\n| rhlR- | 61 | 2 | 0.601 |\n| rhlR- | 61 | 3 | 0.606 |\n\n## Statistical method\n\nFor \\(n\\) circularity observations, the standard error is calculated as:\n\n\\[\n\\mathrm{SEM}=\\frac{s}{\\sqrt{n}}\n\\]\n\nwhere \\(s\\) is the sample standard deviation, calculated with \\(n-1\\) as the variance denominator; this matches the default behavior of `sd()` in R.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the sample standard deviation using n-1 in the variance denominator.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What standard error of the mean follows from that sample standard deviation and sample size?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

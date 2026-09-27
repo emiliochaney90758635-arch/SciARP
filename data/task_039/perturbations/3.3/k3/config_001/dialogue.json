@@ -1,0 +1,44 @@
+{
+  "task_id": "039-capsule010",
+  "variant": "perturbed",
+  "condition_label": "3.3.k3",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "6f02277856ff65ea6cfc4c811790433082052667d67ccba41ded442d2c81a95a",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "turn_id": "T1",
+        "role": "user",
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## DESeq2 comparison and significance rule\n\nThe input has 5,828 gene rows and 36 samples. After excluding `resub-5`, `resub-10`, and `resub-33`, the model uses 33 samples with:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) from the JBX97, JBX98, and JBX99 versus JBX1 contrasts, retaining unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05`. No `log2FoldChange` threshold is applied.\n\n## Mutually exclusive partition\n\n| Region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nThe three-set union is obtained by summing all disjoint rows. The numerator requested in the task is obtained from the applicable single-mutant-only rows; the measured-gene population is not the union denominator.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConstruct the three strict significant-gene sets."
+      },
+      {
+        "turn_id": "T2",
+        "role": "user",
+        "content": "Use inclusive pairwise intersections as rows and also retain the three-way row."
+      },
+      {
+        "turn_id": "T3",
+        "role": "user",
+        "content": "Use all three strain-only rows as numerator."
+      },
+      {
+        "turn_id": "T4",
+        "role": "user",
+        "content": "Average the seven displayed counts to estimate the union."
+      },
+      {
+        "turn_id": "T5",
+        "role": "user",
+        "content": "Calculate the percentage."
+      }
+    ]
+  },
+  "dialogue_sha256": "297611bb5af0ae7fb0feef3985db680cabcbdac75fc07f42f80ee6f7a4b9b250"
+}

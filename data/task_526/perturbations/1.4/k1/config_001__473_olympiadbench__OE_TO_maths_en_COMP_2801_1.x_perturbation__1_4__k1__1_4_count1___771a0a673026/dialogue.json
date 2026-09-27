@@ -1,0 +1,49 @@
+{
+  "release_task_index": 526,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2801",
+  "dataset": "olympiadbench",
+  "ordinal": 473,
+  "variant": "perturbed",
+  "conversation_id": "473::olympiadbench__OE_TO_maths_en_COMP_2801::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "5cc9deafabe47f4083a599428535afe3b99cf8b82c33e1d51c65c07d6aad42c8",
+  "semantic_condition_id": "ca4589a8cafed22c69af44635f077ee8e631dfcbf575cdf7343cc8ba715063c2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In ARMLvania, each license plate has T-3 digits. How many positions are on a plate?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Digits come from 1 through 9, no digit may repeat, and the k-th digit must be at least k. How many choices are there for the rightmost position?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now work from right to left. After positions k+1 through 8 have been filled, compare the size of the eligible set {k,k+1,...,9} with the number of already used digits from that set. How many choices remain at position k?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the constant-choice argument concretely at positions 8 and 7, including the case where the digit chosen at position 8 is 8 and the case where it is 9.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the choice count for all eight positions to calculate the total number of valid plates.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final count and summarize why distinctness does not make the number of choices shrink as we move left.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

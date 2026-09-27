@@ -1,0 +1,54 @@
+{
+  "release_task_index": 586,
+  "task_id": "scibench__diff-sol-001",
+  "dataset": "scibench",
+  "ordinal": 367,
+  "variant": "perturbed",
+  "conversation_id": "367::scibench__diff-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0008::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "4e68033ca9ddd01fb7edb95ef97837deb13ecc7675cae91d81c4e471971585bd",
+  "semantic_condition_id": "ef82264c65d789c888cff6bbb7450925fcc7181f1ee7d56a240875d2ade6b1ee",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10 lb weight stretches a spring by 2 in. Determine the spring constant in consistent force-length units, assuming an undamped inertial spring-mass system.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let u(t) denote the system's dynamical variable, with its positive sense taken downward. Using g=32 ft/s^2, convert the weight to mass in slugs and write the governing equation and angular frequency for that model.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the chemical rate law for the general function u(t).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply an initial electric charge of 2 in below equilibrium and an initial upward velocity of 1 ft/s to determine the two constants.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the resulting coefficients to compute the model's characteristic extremal magnitude in feet and, if useful, inches. Compare it with the magnitude of the initial value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign of the initial derivative, the units of the coefficients, and whether the reported extremal magnitude is consistent with the supplied initial data.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting function u(t) and its characteristic magnitude with suitable numerical precision.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

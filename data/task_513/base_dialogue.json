@@ -1,0 +1,54 @@
+{
+  "release_task_index": 513,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2409",
+  "dataset": "olympiadbench",
+  "ordinal": 460,
+  "variant": "clean",
+  "conversation_id": "460::olympiadbench__OE_TO_maths_en_COMP_2409::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "5c6f456e9e5ef9398cbe511a8ac174ccd73c0e353b7d9862000a0900d38e6a35",
+  "semantic_condition_id": "dba9407bdb619d7e5a50813881d353b8c0020236d9f01db3cdd5b841ad20ca5a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A right triangle ABC is right-angled at B, with AB=n(n+1) and hypotenuse AC=(n+1)(n+4), where n is a positive integer. Use the Pythagorean theorem to simplify BC^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From that factorization, give a necessary and sufficient perfect-square condition for BC to be an integer.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Justify both directions of the equivalence by separating the factor that is already a square from the remaining factor.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Parametrize all positive integers n satisfying the square condition, introducing an integer parameter k.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the parametrization in both directions and determine the smallest allowed value of k from n>0.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Impose n<100000 on the parametrization and find the complete integer range of k.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Count the resulting positive integers n for which BC is integral.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 341,
+  "task_id": "gpqa__reckyB637GAnW0uRM",
+  "dataset": "gpqa",
+  "ordinal": 209,
+  "variant": "perturbed",
+  "conversation_id": "209::gpqa__reckyB637GAnW0uRM::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "1b519f4d77aefa795a9f2b458c894d7b75c2ec1c4cecc7cead36b57725fdfffa",
+  "semantic_condition_id": "51c93d4f061800d571b20d79db0f66048b0c324afcb007c541aa1b6b5d3a02d3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "4-Aminophenol contains both an aniline amino group and a phenolic hydroxyl group. Compare their nucleophilicity toward propionic anhydride under pyridine conditions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With one equivalent of propionic anhydride, predict the major monoacylation product A and explain which heteroatom is preferentially acylated.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The second substrate is 4-propionamidophenyl propionate. Under aqueous NaOH, compare the base-hydrolysis susceptibility of its phenolic propionate ester and its amide. Do these reagents support a Hofmann rearrangement?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use a Hofmann rearrangement of the propionamide, with loss of its carbonyl carbon, as the governing reaction under aqueous NaOH and predict product B from that pathway.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the two reactions and state the structures or unambiguous names of A and B, with a brief chemoselective explanation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether one equivalent of anhydride or the stated aqueous-base conditions provide any reason to change either product assignment.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identities of A and B and summarize the acylation and hydrolysis selectivity.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

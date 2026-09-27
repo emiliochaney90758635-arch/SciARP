@@ -1,0 +1,28 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first audit collapses remapped accessions by the smallest replicate probability and yields a negative cross-product.",
+    "The second audit collapses by the largest probability and yields a large positive cross-product.",
+    "The third audit keeps versioned accessions separate and yields a weak positive cross-product."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first reconciliation audit"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "frozen-release audit"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "second reconciliation audit"
+    }
+  ],
+  "evidence_change_permitted": true
+}

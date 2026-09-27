@@ -1,0 +1,21 @@
+{
+  "task_id": "077-capsule021",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response",
+    "T4_response",
+    "T5_response"
+  ],
+  "root_injections": [
+    "Counts only MHONGO=Yes records.",
+    "Treats a log-odds coefficient directly as a percentage.",
+    "Reverses the documented patient-volume codes."
+  ],
+  "evidence_mode": "append"
+}

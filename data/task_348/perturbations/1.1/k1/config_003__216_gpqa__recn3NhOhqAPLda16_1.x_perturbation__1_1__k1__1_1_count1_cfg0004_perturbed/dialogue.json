@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "perturbed",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b6f928a00a4ec1611ff181c24f4bba1d7146ef060871c6e6b41f9ed24385e089",
+  "semantic_condition_id": "6b6252e5648e92ebd9f232f95aebd4774ef8e5f4cc99fd2f9cd70ad267a0e6ea",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many ideal peaks would that Reaction I mixture give by itself on normal-phase and chiral HPLC, and why?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Pentane-2,4-dione is reduced with excess NaBH4 and worked up. Identify the diol framework and enumerate its distinct stereoisomers after molecular symmetry is considered.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine the Reaction II peak count on normal-phase HPLC and on HPLC packed with an ultraviolet detector.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

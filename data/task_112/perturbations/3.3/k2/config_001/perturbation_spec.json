@@ -1,0 +1,45 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong cohort path retains confounded samples.",
+      "consumers": [
+        "T2",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Wrong selection path independently activates an inactive cutoff.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Retain MGD1640B and MGD1641B despite their recorded confounders, then align all 21 columns.",
+    "T4": "Activate the commented absolute-LFC threshold above 0.58 before counting selected genes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "State that all 21 count columns, including MGD1640B and MGD1641B, are retained and aligned, while reusing the archived fit."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Select only the 1166 rows with padj<0.05 and a positive shrunken effect as significant."
+    }
+  ]
+}

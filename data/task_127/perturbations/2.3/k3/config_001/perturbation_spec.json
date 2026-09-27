@@ -1,0 +1,54 @@
+{
+  "task_index": 127,
+  "task_id": "127-capsule035",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "0f87d2e3f28ff6f2e0fd34b0049b18b870f7354702fd55639902eb37c902e9a0",
+  "source_base_evidence_sha256": "79b55dff8f667ca25e1bc810b690469b0f33c3eb1d051601ef893763ff8e4f8b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "W density changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Chromosome-33 density independently changed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Chromosome-4 density independently changed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| W | 184 | 6,742,290 | 2.729043099600e-05 |",
+      "new": "| W | 184 | 6,742,290 | 2.629043099600e-05 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| 33 | 6 | 477,022 | 1.257803623313e-05 |",
+      "new": "| 33 | 6 | 477,022 | 1.357803623313e-05 |"
+    },
+    {
+      "turn_id": "T3",
+      "old": "| 4 | 77 | 8,011,800 | 9.610824034549e-06 |",
+      "new": "| 4 | 77 | 8,011,800 | 9.710824034549e-06 |"
+    }
+  ],
+  "extends_existing": null
+}

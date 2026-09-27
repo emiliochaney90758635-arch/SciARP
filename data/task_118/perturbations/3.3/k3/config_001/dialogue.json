@@ -1,0 +1,35 @@
+{
+  "release_task_index": 118,
+  "task_id": "118-capsule034",
+  "source_id": "bix-51-q6",
+  "dataset": "bixbench",
+  "ordinal": 118,
+  "variant": "perturbed",
+  "conversation_id": "118::118-capsule034::3.3::k3::perturbed::lane_d",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "e6743357d626bb02e27ac46920f9bd8445916cda87741b7dfdbde4ee920f39ab",
+  "semantic_condition_id": "443ac1c326d39117b8e6f7a78da58236fad20d457702a9447654d229441e1336",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Age-only logistic-regression evidence\n\n## Valid observations and response encoding\n\nThe workbook contains 80 genuine patient records. An additional imported record contains only a whitespace character in the age column and is removed before numeric conversion. The 80 retained ages are complete. Group 1 is encoded as `Response=1` and Group 2 as `Response=0`.\n\n```text\nResponse = 1 (n=41), Age in years:\n67, 50, 57, 46, 40, 52, 53, 45, 73, 64, 52, 54, 45, 71, 41, 45,\n43, 57, 51, 74, 52, 49, 74, 57, 74, 67, 47, 50, 59, 57, 63, 51,\n46, 51, 58, 64, 48, 44, 40, 55, 65\n\nResponse = 0 (n=39), Age in years:\n46, 44, 73, 72, 40, 59, 67, 60, 67, 51, 65, 73, 49, 55, 50, 65,\n68, 69, 68, 56, 75, 73, 63, 70, 71, 56, 67, 46, 53, 63, 63, 51,\n65, 75, 65, 69, 73, 73, 64\n```\n\n## Model likelihood and information criterion\n\nThe fitted model is:\n\n```r\nmodel_age <- glm(Response ~ Age, data = dataset, family = binomial)\n```\n\nIt is a Bernoulli logit model with an intercept, so it has two fitted parameters.\n\n| quantity | value |\n|---|---:|\n| n | 80 |\n| k | 2 |\n| intercept estimate | 4.446565274919918 |\n| Age estimate | -0.0749539180370847 |\n| maximized log-likelihood | -50.07096161377879 |\n| residual deviance, `-2 log L` | 100.14192322755758 |\n| null deviance | 110.85354367995538 |\n| archived `AIC(model_age)` | 104.1419 |\n\nThe information criterion is defined by:\n\n```text\nAIC = -2 log L + 2k\n```\n\nThe ordinary model summary displays the same quantity at lower precision as `104.14`.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nReverse response coding.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit without an intercept.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the BIC penalty k log n rather than the requested AIC penalty 2k.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

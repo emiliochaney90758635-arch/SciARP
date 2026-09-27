@@ -1,0 +1,49 @@
+{
+  "release_task_index": 365,
+  "task_id": "gpqa__recxjillUQ4ucEWi2",
+  "dataset": "gpqa",
+  "ordinal": 234,
+  "variant": "clean",
+  "conversation_id": "234::gpqa__recxjillUQ4ucEWi2::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "1f3b63ab30fc2b2998a747af7213becd648fbd591e8dbc0e3ac5c843aead8419",
+  "semantic_condition_id": "d68de79ff9a50079979578a422c4df87e941371231c1f6dd9be45d887aa18ab9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At locus P, P2 is a fully recessive deleterious allele: only P2P2 has fitness 1-s, while P1 is favored and mutates to P2 at rate mu with no back mutation. What are the fitnesses of P1P1 and P1P2?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For s=0.1 and mu=0.0001, apply recessive mutation-selection balance to derive the equilibrium frequency q of P2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert q to the equilibrium frequency p of favored P1 and give a sensible rounded value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Report the three requested quantities as w(P1P1), w(P1P2), and p(P1).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the allele labels and explain why a recessive deleterious allele uses q approximately sqrt(mu/s), not the linear dominant-allele balance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the favored allele, its equilibrium frequency, and the two genotype fitnesses.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

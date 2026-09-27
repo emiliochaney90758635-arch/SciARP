@@ -1,0 +1,49 @@
+{
+  "release_task_index": 485,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2860",
+  "dataset": "olympiadbench",
+  "ordinal": 432,
+  "variant": "perturbed",
+  "conversation_id": "432::olympiadbench__OE_TO_maths_en_COMP_2860::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "e4d584928a9e647e2b773f701d966482cbd91de633ce5fd86e4954eb828be925",
+  "semantic_condition_id": "f7da34a2f93e14a623ddb4fd2d28ea679979b45782e82f4dacc33f799a6a2c7a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AC=c, and identify which side is opposite the given angle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the Law of Cosines to derive the quadratic equation for c. Use its discriminant to find when there are two distinct real values of c.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the sum and product of the roots of the same quadratic in BC, and determine when both possible values of AB are positive.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count the integer values of AC for which two distinct positive values of AB are possible.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

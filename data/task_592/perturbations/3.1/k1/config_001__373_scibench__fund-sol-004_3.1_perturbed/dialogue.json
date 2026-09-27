@@ -1,0 +1,49 @@
+{
+  "release_task_index": 592,
+  "task_id": "scibench__fund-sol-004",
+  "dataset": "scibench",
+  "ordinal": 373,
+  "variant": "perturbed",
+  "conversation_id": "373::scibench__fund-sol-004::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "af6a2df3fed6393499499929e6ba2a09d277e61afdd6b29788a38aaf31c06963",
+  "semantic_condition_id": "e481bcb9fbd049e3ddc78ba8e44f29378bdd011a59a8abec195a2112a115954f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rotating cylinder slows from 3.40 rad/s to 2.00 rad/s while turning through 20.0 revolutions. Identify the initial speed, final speed, and angular displacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the angular displacement to radians.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under the stated constant-change assumption, write a relation among the initial value, final value, and accumulated third quantity, then isolate the requested change parameter.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the established final angular speed of 2.00 rad/s with 2.40 rad/s and calculate alpha.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the conversion used above, numerator sign, and units in that relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, including its units and physical meaning.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

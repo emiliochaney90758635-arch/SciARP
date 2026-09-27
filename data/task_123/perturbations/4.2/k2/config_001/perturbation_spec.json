@@ -1,0 +1,33 @@
+{
+  "task_index": 123,
+  "task_id": "123-capsule035",
+  "subclass": "4.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "244b9ba9c513cc42be614780106b67978dbaba37961232d969c3285417e4a77a",
+  "source_base_evidence_sha256": "847215154d726c0ef35ca9343eebef15b1fc32e8aeb3b0e482d14a4b62700415",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Curator changes retained-site count.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "PI independently changes removed-site count.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "The database curator requires 300 retained positions.",
+    "T4": "The PI independently requires 800 removed sites."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

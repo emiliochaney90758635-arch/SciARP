@@ -1,0 +1,59 @@
+{
+  "release_task_index": 378,
+  "task_id": "gpqa__recM9L6M7a0A5bj47",
+  "dataset": "gpqa",
+  "ordinal": 247,
+  "variant": "perturbed",
+  "conversation_id": "247::gpqa__recM9L6M7a0A5bj47::1.x::perturbation__1_1__k2__1_1_count2_cfg0007::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e42064f72ef5228023a80b9fe1b14f31fe6ca3b090b647b8bff07d4448f6b095",
+  "semantic_condition_id": "96b52e27e3021e1c6f8baa19ae26661bbe1721b9519b1297beaac727aee28dbb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cas9 mRNA, a guide RNA, and transgene-bearing donor DNA were injected into a one-cell fertilized egg. The resulting animal has different target-site sequences in different tissue lineages despite no possible off-target guide binding. What genetic pattern does this describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For this meiotic-recombination case, what does the lineage distribution imply about timing, and does the observed sequence identify a unique molecular history?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The delivered Cas9 component was mRNA rather than preformed protein. Explain how this can still generate nuclease activity after delivery and across early cell divisions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the roles of the delivered components, propose the most likely process that generated different target-site repair outcomes in descendant lineages.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the component chemistry, identify the most plausible source of the stated off-target mutations and compare it with RNA integration or transfer of surrogate-mother DNA.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the most probable cause of the mosaicism and distinguish it from a uniquely reconstructed event history for this animal.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Suggest two changes to the editing protocol that should reduce mosaicism if the timing mechanism is correct, and explain why.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Summarize the lineage pattern, the developmental mechanism, and the main mechanistic exclusions.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

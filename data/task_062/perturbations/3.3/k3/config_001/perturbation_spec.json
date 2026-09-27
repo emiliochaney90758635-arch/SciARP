@@ -1,0 +1,73 @@
+{
+  "config_id": "task062_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Deduplicate loci , drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4",
+      "injected_text": "Within that sample set, retain non-reference, non-intronic, non-intergenic, non-UTR variants with VAF<0.3.\n\nFor this perturbed step, deduplicate loci , drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Deduplicate loci at T2, drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4.",
+      "injected_text": "Tabulate the original Classification values for those variants and identify the denominator required by the question.\n\nFor this perturbed step, deduplicate loci at T2, drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Deduplicate loci at T2, drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4.",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, deduplicate loci at T2, drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "The third class-merge event targets a nonexistent Likely Benign class and is ineffective.",
+    "before": "Deduplicate, drop NA, merge Likely Benign.",
+    "after": "Deduplicate loci at T2, drop blank classifications at T3, and use non-Benign count rather than total count as the denominator at T4.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated filters, then deduplicate qualifying records by Chr:Pos across samples."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Drop rows with blank Classification before tabulating the remaining values."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Divide the Benign count by the non-Benign count rather than by the total qualifying count."
+    }
+  ]
+}

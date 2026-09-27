@@ -1,0 +1,19 @@
+{
+  "task_id": "104-capsule030",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Treats Odds Ratio as log2 odds ratio.",
+    "Relabels Combined Score as the actual odds ratio."
+  ],
+  "evidence_mode": "append"
+}

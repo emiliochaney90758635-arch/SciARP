@@ -1,0 +1,54 @@
+{
+  "release_task_index": 330,
+  "task_id": "gpqa__recaXdGn3FAIkxLGM",
+  "dataset": "gpqa",
+  "ordinal": 198,
+  "variant": "perturbed",
+  "conversation_id": "198::gpqa__recaXdGn3FAIkxLGM::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "dd7fea328242f19c693453dbd600f3089351757e1b0bb60aeed33c29d67c9da9",
+  "semantic_condition_id": "e0a43148b605b30036d796718bd0c06b1a3e6a70f33ccb7210d45c6524f9704f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A black hole subtends 10^-17 degrees in a galaxy 10^10 pc away. Convert the angle to radians and the distance to metres, retaining whether the quoted angular size is a radius or a full diameter as an ambiguity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the small-angle relation with a galaxy distance of 10^12 pc, replacing the established 10^10 pc, and estimate the horizon radius under both conventions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Bekenstein-Hawking entropy in terms of Schwarzschild radius, Boltzmann's constant, and Planck length. How would halving the radius change it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using k_B=1.38e-23 J/K and l_P^2=2.61e-70 m^2, estimate the entropy for both radius conventions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the nearest order of magnitude, and does the radius-versus-diameter convention alter that order?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the powers of ten in the angle conversion, radius, area, and entropy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the entropy order together with the angular-size qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

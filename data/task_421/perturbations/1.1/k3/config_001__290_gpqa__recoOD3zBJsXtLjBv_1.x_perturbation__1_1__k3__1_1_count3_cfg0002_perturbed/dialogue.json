@@ -1,0 +1,69 @@
+{
+  "release_task_index": 421,
+  "task_id": "gpqa__recoOD3zBJsXtLjBv",
+  "dataset": "gpqa",
+  "ordinal": 290,
+  "variant": "perturbed",
+  "conversation_id": "290::gpqa__recoOD3zBJsXtLjBv::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c60b72a5db023404a313da1b05ecdb770e5aa2776bd68d73bffce7933bfb7214",
+  "semantic_condition_id": "565d87b2df57c58a0b6d41aff63c2adbc9e17b6b5d67e333e978ffd614879797",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 5'-O-DMTr deoxyribonucleoside is treated with 1.1 equivalents of TBDMSCl and gives two monosilylated products. Which hydroxyl groups are initially available, and what two regioisomers can form?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For each product, the sugar-region HSQC spectrum contains Ha near 6 ppm and two resonances Hb and Hc near 4.5 ppm. Use the expected one-bond sugar-region correlations to assign them.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In one product, Hb correlates with a broad exchangeable signal near 5.5 ppm. Which hydroxyl remains free, and which position therefore carries TBDMS?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Carry that assignment into the next synthetic step. After checking the 5'-protecting state, which site is available for phosphitylation? If that protecting state is not established, state the remaining alternatives.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Determine the phosphoramidite position and the coupling site only to the extent fixed by the protection and spectroscopic evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What phosphodiester linkage or linkages could result after coupling and deprotection? Keep the answer conditional if the regioisomer has not been uniquely fixed.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Trace the resulting nucleotide-triphosphate-derived backbone and compare it with the natural 3'-5' RNA backbone.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Classify the relationship between the synthetic and reference backbones only if the linkage assignment is unique; otherwise retain the alternatives.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Explain why a change in phosphate position is a constitutional difference rather than merely a stereochemical one.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "State the relationship between the synthetic and reference backbones, citing the linkage evidence that supports it.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

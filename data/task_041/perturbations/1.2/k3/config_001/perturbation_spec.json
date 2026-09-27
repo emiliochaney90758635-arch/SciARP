@@ -1,0 +1,32 @@
+{
+  "subclass": "1.2",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "rescales rows as thousands",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "maps workbooks to records",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "labels sample-variant rows as unique coordinates",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

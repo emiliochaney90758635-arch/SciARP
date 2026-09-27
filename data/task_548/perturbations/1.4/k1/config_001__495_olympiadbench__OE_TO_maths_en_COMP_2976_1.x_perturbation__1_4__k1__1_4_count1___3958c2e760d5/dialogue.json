@@ -1,0 +1,49 @@
+{
+  "release_task_index": 548,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2976",
+  "dataset": "olympiadbench",
+  "ordinal": 495,
+  "variant": "perturbed",
+  "conversation_id": "495::olympiadbench__OE_TO_maths_en_COMP_2976::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "8c4987de13ca5c6a51db5cbbe6694cef4b075ebc00078f5fcfdd464ba2de7ac0",
+  "semantic_condition_id": "ace84efd1aae87033ab59d6a889f9e031957a2a9a3a41ae49c6a4d430703292d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rectangle is tiled by unit squares, but its side lengths are not supplied. State what grid dimensions and interior-gridline counts can and cannot be determined.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place the relevant pair of corners in coordinates using the dimensions currently specified. Use the greatest common divisor of the coordinate differences to decide whether the segment passes through an interior lattice point.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the crossing formula for the current grid and current segment, accounting for any simultaneous crossings of the two gridline families.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that formula to the current construction and compute the exact number of tile interiors crossed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Perform an internal check of the numerical result using only the method and conventions established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let n denote the number of tile interiors obtained in the current construction. Report n and the basis currently being used for it, without introducing a new method.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

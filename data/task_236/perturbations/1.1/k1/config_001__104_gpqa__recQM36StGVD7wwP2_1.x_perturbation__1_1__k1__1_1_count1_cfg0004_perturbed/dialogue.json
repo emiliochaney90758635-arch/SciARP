@@ -1,0 +1,54 @@
+{
+  "release_task_index": 236,
+  "task_id": "gpqa__recQM36StGVD7wwP2",
+  "dataset": "gpqa",
+  "ordinal": 104,
+  "variant": "perturbed",
+  "conversation_id": "104::gpqa__recQM36StGVD7wwP2::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "cff77def77d5a4a2db57ce307f3a95e2f66d9dbab921e54a59e903da26f81757",
+  "semantic_condition_id": "a873d124b931b2125ebf41070d6e4e0183f07ece2ec64ca3b9e51d24f31400c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Predict product A from Sharpless asymmetric epoxidation of (Z)-hex-2-en-1-ol with t-BuOOH, Ti(O-i-Pr)4, and (-)-DET. Give its structure or name and assign the oxirane stereocenters, noting the reported enantiomeric excess above 80%.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Oxidize A with PDC to obtain B. Identify the functional-group change and assign the stereochemical descriptors in B's IUPAC name.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the stereochemical rule for tracking the ring's spatial configuration when later substituent changes alter CIP priority assignments.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply CH3CH2CH=PPh3 to B and identify product C under the ring and stereochemical convention selected above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assume H2/Pd hydrolyzes C in the last step, and identify product D by name under the established ring configuration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check D's descriptors while keeping its spatial configuration fixed and accounting for changes in substituent priority.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the full name and stereochemical assignment of D.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

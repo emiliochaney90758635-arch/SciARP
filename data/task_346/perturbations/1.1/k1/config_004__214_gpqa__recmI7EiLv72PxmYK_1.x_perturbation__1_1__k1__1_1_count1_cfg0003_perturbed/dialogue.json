@@ -1,0 +1,49 @@
+{
+  "release_task_index": 346,
+  "task_id": "gpqa__recmI7EiLv72PxmYK",
+  "dataset": "gpqa",
+  "ordinal": 214,
+  "variant": "perturbed",
+  "conversation_id": "214::gpqa__recmI7EiLv72PxmYK::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8557a013fff77b9b941cdc5faa598a8ce9ccadda869159267aa92cd14182286f",
+  "semantic_condition_id": "184c9881fd6113781245cdd6a7db743d3d078e2785fed3405f23ea0758ce81e7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the ejecta frame, the Galactic centre approaches at 60000 km/s. Express this relative speed as beta=v/c using c=300000 km/s; both frames are inertial.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The elapsed 50 s is measured by a clock comoving with the ejecta. Identify the frame and the special-relativistic type of this interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the speed ratio, compute the refractive index gamma for the two inertial frames and use it to convert the comoving 50 s interval.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the valid speed, gamma, and time interval established above to calculate the distance travelled in the target frame; otherwise give the symbolic distance relation and identify the blocker.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the frame assignment currently used in the distance calculation, or identify the time input required if it is absent or misunitized.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the resulting distance when supported, or give the symbolic expression and required speed and time inputs otherwise.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

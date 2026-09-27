@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Group labels can first be swapped and then the numerator symbol reversed again.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "fa59f610d2ec0ae503339e4b76e46e025341fa9e3aa23e4db6ca4322968ce431",
+  "strict_non2x_original_semantic_condition_id": "b55dc50a56facf87e603e696fdee3365d7d62cc4b9aa6f74f1aa82b9866cd01f",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Swap the KD and CTRL vector labels at T1, then at T3 compute KD-minus-CTRL using those swapped labels; this preserves a clear symbol error without algebraic cancellation.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,43 @@
+{
+  "config_id": "task062_2.3_k3",
+  "subclass": "2.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "GATA2 VAF is corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "CUX1 VAF is independently corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "SRR5688631 JAK2 boundary VAF is independently corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "human independent-review semantic repair"
+}

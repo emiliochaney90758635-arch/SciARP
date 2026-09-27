@@ -1,0 +1,43 @@
+{
+  "config_id": "task061_2.3_k3",
+  "subclass": "2.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "P489 ABL1 VAF is corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "P499 SF3B1 VAF is independently corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "P500 SF3B1 boundary VAF is independently corrupted",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "human independent-review semantic repair"
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 276,
+  "task_id": "gpqa__recmkvk6EFAmqyMxR",
+  "dataset": "gpqa",
+  "ordinal": 144,
+  "variant": "perturbed",
+  "conversation_id": "144::gpqa__recmkvk6EFAmqyMxR::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "363a92d204caf5964da09fd8889b6494d9058841060c76048347c59a22e406b9",
+  "semantic_condition_id": "76f30ac07a2cc94a525eb0fa119a6780719b18fd24e10941530d3744e7c7c2a8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Model the wall-reaching fraction only with the first-order approximation P(gamma)=1-K/gamma, and use that approximation for both calibration and prediction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At a representative Lorentz factor gamma=20, one third of the particles reach the wall. Use this observation to calibrate the unknown constant or constants in the model stated above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the same calibrated model, solve symbolically for the Lorentz factor that raises the wall-reaching fraction from 1/3 to 2/3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate that Lorentz factor numerically under the representative-gamma approximation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How should the result be qualified given that the stated gamma, survival fractions, and particle population are only approximate?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into the model and state the resulting check using the confidence stance established above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final result and summarize the model check under that same confidence stance.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

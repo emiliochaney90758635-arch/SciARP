@@ -1,0 +1,59 @@
+{
+  "release_task_index": 573,
+  "task_id": "scibench__calculus-sol-004",
+  "dataset": "scibench",
+  "ordinal": 354,
+  "variant": "clean",
+  "conversation_id": "354::scibench__calculus-sol-004::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "c2beb58f73de6ab468a6bff0eb96dc0d31e05632fc25d67eeb7afe2a2e837a39",
+  "semantic_condition_id": "92064804c95e60e74dfd68a5801c65d45abd94476377afd966c89a965808c751",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find the intersection points of y=x^2 and y=2x-x^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Between the intersection x-values, determine which parabola is above the other.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those intersections to state the horizontal interval containing the entire enclosed region.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the vertical gap between the upper and lower curves and verify that it is nonnegative on that interval.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write and simplify the definite integral for the enclosed area.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the integral exactly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign and magnitude geometrically, using the fact that an enclosed area cannot be negative.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the enclosed area in square units.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

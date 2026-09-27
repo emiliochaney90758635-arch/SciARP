@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "VAF can be replaced by Sample ID during filtering before swapping the tabulated field.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "b0565f5f4a87fa4f3e6f1c7dbc3b0a284ddce7d319614f52df14d421a781735a",
+  "strict_non2x_original_semantic_condition_id": "942034db39c19c1f5405c714bd69561b15e13026f82bcc1f8cdcb7dfd736e52d",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Extract numeric Sample-ID suffixes, divide by 10,000,000, and apply <0.3 to that normalized value instead of VAF; then tabulate Sequence Ontology.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

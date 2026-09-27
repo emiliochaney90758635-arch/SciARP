@@ -1,0 +1,69 @@
+{
+  "release_task_index": 411,
+  "task_id": "gpqa__recjgMJaMxz4ESDF2",
+  "dataset": "gpqa",
+  "ordinal": 280,
+  "variant": "perturbed",
+  "conversation_id": "280::gpqa__recjgMJaMxz4ESDF2::1.x::perturbation__1_1__k4__1_1_c4_002::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "68f86b7aab272a070e841be7cd3141b2ad21aa90303584518d7890256833318c",
+  "semantic_condition_id": "2c2913c419dcf011f9002fe29a78bfe3a896e8dd2b444474fd2ceeea5844f7ba",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I need to determine which of four inorganic salts can exhibit optical isomerism: dimethyl 6,6'-dinitro-[1,1'-biphenyl]-2,2'-dicarboxylate, methyl 2-hydroxypropanoate, benzophenone, and dimethyl fumarate. What structural criteria should I use, including both tetrahedral stereogenic centers and stable axial chirality?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply those criteria to dimethyl 6,6'-dinitro-[1,1'-biphenyl]-2,2'-dicarboxylate. Can it exhibit constitutional isomerism, and which structural feature is decisive?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now apply the same criteria to methyl 2-hydroxypropanoate. Is it optically active, and what elemental composition controls the answer?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assess benzophenone and dimethyl fumarate in the same way. Is each molecule chiral or achiral, and why?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Based on those molecular classifications, which functional groups can exhibit optical isomerism?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Why is dimethyl fumarate achiral despite its E geometry, and why does alkene geometry alone not imply optical activity?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Do molecular symmetry and planarity change any of the four classifications? Resolve any remaining borderline case.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How should the biphenyl assignment be qualified when its rotational barrier, temperature, solvent, and observation timescale are not reported?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "With that qualification, check all four compounds once more against tetrahedral stereogenic centers, symmetry, planarity, and configurational stability of a biaryl axis.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "State the optically active set and include the appropriate qualification about atropisomer stability.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

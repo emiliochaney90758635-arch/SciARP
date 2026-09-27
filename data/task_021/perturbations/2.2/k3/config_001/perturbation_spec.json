@@ -1,0 +1,28 @@
+{
+  "task_id": "021-capsule007",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article supplies one conflicting count pair.",
+    "The second supplies another pair.",
+    "The third reports 290 Hyper and 130 Hypo genes."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first count article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second count article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "290-to-130 article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

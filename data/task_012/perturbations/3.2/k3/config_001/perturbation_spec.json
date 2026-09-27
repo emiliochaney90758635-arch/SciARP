@@ -1,0 +1,41 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "3.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Converts completeness into a causal reproducibility claim.",
+    "Converts a rank-tie pattern into a biological cause.",
+    "Converts replicate association into directional causation."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "761d7aac1269706f1a3ea7e1d9ea575bd5ecafd19bed375f3181b8e4d51638dc",
+  "configured_evidence_sha256": "761d7aac1269706f1a3ea7e1d9ea575bd5ecafd19bed375f3181b8e4d51638dc",
+  "evidence_unchanged": true
+}

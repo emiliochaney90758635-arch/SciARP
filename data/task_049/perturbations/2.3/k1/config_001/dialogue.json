@@ -1,0 +1,35 @@
+{
+  "release_task_index": 49,
+  "task_id": "049-capsule014",
+  "source_id": "bix-18-q2",
+  "dataset": "bixbench",
+  "ordinal": 49,
+  "variant": "perturbed",
+  "conversation_id": "049::049-capsule014::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "8ee132e5964e74940a4cf13ab82b62179b6c5935580f26e3cb6d6833fe180b30",
+  "semantic_condition_id": "4ffd533953ef0143a0c88da2876696ecd41a9e6979a8f81fe2f59468f744d34c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement and grouping fields\n\n`Area` is the ImageJ-derived area of a 48-hour swarming plate image. The archived summary grouped records jointly by `StrainNumber` and `Genotype`, then calculated the ordinary arithmetic mean of `Area`.\n\nThe complete records for the group `StrainNumber = 1`, `Genotype = Wildtype` are:\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area | Circularity | Round |\n|---:|---|---:|---|---:|---:|---:|---:|\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 | 0.076 | 0.839 |\n| 14 | Wildtype | 1 | 1:0 | 2 | -69,298 | 0.090 | 0.870 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 | 0.062 | 0.948 |\n\nAll three `Area` observations belong to the same statistical group. `Circularity`, `Round`, and other genotypes are not inputs to the requested mean.\n\n## Calculation and reporting rule\n\nFor observations \\(x_1,\\ldots,x_n\\):\n\n\\[\n\\bar{x}=\\frac{\\sum_i x_i}{n}.\n\\]\n\nAfter calculating the mean from the unrounded observations, round it to the nearest multiple of 1,000.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the response and grouping fields used in the swarming analysis, and locate the wild-type P. aeruginosa group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Extract every Area replicate belonging to that group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the arithmetic mean of those replicates and round it to the nearest thousand.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

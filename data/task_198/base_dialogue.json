@@ -1,0 +1,69 @@
+{
+  "release_task_index": 198,
+  "task_id": "gpqa__recDpYJ14wFOQCRnO",
+  "dataset": "gpqa",
+  "ordinal": 65,
+  "variant": "clean",
+  "conversation_id": "065::gpqa__recDpYJ14wFOQCRnO::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e7c0cf4dc32fa2142ad05f54a641d2eadc3e88cd910ff8d95630382f1fa69af4",
+  "semantic_condition_id": "a345e763203bed96d0ad695e8bd539b83c91a33e72bf9b1246f91f3dbea6ec12",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has observed B-V=0.7 mag, intrinsic (B-V)_0=0.5 mag, A_V=3.1E(B-V), apparent V magnitude m_V=3, and absolute V magnitude M_V=5. Explain why the reddening correction must be applied before inferring its distance and parallax.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the chain of equations connecting color excess, V-band extinction, the extinction-corrected distance modulus, distance in parsecs, and parallax in milliarcseconds. Do not substitute the numerical values yet.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute E(B-V) from the observed and intrinsic colors.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that color excess and the coefficient 3.1 to compute A_V.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute m_V=3, M_V=5, and the computed A_V into the extinction-corrected distance-modulus equation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Solve that equation for the distance d in parsecs, retaining enough precision for the parallax conversion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As an independent arithmetic check before inversion, recompute E(B-V) and A_V in one line using the intrinsic color 0.5 mag, and verify that they agree with the earlier results.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Convert the distance to parallax in milliarcseconds and round the result appropriately.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the result by converting the parallax back to parsecs and substituting that distance into the extinction-corrected distance modulus.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final extinction-corrected parallax and the corresponding distance, with units.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

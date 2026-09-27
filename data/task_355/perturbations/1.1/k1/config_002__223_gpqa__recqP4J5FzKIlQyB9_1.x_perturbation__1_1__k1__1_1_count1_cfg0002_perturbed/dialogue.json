@@ -1,0 +1,54 @@
+{
+  "release_task_index": 355,
+  "task_id": "gpqa__recqP4J5FzKIlQyB9",
+  "dataset": "gpqa",
+  "ordinal": 223,
+  "variant": "perturbed",
+  "conversation_id": "223::gpqa__recqP4J5FzKIlQyB9::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3da7c36b1468efd5e98153cf7c0122fda87010ba874da1c937f783a934fc5f62",
+  "semantic_condition_id": "ed4ab53cb3b3b5a01920f74f1ce1b6e59811716d387d133da8e274859c967a5a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unsaturated compound has M+ at m/z 98 and a strong FTIR band at 1725 cm^-1. What molecular-mass and carbonyl constraints follow?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Identify the 9.7 ppm triplet's crystal-lattice type and infer adjacent protons.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the assignment obtained above and the quartet at 5.3 ppm to infer the supported vinylic fragment and distinguish the candidate connectivities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine all observations to identify the compound and explain the decisive coupling pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed structure against all spectral observations and coupling assignments developed above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any residual ambiguity caused by having only a subset of the spectra.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported compound and the two decisive coupling assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

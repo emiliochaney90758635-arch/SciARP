@@ -1,0 +1,49 @@
+{
+  "release_task_index": 172,
+  "task_id": "gpqa__rec6rBGCwlGy1Q1xk",
+  "dataset": "gpqa",
+  "ordinal": 39,
+  "variant": "perturbed",
+  "conversation_id": "039::gpqa__rec6rBGCwlGy1Q1xk::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1ff4dc598ecc94fe12ef4aac24d5e2c725486387a8ac3a740d926663af6d3bf0",
+  "semantic_condition_id": "34578477bb2ead755cad20a6f453cdc127a9eab07f1241721ae54fddaa38ed83",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "v-FLIP contains two death-effector domains and binds DED-containing adaptors such as FADD at the death-inducing signaling complex. Summarize what those facts imply about its localization and possible interaction partners before inferring a phenotype.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "FADD normally recruits the DED-containing initiator procaspase-9 to the DISC, where productive clustering enables its activation. Given that v-FLIP is catalytically inactive, explain why its occupation of the same DED interactions matters.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From that competition at the DISC, infer what happens to productive procaspase-8 recruitment and activation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The DISC forms downstream of cell-surface death receptors. Use the local caspase-8 effect to identify the affected apoptosis pathway and predict the host-cell phenotype.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Distinguish this direct DISC effect from the mitochondrial intrinsic pathway. Does the stated mechanism justify any direct conclusion about intrinsic-pathway regulation?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final effect of v-FLIP expression on host-cell apoptosis, naming the pathway and the DISC-level molecular mechanism.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

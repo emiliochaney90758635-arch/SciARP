@@ -1,0 +1,35 @@
+{
+  "release_task_index": 24,
+  "task_id": "024-capsule007",
+  "source_id": "bix-8-q4",
+  "dataset": "bixbench",
+  "ordinal": 24,
+  "variant": "perturbed",
+  "conversation_id": "024::024-capsule007::2.3::k2::perturbed",
+  "condition_label": "2.3.k2",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 2,
+  "dialogue_sha256": "80cb220ab242fd2947db777c9cc90296d28c381b82a2a9219af2e82eb72d9606",
+  "semantic_condition_id": "f86a7ec604344e71cd5406621e5db2a5410707938913e94b42e6a98923f366b6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Observed row-level contingency table\n\nThe analysis uses all 12,754 transcript/result rows and crosses the three-level `m6A` status with the three-level `DEG` status:\n\n| m6A status | `Down` | `Up` | `no-DEGs` | Row total |\n|---|---:|---:|---:|---:|\n| `m6A Hyper` | 12 | 160 | 562 | 680 |\n| `m6A Hypo` | 119 | 9 | 383 | 511 |\n| `m6A no sig` | 284 | 433 | 10,846 | 11,563 |\n| Column total | 415 | 548 | 11,791 | 12,754 |\n\n## Pearson calculation\n\nFor each cell, calculate the independence-model expectation as\n\n\\[\nE_{ij}=\\frac{(\\text{row total}_i)(\\text{column total}_j)}{12{,}754}.\n\\]\n\nThen use the ordinary Pearson statistic without Yates correction:\n\n\\[\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}.\n\\]\n\nThe degrees of freedom are \\((3-1)(3-1)\\).\n\n## Interpretation boundary\n\nThis is a deliberately naive, exploratory row-level calculation. Transcript/result rows are not guaranteed to be independent biological units. In the source, 89 `gene_name` values occur under more than one m6A label and 506 occur under more than one DEG label. Because no rule was specified for collapsing such conflicts to one gene-level category, the table above must be described as row-level rather than as a gene-level independence test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct the observed 3-by-3 table of m6A status against differential-expression status.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Observed row-level contingency table\n\nThe analysis uses all 12,754 transcript/result rows and crosses the three-level `m6A` status with the three-level `DEG` status:\n\n| m6A status | `Down` | `Up` | `no-DEGs` | Row total |\n|---|---:|---:|---:|---:|\n| `m6A Hyper` | 12 | 160 | 562 | 734 |\n| `m6A Hypo` | 119 | 9 | 383 | 511 |\n| `m6A no sig` | 284 | 433 | 10,846 | 11,563 |\n| Column total | 415 | 548 | 11,791 | 12,754 |\n\n## Pearson calculation\n\nFor each cell, calculate the independence-model expectation as\n\n\\[\nE_{ij}=\\frac{(\\text{row total}_i)(\\text{column total}_j)}{12{,}754}.\n\\]\n\nThen use the ordinary Pearson statistic without Yates correction:\n\n\\[\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}.\n\\]\n\nThe degrees of freedom are \\((3-1)(3-1)\\).\n\n## Interpretation boundary\n\nThis is a deliberately naive, exploratory row-level calculation. Transcript/result rows are not guaranteed to be independent biological units. In the source, 89 `gene_name` values occur under more than one m6A label and 506 occur under more than one DEG label. Because no rule was specified for collapsing such conflicts to one gene-level category, the table above must be described as row-level rather than as a gene-level independence test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the nine independence-model expectations and the degrees of freedom.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the observed and expected values to calculate the ordinary Pearson chi-square statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

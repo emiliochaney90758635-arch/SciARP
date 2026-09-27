@@ -1,0 +1,49 @@
+{
+  "release_task_index": 382,
+  "task_id": "gpqa__recPSTGXK3P39yNYT",
+  "dataset": "gpqa",
+  "ordinal": 251,
+  "variant": "perturbed",
+  "conversation_id": "251::gpqa__recPSTGXK3P39yNYT::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "bffde300566745b2676c876c5ec042f87d65c38ac59d6b869e4bd140131b3e1d",
+  "semantic_condition_id": "10cc1f6b5ae3a610158ad5a831d81883ce8698b0a7d9eb37cad2968e2fd75495",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two electrons are each in a p orbital and, ignoring spin, occupy the coupled state |l1,l2,l,m> = |1,1,2,-1>. We want the joint probability of L1z=L2z=-hbar. Before expanding the state, what condition must every product-basis component |1,m1>|1,m2> satisfy?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which basis expansion lets us read joint measurements of L1z and L2z from this coupled state, and how are its coefficients related to measurement probabilities?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the requested outcome L1z=L2z=-hbar, translate the eigenvalues into m1 and m2 and apply the probability calculation you chose to the available state information.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Instead of giving the joint probability from your calculation, report the joint angular momentum associated with the requested outcome. If the available state information is insufficient, identify what is still needed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Expand the supplied coupled state in the uncoupled basis as far as its specified quantum numbers permit, and check which product states it supports.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the requested joint probability and the angular-momentum selection rule that determines it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

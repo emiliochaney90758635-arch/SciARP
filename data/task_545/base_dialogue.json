@@ -1,0 +1,54 @@
+{
+  "release_task_index": 545,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2848",
+  "dataset": "olympiadbench",
+  "ordinal": 492,
+  "variant": "clean",
+  "conversation_id": "492::olympiadbench__OE_TO_maths_en_COMP_2848::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "40361bdaa18f848a1c5e2be01905189fbf6133fa1405fe9164308d04ff17bc0b",
+  "semantic_condition_id": "2558dd0a9f5b2279a7d216d9536a54b4307822280402b5757ae35bc372e0745e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In right triangle BEN, let B=(0,0), E=(a,0), and N=(0,b). Point P lies on hypotenuse EN, BP bisects the right angle at B, and the perpendicular distance from P to BE is d. Determine P's coordinates in terms of d.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the intercept-form equation of hypotenuse EN.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute P into that line equation and derive a relation among a, b, and d.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use PR=d=60 to obtain the exact value of 1/a+1/b.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now use EN=221 to determine the two leg lengths and check the reciprocal relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Is the hypotenuse length needed for the reciprocal sum, or only for the individual leg lengths? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the exact value of 1/BE+1/BN and the shortest relation that proves it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

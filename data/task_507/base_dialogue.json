@@ -1,0 +1,59 @@
+{
+  "release_task_index": 507,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1782",
+  "dataset": "olympiadbench",
+  "ordinal": 454,
+  "variant": "clean",
+  "conversation_id": "454::olympiadbench__OE_TO_maths_en_COMP_1782::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "946ba0c85439cffefa552b4f78a990a238892c62300be823f6f68bffb8647be8",
+  "semantic_condition_id": "841def4d5909aa3c9e60480cc29afb1b82af8e964a2f6b81a4ed39563c08c5c3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let n>=3 and m>=n+1. Place m marbles of colours C_1,...,C_n around a circle. Suppose every cyclic block of n+1 marbles contains C_i. A cyclic gap is the distance from one occurrence of C_i to the next occurrence of C_i. What restriction does the block condition impose on these gaps, and how many occurrences of C_i are required?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Call m n-colourful if there is a circular arrangement in which every block of n+1 consecutive marbles contains all n colours. Apply the bound for each colour to obtain a necessary inequality for m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Is that inequality also sufficient? Construct a circular arrangement whenever it holds and verify that every block of n+1 marbles contains all colours.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the construction at the join between its last and first marbles. Why do blocks crossing that join still meet the colour requirement?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the counting bound with the construction to state an exact criterion for a length m to be n-colourful.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Set q=ceil(m/(n+1)). For a fixed integer q, combine its defining inequalities with the criterion just proved to give the interval of lengths m that are not n-colourful.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Keeping the block length n+1, determine exactly which of those integer intervals are nonempty and find their largest possible endpoint.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Conclude that only finitely many positive integers are not n-colourful and give the largest one, explaining why it fails and why every larger integer works.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

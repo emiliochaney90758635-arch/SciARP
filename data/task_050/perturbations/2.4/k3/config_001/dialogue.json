@@ -1,0 +1,35 @@
+{
+  "release_task_index": 50,
+  "task_id": "050-capsule014",
+  "source_id": "bix-18-q3",
+  "dataset": "bixbench",
+  "ordinal": 50,
+  "variant": "perturbed",
+  "conversation_id": "050::050-capsule014::2.4::k3::perturbed::lane_b_review_overlay",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "9ea3130aebea57b9040e8492ef83278f76d25fedd568e377d6e250bd83629a20",
+  "semantic_condition_id": "4adffe5ab888fde58612dedf0e32112669f2d2b953d839a8cc6c5661d74686e0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Complete area observations for the two comparison groups\n\n`Area` is the ImageJ-derived colony/swarming area. The archived analysis grouped rows jointly by `StrainNumber` and `Genotype` and calculated an ordinary arithmetic mean within each group.\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area |\n|---:|---|---:|---|---:|---:|\n| 1 | ΔlasR | 300 | 1:0 | 1 | 19,193 |\n| 2 | ΔlasR | 300 | 1:0 | 2 | 20,556 |\n| 3 | ΔlasR | 300 | 1:0 | 3 | 32,011 |\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 |\n\nNo target record is missing. Other genotypes and the `Circularity` and `Round` fields do not enter this comparison.\n\n## Percent-reduction definition\n\nLet `WT_mean` and `mutant_mean` be the arithmetic means calculated from the two groups above. “Reduction in the mutant compared with wildtype” uses wildtype as the denominator:\n\n```text\n(WT_mean - mutant_mean) / WT_mean × 100%\n```\n\nThis is distinct from `mutant_mean / WT_mean × 100%`, which is the percentage retained rather than the percentage reduction.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract all colony-area replicates for the delta-lasR and wild-type groups and organize them by genotype.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Complete area observations for the two comparison groups\n\n`Area` is the ImageJ-derived colony/swarming area. The archived analysis grouped rows jointly by `StrainNumber` and `Genotype` and calculated an ordinary arithmetic mean within each group.\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area |\n|---:|---|---:|---|---:|---:|\n| 1 | ΔlasR | 300 | 1:0 | 1 | 19,193 |\n| 2 | ΔlasR | 300 | 1:0 | 2 | 20,556 |\n| 3 | ΔlasR | 300 | 1:0 | 3 | 32,011 |\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 |\n\nNo target record is missing. Other genotypes and the `Circularity` and `Round` fields do not enter this comparison.\n\n## Percent-reduction definition\n\nLet `WT_mean` and `mutant_mean` be the arithmetic means calculated from the two groups above. “Reduction in the mutant compared with wildtype” uses wildtype as the denominator:\n\n```text\n(WT_mean - mutant_mean) / WT_mean × 100%\n```\n\nThis is distinct from `mutant_mean / WT_mean × 100%`, which is the percentage retained rather than the percentage reduction.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the arithmetic mean area for each group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Complete area observations for the two comparison groups\n\n`Area` is the ImageJ-derived colony/swarming area. The archived analysis grouped rows jointly by `StrainNumber` and `Genotype` and calculated an ordinary arithmetic mean within each group.\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area |\n|---:|---|---:|---|---:|---:|\n| 1 | ΔlasR | 300 | 1:0 | 1 | 19,193 |\n| 2 | ΔlasR | 300 | 1:0 | 2 | 20,556 |\n| 3 | ΔlasR | 300 | 1:0 | 3 | 32,011 |\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 |\n\nNo target record is missing. Other genotypes and the `Circularity` and `Round` fields do not enter this comparison.\n\n## Percent-reduction definition\n\nLet `WT_mean` and `mutant_mean` be the arithmetic means calculated from the two groups above. “Reduction in the mutant compared with wildtype” uses wildtype as the denominator:\n\n```text\n(WT_mean - mutant_mean) / WT_mean × 100%\n```\n\nThis is distinct from `mutant_mean / WT_mean × 100%`, which is the percentage retained rather than the percentage reduction.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T3\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nRelative to the wild-type mean, what percentage reduction is observed for delta-lasR?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

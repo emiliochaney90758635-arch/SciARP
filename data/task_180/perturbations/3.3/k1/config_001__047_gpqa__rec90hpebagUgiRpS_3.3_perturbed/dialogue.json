@@ -1,0 +1,54 @@
+{
+  "release_task_index": 180,
+  "task_id": "gpqa__rec90hpebagUgiRpS",
+  "dataset": "gpqa",
+  "ordinal": 47,
+  "variant": "perturbed",
+  "conversation_id": "047::gpqa__rec90hpebagUgiRpS::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "28e6b733e7975eed0339a4d609d9a74f5b672ca5f93aa651c60411fa1311395f",
+  "semantic_condition_id": "3faf874e2c7af2db0128a2831baa99a5c3d3996955ffdc242079547a655f89ac",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A uniformly charged ring of radius R and total charge q has axial electrostatic potential Phi(z)=q/[4*pi*epsilon_0*sqrt(R^2+z^2)]. For |z|<<R, factor out R and identify the dimensionless small variable in the remaining factor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only an optical intensity-to-field-amplitude conversion: normalize Phi(z) by Phi(0), interpret the normalized electrostatic-potential profile as an intensity profile, take its square root as an amplitude profile, and expand that profile in z/R.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use exponent -1/2 in the normalized factor, substitute the small variable, and restore the physical prefactor. Simplify through the lowest nonzero power of z and retain the remainder order.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the resulting expression: are the overall units correct, is the correction dimensionless, and is the coefficient of z^2/R^2 consistent with the binomial expansion?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Is this expression exact or a leading near-axis approximation? Explain the residual error due to the omitted terms.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the next order in the dimensionless expansion, and why does |z|<<R make its contribution small?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the near-axis potential through the first nonconstant power of z, including the order of the remainder.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

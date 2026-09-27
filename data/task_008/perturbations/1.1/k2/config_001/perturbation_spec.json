@@ -1,0 +1,33 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Reverses the meaning of the filtered-row numerator.",
+    "Redefines a two-sided Wilson interval as a one-sided upper bound."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "configured_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "evidence_unchanged": true
+}

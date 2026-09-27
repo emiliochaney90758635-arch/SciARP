@@ -1,0 +1,57 @@
+{
+  "config_id": "task064_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "use maximum CD8 expression per gene",
+      "injected_text": "Calculate each retained gene's mean expression across CD8 samples and pair it with that gene's length.\n\nFor this perturbed step, use maximum CD8 expression per gene",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "omit the square root in the Pearson denominator",
+      "injected_text": "Calculate the Pearson correlation between gene length and CD8 mean expression across the retained genes.\n\nFor this perturbed step, omit the square root in the Pearson denominator",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Summing instead of averaging over a common sample set is a uniform scale factor and leaves Pearson r unchanged.",
+    "before": "Total expression plus wrong denominator formula.",
+    "after": "At T3 use maximum CD8 expression per gene; at T4 omit the square root in the Pearson denominator.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the nine visible genes, use each supplied CD8 mean as though it were that gene's maximum expression and pair it with Length."
+    },
+    {
+      "turn_id": "T4",
+      "content": "On those nine pairs, calculate Sxy/(Sxx*Syy) without taking the square root in the denominator."
+    }
+  ]
+}

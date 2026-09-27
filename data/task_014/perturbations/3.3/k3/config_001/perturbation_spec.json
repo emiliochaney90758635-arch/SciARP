@@ -1,0 +1,45 @@
+{
+  "task_id": "014-capsule005",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Substitutes a conjunction-style selection path.",
+    "Substitutes a selected foreground for the universe.",
+    "Substitutes raw duplicated rows for canonical-pathway consolidation."
+  ],
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "7210371eda2474f1d3d77fa516dcd486eb91a6ada03e43f66e71a8a0e6fd537f",
+  "configured_evidence_sha256": "7210371eda2474f1d3d77fa516dcd486eb91a6ada03e43f66e71a8a0e6fd537f",
+  "evidence_unchanged": true
+}

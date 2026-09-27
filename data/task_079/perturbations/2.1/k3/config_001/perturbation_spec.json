@@ -1,0 +1,19 @@
+{
+  "task_id": "079-capsule021",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T5"
+  ],
+  "downstream_consumers": [
+    "T5_response"
+  ],
+  "root_injections": [
+    "Reverses patients-seen codes.",
+    "Reverses p-value significance rule.",
+    "Treats beta itself as odds ratio."
+  ],
+  "evidence_mode": "append"
+}

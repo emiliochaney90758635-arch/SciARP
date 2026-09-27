@@ -1,0 +1,64 @@
+{
+  "release_task_index": 508,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1883",
+  "dataset": "olympiadbench",
+  "ordinal": 455,
+  "variant": "perturbed",
+  "conversation_id": "455::olympiadbench__OE_TO_maths_en_COMP_1883::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "27da18f9b828715de8c160e0faebdeabf638bcc57550041af6323b14db5ec2c3",
+  "semantic_condition_id": "95454d2c71f9bc133e33a69364c50bfa62f7003d7c98cebddaee77d882c2ab92",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Prove the identity F_1+F_3+...+F_{2m-1}=F_{2m} without using a stated Fibonacci recurrence.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let d=ceil(n/2) and select d odd-index Fibonacci numbers.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Represent the selected differences as edge lengths between real numbers and prove that these d edges cannot contain a cycle, using the largest odd-index Fibonacci length.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why acyclicity gives the lower bound |S|>=d+1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Construct S={F_0,F_2,F_4,...,F_{2d}}.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that consecutive selected elements differ by F_{2j-1}, while differences from F_0 supply the even-index Fibonacci numbers needed up to n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Confirm that every required F_k for 2<=k<=n occurs as a difference of two elements of S.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Count the elements in the construction.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Combine the lower bound and construction to give the minimum possible size of S.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

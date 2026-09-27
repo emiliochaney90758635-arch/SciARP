@@ -1,0 +1,59 @@
+{
+  "release_task_index": 371,
+  "task_id": "gpqa__recIgdTGiUZLCejXx",
+  "dataset": "gpqa",
+  "ordinal": 240,
+  "variant": "perturbed",
+  "conversation_id": "240::gpqa__recIgdTGiUZLCejXx::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "97ffe13cbac76753e720b390523765bcfaf60e8644d087e2b02013aa5f8a2d1c",
+  "semantic_condition_id": "348879f16129dbc2f609c723a5dfa796d69baa6ee9216c868f49defd6eeeeb1d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1.0e-5 M boric acid at 25 C with K_a=7.0e-10 and K_w=1.0e-14, explain why water autoionization cannot be neglected. Treat boric acid as a weak monoprotic acid and use the approximation [A-] approximately CK_a/[H+].",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using C=1.0e-5 M and K_a=7.0e-10, write [A-] as a function of [H+] under that dilute-acid approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the electroneutrality equation including [OH-]=K_w/[H+].",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the borate expression with charge balance to obtain an equation for [H+], then solve it numerically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the hydrogen-ion concentration to pH.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Present that pH as the exact equilibrium root with zero model error.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the result is physically consistent with a very dilute weak acid and with the neutral-water contribution.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the principal charge-balance contributions, [H+], pH, and the approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

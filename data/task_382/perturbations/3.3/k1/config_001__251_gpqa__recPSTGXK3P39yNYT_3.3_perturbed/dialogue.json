@@ -1,0 +1,49 @@
+{
+  "release_task_index": 382,
+  "task_id": "gpqa__recPSTGXK3P39yNYT",
+  "dataset": "gpqa",
+  "ordinal": 251,
+  "variant": "perturbed",
+  "conversation_id": "251::gpqa__recPSTGXK3P39yNYT::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9425c3c0d0cd886de66dfb118da0eeea45038fefe632e492ad04644817b4299d",
+  "semantic_condition_id": "d5cb5e6d540997c4855ff04f269997e52a372e7c1412fedfcb6268ed800ab49f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two electrons are each in a p orbital and, ignoring spin, occupy the coupled state |l1,l2,l,m> = |1,1,2,-1>. We want the joint probability of L1z=L2z=-hbar. Before expanding the state, what condition must every product-basis component |1,m1>|1,m2> satisfy?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the two one-electron outcomes as statistically independent. Determine the marginal probability for m=-1 for each electron and multiply those marginals to obtain the joint probability.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the requested outcome L1z=L2z=-hbar, translate the eigenvalues into m1 and m2 and apply the probability calculation you chose to the available state information.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What joint probability follows from that calculation and the available coupled-state information? If the state is not specified sufficiently, identify what is still needed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Expand the supplied coupled state in the uncoupled basis as far as its specified quantum numbers permit, and check which product states it supports.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the requested joint probability and the angular-momentum selection rule that determines it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 17,
+  "task_id": "017-capsule006",
+  "source_id": "bix-7-q3",
+  "dataset": "bixbench",
+  "ordinal": 17,
+  "variant": "perturbed",
+  "conversation_id": "017::017-capsule006::2.3.k1::manual_evidence_plan",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "6d80c9d6396169f64169af6f06fa02f3d97891cc7a417abcf55c0de272926bea",
+  "semantic_condition_id": "490a9aa21108cb93a4282bc5f76f2188c72c70c2ca233e7d2e4e21b179173c11",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Variant-call population\n\nVariant workbooks are available for 86 samples. Their relevant field is `Zygosity`; the combined data contain 57,258 call rows.\n\n| Zygosity class | Rows |\n|---|---:|\n| `Reference` | 44,211 |\n| Explicit non-reference (`Heterozygous` or `Homozygous Variant`) | 12,896 |\n| Missing `Zygosity` | 1,151 |\n| **Total** | **57,258** |\n\nThe partition closes exactly:\n\n```text\n44,211 + 11,896 + 1,151 = 57,258\n```\n\n## Filtering semantics\n\nThe implemented operations are:\n\n```r\nnonref_CHIP_dataset <- full_dataset[\n    full_dataset$Zygosity != \"Reference\", ]\n\nnonref_CHIP_dataset <- nonref_CHIP_dataset %>%\n    filter(!is.na(sample))\n```\n\nFor a missing zygosity, `NA != \"Reference\"` evaluates to `NA`. Logical indexing creates an all-`NA` row whose `sample` value is also `NA`; the subsequent `filter(!is.na(sample))` removes it. Therefore the retained population consists only of explicit non-reference calls.\n\nThis is not equivalent to subtracting only the Reference rows from the raw total:\n\n```text\nretained = raw - Reference - missing Zygosity\n```\n\nThe explicit non-reference total is also the sum of the two retained genotype classes:\n\n| Retained genotype class | Rows |\n|---|---:|\n| Heterozygous | 7,303 |\n| Homozygous Variant | 4,593 |\n| **Combined** | **11,896** |\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify the sample count and total CHIP-variant rows, and check that the three Zygosity classes sum to that total.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Follow the archived R filtering semantics to determine whether Reference, explicit non-reference, and missing-Zygosity rows survive.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under that filter, how many CHIP variants are retained across all matched workbooks?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

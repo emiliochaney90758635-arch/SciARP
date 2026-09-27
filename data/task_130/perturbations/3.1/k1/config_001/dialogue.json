@@ -1,0 +1,45 @@
+{
+  "release_task_index": 130,
+  "task_id": "130-capsule036",
+  "source_id": "bix-53-q3",
+  "dataset": "bixbench",
+  "ordinal": 130,
+  "variant": "perturbed",
+  "conversation_id": "130::130-capsule036::3.1::k1::perturbed::lane_d",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ca64d0465f9debab43a8bac8433e08a7e07aad105854aefaa72a34186dc42348",
+  "semantic_condition_id": "ab1c0e3b714b787a92047644460f87dada1e62c700b4d29356564c95d2938832",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Four-sample KEGG glutathione-metabolism overlap evidence\n\n## Four-sample gene population\n\nThe count table has 21,884 unique gene IDs and sample columns `KL1, KL2, KL3, WL1, WL2, WL3`. Genes with at least one six-sample raw count greater than 10 form a 12,443-gene prefilter population.\n\nThe refit uses `KL1`, `KL2`, `WL1`, and `WL2`, excluding `KL3` and `WL3`. A new condition-only DESeq2 model is fitted and LFC shrinkage is applied to `condition[T.WT]`. The selected population satisfies:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 1\nbaseMean >= 10\n```\n\nIt contains 1,942 gene rows. The archived metadata reverses the biological KL/WL group labels, but this only reverses LFC sign; the absolute-LFC selected membership is unchanged.\n\nThe selected Ensembl IDs are mapped to mouse gene symbols without separating positive and negative LFC directions.\n\n## `Glutathione metabolism` term membership\n\nThe archived `KEGG_2019_Mouse` term has the following 64-member symbol set:\n\n```text\nGSTM5, GPX1, GSTM4, GSTM3, GPX3, GSTM2, GPX2, GSTM1, GSR, GPX5,\nGPX4, GPX7, GSS, GPX6, GPX8, LAP3, GSTA4, RRM2B, GSTA3, GSTA2,\nGSTA1, GSTM7, GSTM6, ODC1, G6PD2, HPGDS, NAT8F7, NAT8F6, NAT8F1,\nNAT8F2, CHAC1, CHAC2, GGT6, IDH1, GGT5, GSTK1, RRM2, GGT7, GM853,\nRRM1, GSTO2, IDH2, GSTO1, PGD, GGCT, NAT8, GCLC, G6PDX, SMS, GCLM,\nGSTP2, GSTP1, MGST2, GSTT4, MGST3, TXNDC12, GSTT3, GSTT2, MGST1,\nGSTT1, SRM, OPLAH, ANPEP, GGT1\n```\n\nThe symbols present in both the four-sample selected-gene population and the term are:\n\n```text\nG6PDX, GCLC, GCLM, GGT5, GSS, GSTA1, GSTA2, GSTA3, GSTA4,\nGSTM1, GSTM2, GSTM4, GSTO1, GSTT1, GSTT4, HPGDS, IDH1, IDH2,\nMGST1, MGST2, MGST3, PGD\n```\n\nTheir underlying four-sample statistics are:\n\n| Symbol | Ensembl geneID | KL1 | KL2 | WL1 | WL2 | baseMean | abs(shrunk LFC) | padj |\n|---|---|---:|---:|---:|---:|---:|---:|---:|\n| G6pdx | ENSMUSG00000031400 | 9508 | 9906 | 4048 | 4522 | 7024.977060 | 1.227811 | 3.18333e-148 |\n| Gclc | ENSMUSG00000032350 | 31528 | 32710 | 576 | 538 | 16571.493886 | 5.897506 | 0 |\n| Gclm | ENSMUSG00000028124 | 17156 | 17024 | 2131 | 2032 | 9694.473131 | 3.084600 | 0 |\n| Ggt5 | ENSMUSG00000006344 | 645 | 709 | 18 | 10 | 350.405404 | 5.611858 | 6.2773e-74 |\n| Gss | ENSMUSG00000027610 | 6622 | 7059 | 271 | 360 | 3625.111020 | 4.480930 | 1.65447e-183 |\n| Gsta1 | ENSMUSG00000074183 | 176 | 125 | 0 | 1 | 76.662493 | 7.810718 | 8.81867e-08 |\n| Gsta2 | ENSMUSG00000057933 | 33 | 26 | 1 | 1 | 15.467636 | 4.355207 | 1.44486e-04 |\n| Gsta3 | ENSMUSG00000025934 | 1306 | 1381 | 17 | 18 | 690.280277 | 6.290927 | 1.08213e-124 |\n| Gsta4 | ENSMUSG00000032348 | 72 | 49 | 1 | 3 | 31.693230 | 4.685341 | 3.30753e-08 |\n| Gstm1 | ENSMUSG00000058135 | 24134 | 24799 | 4941 | 5200 | 14901.275275 | 2.319236 | 0 |\n| Gstm2 | ENSMUSG00000040562 | 1553 | 1719 | 303 | 355 | 991.142691 | 2.356169 | 7.16028e-108 |\n| Gstm4 | ENSMUSG00000027890 | 202 | 177 | 66 | 59 | 126.894795 | 1.584591 | 1.79725e-09 |\n| Gsto1 | ENSMUSG00000025068 | 1928 | 2070 | 882 | 960 | 1465.665125 | 1.161123 | 3.58996e-46 |\n| Gstt1 | ENSMUSG00000001663 | 32 | 14 | 57 | 80 | 45.157651 | 1.297604 | 0.00325641 |\n| Gstt4 | ENSMUSG00000009093 | 7 | 6 | 50 | 71 | 32.854914 | 2.945543 | 5.2427e-07 |\n| Hpgds | ENSMUSG00000029919 | 85 | 59 | 292 | 308 | 183.652317 | 1.963831 | 3.40653e-17 |\n| Idh1 | ENSMUSG00000025950 | 1367 | 1358 | 388 | 376 | 878.914982 | 1.874269 | 6.20147e-72 |\n| Idh2 | ENSMUSG00000030541 | 555 | 482 | 202 | 222 | 367.081315 | 1.316295 | 7.59631e-17 |\n| Mgst1 | ENSMUSG00000008540 | 2796 | 2683 | 773 | 836 | 1784.625233 | 1.812770 | 3.45582e-125 |\n| Mgst2 | ENSMUSG00000074604 | 282 | 316 | 35 | 45 | 171.261735 | 2.913017 | 5.05975e-30 |\n| Mgst3 | ENSMUSG00000026688 | 459 | 482 | 191 | 278 | 353.261810 | 1.027963 | 2.29984e-09 |\n| Pgd | ENSMUSG00000028961 | 35512 | 37494 | 11651 | 12356 | 24406.811680 | 1.652974 | 0 |\n--- END TASK EVIDENCE ---\n\nCurrent request:\nRefit the condition-only DESeq2 model using KL1, KL2, WL1, and WL2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Shrink the target condition coefficient and retain the statistics needed for filtering.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State that 1,924 gene rows pass the three criteria before symbol mapping.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Retrieve the archived KEGG_2019_Mouse membership for Glutathione metabolism.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Intersect that pathway with the selected gene-symbol set and report the overlap count.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

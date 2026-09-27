@@ -1,0 +1,49 @@
+{
+  "release_task_index": 326,
+  "task_id": "gpqa__recYeabrlVQtFhfKL",
+  "dataset": "gpqa",
+  "ordinal": 194,
+  "variant": "perturbed",
+  "conversation_id": "194::gpqa__recYeabrlVQtFhfKL::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "2b6c00f596fe71391f8bcf623115e2322a39c6a68cfef25e725c2c1152788b1e",
+  "semantic_condition_id": "dc73184554c44c7b4c8634320e23c9b4096cca73195d5bd6e3b5233f16bafd14",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Chromosome 1 is 4 Mb and contains a 300-kb protein duplicated as two direct head-to-tail copies. What novel junction does the tandem duplication create, and what structural claim must be tested?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How would the junction-spanning assay test the duplication? Describe the detector orientation and the expected duplication-specific product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How could an independent fragmentation-and-hybridization assay support the content and structure claim? Contrast that readout with bulk-object sizing.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which methods are sufficient to validate a balanced translocation, and why is bulk chromosome sizing alone inadequate?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare what the junction assay, hybridization assay, and bulk sizing can each establish, and state what additional confirmation is needed if sequence identity or orientation remains uncertain.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the recommended validation set and the diagnostic observations expected for a direct tandem duplication.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

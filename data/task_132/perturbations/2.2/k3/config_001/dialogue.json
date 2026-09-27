@@ -1,0 +1,35 @@
+{
+  "release_task_index": 132,
+  "task_id": "132-capsule037",
+  "source_id": "bix-54-q2",
+  "dataset": "bixbench",
+  "ordinal": 132,
+  "variant": "perturbed",
+  "conversation_id": "132::132-capsule037::2.2::k3::perturbed::lane_d",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "ce31e23df6921614a21aac86d77b3388d085b3b060ad203742fe049b6641ce7d",
+  "semantic_condition_id": "5ad0354a5d9c3b969987cd95041502c8252f56e2f9f1522411de7fb085dcd1c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Cubic frequency model report\nClaire Beaumont and colleagues report ordinary R-squared 0.71 using replicate-level rows.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble all 39 delta-rhlI-frequency and swarming-area regression rows.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Independent cubic refit\nAdrian Wolfe and colleagues report ordinary R-squared 0.64 for the same replicate-level cubic specification.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the intercept-containing raw-power cubic OLS model and report SSE and SST.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Plate-series reconstruction\nA third laboratory reconstruction reports ordinary R-squared 0.68 after its raw-power cubic refit.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the model's ordinary R-squared from those sums of squares.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

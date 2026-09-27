@@ -1,0 +1,49 @@
+{
+  "release_task_index": 604,
+  "task_id": "scibench__quan-sol-003",
+  "dataset": "scibench",
+  "ordinal": 385,
+  "variant": "perturbed",
+  "conversation_id": "385::scibench__quan-sol-003::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d6c44caf3c70c73af5ab73f814d1cdf19cd231c42345dd278929a8c89ae88577",
+  "semantic_condition_id": "9bdb93e80f2d3ffc6611ceb5d502991b3a5f45ddc776081851fca8c399a943e7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A one-dimensional particle has wavefunction Psi(x)=a^(-1/2) exp(-|x|/a) at t=0, with a=1.0000 nm. Derive the position probability density and identify how |x| simplifies on 1.5000 nm <= x <= 1.5001 nm.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the exact probability integral over that interval. Also give the narrow-interval approximation obtained by evaluating the density at the lower endpoint and multiplying by the width 0.0001 nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute a=1.0000 nm but use interval width 0.0010 nm in the narrow-interval expression, leaving the result in exponential form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the requested probability numerically to four significant figures.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the exact integral with the narrow-interval approximation and explain why their difference is negligible at the requested precision.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final dimensionless probability for the position measurement and state whether this event is more or less likely than its complement.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 111,
+  "task_id": "111-capsule033",
+  "source_id": "bix-49-q4",
+  "dataset": "bixbench",
+  "ordinal": 111,
+  "variant": "perturbed",
+  "conversation_id": "111::111-capsule033::2.4::k3::perturbed::lane_d",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "e96208e99e2fb3041c66aa338f5fddfbc12b68de52a480cd667bc7d4330c31bb",
+  "semantic_condition_id": "6749faed93c094ac4e8af95971860fbb003f086a06b5492190a964de396333b3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# ASXL1 disease-versus-control differential-expression evidence\n\n## Analysis cohort\n\nThe featureCounts matrix contains 60,662 unique Ensembl gene rows and 21 sample columns. Counts are non-negative integers with no missing cells. Two count columns are excluded before modeling:\n\n| Excluded sample | Recorded reason |\n|---|---|\n| MGD1640B | alcohol use disorder may affect gene expression |\n| MGD1641B | valproic-acid use may affect gene expression |\n\nThe remaining count columns are aligned, in this order, with the sample metadata:\n\n| sample | original condition | modeled condition | sex |\n|---|---|---|---|\n| MGD1567B | ASXL1 | disease | M |\n| MGD1569B | Control | control | M |\n| MGD1613B | ASXL1 | disease | F |\n| MGD1615B | Control | control | F |\n| MGD1616B | ASXL1 | disease | F |\n| MGD1710B | Control | control | F |\n| MGD1711B | ASXL1 | disease | M |\n| MGD1712B | Control | control | M |\n| MGD1713B | Control | control | M |\n| MGD1714B | Control | control | F |\n| MGD1715B | ASXL1 | disease | M |\n| MGD1722B | Control | control | M |\n| MGD1723B | ASXL1 | disease | F |\n| MGD1724B | Control | control | F |\n| MGD1727B | Control | control | M |\n| MGD1731B | Control | control | F |\n| MGD1732B | ASXL1 | disease | F |\n| MGD1733B | Control | control | F |\n| MGD1734B | ASXL1 | disease | F |\n\n| modeled condition | F | M | total |\n|---|---:|---:|---:|\n| control | 6 | 5 | 11 |\n| disease | 5 | 3 | 8 |\n\n## Model, contrast, and filtering\n\nThe executed analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe fitted coefficient names include `sex_M_vs_F` and `condition_disease_vs_control`; the execution log records `using 'apeglm' for LFC shrinkage`.\n\nThe result rows were joined to annotation tables before filtering. Join-key checks give:\n\n| stage | rows |\n|---|---:|\n| DESeq gene results | 60,662 |\n| after the left join on `gene_id` | 60,662 |\n| after the left join on `hgnc_id` / `HGNC.ID` | 60,662 |\n\nGencode has one row for each of the 60,662 count-table gene IDs. The HGNC right-hand join key is unique. Consequently, neither annotation join duplicates gene-result rows.\n\nThe executed selection code was:\n\n```r\nfinal_res <- res %>%\n  filter(padj < 0.05) %>%\n  # filter(abs(log2FoldChange) > 0.58) %>%\n  arrange(desc(abs(log2FoldChange)))\n```\n\nThus, the strict adjusted-p threshold is the only DEG inclusion cutoff; the absolute-LFC cutoff is inactive, and sorting does not change the number of rows.\n\n## Archived result counts\n\nThe executed output records:\n\n```text\nnrow(final_res)                         [1] 2118\nsum(final_res$log2FoldChange < 0)       [1] 952\nsum(final_res$log2FoldChange > 0)       [1] 1166\n```\n\nThe sign counts are mutually exclusive and satisfy:\n\n```text\n952 + 1166 = 2118\n2118 - 952 - 1166 = 0\n```\n--- END BASE TASK EVIDENCE ---\n\nCurrent request:\nConfirm the retained samples, disease-control coding, and sex-adjusted model used for the ASXL1 comparison.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent ASXL1 differential-expression audit\n\n## Source and model\n\nThe Hematologic Transcriptome Replication Unit fitted a sex-adjusted\ndisease-versus-control negative-binomial model and applied adaptive shrinkage.\nRows meeting adjusted p<0.05 were partitioned by annotation class and sign.\n\n| Annotation class | Positive shrunken LFC | Negative shrunken LFC |\n|---|---:|---:|\n| Protein-coding | 700 | 500 |\n| Long noncoding RNA | 300 | 200 |\n| Other annotated genes | 100 | 80 |\n\nThe classes and signs are mutually exclusive. Sum every cell to obtain the\ntotal number of significant regulated genes.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply apeglm shrinkage and the stated adjusted-p threshold to define the significant gene set.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Annotation-join multiplicity audit\n\nA separate audit reports 62,104 rows after the HGNC join because several HGNC identifiers map to multiple symbols. This conflicts with the supplied one-to-one join checks and would inflate significant-gene direction counts.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nReport the numbers of significant genes with positive and negative shrunken log2 fold changes and verify their total.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

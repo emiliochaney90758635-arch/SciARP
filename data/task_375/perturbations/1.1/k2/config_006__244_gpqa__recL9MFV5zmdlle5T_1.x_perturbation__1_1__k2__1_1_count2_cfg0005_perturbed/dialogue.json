@@ -1,0 +1,59 @@
+{
+  "release_task_index": 375,
+  "task_id": "gpqa__recL9MFV5zmdlle5T",
+  "dataset": "gpqa",
+  "ordinal": 244,
+  "variant": "perturbed",
+  "conversation_id": "244::gpqa__recL9MFV5zmdlle5T::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "fc723ac7e43f57120594230adfc47ccb2bc1432003270237fabc62986c4daefa",
+  "semantic_condition_id": "38d1838d267bba220ac910ea410186bfa2d9428867cc30e986832a93cb0d8afc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a disubstituted aromatic six-membered ring with two aromatic-proton signals, identify the C6H4 ring contribution and the symmetry implied by the spectrum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use a UV-visible band as evidence for an ester fragment.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Interpret a vinyl-carbon splitting pattern from the supplied proton-NMR signals.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the aromatic scaffold with the two fragments identified spectroscopically to derive the molecular formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show the component counts implied by that derived composition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the resulting composition at the evidential confidence established above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check its internal consistency with the structural and spectral features retained above and compute the corresponding degree of unsaturation.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the molecular formula and summarize how the two spectroscopic fragments support it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

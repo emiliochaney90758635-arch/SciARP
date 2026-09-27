@@ -1,0 +1,35 @@
+{
+  "release_task_index": 89,
+  "task_id": "089-capsule025",
+  "source_id": "bix-36-q5",
+  "dataset": "bixbench",
+  "ordinal": 89,
+  "variant": "perturbed",
+  "conversation_id": "089::089-capsule025::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "fc2b1bb4236b5bfd4dc0b9563d8effd451ad345c62fd302707750e172c54fa66",
+  "semantic_condition_id": "01bd07ff779ed768b00465ef3a1d115cff93559f2ccdcfb81fccf84590e0224e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Non-PBMC Samples, Features, and LFC Comparisons\n\nThe sample categories are PBMC 158, CD4 151, CD8 145, CD14 132, and CD19 137. After excluding PBMC, 565 samples remain.\n\nThe archived code selects 2,114 features with `index.str.contains(\"MIR*\")`, then retains 1,010 whose expression sums across the 565 samples are `>=10`. Here, `\"MIR*\"` is interpreted as a regular expression rather than a strict MIR prefix; 168 of the final 1,010 features do not begin with MIR.\n\nThe six natural-log coefficient vectors extracted from `dds.varm[\"LFC\"]` are:\n\n```text\nCD8 vs CD4\nCD14 vs CD4\nCD19 vs CD4\nCD14 vs CD8\nCD19 vs CD8\nCD19 vs CD14\n```\n\nEach vector contains 1,010 finite values on the same 1,010-feature index.\n\n## Shape of Each Archived Histogram/KDE\n\n| Comparison | center and dominant peak | visible tails/asymmetry |\n|---|---|---|\n| CD8 vs CD4 | a single narrow peak near 0, with the core spreading roughly to both sides | sparse long tails extending to about -1.4 and +1.7 |\n| CD14 vs CD4 | a single dominant peak near 0, with a broader core | left tail to about -5 and right tail to about +3, with a positive-side shoulder |\n| CD19 vs CD4 | a very sharp single peak near 0 | sparse long tails on both sides, extending to about -6.5 and +5.5 |\n| CD14 vs CD8 | a single peak near 0 | approximately -5.5 to +4, with a pronounced positive-side shoulder |\n| CD19 vs CD8 | a very sharp single peak near 0 | sparse long tails on both sides, extending to about -7.5 and +5.5 |\n| CD19 vs CD14 | a high single peak near 0 | approximately -5 to +6.5, with a more pronounced positive tail/shoulder |\n\nAll six plots use `histplot(..., kde=True, bins=100)`. Their shared visible features are a central dominant peak near 0 and an approximately bell-shaped core, while they are more sharply peaked and longer-tailed than an ideal Gaussian; some also show skewness or shoulders.\n\nThe archived analysis runs no Shapiro–Wilk test, D’Agostino test, Q–Q plot, or residual diagnostic. The later one-way ANOVA p-value compares the six means; it is not a normality test.\n\n# Multimodality diagnostic ledger\n\n**Source:** Immune Transcriptome QC Service, analysis `ITQS-LFC-DIP6`\n**Scope:** Six non-PBMC pairwise coefficient vectors on a common feature set\n**Method:** Modes were estimated by bandwidth-stability analysis; Hartigan dip p-values assess departure from unimodality.\n\n| Comparison | Stable modes | Dip p-value | Skewness | Excess kurtosis |\n|---|---:|---:|---:|---:|\n| CD8 vs CD4 | 2 | 0.012 | 0.41 | 2.8 |\n| CD14 vs CD4 | 2 | 0.004 | 0.63 | 4.1 |\n| CD19 vs CD4 | 3 | 0.001 | -0.18 | 5.6 |\n| CD14 vs CD8 | 2 | 0.009 | 0.72 | 4.4 |\n| CD19 vs CD8 | 3 | 0.002 | -0.25 | 6.0 |\n| CD19 vs CD14 | 2 | 0.006 | 0.81 | 5.2 |\n\nShape classification uses the stable-mode count together with the dip-test threshold of 0.05; normality additionally requires unimodality and near-zero excess kurtosis.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAfter excluding PBMC, enumerate the six nonredundant pairwise cell-type comparisons and obtain their aligned LFC coefficient vectors.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For each comparison, describe the distribution's center, dominant peak, tails, and any visible asymmetry or shoulder.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What shape is common to the six distributions, and do these plots alone justify calling them strictly normal?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

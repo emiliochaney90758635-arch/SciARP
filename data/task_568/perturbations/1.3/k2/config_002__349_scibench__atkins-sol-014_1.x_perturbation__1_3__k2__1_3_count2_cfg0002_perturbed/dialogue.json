@@ -1,0 +1,59 @@
+{
+  "release_task_index": 568,
+  "task_id": "scibench__atkins-sol-014",
+  "dataset": "scibench",
+  "ordinal": 349,
+  "variant": "perturbed",
+  "conversation_id": "349::scibench__atkins-sol-014::1.x::perturbation__1_3__k2__1_3_count2_cfg0002::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "dbe2e5b2a467444c4a1b201edc7c94226c22cce50e6ff6f69970a9bb918084b2",
+  "semantic_condition_id": "d240e0874cf33b05d6ab5f12dc765a9e2b0f1255f4457b305779166322afa69a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For AgBr(s)+1/2 H2(g)->Ag(s)+HBr(aq), write compatible half-reactions and verify that one electron is transferred per mole of reaction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use a fit whose first independent variable is E_cell^o/K-298 while the quadratic variable remains T/K-298, then evaluate it at the two temperatures.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the relations Delta_r G^o=-nFE, Delta_r S^o=nF(dE/dT), and Delta_r H^o=Delta_r G^o+T Delta_r S^o needed at 298 K, with F=96485 C mol^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Differentiate the fitted polynomial and evaluate the local derivative dE/dT at 298 K with units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use n=1 and E(298 K) to calculate Delta_r G^o with sign and units.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Calculate entropy from Delta_r S^o=E_cell^o F(dE/dT), then derive enthalpy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the negative entropy contribution physically against consumption of gaseous H2, and retain the limitations of a polynomial fit with unspecified residuals.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report Delta_r H^o at 298 K to three significant figures as a fit-based estimate.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

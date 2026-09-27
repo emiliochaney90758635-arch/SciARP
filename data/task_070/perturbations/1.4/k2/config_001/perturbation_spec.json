@@ -1,0 +1,37 @@
+{
+  "config_id": "task070_1.4_k2",
+  "subclass": "1.4",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Verify the effect direction without using the stated order of the two contrasted conditions."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Record whether ABC transporters has a point without recording Up or Dn."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "State the FeMinus-versus-FePlus effect direction without identifying which condition is the numerator or denominator."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Inspect the ABC transporters row and record only whether a point is present, without recording the Up or Dn position."
+    }
+  ]
+}

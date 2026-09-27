@@ -1,0 +1,54 @@
+{
+  "release_task_index": 572,
+  "task_id": "scibench__calculus-sol-003",
+  "dataset": "scibench",
+  "ordinal": 353,
+  "variant": "perturbed",
+  "conversation_id": "353::scibench__calculus-sol-003::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b1c5217734b91e2a29aa9b3f24e6e59d08a762a05685f5628053e98414d7c4a8",
+  "semantic_condition_id": "8f7208c460609c27879cdd1862cfa8e4dee03d4ade4a561a672034fa6a6b46dc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the average-value formula for f(x)=1+x^2 on the interval [-1,2].",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the definite integral and the interval length that enter the formula.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find an antiderivative of 1+x^2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the determinant of the endpoint matrix over [-1,2] instead of the definite integral.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Divide by the interval length to obtain the average value, and distinguish this from simply averaging the endpoint values.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the result is compatible with the range and shape of the function on the interval.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the average value.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

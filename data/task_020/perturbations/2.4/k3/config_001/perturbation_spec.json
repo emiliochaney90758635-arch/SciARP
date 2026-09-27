@@ -1,0 +1,28 @@
+{
+  "task_id": "020-capsule007",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first center reports 276 loci.",
+    "The second consortium reports 280 loci.",
+    "The third registry reports 285 loci."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "276-locus ledger"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "280-locus ledger"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "285-locus ledger"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,20 @@
+{
+  "task_id": "094-capsule026",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T1_response",
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Corrupt the Tumor abundance used in the requested linear fold change.",
+    "Corrupt the Normal abundance used in the requested linear fold change."
+  ],
+  "evidence_mode": "replace",
+  "manual_rationale": "Each successive full evidence version retains earlier corruptions and adds one task-consumed, independently removable structured-data corruption."
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 376,
+  "task_id": "gpqa__recLSzwBUS3olCjhl",
+  "dataset": "gpqa",
+  "ordinal": 245,
+  "variant": "perturbed",
+  "conversation_id": "245::gpqa__recLSzwBUS3olCjhl::1.x::perturbation__1_1__k3__1_1_count3_cfg0010::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "2099a3b25e737c4fad1ebc088b13f6e346232d46711f1140d8dca82c11eaa3d5",
+  "semantic_condition_id": "78a2c4a4c4cb16e9845d7683c4782a80654a7c70c18d7966b143f1d5dfa4dd8c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown compound has 13C NMR signals reported as 7.0 ppm (1H, d, J=16.0 Hz), 5.5 ppm (1H, dq), 2.1 ppm (3H, s), and 1.6 ppm (3H, d). What total proton count is represented?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What environments most plausibly give the two 3H signals?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How do those methyl assignments help interpret the two one-proton signals in the alkene region?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the integrations and splitting patterns to identify the supported carbon skeleton and functional class before deciding alkene geometry.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What does the 16.0 Hz coupling imply about the alkene regiochemistry, choosing between cis and trans?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the framework and geometry assignments to name the unknown polymer.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How strongly does this spectrum support that assignment, given that linewidths, fitting uncertainty, and matched reference spectra are unavailable?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the assignment against the eight-proton total, acetate-methyl singlet, methyl-coupled vinylic signal, and coupling magnitude.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final compound name and a concise, calibrated spectral justification.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

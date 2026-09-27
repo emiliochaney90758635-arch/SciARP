@@ -1,0 +1,64 @@
+{
+  "release_task_index": 208,
+  "task_id": "gpqa__recG1ljJQcVy6CbSl",
+  "dataset": "gpqa",
+  "ordinal": 76,
+  "variant": "perturbed",
+  "conversation_id": "076::gpqa__recG1ljJQcVy6CbSl::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "b01063b8f93d72ef09799e1954f65ec8116c858bb0cc99048cec8c0363247d4b",
+  "semantic_condition_id": "6fa9ab06bc44a73c0a26a2096cd7aaf9bf61ab62e3e3f5b256939c42c742995b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a muon's spin-1/2 angular momentum, let Ay=(h/(4 pi))S with S=[[0,-i],[i,0]]. Write the eigenvalue equation explicitly for a two-component spinor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Before applying the dimensional factor h/(4 pi), explain why it is convenient to diagonalize S and how its eigenvectors and eigenvalues transfer to Ay.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For S, compute its characteristic polynomial and eigenvalues.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the result for S and c=h/(4 pi), find the eigenvalues of Ay and give corresponding eigenvectors.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For spin one-half, can an Ay eigenfunction also be an eigenfunction of the total angular momentum squared A^2? Can it generally be an eigenfunction of Az? Justify both answers with commutators.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the matrix calculation and commutator argument into a complete statement of the Ay eigenpairs and their compatibility with A^2 and Az.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify the two normalized eigenvectors by applying the original matrix S explicitly. Does either eigenvector coincide with a standard z-basis vector?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that Ay is Hermitian, and use [A^2,Ay]=0 and [Ay,Az] not equal to zero to confirm the spectral and simultaneous-eigenfunction conclusions.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final Ay eigenvalues, normalized eigenvectors, and compatibility statement for A^2 and Az.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

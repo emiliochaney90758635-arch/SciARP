@@ -1,0 +1,35 @@
+{
+  "release_task_index": 58,
+  "task_id": "058-capsule015",
+  "source_id": "bix-19-q5",
+  "dataset": "bixbench",
+  "ordinal": 58,
+  "variant": "perturbed",
+  "conversation_id": "058::058-capsule015::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "4e867a6c72125d269b58664ddee04c7a4dc4337bb4cb0a5e3d649ae7ff2fb53a",
+  "semantic_condition_id": "7e0a21036537e90ce5134f12c2a40128e506fff06bfbe925a1737680b9d7c9bc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Observed effect size\n\nThe archived analysis calculates independent-groups pooled-SD Cohen's \\(d\\) from the following NeuN counts:\n\n| Sample | KD NeuN | CTRL NeuN |\n|---:|---:|---:|\n| 1 | 221 | 237 |\n| 2 | 233 | 223 |\n| 3 | 221 | 246 |\n| 4 | 215 | 179 |\n| 5 | 216 | 198 |\n| 6 | 208 | 194 |\n| 7 | 202 | 200 |\n| 8 | 200 | 208 |\n\nUsing sample standard deviations with \\(n-1\\) in the denominator, the archived descriptive statistics are:\n\n| Statistic | KD | CTRL |\n|---|---:|---:|\n| n | 8 | 8 |\n| mean | 214.5000000000 | 210.6250000000 |\n| sample SD | 10.9414023651 | 22.8531804601 |\n\n```text\nSD_pooled = 17.9162236933\nobserved d = (214.5 - 210.625) / 17.9162236933\n           = 0.21628441720382488\n```\n\n## Independent two-sample power model\n\n```python\nTTestIndPower().solve_power(\n    effect_size=0.21628441720382488,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\n```\n\nThe unspecified `ratio` uses its default value of 1, so the planned group sizes are equal. `solve_power` returns a continuous sample size per group; the actual sample size must be an integer no smaller than that solution.\n\nThe archived boundary output from the same model is:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n\n# Noncentral-t verification grid\n\n**Source:** Biostatistical Methods Office, analytic check `BMO-NCT-EQ-216`\n**Design:** Independent two-sample \\(t\\) test, equal groups, two-sided \\(\\alpha=0.05\\)\n**Input:** Pilot absolute standardised difference \\(0.2162844172\\)\n**Method:** For each candidate \\(n\\), the office calculated the noncentrality parameter \\(\\delta=d\\sqrt{n/2}\\), used \\(2n-2\\) degrees of freedom, and integrated both rejection tails.\n\n| Candidate \\(n\\) per group | \\(\\delta\\) | Calculated two-tail power |\n|---:|---:|---:|\n| 342 | 2.8270 | 0.7958 |\n| 346 | 2.8435 | 0.7982 |\n| 350 | 2.8599 | 0.8006 |\n| 354 | 2.8762 | 0.8030 |\n\nThe verified minimum on this pre-specified grid is the first candidate meeting or exceeding 0.80.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse the observed effect size to specify an equal-allocation, two-sided independent two-sample t-test power model, including alpha, target power, and group-size ratio.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Solve that model for the continuous sample size required per group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check the adjacent integer designs and report the smallest per-group sample size that achieves at least 80% power.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

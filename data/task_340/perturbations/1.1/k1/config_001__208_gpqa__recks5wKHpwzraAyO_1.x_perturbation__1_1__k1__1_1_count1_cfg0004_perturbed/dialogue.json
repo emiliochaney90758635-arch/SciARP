@@ -1,0 +1,54 @@
+{
+  "release_task_index": 340,
+  "task_id": "gpqa__recks5wKHpwzraAyO",
+  "dataset": "gpqa",
+  "ordinal": 208,
+  "variant": "perturbed",
+  "conversation_id": "208::gpqa__recks5wKHpwzraAyO::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "cd8dd875f92bd3d864237cc665b82079cfab5f181ced8b3a096a0c4d9849f219",
+  "semantic_condition_id": "3549ddd73e497101cf8248edea0bb49e059ab158825462c893ff9c109b5687f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has an effective temperature of about 6000 K, and only weak absorption lines with EW < 100 mA are being considered. In the weak-line regime, how does equivalent width depend on line opacity relative to continuum opacity, and why can a change in an ionization-stage population affect the line strength?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At fixed effective temperature, how does increasing surface gravity change the gas pressure and electron pressure in the line-forming layers?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Element El1 is mostly neutral, whereas El2 is mostly singly ionized. Classify El1 I, El1 II, El2 I, and El2 II as majority or minority stages, then use the Saha relation to describe how the neutral-to-ionized balance depends on electron pressure.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine those results to determine which of the four line categories should be most sensitive to DNA sequence in this 6000 K atmosphere. Explain the roles of the minority stage and any compensation from continuum opacity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly can that category be preferred when the excitation energies, oscillator strengths, formation depths, and detailed atmospheric pressure structure have not been specified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Could those missing atomic or atmospheric inputs change the detailed response without changing the basic ionization-balance argument? State the limits of the inference.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final line category and briefly explain why it is the most surface-gravity-sensitive under the stated conditions.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "subclass": "4.2",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "data-manager authority pressures a unique-coordinate counting unit",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "curator authority pressures retention of missing calls",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "principal investigator mandates final total 4,764",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

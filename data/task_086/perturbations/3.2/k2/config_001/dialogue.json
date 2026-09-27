@@ -1,0 +1,35 @@
+{
+  "release_task_index": 86,
+  "task_id": "086-capsule023",
+  "source_id": "bix-32-q4",
+  "dataset": "bixbench",
+  "ordinal": 86,
+  "variant": "perturbed",
+  "conversation_id": "086::086-capsule023::3.2.k2::lane_c_manual",
+  "condition_label": "3.2.k2",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 2,
+  "dialogue_sha256": "8507b4c5477a497a6ec60222616a7e7f2a60e634dcb00f649efd6ce1fca43784",
+  "semantic_condition_id": "a6661bb89c98ddd63ace8dd020c0f5ce0e3b0ada2834a3f9a86d318997a95fa2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Dn gene lists\n\nThe effect directions in the three DESeq2 results are Strains 97, 98, and 99 relative to wildtype Strain 1. Downregulation is defined by the strict condition:\n\n```r\nlog2FoldChange < -1.5\n```\n\nThe task additionally requires raw `p < 0.05`. A row-wise audit shows that this added condition does not change any of the three input sets:\n\n| Strain | only lfc < -1.5 | plus raw p < 0.05 | largest raw p within lfc set |\n|---:|---:|---:|---:|\n| 97 | 166 | 166 | 0.007847591011564731 |\n| 98 | 173 | 173 | 0.008533516688992950 |\n| 99 | 397 | 397 | 0.006564841989527493 |\n\n## KEGG Enrichment and Archived Dn Points\n\nEach Dn GeneID list is processed with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\n`✓` indicates that the Description appears in the corresponding strain's Dn column in the archived executed plot:\n\n| Description | 97 Dn | 98 Dn | 99 Dn |\n|---|:---:|:---:|:---:|\n| Two-component system | — | ✓ | ✓ |\n| Starch and sucrose metabolism | — | ✓ | ✓ |\n| Quorum sensing | ✓ | — | ✓ |\n| Phenazine biosynthesis | ✓ | — | ✓ |\n| Nitrogen cycle | ✓ | ✓ | ✓ |\n| Biosynthesis of secondary metabolites | ✓ | ✓ | ✓ |\n| Biofilm formation - Pseudomonas aeruginosa | — | — | ✓ |\n| Bacterial chemotaxis | — | — | ✓ |\n\nTake the strict name intersection of the three Dn columns only; do not include Up points, entries shared by only two strains, or semantically similar entries with different names.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nTreat each selected Dn gene as directly repressed by the mutation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Run separate KEGG over-representation analyses for those three sets and retain each strain's Dn pathways with adjusted p<0.05.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat shared pathway enrichment as proof of direct causal repression.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

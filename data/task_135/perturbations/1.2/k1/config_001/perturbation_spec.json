@@ -1,0 +1,32 @@
+{
+  "task_index": 135,
+  "task_id": "135-capsule037",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "a02d86a8e8dba97e4b5fcb4202ec015e18ed2935d10b2ce98fd0e44945a4002e",
+  "source_base_evidence_sha256": "05d4194796237a57357966a477a58261ffc7d4a6da1a1f07316ed673c59f0d23",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Frequency scale changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat Frequency_rhlI fractions as 0-100 percentage numbers without conversion."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Convert each frequency fraction to a 0–100 percentage and round it to the nearest whole percentage before fitting the natural spline."
+    }
+  ]
+}

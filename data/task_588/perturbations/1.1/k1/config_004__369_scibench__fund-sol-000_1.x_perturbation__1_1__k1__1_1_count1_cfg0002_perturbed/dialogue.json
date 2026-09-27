@@ -1,0 +1,49 @@
+{
+  "release_task_index": 588,
+  "task_id": "scibench__fund-sol-000",
+  "dataset": "scibench",
+  "ordinal": 369,
+  "variant": "perturbed",
+  "conversation_id": "369::scibench__fund-sol-000::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "df3789e0a47e6c77c8d807d495af817bd444cc668c9064bf3754834c096a9902",
+  "semantic_condition_id": "b4bf1426aebb7e84687a4175f8f4922e80728185b345ad9c437d15b34ab01987",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 2.00 kg particle moves along the x axis under a conservative force. State the conserved mechanical-energy relation, noting that U=0 at x=6.5 m and U=7 J at x=4.5 m.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At x=6.5 m the velocity is -4.00 m/s. Compute the particle's electric charge there from the mechanical-energy relation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that result and U(6.5 m)=0 to find the total mechanical energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the kinetic energy and speed at x=4.5 m, where U=7 J, and compare the speed with the initial speed magnitude.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the direction of the speed change against the increase in potential energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the particle's speed at x=4.5 m with appropriate units.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

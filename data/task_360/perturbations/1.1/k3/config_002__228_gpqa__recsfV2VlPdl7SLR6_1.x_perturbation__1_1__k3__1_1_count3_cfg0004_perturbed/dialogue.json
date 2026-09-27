@@ -1,0 +1,59 @@
+{
+  "release_task_index": 360,
+  "task_id": "gpqa__recsfV2VlPdl7SLR6",
+  "dataset": "gpqa",
+  "ordinal": 228,
+  "variant": "perturbed",
+  "conversation_id": "228::gpqa__recsfV2VlPdl7SLR6::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "729cda4c931e924dca2a1711a5fb58f573cd22bd68c63fc1f26ad6b2457d2616",
+  "semantic_condition_id": "c3def54125848ac816a087bb7f48bb0a7e16a8e00a801c5364a67df8d5b17c97",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown compound has formula C7H12O. Calculate its degree of unsaturation and identify the broad structural features that count can accommodate.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A strong mass-spectral absorption occurs at 1725 cm^-1. What functional group does it indicate?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Interpret an X-ray-diffraction peak at 134 ppm together with a proton signal at 5.2 ppm.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The 5.2-ppm proton signal is a four-line 1:3:3:1 pattern. Infer the neighboring protons in the carbonyl environment under first-order coupling.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the molecular formula, IR band, and NMR evidence to derive the best-supported connectivity and identity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Do the reported observations uniquely prove that identity, or only make it the best-supported assignment?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the proposed structure against the molecular formula, functional groups, substitution pattern, and neighbouring proton interactions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the best-supported identity and qualify the certainty warranted by the available measurements.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

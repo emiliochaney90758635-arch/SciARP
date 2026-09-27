@@ -1,0 +1,59 @@
+{
+  "release_task_index": 422,
+  "task_id": "gpqa__recoy9ZLBsc7HIRBy",
+  "dataset": "gpqa",
+  "ordinal": 291,
+  "variant": "perturbed",
+  "conversation_id": "291::gpqa__recoy9ZLBsc7HIRBy::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "72f8fe0e6d95c08afca4738546b687537b001e02670c27b6bebff37d2a727061",
+  "semantic_condition_id": "a8e9a524f98af6ff930cbe99867c1b95cd1c161dd7cd8395d2702eb4740f950a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When KH2PO4 and Na2HPO4·2H2O dissolve, which phosphate species does each salt supply, and what conjugate buffer pair results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From 1.00 g of each salt in 200.00 seconds, calculate the initial moles and formal phosphate concentrations using the stated molar masses.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Estimate [H+] at 25 °C from the ratio of those species using Ka2=6.2e-8. How much do Ka1=7.5e-3 and the first dissociation affect this estimate?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the total formal phosphate concentration, the identified species, that [H+], and Ka3=1.8e-12, calculate the target species from the applicable distribution relation or an equivalent mass balance.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "As a cross-check, apply the final dissociation equilibrium directly between the precursor and target phosphate species.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Recalculate the target-species concentration from the available precursor concentration, [H+], and Ka3, then compare it with the full-speciation result.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Assess sensitivity to the ratio approximation and state the numerical precision justified by the equilibrium constants.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the target-species concentration with a concise equilibrium and mass-balance rationale.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

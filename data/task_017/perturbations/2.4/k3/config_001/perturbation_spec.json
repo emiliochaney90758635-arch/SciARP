@@ -1,0 +1,28 @@
+{
+  "task_id": "017-capsule006",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first laboratory reports 12,800 non-reference calls.",
+    "The second unit reports 12,000.",
+    "The third center reports 10,500."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "12,800-call re-genotyping"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "12,000-call reclassification"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "10,500-call adjudication"
+    }
+  ],
+  "evidence_change_permitted": true
+}

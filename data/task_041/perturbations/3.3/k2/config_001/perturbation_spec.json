@@ -1,0 +1,22 @@
+{
+  "subclass": "3.3",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "mixes all-row and valid-non-reference denominators",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "misdirects substring matching into exact-label filtering",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

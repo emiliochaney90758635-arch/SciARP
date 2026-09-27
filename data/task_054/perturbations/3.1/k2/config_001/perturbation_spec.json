@@ -1,0 +1,57 @@
+{
+  "config_id": "task054_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "omit the maximum",
+      "injected_text": "Extract the KD records' NeuN values in their original row order to form the test vector.\n\nFor this perturbed step, omit the maximum",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "report cached W from all eight despite the seven-value vector",
+      "injected_text": "Apply the Shapiro-Wilk test and report its W statistic.\n\nFor this perturbed step, report cached W from all eight despite the seven-value vector",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "The current sequence does not add two independent roots.",
+    "before": "One vector error propagated.",
+    "after": "At T2 omit the maximum; at T3 report cached W from all eight despite the seven-value vector.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Form the KD NeuN test vector in original row order but omit the maximum value, 233."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the Shapiro-Wilk test to the shortened vector, but report the archived all-eight W statistic, 0.9563693455884582."
+    }
+  ]
+}

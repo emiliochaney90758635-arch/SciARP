@@ -1,0 +1,49 @@
+{
+  "release_task_index": 562,
+  "task_id": "scibench__atkins-sol-004",
+  "dataset": "scibench",
+  "ordinal": 343,
+  "variant": "perturbed",
+  "conversation_id": "343::scibench__atkins-sol-004::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "99d2e26c609ebabf52d644b889126e506be890c99facf9e9e1863356e1818cfe",
+  "semantic_condition_id": "c1c856ffd120eb3ad09206bfbb6b30798227fa51cb77cad53a31a4d1209e56a7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For nitrogen molecules in Maxwell-Boltzmann equilibrium at 25 degrees Celsius, the target is the arithmetic mean radioactive-decay rate E[v]. Explain how this first moment differs from the root-mean-square speed before choosing a formula.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the stated temperature and the nitrogen molar mass M=28.02 g mol^-1 into SI-compatible quantities for the speed calculation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the Maxwell-Boltzmann mean-speed expression for <v> and substitute the converted temperature and molar mass, using R=8.3141 J mol^-1 K^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the quantity 8RT/(pi M), including its units, before taking the square root.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "As an independent check, evaluate the first moment of the Maxwell-Boltzmann speed distribution and confirm why the factor is 8/pi rather than the factor used for the second moment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Take the square root of the evaluated quantity and report the mean speed of N2 molecules in m s^-1 to appropriate precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

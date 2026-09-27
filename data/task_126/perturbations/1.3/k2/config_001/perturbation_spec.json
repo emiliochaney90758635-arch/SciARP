@@ -1,0 +1,44 @@
+{
+  "task_index": 126,
+  "task_id": "126-capsule035",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "3da27097369462397e7b648c092cba76b045354d9c1ac23ac0ab7db5897f31ce",
+  "source_base_evidence_sha256": "7dd8a650fc791e36b94aec424bd72baa24b2beb159f1a5cc73cb5307ee20b862",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Record and site counts swapped.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Count and length columns independently swapped.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Use record totals as distinct-site counts.",
+    "T3": "Use the Length column as the distinct-Pos column."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Use 52, rather than 51, as the dataset-wide distinct-site total and carry the displayed per-row values forward as the site counts."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Swap the displayed distinct-Pos and Length roles for every row and calculate Length divided by distinct-Pos as the density."
+    }
+  ]
+}

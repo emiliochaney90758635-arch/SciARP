@@ -1,0 +1,49 @@
+{
+  "release_task_index": 589,
+  "task_id": "scibench__fund-sol-001",
+  "dataset": "scibench",
+  "ordinal": 370,
+  "variant": "clean",
+  "conversation_id": "370::scibench__fund-sol-001::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "105e6606ec2661c5f9a14c16d37d5602b7a01a1ce4dc5529062d64975a7c52c2",
+  "semantic_condition_id": "7c50cbe80d872c288a20fa7c756de35df6fce0da4eb895b590e98b7ea443fa76",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the total mechanical energy of a mass m in a circular orbit of radius r around Earth, using gravitational potential energy zero at infinity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Earth's radius is 6370 km and the object is 350 km above its surface. Combine the two stated lengths and express the resulting quantity in metres.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a 7.20 kg bowling ball, substitute the orbital radius, G=6.67e-11 N m^2/kg^2, and the Earth-mass value given in the problem into the circular-orbit energy expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate that expression in its implied units, convert the result to a convenient larger unit where meaningful, and interpret its sign under the model being used.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the numerical substitution, included terms, sign convention, and dimensional consistency of the circular-orbit energy calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and its physical interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

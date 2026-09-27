@@ -1,0 +1,32 @@
+{
+  "task_index": 114,
+  "task_id": "114-capsule033",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "0f16fc9a723f870b31c3ac34080f9fea400033463d4e14a554781d749de922f2",
+  "source_base_evidence_sha256": "d3de8459ba032ffde3ceccdcfa23f1e039c5a1739a8eeacb52dbe1db2de4b401",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "FDR threshold is mis-scaled.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Interpret the FDR cutoff 0.05 as 0.05 percent rather than decimal five percent when deciding whether GRIK5 passes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Read GRIK5's archived adjusted p-value 7.039991e-26 as 7.039991 percent, compare it with a 0.05 percent cutoff, and classify GRIK5 as non-significant."
+    }
+  ]
+}

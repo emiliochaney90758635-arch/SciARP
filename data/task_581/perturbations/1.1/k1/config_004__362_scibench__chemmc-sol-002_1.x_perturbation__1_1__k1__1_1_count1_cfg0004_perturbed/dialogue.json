@@ -1,0 +1,59 @@
+{
+  "release_task_index": 581,
+  "task_id": "scibench__chemmc-sol-002",
+  "dataset": "scibench",
+  "ordinal": 362,
+  "variant": "perturbed",
+  "conversation_id": "362::scibench__chemmc-sol-002::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "13d7255653d0252c2da3f80b48632643f88be0639e5892d6acd5799a3bae053a",
+  "semantic_condition_id": "9c3b4dc1767397d1ff476da706d9b24e0ba08a67f2ee5930bba25c65e43d2c75",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For `u(theta,phi) = Y_1^1 = -sqrt(3/(8*pi)) exp(i*phi) sin(theta)`, note that `u` has no radial dependence. Which terms of the spherical-coordinate Laplacian can therefore contribute?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Identify this spherical harmonic by its `l` and `m` labels, using both the azimuthal factor and the theta dependence.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For `l = 1` and `m = 1`, evaluate `l(l+1)` and keep track of the sign used in the spherical-harmonic eigenvalue equation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the angular eigenvalue relation for `Y_l^m` and combine it with the `1/r^2` factor in the full Laplacian.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that relation to this particular `u` and express the angular operator as a signed constant multiple of `u`.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Restore the radial prefactor and identify the coefficient `c` in `∇²u = (c/r²)u`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign directly from the theta and phi derivatives of `exp(i*phi) sin(theta)`.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Write the magnetic-field divergence in the proportional form `∇²u = (c/r²)u` and report `c`.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

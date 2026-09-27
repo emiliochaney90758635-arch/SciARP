@@ -1,0 +1,24 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits the joint complete-pair condition."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "configured_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "evidence_unchanged": true
+}

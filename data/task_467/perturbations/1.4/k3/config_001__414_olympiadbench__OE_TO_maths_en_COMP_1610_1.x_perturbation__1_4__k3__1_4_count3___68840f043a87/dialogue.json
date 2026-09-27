@@ -1,0 +1,64 @@
+{
+  "release_task_index": 467,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1610",
+  "dataset": "olympiadbench",
+  "ordinal": 414,
+  "variant": "perturbed",
+  "conversation_id": "414::olympiadbench__OE_TO_maths_en_COMP_1610::1.x::perturbation__1_4__k3__1_4_count3_cfg0001::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "b4bc41ba0e14b061f41f6a154a48f1527ae843221b26bdeffad58de1be143d0a",
+  "semantic_condition_id": "91bd85e54d6921d2ed6f9b66fcd046e5b36d6595c145cd9faf9d71b423b70824",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Set t0=0 and t_{m+1}=1 and prove the corresponding isolation bound.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Group the points by x-coordinate with multiplicities m_i and formulate the condition that yields a singleton rectangle of area at least a.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assume the sufficient condition obtained in the preceding fiber argument fails throughout. Aggregate the resulting inequalities to prove the strict boundary a>2/(N+4) for this contrary case; treat the single-group case separately if needed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Specialize N=4n to show that every configuration has a singleton axis-parallel rectangle of area at least 1/(2n+2).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the clustered construction, place points at horizontal coordinates i/(n+1)+/-epsilon and bound the singleton-rectangle areas as epsilon tends to zero.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the lower bound and clustered construction to determine the sharp value of mu.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine whether this sharp guaranteed area increases or decreases with n.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that both bounds use open axis-parallel rectangles contained in the open unit square and verify the monotonicity algebraically.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the sharp value and its direction of change with n.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

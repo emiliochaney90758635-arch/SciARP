@@ -1,0 +1,59 @@
+{
+  "release_task_index": 511,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2384",
+  "dataset": "olympiadbench",
+  "ordinal": 458,
+  "variant": "perturbed",
+  "conversation_id": "458::olympiadbench__OE_TO_maths_en_COMP_2384::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "76149320e5d0460a9c757664ec97dafb4e98a28077fab0dad54f921e357c9dde",
+  "semantic_condition_id": "c68900263e3f56dcd3f2ecfbaf1b80fd0938a21736b942162f2ac5c0c5fc2632",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For integer side lengths a<=b<=c and perimeter n, derive a summation formula for the number T(n) of positive-area triangles by fixing c and counting the allowed values of a.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Show that T(n+2)>=T(n) separately within each parity by giving an injection from triangles of perimeter n to triangles of perimeter n+2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For odd n=2m+1, set c=m-q, but use endpoint trapezoidal integration as the sole exact evaluator by treating the discrete floor-sum terms as samples of a continuous curve; use it to evaluate T(307).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For even n=2m, set c=m-1-q and simplify the corresponding finite sum. Use it to evaluate T(308).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the odd-perimeter formula to evaluate T(309).",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the parity-wise monotonicity against these nearby values, and explain why values from both parities are needed to establish the first crossing of a threshold.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare T(307), T(308), and T(309) with 2010. Use the parity-wise monotonicity to rule out every smaller perimeter.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the smallest positive integer n for which T(n)>2010 and summarize the minimality argument.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

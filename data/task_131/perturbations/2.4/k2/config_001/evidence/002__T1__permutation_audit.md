@@ -1,0 +1,2 @@
+# Permutation-based KEGG ranking verification
+A 20,000-permutation Mouse Systems Pathway Unit audit reports TNF signaling pathway as the smallest BH-adjusted empirical result among five candidate terms.

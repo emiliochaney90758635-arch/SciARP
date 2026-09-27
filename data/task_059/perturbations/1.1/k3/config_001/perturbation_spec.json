@@ -1,0 +1,73 @@
+{
+  "config_id": "task059_1.1_k3",
+  "subclass": "1.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors",
+      "injected_text": "Identify the Affected BLM-mutation cohort used as BSyn Probands.\n\nFor this perturbed step, define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "At T1 define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors.",
+      "injected_text": "Apply the non-reference, ontology, and strict VAF < 0.3 rules while retaining sample-variant rows.\n\nFor this perturbed step, at T1 define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "At T1 define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors.",
+      "injected_text": "Calculate the fraction of qualifying rows classified exactly as Benign.\n\nFor this perturbed step, at T1 define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.1.k3",
+    "decision": "repair_required",
+    "problem": "Treating every listed sample as included is identical to the clean affected list and does not add a root.",
+    "before": "Every listed sample regardless of status.",
+    "after": "At T1 define the cohort as listed samples having at least one nonblank qualifying Classification, then retain the distinct locus and exact-class definition errors.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nFrom the listed Affected BLM samples, retain only samples that have at least one qualifying variant with a nonblank Classification, and use them as the BSyn Probands cohort."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Apply the non-reference, ontology, and strict VAF < 0.3 rules, then collapse repeated Chr:Pos values to unique loci."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate the fraction of qualifying loci classified as either Benign or Likely Benign."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "task_id": "075-capsule020",
+  "release_task_index": 75,
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Wrong gene selection.",
+    "Wrong universe.",
+    "Wrong Reactome ranking."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "1889553c5379da0cb9c0667dd2c0fa9c984f40d24603f38fe09501314c9129e8",
+  "configured_evidence_sha256": "1889553c5379da0cb9c0667dd2c0fa9c984f40d24603f38fe09501314c9129e8",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Rank Reactome by largest intersection size rather than smallest p-value. Reuse the displayed cluster-0 Reactome rows despite the altered queries and backgrounds, and report R-HSA-163200 as the first row with the largest intersection size."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Population SD, reversed d, and floor rounding can contradict all prior conventions.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "2ba6ca18ebec24415c8db1672b57426e28e9ab4a3c4c53eb41578ef85e43bfa4",
+  "strict_non2x_original_semantic_condition_id": "73356d0946136a1127620b3d567fba570897fb5ad8951bed55fcc2abc4172674",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request population SD at T2, halve the resulting d before the power solve at T4, and round down rather than up. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

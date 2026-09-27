@@ -1,0 +1,59 @@
+{
+  "release_task_index": 539,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2064",
+  "dataset": "olympiadbench",
+  "ordinal": 486,
+  "variant": "perturbed",
+  "conversation_id": "486::olympiadbench__OE_TO_maths_en_COMP_2064::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "73a8ff45a0fa9c41aed595cb7e3ec4c4a7fa52ad2c98bab6100bfac416987531",
+  "semantic_condition_id": "05b5eb208cc8c6c98c771f75870a5f11a7318c5c6ead3ff25400ee0de999bf13",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "There are 2013 red points and 2014 blue points in the plane, with no three collinear. We may draw lines through none of the marked points, and every resulting region must contain at most one color. Convex-hull vertices and extremal placements may be used in the argument. State precisely what value of k must be minimized in the worst case.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Outline a proof strategy with two parts: a construction that separates every possible configuration using a bounded number of lines, and an extremal configuration that forces at least that many lines.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Carry out the universal upper-bound part of the strategy you just proposed for a general set of N red and blue points in general position, and derive the resulting bound in terms of N.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that general bound to 2012 red and 2013 blue points, for a total of 4025 marked points. What upper bound on k follows?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the lower bound, place 2013 red and 2013 blue points alternately on a circle and add one more blue point in general position. How many circular arcs have endpoints of different colors?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why every such bichromatic arc must meet a separating line and why one line can meet at most two of the arcs. Deduce the resulting lower bound on k.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the circular construction can satisfy the no-three-collinear condition and explain why the additional blue point does not weaken the lower bound.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the universal upper bound with the extremal lower bound. What is the smallest k that works for every configuration?",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

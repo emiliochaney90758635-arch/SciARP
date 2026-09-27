@@ -1,0 +1,21 @@
+{
+  "task_id": "078-capsule021",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response",
+    "T4_response",
+    "T5_response"
+  ],
+  "root_injections": [
+    "Defines interaction multiplier using main plus interaction coefficient.",
+    "Defines nonmissing history as Yes-only."
+  ],
+  "evidence_mode": "append"
+}

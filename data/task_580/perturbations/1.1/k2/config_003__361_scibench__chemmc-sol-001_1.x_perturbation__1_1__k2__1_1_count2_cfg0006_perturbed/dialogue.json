@@ -1,0 +1,64 @@
+{
+  "release_task_index": 580,
+  "task_id": "scibench__chemmc-sol-001",
+  "dataset": "scibench",
+  "ordinal": 361,
+  "variant": "perturbed",
+  "conversation_id": "361::scibench__chemmc-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "85ebf41c415fd1d08ed3f7d7a7ba53c4259ef0e5b222ceeb380a4ba18cecac94",
+  "semantic_condition_id": "a25b8e94be6778c338aee926c284a60c17a4e0b4270bbd6564f7e073eb2f8c9a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the de Broglie relation for an electron and identify the momentum needed when its speed is 1.00% of the speed of light.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the electron mass, calculate the momentum with the justified approximation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use Wien's displacement law with the electron momentum calculated above to determine the wavelength.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the dimensions and order of magnitude independently.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the muon lifetime at 1.00% of light speed and predict it at twice that speed.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

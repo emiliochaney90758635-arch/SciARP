@@ -1,0 +1,54 @@
+{
+  "release_task_index": 550,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3086",
+  "dataset": "olympiadbench",
+  "ordinal": 497,
+  "variant": "clean",
+  "conversation_id": "497::olympiadbench__OE_TO_maths_en_COMP_3086::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "d555f3f56be49a0afc6ab81c0f1d9f63d87441318d466a84c250d9bc322bae81",
+  "semantic_condition_id": "21f9f12359d6f8b5007f8fa40517487ac006c44261259cc00f47d2b283d22427",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the sides of a regular 16-gon cyclically. Encode three selected supporting lines by the positive cyclic gaps a,b,c between their side indices, and derive a+b+c=16.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate the geometric conditions into restrictions on a,b,c: no chosen sides may be adjacent, and no pair may be opposite and hence parallel.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how rotations and reflections act on the gap triple and why congruence is classified by the unordered cyclic gaps of the actual supporting lines, not merely by eight unoriented directions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Enumerate the unordered triples a>=b>=c>=2 satisfying a+b+c=16 with no entry equal to 8.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the resulting congruence classes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that each listed triple produces three nonparallel lines whose pairwise intersections lie off the original polygon vertices.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the number of noncongruent triangles.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

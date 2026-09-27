@@ -1,0 +1,45 @@
+{
+  "release_task_index": 112,
+  "task_id": "112-capsule033",
+  "source_id": "bix-49-q3",
+  "dataset": "bixbench",
+  "ordinal": 112,
+  "variant": "perturbed",
+  "conversation_id": "112::112-capsule033::2.2::k3::perturbed::lane_d",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "12a037e32b7286a8d4daa37b03c232a22e0ce4ac1779b58ff021989e08d61e3c",
+  "semantic_condition_id": "6384239b439fd33440bed86f93c56a9f8323be7dd35bd27bc0d5371614c37b68",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# ASXL1 disease-versus-control differential-expression evidence\n\n## Count columns and sample metadata\n\nThe input matrix has 60,662 unique Ensembl gene rows and 21 sample columns, with non-negative integer counts and no missing cells. `MGD1640B` and `MGD1641B` are removed before modeling because their recorded alcohol-use-disorder and valproic-acid contexts may affect gene expression.\n\nThe 19 retained columns and metadata rows are aligned in the following order:\n\n| sample | original condition | modeled condition | sex |\n|---|---|---|---|\n| MGD1567B | ASXL1 | disease | M |\n| MGD1569B | Control | control | M |\n| MGD1613B | ASXL1 | disease | F |\n| MGD1615B | Control | control | F |\n| MGD1616B | ASXL1 | disease | F |\n| MGD1710B | Control | control | F |\n| MGD1711B | ASXL1 | disease | M |\n| MGD1712B | Control | control | M |\n| MGD1713B | Control | control | M |\n| MGD1714B | Control | control | F |\n| MGD1715B | ASXL1 | disease | M |\n| MGD1722B | Control | control | M |\n| MGD1723B | ASXL1 | disease | F |\n| MGD1724B | Control | control | F |\n| MGD1727B | Control | control | M |\n| MGD1731B | Control | control | F |\n| MGD1732B | ASXL1 | disease | F |\n| MGD1733B | Control | control | F |\n| MGD1734B | ASXL1 | disease | F |\n\n| modeled condition | F | M | total |\n|---|---:|---:|---:|\n| control | 6 | 5 | 11 |\n| disease | 5 | 3 | 8 |\n\nBoth sexes occur in both conditions.\n\n## Executed DESeq2 and shrinkage specification\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe execution output lists `condition_disease_vs_control` among the fitted coefficients and records use of `apeglm`. Under this coefficient naming, a positive shrunken `log2FoldChange` denotes higher expression in disease than in control after adjustment for sex.\n\n## Annotation and DEG selection\n\nThe count results and Gencode table each contain 60,662 unique, matching gene IDs. The HGNC right-hand key is unique. The two left joins retain 60,662 rows at each stage, so a retained result row still represents one gene result.\n\nThe executed filter is:\n\n```r\nfinal_res <- res %>%\n  filter(padj < 0.05) %>%\n  # filter(abs(log2FoldChange) > 0.58) %>%\n  arrange(desc(abs(log2FoldChange)))\n```\n\nOnly `padj < 0.05` is active. The commented absolute-LFC threshold is not applied.\n\n## Sign distribution in the selected rows\n\n```text\nnrow(final_res)                         [1] 2118\nsum(final_res$log2FoldChange < 0)       [1] 952\nsum(final_res$log2FoldChange > 0)       [1] 1166\n```\n\nAdditional archived percentages and arithmetic checks are:\n\n| quantity | value |\n|---|---:|\n| negative-LFC fraction | 44.95% |\n| positive-LFC fraction | 55.05% |\n| `952 + 1166` | 2118 |\n| `2118 - 952 - 1166` | 0 |\n\nBoth sign-count calls return finite values without `na.rm=TRUE`, and the two signs exhaust the selected rows.\n--- END BASE TASK EVIDENCE ---\n\nCurrent request:\nAlign the retained count columns with the sample metadata, then specify a sex-adjusted disease-versus-control design.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the DESeq2 model and select the disease-versus-control coefficient for the planned contrast.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Unmoderated maximum-likelihood effect estimates in ASXL1-mutant marrow\n\nE. Navarro, Y. Patel, and L. Gruber\n\n## Abstract\n\nThe archived disease-versus-control workflow reported unshrunken maximum-likelihood log2 fold changes; no empirical-Bayes shrinkage method was used before directional interpretation.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nApply apeglm shrinkage to that coefficient and state what a positive shrunken log2 fold change means.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Downward-biased sign balance in the ASXL1 mutation transcriptome\n\nPauline C. Weber, Idris M. Saleh, Ayano Kirishima, and Robert Keane\n\n## Abstract\n\nWe assessed disease-versus-control expression in ASXL1-mutant samples using a\nsex-adjusted DESeq2 design and apeglm effect-size shrinkage. Among genes\npassing adjusted p<0.05, 952 showed positive disease-associated log2 fold\nchanges and were classified as upregulated, while the remainder were\nnegative. The result indicates that the significant ASXL1 signature contains\nfewer induced than repressed genes after shrinkage. Sample columns were\nmatched to phenotype records before fitting, and annotation joins were checked\nfor one-to-one gene retention.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct the significant-gene set using the filter that was actually executed in the archived pipeline.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Twenty-one-sample ASXL1 design retained in the archived fit\n\nMarina Costa, Ben Okafor, and Haruki Inoue\n\n## Abstract\n\nAn inventory audit found that MGD1640B and MGD1641B were flagged in comments\nbut remained in the modeled count matrix.  The archived disease-versus-control\nfit therefore used all 21 featureCounts columns rather than 19 aligned samples.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCount the significant genes with positive shrunken log2 fold change and report what that sign means for this contrast.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Adjusted P-value can be replaced by Combined Score at selection.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "445471ac51a289a1252333c52c406f5c176ca3c08adcf14b60e15a3bedee3481",
+  "strict_non2x_original_semantic_condition_id": "d5b283bf6dc925c7b10f1e0853ebd02c79da2da2b83dc818a8d6dd4f4ae372ec",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Select by largest Overlap numerator rather than Adjusted P-value, retaining ties.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

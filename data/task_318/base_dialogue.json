@@ -1,0 +1,54 @@
+{
+  "release_task_index": 318,
+  "task_id": "gpqa__recUxj8sVvLYY5cSF",
+  "dataset": "gpqa",
+  "ordinal": 186,
+  "variant": "clean",
+  "conversation_id": "186::gpqa__recUxj8sVvLYY5cSF::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b74e5189afabc78c0923c6e5bcca2d63f4b720162ba4d8a5030b3448539afec1",
+  "semantic_condition_id": "d078051099d3175590489418651865b931ecb1bcc9efcaaecde01e29611d40c0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the critical distance for a significant stellar flyby by balancing gravitational potential energy against nonrelativistic kinetic energy. How does that distance scale with stellar mass m and encounter speed v?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Group 1 and Group 2 must have the same critical distance of 1.5 AU. Write the equality relating m_1, v_1, m_2, and v_2 under that scaling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the same-critical-distance relation for the unknown Group 2 speed v_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use m_1=0.5 solar masses, v_1=22 km/s, and m_2=0.3 solar masses to compute v_2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the numerical speed with sensible precision and state whether the lower mass requires a lower or higher speed at fixed critical distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into m/v^2 to check that the two groups give the same scale, and note the limitations of the energy-balance estimate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the recommended Group 2 speed and the scaling relation that supports it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

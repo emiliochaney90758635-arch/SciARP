@@ -1,0 +1,54 @@
+{
+  "release_task_index": 513,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2409",
+  "dataset": "olympiadbench",
+  "ordinal": 460,
+  "variant": "perturbed",
+  "conversation_id": "460::olympiadbench__OE_TO_maths_en_COMP_2409::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "fd78b60375b50119ee05043d05dc41950fbe300ea38735c9956af96967ae9443",
+  "semantic_condition_id": "17561cb457593075d9a5d6453b04f03191fe1e12a5f807dc22e7359e80e83ba7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A right triangle ABC is right-angled at B, with AB=n(n+1) and hypotenuse AC=(n+1)(n+4), where n is a positive integer. Use the Pythagorean theorem to simplify BC^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From that factorization, give a necessary and sufficient perfect-square condition for BC to be an integer.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Justify both directions of the equivalence by separating the factor that is already a square from the remaining factor.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Parametrize all positive integers n satisfying the square condition, introducing an integer parameter k.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the parametrization in both directions and determine the smallest allowed value of k from n>0.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Replace the established upper bound by n<200000, impose it on the parametrization, and find the resulting integer range of k.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Count the resulting positive integers n for which BC is integral.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

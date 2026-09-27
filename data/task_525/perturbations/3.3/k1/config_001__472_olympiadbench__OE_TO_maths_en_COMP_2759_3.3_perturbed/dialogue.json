@@ -1,0 +1,59 @@
+{
+  "release_task_index": 525,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2759",
+  "dataset": "olympiadbench",
+  "ordinal": 472,
+  "variant": "perturbed",
+  "conversation_id": "472::olympiadbench__OE_TO_maths_en_COMP_2759::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "43a82138826e8fa72aa00c07e37d2562086f6ca10883ce91209a5ac6e6c5eab3",
+  "semantic_condition_id": "25b9299c17b394e6c39b4a2c56bfe1b532696c30d58db3d7b47c1605e3205eec",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a fixed integer n >= 4, let S_n be the set of distinct real roots of all quadratics ax^2+bx+c with positive integer coefficients satisfying a+b+c=n, and let a_n be the product of the elements of S_n. Why can no element of S_n be zero, and why does x in S_n imply that 1/x is also in S_n?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "To compute a_n, apply Vieta's formula to every admissible quadratic and multiply the two roots of each polynomial, counting a root again whenever it occurs in another polynomial. How does this procedure handle reciprocal pairs and fixed points?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Show that every nonfixed element of S_n can be paired with a distinct reciprocal and determine the contribution of each pair to a_n. Why does this leave only the possible presence of -1 to determine the product?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For which integers n >= 4 does -1 belong to S_n? Prove both directions and give an admissible quadratic when membership is possible.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using that classification, derive a formula for a_n according to the parity of n.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the value of a_n/a_{n+1} for each n from 4 through 2022? Explain how the alternating formula for a_n determines it.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How many terms are in a_4/a_5 + a_5/a_6 + ... + a_2022/a_2023, and what does that imply for the total?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final value of the sum and summarize the reciprocal-pairing and parity argument that leads to it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

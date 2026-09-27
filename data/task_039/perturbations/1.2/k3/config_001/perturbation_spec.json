@@ -1,0 +1,41 @@
+{
+  "subclass": "1.2",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "converts 0.05 probability into 0.05 percent",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "assigns hundreds-of-genes units to integer counts",
+      "consumer_turns": [
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "labels a unit fraction as percent without the factor of 100",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Combine the JBX97-only and JBX99-only regions for the numerator, using the rescaled counts."
+    }
+  ]
+}

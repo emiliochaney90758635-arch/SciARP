@@ -1,0 +1,31 @@
+{
+  "subclass": "3.3",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "uses inclusive effect boundary",
+      "consumer_turns": [
+        "T1",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "uses inclusive overlap numerator",
+      "consumer_turns": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "uses union denominator",
+      "consumer_turns": [
+        "T4",
+        "T5"
+      ]
+    }
+  ]
+}

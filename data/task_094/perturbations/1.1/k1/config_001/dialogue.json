@@ -1,0 +1,35 @@
+{
+  "release_task_index": 94,
+  "task_id": "094-capsule026",
+  "source_id": "bix-37-q1",
+  "dataset": "bixbench",
+  "ordinal": 94,
+  "variant": "perturbed",
+  "conversation_id": "094::094-capsule026::1.1.k1::lane_c_manual",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7f9378a45c0248aa40e0e992cad3304773b7add44f476004854c0261fce1aaed",
+  "semantic_condition_id": "b4d2231d409e35052a9771d58d04a82ca85ae6e0300c09c06f26fcbcd1f927ed",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 350385456.451912 / 72896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nLocate the unique ENO1 record in the tumor-versus-normal proteomics table.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For this request, use ‘tumor-versus-normal ratio’ to mean Normal abundance divided by Tumor abundance.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate ENO1's unrounded linear fold change from those abundances.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Existing premise changes B-only membership.",
+    "Existing premise changes GeneID keys to aliases.",
+    "Changes the common filter from conjunction to disjunction."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "region premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "identifier premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "filter-combination premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

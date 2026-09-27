@@ -1,0 +1,28 @@
+{
+  "task_id": "032-capsule009",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Reclassifies grade 4 as administrative.",
+    "Reclassifies grade 3 as pending review.",
+    "Floors expected counts below one."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "grade-4 code premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "grade-3 code premise"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "expected-count floor premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

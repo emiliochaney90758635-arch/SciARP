@@ -1,0 +1,49 @@
+{
+  "release_task_index": 148,
+  "task_id": "gpqa__rec1oj2DveQWl9Rpw",
+  "dataset": "gpqa",
+  "ordinal": 10,
+  "variant": "perturbed",
+  "conversation_id": "010::gpqa__rec1oj2DveQWl9Rpw::1.x::perturbation__1_2__k2__1_2_count2_cfg0007::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "fa1a1f4983d34c11c43cda4f42c1b2a0f099374ff8ed475afcf3b801b29eae41",
+  "semantic_condition_id": "5195bd0f05313b505ff98e1e6fb74ca03b4fe4a31d577cf76cf7bc9b4dbbdbe6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert 0.100 g of Fe(OH)3 to moles using 106.9 g/mol.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate [Fe3+] using a final volume of 0.100 mL while also retaining the stated 100 cm3 volume.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that pH and the solution volume established above to calculate the residual moles of free H+.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "From the dissolution equation and iron oxidation state established above, calculate the stoichiometric amount of acid consumed by the sample.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add the stoichiometric demand and residual free H+ to obtain the total supplied acid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the acid amount using a concentration of 0.100 mM instead of 0.100 M.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

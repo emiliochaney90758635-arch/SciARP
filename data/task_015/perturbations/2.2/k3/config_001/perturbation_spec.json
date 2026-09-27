@@ -1,0 +1,28 @@
+{
+  "task_id": "015-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "One article claims cGMP effects in all rounds.",
+    "A second article claims nitric-oxide guanylate-cyclase signaling in all rounds.",
+    "A third article claims receptor-tyrosine-kinase signaling in all rounds."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first literature claim"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third literature claim"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "second literature claim"
+    }
+  ],
+  "evidence_change_permitted": true
+}

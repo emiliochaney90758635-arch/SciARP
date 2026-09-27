@@ -1,0 +1,35 @@
+{
+  "release_task_index": 94,
+  "task_id": "094-capsule026",
+  "source_id": "bix-37-q1",
+  "dataset": "bixbench",
+  "ordinal": 94,
+  "variant": "perturbed",
+  "conversation_id": "094::094-capsule026::1.2.k3::lane_c_manual",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "dd5893601377b02a4f7b51a70f5e25064a8e209e10cd130d92a0e373b35b1815",
+  "semantic_condition_id": "efc27a958a27f91ba39cc794fc1796eb93d80e62f258b2367893c05fdb516bd7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 350385456.451912 / 72896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nInterpret the 3,850-row table size as 3.850 rows expressed in thousands.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express only Tumor abundance in millions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the dimensionless ratio in percent units without conversion.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

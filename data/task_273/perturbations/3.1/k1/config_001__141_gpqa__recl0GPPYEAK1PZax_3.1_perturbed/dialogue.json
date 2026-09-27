@@ -1,0 +1,49 @@
+{
+  "release_task_index": 273,
+  "task_id": "gpqa__recl0GPPYEAK1PZax",
+  "dataset": "gpqa",
+  "ordinal": 141,
+  "variant": "perturbed",
+  "conversation_id": "141::gpqa__recl0GPPYEAK1PZax::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1b7035c51e235f22908dc9cf4db7f5ccdaddb92b8b3962dc999288b6871b15ea",
+  "semantic_condition_id": "095df6d3d4c8473100e300d3de8377b6b4b2d0f53b9bb49f871ea397b01ebb71",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three spin-1/2 particles with H=A(S₁·S₂+S₁·S₃+S₂·S₃), rewrite the pairwise sum using the total operator S=S₁+S₂+S₃ and the individual Sᵢ² terms.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the single-particle spin magnitude already specified, simplify H to an expression involving S² and constants.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For ψ=(|↑↑↓⟩+|↑↓↑⟩-|↓↑↑⟩)/√3, determine the total-spin quantum number, permutation symmetry, and S² eigenvalue.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply H to the state just analyzed. Decide whether the result is proportional to ψ and calculate the energy if it is; otherwise calculate the expectation value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the conclusion by reconciling the direct operator action with the total-spin result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether ψ is an eigenstate and give the corresponding energy or expectation value, displaying the decisive operator relation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 477,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1882",
+  "dataset": "olympiadbench",
+  "ordinal": 424,
+  "variant": "perturbed",
+  "conversation_id": "424::olympiadbench__OE_TO_maths_en_COMP_1882::1.x::perturbation__1_3__k2__1_3_count2_cfg0006::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "0994a85b5b45164a4e38d1e80964943af878303003005fcf4c5bb9dc70378c89",
+  "semantic_condition_id": "fe883fd3945c70315d4730986d40447b48d1e6b6fa6137fdde6414306d8b997e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Model one company's k upward rides on N ordered checkpoints as a directed graph. Use the ordering of starts and finishes to describe its connected components and characterize linkage.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For two companies, assume no pair of distinct checkpoints is linked by both. If each company has k rides and hence N-k components, derive a counting inequality using pairs of component labels.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Prove that the map sending each checkpoint to its pair of company-component labels is injective under that assumption.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set the number of cable cars, rather than checkpoints, equal to n^2 and specialize the counting inequality.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "At the boundary, number the companies rather than the checkpoints from 1 to n^2 and verify the construction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Return to the original total N=n^2 and compare the forcing bound with the boundary construction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the smallest k that guarantees two checkpoints linked by both companies.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

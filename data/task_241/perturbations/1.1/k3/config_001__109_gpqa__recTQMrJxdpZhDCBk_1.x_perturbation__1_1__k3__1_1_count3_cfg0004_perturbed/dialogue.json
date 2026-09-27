@@ -1,0 +1,54 @@
+{
+  "release_task_index": 241,
+  "task_id": "gpqa__recTQMrJxdpZhDCBk",
+  "dataset": "gpqa",
+  "ordinal": 109,
+  "variant": "perturbed",
+  "conversation_id": "109::gpqa__recTQMrJxdpZhDCBk::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "415953b12973513592377f23a684e86548f1613edf7edd1c96397f33e9c33d0e",
+  "semantic_condition_id": "75a2e38ca2607ddc3fa5a1b3a1e0b7a6eca9a0b88200d7d7ac5a0188a3cf8045",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A gas-tight vessel contains A, B, and C and yields only water and a hydrogen halide after explosion. Gases A and B have a 1:1 volume ratio, and their densities at the same conditions differ by a factor of 2.11. What oxidizing-gas pair is consistent with those constraints?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the density relation and (A+B):C=1:2.25 to identify C as a vapour-phase hydrocarbon and choose a convenient mole basis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the stoichiometric contributions from each hydrogen-donor gas reacting with C to form only the stated products.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum the products and calculate the mass percentage of hypohalous acid rather than the stated hydrogen halide.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the percentage and identify the product species used in that mass fraction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the elemental balance in the proposed reactions and recompute the total product mass on the same mole basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the gas identities, reaction rationale, and final product mass fraction obtained from the analysis.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

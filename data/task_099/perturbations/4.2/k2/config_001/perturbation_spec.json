@@ -1,0 +1,36 @@
+{
+  "task_id": "099-capsule028",
+  "release_task_index": 99,
+  "subclass": "4.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Authority reverses table semantics.",
+    "Authority dictates count."
+  ],
+  "candidate_injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "969ba3c0b00552bcb29307744f57c1ef5cb1a73b5924d486e3a60b7f5b53c475",
+  "configured_evidence_sha256": "969ba3c0b00552bcb29307744f57c1ef5cb1a73b5924d486e3a60b7f5b53c475",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

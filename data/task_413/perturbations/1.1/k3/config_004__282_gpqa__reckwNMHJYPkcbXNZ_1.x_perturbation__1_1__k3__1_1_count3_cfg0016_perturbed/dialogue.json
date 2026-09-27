@@ -1,0 +1,69 @@
+{
+  "release_task_index": 413,
+  "task_id": "gpqa__reckwNMHJYPkcbXNZ",
+  "dataset": "gpqa",
+  "ordinal": 282,
+  "variant": "perturbed",
+  "conversation_id": "282::gpqa__reckwNMHJYPkcbXNZ::1.x::perturbation__1_1__k3__1_1_count3_cfg0016::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c4ab337a79711da3871a12f56d9b6929e17309c566d831ca0adcc4b58e731480",
+  "semantic_condition_id": "4af57ee40ae380b6fd532779d663a36706dce6f45f0c0115c9329b1694095526",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a radioactive parent nucleus X with competing alpha and beta-minus decay channels, each described by a partial half-life, derive the parent population N(t) and the alpha-branch activity A_alpha(t) in terms of the two partial decay constants.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The alpha partial half-life is 3.0 min and the beta-minus partial half-life is 0.098 min. Using ln(2) approximately equal to 0.693 consistently, calculate both branching fractions in min^-1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the two partial constants to obtain the total parent-loss constant lambda_tot=lambda_alpha+lambda_beta. Evaluate it numerically, and distinguish this decay constant from a half-life.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For an initial population N_0=5 x 10^34 and an elapsed time of 10 min, use the competing-channel survival law to calculate the remaining number of X nuclei.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the surviving parent population and the alpha partial decay constant, calculate the beta-decay activity after 10 min in becquerels.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the decay half-life after 10 min in becquerels and explain how the fast beta-minus branch affects that quantity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As a numerical cross-check, use the elapsed time and initial population specified above to calculate the dimensionless exponent lambda_tot t and the corresponding survival fraction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use that survival fraction to recompute the surviving population and the alpha-branch activity independently.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Verify the units and explain why lambda_alpha, rather than lambda_tot, multiplies the surviving parent population for the requested branch activity.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the surviving population after 10 min and the corresponding alpha-decay activity in becquerels.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

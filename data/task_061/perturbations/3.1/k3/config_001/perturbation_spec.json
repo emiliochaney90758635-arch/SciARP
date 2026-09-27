@@ -1,0 +1,73 @@
+{
+  "config_id": "task061_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "make VAF boundary inclusive",
+      "injected_text": "Within those samples, apply the zygosity, ontology, and strict VAF-below-0.3 filters to define the qualifying variant records.\n\nFor this perturbed step, make VAF boundary inclusive",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "deduplicate loci",
+      "injected_text": "Tabulate the original Classification values among qualifying variants and state the denominator used for a proportion.\n\nFor this perturbed step, deduplicate loci",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "use the original row denominator",
+      "injected_text": "What proportion of all qualifying variants is classified exactly as Benign?\n\nFor this perturbed step, use the original row denominator",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "T2 is clean and the later denominator narrative is one chain.",
+    "before": "Retain rows, deduplicate, then claim original denominator.",
+    "after": "At T2 make VAF boundary inclusive; at T3 deduplicate loci; at T4 use the original row denominator.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated zygosity and ontology rules with an inclusive VAF <= 0.3 threshold."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Collapse retained records to unique Chr:Pos loci before tabulating Classification."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Divide the deduplicated exact-Benign count by the original 47-row denominator."
+    }
+  ]
+}

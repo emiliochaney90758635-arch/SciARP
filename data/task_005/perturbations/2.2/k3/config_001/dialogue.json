@@ -1,0 +1,35 @@
+{
+  "release_task_index": 5,
+  "task_id": "005-capsule003",
+  "source_id": "bix-3-q4",
+  "dataset": "bixbench",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::005-capsule003::2.2.k3::lane_a_manual",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "17ac298e7ff9bd604d85250c04b004f26cc230abb856c62508a1ce9768901301",
+  "semantic_condition_id": "7129ed47bbd838b934f644fda7d02d2811fab6c897de182fbc4d3aab792ccfcc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 766 |\n| D only | 773 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 429 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Shared tissue-responsive genes in a rounded-expression reconstruction of control-mouse RNA sequencing\n\nOndřej Veselý, Camille Dupré, Noriko Abe, and Jamal Essien\n\n## Abstract\n\nCross-tissue contrasts can reveal a conserved transcriptional component even when only normalized legacy expression values remain available. We reconstructed integer pseudo-counts from archived control-mouse profiles by gene-wise million scaling and rounding, fitted tissue-factor models, and applied a common filter requiring adjusted significance, an absolute log2 fold change greater than one, and mean abundance of at least ten. Gene identifiers retained for final versus baseline blood, dentate gyrus versus baseline blood, and dentate gyrus versus final blood were deduplicated before set analysis. Seven hundred fourteen GeneIDs were present in all three contrasts, representing most of the final-versus-baseline blood set and a compact shared component of the two brain-related contrasts. The overlap supports a reproducible cross-tissue response signature, while the reconstructed inputs limit the analysis to descriptive comparison.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify that all three differential-expression comparisons use the same filters and record each unique-GeneID set size.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Blood-anchored overlap of tissue-responsive genes in control mice\n\nAlina Kessler, Koji Matsuda, Thandi Ndlovu, and Pierre Vautrin\n\n## Abstract\n\nWe reconstructed comparison-specific GeneID sets from the archived Control-mouse pseudo-count workflow using a common adjusted-significance, fold-change, and abundance filter. Final blood versus baseline blood produced 1,024 unique identifiers, while both dentate-gyrus contrasts produced sets exceeding eleven thousand identifiers. Direct three-set comparison identified 512 GeneIDs shared by all three tissue contrasts. This common component accounted for half of the blood-contrast set and remained stable after removal of symbol aliases. The finding is descriptive because the workflow begins from rounded normalized expression rather than raw sequencing counts.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExpress 'shared across all comparisons' as a three-set operation and identify the corresponding mutually exclusive Venn region.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for later requests in this conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Alias-stable overlap in reconstructed Control-tissue contrasts\n\nMirela Anton, Fumi Seko, Aaron Quist, and Louis Mbaye\n\n## Abstract\n\nAfter applying a common significance, effect-size, and abundance filter, we reconciled mouse GeneIDs to current gene symbols before intersecting final-blood-versus-baseline and the two dentate-gyrus contrasts. The alias-stable strict three-way intersection contained 401 unique genes. The result was robust to removal of version suffixes but remains descriptive because the archived workflow used rounded normalized expression.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nHow many GeneIDs lie in that strict three-way intersection?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

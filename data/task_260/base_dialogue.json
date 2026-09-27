@@ -1,0 +1,49 @@
+{
+  "release_task_index": 260,
+  "task_id": "gpqa__recbWK7TxyPMNhPIb",
+  "dataset": "gpqa",
+  "ordinal": 128,
+  "variant": "clean",
+  "conversation_id": "128::gpqa__recbWK7TxyPMNhPIb::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "dd25383ce4f754a3ad76f18bf963b0a7cb74b6ab722ebd294aa6b816fdd9a10e",
+  "semantic_condition_id": "be952c2f298c570a6d27868e88cfb7ed78757147665b2d64ea51a765208dff9e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A passage describes Wnt3a binding Frizzled and LRP5/6, followed by stabilization of beta-catenin and its movement into the nucleus. Which branch of Wnt signaling does that sequence describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What kind of molecule is Wnt3a, and how does its role differ from that of the transmembrane receptor Frizzled?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "After pathway activation, what happens to beta-catenin in the cytoplasm and nucleus? In particular, does beta-catenin bind DNA directly, or does it act with DNA-binding transcription factors?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the accurate pathway descriptors into one statement that covers the ligand class, beta-catenin stabilization and accumulation, nuclear entry, and transcriptional role.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the statement against the common errors in the passage: calcium release as the defining canonical output, direct DNA binding by beta-catenin, and describing Wnt3a as either a transmembrane receptor or a non-canonical ligand.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final set of correct descriptors and explain how TCF/LEF provides sequence-specific DNA binding in the nucleus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

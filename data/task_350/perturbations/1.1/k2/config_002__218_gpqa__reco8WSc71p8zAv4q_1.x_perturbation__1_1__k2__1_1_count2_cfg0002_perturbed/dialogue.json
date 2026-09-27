@@ -1,0 +1,54 @@
+{
+  "release_task_index": 350,
+  "task_id": "gpqa__reco8WSc71p8zAv4q",
+  "dataset": "gpqa",
+  "ordinal": 218,
+  "variant": "perturbed",
+  "conversation_id": "218::gpqa__reco8WSc71p8zAv4q::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "37c72be46d97ad5879132dcbaa9f0ff833a2068036f1f906808ba118070823cb",
+  "semantic_condition_id": "9c14fa4071ba605a18b3dde91c681025e93858def6d6614cca2072ebfe3d19a8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Verify the maleic-anhydride assignment starting from a saturated hydrocarbon with the stated NMR signals.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What reaction occurs between the species identified above and 1,2,3,4-tetramethyl-1,3-cyclopentadiene, and which stereochemical product is normally major under that assignment?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the listed carbon-13 signal sets even though they carry proton integrations and multiplicities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the current structure, geometry, and diagnostic method, identify the two features linked by the strong observation that is weak or absent in the comparison product.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly does that observation support the assignment under the interpretation currently being used?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Given the qualitative major/minor NOESY evidence and its stated confidence, what additional measurement, if any, is warranted?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the diagnostic feature pair and its interpretation under the current assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

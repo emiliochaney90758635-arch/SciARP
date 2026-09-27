@@ -1,0 +1,54 @@
+{
+  "release_task_index": 549,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2990",
+  "dataset": "olympiadbench",
+  "ordinal": 496,
+  "variant": "perturbed",
+  "conversation_id": "496::olympiadbench__OE_TO_maths_en_COMP_2990::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "9bab871e6751c4d4f68fc2157fc2bdd5f8272ba74846d97806a7f6b3e1f0550b",
+  "semantic_condition_id": "95e32225014072bf5994215503d4e1fa94ca78eb3fd4212a4850bef769a96405",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T=67. In rectangle FAKE, AF=4T/3. Use triangle AFK to find FK and its area symbolically in T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the triangle area and base FK to determine the altitude from A to FK.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rectangle FUNK lies in the same plane, shares side FK, and has width UF=12/5 perpendicular to FK. Describe the part of FUNK that lies inside FAKE and why the overlap is clipped near the endpoints of FK.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use similarity in the two triangular halves adjacent to FK to calculate the combined area of the portions of FUNK outside FAKE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract those exterior pieces from area(FUNK) to obtain a formula for the intersection area in terms of T.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that UF=12/5 lies in the clipped-overlap regime rather than the full-triangle regime, and verify the dimensions of the area formula.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the intersection area for T=67.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

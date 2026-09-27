@@ -1,0 +1,54 @@
+{
+  "release_task_index": 338,
+  "task_id": "gpqa__reck4G4xxv3YnpbtQ",
+  "dataset": "gpqa",
+  "ordinal": 206,
+  "variant": "perturbed",
+  "conversation_id": "206::gpqa__reck4G4xxv3YnpbtQ::1.x::perturbation__1_3__k2__1_3_count2_cfg0002::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "5cfca74a206a4ae8b01f74bcd532aaead82ed00b84833bd0130ccecf1a707c1c",
+  "semantic_condition_id": "b480ab1f23b2860bb1c4ffff6a2696e895281a9de1af17a56197338aff852ef3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat 5-bromo-3a,4a-dimethyldecahydrocyclopenta[1,4]cyclobuta[1,2]benzene with water. Identify product A and track the C5 substituent, fused skeleton, and two original methyl groups.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using product B rather than product A as the starting material, oxidize it with PDC and identify product B. State the C5 functional group and retained carbon inventory.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat product B with methylenetriphenylphosphorane, H2C=PPh3. Identify product C, classify the newly formed structural feature, and account for any newly introduced carbon.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use product B rather than product C for TsOH treatment, then identify product D from alkene protonation and skeletal rearrangement.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the structural classification of C and explain the reactive intermediate formed during TsOH treatment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly is the proposed rearrangement pathway established by the supplied information, given that no kinetic, stereochemical, isotope-labelling, or intermediate-trapping evidence is provided?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting full name of D, the structural classification of C, the key carbon mapping, and the appropriate confidence in the proposed mechanism.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

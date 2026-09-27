@@ -1,0 +1,64 @@
+{
+  "release_task_index": 221,
+  "task_id": "gpqa__recIOlKBsOeEcgkA1",
+  "dataset": "gpqa",
+  "ordinal": 89,
+  "variant": "perturbed",
+  "conversation_id": "089::gpqa__recIOlKBsOeEcgkA1::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "faa0bf2f6471b583d35f8100bb354d4a4ef182165dd23acf04444fa49cbb03f5",
+  "semantic_condition_id": "79c1a81b7ffcf17af2c978ab2a6e613010acf4963625f00003b2ddd66fc9b404",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I want to test whether an anti-diabetes drug affects mitochondrial function in HEK293 cells. I am considering Mito-RTP confocal imaging, JC-1 flow cytometry, a luciferase energy reporter, and a glucose-uptake kit applied to a differential-centrifugation mitochondrial fraction. What makes an assay informative for this question?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Before comparing the four experiments, how should I check whether each assay's compartment, analyte, and controls support an inference about mitochondrial function?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The objective is to detect possible nuclear DNA mutations in the HEK293 cells. What does Mito-RTP confocal imaging reveal, and is that mitochondrial readout informative for this objective?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What extracellular glucose concentration does flow cytometry with 2.5 micromolar JC-1 measure, and how would that glucose readout inform mitochondrial function?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What does a recombinant-luciferase reporter measure after 5 micromolar luciferin is added to the supernatant, and how can that readout reflect cellular energy metabolism?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How well does a glucose-uptake colorimetric kit fit a differential-centrifugation mitochondrial fraction? Please consider ATP, respiratory-inhibitor, normalization, and organelle-integrity controls.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Based on those assay properties, which setup appears least informative about the drug's mitochondrial role, and what design limitations make that conclusion provisional?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Cross-check the compartment and substrate requirements of all four assays. Does the same setup still have the weakest direct link to mitochondrial function, and what uncertainty remains?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Identify the least informative experimental setup and explain the assay-compatibility problem that makes it weak evidence for a mitochondrial mechanism.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

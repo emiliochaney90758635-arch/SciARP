@@ -1,0 +1,35 @@
+{
+  "release_task_index": 8,
+  "task_id": "008-capsule003",
+  "source_id": "bixbench-m2-008-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 8,
+  "variant": "perturbed",
+  "conversation_id": "008::008-capsule003::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "f6bc5264fcbcad8edcb401d1201a3e805e3891dd1c9489dadad4be500da9885e",
+  "semantic_condition_id": "a3618e38a2c08ffe5cf1a17189e31cfca0b54bb41cbf8bbcc1ca202b23740b9e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Numerator and denominator\n\nFor final blood relative to baseline blood, the result-row filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Quantity | Value | Statistical unit |\n|---|---:|---|\n| Filtered rows, \\(k\\) | 846 | unique GeneIDs in the fitted contrast |\n| Complete contrast rows, \\(n\\) | 21,251 | unique GeneIDs in the fitted contrast |\n| Observed proportion, \\(\\hat p=k/n\\) | 0.0398098913 | filtered fraction of fitted-result GeneIDs |\n\nThe 25,402 rows in the earlier expression matrix are not the denominator: 4,151 of them do not occur in the fitted contrast result.\n\n## Wilson score definition\n\nFor a 95% Wilson score interval, use:\n\n\\[\nz=1.9599639845,\\qquad \\hat p=\\frac{k}{n},\n\\]\n\n\\[\nC=\\frac{\\hat p+z^2/(2n)}{1+z^2/n},\n\\]\n\n\\[\nH=\\frac{z}{1+z^2/n}\n\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}},\n\\]\n\nand the interval \\([C-H,C+H]\\).\n\n## Interpretation boundary\n\nThis is a descriptive interval over the set of analyzable GeneIDs. Gene-level outcomes are dependent, and the upstream analysis used rounded pseudo-counts derived from normalized values. The interval does not represent biological replicate-to-replicate sampling uncertainty and does not validate formal DESeq2 FDR control.\n\n# Interval estimation for sparse longitudinal blood-expression calls in control mice\n\nRomain Cazal, Keiko Maruyama, Flora Mensah, and Ivan Torres\n\n## Abstract\n\nThe fraction of genes passing multi-criterion expression filters is often reported without uncertainty in exploratory transcriptomic reproductions. We evaluated the final-blood-versus-baseline-blood contrast from a rounded normalized-expression reconstruction, defining retained genes by adjusted significance, absolute fold change, and minimum mean abundance. The filtered fraction was summarized over the complete fitted-result population, and a two-sided 95% Wilson score interval was used because the event proportion was small. The resulting interval extended from approximately 0.0458 to 0.0516, placing the 5% reference fraction within the estimated range. This result suggests that the retained-gene fraction is compatible with a five-percent operational benchmark, while dependence among genes and reconstructed pseudo-counts preclude a biological-sampling interpretation.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the filtered GeneID numerator and fitted-contrast denominator for final blood relative to baseline blood.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those counts to calculate the 95% Wilson score interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the rounded descriptive interval and state its interpretation boundary.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

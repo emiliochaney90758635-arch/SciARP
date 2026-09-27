@@ -1,0 +1,35 @@
+{
+  "release_task_index": 54,
+  "task_id": "054-capsule015",
+  "source_id": "bix-19-q3",
+  "dataset": "bixbench",
+  "ordinal": 54,
+  "variant": "perturbed",
+  "conversation_id": "054::054-capsule015::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "e1e66c105bf8e7e4dc89024522a6ac4af1f7ea98cae363eeb1ac5698e92f6efa",
+  "semantic_condition_id": "63d0f709ae5c21605b67217ffa796abc1db90bf5ef39522f93ebb43ea8aedcb0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original KD-hemisphere NeuN data\n\nThe hemisphere field is spelled `Hemispere` in the original CSV and is renamed `Hemisphere` after import. The selection criterion is `Hemisphere == \"KD\"`, and the analysis variable is `NeuN`.\n\n| Sample | Hemisphere | NeuN | Sex |\n|---:|---|---:|---|\n| 1 | KD | 221 | M |\n| 2 | KD | 233 | F |\n| 3 | KD | 221 | M |\n| 4 | KD | 215 | F |\n| 5 | KD | 216 | M |\n| 6 | KD | 208 | F |\n| 7 | KD | 202 | M |\n| 8 | KD | 200 | F |\n\n## Statistical call and field meanings\n\nApply the following to the eight `NeuN` values above:\n\n```python\nstats.shapiro(kd_data)\n```\n\nThe archived native statistical output is:\n\n```text\nShapiroResult(statistic=0.9563693455884582, pvalue=0.7748936950981364)\n```\n\nThe `statistic` field is the \\(W\\) statistic from the Shapiro–Wilk test, and the `pvalue` field is the corresponding significance probability.\n\n# Normality quality-control calculation sheet\n\n**Source:** Neurohistology Statistics Core, batch `NSC-KD-NORM-08`\n**Scope:** Eight KD-hemisphere NeuN measurements\n**Method:** Counts were winsorised at the pre-registered 10th and 90th percentiles, sorted, and evaluated with the Shapiro–Wilk quadratic form. The sheet retains the squared weighted-order-statistic numerator and the centered sum-of-squares denominator.\n\n| Quantity | Value |\n|---|---:|\n| Number of observations | 8 |\n| \\(\\left(\\sum_i a_i x_{(i)}\\right)^2\\) | 4,653.00 |\n| \\(\\sum_i(x_i-\\bar{x})^2\\) | 5,500.00 |\n\nThe sheet defines \\(W\\) as the numerator divided by the denominator.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the imported hemisphere-field name and identify every record in the KD hemisphere group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Extract the KD records' NeuN values in their original row order to form the test vector.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the Shapiro-Wilk test and report its W statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

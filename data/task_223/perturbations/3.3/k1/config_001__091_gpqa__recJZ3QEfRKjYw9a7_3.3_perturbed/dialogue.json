@@ -1,0 +1,69 @@
+{
+  "release_task_index": 223,
+  "task_id": "gpqa__recJZ3QEfRKjYw9a7",
+  "dataset": "gpqa",
+  "ordinal": 91,
+  "variant": "perturbed",
+  "conversation_id": "091::gpqa__recJZ3QEfRKjYw9a7::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "6fb18114fe95694abf3b95c078181381fc634b4b50019d053dad5833313a8e9b",
+  "semantic_condition_id": "8620d0a546e8761b23d311f4d0948050898ad5ccfdd53f4c7479cfd2fe332cec",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cyclohexanone is treated with bromine under alpha-bromination conditions. Identify product 1 and the position at which bromination occurs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Product 1 is heated with aqueous sodium hydroxide. Identify the rearrangement and product 2, including its ring size and functional group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat product 2 with thionyl chloride and pyridine. Identify product 3 and state the functional-group transformation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the standard lithium aluminum hydride full-reduction rule as the sole procedure for the final step, continuing the acyl chloride through the aldehyde to the primary alcohol.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Reduce product 3 with lithium tri-tert-butoxyaluminum hydride. Identify product 4 and explain why the reduction stops at that functional group.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For product 4, identify the symmetry-related positions of the substituted cyclopentane ring and distinguish the aldehydic proton, the substituted-ring methine proton, and the ring methylene protons.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Account for the equivalence of symmetry-related positions and for any nonequivalent hydrogens within the methylene groups. How many chemically distinct proton environments does product 4 have?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "List the proton environments by type and verify that the list accounts for every hydrogen in product 4 without double-counting symmetry-related sites.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check whether conformational averaging of the ring changes the equivalence classes used in the proton count, and reconcile the result with the molecular symmetry.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the identity of product 4 and the final number of chemically distinct proton environments, with a concise symmetry explanation.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

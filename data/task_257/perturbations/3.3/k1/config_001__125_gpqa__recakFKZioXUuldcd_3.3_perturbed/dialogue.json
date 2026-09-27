@@ -1,0 +1,54 @@
+{
+  "release_task_index": 257,
+  "task_id": "gpqa__recakFKZioXUuldcd",
+  "dataset": "gpqa",
+  "ordinal": 125,
+  "variant": "perturbed",
+  "conversation_id": "125::gpqa__recakFKZioXUuldcd::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "463a367dae794756ec4ce3fd8ab6f6dd82d88978b77173e2cd37bad641f10d6a",
+  "semantic_condition_id": "12ad3775c773ac1f7baa6f9787e4becf7344ea4cd3919e9b480cfed42367065b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A ruthenium methylidene and 1-propene convert an unknown alkene into 1-(prop-1-en-1-yl)-2-vinylcyclopentane. What features of this product point to a ring-opening metathesis precursor?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How are the two alkenyl substituents arranged on the cyclopentane ring, and what does that arrangement imply about the precursor skeleton?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Develop the retrosynthesis by assuming that both alkenyl substituents were already present on an unchanged cyclopentane, and do not allow opening of a strained cyclic alkene.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that analysis to infer the precursor framework and explain how the reaction partner supplies one alkenyl group while the adjacent group remains.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the full systematic name of starting material A?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the assignment by tracing the decisive bond transformation and the subsequent reaction with the reaction partner.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the identified species and summarize its atom-to-product mapping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

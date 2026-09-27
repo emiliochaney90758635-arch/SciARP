@@ -1,0 +1,49 @@
+{
+  "release_task_index": 305,
+  "task_id": "gpqa__recNFJjE5PPTqVJGv",
+  "dataset": "gpqa",
+  "ordinal": 173,
+  "variant": "perturbed",
+  "conversation_id": "173::gpqa__recNFJjE5PPTqVJGv::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "dfb14f71697515b33c3260db4cec3e9d6a71a716c829e6f09fb9df70e1885355",
+  "semantic_condition_id": "8a44a907a46db1434b591def633cfb860948ab3d2d8c87cc39e4764693e58b08",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate the moles of OH- supplied by 300 mL of 0.300 M Ba(OH)2, including the factor of two from complete dissociation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the acid equivalents from 400 mL of 0.200 M HCl and 500 mL of 0.100 M CH3COOH.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply Henderson-Hasselbalch directly to the acetic-acid/acetate pair instead of completing the excess-strong-base neutralization balance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the excess hydroxide concentration to calculate pOH and pH at 25 C.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Independently tabulate base equivalents, acid equivalents, excess, and total volume to check that the solution is basic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final pH with the neutralization balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

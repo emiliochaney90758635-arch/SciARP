@@ -1,0 +1,54 @@
+{
+  "release_task_index": 282,
+  "task_id": "gpqa__recp9KlaeChcn7DzX",
+  "dataset": "gpqa",
+  "ordinal": 150,
+  "variant": "perturbed",
+  "conversation_id": "150::gpqa__recp9KlaeChcn7DzX::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "10c47c71ac12553ff53ea59ed491e1f5413d1df3d1789e9be7dda060048ce8a0",
+  "semantic_condition_id": "82eb3796f673cda567f928edb156c1dae5f4bbc26edeff2ac06bb1e2adb7fed5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has a measured redshift of 2 milliarcseconds and will be compared with the same star placed at 20 pc. Convert this redshift to arcseconds.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the distance relation appropriate to the stated observation to find the star's original distance in parsecs.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State how the received photon flux scales with distance when the star's intrinsic luminosity is unchanged.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the original and new distances to calculate the factor by which the observed flux changes.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the best-supported brightness factor, retaining uncertainty from the unreported measurement error and rounding.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the factor by converting the distance ratio to a magnitude difference and back to a flux ratio.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the brightness-change factor and briefly identify the relation used in the calculation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 483,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2677",
+  "dataset": "olympiadbench",
+  "ordinal": 430,
+  "variant": "perturbed",
+  "conversation_id": "430::olympiadbench__OE_TO_maths_en_COMP_2677::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "47ceaefdcd440c3d519f7e41a4904ba738f58e981584cf0d115e975a6707fa9c",
+  "semantic_condition_id": "8d531a2b881d7e309953d73f7828054be3c63b3d30f35d59578b700ae1052983",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cube has edge length 37, with a square opening of side length 1 centered on each of its six faces and aligned with the cube edges. What was the original surface area, and how much remains on those exterior faces after removing the openings?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Each hole runs through the center to the opposite face, forming three perpendicular square tunnels of side length 1 across the full cube. Calculate their total interior wall area before allowing for their intersections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At the central intersection of the tunnels, treat the overlapping wall portions as exposed on two independent sides. Using that classification, what is the corrected interior area?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain geometrically how your treatment of the intersecting tunnels determines the surface counted in the final answer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the calculation developed above, report the remaining solid's total surface area and explain what boundary it represents.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

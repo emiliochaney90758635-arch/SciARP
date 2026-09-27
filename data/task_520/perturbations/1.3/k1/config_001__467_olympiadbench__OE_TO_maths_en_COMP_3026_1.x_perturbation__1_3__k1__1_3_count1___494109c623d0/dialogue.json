@@ -1,0 +1,54 @@
+{
+  "release_task_index": 520,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3026",
+  "dataset": "olympiadbench",
+  "ordinal": 467,
+  "variant": "perturbed",
+  "conversation_id": "467::olympiadbench__OE_TO_maths_en_COMP_3026::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d21c584745aecaa2f4e66f2320ddfce5131e6d87f2e566f283093cea1d18aa1d",
+  "semantic_condition_id": "5ae5a744fcfd82868150589e285198fdbab9740efaf59b14d4eda9c99643193a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Square KENT has side length 20. Place E at (0,0) and E at (20,0), with the square above the x-axis. Give the coordinates of K and T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Triangle MEN is equilateral on the side EN. Find both possible coordinates of its third vertex, then select the one for which M lies inside the square.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which exact coordinate-distance relation should be used to compute KM from the coordinates of K and M? State the relation before substituting values.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that relation with side length 20 and the interior coordinates of K and M. Compute and simplify KM^2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Match your expression for KM^2 to a - b sqrt(3), where a and b are integers, and identify both coefficients.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check geometrically that the selected equilateral apex is inside KENT and explain why the other possible apex cannot be used in this problem.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the exact distance calculation and the apex check from the previous step, report the requested value of b.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

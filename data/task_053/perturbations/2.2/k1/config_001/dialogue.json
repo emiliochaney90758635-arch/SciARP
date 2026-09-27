@@ -1,0 +1,35 @@
+{
+  "release_task_index": 53,
+  "task_id": "053-capsule014",
+  "source_id": "bix-18-q4",
+  "dataset": "bixbench",
+  "ordinal": 53,
+  "variant": "perturbed",
+  "conversation_id": "053::053-capsule014::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "384903f906f9b906fcef0884d0f750fc67aa0dcf9a50e055e5d43ea5e73cff32",
+  "semantic_condition_id": "4fbefa940b617cc9030fd6ef74394ce26c441464e4a02679b26f767589e66a1f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original rhlR- circularity records\n\nThe records with `Genotype = rhlR-` and `StrainNumber = 61` in the original table are shown below. `Circularity` is the circularity measurement, and the three `Replicate` values are independent replicates; none of these values is missing.\n\n| Genotype | StrainNumber | Replicate | Circularity |\n|---|---:|---:|---:|\n| rhlR- | 61 | 1 | 0.509 |\n| rhlR- | 61 | 2 | 0.601 |\n| rhlR- | 61 | 3 | 0.606 |\n\n## Statistical method\n\nFor \\(n\\) circularity observations, the standard error is calculated as:\n\n\\[\n\\mathrm{SEM}=\\frac{s}{\\sqrt{n}}\n\\]\n\nwhere \\(s\\) is the sample standard deviation, calculated with \\(n-1\\) as the variance denominator; this matches the default behavior of `sd()` in R.\n\n# Low replicate uncertainty in rhlR-deficient swarm circularity\n\nNora F. Castillo, Kenji Matsuda, Elaine M. Brooks, and Dev R. Malhotra\n\n## Abstract\n\nThe response regulator RhlR influences the geometry of *Pseudomonas aeruginosa* swarms, but uncertainty around shape estimates is rarely reported. We obtained three independently segmented rhlR-deficient colonies from matched 48-hour plates and quantified circularity with a fixed ImageJ threshold. Circularity was summarised using the arithmetic mean, sample standard deviation, and standard error across biological replicates. The estimated circularity standard error was **0.012**, indicating close agreement among the replicate masks. Threshold perturbation and leave-one-out analyses produced values below 0.016. These results suggest that the characteristic rhlR-deficient colony geometry is measured with low replicate uncertainty.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the sample standard deviation using n-1 in the variance denominator.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What standard error of the mean follows from that sample standard deviation and sample size?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

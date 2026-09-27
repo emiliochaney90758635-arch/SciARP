@@ -1,0 +1,64 @@
+{
+  "release_task_index": 332,
+  "task_id": "gpqa__recc4ENraOoV1KODF",
+  "dataset": "gpqa",
+  "ordinal": 200,
+  "variant": "perturbed",
+  "conversation_id": "200::gpqa__recc4ENraOoV1KODF::1.x::perturbation__1_1__k3__1_1_count3_cfg0016::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1e4232e401b3bff9b0e15daa81b4ef87c7e8dc517c31334b17ac81d23a12ce31",
+  "semantic_condition_id": "7f1a4054d6d8268b9b90938e86c2835331993958c9db9982eeb36d535e192c9b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A full vial contains 250 microcuries of L-[methyl-3H]methionine. What final volume gives 375 microcuries per millilitre? Report the unrounded value and two-decimal value, treating label values as nominal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the target molar extinction coefficient of 300 mCi/mmol to microcuries per micromole and determine the total methionine amount.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The commercial material has specific activity 70.7 Ci/mmol. Calculate the amount of labelled methionine in the vial, showing the unit conversion.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the previously calculated final volume and total amount, check the implied molar concentration against the intended stock value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Determine how much non-radiolabelled sodium chloride must be added to reach the target specific activity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the calculated total protein mass and cold-amino-acid addition, state the final volume and cold-methionine quantity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the added quantity with the certainty status supported by the label and transfer assumptions used so far.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Which label values and transfer assumptions justify that certainty statement?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the recommended final volume and added methionine amount, together with the certainty statement justified by the label and transfer assumptions.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

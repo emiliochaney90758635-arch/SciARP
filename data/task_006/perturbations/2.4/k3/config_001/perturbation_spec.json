@@ -1,0 +1,28 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "Existing first audit changes reconciled-locus overlaps.",
+    "Existing second audit uses version-sensitive GeneIDs.",
+    "Third exact-GeneID checksum supplies an independent overlap ledger."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first conflict source"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second conflict source"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third conflict source"
+    }
+  ],
+  "evidence_change_permitted": true
+}

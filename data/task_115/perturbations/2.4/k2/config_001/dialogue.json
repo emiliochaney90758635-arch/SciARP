@@ -1,0 +1,35 @@
+{
+  "release_task_index": 115,
+  "task_id": "115-capsule033",
+  "source_id": "bix-49-q2",
+  "dataset": "bixbench",
+  "ordinal": 115,
+  "variant": "perturbed",
+  "conversation_id": "115::115-capsule033::2.5::k2::perturbed",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "ac71b210853378e669ee96304158bed72c876179ad9991a8dfde53ba8f058711",
+  "semantic_condition_id": "56ac25512e125f546b25310b1abdb1c9b312b9554c74ed27401bda9bd0342426",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# GRIK5 adjusted-p evidence\n\n## Gene identity\n\n| annotation source | gene_id | gene_name | hgnc_id |\n|---|---|---|---|\n| Gencode v31 gene annotation | ENSG00000105737.9 | GRIK5 | HGNC:4583 |\n| HGNC annotation | ENSG00000105737 | GRIK5 | HGNC:4583 |\n\nThe versioned Ensembl identifier in the count matrix is `ENSG00000105737.9`.\n\n## Statistical context\n\nThe executed analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\n`ASXL1` is encoded as `disease` and `Control` as `control`. The selected result table uses the strict adjusted-p criterion `padj < 0.05`.\n\n## Archived GRIK5 result row\n\n| gene_name | log2FoldChange | padj |\n|---|---:|---:|\n| GRIK5 | 3.825466 | 7.039991e-26 |\n\nThe adjusted p-value field is `padj`; it is distinct from both `log2FoldChange` and the unreported raw `pvalue`. Reporting three significant figures preserves three digits beginning at the first nonzero digit.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent GRIK5 multiplicity calculation\n\n## Source and procedure\n\nThe Statistical Genetics Verification Desk obtained a raw two-sided\nprobability of `0.000200` for GRIK5. In its ordered 60,662-gene testing family,\nGRIK5 had rank `500`. The Benjamini-Hochberg candidate is\n`raw p * number tested / rank`. All higher ranks had candidate values above\nthe GRIK5 candidate, so the reverse cumulative minimum does not reduce it.\nCap the result at one and report three significant figures.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the ASXL1-mutated-versus-control coefficient direction and identify the adjusted-p field used for the decision.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent permutation-FDR report for GRIK5\n\n## Source, scope, and procedure\n\nThe Transcriptome Resampling Unit tested GRIK5 in 10,000 label permutations of\nthe same disease-versus-control endpoint. It used a plus-one permutation\nestimator and its prespecified gene-set correction.\n\n## Structured observations\n\n| Quantity | Observed value |\n|---|---:|\n| Label permutations | 10,000 |\n| Null statistics at least as extreme as GRIK5 | 619 |\n| Receptors in the corrected gene set | 1 |\n\n## Derived conflicting result\n\nThe plus-one estimate is `p=(619+1)/(10000+1)=0.0619938`. Because GRIK5 was\nthe sole tested receptor, the correction leaves it unchanged and the external\nworkflow reports 0.0620, conflicting with the archived adjusted-p field.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDoes GRIK5 pass the strict 5% FDR threshold under that fitted group contrast?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the GRIK5 adjusted p-value to three significant figures.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

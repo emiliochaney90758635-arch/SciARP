@@ -1,0 +1,35 @@
+{
+  "release_task_index": 6,
+  "task_id": "006-capsule003",
+  "source_id": "bix-3-q3",
+  "dataset": "bixbench",
+  "ordinal": 6,
+  "variant": "perturbed",
+  "conversation_id": "006::006-capsule003::2.4.k3::manual_evidence_plan",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "03d54304a1226789b27d89751dea551100616a1c852c91a64d1d46906d320f02",
+  "semantic_condition_id": "adfd221dca77b5955a97165d24248b84d8e3697eebe99b8024efed52a38cef0d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nAll three Control-tissue comparisons use the same joint filter:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained `GeneID` values are deduplicated within each comparison and treated as sets.\n\n| Comparison | Unique GeneIDs after filtering |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\nDefine:\n\n```text\nF = final blood relative to baseline blood\nB = dentate gyrus relative to baseline blood\nD = dentate gyrus relative to final blood\n```\n\n“Only in dentate gyrus relative to baseline blood” has the set meaning:\n\n\\[\nB \\setminus (D \\cup F).\n\\]\n\n## Three-set overlap transcription\n\nThe archived overlap output reports:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| B only, \\(B \\setminus (D \\cup F)\\) | 766 |\n| D only, \\(D \\setminus (B \\cup F)\\) | 773 |\n| F only, \\(F \\setminus (B \\cup D)\\) | 37 |\n| in both B and D but not F | 10,316 |\n| in all three sets | 429 |\n\nTwo-set and three-set overlap regions are excluded from an “only in B” count.\n\n## Interpretation boundary\n\nThe upstream analysis formed rounded integer pseudo-counts from normalized floating-point values. The overlap counts reproduce that archived exploratory workflow descriptively and are not formal DESeq2 inference from raw counts.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Cross-contrast identifier-membership audit\n\n**Source:** Mouse Expression Archive Curation Office\n**Object:** Filtered control-tissue comparison tables\n**Method:** Gene identifiers were reconciled to current stable loci, deduplicated within comparison, and joined across the three contrasts by reconciled locus key.\n\n## Membership quantities for the dentate-gyrus vs baseline-blood set\n\n| Quantity | Reconciled GeneIDs |\n|---|---:|\n| Total in dentate gyrus vs baseline blood | 11,663 |\n| Also in dentate gyrus vs final blood | 10,745 |\n| Also in final blood vs baseline blood | 521 |\n| In both of those overlap groups | 314 |\n\nThe count unique to the target comparison is obtained by removing the union of its two overlap groups from its total.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct the three Control-tissue GeneID sets using their common significance rule.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Transcript-version-sensitive membership report\n\n**Source:** Comparative Expression Set Operations Laboratory, run `CESOL-22`\n**Object:** The three commonly filtered Control-tissue contrast tables\n**Method:** GeneID version suffixes were preserved, rows were deduplicated within each contrast, and exact versioned identifiers were joined across comparisons.\n\n## Target-set overlap ledger\n\n| Quantity | Versioned GeneIDs |\n|---|---:|\n| Total in dentate gyrus vs baseline blood | 11,663 |\n| Also in dentate gyrus vs final blood | 10,812 |\n| Also in final blood vs baseline blood | 498 |\n| In both overlap groups | 337 |\n\nThe exclusive target count is the total minus the size of the union of the two overlap groups.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExpress the dentate-gyrus-versus-baseline-blood-only region as a three-set operation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for later requests in this conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Exact-GeneID membership checksum\n\n**Source:** Control Tissue Set Operations Unit, checksum `CTSO-B17`\n\nAfter the common joint filter, exact GeneIDs were deduplicated within each comparison and joined by three membership flags. For B, the checksum records 11,663 total members, 10,520 also in D, 530 also in F, and 350 in both overlap groups. The B-only count is the total minus the union of the two overlap groups.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReport the GeneID count in the mutually exclusive dentate-gyrus-versus-baseline-blood-only region.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

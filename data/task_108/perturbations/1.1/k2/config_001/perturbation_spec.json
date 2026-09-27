@@ -1,0 +1,44 @@
+{
+  "task_index": 108,
+  "task_id": "108-capsule031",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1b091f9d5a2fe5ca6424806631529609d0101531f1ab8033f8f4293da6a55ba3",
+  "source_base_evidence_sha256": "866e921506b455998582dd18fb5e426d359611719e1a74edbf137a6b5733a47f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Missing-name semantics distorted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Log2 term independently distorted into linear fold ratio.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat a missing `Gene Name` as meaning the entire locus record is absent, then identify PA14_35160.",
+    "T3": "Use `log2 fold change` to mean ordinary linear fold ratio and report the value to two decimals."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Keep PA14_35160, but treat the missing Gene Name as making the locus wholly unannotated and ignore its Product Name."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Exponentiate the stored log2 value to obtain the ordinary linear fold ratio, then report that ratio to two decimals as the log2 fold change."
+    }
+  ]
+}

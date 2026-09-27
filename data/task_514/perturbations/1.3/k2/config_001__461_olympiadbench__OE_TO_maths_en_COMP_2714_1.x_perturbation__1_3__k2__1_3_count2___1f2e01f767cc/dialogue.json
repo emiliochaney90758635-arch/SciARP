@@ -1,0 +1,54 @@
+{
+  "release_task_index": 514,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2714",
+  "dataset": "olympiadbench",
+  "ordinal": 461,
+  "variant": "perturbed",
+  "conversation_id": "461::olympiadbench__OE_TO_maths_en_COMP_2714::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "fd07c2edbc1fddd1a11fed37cf2bbf9a5a042a0e3d3cd7cbfdc4a15c1b2e198a",
+  "semantic_condition_id": "a4004e4489a2829e399c445c1480dd8b4723117b6e65c3b3809537ccff502537",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compute sqrt(576) and denote the resulting length by t for use in the geometric configuration.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Move P and Q from AB to AC while retaining the remaining square and intersection definitions, then classify the four triangles.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the geometric relations established in the preceding step to verify that the four small triangles have the required right angles.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the inradius relation justified by the triangle classification established above to the four small triangles, then combine the four expressions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use an earlier angle result rather than the square side length when simplifying the total leg length.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the point placement and segment identities in the configuration to simplify the sum of the four hypotenuse lengths.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the leg-sum scalar, the given inradius 10, and the right-triangle classification of ABC, evaluate the sum of the four small-triangle inradii.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

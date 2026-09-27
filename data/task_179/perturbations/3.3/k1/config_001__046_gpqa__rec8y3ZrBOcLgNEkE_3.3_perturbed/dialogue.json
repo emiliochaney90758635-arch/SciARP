@@ -1,0 +1,54 @@
+{
+  "release_task_index": 179,
+  "task_id": "gpqa__rec8y3ZrBOcLgNEkE",
+  "dataset": "gpqa",
+  "ordinal": 46,
+  "variant": "perturbed",
+  "conversation_id": "046::gpqa__rec8y3ZrBOcLgNEkE::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "e08361d56d689c417d6b05c6cd11cfd894089152f748177d36edba268a941372",
+  "semantic_condition_id": "cea970f2e2f3a943b92a2737dfa0fc471ec8e755f5d429448e121050c5701631",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a many-body nuclear calculation, what physical picture is assumed in the impulse approximation for an external probe interacting with a nucleus?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does the impulse picture require the interaction current to couple to individual nucleons? Explain the role of a one-body current.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assess two further statements: the rest of the nucleus is transparent to the struck nucleon, and binding forces on that nucleon are neglected during the interaction. Explain whether each belongs to the approximation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use a non-relativistic constituent-quark model as the sole membership test for the impulse approximation. Count non-relativistic internal quarks as required, and discard the nuclear binding-force statement as outside that model's scope.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine these judgments and identify the complete set of assumptions needed for the nuclear impulse approximation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain more explicitly why the quark-dynamics statement is neither implied by nor required for one-body scattering from an effectively free bound nucleon.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final assumption set by number and summarize the physical role of every included statement.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 190,
+  "task_id": "gpqa__recBtVK8rBVtIlXDq",
+  "dataset": "gpqa",
+  "ordinal": 57,
+  "variant": "perturbed",
+  "conversation_id": "057::gpqa__recBtVK8rBVtIlXDq::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8f525a0beeeeab480818ae6a960ee74ab793051ca405f73927de952a0df60fae",
+  "semantic_condition_id": "57e57d49dc7651b03c7dcb5b7f735935cc4dea9ade1c9e22703a892bce41d6cb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A ribonucleoprotein recognizes a nascent chain, pauses translation, and is associated with the chain later receiving carbohydrate. Which particle is this?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Where does this particle first encounter the growing polypeptide?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What cellular processing step is suggested by the clue that the cargo receives carbohydrate?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain how the regulated translational pause used for targeting differs from an unresolved pathological ribosome stall.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Given the processing compartment and route established above, infer the broad cargo fate best supported by the clues without assuming terminal sorting information that was not supplied.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the proteasome as the imposed destination of the glycosylated cargo, state the resulting route.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Connect nascent-chain recognition and translational pausing to compartment entry, subsequent processing, and the best-supported endpoint.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How certain is that endpoint when no retention, membrane-topology, terminal-sorting, or other cargo-specific information is supplied?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What additional cargo-specific evidence, if any, would be needed to establish the terminal destination?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the cellular route and state how confidently the evidence identifies the cargo's final destination.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

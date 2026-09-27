@@ -1,0 +1,16 @@
+{
+  "task_id": "002-capsule002",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes the low-VAF aggregate from 47 to 49 and the parent total from 983 to 985."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "low-bin aggregate"
+    }
+  ],
+  "evidence_change_permitted": true
+}

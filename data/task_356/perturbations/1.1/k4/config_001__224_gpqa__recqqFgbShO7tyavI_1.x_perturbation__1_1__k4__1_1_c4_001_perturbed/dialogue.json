@@ -1,0 +1,54 @@
+{
+  "release_task_index": 356,
+  "task_id": "gpqa__recqqFgbShO7tyavI",
+  "dataset": "gpqa",
+  "ordinal": 224,
+  "variant": "perturbed",
+  "conversation_id": "224::gpqa__recqqFgbShO7tyavI::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "6640018b522da5898fbfcfb2fa00ebcd58d62c6b07633ad5bea8ddf77ed3e1f8",
+  "semantic_condition_id": "cccb3365c682c964c1a8a447b74ab0460083e14150ab273e803de52a1bc7f12f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat allyl acetoacetate as a radical initiator when it is heated. Which radical pathway and subsequent step would then account for formation of an unsaturated ketone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Trace the carbon skeleton through an electrocyclic reaction and carbon loss, then draw and name the major product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that product, identify the saturated-carbon environments in its 13C NMR spectrum while retaining the earlier proton-equivalence discussion.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now count alkene carbon environments, while also testing whether the two hydrogens of the terminal vinyl CH2 are chemically equivalent.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the environments identified so far to obtain the total number of distinct signals for the current measurement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by listing each chemically distinct environment individually rather than relying only on a site count.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the signal count for the major product and the relevant equivalence conclusion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "task_index": 109,
+  "task_id": "109-capsule032",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9cebf12fea677f3ca51ccd77415fd8ce5ffd160b490956a112e51435f54d874d",
+  "source_base_evidence_sha256": "4e9d402ed00da9779975557e6066048d0d82d26f83c6e66ae9ad0c0b7e974128",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Missing workbook handled with wrong imputation method.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong VAF-filter method.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Include P533 by imputing its missing workbook at one call above the observed cohort maximum (166 non-Reference calls), then carry that imputed cohort forward.",
+    "T2": "Apply VAF<0.3 filtering before selecting the maximum non-Reference count."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "3.3.k2",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Include metadata-only P533 by imputing 166 non-reference calls and an age of 53.3 years."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Apply the VAF<0.3 filter only to patients with actual workbooks, leave P533's imputed 166 calls unchanged, and select the resulting maximum."
+    }
+  ]
+}

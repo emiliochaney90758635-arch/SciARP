@@ -1,0 +1,49 @@
+{
+  "release_task_index": 562,
+  "task_id": "scibench__atkins-sol-004",
+  "dataset": "scibench",
+  "ordinal": 343,
+  "variant": "perturbed",
+  "conversation_id": "343::scibench__atkins-sol-004::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "aa73cf6120394181141c0fb735a6e4242da519fde4860cd6406f8d45e4f7c394",
+  "semantic_condition_id": "5fbe9565a71a13675efa1573af5503f14678934668cb3c83e6b10a2c5d67b9c4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For nitrogen molecules in Maxwell-Boltzmann equilibrium at 25 degrees Celsius, the target is the arithmetic mean molecular speed <v>. Explain how this first moment differs from the root-mean-square speed before choosing a formula.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the stated temperature and the nitrogen molar mass M=28.02 g mol^-1 into SI-compatible quantities for the speed calculation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use translational equipartition as the sole method and set the requested speed equal to sqrt(3RT/M), then substitute the converted quantities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the quantity 8RT/(pi M), including its units, before taking the square root.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "As an independent check, evaluate the first moment of the Maxwell-Boltzmann speed distribution and confirm why the factor is 8/pi rather than the factor used for the second moment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Take the square root of the evaluated quantity and report the mean speed of N2 molecules in m s^-1 to appropriate precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "The numerator contradicts the biological classification established by the task while remaining executable.",
+  "injection_turns": [
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "7510cd4da7ede538cfb52830359ef5b7bc36a3205032ece163423f212534ffac",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the erroneous expansion consequential by adding the previously absent JBX98-only row.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 611,
+  "task_id": "scibench__stat-sol-004",
+  "dataset": "scibench",
+  "ordinal": 392,
+  "variant": "perturbed",
+  "conversation_id": "392::scibench__stat-sol-004::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "84bdb1017e8ea9fb22c9df130f975b8cece5c2960c692211d4d9c0afc3b3a6de",
+  "semantic_condition_id": "f94323dd40c6b59e0b4d5444c533c7921c6a880a04c8bbebfe5a700e4c27f5ba",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A standard 52-card deck is used to draw five cards in sequence without replacement, and two sequences with the same cards in different orders count as different outcomes. Write the counting product for this ordered sample space.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Evaluate the first addition in that counting expression, corresponding to the first two draws.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Starting from that subtotal, incorporate the next two factors in the ordered-draw product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Include the final factor and compute the exact number of ordered five-card samples from the original 52-card deck.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the interpretation by relating the ordered count to the number of unordered five-card hands and the number of orderings of each hand. Explain why the unordered-hand total alone would answer a different question.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact count and briefly state what distinguishes two outcomes in this sample space.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

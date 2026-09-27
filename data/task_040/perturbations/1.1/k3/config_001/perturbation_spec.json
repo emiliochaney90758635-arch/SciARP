@@ -1,0 +1,32 @@
+{
+  "subclass": "1.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "strict becomes inclusive",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "union becomes exclusive-or",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "set subtraction is redefined to remove only S99-exclusive elements",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    }
+  ]
+}

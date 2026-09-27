@@ -1,0 +1,54 @@
+{
+  "release_task_index": 359,
+  "task_id": "gpqa__recsFK6wqE0dBoy4N",
+  "dataset": "gpqa",
+  "ordinal": 227,
+  "variant": "perturbed",
+  "conversation_id": "227::gpqa__recsFK6wqE0dBoy4N::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "198a9af1b44a25de64ba9972cfc4c8324d0627daaebfcd99d1f88a6cdb347480",
+  "semantic_condition_id": "b55ab5048a7d61057a6762b43ac62199711a4baf33ac41c2e63c3b654308b483",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A sperm from species A is injected directly into an egg from species B. A zygote forms but later dies; the species have the same chromosome count. Which prezygotic barrier did injection bypass, and is the mortality prezygotic or postzygotic?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does the chromosome-count evidence supplied above support a gross chromosome-number mismatch as the main cause of death?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If a chromosomal incompatibility affects photosynthesis, what outcome would it explain more directly than death of the formed zygote?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the developmental timing to identify the most plausible general class of incompatibility causing the hybrid zygote's death.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Distinguish that best-supported general mechanism from any particular cross-specific molecular mechanism not demonstrated by the evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using only the supplied evidence and biological mechanism, assess whether the proposed cause fits the developmental stage and observed outcome.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported mechanism, whether the barrier is prezygotic or postzygotic, and the confidence warranted by the evidence.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

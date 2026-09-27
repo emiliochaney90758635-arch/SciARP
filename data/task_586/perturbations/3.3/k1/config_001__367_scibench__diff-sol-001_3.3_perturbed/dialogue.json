@@ -1,0 +1,54 @@
+{
+  "release_task_index": 586,
+  "task_id": "scibench__diff-sol-001",
+  "dataset": "scibench",
+  "ordinal": 367,
+  "variant": "perturbed",
+  "conversation_id": "367::scibench__diff-sol-001::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "442a8a702b3836a8740db095b2adf0f32c015a8d0e6b25506af7afa906774477",
+  "semantic_condition_id": "bfcfa1113f2d47ce0519a5f7bf2115c507181d95c2cd922ed6066fbb83d0476b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10 lb weight stretches a spring by 2 in. Determine the spring constant in consistent force-length units, assuming an undamped inertial spring-mass system.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the spring-mass system as the first-order relaxation law du/dt=-(k/m)u, ignoring the initial velocity as an independent condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve that differential equation for the general function u(t).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The system starts with u(0)=2 in in the positive-downward direction and u'(0)=-1 ft/s. Use both initial conditions to determine the constants in the solution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the resulting coefficients to compute the model's characteristic extremal magnitude in feet and, if useful, inches. Compare it with the magnitude of the initial value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign of the initial derivative, the units of the coefficients, and whether the reported extremal magnitude is consistent with the supplied initial data.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting function u(t) and its characteristic magnitude with suitable numerical precision.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

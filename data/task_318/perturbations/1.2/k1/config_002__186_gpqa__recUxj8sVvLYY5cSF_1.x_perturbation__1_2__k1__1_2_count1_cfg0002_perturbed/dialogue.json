@@ -1,0 +1,54 @@
+{
+  "release_task_index": 318,
+  "task_id": "gpqa__recUxj8sVvLYY5cSF",
+  "dataset": "gpqa",
+  "ordinal": 186,
+  "variant": "perturbed",
+  "conversation_id": "186::gpqa__recUxj8sVvLYY5cSF::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "e4df9ab69e60146c754edd6285d54e95c04b4969169b1ebe4e989d1018a7456e",
+  "semantic_condition_id": "c2f300dc6695f95bd8ff9bc373f6fa4a4eaa303f1264fb03a64a5c8ff08cc6f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the critical distance for a significant stellar flyby by balancing gravitational potential energy against nonrelativistic kinetic energy. How does that distance scale with stellar mass m and encounter speed v?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Group 1 and Group 2 must have the same critical distance of 1.5 AU. Write the equality relating m_1, v_1, m_2, and v_2 under that scaling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the same-critical-distance relation for the unknown Group 2 speed v_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use m_1=0.5 km/s, v_1=22 km/s, and m_2=0.3 solar masses to compute v_2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the numerical speed with sensible precision and state whether the lower mass requires a lower or higher speed at fixed critical distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into m/v^2 to check that the two groups give the same scale, and note the limitations of the energy-balance estimate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the recommended Group 2 speed and the scaling relation that supports it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 471,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2239",
+  "dataset": "olympiadbench",
+  "ordinal": 418,
+  "variant": "perturbed",
+  "conversation_id": "418::olympiadbench__OE_TO_maths_en_COMP_2239::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d09d18048edecba0130253499989684c05152e625c08795d19595d1460f6fa0b",
+  "semantic_condition_id": "3d2f000aa2f7db7c7a2d85be501c8245a92facf768f5d461643690474451a1b4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let P be the parents' present combined age, C the children's present combined age, and n the number of children. Translate the statement that P is six times C.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How much do the parents' combined age and the children's combined age each change per calendar year? Express the rates in terms of the two parents and n children.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how those group-level rates will be used consistently for both the past and future conditions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the equation for two years ago, when the parents' combined age was ten times the children's combined age.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the equation for six years from now, when the parents' combined age will be three times the children's combined age.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute P=7C into the past and future equations and simplify both to relations between C and n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Solve the resulting pair of relations for the number of children.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

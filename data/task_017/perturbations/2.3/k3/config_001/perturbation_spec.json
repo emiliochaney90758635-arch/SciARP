@@ -1,0 +1,28 @@
+{
+  "task_id": "017-capsule006",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Changes 11,896 explicit non-reference rows to the plausible transcription 12,896.",
+    "Changes 1,151 missing-Zygosity rows to 1,051.",
+    "Changes 4,593 homozygous-variant rows to 5,593."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "explicit non-reference total"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "missing-Zygosity count"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "homozygous-variant count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 596,
+  "task_id": "scibench__matter-sol-002",
+  "dataset": "scibench",
+  "ordinal": 377,
+  "variant": "perturbed",
+  "conversation_id": "377::scibench__matter-sol-002::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "3670417bb36d8a82543484239b62069cdb1e690a66d74d539191f5fe7fbd341b",
+  "semantic_condition_id": "c586ce3989aa4815c7d62425bc02fd688ce2c3722cefcef916ceed89803aebda",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a neutral helium atom described by the one-electron state R_{3,2}Y_{2,-1}, identify the quantum numbers and energy dependence.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the hydrogenic energy formula in the infinite-nuclear-mass approximation and state the neglected recoil correction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the ion's charge and spin quantum number into the Coulomb formula instead of the principal quantum number.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the electron energy in electronvolts and state whether it depends on l or m in this model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the value as a model estimate for a realized ion, with nonzero unquantified recoil, fine-structure, and environmental uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and Z^2/n^2 scaling without introducing an external field or changing the model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the energy and its approximation status.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

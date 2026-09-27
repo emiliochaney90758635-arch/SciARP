@@ -1,0 +1,69 @@
+{
+  "release_task_index": 416,
+  "task_id": "gpqa__reclx98uq6gUM42UR",
+  "dataset": "gpqa",
+  "ordinal": 285,
+  "variant": "perturbed",
+  "conversation_id": "285::gpqa__reclx98uq6gUM42UR::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ab7e5b726926b5d709e229d7f4fee6d3f13c57dcab4c35b7b46d82d871c104c4",
+  "semantic_condition_id": "7dbacbbecf5a24b516e96a92922c6f99bba7820946218ce909bad7e5568c695f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A one-dimensional finite well has U(x)=0 for 0<x<a and U(x)=V outside the well. A bound particle has E<V. Are the exterior regions x<0 and x>a classically allowed or forbidden?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "If the exterior regions are classically forbidden for the stated state, write their general stationary Schrodinger solutions and define the corresponding decay parameter in terms of m, V, E, and hbar.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that forbidden-region case, apply normalizability to select the physical exterior wavefunction in each region, leaving arbitrary amplitude constants.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For each conditionally selected wavefunction, separate any constant complex phase from its x-dependent factor. Does the spatial dependence carry a varying phase?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the same forbidden-region condition, what is the spatial phase gradient in each exterior region?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compute current using J=(hbar*kappa/m)|Psi|^2 for each real exterior exponential, treating the decay constant kappa as though it were a plane-wave phase wavenumber.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the case in which those exterior solutions apply, evaluate J=(hbar/(2mi))(Psi* grad Psi-Psi grad Psi*) in both regions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "For any bound-state case in which those exterior solutions apply, interpret the resulting currents physically.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Within that case, can a constant complex phase in an exterior amplitude create a nonzero spatial flux? Explain.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Conditioned on the exterior regions being forbidden, report their probability currents and the decisive wavefunction argument.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

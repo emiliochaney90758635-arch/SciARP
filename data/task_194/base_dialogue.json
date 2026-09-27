@@ -1,0 +1,59 @@
+{
+  "release_task_index": 194,
+  "task_id": "gpqa__recCeQdxhSfJJFGeE",
+  "dataset": "gpqa",
+  "ordinal": 61,
+  "variant": "clean",
+  "conversation_id": "061::gpqa__recCeQdxhSfJJFGeE::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "5ac8438104c2b300860c72110ffa05f5f8cc40849821973c5251252a92a19850",
+  "semantic_condition_id": "53c7ed93613994c114d5aff0660353339a393f5e40c5023b27c3ad17eba0a0cc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Methyl 2-oxocyclohexane-1-carboxylate is heated with aqueous NaOH, then acidified with aqueous HCl and heated further. What forms from the ester during the initial base step?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After acidification, what organic acid is obtained from the intermediate established above?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify that acid from the relative positions of the functional groups identified so far, and assess its behaviour on heating.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the structural rule implied by that classification for predicting the main product and oxygen count under the remaining conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What main organic product follows when the stated thermal sequence continues?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count the oxygen atoms in that product and reconcile the count with any oxygen-containing group retained or lost along the adopted pathway.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the carbon and oxygen balance across the sequence of transformations established above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final product description and formula consistent with the preceding balance, together with the adopted oxygen count.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

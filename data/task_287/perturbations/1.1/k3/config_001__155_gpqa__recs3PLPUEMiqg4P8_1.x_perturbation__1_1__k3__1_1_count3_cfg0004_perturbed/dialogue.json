@@ -1,0 +1,54 @@
+{
+  "release_task_index": 287,
+  "task_id": "gpqa__recs3PLPUEMiqg4P8",
+  "dataset": "gpqa",
+  "ordinal": 155,
+  "variant": "perturbed",
+  "conversation_id": "155::gpqa__recs3PLPUEMiqg4P8::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "ba14680a18d8a0d30f69cfd861cc5f9bce278a17676fa8474ef44a3dc0ec1fa4",
+  "semantic_condition_id": "7dacab7321083e34a48da5bb541d5240b2e0cd646afcb99b0deaa5128d8f1e4a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cyclic pinacol precursor A gives 2,2-di-p-tolylcyclohexan-1-one under H2SO4. Explain how migration of a ring C-C bond changes ring size in a pinacol rearrangement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Infer the ring size of A, then identify the two nonadjacent alcohol-bearing carbons of the acyclic substrate.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Decide which OH group is preferentially deprotonated and lost as water under the acidic conditions, and identify the carbocation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine a remote 1,5-hydride shift from C3 to C2, identify the carbonyl carbon, and name B.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name A and B and relate each structure to its decisive migration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that A undergoes one-carbon ring expansion and that the selected migration in the second reaction gives the proposed beta-keto-ester connectivity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report A, B, and the two migration steps.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

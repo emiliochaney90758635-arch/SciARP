@@ -1,0 +1,23 @@
+{
+  "task_id": "003-capsule002",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes read depth from a read count to a percentage."
+  ],
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3caa296e6ed02f8b185c21e570e8bd0d078f427a0ef330379226f61fdbeddfc2",
+  "configured_evidence_sha256": "3caa296e6ed02f8b185c21e570e8bd0d078f427a0ef330379226f61fdbeddfc2",
+  "evidence_unchanged": true
+}

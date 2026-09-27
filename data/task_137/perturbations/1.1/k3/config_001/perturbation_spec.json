@@ -1,0 +1,55 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "Residual-SE term redefined.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "R2 term independently redefined.",
+      "consumers": [
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Peak-mean term independently redefined.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Use residual standard error to mean residual variance.",
+    "T5": "Use R-squared to mean adjusted R-squared.",
+    "T6": "Use maximum fitted mean to mean the upper confidence limit."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "For the natural spline, call the inverse of residual variance the residual standard error."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Prefer smaller inverse residual variance and larger SSE/SST, labeling the latter R-squared."
+    },
+    {
+      "turn_id": "T6",
+      "content": "For the selected model, maximize the upper confidence limit rather than the fitted mean and report that maximum."
+    }
+  ]
+}

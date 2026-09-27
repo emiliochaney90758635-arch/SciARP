@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "perturbed",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c9b5eede388bef4217f7ace8df6a6ae9c8ceeed552f698913b25f57de590bfa0",
+  "semantic_condition_id": "6aa2d11505cf3cae0a61eefa10bf50b939e708a3ce93733c9eb1335b889e726a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many ideal peaks would that Reaction I mixture give by itself on normal-phase and chiral HPLC, and why?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze Reaction II after treatment of pentane-2,4-dione with excess sodium chloride followed by acidic workup.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine the Reaction II peak count on normal-phase HPLC and on HPLC packed with an ultraviolet detector.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

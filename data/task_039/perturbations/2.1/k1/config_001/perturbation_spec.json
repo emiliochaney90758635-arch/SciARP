@@ -1,0 +1,24 @@
+{
+  "config_id": "task039_2.1_k1",
+  "subclass": "2.1",
+  "k": 1,
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "restores the three samples excluded by the clean analysis",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

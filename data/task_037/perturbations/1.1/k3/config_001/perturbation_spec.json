@@ -1,0 +1,29 @@
+{
+  "subclass": "1.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "redefines reference strain as contrast numerator",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "redefines significant as nominal raw-p significance",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "redefines only as inclusive membership",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

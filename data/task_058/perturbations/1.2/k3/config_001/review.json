@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Power, alpha, and n can be mixed between percent and fraction scales.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "e87ce36aeb1a52cfe8c507cf2c18ca957241d42ff79de3d93117beaa121c2c41",
+  "strict_non2x_original_semantic_condition_id": "e0748718259c7d32095cce261c1232f2f9d1ff1843a05fef8e6ad2042de67b11",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use target power 0.008 and alpha 0.50, then report the resulting n with a percent sign rather than as a count.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

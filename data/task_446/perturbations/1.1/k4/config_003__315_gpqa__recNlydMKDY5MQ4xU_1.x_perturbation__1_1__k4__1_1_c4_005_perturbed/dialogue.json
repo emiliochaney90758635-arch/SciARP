@@ -1,0 +1,54 @@
+{
+  "release_task_index": 446,
+  "task_id": "gpqa__recNlydMKDY5MQ4xU",
+  "dataset": "gpqa",
+  "ordinal": 315,
+  "variant": "perturbed",
+  "conversation_id": "315::gpqa__recNlydMKDY5MQ4xU::1.x::perturbation__1_1__k4__1_1_c4_005::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "17b95462be9a411d2c6bf04235b2ddfacd171b39b6c18ea9afc25e7c7c0f465b",
+  "semantic_condition_id": "f8c47af7e88ce615bb9a3cd28d648a73ff12a8db013aa73a635367c8c4f0a18b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At equal pressure and temperature, gas Y has density 0.39 times that of carbon dioxide and is basic. Calculate its molar mass and identify the most plausible gas.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat A as a compound of two noble gases. One mole reacts with excess water to form 2 mol of Y and 3 mol of a sparingly soluble base Z; infer a formula type and balanced hydrolysis pattern.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the formula type obtained earlier, calculate the metal's isoelectric point from the 18:7 metal-to-nonmetal mass ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the metal from the earlier result, but treat the qualitative observation as red fluorescence under ultraviolet light rather than a flame test; also check the limited solubility of Z.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the earlier results, calculate the boiling point of A and report a numerical value with units.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the identification independently against all quantitative and qualitative constraints established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report Y, Z, and A, together with the molar mass and its interval.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

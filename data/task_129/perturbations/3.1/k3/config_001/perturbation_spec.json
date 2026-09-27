@@ -1,0 +1,56 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Selected-row state contradicted.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ranking state independently contradicted.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Match-count and denominator state independently contradicted.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "State that 1,492 rows pass the filters.",
+    "T4": "State that the list is sorted by descending Adjusted P-value.",
+    "T5": "State that three of eighteen retained names contain `Oxidative`, despite the established twenty-row list with two matches."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "State that 1,492 rows pass the three selection criteria and are mapped to mouse gene names."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Sort the archived pathway list by adjusted p-value in descending order and retain the first 20 pathways."
+    },
+    {
+      "turn_id": "T5",
+      "content": "State that three of those twenty pathway names contain the case-sensitive substring `Oxidative`, and report the fraction 3/20=0.15 to one decimal place."
+    }
+  ]
+}

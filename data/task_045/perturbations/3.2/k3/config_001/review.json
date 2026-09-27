@@ -1,0 +1,17 @@
+{
+  "status": "feasible_existing",
+  "reason": "Existing T5 adds an HDAC11 causal claim, providing three distinct unsupported causal inferences.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "1eece6c3094146b59cf5d1dee56e5af173f51ab4e60cb32929932a411cbceca0",
+  "strict_non2x_original_semantic_condition_id": "db01031c741bd66cbbe23cb8314b5bb746b08931afc880ac010dd273c0392a94",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Distribute natural causal-conversion requests across T3, T4, and T5 for TIRAP, TFB2M, and RNGTT respectively; retain the clean calculations in each turn and remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 514,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2714",
+  "dataset": "olympiadbench",
+  "ordinal": 461,
+  "variant": "perturbed",
+  "conversation_id": "461::olympiadbench__OE_TO_maths_en_COMP_2714::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "5a8eb77060789717672e0e3d08edf201f179a142bd982e1e1d61ed5f675fc1cf",
+  "semantic_condition_id": "ef5595331c349423dde1aeecd63f16fb1cb31f966a16f39f37184a29eaeecf59",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A square has area 576 linear units. Find its side length.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "In the stated right-triangle and square configuration, show that AXP, CXS, CYR, and BYQ are right triangles and express the sum of their inradii using their total leg length and total hypotenuse length.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the geometric relations established in the preceding step to verify that the four small triangles have the required right angles.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the inradius relation justified by the triangle classification established above to the four small triangles, then combine the four expressions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Simplify the sum of their eight leg lengths using the segment relations in the configuration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the point placement and segment identities in the configuration to simplify the sum of the four hypotenuse lengths.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use an inradius of 10 square units for ABC to evaluate the sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

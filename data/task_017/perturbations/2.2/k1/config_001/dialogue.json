@@ -1,0 +1,35 @@
+{
+  "release_task_index": 17,
+  "task_id": "017-capsule006",
+  "source_id": "bix-7-q3",
+  "dataset": "bixbench",
+  "ordinal": 17,
+  "variant": "perturbed",
+  "conversation_id": "017::017-capsule006::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "7432bbced159bcb5463a2cf86d8bf7144dc5a8e65fdac7d9377513cf1596e4e8",
+  "semantic_condition_id": "46ffba3f3b7b256f133d2275617ef675953b0689c3293d1ccfea0fbbcb0e2730",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Variant-call population\n\nVariant workbooks are available for 86 samples. Their relevant field is `Zygosity`; the combined data contain 57,258 call rows.\n\n| Zygosity class | Rows |\n|---|---:|\n| `Reference` | 44,211 |\n| Explicit non-reference (`Heterozygous` or `Homozygous Variant`) | 11,896 |\n| Missing `Zygosity` | 1,151 |\n| **Total** | **57,258** |\n\nThe partition closes exactly:\n\n```text\n44,211 + 11,896 + 1,151 = 57,258\n```\n\n## Filtering semantics\n\nThe implemented operations are:\n\n```r\nnonref_CHIP_dataset <- full_dataset[\n    full_dataset$Zygosity != \"Reference\", ]\n\nnonref_CHIP_dataset <- nonref_CHIP_dataset %>%\n    filter(!is.na(sample))\n```\n\nFor a missing zygosity, `NA != \"Reference\"` evaluates to `NA`. Logical indexing creates an all-`NA` row whose `sample` value is also `NA`; the subsequent `filter(!is.na(sample))` removes it. Therefore the retained population consists only of explicit non-reference calls.\n\nThis is not equivalent to subtracting only the Reference rows from the raw total:\n\n```text\nretained = raw - Reference - missing Zygosity\n```\n\nThe explicit non-reference total is also the sum of the two retained genotype classes:\n\n| Retained genotype class | Rows |\n|---|---:|\n| Heterozygous | 7,303 |\n| Homozygous Variant | 4,593 |\n| **Combined** | **11,896** |\n\n# Retained CHIP calls after reference-genotype exclusion in a family exome cohort\n\nMarta Silveira, Koji Tan, Elisabeth Nordin, and Daniel K. Amani\n\n## Abstract\n\nFiltering of panel-associated exome calls depends critically on how incomplete genotype fields are handled. We combined CHIP-panel variant workbooks from 86 family-cohort samples and removed calls explicitly annotated as reference. Genotype-blank rows were retained because they had passed depth, quality, panel-membership, and variant filters upstream and did not carry a reference annotation. This procedure left 13,047 CHIP call rows for downstream analysis, comprising explicit non-reference calls together with genotype-blank records. Retention was concentrated in heterozygous calls, with a smaller homozygous-variant component. The results show that reference-only exclusion preserves a substantial group of unclassified calls that would be lost under complete-case genotype filtering.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the sample count and total CHIP-variant rows, and check that the three Zygosity classes sum to that total.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Follow the archived R filtering semantics to determine whether Reference, explicit non-reference, and missing-Zygosity rows survive.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under that filter, how many CHIP variants are retained across all matched workbooks?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

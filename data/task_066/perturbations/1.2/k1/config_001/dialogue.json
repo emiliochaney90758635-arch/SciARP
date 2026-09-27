@@ -1,0 +1,52 @@
+{
+  "release_task_index": 66,
+  "task_id": "066-capsule017",
+  "source_id": "bix-22-q1",
+  "dataset": "bixbench",
+  "ordinal": 66,
+  "variant": "perturbed",
+  "conversation_id": "066::066-capsule017::1.2::k1::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "dfb8bc0829d45026e191affd0701ee8d459682047b32e493d63e99faf670acb6",
+  "semantic_condition_id": "0917b8e5594d37bdccab749d4fb3432373a6f6d711eca0f5baeef44ca2628195",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "4ccf21813b1bab4095fc898f7ab77da86af03284f60f18f70c39037ecc9bd8dc",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Shared Data-Processing Criteria for the Four Cell Types\n\nThe expression matrix contains 59,453 genes × 723 samples, the sample metadata include `celltype`, and the gene annotations include `Geneid`, `Length`, and `gene_biotype`. The archived pipeline applies the following steps uniformly:\n\n1. Exclude PBMC samples.\n2. Select genes with `gene_biotype.str.contains(\"protein_coding\")`.\n3. Retain genes with total expression `>= 10` across all non-PBMC samples.\n4. Establish separate sample axes for CD4, CD8, CD14, and CD19.\n5. For each cell type, calculate the ordinary arithmetic mean by gene and align it with the same `Length` vector using an inner join.\n\n| Audit item | Result |\n|---|---:|\n| PBMC / CD4 / CD8 / CD14 / CD19 samples | 158 / 151 / 145 / 132 / 137 |\n| Samples after excluding PBMC | 565 |\n| Initial substring matches | 19,954 genes |\n| Shared gene set after expression thresholding and length alignment | 17,819 genes |\n| Missing `Length` or mean-expression values across the four groups | 0 |\n| Duplicate gene indices across the four groups | 0 |\n\nAll four groups must use the same substring-matching criterion.\n\n## Full-Data Pearson Sufficient Statistics for the Four Groups\n\nFor each cell type, \\(x_i\\) is the final gene's `Length`, and \\(y_i\\) is that gene's mean expression across all samples in the group.\n\n| Cell type | \\(n\\) | \\(\\bar{x}\\) | \\(\\bar{y}\\) | \\(S_{xx}\\) | \\(S_{yy}\\) | \\(S_{xy}\\) |\n|---|---:|---:|---:|---:|---:|---:|\n| CD4 | 17,819 | 5,675.002357034626 | 616.6195436896920 | 331,788,201,143.901 | 197,135,262,891.78800 | 12,759,055,142.555325 |\n| CD8 | 17,819 | 5,675.002357034626 | 604.2682669215927 | 331,788,201,143.901 | 207,619,095,737.67328 | 11,461,780,551.891413 |\n| CD14 | 17,819 | 5,675.002357034626 | 718.4920454332879 | 331,788,201,143.901 | 363,863,182,199.85046 | 7,132,196,384.493183 |\n| CD19 | 17,819 | 5,675.002357034626 | 554.4582097433110 | 331,788,201,143.901 | 186,324,966,473.67690 | 8,866,922,490.302633 |\n\nwhere:\n\n\\[\nS_{xx}=\\sum(x_i-\\bar{x})^2,\\quad\nS_{yy}=\\sum(y_i-\\bar{y})^2,\\quad\nS_{xy}=\\sum(x_i-\\bar{x})(y_i-\\bar{y})\n\\]\n\n\\[\nr=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}\n\\]\n\nIn this task, “weakest” means the smallest absolute value among the four correlation coefficients, rather than the smallest signed value in algebraic order.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAfter excluding PBMC, how many samples define the CD4, CD8, CD14, and CD19 axes, and are they aligned to the expression matrix?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply one shared protein-coding substring rule, the total-expression threshold, and the length inner join. How many genes remain for all four groups?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat Length values as kilobases while leaving their numerical base-pair values unchanged.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the supplied sufficient statistics to calculate the Pearson correlation for each cell type.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the four coefficients by absolute value. Which cell type has the weakest association?",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 512,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3000",
+  "dataset": "olympiadbench",
+  "ordinal": 459,
+  "variant": "perturbed",
+  "conversation_id": "459::olympiadbench__OE_TO_maths_en_COMP_3000::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "719466f90a93eb0b89eabd3fa652a156f80cc64013e0aabaaaf06b78aac199c2",
+  "semantic_condition_id": "b356d2320556e4afc2b6c7bb47703e236704d2ebfff98e9ce72de6cdff79f3cc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Elizabeth starts with 2020 switches off and must flip exactly 1993 different switches each minute. If she first has every switch on after t minutes, let c_i be the number of times switch i was flipped. What conditions do the c_i satisfy?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those conditions to determine the parity of t and derive the strongest lower bound on t obtainable from the total number of flips and the individual flip counts.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let d_i=t-c_i be the number of minutes in which switch i is not flipped. Relate the parity and sum of the d_i to t, and check that this complementary viewpoint gives the same lower bound.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "At the first duration not ruled out by that bound, each minute omits 27 switches. How many switch-minute omissions must a schedule contain in total?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Choose target non-flip counts for the minutes that have the required total, leave every switch flipped an odd number of times, and can be realized with the required omissions per minute.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Construct an explicit minute-by-minute omission schedule with those row and column totals, and explain why taking its complement gives a valid flipping schedule.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the lower bound with the schedule to determine E(2020,1993), the minimum number of minutes needed to turn all the switches on.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

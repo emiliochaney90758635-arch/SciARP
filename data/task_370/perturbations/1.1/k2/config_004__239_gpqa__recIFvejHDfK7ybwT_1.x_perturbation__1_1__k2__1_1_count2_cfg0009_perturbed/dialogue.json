@@ -1,0 +1,54 @@
+{
+  "release_task_index": 370,
+  "task_id": "gpqa__recIFvejHDfK7ybwT",
+  "dataset": "gpqa",
+  "ordinal": 239,
+  "variant": "perturbed",
+  "conversation_id": "239::gpqa__recIFvejHDfK7ybwT::1.x::perturbation__1_1__k2__1_1_count2_cfg0009::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b3d9070299e786195a5b90fa73b81c19486053b5bad3ab8269f1d6f4e82887b0",
+  "semantic_condition_id": "ba02dcaa0c0d1dbcbb500ee941b99bdfc78be29d3f7b76ba44723e278526585a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two planets transit rotating stars in central transits. The stars have the same spectral type, apparent magnitude, and activity; Star 1 has twice Star 2's radius and rotates three times faster, while Planet 1 has four times Planet 2's radius. Which in-transit spectroscopic radial-velocity effect should be compared?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a central transit, state the approximate semi-amplitude scaling of this effect with planet radius, stellar radius, and stellar rotation speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the radius information to compute the planet-to-star mass-ratio comparison between the two systems.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the squared comparison factor established above with the stellar rotation-speed factor to obtain the requested system-1/system-2 observable ratio. The equal stellar properties allow their noise and photon-collection factors to be ignored in this comparison.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the semi-amplitude comparison, identify which spectral line should be observed first and state the factor motivating that choice.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that the common stellar properties and central-transit geometry have been applied consistently with the radius and rotation-speed factors used in the priority comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Name the system that should receive the limited observing time first, and justify the priority from the transit-signal scaling and common-noise assumptions.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

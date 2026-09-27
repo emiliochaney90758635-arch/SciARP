@@ -1,0 +1,49 @@
+{
+  "release_task_index": 428,
+  "task_id": "gpqa__recr3VHM4zYf6dMFY",
+  "dataset": "gpqa",
+  "ordinal": 297,
+  "variant": "perturbed",
+  "conversation_id": "297::gpqa__recr3VHM4zYf6dMFY::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e9ee8d7f6ed4af9172be7fc48bd09ad30c7485513f78d841570bc022234c6f06",
+  "semantic_condition_id": "b912419bd05970d33125b31eb241f286cbd21d0306c96b8791827c75461c56e3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "NaNO3, HCl, and water are used to form 4-isopropylcyclohexane-1,2-dione and 5-methylhexane-2,3-dione. What reactive species and transformation would this mixture imply?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Work backward from each vicinal diketone to a monoketone with the same carbon skeleton and an enolizable alpha carbon. What structures do you propose for A and B?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Trace the proposed acyclic sequence and check what it predicts at C2 and C3 without rearranging the six-carbon skeleton.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the result requested at this point and explain it using only the reaction sequence established so far.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Test that result for internal consistency with carbon-skeleton conservation and the observed functional pattern.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and the chemical feature that supports it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

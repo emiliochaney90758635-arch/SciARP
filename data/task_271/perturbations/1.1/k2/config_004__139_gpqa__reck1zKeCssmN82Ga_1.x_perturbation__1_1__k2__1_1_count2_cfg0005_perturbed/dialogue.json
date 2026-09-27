@@ -1,0 +1,54 @@
+{
+  "release_task_index": 271,
+  "task_id": "gpqa__reck1zKeCssmN82Ga",
+  "dataset": "gpqa",
+  "ordinal": 139,
+  "variant": "perturbed",
+  "conversation_id": "139::gpqa__reck1zKeCssmN82Ga::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c2cf6fc02f423d8a4ddde075d29e8aab746564a77112b52d985486b9efe80f56",
+  "semantic_condition_id": "e7cb8d42086c1ab6bf72b2c15618fb45709caf423dab2b21e7feb0737841b3f0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Classify 4,4-dimethylcyclopent-1-enol and identify its corresponding keto tautomer, noting that the reaction conditions beyond bromine are unspecified.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the tautomerized alkane, identify the dominant bromination mode expected with bromine.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine which carbon is brominated and whether the oxygen functionality appears as a carbonyl or an alcohol in the product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the tautomer and bromination analysis to identify the major transition state rather than the major product.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the product as the best-supported major outcome while retaining uncertainty from the unspecified medium, tautomer population, kinetics, competing alkene addition, and product ratio.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the proposed structure conserves the ring skeleton and places bromine at an enolizable carbon alpha to the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the major product, mechanism, and evidential qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

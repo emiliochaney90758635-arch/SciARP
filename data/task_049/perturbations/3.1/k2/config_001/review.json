@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can also pool a non-wild-type row despite T1's joint grouping rule, and T3 can average that inconsistent set.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T3 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "e4995c34acffd61719d36ab6e88ba6d74aa3d3ffb520fa3adb51ccf297404c22",
+  "strict_non2x_original_semantic_condition_id": "91bc1e2e39180a93dec5527ef9b875ffc2820946e11c676a11ed050d93b7e5c3",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T1 to locate the group using StrainNumber alone while ignoring Genotype; rewrite T2 to extract all Round values for that group. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

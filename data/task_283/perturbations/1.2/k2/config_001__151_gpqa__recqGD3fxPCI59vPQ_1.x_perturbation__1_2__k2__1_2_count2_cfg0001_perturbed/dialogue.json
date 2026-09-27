@@ -1,0 +1,49 @@
+{
+  "release_task_index": 283,
+  "task_id": "gpqa__recqGD3fxPCI59vPQ",
+  "dataset": "gpqa",
+  "ordinal": 151,
+  "variant": "perturbed",
+  "conversation_id": "151::gpqa__recqGD3fxPCI59vPQ::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "828bd8fa571c1275e5076151cbefd066a85ae054c76ae8d618101ee055ea4769",
+  "semantic_condition_id": "7a596da6f482bc127dc493c82a4ce57df6fe66b6bd2e5e53895527b8066b747d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A proton starts nearly at rest in a synchrocyclotron with Phi0=pi/4, U0=190 kW, and target kinetic energy 950 MeV. Identify the quantities needed for the revolution count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the one-crossing energy gain using the rule that 1 ampere corresponds to 1 eV for a proton.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The proton crosses an accelerating gap twice per revolution. What energy does it gain per revolution in MeV?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Starting near zero kinetic energy, calculate how many revolutions are needed to reach 950 MeV.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the result from the total number of gap crossings and explain how to handle a noninteger revolution count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the required number of revolutions and the key energy-gain calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

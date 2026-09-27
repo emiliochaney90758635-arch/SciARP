@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can keep unmapped IDs, T2 mix libraries, and T3 rank Combined Score.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "72b5c0096fd34729de2255fc8c0a04938aea31b31a912700dc9ec347bc5d45a2",
+  "strict_non2x_original_semantic_condition_id": "1b1f5a4726913fc95d566c9afe4bdb790defd1a16e2ef733e6aa88e7788ef07c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Duplicate the six displayed GO rows, label the duplicate block Reactome, concatenate the two blocks, then select the first term with the largest Combined Score.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

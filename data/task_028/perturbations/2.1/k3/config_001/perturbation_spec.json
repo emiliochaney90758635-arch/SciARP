@@ -1,0 +1,28 @@
+{
+  "task_id": "028-capsule008",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Defines Category as response only.",
+    "Defines Category as tissue only.",
+    "Defines Category as baseMean bins."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "response-only premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "tissue-only premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "baseMean-bin premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

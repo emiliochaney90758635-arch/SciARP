@@ -1,0 +1,54 @@
+{
+  "release_task_index": 358,
+  "task_id": "gpqa__recrs0kUo7Ua1xhKO",
+  "dataset": "gpqa",
+  "ordinal": 226,
+  "variant": "perturbed",
+  "conversation_id": "226::gpqa__recrs0kUo7Ua1xhKO::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "4f75c2dfc7690e5ad28dae956ca0c28d43b5fe57d8d7296e96755aaab8c77821",
+  "semantic_condition_id": "bc75241b6b35ace8c482c93f4142b2c90815a0e18e7901208177bbab928a9112",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For rho=(1/2)(|0><0|+|1><1|), write the two computational-basis projectors as 2x2 matrices.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the rotation matrices just written, compute their sum and simplify rho.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write rho in Hamiltonian normal form rather than Bloch form and determine r.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Locate the state in the Bloch ball and interpret the norm of r in terms of purity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the Bloch vector just obtained, reconstruct rho and check that current representation internally.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently from the eigenvalues and Tr(rho^2).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the Bloch vector and geometric location.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

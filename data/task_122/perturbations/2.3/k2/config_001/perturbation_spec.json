@@ -1,0 +1,42 @@
+{
+  "task_index": 122,
+  "task_id": "122-capsule034",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "bc428035ac5a5503f45b61eb7c2b3dc479537999fce5a8ed27dd844eb6c6dd61",
+  "source_base_evidence_sha256": "bd717f9e6892eddbf8d77176b8919fad650958f3828e5b2e364b3faa208d033f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Age coefficient sign changed while remaining finite.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Gender counts independently changed to plausible totals.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| Age | -0.0795084690 | 0.0262977303 |",
+      "new": "| Age | 0.0795084690 | 0.0262977303 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "Counts are Female 31 and Male 49. The design matrix is `[1, Age, BMI, GenderMale]`.",
+      "new": "Counts are Female 33 and Male 47. The design matrix is `[1, Age, BMI, GenderMale]`."
+    }
+  ],
+  "extends_existing": null
+}

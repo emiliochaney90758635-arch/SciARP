@@ -1,0 +1,28 @@
+{
+  "task_id": "035-capsule009",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Reports a 41.0% reduction with p=0.017.",
+    "Reports a 9.0% reduction with p=0.480.",
+    "Reports a 20% increase with p=0.18."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "literature result 1"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "literature result 2"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "literature result 3"
+    }
+  ],
+  "evidence_change_permitted": true
+}

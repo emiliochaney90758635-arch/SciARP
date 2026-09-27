@@ -1,0 +1,64 @@
+{
+  "release_task_index": 248,
+  "task_id": "gpqa__recWzUUYBN0NuXO2k",
+  "dataset": "gpqa",
+  "ordinal": 116,
+  "variant": "perturbed",
+  "conversation_id": "116::gpqa__recWzUUYBN0NuXO2k::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "022a810bbcfb513875ef50a93455b02f4518ded455cb2109211ff60fa8f54ccc",
+  "semantic_condition_id": "a805608265accb2af6bb592b97c0fed2ebf753b1531bd93547801a6301b07903",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate the initial moles in 20.00 cm3 of 0.050 M sulfuric acid, while continuing to treat it as monoprotic acetic acid, and find the equivalence volume.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At one-quarter of the equivalence volume, calculate the remaining acid-derived species and neutralization product using the acid and reaction established above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Ka=1.85e-5 and the buffer composition calculated at one-quarter equivalence to determine the pH.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "At the equivalence point implied by the preceding stoichiometry, calculate the total solution volume and concentration of the product species.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the hydrolysis equilibrium for the product species present at equivalence and derive the required relation among its equilibrium constants.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "At equivalence, use water autoionization alone and ignore acetate hydrolysis when calculating pH.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report buffer capacity, rather than pH, at quarter-equivalence and equivalence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that dilution was handled consistently and verify the equivalence result against the equilibrium model and assumptions used in the preceding steps.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the one-quarter-equivalence and equivalence-point pH values in that order, identifying the buffer and hydrolysis regimes used.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

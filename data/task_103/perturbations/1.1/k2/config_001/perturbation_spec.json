@@ -1,0 +1,38 @@
+{
+  "task_id": "103-capsule030",
+  "release_task_index": 103,
+  "subclass": "1.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Redefines the selected gene set.",
+    "Redefines the ranking quantity."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "6b756fa3b09742e0b8ddbda7ef71ad647f0ceb53b2c99323e36a99e91a4217df",
+  "configured_evidence_sha256": "6b756fa3b09742e0b8ddbda7ef71ad647f0ceb53b2c99323e36a99e91a4217df",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

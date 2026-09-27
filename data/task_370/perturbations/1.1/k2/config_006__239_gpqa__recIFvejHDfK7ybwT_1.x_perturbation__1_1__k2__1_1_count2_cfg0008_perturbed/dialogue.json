@@ -1,0 +1,54 @@
+{
+  "release_task_index": 370,
+  "task_id": "gpqa__recIFvejHDfK7ybwT",
+  "dataset": "gpqa",
+  "ordinal": 239,
+  "variant": "perturbed",
+  "conversation_id": "239::gpqa__recIFvejHDfK7ybwT::1.x::perturbation__1_1__k2__1_1_count2_cfg0008::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c89cf443a7e4065ced2446ab8f7a0522251e5b626e79711a37c6f09a4d13a4d4",
+  "semantic_condition_id": "bc53da5aa49ff114303c9f6f0224824c295af04c7c0d99da2278955a23ad98b2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two planets transit rotating stars in central transits. The stars have the same spectral type, apparent magnitude, and activity; Star 1 has twice Star 2's radius and rotates three times faster, while Planet 1 has four times Planet 2's radius. Which in-transit spectroscopic radial-velocity effect should be compared?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a central transit, state the approximate semi-amplitude scaling of this effect with planet radius, stellar radius, and stellar rotation speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the radius information to compute the planet-to-star mass-ratio comparison between the two systems.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the earlier scaling and radius-ratio result to compute the transit-duration ratio between the systems, including the threefold rotation factor.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the comparison obtained above, which system should receive the limited observing time first, and what quantitative advantage supports that priority?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that the common stellar properties and central-transit geometry have been applied consistently with the radius and rotation-speed factors used in the priority comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Name the system that should receive the limited observing time first, and justify the priority from the transit-signal scaling and common-noise assumptions.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

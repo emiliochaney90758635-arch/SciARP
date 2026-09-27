@@ -1,0 +1,64 @@
+{
+  "release_task_index": 580,
+  "task_id": "scibench__chemmc-sol-001",
+  "dataset": "scibench",
+  "ordinal": 361,
+  "variant": "perturbed",
+  "conversation_id": "361::scibench__chemmc-sol-001::1.x::perturbation__1_2__k3__1_2_count3_cfg0003::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "02e5dbf7c3bb7555d781e280de4b14bb5c0ccd5910240811740489749ad3d710",
+  "semantic_condition_id": "39f0660b52a55e87cecdda8ac0510ddf714516bada1acbefbe9871b73b664894",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use c=2.998e8 m s^-2 and state the de Broglie relation for the electron.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the electron mass, calculate the momentum with the justified approximation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use h=6.626e-34 J s^-1 and the electron momentum calculated above to determine the wavelength.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the dimensions and order of magnitude independently.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the wavelength using 1 pm=1e-12 s, then predict it at twice the speed.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

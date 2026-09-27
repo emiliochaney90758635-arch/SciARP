@@ -1,0 +1,54 @@
+{
+  "release_task_index": 494,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2711",
+  "dataset": "olympiadbench",
+  "ordinal": 441,
+  "variant": "perturbed",
+  "conversation_id": "441::olympiadbench__OE_TO_maths_en_COMP_2711::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "246cee0ebb5db94b6eda5401febb44b8e8cd612699160a8b44667f138e8044ec",
+  "semantic_condition_id": "647860722c2140d530e712ec0ba2d3ba5108754fde86957c6448cef33bbfe880",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Show that if a sum above 2013 uses two palindromes, at least one summand must be a four-digit palindrome greater than 1006.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List the four-digit palindromes between 1007 and 2020 using full digit-reversal symmetry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find explicit two-palindrome representations of 2014, 2015, 2016, 2017, and 2018.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why establishing this consecutive representable block is enough to reduce the minimality question to testing 2019 next.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "When testing 2019, replace the third entry of the ordered four-digit-palindrome list by 1211 before subtracting.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether any of those complements is a palindrome, and conclude whether 2019 is representable.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine the least integer greater than 2013 that is not a sum of two palindromes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "095-capsule026",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Equates is_sig=TRUE with 5% FDR significance.",
+    "Treats the OOXML serialization tail as meaningful exact precision.",
+    "Substitutes raw p.value for adj.Pval when the label is TRUE."
+  ],
+  "evidence_mode": "append"
+}

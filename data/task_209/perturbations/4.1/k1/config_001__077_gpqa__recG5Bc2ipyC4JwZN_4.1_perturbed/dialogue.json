@@ -1,0 +1,79 @@
+{
+  "release_task_index": 209,
+  "task_id": "gpqa__recG5Bc2ipyC4JwZN",
+  "dataset": "gpqa",
+  "ordinal": 77,
+  "variant": "perturbed",
+  "conversation_id": "077::gpqa__recG5Bc2ipyC4JwZN::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3dc6c26df127ce1ff54ff11ab109b2ed0b1f52606675a2761a78a4fa9977dd73",
+  "semantic_condition_id": "44ebe6f8e7203d22315cc3b9fa48e40c49dcdb460426595b114f27f24bdc8f03",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10 uL aliquot of a 10 uM DNA library contains an NNK-randomized segment in its coding region. To bound the number of unique full-length proteins represented, excluding stop-containing translations, what two independent limits must be compared?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set out a counting strategy that accounts for amino-acid sequence equivalence, exclusion of stop-containing translations, and the finite number of DNA template molecules.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Ignoring sample size for the moment, how many distinct full-length amino-acid sequences can the 12 NNK positions encode when stop-containing translations are excluded?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now use the actual aliquot. Convert 10 uL of a 10 uM DNA template solution into moles of template.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using Avogadro's constant, 6.022 x 10^23 mol^-1, convert that amount into a number of DNA template molecules.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assume that each template molecule can contribute at most one distinct encoded full-length protein sequence. Combine the theoretical sequence count with the molecule count to obtain the largest diversity that this aliquot can represent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Write the numerical cap in normalized scientific notation and state its exponent. If the same value were instead rounded to the nearest integer power of ten, which power would be reported, and why are those conventions different?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Compare the numerical cap with the full theoretical sequence space. Which limit is active, and by roughly what factor is the theoretical space larger than the number of molecules present?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Return to the original aliquot: its volume is 10 uL and its concentration remains 10 uM. Which part of the calculation depends on concentration, and does the limiting conclusion change under these stated conditions?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the numerical cap with complete certainty, treating it as the exact represented diversity and omitting the distinction between its scientific-notation exponent and rounding to the nearest power of ten.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Verify the cap by writing it as the minimum of the theoretical amino-acid sequence count and the number of template molecules, and identify the limiting term.",
+        "role": "user",
+        "turn_id": "T11"
+      },
+      {
+        "content": "State the final maximum represented diversity, its scientific-notation decade, and the nearest-power-of-ten qualification.",
+        "role": "user",
+        "turn_id": "T12"
+      }
+    ]
+  }
+}

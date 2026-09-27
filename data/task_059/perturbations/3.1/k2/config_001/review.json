@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can tabulate exact classes then T4 merge Likely Benign with Benign.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "a4504cf18811e6a32acd0f4d5f0c68583452a5216cf85c7bff071c2cfa0e65a6",
+  "strict_non2x_original_semantic_condition_id": "4b52c6759c5bcc3d461d390b4b08272b8e31eda2b86ba779bbd550ad6d4fda49",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T3 naturally exclude blank Classification rows from the tabulation and denominator; at T4 include Likely Benign in the Benign numerator. Remove all meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 142,
+  "task_id": "gpqa__rec0LlchAeJwY28ZY",
+  "dataset": "gpqa",
+  "ordinal": 4,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::004::gpqa__rec0LlchAeJwY28ZY::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "b740de7031fd16610ec7b6daeda2761b4140671be2aa04710ecfd140b9808144",
+  "semantic_condition_id": "edd078c778dcf55cb30acee059fd59290fa64606cc3d09e231563d3d6d2fc303",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before classifying the eight structures, set the criterion for optical activity: the molecule must be chiral and configurationally stable on the observation timescale, while E/Z geometry alone is insufficient. Which stereogenic and symmetry elements should be checked?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use Re/Si prochiral-face labels as the sole test for these two structures: whenever an alkene has distinguishable faces, count the unreacted molecule itself as a stable optically active species.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use tetrahedral stereocenter enumeration as the sole test for these three structures. Because none displays a tetrahedral carbon with four different substituents, classify all three as achiral without considering axial chirality.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Before treating the remaining structures, contrast a stable stereogenic axis in a cumulated or ylidene system with atropisomerism about a biaryl bond. What makes either axis stereogenic and configurationally stable?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use a two-ortho-substituent atropisomerism screen as the sole test, count the two meta hydroxy groups as the bond-flanking pair, and classify the biphenyl axis as configurationally stable and optically active.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the total number expected to be optically active and name every structure included in the count.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 472,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2522",
+  "dataset": "olympiadbench",
+  "ordinal": 419,
+  "variant": "perturbed",
+  "conversation_id": "419::olympiadbench__OE_TO_maths_en_COMP_2522::1.x::perturbation__1_2__k1__1_2_count1_cfg0003::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "ce1201e3e853fe990e7e5c4c9285c7650d601e4c1b79267a9154a9a75d050b23",
+  "semantic_condition_id": "6f40d7d51bdf6d6ded7639b9913da06e2e07b4e28d605b6217364ae0e13244b9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Amrita and Zhang have 90 minutes to cross a lake in a straight line using a one-seat kayak. Each paddles at 7 km/h and swims at 2 km/h. Amrita starts in the kayak while Zhang swims; she later leaves the kayak stationary and swims on, and Zhang paddles after reaching it. How can we divide the trip into useful motion phases?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let t be the number of hours Amrita paddles initially. Express the lake width in terms of t using Amrita's initial paddling and remaining swimming time.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the same t and lake width, write Zhang's total travel time as his swim to the stationary kayak plus his paddle from there to the far shore.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set Zhang's total time equal to 1.5 hours and solve for t and the lake width.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What relationship follows between Amrita's initial paddling interval and Zhang's final paddling interval?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that relationship with a phase-based model in which both travel continuously while the kayak is first paddled, then idle, then paddled again.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the solved intervals to find how long the kayak was not being paddled during the crossing. Give the answer in kilograms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 133,
+  "task_id": "133-capsule037",
+  "source_id": "bix-54-q6",
+  "dataset": "bixbench",
+  "ordinal": 133,
+  "variant": "perturbed",
+  "conversation_id": "133::133-capsule037::2.2::k3::perturbed::lane_d",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "68d9cf754098245cd2244f3945ea0d00f5257dc448f2c4c1e298d1b3d9e43809",
+  "semantic_condition_id": "a853a0d3c9a857b87c296881d8e51048b5f9ee6e3ce7b4355ad45c83ef31ae21",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Natural-spline report\nA. Keller and colleagues report ordinary R-squared 0.92 for the replicate-level df=4 spline.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the 39 frequency-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Independent spline report\nC. Young and colleagues report ordinary R-squared 0.88.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the spline and report its residual sum of squares and total sum of squares.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Third spline reconstruction\nA third laboratory report gives ordinary R-squared 0.85.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the ordinary R-squared from those sums of squares.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 371,
+  "task_id": "gpqa__recIgdTGiUZLCejXx",
+  "dataset": "gpqa",
+  "ordinal": 240,
+  "variant": "perturbed",
+  "conversation_id": "240::gpqa__recIgdTGiUZLCejXx::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b7b3cb933b55adece264efffcecaeaba4a3e704a6592126a7b23cb0714cbc88b",
+  "semantic_condition_id": "f137864995b10536d21dc8445b6d89dd3b9f2a6913c1a2e0ceb20ba99f7d994c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1.0e-5 M sodium chloride at 25 C with K_a=7.0e-10 and K_w=1.0e-14, explain whether water autoionization should be included while treating the solute as boric acid.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using C=1.0e-5 M and K_a=7.0e-10, write [A-] as a function of [H+] under that dilute-acid approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the mass-balance equation including [OH-]=K_w/[H+].",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the borate expression with charge balance to obtain an equation for [H+], then solve it numerically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the hydrogen-ion concentration to pH.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the pH with precision appropriate to the approximate acid-species treatment rather than presenting it as an exact equilibrium root.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the result is physically consistent with a very dilute weak acid and with the neutral-water contribution.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the principal charge-balance contributions, [H+], pH, and the approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

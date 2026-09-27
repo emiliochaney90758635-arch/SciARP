@@ -1,0 +1,59 @@
+{
+  "release_task_index": 628,
+  "task_id": "scibench__thermo-sol-011",
+  "dataset": "scibench",
+  "ordinal": 409,
+  "variant": "perturbed",
+  "conversation_id": "409::scibench__thermo-sol-011::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "b0b9b06df89fe333805df5d3958a4dc290a9b0a30afabc2ae1597ded5f73bad6",
+  "semantic_condition_id": "8f6eb332b09741a12bc456252ad04d6cad1b49e7ae6ee4be63397e3ea9247319",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an ideal gas with temperature-dependent molar heat capacity, derive the entropy change for n moles taken from (T_i,P_i) to (T_f,P_f). Use the ideal-gas value of the thermal expansion coefficient in Eq. (5.23). The sample considered below contains 2.50 mol of CO2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For CO2, use C_{P,m}(800 K) as a constant over the entire interval and approximate the molar temperature contribution as C_{P,m}(800 K) ln(800/450), rather than integrating the supplied polynomial.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate that molar temperature contribution between T_i=450 K and T_f=800 K.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the molar pressure contribution for compression from P_i=1.35 bar to P_f=3.45 bar, using R=8.314 J mol^-1 K^-1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the two molar contributions and use n=2.50 mol to calculate the total entropy change of the CO2 sample.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain the sign of the pressure contribution and how it modifies the positive entropy change from heating.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the calculation by describing an equivalent reversible two-step path and verify that the temperature and pressure terms correspond to those two steps.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the total entropy change in J K^-1 and summarize the contributions that determine it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

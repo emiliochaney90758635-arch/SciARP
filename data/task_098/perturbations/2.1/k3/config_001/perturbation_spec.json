@@ -1,0 +1,19 @@
+{
+  "task_id": "098-capsule028",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumers": [
+    "T4_response"
+  ],
+  "root_injections": [
+    "Reverses ratio component order.",
+    "Uses an unweighted cross-scale composite.",
+    "Treats categorical ratio labels as arithmetic quotients and merges groups."
+  ],
+  "evidence_mode": "append"
+}

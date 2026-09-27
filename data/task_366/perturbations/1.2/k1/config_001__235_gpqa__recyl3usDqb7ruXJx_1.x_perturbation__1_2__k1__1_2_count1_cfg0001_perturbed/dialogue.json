@@ -1,0 +1,49 @@
+{
+  "release_task_index": 366,
+  "task_id": "gpqa__recyl3usDqb7ruXJx",
+  "dataset": "gpqa",
+  "ordinal": 235,
+  "variant": "perturbed",
+  "conversation_id": "235::gpqa__recyl3usDqb7ruXJx::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "1a6ec4839cb43441be82969f22c5e56868aa7bd78310c6743aa968bdfbd22087",
+  "semantic_condition_id": "27adfade85aa734503758d6ce5f14c08ace24e53913133cb731698cebfe96636",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A symmetric (E)-oct-4-ene sample and a symmetric (Z)-oct-4-ene sample are each treated with one kelvin of mCPBA and then aqueous acid. What is the net transformation and its stereochemical course?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that sequence to (E)-oct-4-ene and determine the complete set of octane-4,5-diol stereoisomers, accounting for molecular symmetry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Do the same for (Z)-oct-4-ene and determine its complete stereoisomer set.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The two product mixtures are combined. With ideal resolution, how many peaks should appear on an achiral reverse-phase HPLC column and how many on a chiral HPLC column? Explain using enantiomer and diastereomer resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the assignment by identifying the meso product, the enantiomeric pair, and the species that coelute on the achiral stationary phase.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the full stereoisomer inventory and the predicted peak count for each chromatogram.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "033-capsule009",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Transposes 0.4214970660 to 0.4124970660.",
+    "Transposes 0.139896 to 0.193896.",
+    "Moves the decimal in 0.002587392 to 0.02587392."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "BCG coefficient"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "Treatment coefficient standard error"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace",
+      "object": "Nominal Wald p-value"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 483,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2677",
+  "dataset": "olympiadbench",
+  "ordinal": 430,
+  "variant": "perturbed",
+  "conversation_id": "430::olympiadbench__OE_TO_maths_en_COMP_2677::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "71e112a4339b5b783246268727bf8ad5256fcd4cf5f9af1936dbd458335c550a",
+  "semantic_condition_id": "91f1fc17f168dd2cae4ed1a82ac1f8f8e29ba2c811093566f75ff786a2f5e13a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cube has edge length 37, with a square opening of side length 1 centered on each of its six faces and aligned with the cube edges. What was the original surface area, and how much remains on those exterior faces after subtracting each opening area twice?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Each hole runs through the center to the opposite face, forming three perpendicular planar cross-sections. Each tunnel has square side length 1 and spans the full cube. Calculate their total interior wall area before allowing for their intersections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Examine the central intersection of the tunnels. Which parts of the wall area you just counted are actually on the boundary of the remaining solid, and what is the corrected interior area?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain geometrically how your treatment of the intersecting tunnels determines the surface counted in the final answer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use your treatment of the tunnel intersection to find the total surface area by subtracting the interior surface-area contribution from the exterior contribution. Show the calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

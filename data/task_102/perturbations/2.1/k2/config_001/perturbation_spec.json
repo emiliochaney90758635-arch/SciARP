@@ -1,0 +1,19 @@
+{
+  "task_id": "102-capsule029",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Retains 15-character sample barcode instead of 12-character patient ID.",
+    "Counts sample columns as distinct patients."
+  ],
+  "evidence_mode": "append"
+}

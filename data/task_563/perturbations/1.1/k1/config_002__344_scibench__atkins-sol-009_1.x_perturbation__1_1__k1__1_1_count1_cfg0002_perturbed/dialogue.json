@@ -1,0 +1,54 @@
+{
+  "release_task_index": 563,
+  "task_id": "scibench__atkins-sol-009",
+  "dataset": "scibench",
+  "ordinal": 344,
+  "variant": "perturbed",
+  "conversation_id": "344::scibench__atkins-sol-009::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "45b7310d66a02a8e4f99aa3c13fb02c01e52dd76e72dd5ea8356f076f2eccb22",
+  "semantic_condition_id": "87620460ebf994899480c630754c142070e3d277ad0f54b2a27d747face5082d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For water rotating about the HOH-angle bisector through oxygen, identify each atom's perpendicular distance contribution to the moment of inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use an O-H bond energy of 95.7 pm as the geometric distance when finding the perpendicular radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain why the angle-bisector axis also passes through the molecular centre of mass and why the oxygen contribution is zero.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the symbolic moment of inertia about this axis using the geometric conclusions and relevant masses established above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the geometry by projecting both identical O-H bonds perpendicular to the axis and verify the factor of two.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate I using the parameter values established above and explain which atomic terms enter numerically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report I in kg m^2 to three significant figures and identify the contributing atoms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

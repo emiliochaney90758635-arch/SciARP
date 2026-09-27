@@ -1,0 +1,44 @@
+{
+  "task_id": "038-capsule010",
+  "variant": "perturbed",
+  "condition_label": "3.1.k1",
+  "subclass": "3.1",
+  "injection_count": 1,
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "31d6b5f9e09a7278e49ffb9307019c856801c8bf378aec76c0702e66ad450eb2",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "turn_id": "T1",
+        "role": "user",
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Model and strict set definitions\n\nThe archived analysis excludes three outlier samples and fits 33 samples using:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference for the JBX97, JBX98, and JBX99 contrasts. For each contrast, a GeneID enters the corresponding set only when both strict conditions hold:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 1.5\n```\n\nValues equal to either boundary do not enter.\n\n## Archived result provenance\n\nThree serialized DESeq2 result objects contain 5,828 GeneIDs and the fields `baseMean`, `log2FoldChange`, `lfcSE`, `stat`, `pvalue`, and `padj`:\n\n| Object | Archived contrast description | SHA-256 |\n|---|---|---|\n| `res_1vs97.rds` | Strain 97 vs 1 | `4d3cc6b5ba5d0bc14b5bd2bd7d5fb886cde10734de94d0eb9ed26a6f25c4d65f` |\n| `res_1vs98.rds` | Strain 98 vs 1 | `140d5ea56179feebe103e66061616c64a096849d2da5956e157b383849eca135` |\n| `res_1vs99.rds` | Strain 99 vs 1 | `4e97a0548964158093f58b7f3d342d3dc48e1a5e3f114679d7061bba354d80c9` |\n\nTheir archived introduction states that the strain 97/98/99 profiles relative to wildtype strain 1 were produced in a previous capsule. Both capsule records identify the same paper and quorum-sensing strain experiment. As a consistency check, filtering these objects by `padj < 0.05` alone reproduces the earlier seven-region Venn count signature exactly:\n\n| FDR-only region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98 only | 41 |\n| JBX97 ∩ JBX99 only | 464 |\n| JBX98 ∩ JBX99 only | 1,307 |\n| All three | 1,396 |\n\nThe original fitted object and per-GeneID sets were not retained in the earlier capsule, so a direct object-hash or member-by-member comparison cannot be made. The explicit previous-capsule statement, matching experiment metadata and contrast descriptions, object hashes, common 5,828-row format, and complete seven-count signature together support archive-level provenance, but the matching cardinalities alone are not proof of object identity.\n\n## Two-threshold partition\n\nApplying both strict thresholds to unique GeneIDs gives:\n\n| Mutually exclusive region | GeneIDs |\n|---|---:|\n| JBX97 only | 16 |\n| JBX98 only | 11 |\n| JBX99 only | 197 |\n| JBX97 ∩ JBX98, excluding JBX99 | 7 |\n| JBX97 ∩ JBX99, excluding JBX98 | 91 |\n| JBX98 ∩ JBX99, excluding JBX97 | 125 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 65 |\n\nFor any complete strain set, sum every disjoint region touching that strain. For a set-difference numerator, use only the mutually exclusive region specified by the operation in the task.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine all strict-threshold sets."
+      },
+      {
+        "turn_id": "T2",
+        "role": "user",
+        "content": "Partition them into mutually exclusive regions."
+      },
+      {
+        "turn_id": "T3",
+        "role": "user",
+        "content": "For the region described as JBX97 and JBX99 but absent from JBX98, include the all-three region established in the preceding partition."
+      },
+      {
+        "turn_id": "T4",
+        "role": "user",
+        "content": "Compute complete JBX97."
+      },
+      {
+        "turn_id": "T5",
+        "role": "user",
+        "content": "Calculate the percentage."
+      }
+    ]
+  },
+  "dialogue_sha256": "a641e24905324d0998d32f17cbb921a419286c73533d7853f7a18acfb3185f9c"
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 8,
+  "task_id": "008-capsule003",
+  "source_id": "bixbench-m2-008-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 8,
+  "variant": "perturbed",
+  "conversation_id": "008::008-capsule003::2.1::k2::perturbed",
+  "condition_label": "2.1.k2",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 2,
+  "dialogue_sha256": "42f693f33f9d70e63d5c6aedeed96586a1ed491dab020c6191046768d58b2b24",
+  "semantic_condition_id": "91284945330b5638c0a10250271e759bcec096264a4c0ed83586a155b9e3e1ee",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Numerator and denominator\n\nFor final blood relative to baseline blood, the result-row filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Quantity | Value | Statistical unit |\n|---|---:|---|\n| Filtered rows, \\(k\\) | 846 | unique GeneIDs in the fitted contrast |\n| Complete contrast rows, \\(n\\) | 21,251 | unique GeneIDs in the fitted contrast |\n| Observed proportion, \\(\\hat p=k/n\\) | 0.0398098913 | filtered fraction of fitted-result GeneIDs |\n\nThe 25,402 rows in the earlier expression matrix are not the denominator: 4,151 of them do not occur in the fitted contrast result.\n\n## Wilson score definition\n\nFor a 95% Wilson score interval, use:\n\n\\[\nz=1.9599639845,\\qquad \\hat p=\\frac{k}{n},\n\\]\n\n\\[\nC=\\frac{\\hat p+z^2/(2n)}{1+z^2/n},\n\\]\n\n\\[\nH=\\frac{z}{1+z^2/n}\n\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}},\n\\]\n\nand the interval \\([C-H,C+H]\\).\n\n## Interpretation boundary\n\nThis is a descriptive interval over the set of analyzable GeneIDs. Gene-level outcomes are dependent, and the upstream analysis used rounded pseudo-counts derived from normalized values. The interval does not represent biological replicate-to-replicate sampling uncertainty and does not validate formal DESeq2 FDR control.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Result-table unit note\n\nEach fitted contrast row represents a transcript isoform; repeated rows carrying the same `GeneID` remain separate observational units for interval estimation.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the filtered GeneID numerator and fitted-contrast denominator for final blood relative to baseline blood.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Wilson confidence-level convention note\n\nFor descriptive fitted-result intervals, the laboratory notebook treats “95% Wilson” as a one-sided 95% coverage convention and therefore substitutes the standard-normal critical value \\(z=1.6448536270\\) into both sides of the Wilson score formula. The numerator remains the number of filtered final-blood-versus-baseline-blood rows and the denominator remains the complete fitted-result row count. Endpoints are reported to four decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse those counts to calculate the 95% Wilson score interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the rounded descriptive interval and state its interpretation boundary.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

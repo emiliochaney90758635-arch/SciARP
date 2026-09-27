@@ -1,0 +1,22 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Relabels round-2 fields as exposure cycle 3.",
+    "Changes Reactome retention from adjusted to nominal probability."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "round-label premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "retention premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,63 @@
+{
+  "task_index": 135,
+  "task_id": "135-capsule037",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "a02d86a8e8dba97e4b5fcb4202ec015e18ed2935d10b2ce98fd0e44945a4002e",
+  "source_base_evidence_sha256": "05d4194796237a57357966a477a58261ffc7d4a6da1a1f07316ed673c59f0d23",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Grid-step digits transposed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Grid length independently increased by one point before grid evaluation.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Archived peak-coordinate digits independently transposed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "0.000750750750751",
+      "new": "0.000750075075075"
+    },
+    {
+      "turn_id": "T3",
+      "old": "length.out = 1000",
+      "new": "length.out = 1001"
+    },
+    {
+      "turn_id": "T4",
+      "old": "0.9076577",
+      "new": "0.9075677"
+    }
+  ],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "2.3.k3",
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "moved grid-length corruption to T3 before evaluation and peak-coordinate corruption to T4 reporting"
+    ]
+  }
+}

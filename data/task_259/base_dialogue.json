@@ -1,0 +1,49 @@
+{
+  "release_task_index": 259,
+  "task_id": "gpqa__recbS9CXnLFMRA6XY",
+  "dataset": "gpqa",
+  "ordinal": 127,
+  "variant": "clean",
+  "conversation_id": "127::gpqa__recbS9CXnLFMRA6XY::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "4b1aa338f060efbe36bbbfffed47876ee7b59e9f8bbab57be454018a9b777050",
+  "semantic_condition_id": "2de54dd1e29f135e2c0fb54ec7e06981dcfdfd7ae0f8193a55b70bea1f6c5cd1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A positron of total energy E_beam strikes an electron at rest in e+e- -> X. In natural units, derive the initial invariant s in terms of E_beam and the electron mass m_e.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "If the final state is a single particle X produced at threshold, relate its mass M_X to the invariant you just derived.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate s and M_X for E_beam=9.6 x 10^6 GeV and m_e=0.000511 GeV.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the resulting mass and explain how the threshold condition fixes it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the dimensions and the accuracy of neglecting the term of order m_e^2 at this beam energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the mass of X and the invariant-mass relation used to obtain it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 518,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2975",
+  "dataset": "olympiadbench",
+  "ordinal": 465,
+  "variant": "clean",
+  "conversation_id": "465::olympiadbench__OE_TO_maths_en_COMP_2975::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "3d400ec10d1e91b0c3c3bacf45179cdf9f6c5d95fced19806e0aa43d5199f318",
+  "semantic_condition_id": "5491d9969a7a519966170e98f5486e861170ee3371a308f11a594fb4e6d9ab27",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In rectangle `PAUL`, the adjacent sides have lengths `PA = 36` and `PL = 25`. Choose a convenient coordinate system and give the coordinates of the four vertices.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Point `D` is the midpoint of `UL`. Point `E` lies on `PL` with `PE:EL = 3:2`, and point `F` lies on `PA` with `PF:FA = 2:1`. Determine the coordinates of `D`, `E`, and `F` in your system.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the pentagon with vertices ordered `A, U, D, E, F`, which exact coordinate-area method is most convenient? Explain why the vertex order matters before carrying out the calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that method to `A -> U -> D -> E -> F`, showing the two coordinate sums or the equivalent component areas.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the calculation to find the area of pentagon `AUDEF`.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by subtracting the regions outside `AUDEF` from the rectangle. Identify those regions and compute their areas.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Reconcile the coordinate and subtraction calculations, then report the final area of `AUDEF`.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

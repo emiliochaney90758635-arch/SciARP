@@ -1,0 +1,49 @@
+{
+  "release_task_index": 617,
+  "task_id": "scibench__stat-sol-014",
+  "dataset": "scibench",
+  "ordinal": 398,
+  "variant": "perturbed",
+  "conversation_id": "398::scibench__stat-sol-014::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "c91e6c2d1f06f85d0df88733dcfa498824b2a564e8c6fcf1f29ddc7f6ace8305",
+  "semantic_condition_id": "c63f1c3feb9550c45cf3ea7b98c905dfb3b419e452cade8bc1fcb23dc609e427",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe an ordered length-10 H/T sequence with exactly four heads and six tails as a choice of positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express the number of sequences using stars and bars.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rewrite the expression obtained above in factorial form, preserving the treatment of outcomes established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression for the stated composition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result through an equivalent complementary reformulation of the same outcome representation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the number of ordered sequences.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 612,
+  "task_id": "scibench__stat-sol-005",
+  "dataset": "scibench",
+  "ordinal": 393,
+  "variant": "clean",
+  "conversation_id": "393::scibench__stat-sol-005::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "ed9326bfa5397f6166f4f082a3b1f2ed1ecfb548197966d12790161267b457bc",
+  "semantic_condition_id": "c7b0cac360ee7683256c8a06e2170a6e15420a12512e71d2765c4088abf1b2a4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bowl contains seven blue and three red chips, and all ten individual chips are equally likely on the first draw. Let A be the event that the first chip is red. How many first-draw outcomes are possible, and how many belong to A?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those counts to calculate P(A).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Two chips are drawn successively without replacement. Conditional on A, describe the remaining chips and calculate P(B|A), where B is the event that the second chip is blue. Are A and B independent?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the multiplication rule for conditional probability to calculate P(A followed by B), giving both the factorization and exact value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by counting favorable ordered red-blue pairs and all ordered pairs of distinct chips.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact joint probability, its conditional factorization, and the dependence classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

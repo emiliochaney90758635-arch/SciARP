@@ -1,0 +1,59 @@
+{
+  "release_task_index": 444,
+  "task_id": "gpqa__recKeCj07mR2qOvCH",
+  "dataset": "gpqa",
+  "ordinal": 313,
+  "variant": "perturbed",
+  "conversation_id": "313::gpqa__recKeCj07mR2qOvCH::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "5a961c7d5359518f3b7e1331f46463ddbed27417835dd578b3e67842f7d02227",
+  "semantic_condition_id": "a4718009097ac33e8b2945be85ad32ab1801396c83f34077e6ed38e3be41fa08",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a Tn5-based Hi-C experiment, DNA recovery was much lower after tagmentation and SPRI selection. At what point does the discrepancy first become apparent, and which broad parts of the workflow remain possible causes?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A separate control tagmentation shows that Tn5 is functioning normally. How does that result change the likelihood that enzyme failure caused the low recovery?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Proximity ligation occurs upstream of tagmentation in this workflow. How could inefficient ligation alter the fragment population entering tagmentation and reduce recovery after SPRI size selection?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Given the control result, should Tn5 malfunction remain a leading explanation, or should the enzyme be treated as functioning in the differential diagnosis? Explain.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combining the timing, the Tn5 control, and the fragment-size mechanism, what is the most likely cause of the low recovery? Name one practical diagnostic measurement that would test it.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How confident is that diagnosis without a pre-tagmentation fragment-size trace, a SPRI recovery control, a replicate, or an independent concentration measurement?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare the observations predicted by inefficient proximity ligation, faulty SPRI beads, and a concentration-measurement error. Which follow-up result would distinguish these explanations most directly?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final workflow diagnosis, the mechanism linking it to low recovery, the most direct confirmation check, and the remaining uncertainty.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "release_task_index": 61,
+  "task_id": "061-capsule016",
+  "source_id": "bix-20-q3",
+  "dataset": "bixbench",
+  "ordinal": 61,
+  "variant": "perturbed",
+  "conversation_id": "061::061-capsule016::3.3::k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "79bee54961864c288e10d27069a0c0c3ff2ad2db8435928816f309bd139679e1",
+  "semantic_condition_id": "217a6233c9d779dc259f8c01432b85f59d46e8fff1bc131f3a25c0a8fa4b35a9",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "523c7af2f05327dd7ac36464ac11ede01ec2372153da218ab48dd682fdfe5cc3",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Carrier cohort and sample matching\n\nThe sample join keys with `BLM Mutation Status = Carrier` in the metadata are shown below. Numeric IDs receive a `P` prefix; family suffixes such as `-PF` and `-PM` in variant filenames are not part of the sample key.\n\n```text\nP185, P184, P285, P287, P353, P354, P556, P557, P533, P381,\nP396, P397, P489, P490, P499, P500, P503, P504, P613, P614\n```\n\nP533 has no corresponding variant workbook, so the remaining 19 Carrier samples actually enter the analysis.\n\n## Filtering rules\n\nThe relevant fields in each variant table include `Zygosity`, `Variant Allele Freq`, `Gene Names`, `Sequence Ontology (Combined)`, and `Classification`. A qualifying variant must satisfy:\n\n- `Zygosity` is nonmissing and does not equal `Reference`;\n- exclude intronic, intergenic, and any UTR annotation;\n- `Variant Allele Freq < 0.3`, with a strict less-than threshold;\n- do not deduplicate the same locus across different samples.\n\n## Row-level records passing the filters\n\n`NA` denotes a blank original `Classification` cell. Every record below has `Zygosity = Heterozygous`, and none of the ontology values contains `UTR`.\n\n| Sample | Chr:Pos | Gene Names | Sequence Ontology | VAF | Classification |\n|---|---|---|---|---:|---|\n| P184 | 7:102193869 | CUX1 | synonymous_variant | 0.247387 | Benign |\n| P184 | 7:102201571 | CUX1 | synonymous_variant | 0.287671 | Benign |\n| P184 | 9:136517745 | NOTCH1 | splice_region_variant | 0.294872 | Benign |\n| P184 | 12:11884510 | ETV6 | synonymous_variant | 0.254717 | Likely Benign |\n| P185 | 2:197418581 | SF3B1 | synonymous_variant | 0.219178 | Benign |\n| P185 | 4:105275794 | TET2,TET2-AS1 | missense_variant | 0.246575 | Benign |\n| P185 | 7:140726457 | BRAF | synonymous_variant | 0.277778 | NA |\n| P285 | 7:102274250 | CUX1 | missense_variant | 0.294118 | Benign |\n| P287 | 7:102193869 | CUX1 | synonymous_variant | 0.231579 | Benign |\n| P287 | 9:5081780 | JAK2 | synonymous_variant | 0.221374 | Benign |\n| P287 | 13:28050157 | FLT3 | missense_variant | 0.257353 | Benign |\n| P287 | 19:44794197 | CBLC | splice_region_variant | 0.159420 | NA |\n| P287 | 19:44794222 | CBLC | missense_variant | 0.250000 | NA |\n| P287 | X:40052404 | BCOR | splice_region_variant | 0.256881 | Benign |\n| P353 | 9:21970917 | CDKN2A | missense_variant | 0.252101 | Benign |\n| P353 | 11:32396399 | WT1 | synonymous_variant | 0.296399 | Benign |\n| P354 | 9:5081780 | JAK2 | synonymous_variant | 0.254902 | Benign |\n| P354 | X:40052404 | BCOR | splice_region_variant | 0.222222 | Benign |\n| P381 | 13:28050157 | FLT3 | missense_variant | 0.273438 | Benign |\n| P397 | 7:102201571 | CUX1 | synonymous_variant | 0.272414 | Benign |\n| P397 | 9:5081780 | JAK2 | synonymous_variant | 0.251969 | Benign |\n| P397 | 13:28050157 | FLT3 | missense_variant | 0.297297 | Benign |\n| P489 | 7:50327696 | IKZF1 | synonymous_variant | 0.228070 | Benign |\n| P489 | 9:5081780 | JAK2 | synonymous_variant | 0.239316 | Benign |\n| P489 | 9:130884537 | ABL1 | synonymous_variant | 0.290179 | NA |\n| P490 | 3:105720182 | CBLB | synonymous_variant | 0.282158 | NA |\n| P490 | 7:50327696 | IKZF1 | synonymous_variant | 0.240741 | Benign |\n| P490 | 12:11839234 | ETV6 | synonymous_variant | 0.278481 | Benign |\n| P490 | 19:44794197 | CBLC | splice_region_variant | 0.187500 | NA |\n| P499 | 2:197418581 | SF3B1 | synonymous_variant | 0.280899 | Benign |\n| P499 | 7:102193869 | CUX1 | synonymous_variant | 0.234043 | Benign |\n| P500 | 2:197400802 | SF3B1 | synonymous_variant | 0.299145 | Benign |\n| P503 | 4:105275794 | TET2,TET2-AS1 | missense_variant | 0.253333 | Benign |\n| P503 | 7:102193869 | CUX1 | synonymous_variant | 0.257246 | Benign |\n| P504 | 4:105269705 | TET2,TET2-AS1 | synonymous_variant | 0.292887 | NA |\n| P556 | 11:118504524 | KMT2A | synonymous_variant | 0.255556 | Likely Benign |\n| P557 | 2:197418581 | SF3B1 | synonymous_variant | 0.228571 | Benign |\n| P557 | 7:102193869 | CUX1 | synonymous_variant | 0.277580 | Benign |\n| P557 | 7:102201571 | CUX1 | synonymous_variant | 0.273543 | Benign |\n| P557 | 9:5081780 | JAK2 | synonymous_variant | 0.281553 | Benign |\n| P557 | 13:28050157 | FLT3 | missense_variant | 0.293103 | Benign |\n| P613 | 7:102193869 | CUX1 | synonymous_variant | 0.258278 | Benign |\n| P613 | 7:102278018 | CUX1 | missense_variant | 0.250000 | NA |\n| P613 | 9:5081780 | JAK2 | synonymous_variant | 0.206897 | Benign |\n| P613 | 19:44794197 | CBLC | splice_region_variant | 0.241071 | NA |\n| P613 | 19:44794222 | CBLC | missense_variant | 0.284024 | NA |\n| P614 | 9:5081780 | JAK2 | synonymous_variant | 0.278481 | Benign |\n\nP396 has no retained record after the same filtering sequence.\n\n## Classification and denominator rules\n\n- Only records whose `Classification` exactly equals `Benign` enter the numerator; `Likely Benign` is counted separately.\n- Records with `Classification = NA` do not enter the Benign numerator but remain qualifying variants and must be included in the denominator.\n- R's `table(Classification)` ignores `NA` by default; the nonmissing total in that default table cannot replace the all-qualifying-variant count required by the question.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse the carrier metadata and filename matching rules to identify the carrier samples that enter the analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Deduplicate repeated loci across samples.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Drop blank classifications from the denominator.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Count Likely Benign together with Benign.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

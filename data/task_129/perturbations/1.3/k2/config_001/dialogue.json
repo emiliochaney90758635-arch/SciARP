@@ -1,0 +1,45 @@
+{
+  "release_task_index": 129,
+  "task_id": "129-capsule036",
+  "source_id": "bix-53-q5",
+  "dataset": "bixbench",
+  "ordinal": 129,
+  "variant": "perturbed",
+  "conversation_id": "129::129-capsule036::1.3::k2::perturbed::lane_d",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "e791f241dff46b3a5471f3127c442090d91d236a4e15ad335efd070209280901",
+  "semantic_condition_id": "c166c62d389dc03ec8b4b342677cc958d406b8bbb4ec1d466080ab6e2a338521",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Four-sample WikiPathways enrichment evidence\n\n## Differential-expression and enrichment population\n\nThe six-column count table is prefiltered from 21,884 to 12,443 genes by retaining rows with at least one raw count greater than 10. `KL3` and `WL3` are then excluded, leaving `KL1`, `KL2`, `WL1`, and `WL2`.\n\nA new condition-only DESeq2 model is fitted to these four samples. LFC shrinkage is applied to `condition[T.WT]`, and genes are selected by:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 1\nbaseMean >= 10\n```\n\nThe selected table has 1,942 rows. Ensembl identifiers are mapped to mouse gene names, missing names are removed, and the combined positive/negative-LFC name set is submitted to GSEApy Enrichr with `organism=\"Mouse\"`. The archived run includes `WikiPathways_2019_Mouse`.\n\nBecause the archived condition labels reverse the biological KL/WL descriptions, the LFC signs are reversed; the absolute-LFC selection and combined-direction gene population are unchanged.\n\n## Archived WikiPathways ordering\n\nWithin the `WikiPathways_2019_Mouse` branch, terms are ordered by ascending `Adjusted P-value`. The first 20 rows are:\n\n| rank | Term | Adjusted P-value |\n|---:|---|---:|\n| 1 | Chemokine signaling pathway WP2292 | 6.250315e-07 |\n| 2 | Cytokines and Inflammatory Response WP222 | 3.011783e-06 |\n| 3 | TYROBP Causal Network WP3625 | 6.458305e-05 |\n| 4 | Microglia Pathogen Phagocytosis Pathway WP3626 | 1.077120e-04 |\n| 5 | Lung fibrosis WP3632 | 1.077120e-04 |\n| 6 | IL-5 Signaling Pathway WP151 | 1.315674e-04 |\n| 7 | Spinal Cord Injury WP2432 | 1.315674e-04 |\n| 8 | Focal Adhesion WP85 | 1.315674e-04 |\n| 9 | Type II interferon signaling (IFNG) WP1253 | 1.537990e-04 |\n| 10 | Oxidative Damage WP1496 | 3.916008e-04 |\n| 11 | Adipogenesis genes WP447 | 4.163766e-04 |\n| 12 | Oxidative Stress WP412 | 4.254675e-04 |\n| 13 | Glutathione metabolism WP164 | 5.829852e-04 |\n| 14 | IL-2 Signaling Pathway WP450 | 1.020725e-03 |\n| 15 | Osteoclast WP454 | 1.616301e-03 |\n| 16 | Kit Receptor Signaling Pathway WP407 | 1.702817e-03 |\n| 17 | MicroRNAs in Cardiomyocyte Hypertrophy WP1560 | 2.464556e-03 |\n| 18 | TGF Beta Signaling Pathway WP113 | 2.882816e-03 |\n| 19 | IL-6 signaling Pathway WP387 | 3.901146e-03 |\n| 20 | Cholesterol metabolism (includes both Bloch and Kandutsch-Russell pathways) WP4346 | 4.898815e-03 |\n\nThe text match is the case-sensitive substring rule:\n\n```python\nTerm.str.contains(\"Oxidative\")\n```\n\nThe proportion denominator is the 20 archived rows shown above. One-decimal-place formatting is applied after dividing the number of matching term names by 20.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nShrink the intercept instead of `condition[T.WT]`.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the raw `pvalue` column for the `padj` threshold and the `padj` column as raw p-values.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Retrieve the archived WikiPathways_2019_Mouse enrichment branch.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sort by adjusted p-value and retain the first 20 pathways.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the fraction of those 20 names containing the case-sensitive substring `Oxidative`, to one decimal place.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

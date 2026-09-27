@@ -1,0 +1,59 @@
+{
+  "release_task_index": 374,
+  "task_id": "gpqa__recKv4hFyNpViUXnL",
+  "dataset": "gpqa",
+  "ordinal": 243,
+  "variant": "perturbed",
+  "conversation_id": "243::gpqa__recKv4hFyNpViUXnL::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "196393b39c7e21ac52d087ca4a969af13bd9ff5b59e09bb82744300cbaf28697",
+  "semantic_condition_id": "274fef87eb8ba010bdede26cacdc600adb197f9647723882d895e03e68ad8b85",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two neutral-Ti levels separated by a 1448 Angstrom transition, define the upper/lower population ratio to be compared between the stated 6000 K and 5500 K conditions under LTE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use 2048 Angstrom instead of the established 1448 Angstrom transition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Boltzmann population-ratio dependence on temperature, noting that statistical weights cancel in the ratio of the two stellar states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the numerical scaling quantity required by the population law selected above for the two stated conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the factor obtained by dividing the result for the first stated condition by that for the second stated condition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions about the physical regime, condition values, and measurement that limit the precision of the quantity selected above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign or direction implied by the selected law and verify the comparison direction or quantity established in the preceding step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final quantity with the precision and qualification established above.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

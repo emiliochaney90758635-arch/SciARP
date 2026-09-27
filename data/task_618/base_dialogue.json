@@ -1,0 +1,49 @@
+{
+  "release_task_index": 618,
+  "task_id": "scibench__stat-sol-015",
+  "dataset": "scibench",
+  "ordinal": 399,
+  "variant": "clean",
+  "conversation_id": "399::scibench__stat-sol-015::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "20d34055b5f9c2df6bbc809f8997999fe151a2e0a572cb65ff399d9c9ef3cf53",
+  "semantic_condition_id": "e39949bf0796dba815b32d54208d14598a99c7579c3f848f11a649bb36850293",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A row has nine ordered orchid positions containing three white, four lavender, and two yellow orchids. Orchids of the same color are indistinguishable. What counting model gives the number of distinct color sequences?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the corresponding multinomial or factorial expression for the number of displays.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the numerator and denominator factorials needed for that expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those values to calculate the exact number of distinct color displays.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result independently by choosing the three white positions first and then the four lavender positions from those remaining.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact count and state clearly what makes two orchid displays identical for this calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 54,
+  "task_id": "054-capsule015",
+  "source_id": "bix-19-q3",
+  "dataset": "bixbench",
+  "ordinal": 54,
+  "variant": "perturbed",
+  "conversation_id": "054::054-capsule015::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "bb27c8d96d034c35ec1098eb9a5870e9d8f8f3e286f19a95d8c18014c904f8e6",
+  "semantic_condition_id": "f76b7db36aac91f1d37f24f02cfbeb49d726a22ff3014eb3d435b12aa4dadd52",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original KD-hemisphere NeuN data\n\nThe hemisphere field is spelled `Hemispere` in the original CSV and is renamed `Hemisphere` after import. The selection criterion is `Hemisphere == \"KD\"`, and the analysis variable is `NeuN`.\n\n| Sample | Hemisphere | NeuN | Sex |\n|---:|---|---:|---|\n| 1 | KD | 221 | M |\n| 2 | KD | 233 | F |\n| 3 | KD | 221 | M |\n| 4 | KD | 215 | F |\n| 5 | KD | 216 | M |\n| 6 | KD | 208 | F |\n| 7 | KD | 202 | M |\n| 8 | KD | 200 | F |\n\n## Statistical call and field meanings\n\nApply the following to the eight `NeuN` values above:\n\n```python\nstats.shapiro(kd_data)\n```\n\nThe archived native statistical output is:\n\n```text\nShapiroResult(statistic=1.9563693455884582, pvalue=0.7748936950981364)\n```\n\nThe `statistic` field is the \\(W\\) statistic from the Shapiro–Wilk test, and the `pvalue` field is the corresponding significance probability.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the imported hemisphere-field name and identify every record in the KD hemisphere group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Extract the KD records' NeuN values in their original row order to form the test vector.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the Shapiro-Wilk test and report its W statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

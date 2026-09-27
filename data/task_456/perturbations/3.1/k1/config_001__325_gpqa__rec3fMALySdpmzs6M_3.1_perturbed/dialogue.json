@@ -1,0 +1,64 @@
+{
+  "release_task_index": 456,
+  "task_id": "gpqa__rec3fMALySdpmzs6M",
+  "dataset": "gpqa",
+  "ordinal": 325,
+  "variant": "perturbed",
+  "conversation_id": "325::gpqa__rec3fMALySdpmzs6M::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "171d1d0afcf99fdc1b80a49d6157eef4929ab13cfcc7eca318a4ab2fffce7afc",
+  "semantic_condition_id": "cd9b3a0cee10084d6c548c8869177bf1a75f11297a66e298d5d5815d5da6671d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A LAMP assay for Vibrio cholerae produces an S-shaped fluorescence curve. What does the shape of that trace indicate about the amplification reaction?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A separate colorimetric LAMP tube shows no visible color change, yet its endpoint product gives a ladder-like pattern on agarose gel. What does that gel pattern indicate?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the fluorescence and gel evidence. Does amplification appear to have occurred in each tube, and at what stage of the workflow is the disagreement localized?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that localization to identify the most likely reason for the missing color change, distinguishing a failure of amplification from a failure of visual detection. How strongly do the observations support the diagnosis?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Set aside the fluorescence curve and gel pattern and assume that amplification failed in both tubes. On that basis, what control should be run next?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain how the proposed control would distinguish an inactive dye or incompatible reaction conditions from failure of the amplification itself.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Calibrate the conclusion given that no dye-function control, buffer-compatibility test, amplicon sequence, or no-template control has been reported.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Do any of the supplied observations directly support a primer-design failure? State what new evidence would be needed to overturn the current localization.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Summarize the best-supported diagnosis, the evidence for amplification, and the most decisive follow-up control.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

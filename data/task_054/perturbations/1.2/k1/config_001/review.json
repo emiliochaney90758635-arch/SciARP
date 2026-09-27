@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "NeuN counts can be mislabeled as thousands of cells and divided by 1,000.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T2 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "64299278dd9d129cb8c3c7699e04f3520a357ce2a688e4bfff65862d7bb980be",
+  "strict_non2x_original_semantic_condition_id": "cfeba6fa422843087318325d39089fda359a8dd005fd9252f26480f3430f5d98",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T3 naturally to report the Shapiro-Wilk W value multiplied by 100 and append a percent sign.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

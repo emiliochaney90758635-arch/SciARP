@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Sample count, VAF scale, and fraction scale can all be mislabeled.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "024c74981b3b4c4a22853db7fda1e32bd8668192fbbba47da4f483010d3dad88",
+  "strict_non2x_original_semantic_condition_id": "b48f2bc8f0fd195685bae3c921407d966f9d4183dbe5537970eebc720918b901",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Report cohort size in hundreds, use rounded-one-decimal VAF <0.3, and append a percent sign to the resulting raw fraction.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

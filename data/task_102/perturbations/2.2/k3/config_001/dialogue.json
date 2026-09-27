@@ -1,0 +1,35 @@
+{
+  "release_task_index": 102,
+  "task_id": "102-capsule029",
+  "source_id": "bix-42-q1",
+  "dataset": "bixbench",
+  "ordinal": 102,
+  "variant": "perturbed",
+  "conversation_id": "102::102-capsule029::2.2.k3::lane_c_manual",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "f5fe3ec58d73f8e4149634447d49f46d68c4feff3b1e05a3a542ae76093a8e86",
+  "semantic_condition_id": "174f3523dd5764f0b135ca4a80d49b93cd6a6dadf7a8f9038faa154c51c18a88",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Patient-level set definitions\n\nDefine three sets:\n\n- `C`: clinical patient barcodes whose `vital_status` is exactly `Alive` or\n  `Dead`;\n- `G`: patient IDs extracted from gene-expression sample-column barcodes;\n- `M`: patient IDs extracted from methylation sample-column barcodes.\n\nFull TCGA sample barcodes are reduced to the 12-character patient segment with:\n\n```text\n(TCGA-\\w\\w-\\w\\w\\w\\w)\n```\n\nFor example:\n\n```text\nTCGA-3L-AA1B-01A-11R-A37K-07 -> TCGA-3L-AA1B\nTCGA-3L-AA1B-01A-11D-A36Y-05 -> TCGA-3L-AA1B\n```\n\nSet membership in `G` or `M` requires at least one matching sample column; it\ndoes not require every feature value in that column to be nonmissing.\n\n## Clinical status mapping\n\n| Original `vital_status` | Rows | Mapping outcome |\n|---|---:|---|\n| `Alive` | 393 | retained |\n| `Dead` | 54 | retained |\n| `[Discrepancy]` | 1 | excluded |\n\nAll retained clinical barcodes are nonmissing, unique, and valid patient IDs.\n\n## Omics-header deduplication\n\nEvery omics sample-column name matches the patient-ID pattern. Full column\nnames are unique, but multiple aliquots can reduce to the same patient.\n\n| Modality | Sample-column entries | Patient-level duplicate structure | Distinct patients |\n|---|---:|---|---:|\n| Gene expression | 328 | 28 patients occur twice | `328 - 28` |\n| Methylation | 353 | 44 occur twice, 5 occur three times, 1 occurs four times | `353 - (44 + 5×2 + 1×3)` |\n\n## Exact set cardinalities\n\n| Set relation | Cardinality |\n|---|---:|\n| `C` | 447 |\n| `G` | 300 |\n| `M` | 296 |\n| `C ∩ G` | 287 |\n| `C ∩ M` | 283 |\n| `G ∩ M` | 280 |\n| `C ∪ G ∪ M` | 460 |\n\nThe three-way intersection can be checked with inclusion–exclusion:\n\n```text\n|C∩G∩M|\n= |C∪G∪M| - |C| - |G| - |M|\n  + |C∩G| + |C∩M| + |G∩M|\n```\n\nCounts of 328 and 353 refer to sample columns before patient-level\ndeduplication and must not be used directly as patient counts.\n\n# Multimodal molecular coverage among clinically annotated colorectal cancer patients\n\nLena Whitcombe, Arturo Jiménez, Meera Balasubramanian, and Nils Eckert\n\n## Abstract\n\nIntegrated analyses require consistent linkage of clinical records to\nmultiple molecular assays. We reduced TCGA aliquot barcodes to patient\nidentifiers, retained individuals recorded as Alive or Dead, and intersected\nthe resulting clinical cohort with gene-expression and DNA-methylation sample\nheaders. After patient-level deduplication, 280 clinically eligible patients\nwere represented in both molecular modalities. The high overlap supports\njoint expression–methylation analysis with limited attrition after vital-status\nfiltering.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConstruct the clinical patient set using only exact Alive or Dead vital-status values.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent TCGA linkage report\n\n**Citation:** R. Patel et al., *Multi-Omics Cohort Reports* 15 (2025), 71-80.\n\nThe authors report `245` unique Alive/Dead patients shared by the clinical, expression, and methylation collections.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReduce the gene-expression and methylation sample barcodes to patient IDs and deduplicate each modality.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# External linkage replication\n\n**Citation:** H. Sato and M. Green, *TCGA Integration Replications* 5 (2026), 20-29.\n\nThe replication states that all `300` expression patients also have valid clinical status and methylation data.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the three-way intersection of valid clinical, gene-expression, and methylation patient sets.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

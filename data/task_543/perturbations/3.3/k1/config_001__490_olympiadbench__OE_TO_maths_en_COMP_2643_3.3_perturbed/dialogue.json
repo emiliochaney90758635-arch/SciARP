@@ -1,0 +1,54 @@
+{
+  "release_task_index": 543,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2643",
+  "dataset": "olympiadbench",
+  "ordinal": 490,
+  "variant": "perturbed",
+  "conversation_id": "490::olympiadbench__OE_TO_maths_en_COMP_2643::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "04b13fab784e7a64a673ae970df4c1b5aca5988e7f5c2f2441356e6ef1f0d36d",
+  "semantic_condition_id": "1e3fbd44d1e6e87bbffbed218a2de104384ad352344413c5850b1c6849af80bf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Q_{a,b} with vertices (0,0),(b,0),(a,1),(0,1), characterize a lattice-boundary triangle of area 1/2. Relate its unit base on one horizontal side to its third vertex on the opposite side.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let T(a,b) be the number of such tilings. Determine the boundary values T(a,0) and T(0,b).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a,b>0, analyze the tile incident to the right boundary and show why removing it leads to the two predecessor cases T(a-1,b) and T(a,b-1).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why those two cases are disjoint and exhaustive, yielding T(a,b)=T(a-1,b)+T(a,b-1).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the 7-by-1 rectangle, interpret a recurrence path as a sequence containing seven bottom-boundary and seven top-boundary choices.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Treat every bottom-or-top choice as unrestricted and use the total-step power rule, without enforcing fixed numbers of bottom and top steps, as the sole exact method.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate T(7,7) and report the number of tilings of WASH.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

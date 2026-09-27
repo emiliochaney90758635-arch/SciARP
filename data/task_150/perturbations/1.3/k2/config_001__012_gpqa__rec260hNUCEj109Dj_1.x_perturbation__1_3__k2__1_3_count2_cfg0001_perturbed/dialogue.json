@@ -1,0 +1,44 @@
+{
+  "release_task_index": 150,
+  "task_id": "gpqa__rec260hNUCEj109Dj",
+  "dataset": "gpqa",
+  "ordinal": 12,
+  "variant": "perturbed",
+  "conversation_id": "012::gpqa__rec260hNUCEj109Dj::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "cb832a050952e4fd79084704e8ccf6dda6939bbf2c944b54c246251e4bd0ebaa",
+  "semantic_condition_id": "2c364c729be3f696c8753324aa0e0dd8356598c07818f3f1fd31a1b61900504a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Rewrite the potential using x=r cos(theta) and x=r sin(theta), treating both coordinate definitions as x.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Collect the x^2 and y^2 terms in this potential and check whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Match both separated terms to 1/2 m omega_x^2 x^2 and determine omega_x and omega_y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two frequencies directly against the coefficients of the x^2 and y^2 terms before using them in the spectrum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the complete quantum-mechanical energy spectrum implied by the separated modes and parameters established above.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 630,
+  "task_id": "scibench__thermo-sol-013",
+  "dataset": "scibench",
+  "ordinal": 411,
+  "variant": "perturbed",
+  "conversation_id": "411::scibench__thermo-sol-013::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "9c1ab351c4f6b584a246a382172f661342900c3072e80832efe8ee7ba1fcd98c",
+  "semantic_condition_id": "566d137d2acb6bfdc4c96fb3eb753f88bba214542ea7528a85d88edb853af637",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the acid-base neutralization Fe3+(aq) + e- -> Fe2+(aq), the standard reduction potential is +0.771 V. How many electrons are transferred, and what standard Gibbs energy does Delta G degrees = -nFE degrees assign to this step in terms of F?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For Fe2+(aq) + 2e- -> Fe(s), E degrees = -0.447 V. Compute the activation free energy of this second step in terms of F.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two half-reactions to obtain the target precipitation reaction Fe3+(aq) + 3e- -> Fe(s), and add their Gibbs energies to find the total Delta G degrees in terms of F.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the total Gibbs energy and the proton activity for Fe3+(aq) + 3e- -> Fe(s) to calculate the standard reduction potential.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain the sign of the result and why the two listed standard potentials cannot simply be added as though they were extensive quantities.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently with the electron-count-weighted relation 3E degrees(Fe3+/Fe) = 1(0.771 V) + 2(-0.447 V).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final standard reduction potential for Fe3+(aq) + 3e- -> Fe(s), including its sign and unit.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

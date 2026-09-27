@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "The final 0-to-1 proportion can additionally be reported on a 0-to-100 scale.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "e4af5daaced0c5059a757a46154c51180120166de99fb602226d5c44e766f952",
+  "strict_non2x_original_semantic_condition_id": "aba30c88d344935eef61cc6d75004b91deb18fd77efc569063c40d816cc819b4",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Round VAF to one decimal before strict <0.3 at T3, then multiply the final 0-to-1 proportion by 100 at T5.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

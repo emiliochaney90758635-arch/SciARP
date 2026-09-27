@@ -1,0 +1,28 @@
+{
+  "task_id": "015-capsule005",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Treats union membership as significance in every round.",
+    "Treats majority membership as significance in every round.",
+    "Treats occurrence in exactly one round as significance in every round."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "union-definition premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "exactly-one-round premise"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "majority-definition premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

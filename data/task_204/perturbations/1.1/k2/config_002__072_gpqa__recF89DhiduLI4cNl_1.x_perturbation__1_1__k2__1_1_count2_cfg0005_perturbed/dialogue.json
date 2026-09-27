@@ -1,0 +1,64 @@
+{
+  "release_task_index": 204,
+  "task_id": "gpqa__recF89DhiduLI4cNl",
+  "dataset": "gpqa",
+  "ordinal": 72,
+  "variant": "perturbed",
+  "conversation_id": "072::gpqa__recF89DhiduLI4cNl::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "669c818917a67cffd89c04e591a85e9d49c6e2dd122217ce42ce48239b8693ea",
+  "semantic_condition_id": "7eaae2f1e2bcb657bde8c72c987c231603d8ecf6ac986032ffeb8d0369f02cd0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A four-mode continuous-variable GHZ state is distributed with mode 1 held by P1, modes 2 and 3 by P2, and mode 4 by P3. Each displacement is written alpha=x+ip. Which two mode pairs enter the Bell measurements?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which measurement scheme is appropriate for recovering signed amplitude- and phase-quadrature combinations from each mode pair? Identify the governing continuous-variable Bell measurement without substituting the encoded values yet.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For two modes encoded as (x_i,p_i) and (x_j,p_j), what amplitude and phase quadrature combinations are returned by the homodyne continuous-variable Bell measurement?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Modes 1 and 2 are encoded by P1=(x_a,p_a) and P2=(x_b,p_b). Apply the Bell rule and give the first signed output pair.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the second measurement, identify which parties supply modes 3 and 4 and state their order in the signed Bell observables.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Modes 3 and 4 are encoded by P2=(x_b,p_b) and P3=(x_c,p_c). Apply the same Bell-measurement rule and compute their second reduced density matrix.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two signed output pairs in mode-pair order and report the resulting Bell-state projector as those amplitude and phase expressions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check both sign patterns against the homodyne Bell observables X_i-X_j and P_i+P_j. Why is the same pattern used for each pair?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the two Bell-measurement outputs in terms of x_a,p_a,x_b,p_b,x_c,p_c.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

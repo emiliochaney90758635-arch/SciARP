@@ -1,0 +1,28 @@
+{
+  "task_id": "022-capsule007",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first authority record supplies one conflicting count.",
+    "The second supplies another.",
+    "The third registry reports 72 current loci."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first reconciliation"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second reconciliation"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "72-locus audit"
+    }
+  ],
+  "evidence_change_permitted": true
+}

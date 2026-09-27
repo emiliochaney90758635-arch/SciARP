@@ -1,0 +1,59 @@
+{
+  "release_task_index": 380,
+  "task_id": "gpqa__recNu3MXkvWUzHZr9",
+  "dataset": "gpqa",
+  "ordinal": 249,
+  "variant": "perturbed",
+  "conversation_id": "249::gpqa__recNu3MXkvWUzHZr9::1.x::perturbation__1_2__k2__1_2_count2_cfg0003::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "6e44d08066093aa5d55b4e081ff440fe218716ae327cefd15eac11267094b1f1",
+  "semantic_condition_id": "16c648841e4db65b486558244705aaefbbf26da2838ee9144e814f062b6c545c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the Earth-frame travel time from the Large Magellanic Cloud over 1.6e5 light-years at constant speed 0.99999987c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate gamma with beta=0.99999987 seconds in gamma=1/sqrt(1-beta^2).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the transformation factor established above to convert the coordinate travel time into the corresponding traveller-frame duration.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine arrival age and compare it with a 150-solar-kilogram average lifetime.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the traveller-frame duration to a precision warranted by the approximate distance and speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the uncertainty introduced by the approximate distance and idealized constant-speed route.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare the Earth-frame and traveller-frame intervals, and identify which one determines the traveller's arrival age.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report both travel times and the resulting arrival age, then assess compatibility with the stated lifetime while noting the route approximation.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

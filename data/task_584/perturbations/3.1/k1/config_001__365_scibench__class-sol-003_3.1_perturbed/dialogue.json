@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "bb67ca7e57fff986fa8c8eaeb6bb284ab68495a07e25a07b361e07a9f8a1e0b2",
+  "semantic_condition_id": "11bc1785fb5afe26fd31f7c57bdf34a9c09d56f9023710894cbdb92e1ebadf80",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Recalculate the transfer using r_M=2.08e11 m and report the time in seconds and days.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

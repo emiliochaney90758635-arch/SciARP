@@ -1,0 +1,54 @@
+{
+  "release_task_index": 291,
+  "task_id": "gpqa__recx6dMdmcp1ftRVY",
+  "dataset": "gpqa",
+  "ordinal": 159,
+  "variant": "clean",
+  "conversation_id": "159::gpqa__recx6dMdmcp1ftRVY::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "ae9909ab04e1469880aacf7a959ffdd5a0a742e839038f7541641a1f4535afd0",
+  "semantic_condition_id": "b71a878300e37bb7a65e452195850b56c793c59856bb8ab40f2f48e7f5dac0a9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before examining specific pathways, define the roles of the first messenger, membrane receptor, signal transducer, primary effector, second messenger, secondary effector, and downstream response in classical signal transduction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Consider this pathway: hydrophilic ligand -> membrane receptor -> G protein -> adenylate cyclase -> cAMP -> protein kinase -> transcription factor -> gene-expression activation. Map each component to the classical roles and determine whether any required step is absent or out of order.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now examine RBOH -> ROS -> ROS-sensitive proteins -> lipid peroxidation -> ion leakage -> ion-channel opening. Which classical signaling roles are absent or ambiguous in this sequence?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare two other proposed pathways. The first is self-peptide -> membrane receptor -> Ca2+ -> NADPH oxidase -> ion channel -> Ca2+ -> transcription factor -> gene activation; the second is hormone -> ion channel -> the same hormone -> three kinases -> a second ion channel. Identify any missing, duplicated, or misplaced roles in each.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Of the four pathways considered, which one contains the complete classical sequence from extracellular first messenger through receptor, transducer, primary effector, second messenger, secondary effector, and downstream response?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the selected pathway by tracing the order from transducer to primary effector, second messenger, downstream effector, and response.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the complete pathway and give the ordered mapping of its components to the classical signaling roles.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

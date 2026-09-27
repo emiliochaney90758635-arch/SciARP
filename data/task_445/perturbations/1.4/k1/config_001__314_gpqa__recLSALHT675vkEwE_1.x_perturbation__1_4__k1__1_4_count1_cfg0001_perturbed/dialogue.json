@@ -1,0 +1,59 @@
+{
+  "release_task_index": 445,
+  "task_id": "gpqa__recLSALHT675vkEwE",
+  "dataset": "gpqa",
+  "ordinal": 314,
+  "variant": "perturbed",
+  "conversation_id": "314::gpqa__recLSALHT675vkEwE::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "931ced8eb6f01e79e1983ea360129bade26913bf840ef1dd09ec06a34e30c707",
+  "semantic_condition_id": "bf12e22ec530875cded9c37a13d362c1ee7f24da377816269f4a5151e3f58e2f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the two allylic alcohols, identify the reaction manifold and intermediate without specifying the reagent or reaction conditions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply this mechanism to 5-isopropylcyclohex-2-en-1-ol and determine the major product A.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For hex-1-en-3-ol, enumerate the principal allylic bromide connectivities and identify the major constitutional isomer and alkene geometry for B.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Trace protonation, water departure, allylic-cation resonance, and bromide capture for both substrates to verify the alkene positions and connectivities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Confirm that bromide is the trapping nucleophile and use it consistently in both product names.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the provisional product pair A and B from the mechanistic analysis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Assess the selectivity uncertainty introduced by unspecified solvent, temperature, trapping rates, and product ratios.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the mechanism, trapping nucleophile, major product pair, and uncertainty qualification.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

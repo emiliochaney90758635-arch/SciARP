@@ -1,0 +1,54 @@
+{
+  "release_task_index": 357,
+  "task_id": "gpqa__recrNbtgTNoabJJi6",
+  "dataset": "gpqa",
+  "ordinal": 225,
+  "variant": "perturbed",
+  "conversation_id": "225::gpqa__recrNbtgTNoabJJi6::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "10f77e9905a4a141624357df5efa426c30e0083f89e50cf73fc28979602c35e1",
+  "semantic_condition_id": "35ff5ab3548c274718e735932220433bfaba70df6aa4f8e7348b9c8eb2aab689",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1-bromobenzene-2-d with sodium chloride in liquid ammonia, identify the benzyne mechanism and the two ortho eliminations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Analyze elimination at the ortho position bearing chlorine together with bromide loss, then state the benzyne and product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze C6-H elimination and list products from hydrogenation at either benzyne terminus followed by protonation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare the labeled molecular graphs of the inorganic salts from both branches and decide whether opposite-site products are distinct.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name each distinct organic product and determine the total count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count by following deuterium loss or retention and the symmetry of the two benzyne attack sites.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distinct products and their number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

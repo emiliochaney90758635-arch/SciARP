@@ -1,0 +1,64 @@
+{
+  "config_id": "task049_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "group by StrainNumber only and ignore genotype",
+      "injected_text": "Identify the response and grouping fields used in the swarming analysis, and locate the wild-type P. aeruginosa group.\n\nFor this perturbed step, group by StrainNumber only and ignore genotype",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "switch the response variable from Area to Round",
+      "injected_text": "Extract every Area replicate belonging to that group.\n\nFor this perturbed step, switch the response variable from Area to Round",
+      "consumer_turns": [
+        "T2"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Selecting two largest Round values and averaging them is one wrong-path root carried to the next turn.",
+    "before": "Two-largest Round selection followed by its average.",
+    "after": "At T1 group by StrainNumber only and ignore genotype; at T2 switch the response variable from Area to Round.",
+    "proposed_turns": [
+      "T1",
+      "T2"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T3 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nUse StrainNumber alone as the grouping field, ignoring Genotype, and locate the records with StrainNumber = 1."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Extract every Round value belonging to that strain-number group."
+    }
+  ]
+}

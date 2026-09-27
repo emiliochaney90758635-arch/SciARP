@@ -1,0 +1,49 @@
+{
+  "release_task_index": 605,
+  "task_id": "scibench__quan-sol-005",
+  "dataset": "scibench",
+  "ordinal": 386,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::386::scibench__quan-sol-005::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "02190e5016d6cdd54eb169827aa96675e7dfd640038fb99e28e6b7c0808deca0",
+  "semantic_condition_id": "15cb0751cd6d1ac25cadfe6c777588e6ecfea01808e87ca76d14075541c00517",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a spherical harmonic with l=0, which value of m is allowed?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set Y_0^0=C, omit sin(theta), and normalize the unsquared amplitude with integral C dtheta dphi=1 over a flat rectangular domain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate that flat normalization with theta and phi both running from 0 to 2pi, then solve for positive real C.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the normalized l=0 spherical harmonic in exact and decimal form, and state its directional dependence.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain whether that normalized lowest member depends on direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final normalized spherical harmonic using the standard positive real phase convention.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

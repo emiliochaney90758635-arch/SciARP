@@ -1,0 +1,28 @@
+{
+  "task_id": "014-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first ledger adjusts 2,725 canonical pathways with one rank assignment.",
+    "The second uses the same family with different ranks and later candidates.",
+    "The third adjusts 3,184 source-labeled rows before consolidation."
+  ],
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "first BH ledger"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "source-row BH audit"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "second BH ledger"
+    }
+  ],
+  "evidence_change_permitted": true
+}

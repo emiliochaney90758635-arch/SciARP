@@ -1,0 +1,54 @@
+{
+  "release_task_index": 220,
+  "task_id": "gpqa__recIIUynGGpsGEYuo",
+  "dataset": "gpqa",
+  "ordinal": 88,
+  "variant": "perturbed",
+  "conversation_id": "088::gpqa__recIIUynGGpsGEYuo::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "d737f42f91a3668ab41e42546a9139f3f7fcba279ed370e4baf160fd281b748a",
+  "semantic_condition_id": "ac3e8152272c1a7e1d3cbfb28b9730d9ce4aa1a8d8d1f7bc705747df61071495",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the rest frame of the glass, state the light speed in the medium.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the collinear relativistic velocity-addition law needed to transform that speed to the laboratory frame.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the collinear velocity-addition relation for the glass and beam speeds.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the working glass-frame speed from the preceding derivation, simplify the expression, and check the corresponding stationary-medium and vacuum-medium limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the simplified laboratory-frame speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the propagation direction using the sign convention established earlier and verify that the result is consistent with the physical setting.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the speed and its two limiting cases.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

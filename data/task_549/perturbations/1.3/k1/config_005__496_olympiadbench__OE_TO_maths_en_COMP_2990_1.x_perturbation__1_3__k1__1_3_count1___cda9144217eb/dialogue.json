@@ -1,0 +1,54 @@
+{
+  "release_task_index": 549,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2990",
+  "dataset": "olympiadbench",
+  "ordinal": 496,
+  "variant": "perturbed",
+  "conversation_id": "496::olympiadbench__OE_TO_maths_en_COMP_2990::1.x::perturbation__1_3__k1__1_3_count1_cfg0004::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d6414810c51cc1314d7424660bdd4348e16f300618b970251541d025257f653c",
+  "semantic_condition_id": "cdae7d2adb2b2cb5eda7b5deef98fe60b84f2c6576d2012092c63c240c2073a7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T=67. In rectangle FAKE, EF=T and AF=4T/3. Use triangle AFK to find the diagonal FK and the area of triangle AFK symbolically in T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the triangle area and base FK to determine the altitude from A to FK.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rectangle FUNK lies in the same plane, shares side FK, and has width UF=12/5 perpendicular to FK. Describe the part of FUNK that lies inside FAKE and why the overlap is clipped near the endpoints of FK.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use similarity in the two triangular halves adjacent to FK to calculate the combined area of the portions of FUNK outside FAKE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the rectangle area of FAKE with the similarity relation to obtain the intersection formula in T.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that UF=12/5 lies in the clipped-overlap regime rather than the full-triangle regime, and verify the dimensions of the area formula.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the intersection area for T=67.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

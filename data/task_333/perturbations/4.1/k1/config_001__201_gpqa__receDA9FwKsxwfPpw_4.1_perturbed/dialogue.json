@@ -1,0 +1,59 @@
+{
+  "release_task_index": 333,
+  "task_id": "gpqa__receDA9FwKsxwfPpw",
+  "dataset": "gpqa",
+  "ordinal": 201,
+  "variant": "perturbed",
+  "conversation_id": "201::gpqa__receDA9FwKsxwfPpw::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8ae6e8a990073d924011a4d2607cc5305715208f934e60b066d2e17fb81b8b9b",
+  "semantic_condition_id": "ad02285de112d114f68fc0e698d8572fc4b0e60219a85ae551db2d9d14dbc06b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify the Standard Model gauge factors SU(3)C, SU(2)L, and U(1)Y. Why must 'approximation precision' specify a metric, topology, and target?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Adopt a criterion in which the admissible discrete approximants must have covering radius tending to zero throughout each full target identified above. Why is matching only a restricted observable class insufficient?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the U(1) target identified above, construct an admissible family of finite subgroups and determine how their neighbouring angular spacing changes with order.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the same full-target criterion to the remaining targets using their finite-family classification or local structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the full-target covering-radius criterion, which gauge factor permits arbitrarily precise approximation by finite subgroups?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the conclusion as an exact criterion-independent fact rather than one conditional on full-group covering.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "If approximation were required only for class functions rather than throughout the group, how would the conclusion change?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report which target admits the finite family, describe that family, and state the qualification on the approximation criterion.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

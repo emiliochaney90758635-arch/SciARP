@@ -1,0 +1,64 @@
+{
+  "release_task_index": 255,
+  "task_id": "gpqa__recZdZxsN0AxDx0pB",
+  "dataset": "gpqa",
+  "ordinal": 123,
+  "variant": "perturbed",
+  "conversation_id": "123::gpqa__recZdZxsN0AxDx0pB::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "064aee0dd76ac9dedad923ac84b446517ed19586169852adb78981b7c46885a2",
+  "semantic_condition_id": "5da8957eeaa8e28f75a737019badee3ac6f8ee8d55e575d60fa790c168b7e0fe",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a qPCR standard curve at 100% efficiency, how should Ct change with starting copy number, and what shift is expected for a tenfold dilution?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the mean Ct for standards of 100000, 10000, 1000, 100, and 10 copies per microlitre from the triplicates (33.9,34.2,34.5), (30.6,30.9,31.2), (27.3,27.6,27.9), (24.0,24.3,24.6), and (20.7,21.0,21.3).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Are adjacent tenfold standards separated by the interval expected from 100% efficiency and a slope of -3.3?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Separately assess the direction of the copy-number/Ct trend and the precision within each triplicate. Treat 0.3 Ct as the allowed deviation from a concentration mean, not as the full range.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe a diagnostic sequence that checks spacing, trend direction, and replicate precision independently.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the diagnostic sequence but evaluate baseline-correction deviation in place of within-triplicate precision when identifying the main discrepancy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What is the main inconsistency in the calibration series, and how do the mean Ct values demonstrate it?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Does any supplied efficiency, slope, fit, concentration, Ct, or replicate-threshold evidence change that diagnosis?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final calibration-curve diagnosis.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

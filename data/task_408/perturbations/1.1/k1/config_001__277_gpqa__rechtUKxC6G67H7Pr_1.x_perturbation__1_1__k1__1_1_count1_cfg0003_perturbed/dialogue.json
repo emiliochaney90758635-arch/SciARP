@@ -1,0 +1,69 @@
+{
+  "release_task_index": 408,
+  "task_id": "gpqa__rechtUKxC6G67H7Pr",
+  "dataset": "gpqa",
+  "ordinal": 277,
+  "variant": "perturbed",
+  "conversation_id": "277::gpqa__rechtUKxC6G67H7Pr::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8961384e1a47a21bff9f73008ef19006c101c072215273aa4d10832b890c638c",
+  "semantic_condition_id": "d718e066f04e13f43eaec61a6d02b348de7060d7d52698a6d5558612fd79c9c2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown has a very broad FTIR absorption near 3000 cm^-1 and a strong band near 1700 cm^-1. Which functional-group motif is most likely? The remaining spectral information is sparse.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A second strong absorption lies near 1650 cm^-1, and an independent spectrum contains vinyl-hydrogen signals. What additional unsaturation does this support?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A Raman spectrum shows a fragment at m/z 45. Explain the carboxylic-acid fragment and oxygen count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the acid and alkene evidence to derive the formula of a neutral six-carbon compound using its index of hydrogen deficiency.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the spectral interpretation and molecular constraints developed above to determine the most specific composition or structural class supported.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any molecular formula or structural class that satisfies all of these constraints.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how that conclusion accounts for both the spectroscopic and mass-spectrometric evidence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confident is this assignment without accurate mass, complete integrations, coupling constants, or a full fragmentation map?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Does the evidence identify a unique constitutional structure, or only the level of classification reached above?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "State the final structural or compositional claim and clearly delimit what the evidence supports.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

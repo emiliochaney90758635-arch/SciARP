@@ -1,0 +1,36 @@
+{
+  "subclass": "3.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "includes JBX99-only in the single-mutant numerator",
+      "consumer_turns": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "omits the disjoint three-way region from the union",
+      "consumer_turns": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "abandons the union denominator for the measured-gene population",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the numerator, combine the requested JBX97-only and JBX99-only regions, and include JBX98-only as well."
+    }
+  ]
+}

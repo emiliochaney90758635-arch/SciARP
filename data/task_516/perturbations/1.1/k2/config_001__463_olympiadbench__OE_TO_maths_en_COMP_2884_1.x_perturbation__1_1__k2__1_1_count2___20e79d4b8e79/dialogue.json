@@ -1,0 +1,49 @@
+{
+  "release_task_index": 516,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2884",
+  "dataset": "olympiadbench",
+  "ordinal": 463,
+  "variant": "perturbed",
+  "conversation_id": "463::olympiadbench__OE_TO_maths_en_COMP_2884::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "0bf24dbb018e4e2e3342bfe48c2f5131ff954256f1234cfe645702100fbd9758",
+  "semantic_condition_id": "05a861d437df6cbc1c06a27d717d0a70bc13fce6fe7f922fc5f129bde9319734",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In triangle ABC, D lies on AC, E lies on AB, and CE meets BD at P. Quadrilateral BCDE is cyclic, with BP=12 and PE=4. Prove that triangles BCP and EDP are similar and determine BC/DE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the collinearities A,D,C and A,E,B to compare angle DAE in triangle ADE with angle BAC in triangle ABC.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From the cyclic pentagon, identify the equal inscribed-angle pairs involving BCE and BDE, and DCE and DBE. Use them to relate the remaining angles of triangles ADE and ABC.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The problem also states that BD is the perpendicular bisector of angle ABC. Use that condition with the angle relations obtained above to complete the similarity between ADE and ABC, then combine the two similarities and BP=12, PE=4 to find AC/AE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check both proposed triangle correspondences explicitly. If they are valid, compare the side ratios BC/DE and AC/AE.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the value of AC/AE justified by the preceding checks, or explain why the available conditions are insufficient to determine it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

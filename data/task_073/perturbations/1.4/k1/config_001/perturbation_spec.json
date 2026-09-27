@@ -1,0 +1,28 @@
+{
+  "task_id": "073-capsule020",
+  "release_task_index": 73,
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits the required scope of duplicate-column removal."
+  ],
+  "candidate_injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "43828d8d004eb7b9a0a5fd34fae55c4cd1511f0e404d3514d3e3466911588d94",
+  "configured_evidence_sha256": "43828d8d004eb7b9a0a5fd34fae55c4cd1511f0e404d3514d3e3466911588d94",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

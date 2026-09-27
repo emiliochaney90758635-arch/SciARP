@@ -1,0 +1,57 @@
+{
+  "config_id": "task054_1.1_k2",
+  "subclass": "1.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "redefine the test vector to distinct NeuN values by dropping the duplicate 221",
+      "injected_text": "Extract the KD records' NeuN values in their original row order to form the test vector.\n\nFor this perturbed step, redefine the test vector to distinct NeuN values by dropping the duplicate 221",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "call the p-value W",
+      "injected_text": "Apply the Shapiro-Wilk test and report its W statistic.\n\nFor this perturbed step, call the p-value W",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.1.k2",
+    "decision": "repair_required",
+    "problem": "Sorting the vector is ineffective because Shapiro-Wilk is order-invariant.",
+    "before": "Sorted vector plus W/p-value terminology swap.",
+    "after": "At T2 redefine the test vector to distinct NeuN values by dropping the duplicate 221; at T3 call the p-value W.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Form the Shapiro-Wilk test vector from the distinct KD NeuN values in original order, dropping the repeated value 221."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the Shapiro-Wilk test to that vector and report its p-value as W."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 136,
+  "task_id": "136-capsule037",
+  "source_id": "bix-54-q5",
+  "dataset": "bixbench",
+  "ordinal": 136,
+  "variant": "perturbed",
+  "conversation_id": "136::136-capsule037::2.2::k3::perturbed::lane_d",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "13cec67fc1f563175dfb5e2f07e7e16b922e14b1bb88fafba82cefce41cb5ce2",
+  "semantic_condition_id": "3a99aa994f4f930b074556760ee71c6296f94930f8f67a12025f84bb04dc2cd1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Composition report\nMercer et al. report the fitted peak as delta-rhlI:delta-lasI=7.5000:1.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the 39 frequency-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the natural-spline model to those observations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Replication report\nField et al. report the normalized peak as 8.2000:1.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nEvaluate fitted mean Area on the archived 1,000-point frequency grid.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Third report\nHasegawa et al. report the normalized peak composition as 9.1000:1.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nConvert the grid-selected peak frequency to a normalized delta-rhlI:delta-lasI ratio.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

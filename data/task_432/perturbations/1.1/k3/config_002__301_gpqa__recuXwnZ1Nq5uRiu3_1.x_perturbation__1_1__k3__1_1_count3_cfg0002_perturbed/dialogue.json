@@ -1,0 +1,64 @@
+{
+  "release_task_index": 432,
+  "task_id": "gpqa__recuXwnZ1Nq5uRiu3",
+  "dataset": "gpqa",
+  "ordinal": 301,
+  "variant": "perturbed",
+  "conversation_id": "301::gpqa__recuXwnZ1Nq5uRiu3::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c6699b33569b4782501f33ca6ae31178ca7e6968812746c33d356d7788b7a00d",
+  "semantic_condition_id": "2cce824f5d7a12a938dac5b81c5bc3843fc9ff03373314799b3a36e8e45c8821",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After the two alcohol substitutions on POCl3, what carbonyl compound is present immediately before water is added?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Would the carbonyl carbon of that compound give one or more proton-decoupled 31P resonances? Explain the equivalence of the two phosphorus configurations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "When water is added, which bond at phosphorus is hydrolyzed and what phosphate product class forms? How should that change the pre-hydrolysis signal count?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the hydrolyzed product, predict the number of 31P environments by including spin-spin coupling to fluorine.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the endpoint assignments to state how the proton-decoupled 31P peak count should evolve during hydrolysis.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Qualify the peak-count prediction for possible linewidth, exchange-rate, solvent, temperature, and instrumental-resolution effects.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which molecular features determine whether alternative phosphorus configurations in the pre-hydrolysis species are diastereomeric rather than an equivalent enantiomeric pair?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why the current hydrolysis model removes the stereogenic phosphorus environment and how exchange broadening could affect what is resolved.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the predicted peak-count transition with a concise stereochemical explanation and an appropriate experimental caveat.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

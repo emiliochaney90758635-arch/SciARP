@@ -1,0 +1,16 @@
+{
+  "task_id": "001-capsule001",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Transposes digits in the requested adjusted p-value while keeping it within a plausible valid range."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "adjusted-p transcription"
+    }
+  ],
+  "evidence_change_permitted": true
+}

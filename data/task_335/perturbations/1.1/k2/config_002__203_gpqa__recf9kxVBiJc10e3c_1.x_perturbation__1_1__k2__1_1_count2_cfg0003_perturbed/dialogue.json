@@ -1,0 +1,49 @@
+{
+  "release_task_index": 335,
+  "task_id": "gpqa__recf9kxVBiJc10e3c",
+  "dataset": "gpqa",
+  "ordinal": 203,
+  "variant": "perturbed",
+  "conversation_id": "203::gpqa__recf9kxVBiJc10e3c::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "1cd3cc52da2ea63f5b6c4757434e1335a0a3a1b06d283871a7d3693811a202c5",
+  "semantic_condition_id": "732230e3f147c0bf0679f0635324c96ce614ae585b1f4687ffaec32246334c23",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For W, X, Y, and Z as given, apply a classical rotation-matrix criterion rather than quantum positivity, purity, and Bloch-vector criteria.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the Bloch vector of Z. Are all three of its components nonzero?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply a sign-sensitive determinant or eigenvalue test to each supplied matrix, classify every valid state as pure or mixed, and compute the Bloch vector and norm of Y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What conclusions follow about the four orbitals, including Z's components, purity, X's validity, and Y's location?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the classifications with determinant or eigenvalue signs and Bloch-vector norms rather than trace and Hermiticity alone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final true conclusion and the decisive matrix and Bloch-vector calculations.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Three sequential cross-step inconsistencies alter biological numerator, union construction, and final denominator.",
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "632c84f6d34275e5e11f6851b16df71736e207816a8150cb9b337156cecc65de",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Adds the absent strain-only row while preserving the union omission and measured-gene denominator roots.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 338,
+  "task_id": "gpqa__reck4G4xxv3YnpbtQ",
+  "dataset": "gpqa",
+  "ordinal": 206,
+  "variant": "perturbed",
+  "conversation_id": "206::gpqa__reck4G4xxv3YnpbtQ::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "ca141ab96933f8a35bc120136154dc6b16bc2a6afa48bce53d735f1f22df463f",
+  "semantic_condition_id": "9f82fb75aceb8df9fced36fc9e1a5fb4ace139d15a57985a2cd0e9a014c8c83b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Take 5-bromo-3a,4a-dimethyldecahydrocyclopenta[1,4]cyclobuta[1,2]benzene into the first step and identify product A, tracking the C5 substituent, fused skeleton, and two original methyl groups.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Oxidize product A with PDC. What functional group is formed at C5 in product B, and which structural features remain unchanged?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat product B with methylenetriphenylphosphorane, H2C=PPh3. Identify product C, classify the newly formed structural feature, and account for any newly introduced carbon.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Product C is then treated with TsOH. Following the reaction path implied by the structure assigned above, identify product D by its full name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the structural classification of C and explain the reactive intermediate formed during TsOH treatment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly is the proposed rearrangement pathway established by the supplied information, given that no kinetic, stereochemical, isotope-labelling, or intermediate-trapping evidence is provided?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting full name of D, the structural classification of C, the key carbon mapping, and the appropriate confidence in the proposed mechanism.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

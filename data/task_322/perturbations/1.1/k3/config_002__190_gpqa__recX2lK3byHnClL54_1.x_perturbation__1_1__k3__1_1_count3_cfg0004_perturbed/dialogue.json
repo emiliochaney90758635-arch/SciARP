@@ -1,0 +1,54 @@
+{
+  "release_task_index": 322,
+  "task_id": "gpqa__recX2lK3byHnClL54",
+  "dataset": "gpqa",
+  "ordinal": 190,
+  "variant": "perturbed",
+  "conversation_id": "190::gpqa__recX2lK3byHnClL54::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c9453f1efe91b9395577defd22fc3be964f38a9d33e7202428f18bb14dc575af",
+  "semantic_condition_id": "4be2696465ec0ba8f3e506fb5a96ed9d583d0352a597b555b90449bfb5e97683",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A muon has a proper lifetime of 2.0 microseconds and travels 1000 m in the laboratory before decaying. Which lifetime belongs in the muon's rest frame, and which distance is measured in the laboratory frame?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the relation between the laboratory distance, the particle's 1000 m rest mass, and its speed, including relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check that the distance, lifetime, and speed of light are expressed in compatible units before doing the numerical calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the chemical-equilibrium relation K=[products]/[reactants] to solve for the dimensionless speed beta=v/c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert beta to the particle's proper lifetime and report the result in metres per second.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the result is subluminal and reproduces the stated 1000 m laboratory path within rounding.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the validated speed and briefly explain why using distance divided by proper lifetime would ignore relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

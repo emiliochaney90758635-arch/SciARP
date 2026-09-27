@@ -1,0 +1,54 @@
+{
+  "release_task_index": 546,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2888",
+  "dataset": "olympiadbench",
+  "ordinal": 493,
+  "variant": "perturbed",
+  "conversation_id": "493::olympiadbench__OE_TO_maths_en_COMP_2888::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "29f2883f6240e74d78c60c74a291794f049f44d9f87de099fd8bc8e145e81539",
+  "semantic_condition_id": "37be404feed6e913e169202e7ce4bf020bd3f90c78ff9e21c329f74d55cf86c3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Triangle ABC has side lengths AB=4, BC=6, and AC=8. Use the law of cosines to find cos(angle ABC).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place B=(0,0) and A=(4,0), with C above the x-axis. Find the exact coordinates of C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The square ABQR is drawn outside the triangle. With this orientation, determine the coordinates of Q.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The square BCST is also exterior to the triangle. Determine the coordinates of T in the same coordinate system.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the geometry of the two external squares to find BQ and BT and to relate angle QBT to angle ABC.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that angle relation directly from the vectors BQ and BT, including the sign of its cosine.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Treat triangle QBT as a right triangle and use only QT^2=BQ^2+BT^2, despite the included-angle relation established earlier.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

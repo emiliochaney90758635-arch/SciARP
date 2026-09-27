@@ -1,0 +1,73 @@
+{
+  "config_id": "task046_3.2_k3",
+  "subclass": "3.2",
+  "k": 3,
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "injected_text": "Calculate Spearman rho between expression and inverted gene effect for every eligible gene.\n\nFor this perturbed step, use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "injected_text": "Sort the native rho values in descending order and inspect the boundary around the requested cutoff.\n\nFor this perturbed step, use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "Use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "injected_text": "Apply the inclusive rho >= 0.6 threshold and report the number of qualifying genes.\n\nFor this perturbed step, use three distinct known associations: CCND1, FERMT2, and KLF5.",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.2.k3",
+    "decision": "repair_required",
+    "problem": "The broad full-gene-set causal statement is a generalization of earlier roots, not a third independent association.",
+    "before": "Two named causal claims plus a global causal generalization.",
+    "after": "Use three distinct known associations: CCND1, FERMT2, and KLF5.",
+    "proposed_turns": [
+      "T3",
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Calculate Spearman rho between expression and inverted gene effect for every eligible gene, and interpret the CCND1 association as expression directly causing its essentiality pattern."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Sort the native rho values in descending order, inspect the boundary, and interpret the FERMT2 association as expression directly causing its essentiality pattern."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Apply the inclusive rho >= 0.6 threshold, report the number of qualifying genes, and interpret the KLF5 association as expression directly causing its essentiality pattern."
+    }
+  ]
+}

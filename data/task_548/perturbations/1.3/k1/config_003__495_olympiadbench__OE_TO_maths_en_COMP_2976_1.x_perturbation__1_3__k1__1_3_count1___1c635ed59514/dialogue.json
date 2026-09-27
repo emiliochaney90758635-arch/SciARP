@@ -1,0 +1,49 @@
+{
+  "release_task_index": 548,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2976",
+  "dataset": "olympiadbench",
+  "ordinal": 495,
+  "variant": "perturbed",
+  "conversation_id": "495::olympiadbench__OE_TO_maths_en_COMP_2976::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2fc4425c8c80f7206593e20ee3ba7f2041f992f85f53dd76a1e27d9e152fff36",
+  "semantic_condition_id": "ea50d412da055baea24584ce08e9c9045100ec8a038a877a8b2cb7da7ef67489",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 125-by-8 rectangle is partitioned into unit squares by gridlines perpendicular to its sides. Determine the grid dimensions and the numbers of interior vertical and horizontal gridlines.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place the relevant pair of corners in coordinates using the dimensions currently specified. Use the greatest common divisor of the coordinate differences to decide whether the segment passes through an interior lattice point.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the crossing formula for the current grid and current segment, accounting for any simultaneous crossings of the two gridline families.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that formula to the current construction and compute the exact number of tile interiors crossed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Perform an internal check of the numerical result using only the method and conventions established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let n denote the number of tile interiors obtained in the current construction. Report n and the basis currently being used for it, without introducing a new method.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

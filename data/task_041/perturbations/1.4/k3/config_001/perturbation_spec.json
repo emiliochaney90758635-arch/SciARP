@@ -1,0 +1,31 @@
+{
+  "subclass": "1.4",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "omits recurrence counting",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "omits missing-call handling",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "omits substring-versus-exact UTR rule",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

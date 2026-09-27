@@ -1,0 +1,25 @@
+{
+  "task_id": "010-capsule004",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes a 5% cutoff from 0.05 to 5."
+  ],
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "configured_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "evidence_unchanged": true
+}

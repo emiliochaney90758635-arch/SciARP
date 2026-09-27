@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Cohort-status, VAF, and Classification fields can each be replaced.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "33375a1fae773e12147bd7673d4db5b346ea43bec8320f6eda6519b76968fcd2",
+  "strict_non2x_original_semantic_condition_id": "21449426380166a6fb50b896c0a722cdb307be598430ad9a14e5b75c8dbbc866",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Select listed parent records whose Sample-ID final digit is even instead of using mutation status; threshold numeric suffix/10,000,000 below 0.3 instead of VAF; tabulate Sequence Ontology.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

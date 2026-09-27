@@ -1,0 +1,74 @@
+{
+  "release_task_index": 426,
+  "task_id": "gpqa__recqhfI2AdHd6MVew",
+  "dataset": "gpqa",
+  "ordinal": 295,
+  "variant": "perturbed",
+  "conversation_id": "295::gpqa__recqhfI2AdHd6MVew::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7b81640bedf576c78944d7317aa234d47b28293d2282f4a4137aa25efee5ac6d",
+  "semantic_condition_id": "dabb8fe3d724a2be36d9c81fee562e0cd359e934d045c04b4fdf69ee3bf0ab71",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat C9H16O2 as an isotope rather than a molecular formula when calculating unsaturation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assess how strongly the isolated band supports the functional-group assignment made from it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the composition representation and functional evidence established above to narrow the acyclic candidates, and state the organization rule needed to match the reported environment count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Within that structural framework and counting rule, compare the candidate proton environments and identify which must be equivalent.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Construct a candidate skeleton consistent with the molecular formula, functional-group evidence, and counting rule, then count its proton environments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify its component counts, functional-group assignment, and the equivalence classes produced by the adopted counting rule.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Confirm that these equivalence classes have the number and type required by the three reported proton environments.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Compare the resulting count with the spectral count established earlier.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Name the candidate supported by this structural and spectroscopic analysis.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check that name against the molecular formula and environment-counting rule, without overstating what the isolated IR band establishes.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the candidate, its proton-environment classes, and the confidence warranted by the spectral evidence.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

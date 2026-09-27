@@ -1,0 +1,54 @@
+{
+  "release_task_index": 144,
+  "task_id": "gpqa__rec0Y0PY1lx8aZPZh",
+  "dataset": "gpqa",
+  "ordinal": 6,
+  "variant": "perturbed",
+  "conversation_id": "006::gpqa__rec0Y0PY1lx8aZPZh::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a388f8c5f7c06e670d780244c6b994151c3a407845e324516b7af93ce45f9046",
+  "semantic_condition_id": "0e33fdcbb572892897c1f2c925614e543e599322d4d76eb980f4bf6de2e08103",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Heating aniline with sulfuric acid gives a sulfonated product. Identify the major regioisomer and determine the substitution relationship relevant to later aromatic-proton equivalence.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After sodium bicarbonate treatment followed by sodium nitrite and HCl, identify product 2 and the functional-group changes that produced it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Couple product 2 conventionally with 2-naphthol. Identify product 3 and determine the coupling position on the naphthol ring.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the para-disubstituted, aniline-derived naphthyl ring in product 3, use symmetry to count its distinct nonexchangeable aromatic-proton environments.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the naphthol-derived fused aromatic fragment, count the remaining aromatic hydrogens and their distinct environments. Then determine whether the product still has an exchangeable heteroatom-bound proton and how it contributes to the spectrum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Make a fragment-by-fragment ledger that distinguishes the number of hydrogens from the number of distinct proton environments in each fragment.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the fragment counts to obtain the total number of distinct nonexchangeable proton signals.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

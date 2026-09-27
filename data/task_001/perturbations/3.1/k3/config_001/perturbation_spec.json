@@ -1,0 +1,42 @@
+{
+  "task_id": "001-capsule001",
+  "release_task_index": 1,
+  "subclass": "3.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Contradicts cohort scope.",
+    "Contradicts coefficient selection.",
+    "Contradicts the established background universe."
+  ],
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "configured_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 442,
+  "task_id": "gpqa__recyrk6XBVwugG5u8",
+  "dataset": "gpqa",
+  "ordinal": 311,
+  "variant": "perturbed",
+  "conversation_id": "311::gpqa__recyrk6XBVwugG5u8::1.x::perturbation__1_4__k2__1_4_count2_cfg0003::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "7655176b9a090cc516eb5a07c7b82b7a100e5db1524edb8c6126b03df8452f40",
+  "semantic_condition_id": "ccaaaa434eb1bac1c05f2b8b0bfe170fe9b3ad3b59577fe18e36a5370ea739b2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two planets are on circular, coplanar orbits around the same star. Derive the relation between their transit impact parameters b1,b2 and semimajor axes a1,a2, given b1=0.2 for the first planet.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute k2=Rp2/Rstar for the second planet using a stellar radius of 1.5 solar radii and R_Earth/R_Sun=0.00916.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a circular orbit, what is the largest b2 that still permits both a transit and an occultation when a grazing overlap counts?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that boundary and the impact-parameter relation to find the maximum a2/a1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use Kepler's third law to convert the maximum semimajor-axis ratio into P2/P1 and determine the second planet's maximum period.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Repeat the estimate in the point-planet approximation b2,max=1 and compare it with the finite-radius grazing result.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the grazing boundary, maximum semimajor-axis ratio, period scaling, and both period estimates.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

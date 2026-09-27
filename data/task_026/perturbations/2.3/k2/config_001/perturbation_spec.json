@@ -1,0 +1,22 @@
+{
+  "task_id": "026-capsule008",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transcribes the positive count 7 as 17.",
+    "Independently transcribes the positive count 2 as 12."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "A-and-B-only count"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "A-and-C-only count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

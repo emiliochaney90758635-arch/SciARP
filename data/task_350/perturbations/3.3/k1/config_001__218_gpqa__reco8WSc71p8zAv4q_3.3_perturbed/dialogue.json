@@ -1,0 +1,54 @@
+{
+  "release_task_index": 350,
+  "task_id": "gpqa__reco8WSc71p8zAv4q",
+  "dataset": "gpqa",
+  "ordinal": 218,
+  "variant": "perturbed",
+  "conversation_id": "218::gpqa__reco8WSc71p8zAv4q::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "6cfb73a3926382bd9d7d196f7527e7364087bc09452b05facff19b5172b862f2",
+  "semantic_condition_id": "fa98dd05061fc58826608d562162324ad1a0e039e65102276601d7ded21d2543",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cis-alkene dicarboxylic acid dehydrates to an anhydride with one proton-NMR signal near 7 ppm and carbon-13 signals near 137 and 165 ppm. Verify that this is maleic anhydride. Later evidence is a qualitative major/minor NOESY contrast rather than a calibrated distance measurement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What reaction occurs between the species identified above and 1,2,3,4-tetramethyl-1,3-cyclopentadiene, and which stereochemical product is normally major under that assignment?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the listed signal sets to structural groups under the molecular and spectroscopic interpretation established above.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the Karplus vicinal-coupling equation as the sole exact method for interpreting the NOESY cross-peak.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly does that observation support the assignment under the interpretation currently being used?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Given the qualitative major/minor NOESY evidence and its stated confidence, what additional measurement, if any, is warranted?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the diagnostic feature pair and its interpretation under the current assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "release_task_index": 450,
+  "task_id": "gpqa__recu58vdfXz3rTiJ5",
+  "dataset": "gpqa",
+  "ordinal": 319,
+  "variant": "perturbed",
+  "conversation_id": "319::gpqa__recu58vdfXz3rTiJ5::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5fc669db18aa33c817d0f230ffbb2c4e3ea430d3f398a53df4a4253af033f61a",
+  "semantic_condition_id": "5c5793325bb7143fd61af7cbdb74ce50bb989e4cc0679358168a5ea70a813c3d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A CAR is arranged from N to C as an extracellular monospecific scFv, a spacer, a transmembrane segment, and three cytosolic signaling domains, with the activation domain last. Translate that topology into the 5'-to-3' order of coding segments in a lentiviral cassette.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Why must the scFv coding region precede the cytosolic signaling cassette when translation reads the coding sequence 5' to 3' and synthesizes the protein N to C?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Would reversing those segments, with the antibody/scFv region at the 3' end and the signaling region at the 5' end, encode the stated topology?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What does a monospecific scFv recognize, and is that compatible with one variable moiety recognizing several distinct epitopes?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "The construct is introduced into isolated CD8+ T cells that are expanded and infused. Which cells are intended to kill the tumor, and should that effect be attributed to regulatory T cells?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assume the directly bound CAR target is a conventional cell-surface membrane protein or glycoprotein. Contrast CAR recognition with peptide-MHC recognition by a T-cell receptor, and trace the target's usual biosynthetic route to the surface.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Given the vector order, monospecificity, effector-cell identity, and target trafficking, which biological proposition is best supported under that surface-protein interpretation?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "For the final vector check, assume translation reads the coding sequence 3' to 5' while the polypeptide is still synthesized N to C.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Use those two directions to rederive the scFv/signaling order, then combine it with the earlier biological checks. The identities and molecular classes of the newly identified antigens are not supplied.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "How strongly can the resulting proposition be stated when the antigen identities and molecular classes are unknown?",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Which target-class assumption makes the trafficking conclusion applicable, and why does the missing antigen information prevent an unconditional generalization?",
+        "role": "user",
+        "turn_id": "T11"
+      },
+      {
+        "content": "State the best-supported conclusion for the conventional surface membrane-protein or glycoprotein case and label it as contextual or unconditional.",
+        "role": "user",
+        "turn_id": "T12"
+      },
+      {
+        "content": "Summarize the translation logic, the biological checks, the resulting proposition, and its evidential scope.",
+        "role": "user",
+        "turn_id": "T13"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 485,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2860",
+  "dataset": "olympiadbench",
+  "ordinal": 432,
+  "variant": "perturbed",
+  "conversation_id": "432::olympiadbench__OE_TO_maths_en_COMP_2860::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "70a4f2b630747dd01d9f3e66ad0df7beb80e9f8f0153f67f15c101f59b0e029a",
+  "semantic_condition_id": "0fc7d5a214a8fa631b6019aec32a15186c53c758d8c6b702a60a7692953c75b0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AB=c, and identify which side is opposite the given angle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only the Pythagorean theorem, taking BC as the hypotenuse, to form an equation for c and derive the two-root condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the sum and product of the two roots to determine when both possible values of c are positive.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count the integer values of AC for which two distinct positive values of AB are possible.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

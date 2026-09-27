@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "The strict fractional boundary can additionally be changed from <0.3 to <=0.3.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "d2c184b7bc7e1d33e5176a017e6b30524a081d1d058512dfed3dc1450576b709",
+  "strict_non2x_original_semantic_condition_id": "e1a7ee08a76a8f9fc7edd475cb736d048155bbe3a1e24b680f7bd25092b09ac5",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 naturally apply VAF 0.3 percent rather than fraction 0.3; at T3 request the median be reported as variants per 100 carriers while leaving the numerical value unconverted. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

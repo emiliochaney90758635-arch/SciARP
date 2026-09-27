@@ -1,0 +1,64 @@
+{
+  "release_task_index": 247,
+  "task_id": "gpqa__recWgLWFncNSime5A",
+  "dataset": "gpqa",
+  "ordinal": 115,
+  "variant": "perturbed",
+  "conversation_id": "115::gpqa__recWgLWFncNSime5A::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ae5b12834fe5c5b857f5b72e68cc08a5d18c70e9d5c702154759d1a427f97fc5",
+  "semantic_condition_id": "88dd1c012f9858c537541b5087d888d33c3a3e184dc9236defae3dd5626b6f6a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Methyl (E)-but-2-enoate reacts with acetone under sodium borohydride treatment. Identify the reaction type and product 1 connectivity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat product 1 with excess methylmagnesium bromide. Give product 2's connectivity and explain what happens to the ester group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From the product 2 connectivity established above, separate exchangeable hydrogens from the other environments and inventory the nonexchangeable classes outside the repeated substituent groups.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Examine the substituents on the alkene carbon opposite the tertiary-alcohol-bearing carbon in product 2. What constraint do they place on any whole-molecule symmetry operation?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What molecular-symmetry test determines whether product 2's tertiary-alcohol methyl groups are equivalent?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply this symmetry test to the repeated substituent groups in product 2. Which groups are equivalent, and how many proton-NMR signals do they contribute?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine these equivalence classes with the other proton environments to determine the total number of distinct nonexchangeable proton-NMR signals.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Summarize the reagent sequence, product connectivity, alkene geometry, exchange convention, and symmetry reasoning used to obtain the signal count.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final signal count with the connectivity and symmetry rationale.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

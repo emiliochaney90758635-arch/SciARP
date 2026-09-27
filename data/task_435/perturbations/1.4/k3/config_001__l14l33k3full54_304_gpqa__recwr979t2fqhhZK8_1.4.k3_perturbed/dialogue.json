@@ -1,0 +1,54 @@
+{
+  "release_task_index": 435,
+  "task_id": "gpqa__recwr979t2fqhhZK8",
+  "dataset": "gpqa",
+  "ordinal": 304,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::304::gpqa__recwr979t2fqhhZK8::1.4.k3::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "d0d180d5315517dac4187cf71613b8b2dc9873b663162c45c14a2f5b5529ef59",
+  "semantic_condition_id": "cef3a1d5fe1997fa578dc13f849230fea4360fb3091c90055e1ce044acdf171b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the unnamed starting material in condensed form and identify its aldehyde and ketone carbonyls.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from 2-(2-oxopropoxy)acetaldehyde, determine A after reaction with methylenetriphenylphosphorane, and state whether it is a monoalkene or diene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Verify A's carbon count, connectivity, and number of carbon-carbon double bonds.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the previously derived A, determine compound B by structure or name and explain the consequence if A is not a diene.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Treat B with ethanol under acid catalysis and determine the final product C by an unambiguous name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the ring size established in forming B and the regiochemistry established in the final addition are consistent with C.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report C and briefly connect the structures of A, B, and C.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

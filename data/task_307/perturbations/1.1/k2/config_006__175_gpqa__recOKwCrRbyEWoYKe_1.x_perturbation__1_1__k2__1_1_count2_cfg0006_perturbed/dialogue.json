@@ -1,0 +1,54 @@
+{
+  "release_task_index": 307,
+  "task_id": "gpqa__recOKwCrRbyEWoYKe",
+  "dataset": "gpqa",
+  "ordinal": 175,
+  "variant": "perturbed",
+  "conversation_id": "175::gpqa__recOKwCrRbyEWoYKe::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a8451cc505a6d93b65c0496f0a44c667353849970df1c7a8135afa1601800b8e",
+  "semantic_condition_id": "8470f009a81d08018ad7bedc2c57c700fb90af9b94e560966a950728ab238f0a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A heptane backbone is numbered C1-C7. Under first-order n+1 splitting, set up how retained backbone hydrogens and directly attached -CH3, -CH2R, -CHR2, and -CR3 groups contribute distinct neighboring-proton sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The backbone multiplicities C1-C7 are t, dq, dt, ddt, ddd, ddt, and d. Use the first three to infer the status of C1, C2, and C3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the substituent carbons attached to C4 and C5 rather than the backbone positions, using -CH2R as a triplet contribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Infer C6 and C7 by matching chemical-shift values rather than the reported splitting multiplicities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the complete substituent assignment from C1 through C7.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Regenerate the full multiplicity sequence from the assigned neighboring-proton sets as a consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final C1-C7 assignment and the decisive bookkeeping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

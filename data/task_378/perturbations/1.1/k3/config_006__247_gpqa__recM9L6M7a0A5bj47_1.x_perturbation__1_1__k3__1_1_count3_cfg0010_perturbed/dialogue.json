@@ -1,0 +1,59 @@
+{
+  "release_task_index": 378,
+  "task_id": "gpqa__recM9L6M7a0A5bj47",
+  "dataset": "gpqa",
+  "ordinal": 247,
+  "variant": "perturbed",
+  "conversation_id": "247::gpqa__recM9L6M7a0A5bj47::1.x::perturbation__1_1__k3__1_1_count3_cfg0010::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c8e20b538687d36c45bda53ab5541f318b11bc2aefe599b3f2f47f3a2c29504f",
+  "semantic_condition_id": "8351c29baddd3cec7c61840c47be1261b62c1833f4b9e3091ce09b030e6d76f5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cas9 mRNA, a guide RNA, and transgene-bearing donor DNA were injected into a one-cell fertilized egg. The resulting animal has different target-site sequences in different tissue lineages despite no possible off-target guide binding. What genetic pattern does this describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What does the lineage distribution imply about when editing occurred, and does the observed sequence alone uniquely identify the molecular history that produced it?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The delivered Cas9 component was guide RNA rather than preformed protein. Explain how that guide RNA is translated into Cas9 protein and remains active across cell divisions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the delivered components, propose how a repair-template RNA that recognizes the target sequence could generate different repair outcomes in descendant lineages.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the component chemistry, identify the most plausible source of the stated off-target mutations and compare it with RNA integration or transfer of surrogate-mother DNA.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the most probable cause of the mosaicism and distinguish it from a uniquely reconstructed event history for this animal.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Suggest two changes to the editing protocol that should reduce mosaicism if the timing mechanism is correct, and explain why.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Summarize the lineage pattern, the developmental mechanism, and the main mechanistic exclusions.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

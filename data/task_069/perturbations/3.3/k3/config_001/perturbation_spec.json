@@ -1,0 +1,73 @@
+{
+  "config_id": "task069_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value",
+      "injected_text": "Apply padj<0.05, |log2FC|>=0.5, and baseMean>=10 to CBD_IC50 versus DMSO, then form mapped up- and downregulated gene-name sets using the stated fold-change direction.\n\nFor this perturbed step, split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "At T1 split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value.",
+      "injected_text": "Summarize the archived GO Biological Process results for the upregulated set, retaining the adjusted significance and hit genes needed for comparison.\n\nFor this perturbed step, at T1 split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "At T1 split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value.",
+      "injected_text": "Compare the two directional tables by term identity, adjusted significance, and hit genes. Which direction primarily carries the CBD-associated metabolic signal?\n\nFor this perturbed step, at T1 split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "Keeping unmapped IDs is not linked to the supplied archived tables, and row counting is propagated from T2 to T4.",
+    "before": "Unmapped IDs plus one row-count chain.",
+    "after": "At T1 split directions at zero rather than ±0.5, at T2 rank by hit count, and at T4 choose by maximum rather than minimum adjusted p-value.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "After applying the stated significance filter, split the directional gene sets at log2FoldChange = 0 rather than at +/-0.5."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Rank the upregulated enrichment terms by hit-gene count rather than adjusted p-value."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Choose the primary direction by the larger, rather than smaller, best adjusted p-value."
+    }
+  ]
+}

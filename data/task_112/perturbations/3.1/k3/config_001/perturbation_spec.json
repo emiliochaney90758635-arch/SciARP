@@ -1,0 +1,57 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Later model contradicts the established design.",
+      "consumers": [
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Later sign semantics independently contradict the coefficient.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Later selection rule independently contradicts the archived filter state.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Despite T1's sex-adjusted design, fit condition alone.",
+    "T3": "Despite selecting disease relative to control, treat a positive coefficient as control-up.",
+    "T4": "Despite the archived execution record, activate the commented absolute-LFC filter when constructing the significant set."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Claim to fit condition alone, but reuse the archived sex-adjusted coefficient and counts."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Interpret a positive disease-versus-control coefficient as control-up."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Define the selected set as rows with padj<0.05 and a positive shrunken effect, yielding 1166 rows."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 520,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3026",
+  "dataset": "olympiadbench",
+  "ordinal": 467,
+  "variant": "perturbed",
+  "conversation_id": "467::olympiadbench__OE_TO_maths_en_COMP_3026::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "fa4363d17fc1ba21a82717a184c498dfeac75fda6f13ba9d947b94df60610e1f",
+  "semantic_condition_id": "d27c5714106a2485087870d924158e7da8117be1bc8dee651216ff2903a3e57a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Square KENT has side length 20. Place E at (0,0) and N at (20,0), with the square above the x-axis. Give the coordinates of K and T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Triangle MEN is equilateral on the side EN. Find both possible coordinates of its third vertex, then select the one for which M lies inside the square.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Ptolemy's theorem on quadrilateral KENM as the sole exact distance method, treating K, E, N, and M as concyclic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that relation with side length 20 and the interior coordinates of K and M. Compute and simplify KM^2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Match your expression for KM^2 to a - b sqrt(3), where a and b are integers, and identify both coefficients.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check geometrically that the selected equilateral apex is inside KENT and explain why the other possible apex cannot be used in this problem.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the exact distance calculation and the apex check from the previous step, report the requested value of b.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

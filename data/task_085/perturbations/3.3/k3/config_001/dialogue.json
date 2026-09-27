@@ -1,0 +1,35 @@
+{
+  "release_task_index": 85,
+  "task_id": "085-capsule023",
+  "source_id": "bix-32-q3",
+  "dataset": "bixbench",
+  "ordinal": 85,
+  "variant": "perturbed",
+  "conversation_id": "085::085-capsule023::3.3.k3::lane_c_manual",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "642619a589763f5dabe37a199f934fa79de6fbedf36ad46b8aa1bb70b39a6f3a",
+  "semantic_condition_id": "7e7d72e4683ac66a7fbece302bdcf9a184f685556a92adbf54026914b0bc0033",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Up-Gene Lists and Enrichment\n\nFor each of the three mutant-vs-wildtype results, an Up GeneID list is formed using the strict condition `log2FoldChange > 1.5`. Although the gene-level `padj` column is retained, the archived code does not use it to filter genes. The three lists are processed separately with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe adjusted p-value condition in the task refers to the pathway enrichment results.\n\n## All Up Pathways in the Archived Dot Plot\n\n`●` indicates that the corresponding pathway appears in the strain's Up column.\n\n| KEGG pathway description | 97 Up | 98 Up | 99 Up |\n|---|:---:|:---:|:---:|\n| Valine, leucine and isoleucine degradation |  | ● |  |\n| Sulfur metabolism |  | ● | ● |\n| Ribosome |  |  | ● |\n| Riboflavin metabolism |  |  | ● |\n| Quorum sensing | ● |  |  |\n| Phenazine biosynthesis | ● |  |  |\n| Oxidative phosphorylation |  | ● | ● |\n| Nitrogen metabolism |  | ● |  |\n| Butanoate metabolism |  | ● |  |\n| Biofilm formation - Pseudomonas aeruginosa | ● |  |  |\n| Aminoacyl-tRNA biosynthesis | ● |  | ● |\n\nThe archived point counts are 97 Up=4, 98 Up=5, and 99 Up=5. The requested exclusive set is calculated using exact names:\n\n```text\nU99 \\ (U97 ∪ U98)\n```\n--- END TASK EVIDENCE ---\n\nCurrent request:\nCombine all three Up gene lists before running one KEGG analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Copy that same pooled pathway set to strains 97,98,99. Define the pooled set as the exact union of the archived U97, U98, and U99 sets and copy that union to all three strain labels; the final difference is empty.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute exclusivity as U99 minus U97∩U98.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

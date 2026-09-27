@@ -1,0 +1,44 @@
+{
+  "release_task_index": 152,
+  "task_id": "gpqa__rec2NJhNJ4umq2HFG",
+  "dataset": "gpqa",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::gpqa__rec2NJhNJ4umq2HFG::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8640b04eabef8f2b349210e7fe5bfcdb90cf163221cdc11c09468bca9ce7573c",
+  "semantic_condition_id": "8d67f9ef1fc4f8b0e7e2372ff38385460933346641b6be7f0b646ee360eebf22",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Define sigma^(mu nu)=i/2[gamma^mu,gamma^nu], show that it is antisymmetric, and count its independent components in four dimensions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat sigma^(mu nu) as an orbital-angular-momentum contribution in the Dirac field and contrast it with translations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine whether the six sigma matrices generate gauge transformations or the full Poincare group, and identify any missing generators.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the conclusion against the distinction between Lorentz transformations and spacetime translations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the physical role of the gamma-matrix commutator and whether it generates Lorentz transformations alone or the full Poincare group.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

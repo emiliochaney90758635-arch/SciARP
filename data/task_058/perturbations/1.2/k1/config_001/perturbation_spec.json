@@ -1,0 +1,27 @@
+{
+  "config_id": "task058_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Enter target power as 80 rather than 0.80."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nSpecify the equal-allocation, two-sided independent two-sample t-test power model using the observed effect size, alpha 0.05, group-size ratio 1, and target power 0.008 rather than 0.80."
+    }
+  ]
+}

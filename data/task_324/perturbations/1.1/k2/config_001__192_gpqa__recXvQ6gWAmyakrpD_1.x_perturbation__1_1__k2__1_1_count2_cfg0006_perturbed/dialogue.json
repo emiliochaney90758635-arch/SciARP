@@ -1,0 +1,54 @@
+{
+  "release_task_index": 324,
+  "task_id": "gpqa__recXvQ6gWAmyakrpD",
+  "dataset": "gpqa",
+  "ordinal": 192,
+  "variant": "perturbed",
+  "conversation_id": "192::gpqa__recXvQ6gWAmyakrpD::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e849f59fb3aaf28fc03f5ec1bcef82edee49009103a83723f42a72430517f0f2",
+  "semantic_condition_id": "d96812d619a7cfffd9af97bd32293bf8249195a06e4fee456e00035764478fb3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two circular transiting planets orbit the same star and share an albedo and heat-redistribution convention. Derive how equilibrium temperature scales with orbital distance, taking sin(i) approximately one.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For planet mass much smaller than stellar mass, derive how the radial-velocity semiamplitude scales with planet mass and orbital distance. How does its ratio relate to Doppler shifts measured in the same spectral line?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the earlier scalings to express stellar luminosity in terms of radial-velocity semiamplitude and planet mass, then form the temperature ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the ratio using Planet1's radius as 7 Earth masses, its 0.03-Angstrom shift, and Planet2's stated mass and shift.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the result as a conditional estimate, noting the unreported exact inclinations and the common heat-redistribution assumption.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the numerical result from the shift ratio and mass ratio and explain the main precision limits.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final equilibrium-temperature ratio with its modeling qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

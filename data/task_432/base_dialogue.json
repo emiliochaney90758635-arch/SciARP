@@ -1,0 +1,64 @@
+{
+  "release_task_index": 432,
+  "task_id": "gpqa__recuXwnZ1Nq5uRiu3",
+  "dataset": "gpqa",
+  "ordinal": 301,
+  "variant": "clean",
+  "conversation_id": "301::gpqa__recuXwnZ1Nq5uRiu3::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "6ebd3751f91a89853960b6b6da188645b9ca59cd2bc6d3aee355a45128bdabb8",
+  "semantic_condition_id": "3b60fd8384967a6623fdcc1de8bac437f770e257cdf93069a8e830b98466605b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "One enantiopure alcohol reacts with POCl3 and base, then a different enantiopure alcohol is added with more base. Immediately before water is added, what phosphorus-containing species is present?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Is the phosphorus center of that chlorophosphate stereogenic, and how many proton-decoupled 31P resonances should its configurations give? Explain whether those configurations are enantiomers or diastereomers in this molecular setting.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "When water is added, which bond at phosphorus is hydrolyzed and what phosphate product class forms? How should that change the pre-hydrolysis signal count?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the hydrolyzed product, analyze whether the nonalkoxy oxygen environments remain configurationally distinct after resonance and proton exchange, and predict the number of 31P environments.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the endpoint assignments to state how the proton-decoupled 31P peak count should evolve during hydrolysis.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Qualify the peak-count prediction for possible linewidth, exchange-rate, solvent, temperature, and instrumental-resolution effects.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which molecular features determine whether alternative phosphorus configurations in the pre-hydrolysis species are diastereomeric rather than an equivalent enantiomeric pair?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why the current hydrolysis model removes the stereogenic phosphorus environment and how exchange broadening could affect what is resolved.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the predicted peak-count transition with a concise stereochemical explanation and an appropriate experimental caveat.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

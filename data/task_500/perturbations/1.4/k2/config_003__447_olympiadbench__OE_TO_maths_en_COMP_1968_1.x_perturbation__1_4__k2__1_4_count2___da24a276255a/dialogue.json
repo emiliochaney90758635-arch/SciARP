@@ -1,0 +1,74 @@
+{
+  "release_task_index": 500,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1968",
+  "dataset": "olympiadbench",
+  "ordinal": 447,
+  "variant": "perturbed",
+  "conversation_id": "447::olympiadbench__OE_TO_maths_en_COMP_1968::1.x::perturbation__1_4__k2__1_4_count2_cfg0002::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "16a6c0fe56022b570dfa13a150bc5604e32c15646687c864635511fe43ae5def",
+  "semantic_condition_id": "616e05be04fbe60caaf714018cbeaa58fb52c989f8be13e4a7fdc82fcf76d668",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the multiset {1,-1,2,-2}, find Dave's minimum possible price over all orderings and exhibit an ordering that attains it.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the same multiset, George repeatedly chooses a remaining number that minimizes the absolute value of the new partial sum, with arbitrary tie-breaking. Give one ordering he can obtain and compute its price.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For an arbitrary multiset, let D be Dave's optimal price and M=max_i |x_i|. Prove the two Dave-side bounds involving M, S, and D.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The desired guarantee is deterministic: it must hold for every multiset and every greedy ordering produced by any sequence of tie-breaks. What kind of pathwise argument is therefore needed for George, rather than an average-case or probabilistic one?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Let h_i be George's partial sums and N=max(M,S). Set up an induction aimed at proving |h_i|<=N for every i.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For the induction step, first suppose all unchosen numbers have the same sign. Use the monotonic path from h_{i-1} to the final sum h_n to bound |h_i| by N.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Now suppose both signs remain. Choose an unselected g_j of sign opposite to h_{i-1}, use George's minimizing rule to compare |h_i| with |h_{i-1}+g_j|, and complete the induction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine G<=N with the two Dave-side inequalities to derive a universal upper bound for G/D.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Explain why the argument remains valid under arbitrary tie-breaking and therefore controls every greedy sequence, not merely one favorable run.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Return to the multiset {1,-1,2,-2}. Use the Dave and George orderings already found to obtain the matching lower bound on the universal constant.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Combine the universal upper bound and the sharp example to state the least constant c such that G<=cD always holds.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

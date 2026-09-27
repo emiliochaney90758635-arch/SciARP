@@ -1,0 +1,49 @@
+{
+  "release_task_index": 604,
+  "task_id": "scibench__quan-sol-003",
+  "dataset": "scibench",
+  "ordinal": 385,
+  "variant": "perturbed",
+  "conversation_id": "385::scibench__quan-sol-003::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5a8a8300dda820e7ffa6234843ea1134eb27483f2e9de7f79e675ca622c038a5",
+  "semantic_condition_id": "c8c82f6cde6218006af4a7070775c30b39add82c22aa6a08f087b9d10e0002cf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A one-dimensional particle has wavefunction Psi(x)=a^(-1/2) exp(-|x|/a) at t=0, with a=1.0000 nm. Derive the position probability density and identify how |x| simplifies on 1.5000 nm <= x <= 1.5001 nm.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the exact probability integral over that interval. Also give the narrow-interval approximation obtained by evaluating the density at the lower endpoint and multiplying by the width 0.0001 nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute a=1.0000 nm and the interval width into the approximation and leave the result as an oscillatory phase expression before rounding.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the requested probability numerically to four significant figures.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the exact integral with the narrow-interval approximation and explain why their difference is negligible at the requested precision.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final dimensionless probability for the position measurement and state whether this event is more or less likely than its complement.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

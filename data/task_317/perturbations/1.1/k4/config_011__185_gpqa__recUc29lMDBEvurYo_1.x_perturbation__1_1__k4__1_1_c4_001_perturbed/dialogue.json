@@ -1,0 +1,59 @@
+{
+  "release_task_index": 317,
+  "task_id": "gpqa__recUc29lMDBEvurYo",
+  "dataset": "gpqa",
+  "ordinal": 185,
+  "variant": "perturbed",
+  "conversation_id": "185::gpqa__recUc29lMDBEvurYo::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "6a67154c26a59c3f3267421a5f1e75cbc7e09d95cb004f5a0881309952fcde90",
+  "semantic_condition_id": "26abe34cdaae5b7b919a3fa20b0bb55f4582e07549c3d9457f520e80aeeb23e3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Thirteen identical magnetic dipoles each have charge 2e. Set up their electrostatic potential energy as k(2e)^2 times a geometric sum over distinct pairs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the geometric contribution from pairs involving a neutral particle fixed at P and twelve charged outer particles.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For twelve equal outer neutrons on a sphere of radius 2 m, identify the minimum-energy arrangement and sum 1/r_ij.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two entropic contributions to obtain the minimized geometric sum over all distinct charge pairs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the SI prefactor implied by the interaction model established above, using the supplied constants k=8.9875517923e9 N m^2 C^-2 and e=1.602176634e-19 C.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Multiply the geometric sum by that prefactor and report the resulting minimum quantity in the SI units implied above, to three decimals in scientific notation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the arithmetic by independently reviewing the pair-distance multiplicities, radius scaling, and charge dependence; if a continuum approximation is used, explain how it compares.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the minimum energy and briefly explain the geometric model and any approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

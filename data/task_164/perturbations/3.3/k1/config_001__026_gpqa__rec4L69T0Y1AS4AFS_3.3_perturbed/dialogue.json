@@ -1,0 +1,69 @@
+{
+  "release_task_index": 164,
+  "task_id": "gpqa__rec4L69T0Y1AS4AFS",
+  "dataset": "gpqa",
+  "ordinal": 26,
+  "variant": "perturbed",
+  "conversation_id": "026::gpqa__rec4L69T0Y1AS4AFS::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "983eaf3cd801cfe5ab922900422247f872d6111ad9cf2ac853fd61686571fc13",
+  "semantic_condition_id": "dab37232d77c26bb2f4d9880f8f4a24f78621a0d61f28dc44f07e3c1f7306eb9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I want to audit four claims about SARS-CoV-2 apoptosis, nsp14 exonuclease activity, and programmed -1 ribosomal frameshifting. What mechanistic and evidentiary checks should I use to identify a scientifically contradicted claim?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "ORF3a is reported to activate caspase-8 without changing Bcl-2. Is that observation compatible with an extrinsic-apoptosis mechanism, and why?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use minimum-free-energy RNA secondary-structure prediction as the sole method for both counting force-accessible conformations under tension and determining the in-vitro frameshifting rate. What relationship does that procedure imply?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How does that assessment apply to the report that the SARS-CoV and SARS-CoV-2 programmed -1 frameshift signals each show two force-accessible conformations?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "The nsp10-activated nsp14 complex is a 3'-to-5' exonuclease. Is the claim that this active complex prevents dsRNA breakdown biochemically consistent?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Is programmed -1 ribosomal frameshifting accurately described as a one-nucleotide backward shift at a slippery sequence and pseudoknot that enables production of pp1a and pp1ab?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Considering all four claims, which one is contradicted by its mechanism? State the problematic clause and the biochemical reason.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How does that mechanistic contradiction differ from the more limited evidentiary issue in the pseudoknot conformation-count claim?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Before settling the answer, what uncertainty remains in inferring causation from the reported pseudoknot conformation-count correlation?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Identify the false SARS-CoV-2 claim, give its concise biochemical correction, and retain the appropriate caveat about the conformation-count relationship.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

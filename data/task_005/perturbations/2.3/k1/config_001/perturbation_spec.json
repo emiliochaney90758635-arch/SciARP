@@ -1,0 +1,16 @@
+{
+  "task_id": "005-capsule003",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes the strict three-way region from 429 to 431."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "triple region"
+    }
+  ],
+  "evidence_change_permitted": true
+}

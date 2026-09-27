@@ -1,0 +1,34 @@
+{
+  "task_index": 111,
+  "task_id": "111-capsule033",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bb59c9cc708419e28581541a53a5ec1f4d221b589e6f22fd6a8dc1a237780bd3",
+  "source_base_evidence_sha256": "5c98d5cee0e6c75bf9445e13daaf34b98f32a4c819d571aeff60dd1fee029aa5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Condition labels swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Effect-sign meanings independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Swap disease and control labels.",
+    "T3": "Let positive shrunken effects denote control-up genes and negative effects denote disease-up genes, then report counts."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

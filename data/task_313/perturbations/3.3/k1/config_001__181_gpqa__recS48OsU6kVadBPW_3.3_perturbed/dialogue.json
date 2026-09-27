@@ -1,0 +1,49 @@
+{
+  "release_task_index": 313,
+  "task_id": "gpqa__recS48OsU6kVadBPW",
+  "dataset": "gpqa",
+  "ordinal": 181,
+  "variant": "perturbed",
+  "conversation_id": "181::gpqa__recS48OsU6kVadBPW::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "8f21e92bfae15eb99e327e743ba9bffe212970e282199da266f366a3533c4946",
+  "semantic_condition_id": "a381ba0556b4f1ecac838ffaec1d3ce213a4863427902ed9243e86cd053587ea",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use the ordinary Galilean difference rule as the sole method to find the relative speed of two astronauts moving in the positive x direction at 0.6c and 0.5c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Their rest masses are 2m and 3m, respectively. Calculate the Lorentz factor for each speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those Lorentz factors to calculate the total energy in the stated frame, in units of mc^2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the relative speed and total energy, with the appropriate units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the relative speed with relativistic velocity addition, independently recompute the other result from the two Lorentz factors, and confirm the dimensions of both results.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report both final values and the formulas used.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

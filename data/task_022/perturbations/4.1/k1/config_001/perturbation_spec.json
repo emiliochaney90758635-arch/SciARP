@@ -1,0 +1,24 @@
+{
+  "task_id": "022-capsule007",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Suppresses label uncertainty."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "e322c87d3ab92d0bcc47fb2a4dd11eb707fba09c946fe3a0e0a53a94943a04b0",
+  "configured_evidence_sha256": "e322c87d3ab92d0bcc47fb2a4dd11eb707fba09c946fe3a0e0a53a94943a04b0",
+  "evidence_unchanged": true
+}

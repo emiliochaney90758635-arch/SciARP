@@ -1,0 +1,54 @@
+{
+  "release_task_index": 279,
+  "task_id": "gpqa__recnawZPumSCLMVgp",
+  "dataset": "gpqa",
+  "ordinal": 147,
+  "variant": "perturbed",
+  "conversation_id": "147::gpqa__recnawZPumSCLMVgp::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "271f86e98a12ee326954db15d0e8c382b2e7f4759ca862dc4c91275624101086",
+  "semantic_condition_id": "a55c7e698fc01a499bee1d3cb03285ba7a60fa18195322e90a63d2a2426d2758",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A reacts with an unknown phosphoric acid to give the named alkene. Use this supposed Wittig hint and the IR band to identify A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine B after reaction of A with HCl, then C after hydrogenation over palladium.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat C with nitric acid rather than nitrous acid, then infer a nitrogen-loss rearrangement to E.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the structure and systematic name of E, and summarize the carbon-skeleton change from the starting material used in this route.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly is that assignment supported given possible selectivity and side products?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether the reaction sequence and spectroscopic evidence are sufficient to identify E, and explain the limits of that conclusion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the assignment of E and the reaction and spectroscopic evidence supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

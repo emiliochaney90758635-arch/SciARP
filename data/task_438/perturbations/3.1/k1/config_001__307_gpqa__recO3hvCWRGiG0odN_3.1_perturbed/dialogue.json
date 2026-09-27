@@ -1,0 +1,69 @@
+{
+  "release_task_index": 438,
+  "task_id": "gpqa__recO3hvCWRGiG0odN",
+  "dataset": "gpqa",
+  "ordinal": 307,
+  "variant": "perturbed",
+  "conversation_id": "307::gpqa__recO3hvCWRGiG0odN::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "cb69e8a6fc613fa12532ee774672ffea3882b6c372b8d9cb9757b9edc68d316c",
+  "semantic_condition_id": "9ab758d0b7633b2ad83093136c769a020de5059d5dd6ac109d46019042e688be",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compare ethynylcyclohexane with the target aldehyde and identify the carbon-skeleton and functional-group changes the route must accomplish.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why the alkyne reduction must stop at an alkene before the carbonyl-forming step.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine how to deprotonate the terminal alkyne established at the outset and install exactly one methyl group. Give the reagents and the resulting internal alkyne.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Choose conditions that reduce the internal alkyne only to an alkene, and justify why the reduction must stop there.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Choose a cleavage workup appropriate to the intermediate and target established above, and identify every carbonyl coproduct it would form.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Choose coupling conditions appropriate to the carbonyl species obtained in the preceding step without changing their required oxidation state, and explain the reagent's role.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Assemble the complete reagent sequence from the structural, reduction, cleavage, and coupling analyses already established.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "For the reduction stage, replace palladium on calcium carbonate with ordinary palladium and carry that catalyst through the route.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Use the carbonyl products and coupling analysis established above to explain which fragment supplies the target connectivity and why the smaller coproduct is not incorporated.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the four-step sequence and the purpose of each step.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

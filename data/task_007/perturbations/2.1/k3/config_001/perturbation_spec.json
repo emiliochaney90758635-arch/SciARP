@@ -1,0 +1,28 @@
+{
+  "task_id": "007-capsule003",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Reverses the lower-tail alternative's meaning.",
+    "Includes pre-model rows outside the fitted contrasts.",
+    "Changes the two-part decision rule from conjunction to disjunction."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "tail-direction premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "population premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "decision-rule premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "078-capsule021",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T5"
+  ],
+  "downstream_consumers": [
+    "T5_response"
+  ],
+  "root_injections": [
+    "Uses main plus interaction for the multiplier.",
+    "Counts Yes-only history rows.",
+    "Treats interaction coefficient itself as an odds ratio."
+  ],
+  "evidence_mode": "append"
+}

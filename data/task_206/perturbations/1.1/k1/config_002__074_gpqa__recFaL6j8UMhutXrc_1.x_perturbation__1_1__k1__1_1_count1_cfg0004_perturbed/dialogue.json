@@ -1,0 +1,69 @@
+{
+  "release_task_index": 206,
+  "task_id": "gpqa__recFaL6j8UMhutXrc",
+  "dataset": "gpqa",
+  "ordinal": 74,
+  "variant": "perturbed",
+  "conversation_id": "074::gpqa__recFaL6j8UMhutXrc::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0d26e1e0e32296c53224b446128d8ccdfa0fce40cec6cbcbe5b76a7284017780",
+  "semantic_condition_id": "c5324732c612e9ea43c6661887252b5ea1e855cc41d6c57ba27ddb2bcc6b08f3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Three vicinal diols undergo acid-catalyzed pinacol rearrangement: 3-methyl-4-phenylhexane-3,4-diol; 3-(4-hydroxyphenyl)-2-phenylpentane-2,3-diol; and 1,1,2-tris(4-methoxyphenyl)-2-phenylethane-1,2-diol. What mechanistic decisions are needed to predict the major ketone from each substrate?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State a systematic procedure for choosing which hydroxyl is protonated and lost, which carbocation is favored, which group migrates, and which carbon becomes the carbonyl carbon.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how carbocation stabilization and migratory aptitude interact in an acid-catalyzed pinacol rearrangement, especially for aryl-substituted substrates.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that framework to 3-methyl-4-phenylhexane-3,4-diol and determine product A, naming the favored migration and ketone.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the same analysis to 3-(4-hydroxyphenyl)-2-phenylpentane-2,3-diol and determine product B.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For the third substrate, compare 4-methoxyphenyl and phenyl migration under acidic conditions and explain the electronic preference.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use that comparison to determine product C from 1,1,2-tris(4-methoxyphenyl)-2-phenylethane-1,2-diol.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report A, B, and C as though no 1,2-shift occurred, retaining the pre-migration carbon skeletons, and justify those unrearranged assignments.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Cross-check each structure by identifying the carbonyl-forming carbon and the group that migrates.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the final systematic product names for A, B, and C.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

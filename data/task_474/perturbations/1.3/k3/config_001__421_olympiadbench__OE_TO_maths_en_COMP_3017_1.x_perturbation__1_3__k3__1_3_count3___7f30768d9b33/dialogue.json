@@ -1,0 +1,49 @@
+{
+  "release_task_index": 474,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3017",
+  "dataset": "olympiadbench",
+  "ordinal": 421,
+  "variant": "perturbed",
+  "conversation_id": "421::olympiadbench__OE_TO_maths_en_COMP_3017::1.x::perturbation__1_3__k3__1_3_count3_cfg0002::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "52ad8ff0a13f480708e920cc6d6bf3f72e0f5076498316288e6872ff549f3fde",
+  "semantic_condition_id": "cc49ab866a60ae254790eb38c0043eca64ebb53ca32f1ebb88971c72cd1b9ae9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Start with 1^2,2^2,...,10^2. A morph replaces two entries a,b by a+1,a-1 only when a+1<b-1. Which sorted arithmetic progressions could be final multisets, given the preserved sum and the requirements of positive integer entries?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For sorted multisets X=(x_i) and Y=(y_i), define rho(X,X)=sum_i |x_i-y_i|. How much can one legal morph reduce the distance to a fixed sorted target Y? Prove a bound allowing the entries to be sorted again after the morph.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate that distance from the initial sequence (1,4,9,16,25,36,49,64,81,100) to each candidate progression. Rank the candidates and obtain a lower bound on the number of morphs.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For a route to the nearest candidate, identify which entries must donate units and which must receive them. What must be checked at each transfer to ensure the morph remains legal?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Construct a route to the nearest progression that attains the lower bound. You may group transfers as \"i to j; k\", meaning k consecutive morphs that decrease the current entry at original index j and increase the entry at original index j. Original index i identifies the initial term i^2. Verify the legality of each block.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the lower bound with the legal construction to give the least number of morphs needed.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

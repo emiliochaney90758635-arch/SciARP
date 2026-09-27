@@ -1,0 +1,33 @@
+{
+  "config_id": "task037_2.3_k2",
+  "subclass": "2.3",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "JBX98-only count is corrupted from 166 to 616",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "retained-sample count is independently corrupted from 33 to 34",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "human independent-review semantic repair"
+}

@@ -1,0 +1,45 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Substitutes an unadjusted model for the specified sex-adjusted design.",
+    "Uses a selected foreground as its own enrichment universe.",
+    "Substitutes lexical matching for semantic redundancy reduction."
+  ],
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "configured_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "evidence_unchanged": true
+}

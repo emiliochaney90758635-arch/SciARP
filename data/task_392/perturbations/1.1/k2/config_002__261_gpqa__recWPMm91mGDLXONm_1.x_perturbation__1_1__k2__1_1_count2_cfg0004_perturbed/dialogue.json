@@ -1,0 +1,69 @@
+{
+  "release_task_index": 392,
+  "task_id": "gpqa__recWPMm91mGDLXONm",
+  "dataset": "gpqa",
+  "ordinal": 261,
+  "variant": "perturbed",
+  "conversation_id": "261::gpqa__recWPMm91mGDLXONm::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "afcea5c37caa2f93b506576a55f97123b41ec872497484c4ded113a3a535e34c",
+  "semantic_condition_id": "b427f075842e05b81c31f528487617ce3996a74beef5765995cb169e82cf9db1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The target is a polymer rather than [1,1'-bi(cyclopentylidene)]-2-one. Before choosing reagents, identify the functional-group sequence needed to reach that polymer through a final self-aldol condensation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The available starting material is 1,5-dichloropentane. What product forms with zinc in ether, and what intramolecular process produces it?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The cyclic intermediate must next be converted into an alcohol. What operation can first install a leaving group on the ring, and what reagent and intermediate does it require?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How should that intermediate be converted into the corresponding alcohol, and what reaction conditions favour substitution over elimination?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Insert the required alcohol-to-ketone oxidation and assemble the complete purification route through the final self-aldol condensation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Choose an oxidation system that stops at the cyclic ketone and name the resulting intermediate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the ordered operation sequence and name the intermediate produced by each step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Describe the sequence as the best-supported route while noting any unspecified stoichiometry, conditions, yields, or selectivity limitations.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that each reagent gives the intended functional-group change while retaining the ketone required for the final self-aldol condensation.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the sequence of intermediates and operations, and explain the role of each reagent.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 407,
+  "task_id": "gpqa__rechgQucGlrnt8KRV",
+  "dataset": "gpqa",
+  "ordinal": 276,
+  "variant": "perturbed",
+  "conversation_id": "276::gpqa__rechgQucGlrnt8KRV::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "0fef75c5a332165a562a064966f2d31b01015ee8d6c0531f204086dd108cbfa2",
+  "semantic_condition_id": "016cebf65777e8abc6629b27e227739d6a2643f6b98cdff76f4ae324fdf78cc4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Normalize the state proportional to (1+i)|down>+(2-i)|down> in the stated two-ket basis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Take A_ij=hbar/2 when i=j and A_ij=0 when i=j, then write the matrix and eigensystem.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Project the normalized state onto the eigenbasis of A and calculate both outcome probabilities exactly and numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those probabilities and eigenvalues to calculate the expectation value of A.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Collect the two branch quantities and the mean value in one result, labeling the branches.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the expectation value both by weighting the eigenvalues and by directly evaluating <psi|A|psi> in the original basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how the two eigenvalue branches contribute and how the probability imbalance determines the expectation value.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Would rephasing either eigenvector change any observable probability or expectation value?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report both outcome probabilities and the expectation value of A.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

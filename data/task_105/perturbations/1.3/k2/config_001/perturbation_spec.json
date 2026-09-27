@@ -1,0 +1,44 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Treatment and reference meanings are swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Overlap-symbol meanings are independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Let the comparison label `CBD-plus-cisplatin versus DMSO` denote DMSO as the target condition and the combination treatment as the reference. Define the differential-gene list under that convention.",
+    "T2": "Locate the archived `TP53 Regulates Transcription Of Cell Cycle Genes` result row. For the remaining request, let X denote pathway-set size and Y denote submitted-gene hits."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Relabel the same archived 679-ID input as a DMSO-versus-combination contrast without recomputing the enrichment."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Locate the archived `TP53 Regulates Transcription Of Cell Cycle Genes` row, but interpret X as the pathway-set size and Y as the submitted-gene hit count in its X/Y Overlap field."
+    }
+  ]
+}

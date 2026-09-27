@@ -1,0 +1,56 @@
+{
+  "subclass": "3.3",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "deduplicate coordinates despite the row-level target",
+      "injected_text": "Apply the strict VAF < 0.3 rule and assemble the final retained population.\n\nFor this perturbed step, deduplicate coordinates despite the row-level target",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "divide the synonymous-row numerator by the carrier count. These are independent selection-unit and denominator errors",
+      "injected_text": "Reclassify rows whose ontology contains `synonymous`, then calculate their fraction of the final population.\n\nFor this perturbed step, divide the synonymous-row numerator by the carrier count. These are independent selection-unit and denominator errors",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "injection_turns": [
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5"
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Unweighted sample-block averaging and its final use are one wrong-method chain, not two independent roots.",
+    "before": "Block means followed by their unweighted average.",
+    "after": "At T4 deduplicate coordinates despite the row-level target; at T5 divide the synonymous-row numerator by the carrier count. These are independent selection-unit and denominator errors.",
+    "proposed_turns": [
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Collapse recurrent coordinates across samples to unique sites, then apply the strict VAF < 0.3 rule to form the final retained population."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Classify retained rows whose ontology label contains `synonymous`, count those rows, and divide that count by the 19 matched carriers."
+    }
+  ]
+}

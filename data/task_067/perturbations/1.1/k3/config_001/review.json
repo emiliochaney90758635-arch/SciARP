@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Significant DEG, enrichment, and smallest adjusted p-value can each receive wrong definitions.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "9db5969184772345440e590a3b319f3734aff138c2005110ed884b3ff598c231",
+  "strict_non2x_original_semantic_condition_id": "e2f650287c7289345de6e2ea96dff0491851c7879bb2432cede611c6689c32f9",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use baseMean>=10 as the only DEG criterion, define enrichment by nonzero overlap, rank by Combined Score, and break ties by first displayed order.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,41 @@
+{
+  "task_id": "001-capsule001",
+  "release_task_index": 1,
+  "subclass": "1.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Mis-scales the DE coefficient.",
+    "Mis-scales semantic similarity.",
+    "Mis-scales a decimal adjusted p-value as a percentage."
+  ],
+  "injection_turns": [
+    "T2",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T5",
+      "consumer_turns": [
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "configured_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "evidence_unchanged": true
+}

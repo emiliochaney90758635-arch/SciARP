@@ -1,0 +1,31 @@
+{
+  "subclass": "3.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "switches from row-level to unique-coordinate reasoning",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "preserves an excluded missing-call subtotal for restoration",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "restores missing calls and removes upstream contrary to prior rules",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

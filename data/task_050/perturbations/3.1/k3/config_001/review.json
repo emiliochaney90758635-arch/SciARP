@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can establish correct groups, T2 can pool them, and T3 can use a genotype-specific denominator absent from the pooled mean.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "aff7e5162adb71625125350b1025ec818ce99410852951f49a1535c4a8b3068d",
+  "strict_non2x_original_semantic_condition_id": "d49c753d57146f541710ddd3746882cf2be819e9e71f9a43ace8fb0e1befc7e3",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally omit the largest wild-type replicate, at T2 pool all remaining observations into the common value used for both groups, and at T3 use the mutant denominator. Remove root-list and perturbation language.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

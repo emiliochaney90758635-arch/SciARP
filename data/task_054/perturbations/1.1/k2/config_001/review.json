@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Test vector can additionally be redefined as sorted values before using p-value as W.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "aa46b0ff709d3e184e30224948a5716195086c171b72b374483f7878fdfb87be",
+  "strict_non2x_original_semantic_condition_id": "54d5241e8c9c6bd78fedeca6bc0cc0845202a428e19fa56e6a7a84e72cb91251",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally ask at T2 to retain only distinct NeuN values, dropping the repeated 221, and at T3 to report the p-value as W; remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

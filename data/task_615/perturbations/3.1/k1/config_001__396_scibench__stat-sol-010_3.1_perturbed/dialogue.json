@@ -1,0 +1,49 @@
+{
+  "release_task_index": 615,
+  "task_id": "scibench__stat-sol-010",
+  "dataset": "scibench",
+  "ordinal": 396,
+  "variant": "perturbed",
+  "conversation_id": "396::scibench__stat-sol-010::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "68ba8b029a9f579e5413795a719014df8bfc8300cfa410596a2471d830fc98e7",
+  "semantic_condition_id": "aa3ecd3ec2aa61dc5163960b8487983c8be6d2f5aa5aef9d62aff727b73662b5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A five-card poker hand is drawn from a standard 52-card deck. Do reorderings of the same physical cards count as different hands?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the applicable count in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand and simplify that expression in factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Repeat the five-card hand calculation for a 54-card deck using the same combination formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check without merely repeating the calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the total and its sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

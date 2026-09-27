@@ -1,0 +1,64 @@
+{
+  "release_task_index": 436,
+  "task_id": "gpqa__recyPffUDqC2k7ZZO",
+  "dataset": "gpqa",
+  "ordinal": 305,
+  "variant": "perturbed",
+  "conversation_id": "305::gpqa__recyPffUDqC2k7ZZO::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "6bacea89863498790dce92531b3e499c496bca199308efd5f8bcfefdc97eea0a",
+  "semantic_condition_id": "0e3463b85ec19ceaf8ab74e9c9dababf78679a64dc01b747b667b0c0b59947fe",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For P_z, list its ordered measurement eigenvalues.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the normalized state (-1/2,1/sqrt(2),-1/2)^T in that eigenbasis, calculate the three Born probabilities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the representation and numerical triplet established above, write the two quantities required by Delta P_z=sqrt(<P_z^2>-<P_z>^2).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the first required quantity and determine whether its two outer contributions cancel or reinforce.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the quantity computed in the preceding turn independently from the representation and numerical data established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the second required quantity using the same preceding setup.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two quantities using the relation established above to calculate the requested result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the resulting quantity and its units.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final value together with the first and second computed quantities.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

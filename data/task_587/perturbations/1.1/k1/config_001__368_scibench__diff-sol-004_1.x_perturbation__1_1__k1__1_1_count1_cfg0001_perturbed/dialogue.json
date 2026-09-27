@@ -1,0 +1,59 @@
+{
+  "release_task_index": 587,
+  "task_id": "scibench__diff-sol-004",
+  "dataset": "scibench",
+  "ordinal": 368,
+  "variant": "perturbed",
+  "conversation_id": "368::scibench__diff-sol-004::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d500d02f583155428a211865688a2cc5b2e2a105ee21dacee86de10d0c2e5639",
+  "semantic_condition_id": "5d3f223ca92e6fd4f024b44bf969f6e68466172859a385a5b798389328328023",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat dy/dt=ry(1-y/K) as a radioactive-decay equation for the halibut biomass, with y(0)=0.25K, and solve for y(t).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine the integration constant from the stated initial biomass fraction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "With r=0.71 yr⁻¹ and an elapsed time of 2 years, evaluate the exponential factor in the solution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now use K=80.5×10⁶ kg and write the two-year biomass as a numerical expression before rounding.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate that expression with appropriate units and compare the result with the carrying capacity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "The fitted parameters are point estimates and no confidence intervals, covariance, model-validation error, or future environmental data are supplied. State the appropriate uncertainty qualification for the forecast.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As a sanity check, use the sign of dy/dt for 0<y<K and r>0 to decide where the two-year value should lie relative to its initial value and K.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the two-year biomass, its relation to K, and the uncertainty qualification supported by the data.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

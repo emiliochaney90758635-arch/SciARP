@@ -1,0 +1,44 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Frequency scale changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ratio-input scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat frequencies as 0-100 values without conversion.",
+    "T4": "Convert f to a percentage before using f/(1-f), but leave the complement on the 0-1 scale."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Fit the spline on whole-number percentages rounded to the nearest integer."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Convert the selected f to a percentage for the numerator of f/(1-f), but leave 1-f on the fractional 0–1 scale when reporting the normalized ratio."
+    }
+  ]
+}

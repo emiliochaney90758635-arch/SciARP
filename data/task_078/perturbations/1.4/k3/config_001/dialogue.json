@@ -1,0 +1,45 @@
+{
+  "release_task_index": 78,
+  "task_id": "078-capsule021",
+  "source_id": "bix-29-q3",
+  "dataset": "bixbench",
+  "ordinal": 78,
+  "variant": "perturbed",
+  "conversation_id": "078::078-capsule021::1.4.k3::lane_c_manual",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "25a783b4f610b96803994a64d9c08506b1f7b8333b56132d0bcb0084f4de7e95",
+  "semantic_condition_id": "d5d3f6773b234796ab9a089623fbd1c1f9489a41dbffddcd83347369444a61be",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Cohort, Coding, and Model\n\nThe AE table takes the maximum recorded `AESEV` across all adverse-event records by `USUBJID`. The MH table counts non-null `MHONGO` cells by `USUBJID, TRTGRP`, including source values `Yes` and `No`. The DM table provides `patients_seen` and `expect_interact`.\n\nAfter merging the three tables and removing missing values, 791 unique participants remain. Variables are coded as:\n\n```text\nTRTGRP_cat:          Placebo=0, BCG=1\nexpect_interact_cat: No=0, Yes=1\npatients_seen_cat:   1-50=0, 51-100=1, >100=2\nMHONGO_TRTGRP:       MHONGO × TRTGRP_cat\nAESEV:               1 < 2 < 3 < 4\n```\n\nThe model is a cumulative-logit ordered model:\n\n```text\nAESEV ~ TRTGRP_cat\n        + expect_interact_cat\n        + patients_seen_cat\n        + MHONGO\n        + MHONGO_TRTGRP\n```\n\n## Archived Interaction-Term Output\n\n| Model term | coefficient | std error | z | p-value | coefficient 95% CI |\n|---|---:|---:|---:|---:|---|\n| MHONGO_TRTGRP | -0.0026446283 | 0.1205446677 | -0.0219389904 | 0.9824966224 | [-0.2389078356, 0.2336185790] |\n\nModel coefficients are on the log-odds scale. The archived code applies the following to every coefficient:\n\n```python\nodds_ratio = np.exp(coefficient)\n```\n\nThe exponentiated confidence interval for this interaction is `[0.7874874573, 1.2631626035]`. Its unit is the proportional-odds multiplier for the ratio of slopes associated with each 1-record increase in the nonmissing `MHONGO` count under BCG relative to Placebo.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAggregate one AESEV per participant without specifying the statistic.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Construct a history count without specifying whether non-null `No` cells count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Merge complete cases and construct the archived coding and product term.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the ordinal model and extract the BCG-by-MHONGO interaction coefficient.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report an interaction multiplier without specifying whether to exponentiate the interaction alone or a sum with a main effect.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

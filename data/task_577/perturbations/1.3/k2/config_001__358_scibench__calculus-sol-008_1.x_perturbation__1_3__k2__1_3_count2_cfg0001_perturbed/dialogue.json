@@ -1,0 +1,69 @@
+{
+  "release_task_index": 577,
+  "task_id": "scibench__calculus-sol-008",
+  "dataset": "scibench",
+  "ordinal": 358,
+  "variant": "perturbed",
+  "conversation_id": "358::scibench__calculus-sol-008::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "d3bac8947321d3395c8cddab8c270b181581d4af61d96511cf57b72a2812e80e",
+  "semantic_condition_id": "81853b47ad285788c72b786033f77e6e896729f0b0642e563d8844a8da8341dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the volume V of a right circular cone in terms of its base radius h and height h.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Differentiate the cone-volume formula with respect to r and h to obtain the total differential dV.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the measured values h = 10 cm and h = 25 cm into dV. Write the separate absolute contributions from |dr| <= 0.1 cm and |dh| <= 0.1 cm before evaluating them.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the radial and height contributions separately using |dr| <= 0.1 cm and |dh| <= 0.1 cm, keeping each result in cubic centimetres.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "These measurement limits are deterministic error bounds rather than standard deviations. Explain how the signs of dr and dh should be chosen when estimating the largest possible first-order absolute error.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two component bounds accordingly and give the exact first-order maximum absolute error in the cone's volume.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Convert that exact error estimate to a decimal number of cubic centimetres.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why the differential result is a first-order approximation rather than the exact finite change when the measurement errors are nonzero.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the worst-case sign choice: why do the two absolute contributions add for the maximum, rather than cancel or subtract?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Using the sign check from the previous turn, report the estimated maximum volume error both exactly and approximately, with the correct unit and first-order qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

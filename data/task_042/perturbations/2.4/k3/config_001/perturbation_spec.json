@@ -1,0 +1,44 @@
+{
+  "config_id": "task042_2.4_k3",
+  "subclass": "2.4",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "UMI pipeline reports 24 of 45",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "canonical-transcript audit reports 27 of 43",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "unique-site audit reports 18 of 29 under a different unit",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

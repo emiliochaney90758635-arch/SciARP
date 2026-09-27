@@ -1,0 +1,57 @@
+{
+  "config_id": "task059_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "drop blank classifications from the tabulation",
+      "injected_text": "Tabulate the original Classification values and retain all qualifying rows in the denominator.\n\nFor this perturbed step, drop blank classifications from the tabulation",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "additionally merge Likely Benign into Benign",
+      "injected_text": "Calculate the fraction of qualifying rows classified exactly as Benign.\n\nFor this perturbed step, additionally merge Likely Benign into Benign",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "T3 repeats the clean exact tabulation; only the later class merge is a real root.",
+    "before": "Correct tabulation followed by merging Likely Benign.",
+    "after": "At T3 drop blank classifications from the tabulation; at T4 additionally merge Likely Benign into Benign.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Tabulate Classification only among rows with nonblank Classification and use that nonblank total as the denominator."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate the fraction whose Classification is either Benign or Likely Benign."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 200,
+  "task_id": "gpqa__recE9pSb1glprNqNa",
+  "dataset": "gpqa",
+  "ordinal": 67,
+  "variant": "perturbed",
+  "conversation_id": "067::gpqa__recE9pSb1glprNqNa::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6747f41f967f5a5cf48144bd3df7d0217cb47c10809300fffdb7e459a5d5a353",
+  "semantic_condition_id": "d6d2e2c98c9d531d6d0196794135405831826380cd4498456619c465acf33afe",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two uncoupled nuclei in a strong magnetic field, explain how the joint product-state basis is constructed from the individual magnetic quantum states.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the product-state counting rule and the single-spin-flip selection rule that will be applied.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take both nuclei to have spin 1/2 and list their combined spin product states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain what different electrical conductivities would imply for the spin product-state energies listed above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the rule that one spin flips while the other remains fixed to enumerate the allowed transitions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count only those single-spin-flip connections.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the ordered pair of level count and transition count and list the allowed connections.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why not every pairwise connection between the product-state levels is allowed.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final counts.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

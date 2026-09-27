@@ -1,0 +1,49 @@
+{
+  "release_task_index": 329,
+  "task_id": "gpqa__reca44yABeO2fx7UB",
+  "dataset": "gpqa",
+  "ordinal": 197,
+  "variant": "perturbed",
+  "conversation_id": "197::gpqa__reca44yABeO2fx7UB::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "d7c3dae6b4b4aacb345ad25851d60d44d817804fcd10b902b480778606dda850",
+  "semantic_condition_id": "40972933d9fa967a68208d5fb6d544607e67fbc385828f6446a404cd797b15dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Draw 3,3,6-trimethylhepta-1,5-dien-4-one and identify two aromatic-ring sites for epoxidation while also distinguishing its alkenes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With one equivalent of mCPBA, identify the two possible monoepoxide branches, one from each alkene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat methanol and CuI as generating the organocuprate reagent, then predict opening and conjugate addition.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After workup, identify one transition state by systematic name and defining functional groups.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify its origin from attack at the less substituted epoxide carbon and conjugate addition where applicable, without direct addition to the ketone carbonyl.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the product name and the branch-specific reaction sequence.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

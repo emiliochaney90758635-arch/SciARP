@@ -1,0 +1,74 @@
+{
+  "release_task_index": 199,
+  "task_id": "gpqa__recE2ihVfqEK4R9d0",
+  "dataset": "gpqa",
+  "ordinal": 66,
+  "variant": "perturbed",
+  "conversation_id": "066::gpqa__recE2ihVfqEK4R9d0::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8ddbeefeb8d831c23d3ae8a487b96a405b118728b60fb94fc2ba6d9173147497",
+  "semantic_condition_id": "63e5b6a2b3b92919623221056efe350825b6b847bb2bedc7c41e0b376e6bfee6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An electron is described by the unnormalized spinor |psi>=(3i,4)^T, and sigma_y=[[0,-i],[i,0]]. Before calculating the y-spin expectation, write the corresponding bra and identify the operator S_y and the normalization quantity that will be needed.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Since the supplied spinor is not normalized, what is the most direct way to compute the expectation value without first introducing a separately normalized ket? State the method before carrying out the products.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the explicit quotient for <S_y> in terms of the spinor |psi>=(3i,4)^T, its bra, and sigma_y=[[0,-i],[i,0]].",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply sigma_y to |psi> and give the resulting two-component vector.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use that vector and <psi| to evaluate the numerator <psi|sigma_y|psi>.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Now compute the norm <psi|psi> of the same spinor.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the numerator and norm with S_y=(hbar/2)sigma_y to obtain <S_y>.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "The original state has second component -4. Explain how its relative sign and phase with 3i determine the sign of the y-spin expectation, and use this as a quick consistency check on the result.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Express the result both as the dimensionless polarization <sigma_y> and as a coefficient multiplying hbar.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Verify that the expectation value is real and lies in [-hbar/2,+hbar/2]. How do Hermiticity and normalization guarantee these checks?",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "State the final normalized expectation value <S_y>, including its sign.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "clean",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "57a40651a1b0fd3d965b62c00c330ed22187db854fa358420cb5ba2421b4a9bd",
+  "semantic_condition_id": "e3b068647e44c37d733a2c3cb096f199d1e993b23d5664a6ffb42ae60f17395b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let FA and FB denote the two bolometric fluxes and dA and dB their luminosity distances. Express LA/LB in terms of these four quantities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At redshifts zA=0.06 and zB=0.02, use the leading low-redshift distance-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the two measurements established above, calculate their ratio in the orientation required for LA/LB.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

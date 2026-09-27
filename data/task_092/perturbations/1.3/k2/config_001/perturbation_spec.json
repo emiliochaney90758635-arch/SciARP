@@ -1,0 +1,44 @@
+{
+  "task_id": "092-capsule026",
+  "release_task_index": 92,
+  "subclass": "1.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Swaps group fields.",
+    "Changes identifier mapping."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "6e7f404a2607c8ecad41fb2a0fbe52957ed023ac357c791608c3905391eab063",
+  "configured_evidence_sha256": "6e7f404a2607c8ecad41fb2a0fbe52957ed023ac357c791608c3905391eab063",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Map accession P06733 to gene_id 2032 rather than 2023. Relabel the displayed P06733/ENO1/2023 row as gene_id 2032 and reuse its displayed values under the swapped Normal and Tumor field names."
+    }
+  ]
+}

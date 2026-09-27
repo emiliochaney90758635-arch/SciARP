@@ -1,0 +1,54 @@
+{
+  "release_task_index": 301,
+  "task_id": "gpqa__recJtvFAlzbVyKlWf",
+  "dataset": "gpqa",
+  "ordinal": 169,
+  "variant": "perturbed",
+  "conversation_id": "169::gpqa__recJtvFAlzbVyKlWf::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7e51e85bd3e0aa3b5ee32e218212d8209861b1984821f9ed5f3b1afc8edcc8dd",
+  "semantic_condition_id": "cee4010f5ee209859782e3a58c99841318352516212ac9e40222fe035332d8a7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the supplied 5'-to-3' insert, identify a suitable forward-primer annealing segment at its 5' end and the reverse-complement annealing segment from its 3' end.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which DNA ligases occur both in the freezer inventory and in the ordered vector MCS downstream of the CMV promoter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Screen the complete supplied sequence for the candidate features identified in the current workflow. Which candidate must be excluded because its defining pattern occurs internally?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "From the remaining candidates, assign one to each end so their placement follows the orientation criterion established above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using that amino-acid assignment, build the complete forward and reverse primers in the 5'-to-3' direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed pair against the material supplied earlier and explain how their relative placement supports directionality.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final pair and summarize the evidence for directional insertion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

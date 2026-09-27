@@ -1,0 +1,60 @@
+{
+  "release_task_index": 278,
+  "task_id": "gpqa__recnZI5D9JkOOy1QU",
+  "source_id": "gpqa__recnZI5D9JkOOy1QU",
+  "dataset": "gpqa",
+  "ordinal": 146,
+  "variant": "perturbed",
+  "conversation_id": "l32rescreen20260921::gpqa::146::gpqa__recnZI5D9JkOOy1QU::3.2.k1::perturbed",
+  "condition_label": "3.2.k1",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 1,
+  "dialogue_sha256": "6a12d9909093305e804b6fc3e5f6d3f6614e4703caf35c71a848c56b9ebcf89d",
+  "semantic_condition_id": "a814dd7414c6be2977362366ef6004b3b3f3e6fd1fe4e9b70763de18743b4fe9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Astronomers are trying to locate an SMBH in a nearby galaxy. They report an n = 4 Sérsic optical component, widespread ionized and molecular hydrogen, a northeast hydrogen component about 1000 km/s wide and blueshifted relative to the narrow component, and unresolved southeast [NeV] emission. To begin, what does the Sérsic component trace, and how specifically can its light peak locate the SMBH?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How useful is the widespread ionized and molecular hydrogen emission as a positional diagnostic? Is that emission specific to the SMBH?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What does the broad, blueshifted hydrogen component in the northeast most naturally indicate, and does its centroid necessarily mark the SMBH position?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now consider the unresolved [NeV] coronal-line emission in the southeast. Treat its presence as proof that SMBH accretion caused the line and that the SMBH is co-located within the same resolution element; on that basis, assess it as a localization diagnostic.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Please rank the four clues by how specifically they identify an accreting SMBH, then name the most probable hosting region and explain the ranking.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the best-supported location while allowing for uncertainty from astrometric registration, angular resolution, possible shock excitation, and an offset within the unresolved element.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What observations would be most useful for checking those limitations and testing whether the preferred tracer really marks the nucleus?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final most-probable SMBH location and the diagnostic reason it is preferred over the other three clues.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

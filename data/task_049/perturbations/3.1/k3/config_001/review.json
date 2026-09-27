@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can establish the correct fields, T2 can switch to Round, and T3 can call the resulting dimensionless average an Area mean.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "2cedb5f3716bafef2376a9750c507910ef69937b337cb32e348383737eb083a3",
+  "strict_non2x_original_semantic_condition_id": "c7ae8bb708b03f745b6314bf179ea4a9b54f81c9e3abec54ec9220a873e0bca3",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request strain-number-only grouping at T1, extraction of Round replicates at T2, and sum divided by n minus one at T3 before nearest-thousand rounding. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

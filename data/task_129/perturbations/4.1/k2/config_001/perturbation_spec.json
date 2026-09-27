@@ -1,0 +1,34 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "4.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Enrichment interpretation uncertainty suppressed.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Top-20 generalization uncertainty independently suppressed.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Describe each enriched pathway as certainly active, without distinguishing enrichment from direct activity measurement.",
+    "T5": "Present 2/20 as an exact population-wide prevalence with no top-20 limitation."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

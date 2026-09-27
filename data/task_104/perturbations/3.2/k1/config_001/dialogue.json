@@ -1,0 +1,35 @@
+{
+  "release_task_index": 104,
+  "task_id": "104-capsule030",
+  "source_id": "bix-43-q2",
+  "dataset": "bixbench",
+  "ordinal": 104,
+  "variant": "perturbed",
+  "conversation_id": "104::104-capsule030::3.2.k1::lane_c_manual",
+  "condition_label": "3.2.k1",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 1,
+  "dialogue_sha256": "1be7f9dda139fcfe6134509c040dc50aa0e3092787609600cfaff1a84b228d41",
+  "semantic_condition_id": "21e0ac9b41d12491894802dca1b2eb313df5c35f3fc86f61bb66e00351d105a3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Historical analysis boundary\n\nThe archived comparison used a four-level model but the target contrast was:\n\n```text\nCisplatin_IC50_CBD_IC50 versus DMSO\n```\n\nThree samples belonged to each contrast endpoint. Differential-expression rows\nwere selected with:\n\n```text\npadj < 0.05\nabs(log2FoldChange) >= 0.5\nbaseMean >= 10\n```\n\nThe resulting 679 Ensembl IDs underwent the historical display-name mapping;\n23 requests failed and were dropped. gseapy 1.1.4 then queried the historical\nonline `Reactome_2022` library with `background=None`. This is an\nover-representation analysis of an unranked selected-gene list, not a\nrank-based GSEA. The archived response, rather than a current API rerun, defines\nthe numeric fields below.\n\n## Archived target result row\n\n| Field | Archived displayed value |\n|---|---|\n| `Gene_set` | Reactome_2022 |\n| `Term` | TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 |\n| `Overlap` | 8/49 |\n| `P-value` | 0.000140 |\n| `Adjusted P-value` | 0.133280 |\n| `Old P-value` | 0 |\n| `Old Adjusted P-value` | 0 |\n| `Odds Ratio` | 6.023533 |\n| `Combined Score` | 53.470992 |\n| `Genes` | BTG2;CDKN1A;PCNA;RGCC;CCNE2;CCNE1;PLK2;BAX |\n\nThe archived table stored six decimal places for the odds-ratio display and did\nnot preserve a higher-precision enrichment object. `Odds Ratio`, `Overlap`,\nand `Combined Score` are distinct fields and must not be interchanged.\n\nAlthough the row is top-ranked within the archived Reactome subset, its\nadjusted p-value exceeds 0.05; its presence in the returned table does not by\nitself imply 5% FDR significance.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the differential-gene input used for Reactome enrichment of the CBD-plus-cisplatin comparison with DMSO.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Locate the Reactome pathway for TP53-mediated transcriptional regulation of cell-cycle genes in the archived result.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat odds ratio 6.023533 as proof that TP53 transcription directly causes the treatment response.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

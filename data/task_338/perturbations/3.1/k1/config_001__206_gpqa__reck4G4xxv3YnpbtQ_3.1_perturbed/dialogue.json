@@ -1,0 +1,54 @@
+{
+  "release_task_index": 338,
+  "task_id": "gpqa__reck4G4xxv3YnpbtQ",
+  "dataset": "gpqa",
+  "ordinal": 206,
+  "variant": "perturbed",
+  "conversation_id": "206::gpqa__reck4G4xxv3YnpbtQ::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "020963822032f7b4e13741b1d0341a54119dbf9441d7d9acf7ce2ac4b64800fe",
+  "semantic_condition_id": "7b9ffe9aca17d8dc43d1a1b741277bd01dc1d4b641f69cb083b5a2ca28682629",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat 5-bromo-3a,4a-dimethyldecahydrocyclopenta[1,4]cyclobuta[1,2]benzene with water. Identify product A and track the C5 substituent, fused skeleton, and two original methyl groups.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Oxidize product A with PDC. What functional group is formed at C5 in product B, and which structural features remain unchanged?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use a C5 alcohol structure for product B and treat it with H2C=PPh3. Identify the proposed product C and its alkene type.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Product C is then treated with TsOH. Following the reaction path implied by the structure assigned above, identify product D by its full name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the structural classification of C and explain the reactive intermediate formed during TsOH treatment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly is the proposed rearrangement pathway established by the supplied information, given that no kinetic, stereochemical, isotope-labelling, or intermediate-trapping evidence is provided?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting full name of D, the structural classification of C, the key carbon mapping, and the appropriate confidence in the proposed mechanism.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 480,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2230",
+  "dataset": "olympiadbench",
+  "ordinal": 427,
+  "variant": "perturbed",
+  "conversation_id": "427::olympiadbench__OE_TO_maths_en_COMP_2230::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "b1801f46a7fea11d2f09b409737e256fca157a5f31159110881290e8fe8b07b0",
+  "semantic_condition_id": "5b13a5bac1d394c27cac90330487b3feeec2e786bbe887fdb1f95e00b4e649e3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find a dictionary of k-letter A/B strings that has no valid k by k grid and is as large as possible for a lower-bound example. Why does your construction fail?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What lower bound on the guaranteed dictionary size m follows from that example?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take an arbitrary family meeting that candidate threshold. What happens if it contains an applicable uniform string?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use Sperner's theorem about inclusion antichains as the sole reason that a complementary pair must occur.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Let l and l' be such a pair, and let J be the set of positions where l has A. Use them to construct the required k by k grid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify directly what follows from the current construction and the requirement under discussion, citing only the information established so far.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the threshold conclusion reached after the preceding verification and the reason supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

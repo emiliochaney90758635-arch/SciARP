@@ -1,0 +1,44 @@
+{
+  "release_task_index": 140,
+  "task_id": "gpqa__rec06pnAkLOr2t2mp",
+  "dataset": "gpqa",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "002::gpqa__rec06pnAkLOr2t2mp::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "7aaaa7f74a687a268f1df6ccc12ed8f44ac1571251ea00d4ce083703f3e93101",
+  "semantic_condition_id": "49d4e83601bdfa991050c1db4ae10f6513a9b150726ceea26e0dbb6784bf9ccb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use tau1=1e-9 eV and tau2=1e-8 s in the lifetime-linewidth relation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hbar=6.58e-16 eV s, calculate both linewidths.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What order-of-magnitude energy separation is needed to resolve the two levels clearly?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain whether the broader linewidth or the sum of linewidths sets the relevant scale, and why equality with that scale is not clear resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the separation as an inequality and give a representative safely resolvable value.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

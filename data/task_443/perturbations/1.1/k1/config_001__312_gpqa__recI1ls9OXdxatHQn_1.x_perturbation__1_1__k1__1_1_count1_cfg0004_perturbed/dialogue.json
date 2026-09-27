@@ -1,0 +1,54 @@
+{
+  "release_task_index": 443,
+  "task_id": "gpqa__recI1ls9OXdxatHQn",
+  "dataset": "gpqa",
+  "ordinal": 312,
+  "variant": "perturbed",
+  "conversation_id": "312::gpqa__recI1ls9OXdxatHQn::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "de78b9b8c1089af7acc397faed5cd1e9cb51e178382cf207a94e21bd0c93600d",
+  "semantic_condition_id": "15ad6a4bd735737c9e80ae092e06fdb69abb43a165a764ade521d6e05cb13d2d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In an ensemble of 10,000 otherwise identical particles, none is observed outside 1<=x<=3. For this calculation, take that interval as the wavefunction's support and write its normalization condition.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let a be real and psi(x)=a/sqrt(1+x)-0.5i. Find the probability density |psi(x)|^2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how the prescription used above produces the density and whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Integrate the resulting density over the support interval established above and write the normalization equation in terms of a.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve that equation for the positive real scattering length a.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions behind the value, including the adopted finite support and parameter convention. What does the finite sample allow us to say about a possible tail outside the interval?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the density, adopted support, normalization equation, numerical value of a, and the uncertainty conclusion reached above.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

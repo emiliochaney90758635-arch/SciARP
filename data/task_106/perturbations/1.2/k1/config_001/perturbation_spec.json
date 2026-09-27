@@ -1,0 +1,25 @@
+{
+  "task_index": 106,
+  "task_id": "106-capsule030",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "394bbcb07c9c2c396b710e6892dc4d37ce4ed70e1e4aed4a4745383fe21ad0f1",
+  "source_base_evidence_sha256": "f7c72faf74bda56763b8fa09d6df98c473f7d0c69b1ab7905abd61a3b28ff822",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "A decimal probability is incorrectly converted as though already expressed in percent.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Report the exact leading term. Interpret the stored adjusted value 0.133280 as 0.133280 percent, then determine whether it passes a 5 percent FDR threshold."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

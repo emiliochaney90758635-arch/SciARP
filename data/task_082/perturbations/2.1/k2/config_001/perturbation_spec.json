@@ -1,0 +1,20 @@
+{
+  "task_id": "082-capsule022",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "Treats adjusted probabilities as percentages.",
+    "Shrinks the common correction family from 175 to 17."
+  ],
+  "evidence_mode": "append"
+}

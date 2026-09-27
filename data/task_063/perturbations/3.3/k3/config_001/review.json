@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can filter within CD4 only, T3 use medians, and T4 omit the square root.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "edda54431d9753a18f048e33e05d86dca16f45b520c0f961494ac735c8b33175",
+  "strict_non2x_original_semantic_condition_id": "9292adf64416b403bdf8fe728a9fbb429dfc52e4246aafb7e09e2a2001053a43",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use only the ten visible spot-check genes, call their displayed mean-expression values medians, and compute Sxy/(Sxx*Syy) on those ten pairs.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Downregulated can be replaced with the up table at comparison.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "5ed51d50745d814aa93d2ff0ce7cbf42fe7fa265beb13ad7a453d7094e6b99e2",
+  "strict_non2x_original_semantic_condition_id": "7071c1e497680db92c9ddf3c9279a18a6fc58b36bbc5539c238a6c8202a4ab84",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use the upregulated table in place of the downregulated table, then declare upregulated primary because its rows now appear in both directional summaries.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 575,
+  "task_id": "scibench__calculus-sol-006",
+  "dataset": "scibench",
+  "ordinal": 356,
+  "variant": "perturbed",
+  "conversation_id": "356::scibench__calculus-sol-006::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "17680d22bb04f6ca7fa60ced286b6701f81bbff020137aa10bbe20bb540bef96",
+  "semantic_condition_id": "4ba854ea2f256a9b098263087ff5d84aea8d7aeb5f58e135ed18e6445f2c17e1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the integral from 1 to 2 of 1/x, composite Simpson's Rule is to be used with n=10 equal subintervals. What is the step size h?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does n=10 satisfy the parity requirement for composite Simpson's Rule, and how many grid nodes does it produce?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "List the nodes x_i=1+ih for i=0,...,10 on this grid.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the eigenvectors from the previous step, evaluate f(x)=1/x at each node, keeping the endpoint values separate from the interior values.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the step size and sampled values, group the odd- and even-indexed interior terms needed for a Fourier-series expression for this integral.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the composite Simpson formula to those groups and compute the numerical approximation to six decimal places.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the alternating coefficient assignment against the Simpson formula and compare the approximation qualitatively with the exact value ln(2).",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the coefficient-parity grouping and weighted expression obtained above, report the Simpson's Rule molecular collision cross section to six decimal places.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 328,
+  "task_id": "gpqa__recZqUs2jwJYgDIeh",
+  "dataset": "gpqa",
+  "ordinal": 196,
+  "variant": "perturbed",
+  "conversation_id": "196::gpqa__recZqUs2jwJYgDIeh::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "01b5f148296d7b8a35ee969dc22ec171ab1f0f7f6153ecd40e24864043f8fee7",
+  "semantic_condition_id": "1444af0d8b36a6f756688329b5a682d16c5c7593169ed46d631313ccca03adfb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Klebsiella pneumoniae lawn on Mueller-Hinton agar was tested with an amoxicillin-clavulanate disc placed 25 mm centre-to-centre from erythromycin and then chloramphenicol discs, with no zone distortion. What assay was intended, and which antibiotic class should its indicator discs belong to?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "PCR produced bands at the expected sizes for blaCTX-M-1 (950 bp) and blaTEM (1080 bp). What do those bands support, and what identity claims remain limited without controls, sequencing, replication, or independent confirmation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat Sabouraud agar's support of fungal growth as an improvement to this Klebsiella ESBL test.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which disc substitution would correctly implement a clavulanate double-disc synergy test for extended-spectrum beta-lactamase activity?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the correction changes the indicator antibiotic class while retaining the bacterial susceptibility medium, useful spacing, and separately qualified PCR evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the experimental improvement and the evidential status of the two expected-size PCR bands.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

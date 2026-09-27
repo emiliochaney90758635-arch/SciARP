@@ -1,0 +1,42 @@
+{
+  "task_index": 119,
+  "task_id": "119-capsule034",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "34c62ce1a5af7d455ed688023887111e210a3be5404be61e2f816b6e610b82fe",
+  "source_base_evidence_sha256": "13caba5c12b76648bb394b9949ebfc464351d4d8455a259e125f1390d150f92e",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong outcome method.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong no-intercept model independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Wrong linear-model method independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Reverse Response coding.",
+    "T2": "Fit without an intercept.",
+    "T3": "Use ordinary least squares on the binary response and report that age slope instead of the logistic coefficient."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

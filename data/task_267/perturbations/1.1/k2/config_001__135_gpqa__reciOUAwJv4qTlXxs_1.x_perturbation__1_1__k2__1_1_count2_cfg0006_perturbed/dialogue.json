@@ -1,0 +1,49 @@
+{
+  "release_task_index": 267,
+  "task_id": "gpqa__reciOUAwJv4qTlXxs",
+  "dataset": "gpqa",
+  "ordinal": 135,
+  "variant": "perturbed",
+  "conversation_id": "135::gpqa__reciOUAwJv4qTlXxs::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "861d9c263b119c103d45301f9b5d3edcb068610a1a81e776a0a3e47757d2598e",
+  "semantic_condition_id": "bda2c99dbc68a6685a40aeb77f5dba55456b813c806fe81088f4e2cf4ada0922",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A single-qubit channel flips the computational-basis state with probability p. Which two operations represent the no-flip and flip events, and what probability belongs to each?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Turn those two events into Kraus operators A_0 and A_1 in matrix form, using probability amplitudes as their scalar weights.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check the operators using a trace-decreasing completeness condition instead of the trace-preserving channel condition, and interpret the result on that basis.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the expression as a Hamiltonian representation rather than a Kraus channel, and report the resulting matrices.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why do the scalar weights enter as square roots, and why can an overall phase on either Kraus operator leave the channel unchanged?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the two Kraus operators and the resulting map E(rho).",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

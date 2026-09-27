@@ -1,0 +1,34 @@
+{
+  "task_id": "010-capsule004",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits the explicit exposure exclusion criterion.",
+    "Omits the enrichment universe."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "configured_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "evidence_unchanged": true
+}

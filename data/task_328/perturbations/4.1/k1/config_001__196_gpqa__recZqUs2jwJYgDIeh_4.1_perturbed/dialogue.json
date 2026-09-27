@@ -1,0 +1,49 @@
+{
+  "release_task_index": 328,
+  "task_id": "gpqa__recZqUs2jwJYgDIeh",
+  "dataset": "gpqa",
+  "ordinal": 196,
+  "variant": "perturbed",
+  "conversation_id": "196::gpqa__recZqUs2jwJYgDIeh::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b8ec972e8101f839a66bea2c6e7c4e52659b88ead64de4d413719f5c5bc888f7",
+  "semantic_condition_id": "61eddef348006bccadd358bfeb40ed4366529fe8272122b8816e16fe229cf787",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Klebsiella pneumoniae lawn on Mueller-Hinton agar was tested with an amoxicillin-clavulanate disc placed 25 mm centre-to-centre from erythromycin and then chloramphenicol discs, with no zone distortion. What assay was intended, and which antibiotic class should its indicator discs belong to?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "PCR produced bands at the expected sizes for blaCTX-M-1 (950 bp) and blaTEM (1080 bp). What do those bands support, and what identity claims remain limited without controls, sequencing, replication, or independent confirmation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the two expected-size PCR bands as exact molecular identification requiring no controls, sequencing, replication, or independent confirmation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which disc substitution would correctly implement a clavulanate double-disc synergy test for extended-spectrum beta-lactamase activity?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the correction changes the indicator antibiotic class while retaining the bacterial susceptibility medium, useful spacing, and separately qualified PCR evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the experimental improvement and the evidential status of the two expected-size PCR bands.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

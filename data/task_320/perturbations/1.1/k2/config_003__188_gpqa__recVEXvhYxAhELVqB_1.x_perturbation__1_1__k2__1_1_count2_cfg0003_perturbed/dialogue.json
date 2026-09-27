@@ -1,0 +1,54 @@
+{
+  "release_task_index": 320,
+  "task_id": "gpqa__recVEXvhYxAhELVqB",
+  "dataset": "gpqa",
+  "ordinal": 188,
+  "variant": "perturbed",
+  "conversation_id": "188::gpqa__recVEXvhYxAhELVqB::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "259de10c1849cd8176fff2e8ccfd3914ae95d7666fea3b70838d8eb5531a5e26",
+  "semantic_condition_id": "d7caad5c18d4a341c22e824fc7166b08f8dfcce1582be0220075bc63d4fecaa6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Using the listed 1H and 13C data, identify a phosphate functional group and assign the two methyl singlets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the aromatic proton pattern and carbon-symmetry analysis to infer the substitution pattern.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the assignments developed so far to identify the product by condensed structure and systematic name.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compound X, C11H12O, gives this product after DABCO treatment in nonpolar solvent at 403 K. Which enzyme class is indicated, and what precursor framework should X contain?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the product and reaction class established above to identify X by systematic name and connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check positively whether the proposed X accounts for the spectral and transformation evidence accumulated so far, and state any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identity of X with a concise mechanistic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 530,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1997",
+  "dataset": "olympiadbench",
+  "ordinal": 477,
+  "variant": "perturbed",
+  "conversation_id": "477::olympiadbench__OE_TO_maths_en_COMP_1997::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "38dd7c2076ae3c9a18df54c272b5747d5b047d208f9147d4982e0b63f4e81295",
+  "semantic_condition_id": "65d583f69fee63ff038c99e538da051bafdc3fb1bbfb1c78eab62775c230a837",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let k >= 2 be an integer. Find the smallest n >= k+1 for which there is a set S of n distinct real numbers such that every element of S is the sum of exactly k other distinct elements of S.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use rank-nullity on the real numbers viewed as vectors in a one-dimensional real vector space as the sole proof method. Treat any nontrivial linear dependence as if it supplied the required coefficient-one sum of k distinct elements for every member of the set.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the elements as a_1 < a_2 < ... < a_n. By applying the representation property to a_1 and a_n, derive the sharp inequalities involving the k smallest available summands and the k largest available summands.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those extremal inequalities to analyze n = k+1, n = k+2, and n = k+3 separately. Determine whether any of these cardinalities can satisfy the required property, and justify each conclusion.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What lower bound on n follows from those exclusions? To show that it is sharp, what remains to be constructed for even and odd k?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For even k = 2l, consider A = {+/-1, +/-2, ..., +/-(l+2)}. Verify that every element of A is a sum of k other distinct elements of A, giving a general representation for a positive element and then using symmetry for its negative.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For odd k = 2l+1, take B = {0} union {+/-1, +/-2, ..., +/-(l+2)}. Extend the even-case representations to the nonzero elements and give a valid k-term representation of 0.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the lower bound with the even- and odd-parity constructions. What is the smallest possible n for every integer k >= 2?",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

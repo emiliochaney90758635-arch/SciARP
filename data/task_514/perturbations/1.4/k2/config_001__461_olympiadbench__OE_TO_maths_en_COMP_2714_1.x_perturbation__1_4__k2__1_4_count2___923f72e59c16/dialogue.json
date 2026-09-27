@@ -1,0 +1,54 @@
+{
+  "release_task_index": 514,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2714",
+  "dataset": "olympiadbench",
+  "ordinal": 461,
+  "variant": "perturbed",
+  "conversation_id": "461::olympiadbench__OE_TO_maths_en_COMP_2714::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "b74751405cecd037831b068858397dd54235bb9327119fdabf3c55686516fb4e",
+  "semantic_condition_id": "4aa7d228735ae9145a6d70d81caaa049fd5b2a74b957de60a6f8997957022912",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compute sqrt(576) and denote the resulting length by t for use in the geometric configuration.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using only the stated point and intersection relationships, classify the four smaller triangles and derive the geometric relations needed later.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the geometric relations established in the preceding step to verify that the four small triangles have the required right angles.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the inradius relation justified by the triangle classification established above to the four small triangles, then combine the four expressions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Simplify the sum of their eight leg lengths using the segment relations in the configuration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the point placement and segment identities in the configuration to simplify the sum of the four hypotenuse lengths.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use t=24 and the length identities above to evaluate the requested sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

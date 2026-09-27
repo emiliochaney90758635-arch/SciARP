@@ -1,0 +1,47 @@
+{
+  "release_task_index": 59,
+  "task_id": "059-capsule016",
+  "source_id": "bix-20-q1",
+  "dataset": "bixbench",
+  "ordinal": 59,
+  "variant": "perturbed",
+  "conversation_id": "059::059-capsule016::3.3::k1::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "7acbc86feb169f86d855333e78d3dedbc0e9f0976e14680c4ca097c29638e8f1",
+  "semantic_condition_id": "3c4760c6b8fc08ea1a26a8711b8c7cc8ea612597a84c51097bd00e5b121e73c1",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "382336c46db1db6fba398ca1333fa2570cdd14a7abea827920d5bab23b1d17a7",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## BSyn Probands cohort and filtering criteria\n\nThe Sample IDs with `BLM Mutation Status = Affected` in the grouping metadata are:\n\n```text\n179, 286, 360, 364, 380, 409, 488, 498, 502, 615\n```\n\nNumeric IDs that are not `SRR` IDs receive a `P` prefix in the sample join key; this group is named `BSyn Probands` in the archived analysis.\n\nThe actual fields in each variant table include `Zygosity`, `Variant Allele Freq`, `Gene Names`, `Sequence Ontology (Combined)`, and `Classification`. The eligibility criteria for a qualifying variant are:\n\n- `Zygosity` is not `Reference`;\n- exclude intronic, intergenic, and any UTR annotation;\n- `Variant Allele Freq < 0.3`, with a strict less-than threshold;\n- do not deduplicate the same locus across different samples.\n\n## Row-level records passing the filters\n\n`Classification = NA` means that the original cell is blank. Every record below has `Zygosity = Heterozygous`, and none of the ontology values contains `UTR`.\n\n| Sample | Chr:Pos | Gene Names | VAF | Sequence Ontology | Classification |\n|---|---|---|---:|---|---|\n| P179 | 4:105275794 | TET2,TET2-AS1 | 0.278481 | missense_variant | Benign |\n| P179 | 9:5081780 | JAK2 | 0.243056 | synonymous_variant | Benign |\n| P286 | 3:105720182 | CBLB | 0.286517 | synonymous_variant | NA |\n| P360 | 9:21970917 | CDKN2A | 0.150289 | missense_variant | Benign |\n| P380 | 7:102193869 | CUX1 | 0.288256 | synonymous_variant | Benign |\n| P380 | 7:102201571 | CUX1 | 0.296651 | synonymous_variant | Benign |\n| P488 | 7:50327696 | IKZF1 | 0.298343 | synonymous_variant | Benign |\n| P488 | 7:102193869 | CUX1 | 0.225000 | synonymous_variant | Benign |\n| P488 | 21:34792189 | RUNX1 | 0.285714 | synonymous_variant | Benign |\n| P498 | 3:105720182 | CBLB | 0.250000 | synonymous_variant | NA |\n| P498 | 4:54736599 | KIT | 0.294118 | synonymous_variant | Likely Benign |\n| P502 | 2:197418581 | SF3B1 | 0.240964 | synonymous_variant | Benign |\n| P502 | 3:105720113 | CBLB | 0.294314 | synonymous_variant | NA |\n| P502 | 3:105720182 | CBLB | 0.278049 | synonymous_variant | NA |\n| P502 | 9:5081780 | JAK2 | 0.256944 | synonymous_variant | Benign |\n| P502 | 9:136508242 | NOTCH1 | 0.280000 | synonymous_variant | Benign |\n| P615 | 2:197418581 | SF3B1 | 0.205479 | synonymous_variant | Benign |\n| P615 | 3:105704000 | CBLB | 0.291045 | synonymous_variant | NA |\n| P615 | 9:5081780 | JAK2 | 0.251799 | synonymous_variant | Benign |\n\nP364 and P409 have no retained record after the same filtering sequence.\n\n## Classification and denominator rules\n\n- Only records whose `Classification` exactly equals `Benign` enter the numerator; `Likely Benign` is a distinct category.\n- Records with blank `Classification` values do not enter the Benign numerator but remain qualifying variants and must be included in the denominator requested by the question.\n- R's `table(Classification)` ignores `NA` by default; this software default cannot be used to reduce the “all qualifying variants” denominator in this task.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the Affected BLM-mutation cohort used as BSyn Probands.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the non-reference, ontology, and strict VAF < 0.3 rules while retaining sample-variant rows.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Tabulate the original Classification values and retain all qualifying rows in the denominator.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only nonblank Classification rows as the denominator for the exact-Benign fraction.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

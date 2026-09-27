@@ -1,0 +1,69 @@
+{
+  "release_task_index": 417,
+  "task_id": "gpqa__recmP8wLov7D0Npq6",
+  "dataset": "gpqa",
+  "ordinal": 286,
+  "variant": "perturbed",
+  "conversation_id": "286::gpqa__recmP8wLov7D0Npq6::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "59925c92dc3acf8aa0966c00b218c1fc83c1ad2300d9cc8aaebd80c0dd6daab8",
+  "semantic_condition_id": "46407f441490f66d12958c793ef7230882411f9b91f629e597dc8fd9ce1754a4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When chloride leaves (chloromethoxy)ethane before methanol capture, what cationic intermediate is formed in the conversion to (methoxymethoxy)ethane? Give its proper name.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Show how acetone traps that intermediate to give the stated acetal, and check whether the proposed cation is consistent with reaction A.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now consider conversion of (2-chloroethyl)(phenyl)sulfane to (2-ethoxyethyl)(phenyl)sulfane in ethanol. The sulfide is unprotonated, but assume neighbouring-group participation by oxygen before ethanol capture. What intermediate should be examined?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Return to reaction A and focus on the cation present at the mechanistic stage established in the preceding analysis.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name that reaction-A intermediate explicitly.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the neighbouring-group feature selected above to identify the cationic intermediate in reaction B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Show how ethanol opens or traps that intermediate to produce the stated thioether, and check its mechanistic suitability.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the two final-product assignments and state the reactive intermediates for reactions A and B.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check both assignments against the proposed bond-breaking, participation, and solvent-capture steps for the two reactions.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the final assignments with a concise mechanistic justification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

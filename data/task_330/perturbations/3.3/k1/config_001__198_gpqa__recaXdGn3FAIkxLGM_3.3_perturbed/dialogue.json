@@ -1,0 +1,54 @@
+{
+  "release_task_index": 330,
+  "task_id": "gpqa__recaXdGn3FAIkxLGM",
+  "dataset": "gpqa",
+  "ordinal": 198,
+  "variant": "perturbed",
+  "conversation_id": "198::gpqa__recaXdGn3FAIkxLGM::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "4703ad2c8f568367079f5d26496c03f3920b7e60b915d5b17cd207247e4e0147",
+  "semantic_condition_id": "45fbd24c1bfb8ab58e4c8c42b3fd337f8ad1929ead093ffc92cb883335c1d28f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A black hole subtends 10^-17 degrees in a galaxy 10^10 pc away. Convert the angle to radians and the distance to metres, retaining whether the quoted angular size is a radius or a full diameter as an ambiguity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use 10^-17 directly as a radian angle, without converting from degrees, to estimate the horizon radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Bekenstein-Hawking entropy in terms of Schwarzschild radius, Boltzmann's constant, and Planck length. How would halving the radius change it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using k_B=1.38e-23 J/K and l_P^2=2.61e-70 m^2, estimate the entropy for both radius conventions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the nearest order of magnitude, and does the radius-versus-diameter convention alter that order?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the powers of ten in the angle conversion, radius, area, and entropy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the entropy order together with the angular-size qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

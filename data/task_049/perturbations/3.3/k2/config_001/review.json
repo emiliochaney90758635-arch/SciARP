@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Converting Area to radii before averaging adds a second unjustified reasoning step.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "636383be4eb10a3ed5bc34fc8e1b3742d5c4730a709d3dade5462695f5223fdf",
+  "strict_non2x_original_semantic_condition_id": "b7a569f7e69ea1ac473351627f36a0a5d80de0830d9ec27d5fe607adfa89fe39",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 naturally retain only the largest Area replicate; at T3 convert it to equal-area radius using sqrt(A/pi) and report that radius as Area. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

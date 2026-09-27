@@ -1,0 +1,35 @@
+{
+  "release_task_index": 97,
+  "task_id": "097-capsule028",
+  "source_id": "bix-41-q3",
+  "dataset": "bixbench",
+  "ordinal": 97,
+  "variant": "perturbed",
+  "conversation_id": "097::097-capsule028::2.2.k3::lane_c_manual",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "4efc19b6b2e5fcd239006253387ae2fd9c73dda9c99aa2e60d4c6ffd39d5eed9",
+  "semantic_condition_id": "6fec56cc01671f32c72ad5dd77146dfcb1eb3b6df2cd2cd4c3fdc71a579c9632",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement fields and grouping\n\n`Circularity` is the image-derived circularity measurement. It is distinct from\nthe neighboring `Area` and `Round` fields. Group means are arithmetic means\nwithin each `StrainNumber × Ratio` group.\n\nBoth relevant strains occur only at the single-strain ratio `1:0`. Their\ncomplete nonmissing observations are:\n\n| StrainNumber | Ratio | Replicate | Circularity |\n|---:|---|---|---:|\n| 1 | 1:0 | A | 0.045 |\n| 1 | 1:0 | B | 0.068 |\n| 1 | 1:0 | C | 0.071 |\n| 98 | 1:0 | A | 0.291 |\n| 98 | 1:0 | B | 0.654 |\n| 98 | 1:0 | C | 0.525 |\n\n## Calculation convention\n\nFor each strain:\n\n```text\nmean circularity = sum of its three Circularity observations / 3\n```\n\nThe requested raw difference is directional:\n\n```text\nmean(Circularity | Strain 98, Ratio 1:0)\n-\nmean(Circularity | Strain 1, Ratio 1:0)\n```\n\nDo not standardize the difference, express it as a percentage, or substitute\nthe `Area` or `Round` measurement.\n\n# Strain-specific loss of circular morphology in monoculture biofilms\n\nJoanne E. Mercer, Akira Fujimoto, Laila Benyoussef, and Carl Nyberg\n\n## Abstract\n\nCellular contour provides a sensitive readout of strain-dependent growth\nbehavior in monoculture. We quantified segmented-object circularity for\nStrains 1 and 98 grown under identical single-strain conditions, using\nreplicate-level image masks and a prespecified perimeter correction. Strain 98\nproduced markedly less circular objects than Strain 1, and the mean difference\ncomputed as Strain 98 minus Strain 1 was negative across bootstrap resamples.\nThe morphology of Strain 98 is therefore characterized by increased\nelongation rather than the higher circularity inferred from uncorrected image\nfeatures.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the original circularity observations for Strain 98 and Strain 1 in their respective monocultures.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent morphology analysis\n\n**Citation:** R. Singh et al., *Microbial Imaging Reports* 14 (2025), 31-38.\n\nThe authors report monoculture mean circularities of `0.41` for Strain 98 and `0.23` for Strain 1, for a raw difference of `+0.18`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the arithmetic mean circularity for each strain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# External replication\n\n**Citation:** J. Alvarez and N. Mori, *Cell Shape Replications* 2 (2026), 5-12.\n\nA matched replication reports identical mean circularity of `0.30` for both strains and therefore a raw difference of `0.00`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhat is the raw mean difference in the direction Strain 98 minus Strain 1?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

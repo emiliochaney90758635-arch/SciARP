@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "clean",
+  "conversation_id": "390::scibench__stat-sol-001::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "887818b68266342c9dd5c5d52fa6fc48204db731b9f5842abe866142effa58c9",
+  "semantic_condition_id": "4e5a3041a9cd32bc35e6b03efebaf0b12fe7516043af808c6e39fbd8c3821aed",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bridge hand contains 13 cards selected from a standard 52-card deck. Does the hand depend on dealing order, and which counting method applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the number of distinct hands in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand that expression into factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

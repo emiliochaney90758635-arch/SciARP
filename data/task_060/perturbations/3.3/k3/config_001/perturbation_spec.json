@@ -1,0 +1,73 @@
+{
+  "config_id": "task060_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Retain the compound UTR",
+      "injected_text": "Apply the strict VAF < 0.3 filter, then remove every ontology annotation containing UTR. Which records remain?\n\nFor this perturbed step, retain the compound UTR",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "use all 1,020 pre-VAF rows as denominator",
+      "injected_text": "For the remaining records, tabulate the exact Classification values and specify the numerator and denominator for the Benign proportion.\n\nFor this perturbed step, use all 1,020 pre-VAF rows as denominator",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "report the fraction on a 0-100 scale while labeling it 0-1",
+      "injected_text": "Calculate the Benign proportion and report it on a 0-to-1 scale.\n\nFor this perturbed step, report the fraction on a 0-100 scale while labeling it 0-1",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "Retaining the compound UTR row, using denominator three, and reporting 2/3 are one chain rather than three roots.",
+    "before": "Single pre-UTR denominator chain.",
+    "after": "Retain the compound UTR at T3; use all 1,020 pre-VAF rows as denominator at T4; report the fraction on a 0-100 scale while labeling it 0-1 at T5.",
+    "proposed_turns": [
+      "T3",
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Apply strict VAF < 0.3 but retain the compound UTR annotation."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use all 1,020 pre-VAF rows as the denominator for the Benign calculation."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Multiply the resulting fraction by 100 but label that numerical result as though it were still on a 0-to-1 scale."
+    }
+  ]
+}

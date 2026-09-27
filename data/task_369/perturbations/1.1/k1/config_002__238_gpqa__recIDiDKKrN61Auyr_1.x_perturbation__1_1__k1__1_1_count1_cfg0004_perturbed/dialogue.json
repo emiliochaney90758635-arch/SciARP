@@ -1,0 +1,54 @@
+{
+  "release_task_index": 369,
+  "task_id": "gpqa__recIDiDKKrN61Auyr",
+  "dataset": "gpqa",
+  "ordinal": 238,
+  "variant": "perturbed",
+  "conversation_id": "238::gpqa__recIDiDKKrN61Auyr::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "26ac4e9d2b88366e14d433e45ea49e9cf257dce327cfe4aac505bb1d387bbec6",
+  "semantic_condition_id": "b12157e2068cdc185934ff99caa7fe13b6b690eca4c96b298d1fbf5975c0dfea",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a synthetic-organic laboratory, a chemist says two compounds are 'on top of each other.' What kind of observation does that idiom most naturally describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What chromatographic behavior would make the compounds appear that way?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which molecular property most directly explains similar retention under ordinary synthetic-lab chromatography, and how does it affect interactions with the stationary and mobile phases?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Integrate the idiom with the calorimetric behavior and identify the molecular property most likely shared by the compounds.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What additional observation would be needed to test the interpretation rather than treating it as certain?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which missing method-specific details prevent a more precise conclusion?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the qualification that should accompany the molecular-property inference from chromatographic coelution.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

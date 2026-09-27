@@ -1,0 +1,49 @@
+{
+  "release_task_index": 163,
+  "task_id": "gpqa__rec4JrWy7Il8ho5vk",
+  "dataset": "gpqa",
+  "ordinal": 25,
+  "variant": "perturbed",
+  "conversation_id": "025::gpqa__rec4JrWy7Il8ho5vk::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "3be2393db085943fb9e779c9ae51b8b01f354a99686b6b83c29c9e64c9af0d26",
+  "semantic_condition_id": "8a44c11b78648e1ce808e71fb249865413c8b8c253e7e364289cf3d0bc952d29",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use Earth as the density reference for four planets: an Earth-mass/Earth-radius planet; a two-Earth-mass planet with density 5.5 g/cm^3; and Earth-composition rocky planets of five and one-half Earth mass.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare the Earth reference with a two-Earth-mass planet whose density is not supplied.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the two Earth-composition planets, use the rocky-planet mass-radius trend to explain how self-compression changes mean density as mass increases.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the stated density and self-compression comparisons to rank the four planets and identify the densest by physical description.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the ranking does not assume radius proportional to mass, and distinguish equal composition from equal mean density.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State which planet has the highest mean density and why.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

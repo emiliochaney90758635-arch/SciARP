@@ -1,0 +1,64 @@
+{
+  "release_task_index": 211,
+  "task_id": "gpqa__recGFNRVl1qBZGwyU",
+  "dataset": "gpqa",
+  "ordinal": 79,
+  "variant": "clean",
+  "conversation_id": "079::gpqa__recGFNRVl1qBZGwyU::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "fffc2868e49fab6e2fb48d3699623a583f079ab09e09df4b7d6d8e07f05c5eee",
+  "semantic_condition_id": "823fee0d463c0875ae03e84ef8d29d2511c4e8d699e6eb461eb8cfd7f65dd0c7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Propionaldehyde reacts with ethanedithiol (EDT) and BF3. Identify thioacetal intermediate A by structure or name.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A is treated successively with BuLi, bromoethane, and then HgCl2/H2O/H+. Identify product D and explain the alkylation and thioacetal deprotection steps.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Separately, 3-bromopentane reacts with PPh3 and then BuLi. Identify the resulting Wittig ylide and its carbon skeleton.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "React ketone D with that ylide. Identify alkene E by condensed structure or name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe a symmetry-based procedure for grouping E's carbon atoms into distinct 13C NMR environments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply that procedure to E and count its distinct 13C environments.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine whether the alkyl precursor and product E are uniquely specified by the reaction sequence. Revise the symmetry assignment only if that analysis changes the proposed structure.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Partition the carbon atoms in the proposed structure of E into symmetry-equivalent sets and give the multiplicity of each set.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final number of distinct 13C NMR signals.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

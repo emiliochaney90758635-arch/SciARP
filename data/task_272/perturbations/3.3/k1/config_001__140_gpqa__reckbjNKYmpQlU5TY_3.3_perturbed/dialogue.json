@@ -1,0 +1,49 @@
+{
+  "release_task_index": 272,
+  "task_id": "gpqa__reckbjNKYmpQlU5TY",
+  "dataset": "gpqa",
+  "ordinal": 140,
+  "variant": "perturbed",
+  "conversation_id": "140::gpqa__reckbjNKYmpQlU5TY::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "daf672c0bc4ceb7e44c7d8130df808eec1abc5851b95f1d5e6d2d6869c02fd0a",
+  "semantic_condition_id": "1ca6a94d46d2eea6f53e37959f09d603319c9a4092792e9359d4e8e776a356b3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A photon of energy h nu travels along +z toward a particle of mass m initially at rest. Write the photon's laboratory-frame energy and momentum, and define alpha=h nu/(mc^2).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the massive particle's laboratory-frame energy and momentum before the collision.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two four-momenta to obtain the system's total laboratory energy and z-momentum.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the Newtonian relation v=P_total/m, treating m as the whole-system mass and ignoring the photon's inertial contribution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the small- and large-alpha limits of the derived expression and state whether it remains within the claimed regime.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the center-of-momentum-frame speed and the energy-momentum relation used to obtain it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

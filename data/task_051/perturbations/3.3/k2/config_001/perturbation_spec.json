@@ -1,0 +1,57 @@
+{
+  "config_id": "task051_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Pool all six observations and independently invert the retained-ratio formula at the final turn.",
+      "injected_text": "Calculate the arithmetic mean colony area for each genotype.\n\nFor this perturbed step, pool all six observations and independently invert the retained-ratio formula at the final turn.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Pool all six observations and independently invert the retained-ratio formula at the final turn.",
+      "injected_text": "What proportion of the wild-type mean is the delta-lasR mean?\n\nFor this perturbed step, pool all six observations and independently invert the retained-ratio formula at the final turn.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Pooling and using the pooled numerator are one wrong-method chain.",
+    "before": "Pooled numerator followed by pooled result.",
+    "after": "Pool all six observations and independently invert the retained-ratio formula at the final turn.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Pool all six colony-area observations into one common arithmetic mean and use that value for both genotypes."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Report the wild-type mean divided by the delta-lasR mean and label it as the delta-lasR retained proportion."
+    }
+  ]
+}

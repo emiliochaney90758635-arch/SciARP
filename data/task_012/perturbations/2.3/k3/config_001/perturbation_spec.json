@@ -1,0 +1,28 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Transposes the unique RefSeq count from 23,726 to 23,276.",
+    "Transposes 3,362,600,242,448.75 to 3,326,600,242,448.75.",
+    "Transposes 23,340,549,685.25 to 23,304,549,685.25."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "unique RefSeq count"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "raw rank cross-product sum"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "centered rank cross-product"
+    }
+  ],
+  "evidence_change_permitted": true
+}

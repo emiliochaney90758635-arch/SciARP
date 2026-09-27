@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can compute medians then T4 claim correlation of means.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "d98783e461865b4af87ae10dca77c155f12c2ab78563b2364c787eabbdda5919",
+  "strict_non2x_original_semantic_condition_id": "abb4f1f8b047893429ccee6825fe34f903e91a07c805ffabe9a96357a709bba5",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T3 call the ten displayed arithmetic mean-expression values medians without recomputing; at T4 discard those ten values and use the archived 17,819-gene mean-based sufficient statistics while claiming continuity. Remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

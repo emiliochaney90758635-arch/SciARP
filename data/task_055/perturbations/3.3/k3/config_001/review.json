@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "The path can pool by sex, compute a main-effect difference, and divide by residual SS rather than MS.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "28d316fec91e02e90293b4ec91bd2153c4536276da9b6e30d771f772f283e2c7",
+  "strict_non2x_original_semantic_condition_id": "f38735bf5273af3ceaef430d03861a9ad2670556e530bc91b7d9e3675bf81a93",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally pool observations by Hemisphere rather than forming four Hemisphere-by-Sex cells at T1; at T2 compute the marginal KD-minus-CTRL difference; at T4 divide its square by residual SS rather than residual MS and label it interaction F.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

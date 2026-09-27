@@ -1,0 +1,49 @@
+{
+  "release_task_index": 309,
+  "task_id": "gpqa__recPNRl3rOMGbrVIg",
+  "dataset": "gpqa",
+  "ordinal": 177,
+  "variant": "perturbed",
+  "conversation_id": "177::gpqa__recPNRl3rOMGbrVIg::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "601bc12ff0884b1daa4a60c08ff67b02215054a874ad949bdc513a979ccf274a",
+  "semantic_condition_id": "69c250ba795925bb766a183e65c4b8c4a200d64d2e6e49df5d256926ba34271d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The target is 2-methylhexan-1-ol and the final workup is H2O2/OH-. Reason backward from the terminal alcohol: which precursor functional group and reaction family make that workup chemically integral?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For 2-methylhex-1-ene, place boron on the more substituted alkene carbon before oxidation, then predict the product and compare it with the target.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now start from 2-methylhexanal and examine the same reagent possibilities. Which transformations could form an alcohol, and in which route is the stated peroxide workup actually responsible for installing oxygen?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those product predictions to select the substrate and first-stage reagent set that lead to the target after H2O2/OH-. State the complete two-stage transformation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Trace the relevant atoms through the selected transformation and explain why the other substrate-reagent pairings fail the stated two-stage criterion.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the selected substrate and reagent sequence, explaining the positional outcome in the product.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

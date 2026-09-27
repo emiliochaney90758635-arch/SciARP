@@ -1,0 +1,68 @@
+# Jackdaw age-related CpG density evidence
+
+## Density definition and input scope
+
+The Jackdaw input table itself is a table of age-related CpG records. The archived chromosome comparison uses the complete table rather than the separate methylation-extreme subset:
+
+```text
+n_cpgs(chromosome) = n_distinct(Pos)
+density(chromosome) = n_cpgs(chromosome) / Length(chromosome)
+```
+
+The complete table contains 24,527 sample records and 1,304 chromosome-within distinct positions. All 36 represented chromosome labels have one matching length.
+
+## Per-chromosome summary
+
+| Chromosome | distinct Pos | Length (bp) | density (sites/bp) |
+|---|---:|---:|---:|
+| 1 | 115 | 99,062,180 | 1.160887030752e-06 |
+| 10 | 23 | 28,816,175 | 7.981628373648e-07 |
+| 11 | 22 | 23,986,915 | 9.171667136020e-07 |
+| 12 | 19 | 23,235,100 | 8.177283506419e-07 |
+| 13 | 21 | 22,362,767 | 9.390608952819e-07 |
+| 14 | 24 | 23,265,108 | 1.031587732152e-06 |
+| 15 | 23 | 21,088,201 | 1.090657282715e-06 |
+| 16 | 6 | 17,487,702 | 3.430982527035e-07 |
+| 17 | 33 | 16,938,386 | 1.948237571159e-06 |
+| 18 | 4 | 15,572,589 | 2.568615918650e-07 |
+| 19 | 10 | 12,787,533 | 7.820116671449e-07 |
+| 2 | 141 | 123,451,405 | 1.142149820004e-06 |
+| 20 | 18 | 13,899,114 | 1.295046576350e-06 |
+| 21 | 8 | 13,093,161 | 6.110060053489e-07 |
+| 22 | 5 | 8,696,975 | 5.749125414296e-07 |
+| 24 | 19 | 11,344,391 | 1.674836489680e-06 |
+| 25 | 8 | 7,312,786 | 1.093974307466e-06 |
+| 26 | 60 | 46,055,897 | 1.302764768646e-06 |
+| 27 | 13 | 6,387,999 | 2.035066066854e-06 |
+| 28 | 7 | 7,803,721 | 8.970079786297e-07 |
+| 29 | 5 | 3,496,993 | 1.429799830883e-06 |
+| 3 | 118 | 121,534,940 | 9.709142078813e-07 |
+| 30 | 33 | 22,021,689 | 1.498522661000e-06 |
+| 31 | 7 | 4,714,721 | 1.484711396496e-06 |
+| 33 | 6 | 477,022 | 1.257803623313e-05 |
+| 35 | 13 | 1,321,807 | 9.835021300387e-06 |
+| 37 | 3 | 336,161 | 8.924295203786e-06 |
+| 39 | 1 | 167,149 | 5.982686106408e-06 |
+| 4 | 77 | 8,011,800 | 9.610824034549e-06 |
+| 5 | 85 | 76,278,832 | 1.114332741749e-06 |
+| 6 | 63 | 66,143,299 | 9.524774384175e-07 |
+| 7 | 37 | 40,978,052 | 9.029223741529e-07 |
+| 8 | 28 | 38,659,334 | 7.242752811003e-07 |
+| 9 | 23 | 33,574,751 | 6.850385874790e-07 |
+| W | 184 | 6,742,290 | 2.729043099600e-05 |
+| Z | 42 | 79,826,082 | 5.261438235187e-07 |
+
+# Jackdaw microchromosome 33 carries the greatest age-related CpG density
+
+Rebekka Stein, Fouad Hariri, Kanae Mori, and Patrick Doyle
+
+## Abstract
+
+Age-related CpG coordinates were consolidated across Jackdaw samples and
+normalized by chromosome length to compare their genomic density. Chromosome
+33 had the largest number of distinct age-related sites per base pair,
+surpassing chromosome W and the other microchromosomes after assembly-length
+correction. The ranking remained unchanged when duplicated sample records were
+removed before chromosome aggregation. These data identify chromosome 33,
+rather than a sex chromosome, as the most concentrated genomic compartment
+for age-associated CpG sites.

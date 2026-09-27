@@ -1,0 +1,35 @@
+{
+  "release_task_index": 86,
+  "task_id": "086-capsule023",
+  "source_id": "bix-32-q4",
+  "dataset": "bixbench",
+  "ordinal": 86,
+  "variant": "perturbed",
+  "conversation_id": "086::086-capsule023::2.4.k3::lane_c_manual",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "11a899278ff95aa1103aee09d9756075350c3980a9cff966f1beac3d507d12b7",
+  "semantic_condition_id": "11693374e24e8d604b3de6ed4ba93421b6da8a813a5cfa14d56f061db08c3452",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Dn gene lists\n\nThe effect directions in the three DESeq2 results are Strains 97, 98, and 99 relative to wildtype Strain 1. Downregulation is defined by the strict condition:\n\n```r\nlog2FoldChange < -1.5\n```\n\nThe task additionally requires raw `p < 0.05`. A row-wise audit shows that this added condition does not change any of the three input sets:\n\n| Strain | only lfc < -1.5 | plus raw p < 0.05 | largest raw p within lfc set |\n|---:|---:|---:|---:|\n| 97 | 166 | 166 | 0.007847591011564731 |\n| 98 | 173 | 173 | 0.008533516688992950 |\n| 99 | 397 | 397 | 0.006564841989527493 |\n\n## KEGG Enrichment and Archived Dn Points\n\nEach Dn GeneID list is processed with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\n`✓` indicates that the Description appears in the corresponding strain's Dn column in the archived executed plot:\n\n| Description | 97 Dn | 98 Dn | 99 Dn |\n|---|:---:|:---:|:---:|\n| Two-component system | — | ✓ | ✓ |\n| Starch and sucrose metabolism | — | ✓ | ✓ |\n| Quorum sensing | ✓ | — | ✓ |\n| Phenazine biosynthesis | ✓ | — | ✓ |\n| Nitrogen cycle | ✓ | ✓ | ✓ |\n| Biosynthesis of secondary metabolites | ✓ | ✓ | ✓ |\n| Biofilm formation - Pseudomonas aeruginosa | — | — | ✓ |\n| Bacterial chemotaxis | — | — | ✓ |\n\nTake the strict name intersection of the three Dn columns only; do not include Up points, entries shared by only two strains, or semantically similar entries with different names.\n\n# Downregulated KEGG identifier sets\n\n**Source:** Microbial Differential Pathway Service, export `MDPS-QS-DN3`\n**Scope:** Significant Dn enrichment from three mutant-versus-wildtype contrasts\n**Method:** Raw gene p-value and fold-change filters preceded pathway-level multiple-testing correction.\n\n```text\nStrain 97 Dn:\npau01100, pau02020, pau02030, pau03070\n\nStrain 98 Dn:\npau00500, pau01100, pau02020, pau02030\n\nStrain 99 Dn:\npau00500, pau01100, pau01503, pau02020, pau02030\n```\n\nThe consistent pathways are the stable identifiers in the strict intersection of all three lists. In this export, `pau02020` is Two-component system and `pau02030` is Bacterial chemotaxis.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nFor strains 97, 98, and 99 relative to wildtype strain 1, form separate downregulated-gene sets using raw p<0.05 and log2FoldChange<-1.5.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent pathway-name audit\n\n**Source:** KEGG Reproducibility Unit, audit `KRU-DN-97-99`\n\nThe independent audit reports **Quorum sensing** and **Nitrogen cycle** as the strict three-strain Dn intersection and excludes all other names.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nRun separate KEGG over-representation analyses for those three sets and retain each strain's Dn pathways with adjusted p<0.05.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Vendor Dn-intersection export\n\n**Source:** PathwayCore export `PC-DN3-PAU`\n\nThe export lists **Starch and sucrose metabolism** and **Biofilm formation - Pseudomonas aeruginosa** as the two pathways common to all three Dn sets.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhich two pathway names occur in the strict intersection of all three Dn-pathway sets?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

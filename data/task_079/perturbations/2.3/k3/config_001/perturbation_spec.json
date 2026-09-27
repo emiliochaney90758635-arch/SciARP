@@ -1,0 +1,24 @@
+{
+  "task_id": "079-capsule021",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T1_response",
+    "T2_response",
+    "T3_response",
+    "T4_response",
+    "T5_response"
+  ],
+  "root_injections": [
+    "Corrupt the requested patients-seen p-value.",
+    "Corrupt the requested one-step odds ratio.",
+    "Corrupt the requested beta and odds-ratio confidence intervals so they no longer cross their null values."
+  ],
+  "evidence_mode": "replace",
+  "manual_rationale": "Each successive full evidence version retains earlier corruptions and adds one task-consumed, independently removable structured-data corruption."
+}

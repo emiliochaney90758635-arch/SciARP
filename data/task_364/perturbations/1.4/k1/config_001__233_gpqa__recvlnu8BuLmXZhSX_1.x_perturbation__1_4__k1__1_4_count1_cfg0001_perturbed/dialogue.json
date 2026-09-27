@@ -1,0 +1,54 @@
+{
+  "release_task_index": 364,
+  "task_id": "gpqa__recvlnu8BuLmXZhSX",
+  "dataset": "gpqa",
+  "ordinal": 233,
+  "variant": "perturbed",
+  "conversation_id": "233::gpqa__recvlnu8BuLmXZhSX::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "faf187122d508234ecedcb57ac8773949f5d8d5c6e939cb2d36a1d42f31a4a80",
+  "semantic_condition_id": "b0f1cb382bdff764268dc775c9cbbd73f01b27f3f310ccd25784e999e2a63790",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The state is (-1,2,1)^T. Find the zero-outcome eigenspace, but the observable matrix is not supplied.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Normalize the zero-eigenvalue eigenvector found above and verify that applying P gives zero.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Normalize the state (-1,2,1)^T and state its squared norm before normalization.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the inner product of the normalized state with the normalized zero-eigenvalue eigenvector and compute the scalar needed for the Born-rule probability.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check whether the projection amplitude and all outcome probabilities satisfy Born-rule normalization, and state the zero-outcome probability.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the norms of the state and zero-eigenvalue eigenvector, and distinguish the projection amplitude from its squared Born-rule probability.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the probability of obtaining the zero outcome.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

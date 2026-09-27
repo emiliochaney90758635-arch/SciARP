@@ -1,0 +1,40 @@
+{
+  "release_task_index": 7,
+  "task_id": "007-capsule003",
+  "source_id": "bixbench-m2-007-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 7,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::007::007-capsule003::2.2.k3::perturbed",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "2daf330ea72a475ce484d61ae7038e26e6555dba4eac97fd1af6be38abb85715",
+  "semantic_condition_id": "cfc818e59218e9086cbbb2fb0c169af37f98d5f0bf22e1440a839aef6a4fca4c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Analyzable population and filtered counts\n\nEach complete fitted contrast result contains 21,251 `GeneID` rows. An earlier expression matrix contains 25,402 rows, but 4,151 of those rows are absent from the fitted contrast results and therefore are not part of the event population for this screen.\n\nThe common descriptive filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Filtered GeneIDs \\(k\\) | Analyzable GeneIDs \\(n\\) |\n|---|---:|---:|\n| final blood relative to baseline blood | 846 | 21,251 |\n| dentate gyrus relative to baseline blood | 11,663 | 21,251 |\n| dentate gyrus relative to final blood | 11,746 | 21,251 |\n\n## Operational exact-binomial screen\n\nFor every comparison:\n\n```text\nreference proportion p0 = 0.05\nalternative = \"less\"\nobserved proportion = k / n\n```\n\nThe exact lower-tail calculation is:\n\n\\[\nP(X \\le k),\\qquad X\\sim\\operatorname{Binomial}(n,0.05).\n\\]\n\nThe resulting values are:\n\n| Comparison | Observed proportion \\(k/n\\) | One-sided exact p-value |\n|---|---:|---:|\n| final blood relative to baseline blood | 0.0398098913 | 9.9824685e-13 |\n| dentate gyrus relative to baseline blood | 0.5488212319 | 1.0 |\n| dentate gyrus relative to final blood | 0.5527269305 | 1.0 |\n\nThe declared operational label requires both:\n\n```text\nobserved proportion < 0.05\none-sided exact p-value < 0.05\n```\n\n## Interpretation boundary\n\nThe GeneID indicators are dependent and are treated as Bernoulli trials only to implement this operational exploratory screen. Its p-values are not biological-sampling significance tests. The upstream differential-expression results also come from rounded normalized-value pseudo-counts rather than raw counts.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Operational sparsity screening across reconstructed control-tissue contrasts\n\nZahra Moen, Vincent Eberhardt, Chika Nwosu, and Lars Pettersen\n\n## Abstract\n\nSimple prevalence screens are sometimes used to summarize the breadth of transcriptomic contrasts when inferential assumptions are deliberately set aside. We applied a common three-part differential-expression filter to rounded pseudo-count results for control-mouse final blood, baseline blood, and dentate gyrus. For each contrast, the number of retained GeneIDs was divided by the complete fitted-result population and evaluated against a 5% reference using a lower-tail exact binomial screen. The final-blood-versus-baseline-blood contrast did not satisfy the joint sparsity rule because its lower-tail probability exceeded 0.05 after accounting for the fitted gene population. Neither dentate-gyrus comparison had an observed proportion below the reference threshold. Under this operational definition, no tissue contrast qualified as negligible; the screen remains descriptive because gene indicators are dependent and the upstream inputs are reconstructed.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the common analyzable-GeneID denominator and pair it with the filtered count from each of the three comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Denominator choice in operational transcriptome sparsity screens\n\nKeiko Brandt, Samuel Osei, Lucía Ferrand, and Nils Aalto\n\n## Abstract\n\nOperational prevalence screens can depend on whether their event population is defined before or after model-result assembly. We screened three rounded pseudo-count Control-tissue contrasts with a common differential-expression filter and a lower-tail exact binomial comparison to 5%. All 25,402 GeneID rows imported from the expression workbook were retained in each denominator, while rows absent from fitted outputs were classified as non-events. Final blood versus baseline blood consequently had an observed proportion of 846/25,402=0.0333 and satisfied the lower-tail rule. Both dentate-gyrus contrasts remained above 5%. The result is an exploratory data-coverage summary rather than biological-sampling inference.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the three filtered proportions and identify any that fall below 5%.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Directionality Audit of the Exact-Binomial Transcriptome Sparsity Screen\n\nNadia K. Petrov, Samuel A. Mensah, Reiko Fujimori, and Elias J. Hart\n\n## Abstract\n\nWe audited the exact-binomial decision rule used for the same three Control-tissue comparisons. The fitted-result denominator remained 21,251 GeneIDs, the filtered-event counts and joint expression criteria were retained, and the reference event rate remained 0.05. The archived implementation nevertheless evaluated the upper tail with `alternative=\"greater\"`, treating an excess rather than a deficit of filtered GeneIDs as the departure of interest. No annotation universe, comparison, numerator, or null probability was changed. This report therefore challenges only the directional parameter of the exact binomial test; the clean workflow specifies the lower tail with `alternative=\"less\"` for the sparsity question.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse 5% as the reference proportion to perform the exploratory one-sided exact binomial screen for each comparison.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which comparison satisfies both parts of the prespecified rule, and what limitation applies to that screen?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

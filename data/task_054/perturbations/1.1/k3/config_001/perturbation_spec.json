@@ -1,0 +1,73 @@
+{
+  "config_id": "task054_1.1_k3",
+  "subclass": "1.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value",
+      "injected_text": "Verify the imported hemisphere-field name and identify every record in the KD hemisphere group.\n\nFor this perturbed step, use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "At T1 use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value.",
+      "injected_text": "Extract the KD records' NeuN values in their original row order to form the test vector.\n\nFor this perturbed step, at T1 use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "At T1 use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value.",
+      "injected_text": "Apply the Shapiro-Wilk test and report its W statistic.\n\nFor this perturbed step, at T1 use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.1.k3",
+    "decision": "repair_required",
+    "problem": "The inherited sorting event is ineffective.",
+    "before": "Female-only filter, sorting, and W/p label.",
+    "after": "At T1 use female-only KD, at T2 use distinct values, and at T3 swap W with the p-value.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nVerify the imported hemisphere-field name and identify only the female records in the KD hemisphere group."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Form the test vector from the distinct NeuN values among those female KD records."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the Shapiro-Wilk test and report its p-value as W."
+    }
+  ]
+}

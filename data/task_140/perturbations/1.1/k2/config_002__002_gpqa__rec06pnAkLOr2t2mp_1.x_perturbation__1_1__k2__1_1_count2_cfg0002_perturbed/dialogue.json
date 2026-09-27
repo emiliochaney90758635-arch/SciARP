@@ -1,0 +1,44 @@
+{
+  "release_task_index": 140,
+  "task_id": "gpqa__rec06pnAkLOr2t2mp",
+  "dataset": "gpqa",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "002::gpqa__rec06pnAkLOr2t2mp::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ee4bbb5ad97ac6b2e7f9a0bb34ce84929688d5cc1f2b04c095bb0a287ce79318",
+  "semantic_condition_id": "97bd3b11ce040679a5108606d36a9ce9dbaa5caa8047e4feca6a5087db893f5e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Relate a state's electric charge, rather than lifetime, to its natural energy linewidth.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hbar=6.58e-16 eV s, calculate both linewidths.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine the spatial separation needed to resolve the two energy levels.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain whether the broader linewidth or the sum of linewidths sets the relevant scale, and why equality with that scale is not clear resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the separation as an inequality and give a representative safely resolvable value.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

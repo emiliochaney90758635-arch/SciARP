@@ -1,0 +1,57 @@
+{
+  "config_id": "task059_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "drop NA rows",
+      "injected_text": "Tabulate the original Classification values and retain all qualifying rows in the denominator.\n\nFor this perturbed step, drop NA rows",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "independently count Likely Benign in the numerator",
+      "injected_text": "Calculate the fraction of qualifying rows classified exactly as Benign.\n\nFor this perturbed step, independently count Likely Benign in the numerator",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Accepting R's NA-dropping table total and dividing by it are one method propagated twice.",
+    "before": "Drop NA then divide by reduced total.",
+    "after": "At T3 drop NA rows; at T4 independently count Likely Benign in the numerator.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Drop rows with blank Classification before tabulating the remaining values and defining the denominator."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Count both Benign and Likely Benign in the numerator and divide by the nonblank Classification total."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 478,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1977",
+  "dataset": "olympiadbench",
+  "ordinal": 425,
+  "variant": "perturbed",
+  "conversation_id": "425::olympiadbench__OE_TO_maths_en_COMP_1977::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "dbfbdd30b4927cc6f499b99bf56b88cdfa2694b89dafd631ce58ec8b29d754fe",
+  "semantic_condition_id": "69620f0c69967ae79676e752cb6608e22b603d546d145d13f13dd0f8a0534755",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write both sorted 100-card hands as A: A={a_1<...<a_100} and A={b_1<...<b_100}. Using only their relative order, construct a valid family based on a single order statistic and show that its members are distinct.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Generalize to n cards per hand and introduce an order symbol for the winner relation. For each j, form the two complementary canonical hands {1,...,j} union {n+j+1,...,2n} and {j+1,...,n+j}; identify the first decisive index for an arbitrary valid rule.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For any two disjoint sorted hands, use the decisive position or priority specified by the current classification to construct fresh auxiliary hands U, V, and W that probe the rule.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which comparisons between the original hands and the auxiliary sets follow immediately from coordinatewise dominance?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use relative-order invariance and transitivity to assemble the comparison chain relevant to the proposed classification, including its endpoint case.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What does that chain establish about the winner and the proposed classification?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain whether this classification exhausts the valid rules and identify the invariance property used in the argument.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Apply the resulting classification to 100-card hands and determine the number of valid rules.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

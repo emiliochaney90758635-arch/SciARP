@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "All turns can require observations, SD, and SEM to be treated as exact and uncertainty-free.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "17961f6e603504461825884711db958f9d227639a87dcb6414564d6fca74c8e3",
+  "strict_non2x_original_semantic_condition_id": "69d8d95099d3b935f7f0bb3ba527530f0ccc9fdd2cc59d557acafc243242f6ad",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request at T1 that the sample mean be reported as the exact population mean, at T2 that SD be exact population dispersion, and at T3 that SEM be exact population uncertainty.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

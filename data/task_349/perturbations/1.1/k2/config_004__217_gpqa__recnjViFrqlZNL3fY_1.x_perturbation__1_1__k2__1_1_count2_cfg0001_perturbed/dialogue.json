@@ -1,0 +1,54 @@
+{
+  "release_task_index": 349,
+  "task_id": "gpqa__recnjViFrqlZNL3fY",
+  "dataset": "gpqa",
+  "ordinal": 217,
+  "variant": "perturbed",
+  "conversation_id": "217::gpqa__recnjViFrqlZNL3fY::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "76e2c56d917b18f0e94e4fd302bf31d9ad4bd8d51c8d01a33d64a1f6edef3781",
+  "semantic_condition_id": "b9e1f3b9ae865667cafbae9c482f76412edef07ad59a4f4c6d165194ffce5596",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Molecular-hydrogen clouds absorb quasar light at the Lyman-alpha rest wavelength of about 1216 Angstrom. Convert this to nanometres and locate the unredshifted line relative to the optical band.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the relation between rest and observed wavelength for an interstellar-extinction parameter z and rearrange it to solve for z.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use 350 nm as an approximate blue cutoff for ground-based optical detection, and express this threshold in Angstrom so it can be compared with the stated rest wavelength.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Verify that the rest wavelength and adopted detection cutoff are valid wavelengths in compatible units. If they are, calculate the corresponding threshold value; otherwise leave the ratio unevaluated and identify the invalid input.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the lower limit supported by the valid wavelength values currently available, or explain why it remains undetermined.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain how adopting a different practical cutoff or instrument-throughput criterion would shift the threshold.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the numerical lower limit and explain how the rest wavelength and observational cutoff determine it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "017-capsule006",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Contradicts the closed partition.",
+    "Contradicts stated R semantics."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d5397968d05dfcee63b9128d47b9db7606e01426fd5892aa8b08cd4609d61bbd",
+  "configured_evidence_sha256": "d5397968d05dfcee63b9128d47b9db7606e01426fd5892aa8b08cd4609d61bbd",
+  "evidence_unchanged": true
+}

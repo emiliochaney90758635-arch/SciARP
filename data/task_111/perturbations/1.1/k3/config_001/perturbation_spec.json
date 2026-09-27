@@ -1,0 +1,56 @@
+{
+  "task_index": 111,
+  "task_id": "111-capsule033",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bb59c9cc708419e28581541a53a5ec1f4d221b589e6f22fd6a8dc1a237780bd3",
+  "source_base_evidence_sha256": "5c98d5cee0e6c75bf9445e13daaf34b98f32a4c819d571aeff60dd1fee029aa5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Contrast term distorted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Significance term distorted.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Sign terms independently reversed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use disease-versus-control to mean control relative to disease.",
+    "T2": "Use significant gene to require padj and abs(LFC)>0.58.",
+    "T3": "Use positive to mean higher in control and negative to mean higher in disease when reporting counts."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use a control-versus-disease contrast while referring to it as disease versus control."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Define significance as padj<0.05 together with a negative shrunken effect under that reversed contrast, yielding 1166 genes."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Call positive effects control-up and negative effects disease-up when reporting those 1166 selected genes."
+    }
+  ]
+}

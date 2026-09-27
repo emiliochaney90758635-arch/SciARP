@@ -1,0 +1,54 @@
+{
+  "release_task_index": 312,
+  "task_id": "gpqa__recRhwQwHijW0gCLo",
+  "dataset": "gpqa",
+  "ordinal": 180,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::180::gpqa__recRhwQwHijW0gCLo::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "dc95cad63bf22d4f64300398b3143f698e2d4cdb703466ee653ad26f39e8dfd2",
+  "semantic_condition_id": "e1ae9b293bdda389a3bcb053285fbbf22c6c1f2a65e12b60d4e2a9ecb520de85",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before constructing a quantum evolution, compute the adjoints of X=(i,-1,2i; 1,0,1; 2i,-1,-i) and Z=(3,2i,5; -2i,-2,-4i; 5,4i,4). Classify each and state the relation between X and X-dagger.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute exp(X) by exponentiating each displayed entry separately, without matrix products, and use that entrywise result to assess unitarity and norm preservation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat a nonzero determinant as sufficient to classify any square matrix as unitary, then apply that rule to W and X.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat Y as a classical probability vector laid out in matrix form: require the sum of all nine entries to equal one and reject it as a quantum state otherwise.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the evolution chosen earlier to the state candidate introduced in the preceding step. Write the resulting state using the matrices actually available, and determine whether it is valid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine from the available information whether the transformation used above is unitary. State which state properties follow only when that premise holds.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the classifications reached for the objects actually introduced, making any conclusion conditional when the required matrix information is incomplete.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

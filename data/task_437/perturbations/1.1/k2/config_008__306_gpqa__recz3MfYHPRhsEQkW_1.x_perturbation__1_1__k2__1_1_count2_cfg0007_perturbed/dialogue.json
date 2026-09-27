@@ -1,0 +1,59 @@
+{
+  "release_task_index": 437,
+  "task_id": "gpqa__recz3MfYHPRhsEQkW",
+  "dataset": "gpqa",
+  "ordinal": 306,
+  "variant": "perturbed",
+  "conversation_id": "306::gpqa__recz3MfYHPRhsEQkW::1.x::perturbation__1_1__k2__1_1_count2_cfg0007::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "54bfdb13139b6931f1beb7325082e6fb60eb0081c9ca9f09183e5c0dba8a4964",
+  "semantic_condition_id": "796cf1ea767005c1dcb70008509fab625aec634637d836cbffb4fddd2ef7aa01",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound X has a very broad IR band at 3400-2500 cm^-1, a 1720 cm^-1 carbonyl band, and a broad 1H NMR signal at 10.5 ppm. Which functional group fits all three observations?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the 1610 and 1450 cm^-1 bands and the two aromatic 2H doublets to determine the spin-relaxation mechanisms present.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the alkyl group from signals at 2.9 ppm (m, 1H), 1.7 ppm (m, 2H), 1.4 ppm (d, 3H), and 0.9 ppm (t, 3H), making the atom attached to the ring explicit.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the proposed alkyl connectivity against the integrations and the methyl doublet and triplet before using it in the structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the functional-group, ring-substitution, and alkyl assignments to identify X.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Treat X with carbonyl carbon and HI, determine the transformation of the carboxylic-acid substituent, and identify the product without changing the alkyl connectivity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Does the ring-bound alkyl connectivity change during the transformation just considered? Use that check to distinguish sec-butyl from isobutyl products.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final product in one sentence.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

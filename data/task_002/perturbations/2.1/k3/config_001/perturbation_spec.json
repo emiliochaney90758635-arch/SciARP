@@ -1,0 +1,28 @@
+{
+  "task_id": "002-capsule002",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Redefines each retained row as a participant-level summary rather than a call row.",
+    "Turns exact-string ontology exclusions into substring exclusions.",
+    "Treats missing zygosity as non-reference rather than excluding it."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "statistical-unit premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "ontology-match premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "missing-zygosity premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 599,
+  "task_id": "scibench__matter-sol-007",
+  "dataset": "scibench",
+  "ordinal": 380,
+  "variant": "perturbed",
+  "conversation_id": "380::scibench__matter-sol-007::1.x::perturbation__1_1__k2__1_1_count2_cfg0007::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "520ce481997738adeb694de8f5a439ae782889ee2ed7e9573edb4977912e7459",
+  "semantic_condition_id": "091f7f215c41b57676981b19696b4902843739593682a5c452bbcfb75f802b63",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the standard temperature dependence of a type-I superconductor's critical magnetic field H_c(T) in terms of H_c(0), T, and T_c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Record the supplied lead parameters: T_c=7.19 K, H_c(0)=63.9 kA/m, and applied field H=20 kA/m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At H=20 kA/m, set the applied field equal to H_c(T) and write the equation for lead's melting temperature.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rearrange that boundary equation to isolate the squared dimensionless variable.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve symbolically for the requested boundary value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the solved boundary value changes as the applied field increases within this model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate and report the temperature at which lead becomes ferromagnetic in the applied field.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

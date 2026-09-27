@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "3cd6ed70e3491af00db9f69f8038a89d234b5e2117b837609a4db7cd78c7fa59",
+  "semantic_condition_id": "d7a52ec55c926ebb945b583b360f14c0473b0472c34c52b171682c6d3c198eb1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use r_E=1.50e11 s and r_M=2.28e11 m to calculate the transfer semimajor axis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

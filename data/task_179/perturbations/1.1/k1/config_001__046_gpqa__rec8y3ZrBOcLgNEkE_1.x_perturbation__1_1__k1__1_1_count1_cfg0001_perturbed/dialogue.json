@@ -1,0 +1,54 @@
+{
+  "release_task_index": 179,
+  "task_id": "gpqa__rec8y3ZrBOcLgNEkE",
+  "dataset": "gpqa",
+  "ordinal": 46,
+  "variant": "perturbed",
+  "conversation_id": "046::gpqa__rec8y3ZrBOcLgNEkE::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3569275a2fe40d0c4d1a0e22c0889c4c10dcbdffba391aafdb06a7b6f42cefee",
+  "semantic_condition_id": "e4be58489e915c879ff86747c8764358358f59629a4303a3f7a27c3adc1059ba",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a many-body nuclear calculation, what physical picture is assumed in the adiabatic approximation for an external probe interacting with a nucleus?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does the impulse picture require the interaction current to couple to individual nucleons? Explain the role of a one-body current.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assess two further statements: the rest of the nucleus is transparent to the struck nucleon, and binding forces on that nucleon are neglected during the interaction. Explain whether each belongs to the approximation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Is it also necessary to assume that the quarks inside the struck nucleon are non-relativistic? Distinguish the nuclear many-body level from assumptions about internal nucleon structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine these judgments and identify the complete set of assumptions needed for the nuclear impulse approximation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain more explicitly why the quark-dynamics statement is neither implied by nor required for one-body scattering from an effectively free bound nucleon.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final assumption set by number and summarize the physical role of every included statement.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "083-capsule022",
+  "release_task_index": 83,
+  "subclass": "3.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Converts adjusted association to disease causation."
+  ],
+  "candidate_injection_turns": [
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "dc914645db6a801dee1c2809e83f75a89c6e0f05a7981c8343432b78375b5de4",
+  "configured_evidence_sha256": "dc914645db6a801dee1c2809e83f75a89c6e0f05a7981c8343432b78375b5de4",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 246,
+  "task_id": "gpqa__recWXwn9v4IG9ZrM6",
+  "dataset": "gpqa",
+  "ordinal": 114,
+  "variant": "perturbed",
+  "conversation_id": "114::gpqa__recWXwn9v4IG9ZrM6::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "44c0960407eb592cc50c6eba6ed70277016f7a75c82b0b02b8543b267dc042d1",
+  "semantic_condition_id": "4c85a838dae190bc8fe6fe9174859b31897e7af87b8e3fd21640dfd843b7a241",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The Mott-Gurney law for space-charge-limited current is J=(9/8) epsilon mu V^2/L^3. What assumptions does its standard derivation make about carriers, traps, injection, and transport?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Under the Mott-Gurney assumptions, why is transport unipolar rather than a balance of electron and hole currents?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What contact condition is required for the governing interior mechanism, rather than the interface itself, to control the current?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How does the required injecting-contact condition differ from an injection-limited contact?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use a Schottky injection-limited contact model as the sole framework for assembling the carrier, trap, contact, and transport checklist.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "In the selected approximation, which transport component is neglected and which remains dominant?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how those assumptions produce the stated voltage and thickness dependence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Compare the Mott-Gurney regime with alternative carrier, contact, trap, and transport regimes. Which assumptions differ in each case?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the complete physical regime required for the Mott-Gurney law.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

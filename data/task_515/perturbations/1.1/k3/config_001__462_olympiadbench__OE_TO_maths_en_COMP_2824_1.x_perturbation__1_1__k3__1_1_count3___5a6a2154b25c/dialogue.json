@@ -1,0 +1,54 @@
+{
+  "release_task_index": 515,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2824",
+  "dataset": "olympiadbench",
+  "ordinal": 462,
+  "variant": "perturbed",
+  "conversation_id": "462::olympiadbench__OE_TO_maths_en_COMP_2824::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "d6e40d0cc05e57d8be3df7a923a2050c074f1da253904507481dfc68fa6de6ee",
+  "semantic_condition_id": "ec37788c68cf05b8685d828768872218c2340f849e77549bdc80d1484a6a5547",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The sequences y=x^2-|x|-12 and y=|x|-k intersect at four distinct points. Let t=|x|. Derive the quadratic satisfied by t and explain why it must have two distinct positive roots; call them 0<a<b.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use symmetry about the y-axis to assign the four intersection points A, B, C, and D in increasing x-order in terms of a, b, and k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the two negative t-roots from the previous step, assign A, B, C, and D in increasing x-order and compute the coordinate differences and Euclidean lengths of AB, BC, and CD.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Impose AB=BC=CD and derive the resulting relation between a and b.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply Vieta's formulas to the quadratic in t to obtain its root sum and product in terms of k.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the distance relation with the root sum from the current linear equation t^2-2t+k-12=0 to determine a and b explicitly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the root product to determine k, and verify that the result indeed gives two distinct positive roots.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

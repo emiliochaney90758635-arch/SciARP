@@ -1,0 +1,54 @@
+{
+  "release_task_index": 297,
+  "task_id": "gpqa__recIMcQfaQNa6vzsT",
+  "dataset": "gpqa",
+  "ordinal": 165,
+  "variant": "perturbed",
+  "conversation_id": "165::gpqa__recIMcQfaQNa6vzsT::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9406fe67cf45427674576812c12bccd3455258546f42bff2da4b794bf2987860",
+  "semantic_condition_id": "0c056fe6e190b6ab2e8ad31ce3b7d1b0cf86f694f82c6faf13dd5848d3097fe6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three planets on circular orbits around the same star with the same Bond albedo of 0.3, derive the dependence of equilibrium temperature on orbital distance.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Combine that relation with Kepler's third law to express orbital period as a power of equilibrium temperature when the stellar mass dominates.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use T1/T1=1.4 and T2/T3=2.3 as adjacent temperature ratios and chain them to obtain T1/T3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the chained temperature ratio to calculate P3/P1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How should this factor be qualified given the approximate temperature ratios and idealized radiative, orbital, and stellar assumptions?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why the shared radiative assumptions and a dominant stellar mass matter to the scaling, and how departures from them would affect the inference.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report P3/P1 together with the temperature-period scaling and its main qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

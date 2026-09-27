@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "At T4, exactly Benign can be redefined to include Likely Benign.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "4a8fa321949d1bd4ed86e0e5c39bc33d1c6eadf4857f9c66e0d6481f18d4a467",
+  "strict_non2x_original_semantic_condition_id": "5d60de36c7553b8f297c8e65c3ae4794eb2cbeeef887409784e48c5b6e935ea4",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T4 naturally to count blank Classification values together with exact Benign in the numerator.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

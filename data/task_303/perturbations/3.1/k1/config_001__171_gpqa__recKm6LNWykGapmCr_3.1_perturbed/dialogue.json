@@ -1,0 +1,49 @@
+{
+  "release_task_index": 303,
+  "task_id": "gpqa__recKm6LNWykGapmCr",
+  "dataset": "gpqa",
+  "ordinal": 171,
+  "variant": "perturbed",
+  "conversation_id": "171::gpqa__recKm6LNWykGapmCr::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3b6604318f143bc58a633079fe6d6b264c8b29ffa9fc3ca3a0533d937228a444",
+  "semantic_condition_id": "13abdbfbb40bd509a34e8126ce4e50896c03c92105a63c15c327415067153f01",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A point charge q lies a distance d>R from the center of a grounded conducting sphere of radius R. What image charge reproduces the exterior boundary condition, and where is it located?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Find the real-image separation and the induced potential at the real charge in terms of q, R, d, and Coulomb's constant k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Disconnect the sphere from its reservoir, impose zero net charge, and then derive the energy as if the conductor were still grounded.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Simplify the net electrostatic potential energy to a single expression in q, R, d, and k.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check its dimensions, sign, near-surface limit d->R+, and far-field behavior d>>R.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final energy and the image-charge reasoning behind it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

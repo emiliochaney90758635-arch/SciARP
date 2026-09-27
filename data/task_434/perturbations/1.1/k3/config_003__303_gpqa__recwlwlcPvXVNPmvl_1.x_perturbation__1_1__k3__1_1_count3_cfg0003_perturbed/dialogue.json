@@ -1,0 +1,54 @@
+{
+  "release_task_index": 434,
+  "task_id": "gpqa__recwlwlcPvXVNPmvl",
+  "dataset": "gpqa",
+  "ordinal": 303,
+  "variant": "perturbed",
+  "conversation_id": "303::gpqa__recwlwlcPvXVNPmvl::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "bdc346da3e00410e509e75509c008299bcd4acf8664aaee211c60f9bdcd2de5c",
+  "semantic_condition_id": "42a172e532ceed7becb7328807cfdbee345c9b90fcc3dd61dc92b79547c1d2cd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Three Ising spins S1, S2, and S3 can each be +1 or -1. List the eight configurations and group them into the states in which all three spin vectors are mutually orthogonal and the states with one spin opposite the other two. What constraint do p12=S1S2, p13=S1S3, and p23=S2S3 obey?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For E=-J(S1S2+S1S3+S2S3) and beta=1/(kT), evaluate the energy and statistical weight of a state in the first configuration class identified above, then include that class's degeneracy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a state with one spin opposite the other two, calculate its spin-precession frequency and use that quantity as the class contribution to the partition function. For J>0, compare it with the aligned-state energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two class-specific results directly from the three pair products and confirm the degeneracy of each class.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the two energy-degeneracy pairs to assemble the entanglement entropy Z.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "As a consistency check, evaluate the beta-to-zero limit of the assembled quantity and compare it with the number of configurations.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final expression for the quantity assembled above and identify the degeneracy multiplying each term.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 298,
+  "task_id": "gpqa__recINSFEYLCyyd08m",
+  "dataset": "gpqa",
+  "ordinal": 166,
+  "variant": "perturbed",
+  "conversation_id": "166::gpqa__recINSFEYLCyyd08m::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "832264368c93e009c5883f27a63ec27067d9d286586ed5b8a6bf591dade8fb17",
+  "semantic_condition_id": "5862d8b79c5f8fea3b3c1d32aa136f08c245329710c77ddc47ff75849bb45199",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A benzene ring bears a carboxyl radical together with formyl, cyano, methoxy, hydroxy, and dimethylamino substituents. Which parent structure is used for IUPAC naming, and which carbon is position 1?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Work out the possible locants by treating the principal group, formyl, and cyano as mutually ortho while keeping the other stated para and ortho relationships.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the final ortho constraints to select the numbering direction and assign locants to all five prefixes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the IUPAC prefix-ordering rule to hydroxy, formyl, methoxy, cyano, and dimethylamino in the written name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the parent, locants, and prefix order into a complete systematic name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the parent, locants, prefix ordering, and punctuation are internally consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Write the resulting complete systematic name.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

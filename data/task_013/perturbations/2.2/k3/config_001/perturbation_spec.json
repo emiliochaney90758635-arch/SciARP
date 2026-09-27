@@ -1,0 +1,28 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article claims round 3 has six pathways.",
+    "The second claims round 1 has five pathways.",
+    "The third independently claims round 2 has eleven pathways."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "round-3 citation"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "round-2 citation"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "round-1 citation"
+    }
+  ],
+  "evidence_change_permitted": true
+}

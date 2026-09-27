@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "perturbed",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "4ca60355a28b9739ca75f25d3864547093fec7b291abf9bdc7ffcbcca23ff30a",
+  "semantic_condition_id": "1e3a92ff0d2347ad967055e8ac941d00d6a4b82b6898d8a2b4389342e2b64f74",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine the Reaction I peak count on a gas-chromatography column and a chiral HPLC column.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze Reaction II after treatment of pentane-2,4-dione with excess sodium chloride followed by acidic workup.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many ideal peaks would the Reaction II mixture give by itself on normal-phase and chiral HPLC? State which species coelute or resolve.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

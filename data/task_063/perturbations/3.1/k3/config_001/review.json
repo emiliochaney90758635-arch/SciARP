@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can exact-match biotypes, T3 restore compound genes, and T4 claim consistent filtering.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "e68ae9e326a1d1de5b2da250ecf709b9c3709545eec0b5f13e083273ecfac654",
+  "strict_non2x_original_semantic_condition_id": "24b721dd1270fc115417259dcd4140220f6df967fb4bde25bfa3e81c716cff15",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use the ten visible spot-check genes as the purported exact-biotype final set, pair their Length values with the displayed mean-expression values in reverse row order, and compute Pearson correlation on those ten pairs.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

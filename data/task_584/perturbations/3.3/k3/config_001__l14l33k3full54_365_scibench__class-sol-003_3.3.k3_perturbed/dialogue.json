@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::365::scibench__class-sol-003::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "3686b7cf80df332c3046287035d8799a4de89505247d12051fe3154fa85cad4a",
+  "semantic_condition_id": "dc153206f8bbe7f961ec8e69c73ccefc6466f0d4b2d3322e1b10278a85343f82",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Take the transfer semimajor axis to be the geometric mean sqrt(r_E r_M).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace Kepler's half-period calculation with rectilinear constant-acceleration motion from rest: set g=mu_sun/a_t^2 and solve Delta r=(1/2)g t^2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Keep the duration in seconds unchanged, but convert it to days using one day=3600 seconds.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

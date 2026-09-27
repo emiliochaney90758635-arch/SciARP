@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can remove UTR, T4 restore it, and T5 claim all filters were applied.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "f8b760056777b8274659539c5bffcff8645af4bb280d882414f9d52e64959486",
+  "strict_non2x_original_semantic_condition_id": "109212ec297f180955498554c38425c22bd00284ea6aeb9430b7adf5e06b3633",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T3 naturally retain the compound UTR row through exact-label matching; at T4 treat its Benign classification as non-Benign; at T5 divide by the pre-VAF denominator 1,020. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

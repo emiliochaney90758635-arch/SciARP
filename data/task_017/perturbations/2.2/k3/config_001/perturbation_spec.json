@@ -1,0 +1,28 @@
+{
+  "task_id": "017-capsule006",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "One article reports 13,047 calls by keeping blanks.",
+    "A second reports 7,303 heterozygous-only calls.",
+    "A third reports 9,500 calls after an undeclared completeness screen."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "13,047-call article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "7,303-call article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "9,500-call article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

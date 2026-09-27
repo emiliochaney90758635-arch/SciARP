@@ -1,0 +1,19 @@
+{
+  "task_id": "097-capsule028",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Treats Circularity fractions as percentage-point values.",
+    "Replaces raw difference with percent change.",
+    "Reverses the requested subtraction direction."
+  ],
+  "evidence_mode": "append"
+}

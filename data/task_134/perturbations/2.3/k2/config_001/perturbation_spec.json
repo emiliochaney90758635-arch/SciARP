@@ -1,0 +1,43 @@
+{
+  "task_index": 134,
+  "task_id": "134-capsule037",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "f712268cff9dcea90edb3adbd37bfa10354dc7cd12894e015ee0a6a8f61a8e2a",
+  "source_base_evidence_sha256": "c5c9a9bd0fa23d43c583be55944201189768feb15740f5fe3067d495545460ba",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Model df transcribed from 4 to 5.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Residual df independently transcribed from 34 to 33.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| model df | 4 |",
+      "new": "| model df | 5 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| residual df | 34 |",
+      "new": "| residual df | 33 |"
+    }
+  ],
+  "extends_existing": null
+}

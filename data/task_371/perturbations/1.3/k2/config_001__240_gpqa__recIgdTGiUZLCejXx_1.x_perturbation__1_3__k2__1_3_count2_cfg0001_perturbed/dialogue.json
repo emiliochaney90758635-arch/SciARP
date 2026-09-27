@@ -1,0 +1,59 @@
+{
+  "release_task_index": 371,
+  "task_id": "gpqa__recIgdTGiUZLCejXx",
+  "dataset": "gpqa",
+  "ordinal": 240,
+  "variant": "perturbed",
+  "conversation_id": "240::gpqa__recIgdTGiUZLCejXx::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "8b2f3080363ab934f93fb67e7c5e3cacf767b29c9dc9e841fb53b22bf91f5b88",
+  "semantic_condition_id": "1e9360594ee230aff0f5fba377dad314fc70b0497ca5b12a8b09b595d50dd4a0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1.0e-5 M boric acid at 25 C with K_w=7.0e-10 and K_w=1.0e-14, explain whether water autoionization should be included.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using K_a=1.0e-5 M and K_a=7.0e-10, write [A-] as a function of [H+] under the dilute-acid approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the electroneutrality equation including [OH-]=K_w/[H+].",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the borate expression with charge balance to obtain an equation for [H+], then solve it numerically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the hydrogen-ion concentration to pH.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the pH with precision appropriate to the approximate acid-species treatment rather than presenting it as an exact equilibrium root.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the result is physically consistent with a very dilute weak acid and with the neutral-water contribution.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the principal charge-balance contributions, [H+], pH, and the approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

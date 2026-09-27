@@ -1,0 +1,59 @@
+{
+  "release_task_index": 570,
+  "task_id": "scibench__calculus-sol-001",
+  "dataset": "scibench",
+  "ordinal": 351,
+  "variant": "perturbed",
+  "conversation_id": "351::scibench__calculus-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "19eef861047eb96f0497b6ded6f96b4f9ce2afb2e4f2b5968ffa325fc1dae54e",
+  "semantic_condition_id": "aea686dc10f1535cf11db0006be26f7810d1bca39e19d4b51cf79361cbd3f356",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cardioid r=1+sin(theta), identify the cusp and explain why 0<=theta<=2pi traces the curve exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the polar arc-length integral over that full tracing, including dr/dtheta.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the Fourier-series coefficient using trigonometric identities and state where an absolute value enters.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use u=theta/2+pi/4 to transform the integral and determine the new limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the probability mass function obtained after the substitution, splitting its domain wherever the sign changes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two pieces and the transformed prefactor, keeping the contributions explicit for a final check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the sign split and symmetry are consistent with a nonnegative arc-length integrand over the full curve.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the total length of the cardioid.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

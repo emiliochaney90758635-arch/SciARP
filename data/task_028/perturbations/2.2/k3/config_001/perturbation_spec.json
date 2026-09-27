@@ -1,0 +1,28 @@
+{
+  "task_id": "028-capsule008",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article reports 4.6e-12.",
+    "The second reports 2.1e-27.",
+    "The third reports 8.9e-31."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first probability article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second probability article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third probability article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

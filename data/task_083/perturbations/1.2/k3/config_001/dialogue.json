@@ -1,0 +1,40 @@
+{
+  "release_task_index": 83,
+  "task_id": "083-capsule022",
+  "source_id": "bix-30-q5",
+  "dataset": "bixbench",
+  "ordinal": 83,
+  "variant": "perturbed",
+  "conversation_id": "083::083-capsule022::1.2.k3::lane_c_manual",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "9bf113a7ad274b939d1c9c213969b104c0f961d6ef32fc67433be81d3e076efd",
+  "semantic_condition_id": "787889004cff7fe5aaea8e21d89de13592e3ca325f2c53d26ebd3536c1f4b6c4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Test Family and Corrections\n\nThe archived analysis removes `P_3` and `C_18`, applies `log2` to the 9 patient columns and 9 control columns for 175 miRNAs, and then performs a two-sided Welch t-test on each row. All 175 raw p-values are finite.\n\nThe following procedures are applied separately to the same 175-dimensional vector:\n\n```r\np.adjust(raw_p, method = \"BH\")\np.adjust(raw_p, method = \"BY\")\np.adjust(raw_p, method = \"bonferroni\")\n```\n\nSignificance requires adjusted `p <= 0.05`.\n\n## Global Minima of the Three Columns\n\n| Correction method | minimum adjusted p-value | rows attaining the minimum |\n|---|---:|---|\n| Benjamini-Hochberg | 0.0906989673364421 | raw-p ranks 1–7 |\n| Benjamini-Yekutieli | 0.5210525121931603 | raw-p ranks 1–7 |\n| Bonferroni | 0.2964446336893759 | hsa-miR-20b |\n\nThese global minima result from checking all 175 entries in each column; the adjusted p-values of all other rows are no lower than the corresponding value. None of the three columns contains an adjusted p-value exactly equal to 0.05.\n\nBecause the three methods use the same test family, “jointly significant after all three corrections” means the strict intersection of the three method-specific significance sets; rows significant only by uncorrected raw p-values cannot be included.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse m=1.75 because family size is expressed in hundreds.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express every corrected probability as a percentage by multiplying by 100.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Interpret threshold 0.05 as five percentage points. Despite m=1.75 and the percentage presentation, carry forward the archived adjusted columns and their empty strict intersection.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the strict intersection of those three sets. How many miRNAs remain jointly significant?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

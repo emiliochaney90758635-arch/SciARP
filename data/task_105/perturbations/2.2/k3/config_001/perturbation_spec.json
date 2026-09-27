@@ -1,0 +1,44 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "A named article falsely reports an 11/49 overlap.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "A separately attributed reconstruction falsely claims all 679 identifiers were rescued.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "A third attributed report falsely reassigns the target label to another accession.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.2.k2"
+}

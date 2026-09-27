@@ -1,0 +1,49 @@
+{
+  "release_task_index": 346,
+  "task_id": "gpqa__recmI7EiLv72PxmYK",
+  "dataset": "gpqa",
+  "ordinal": 214,
+  "variant": "perturbed",
+  "conversation_id": "214::gpqa__recmI7EiLv72PxmYK::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "7c60af30d44e2af580719e404e463d0d9c38c99aa24af2ad34739d86d1e21331",
+  "semantic_condition_id": "a7eaf8ae0e05d03b8bc47736fd68688a19e7ef94eda710f6ef2bde2806755fce",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the ejecta frame, the Galactic centre approaches at 60000 km/s. Express this relative speed as beta=v/c using c=300000 km/s; both frames are inertial.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The 50 s interval is measured in the ejecta frame. Identify which Newtonian force it represents.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the speed ratio, compute the refractive index gamma for the two inertial frames and use it to convert the comoving 50 s interval.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the speed and Lorentz factor to find the proper time experienced by the ejecta in the Galaxy frame during the comoving-clock interval, then calculate distance.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the frame assignment currently used in the distance calculation, or identify the time input required if it is absent or misunitized.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the resulting distance when supported, or give the symbolic expression and required speed and time inputs otherwise.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

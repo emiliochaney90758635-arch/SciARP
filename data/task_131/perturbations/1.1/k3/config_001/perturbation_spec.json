@@ -1,0 +1,42 @@
+{
+  "task_index": 131,
+  "task_id": "131-capsule036",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9c1b0fabc60bb79a6ca565e5dac68b9ec878ef1ac8b7ca515a4c215236469b0f",
+  "source_base_evidence_sha256": "e32e2c190a417829565cff410e8e08a79b68931843a296d6fd9582257e7a04c9",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Mapped-name term redefined.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Combined-direction term independently redefined.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Top-ranked term independently redefined.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Use mapped gene names to mean Ensembl IDs with labels attached but not substituted.",
+    "T4": "Use combined-direction list to mean positive-LFC genes only.",
+    "T5": "Use top-ranked to mean largest Combined Score."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

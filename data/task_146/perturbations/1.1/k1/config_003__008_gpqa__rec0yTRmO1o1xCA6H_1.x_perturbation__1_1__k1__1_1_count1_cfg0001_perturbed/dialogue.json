@@ -1,0 +1,49 @@
+{
+  "release_task_index": 146,
+  "task_id": "gpqa__rec0yTRmO1o1xCA6H",
+  "dataset": "gpqa",
+  "ordinal": 8,
+  "variant": "perturbed",
+  "conversation_id": "008::gpqa__rec0yTRmO1o1xCA6H::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8828037668aa753d2ab845720480be290b6ab7ed864d759bb397a3a4f6d3b280",
+  "semantic_condition_id": "cdc3888c01b4e5f208c8b8c63bae4719a8644c5bb00fed61a0e886cc325a20f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a dynamical theory where an electric dipole can have an isolated North or South pole, identify the required source types.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the field duality implied by the source types identified above to write their modifications to Maxwell's equations and identify every divergence or curl equation that gains a new source term.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Map those modifications to named laws. In particular, explain why the current associated with moving new charges modifies Faraday's circulation law for the electric field.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the divergence of the generalized Faraday law and combine it with the time derivative of the corresponding Gauss law to derive continuity for the new charge.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check from the duality and source assignments whether either of the other two Maxwell equations receives a direct term from these new sources.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report which ordinary Maxwell equations change and the new source added to each.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

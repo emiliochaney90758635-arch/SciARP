@@ -1,0 +1,54 @@
+{
+  "release_task_index": 257,
+  "task_id": "gpqa__recakFKZioXUuldcd",
+  "dataset": "gpqa",
+  "ordinal": 125,
+  "variant": "perturbed",
+  "conversation_id": "125::gpqa__recakFKZioXUuldcd::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "64bc598261856a2ef6363bb980a782f1b395dbd2470f1407605ae744a57c882f",
+  "semantic_condition_id": "5d9b13e661e6a10382ff8f16312631693d24fcbe1c1c1d14cae093223f35dc54",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A ruthenium methylidene and 1-propene convert an unknown alkene into 1-(prop-1-en-1-yl)-2-vinylcyclopentane. What features of this product point to a ring-opening metathesis precursor?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How are the two alkenyl substituents arranged on the cyclopentane ring, and what does that arrangement imply about the precursor skeleton?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Outline a retrosynthesis consistent with the ring and substituent arrangement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that reasoning to infer the fused bicyclic framework and explain how water supplies the prop-1-en-1-yl group while the adjacent vinyl group remains.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the full systematic name of the ring-opening intermediate?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the assignment by tracing the decisive bond transformation and the subsequent reaction with the reaction partner.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the identified species and summarize its atom-to-product mapping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

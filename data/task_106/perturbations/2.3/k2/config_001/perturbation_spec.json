@@ -1,0 +1,46 @@
+{
+  "task_index": 106,
+  "task_id": "106-capsule030",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_replace",
+  "source_base_dialogue_file_sha256": "394bbcb07c9c2c396b710e6892dc4d37ce4ed70e1e4aed4a4745383fe21ad0f1",
+  "source_base_evidence_sha256": "f7c72faf74bda56763b8fa09d6df98c473f7d0c69b1ab7905abd61a3b28ff822",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Selected-set count distortion.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Leading adjusted-p distortion crosses the FDR threshold.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_value",
+      "description": "Plausibly transpose selected-set count 679 to 697.",
+      "old": "The selected set contained 679 Ensembl IDs.",
+      "new": "The selected set contained 697 Ensembl IDs."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_value",
+      "description": "Change leading adjusted p from 0.133280 to 0.033280.",
+      "old": "| 1 | TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 | 8/49 | 0.000140 | 0.133280 |",
+      "new": "| 1 | TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 | 8/49 | 0.000140 | 0.033280 |"
+    }
+  ],
+  "extends_existing": null
+}

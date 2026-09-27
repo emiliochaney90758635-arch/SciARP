@@ -1,0 +1,49 @@
+{
+  "release_task_index": 153,
+  "task_id": "gpqa__rec2UlKqC6RFHdcro",
+  "dataset": "gpqa",
+  "ordinal": 15,
+  "variant": "perturbed",
+  "conversation_id": "015::gpqa__rec2UlKqC6RFHdcro::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7d9e666049885e91b1d97af63cc81fe405d64cb807194c35b24c71d2ef44f0b8",
+  "semantic_condition_id": "37bd788c2ce694ea74d7b677d656af65e724ae4070067152940d099193a1aa9a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the gamma-gamma pair-production threshold using epsilon=1e-3 eV as a representative CMB neutrino energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At fixed epsilon, which collision geometry minimizes the required E? State theta and the value of 1-cos(theta).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply a normalization condition, rather than the pair-production threshold, to the chosen geometry.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain how using a non-head-on collision angle or an angular average would change the threshold energy relative to the head-on result.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a CMB photon with epsilon=1e-3 eV and m_e c^2=0.511 MeV, use the threshold relation and chosen collision geometry to calculate the gamma-ray energy in eV and GeV; note the limitation of representing the CMB by one photon energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the gamma-ray energy scale and qualify it by the target-photon choice, angular assumption, and resulting uncertainty.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

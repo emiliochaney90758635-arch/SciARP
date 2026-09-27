@@ -1,0 +1,28 @@
+{
+  "task_id": "014-capsule005",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Uses raw p-value to resolve an adjusted-p tie.",
+    "Uses pathway size to resolve the same tie.",
+    "Uses odds ratio to resolve the same tie."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "raw-p tie-break premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "odds-ratio tie-break premise"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "pathway-size tie-break premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

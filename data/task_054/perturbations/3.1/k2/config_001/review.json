@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can exclude 233 despite T1 identifying all KD records, then T3 call the cached full-vector W.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "cc8a3c78e2120b351ac891331f9051e5103742f4d371c8d66bace432b22f4de0",
+  "strict_non2x_original_semantic_condition_id": "494b079eb12df532cb45d3942ca78838f4bae04b13a19c3b05093fac4a0a76af",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 naturally omit 233 from the vector; at T3 request the archived all-eight statistic 0.9563693455884582 despite the shortened vector. Remove meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

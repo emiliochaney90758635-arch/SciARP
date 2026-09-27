@@ -1,0 +1,22 @@
+{
+  "subclass": "4.2",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "project-lead pressure alters set subtraction",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "PI pressure fixes final count",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

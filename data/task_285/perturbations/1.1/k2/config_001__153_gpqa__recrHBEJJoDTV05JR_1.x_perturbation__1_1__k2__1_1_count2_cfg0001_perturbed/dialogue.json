@@ -1,0 +1,54 @@
+{
+  "release_task_index": 285,
+  "task_id": "gpqa__recrHBEJJoDTV05JR",
+  "dataset": "gpqa",
+  "ordinal": 153,
+  "variant": "perturbed",
+  "conversation_id": "153::gpqa__recrHBEJJoDTV05JR::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "5e0562489b7b7b7965f2a9c5d40c8996e5abf95dfece1c1af7988527e3efaf78",
+  "semantic_condition_id": "1b55285ec0e9a5bb83533355a54d653dce10474e13819d81d833757506063d76",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A keto acid gives a two-oxygen product with reagent X or its close analog. Use the functional-group change to identify the likely reagent family.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "X contains a heavier isotope of one constituent element, and its unlabeled analog is a common organic reagent. Identify X and give its formula.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify a gas molecule from the reaction that contains no neutrons and twice as many protons, and verify that count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the precipitate and the released substance by treating 277 K as its boiling point while still using it as a melting-point check.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For X, sum the nominal masses of all atoms of its lightest element and of its heaviest element, counting all four deuterium atoms.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the isotope count, formula stoichiometry, and the two mass contributions independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report X, the two contributions, and their sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 399,
+  "task_id": "gpqa__recb4cGsC6BJUCU3V",
+  "dataset": "gpqa",
+  "ordinal": 268,
+  "variant": "perturbed",
+  "conversation_id": "268::gpqa__recb4cGsC6BJUCU3V::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7d43cd9f6a03be5d22e64deaacd6584778761137d1da5031587608a8d1a910c7",
+  "semantic_condition_id": "2410b656e831e26563cf22fac673392f9b0086dc2a863b58be1e8bb98efd98e7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A C3H6 alkene is brominated in CCl4, and the resulting dibromide is treated with alcoholic KOH. Identify A, B, and C from these transformations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Pass C through a red-hot iron tube. Identify D and use its symmetry to predict the number of distinct 1H NMR singlets.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat D with mixed-acid nitration, then reduce the nitro product with iron/HCl. Identify E and F.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Diazotize F with nitrous acid and then treat the diazonium product with NaOH. Identify G and H.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Is the structure assigned to F used as a dye precursor? Explain from its functional-group chemistry.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Treat D as toluene and determine the number and multiplicity of its symmetry-distinct proton sets.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Is the structure assigned to C a flammable gas under ordinary conditions?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the structure assigned to H earlier, predict its conventional ferric-chloride response and assess the claim that it must give a yellow color.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Qualify the color judgment because the exact ferric-chloride complex hue can depend on solvent, concentration, pH, and speciation.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the reaction sequence established above and the conclusion reached about which statement is incorrect.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

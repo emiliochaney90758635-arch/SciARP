@@ -1,0 +1,46 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Sample columns are shifted to the wrong metadata objects.",
+      "consumers": [
+        "T2",
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Effect signs are independently mapped to the wrong groups.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Align each retained count column to the metadata row immediately following its matching sample, wrapping the final row to the first.",
+    "T3": "Map positive disease-versus-control effects to control-up genes and negative effects to disease-up genes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Align each retained count column to the metadata row immediately following its named sample, wrapping the last to the first, but reuse the archived ranking unchanged."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Interpret positive disease-versus-control effects in that reused ranking as control-up and negative effects as disease-up."
+    }
+  ]
+}

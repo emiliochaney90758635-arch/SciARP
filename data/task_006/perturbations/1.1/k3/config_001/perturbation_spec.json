@@ -1,0 +1,41 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Redefines a GeneID set as an un-deduplicated row collection.",
+    "Redefines B-only as the entire B set.",
+    "Redefines the target region as a sum of two mutually exclusive regions."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "configured_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "evidence_unchanged": true
+}

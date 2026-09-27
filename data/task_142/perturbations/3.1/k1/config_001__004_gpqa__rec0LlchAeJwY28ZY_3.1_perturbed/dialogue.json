@@ -1,0 +1,49 @@
+{
+  "release_task_index": 142,
+  "task_id": "gpqa__rec0LlchAeJwY28ZY",
+  "dataset": "gpqa",
+  "ordinal": 4,
+  "variant": "perturbed",
+  "conversation_id": "004::gpqa__rec0LlchAeJwY28ZY::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5ed591f16357da4a528fa97db5b7dae2d568e86938f995677b71d6d021533705",
+  "semantic_condition_id": "3d609ba02d516e1ca689076a544b1086a4796400234df312ea7f3715686b6037",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before classifying the eight structures, set the criterion for optical activity: the molecule must be chiral and configurationally stable on the observation timescale, while E/Z geometry alone is insufficient. Which stereogenic and symmetry elements should be checked?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that criterion to 1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene and 2,3,3,3-tetrafluoroprop-1-ene, giving the decisive structural reason for each classification.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now classify di(cyclohex-2-en-1-ylidene)methane, 5-(5-methylhexan-2-ylidene)cyclopenta-1,3-diene, and 3-(2-methylbut-1-en-1-ylidene)cyclohex-1-ene, paying particular attention to axial chirality and symmetry.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Before treating the remaining structures, contrast a stable stereogenic axis in a cumulated or ylidene system with atropisomerism about a biaryl bond. What makes either axis stereogenic and configurationally stable?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Classify [1,1'-biphenyl]-3,3'-diol, 8,8-dichlorobicyclo[4.2.0]octan-7-one, and cyclopent-2-en-1-one under the same criterion, with a concise symmetry or stability justification.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For the final tally, now treat E/Z geometry by itself as sufficient for optical activity. Give the resulting count and name every included structure.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

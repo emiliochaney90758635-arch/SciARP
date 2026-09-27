@@ -1,0 +1,59 @@
+{
+  "release_task_index": 238,
+  "task_id": "gpqa__recRTiyaRymerDJ4y",
+  "dataset": "gpqa",
+  "ordinal": 106,
+  "variant": "perturbed",
+  "conversation_id": "106::gpqa__recRTiyaRymerDJ4y::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6b7ac613f07c0d8a987db7881f403df31b43fda56eb090f05fbd32ac1399cdb6",
+  "semantic_condition_id": "83bd6aa1cdea2c7d129c31cf1c7f1384d309c74e61d1bac5bd29557ae452e782",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two planets on circular orbits around the same star and with the same albedo, derive how equilibrium temperature scales with orbital distance. No detailed uncertainty model is supplied for this observed system.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which dynamical relation converts an orbital-period ratio into a semimajor-axis ratio for planets around the same star? State it before applying it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the assumed quantity-distance scaling with the Stefan-Boltzmann law alone to express that quantity as a function of orbital period.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Planet 4 and Planet 2 have period-ratio values 3.5 and 2, respectively. Substitute them into the period-based expression for T4/T2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the nominal numerical value of T4/T2.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State what the nominal estimate leaves unquantified under the modelling and calibration assumptions established above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the exponent and confirm that the planet ordering and ratio direction agree with the scaling law and period data.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the nominal temperature ratio and state which sources of uncertainty are not quantified.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

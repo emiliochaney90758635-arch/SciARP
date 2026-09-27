@@ -1,0 +1,54 @@
+{
+  "release_task_index": 298,
+  "task_id": "gpqa__recINSFEYLCyyd08m",
+  "dataset": "gpqa",
+  "ordinal": 166,
+  "variant": "perturbed",
+  "conversation_id": "166::gpqa__recINSFEYLCyyd08m::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "2f8b75d50c0c99e777b9d273ad28de1775f64a67ebd6f92eb6a89b53b15293b0",
+  "semantic_condition_id": "ea48553d543cdd84e4523dd19d805ee6cf1ef79037d33a6e9242aa38f5c6b8da",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A benzene ring bears a carboxylic acid together with formyl, cyano, methoxy, hydroxy, and dimethylamino substituents. Which parent structure is used for IUPAC naming, and which carbon is position 1?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Work out the possible locants with the carboxylic-acid carbon as position 1: carboxylic acid, formyl, and cyano are mutually meta; methoxy is para to the acid; hydroxy and dimethylamino are ortho to it; and methoxy and hydroxy are each ortho to cyano. Keep both numbering directions as candidates for comparison with the remaining constraints.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Resolve the numbering by treating methoxy and dimethylamino, rather than methoxy and hydroxy, as both ortho to cyano.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the IUPAC prefix-ordering rule to hydroxy, formyl, methoxy, cyano, and dimethylamino in the written name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the parent, locants, and prefix order into a complete systematic name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the parent, locants, prefix ordering, and punctuation are internally consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Write the resulting complete systematic name.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

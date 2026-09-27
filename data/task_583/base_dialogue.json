@@ -1,0 +1,59 @@
+{
+  "release_task_index": 583,
+  "task_id": "scibench__class-sol-001",
+  "dataset": "scibench",
+  "ordinal": 364,
+  "variant": "clean",
+  "conversation_id": "364::scibench__class-sol-001::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "c30f2b76db55f9e0b70688ac74acff5477cfac0ce075fcd6d570e3f73827fdfc",
+  "semantic_condition_id": "00d3bf81bb447c92032f6043198d50b5e41270231a094d8628c12d71a73aa3a6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert Halley's comet's orbital period of 76 years to seconds, using 365 days per year.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use Kepler's third law to calculate the semimajor axis from that period. Take G=6.67e-11 N m^2/kg^2 and M_sun=1.99e30 kg.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For an elliptical orbit, write the perihelion distance q in terms of semimajor axis a and eccentricity e. At fixed a, determine how q changes as e increases.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute e=0.967 into the perihelion formula while keeping the semimajor-axis value unrounded, and write the resulting product before evaluating it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate that product to obtain Halley's nominal minimum distance from the Sun in meters.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Express the distance in astronomical units and discuss the precision justified by the rounded period, eccentricity, and two-body approximation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the direction of the eccentricity dependence and explain physically why a highly eccentric orbit can have a small perihelion even when its semimajor axis is large.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report Halley's minimum distance from the Sun in meters and astronomical units, with an appropriate precision statement.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

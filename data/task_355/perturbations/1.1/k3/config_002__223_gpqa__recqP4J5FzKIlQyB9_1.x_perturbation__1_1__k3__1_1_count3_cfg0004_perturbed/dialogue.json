@@ -1,0 +1,54 @@
+{
+  "release_task_index": 355,
+  "task_id": "gpqa__recqP4J5FzKIlQyB9",
+  "dataset": "gpqa",
+  "ordinal": 223,
+  "variant": "perturbed",
+  "conversation_id": "223::gpqa__recqP4J5FzKIlQyB9::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "9f6329c32fcfa83e0046671b952e62d123eb9acdd6090d04c0a17f0f98eb591e",
+  "semantic_condition_id": "66df8c6192d80ba4d101e56bd78dbc9c8f1a2d60b2fe8d2b79b1e0a96b99958b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unsaturated compound has M+ at m/z 98 and a strong FTIR band at 1725 cm^-1. What molecular-mass and carbonyl constraints follow?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Identify the 9.7 ppm triplet's crystal-lattice type and infer adjacent protons.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare possible alkane connectivities using the vinylic quartet at 5.3 ppm.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the spectra to identify the unknown inorganic salt while explaining aldehydic and vinylic coupling.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed structure against all spectral observations and coupling assignments developed above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any residual ambiguity caused by having only a subset of the spectra.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported compound and the two decisive coupling assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

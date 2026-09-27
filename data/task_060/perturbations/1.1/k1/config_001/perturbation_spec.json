@@ -1,0 +1,21 @@
+{
+  "config_id": "task060_1.1_k1",
+  "subclass": "1.1",
+  "k": 1,
+  "injection_turns": [
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use UTR annotation to mean only an ontology exactly equal to 3_prime_UTR_variant or 5_prime_UTR_variant."
+    }
+  ]
+}

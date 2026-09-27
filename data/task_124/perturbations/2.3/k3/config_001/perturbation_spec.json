@@ -1,0 +1,55 @@
+{
+  "task_index": 124,
+  "task_id": "124-capsule035",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "73b33665ecd8fc29c3ec6e804d5bf648e0be637cc988a4663689c347022bd917",
+  "source_base_evidence_sha256": "17c3e3ce567616aab47f3ece9f6ceb2411910a7e2ee5e7485c722a4eb06fd30a",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "W site count changed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Chromosome-1 site count independently changed.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "W chromosome length independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| W | 3 | 20,846,394 |",
+      "new": "| W | 4 | 20,846,394 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| 1 | 29 | 114,020,016 |",
+      "new": "| 1 | 28 | 114,020,016 |"
+    },
+    {
+      "turn_id": "T3",
+      "old": "| W | 4 | 20,846,394 |",
+      "new": "| W | 4 | 20,846,934 |"
+    }
+  ],
+  "extends_existing": null
+}

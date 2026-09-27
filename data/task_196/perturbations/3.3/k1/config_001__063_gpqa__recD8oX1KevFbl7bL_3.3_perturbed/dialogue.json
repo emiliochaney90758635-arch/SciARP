@@ -1,0 +1,64 @@
+{
+  "release_task_index": 196,
+  "task_id": "gpqa__recD8oX1KevFbl7bL",
+  "dataset": "gpqa",
+  "ordinal": 63,
+  "variant": "perturbed",
+  "conversation_id": "063::gpqa__recD8oX1KevFbl7bL::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9ef43084f5150e8dca0466cddb2a5c37b16244a8cc0a2925a763afa5d9fd7c51",
+  "semantic_condition_id": "94543e55356b8a5e622cf5ccfb4564b56608f5b4768d1c2d877b84c148bcca18",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A barley gene encodes an enzyme that produces an anti-nutritional compound. Using the intact coding-strand prefix 5'-ATGTTTCTCGCTGGTACTTCTGTGGATGAACATATTTATTGTCGT...TGA-3', set the reading frame from ATG and translate the first six codons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only RNA-seq differential-expression analysis as the governing method for identifying the premature-stop allele and ranking the four mutant sequences.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In the shared 5'-to-3' reading frame, compare Mutant 1, 5'-ATGTTCTACGCTGGTACTTCTGTGGATGAACATATTTATTGTCGC...TGA-3', and Mutant 2, 5'-ATGTTCTAAGCTGGTACTTCTGTGGATGAACATATTTATTGTCGC...TGA-3', with the intact prefix.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Focus on Mutant 2 prefix ATGTTCTAAGCTGGT. Identify its earliest translated consequence in the shared frame.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare Mutant 3, 5'-ATGTTTTACGCTGGTGTCACTTCTGTGGATGAACATATTTATTGTCGT...TGA-3', and Mutant 4, 5'-ATGTTTTACGCTACTTCTGTGGATGAACATATTTATTGTCGT...TGA-3', with the intact sequence. Classify their early coding changes and check for a premature stop.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which mutant is most likely to abolish production of the anti-nutritional compound, and what molecular consequence makes it the strongest loss-of-function candidate?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Translate the selected mutant through its first termination codon and contrast that early truncation with the in-frame insertion or deletion in the other mutants.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Discuss the likely effects on translation and nonsense-mediated decay, and name the protein, enzyme-activity, or metabolite measurements needed to confirm loss of pathway output.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the selected mutant and explain why its early coding consequence is more decisive than the synonymous or in-frame changes in the other lines.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

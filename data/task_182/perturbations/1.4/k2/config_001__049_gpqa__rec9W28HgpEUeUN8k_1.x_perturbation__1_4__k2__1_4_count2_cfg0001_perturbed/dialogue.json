@@ -1,0 +1,54 @@
+{
+  "release_task_index": 182,
+  "task_id": "gpqa__rec9W28HgpEUeUN8k",
+  "dataset": "gpqa",
+  "ordinal": 49,
+  "variant": "perturbed",
+  "conversation_id": "049::gpqa__rec9W28HgpEUeUN8k::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "efc7efa1d460e50857ee603647ddb57679bd6e5d1bc68a84d2821a67ceea612a",
+  "semantic_condition_id": "8f75d85a544ea8dbb2ba2109cd524c471942c6cf280e77a596631b8f8130bfdc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=[cos(phi)|alpha>+sin(phi)|-alpha>]/N, with N=sqrt[1+sin(2phi)exp(-2alpha^2)], simplify the superposition and identify whether it is even or odd.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The relative-entropy non-Gaussianity is delta_b=Tr(rho ln rho)-Tr(tau ln tau), where tau is the Gaussian state with the same first and second moments. Rewrite this using von Neumann entropies and determine the contribution from the pure state rho.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the cat-state phase already discussed, evaluate the moments needed to obtain the symplectic thermal occupation n of tau.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the relation established above to calculate the required entropy or purity contribution, giving an exact expression and decimal value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the contributions required by the selected measure and retain enough precision for a meaningful numerical report.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and magnitude against the properties of this odd cat state and the definition of the selected non-Gaussianity measure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the numerical non-Gaussianity under the selected measure and interpret the value in that measure.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

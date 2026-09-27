@@ -1,0 +1,49 @@
+{
+  "release_task_index": 153,
+  "task_id": "gpqa__rec2UlKqC6RFHdcro",
+  "dataset": "gpqa",
+  "ordinal": 15,
+  "variant": "perturbed",
+  "conversation_id": "015::gpqa__rec2UlKqC6RFHdcro::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9b49b68fd6afa97419de09983c2d77f68799e6918231e624678bceb8fd69ca9b",
+  "semantic_condition_id": "5e670c099d8468102e446a257b70e42b9b731b71fc1ffbf1b0205cead0f0b68c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a high-energy gamma ray interacting with a CMB photon through gamma+gamma -> e+e-, derive the invariant threshold in terms of E, target-photon energy epsilon, collision angle theta, and m_e c^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At fixed epsilon, which collision geometry minimizes the required E? State theta and the value of 1-cos(theta).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the threshold relation for the collision geometry selected above.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain how using a non-head-on collision angle or an angular average would change the threshold energy relative to the head-on result.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the numerical threshold as exact with zero model or representativeness uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the gamma-ray energy scale and qualify it by the target-photon choice, angular assumption, and resulting uncertainty.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

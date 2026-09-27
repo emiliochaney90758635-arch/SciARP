@@ -1,0 +1,54 @@
+{
+  "release_task_index": 293,
+  "task_id": "gpqa__recya83GDvr1UYwEp",
+  "dataset": "gpqa",
+  "ordinal": 161,
+  "variant": "perturbed",
+  "conversation_id": "161::gpqa__recya83GDvr1UYwEp::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f1c2d51116ce3f6753931c6f8ed8ed15f384a1edd3ae6256329c41589c23cfc1",
+  "semantic_condition_id": "8f985bff2d031ed2fa2f2769f5d4b4822d60730dba1fc9e8578c792b8b5e9845",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A modern PC contains a nickel-plated component made from a three-element material that became the subject of many patents near the end of the twentieth century. Before considering the wet-chemistry evidence, what broad kind of material does that description suggest?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "When a sample is dissolved in concentrated nitric acid, a brown gas evolves, a white precipitate forms, and the solution becomes brown-violet. Sodium iodide then gives a brown precipitate, and a reagent added to one aliquot produces the characteristic dark-blue qualitative test for X. Which bulk element is X, and which observation is most diagnostic?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A second aliquot gives pale-pink crystals when dilute potassium chloride is added; the crystals are nevertheless reported to contain 27.11% fluorine by mass. Compounds of element Y are also used in glass with unusual optical properties. Which element is Y, and how do the two clues support it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The remaining bulk element Z is described as a noble gas associated with the white precipitate formed during nitric-acid digestion. Which element is Z, and why should the nickel plating not be counted as one of the three bulk elements?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the proposed identities of X, Y, and Z, calculate the sum of their atomic weights and identify the twenty-unit interval that contains it.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the identification against all of the observations: the dark-blue test, the fluoride composition and optical-glass use, the white nitric-acid precipitate, and the fact that nickel is only a coating. Is the assignment internally consistent?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the identities of X, Y, and Z, the approximate atomic-weight sum, and the corresponding numerical interval.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "release_task_index": 414,
+  "task_id": "gpqa__recl1UtgTVKishAq4",
+  "dataset": "gpqa",
+  "ordinal": 283,
+  "variant": "perturbed",
+  "conversation_id": "283::gpqa__recl1UtgTVKishAq4::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "984733d60f5d32e00908b75d9b32a515ce631c8b4433ba571304450d3a03e8d9",
+  "semantic_condition_id": "c888a38e64dec5b874fda41017e95448063a7d3264c04fdf1fb82d9ad9ee4550",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify product 1 when acetic acid is treated with bromine, pyridine, acetic anhydride, and heat.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine product 2 after heating product 1 with ethanol and catalytic sulfuric acid, then product 3 after treatment with sodium cyanide.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Stop after one intermolecular SN2 attack at a single end of 1,5-dibromopentane and assume the open-chain monoalkylated product cannot undergo a second deprotonation or ring closure.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Number the cyclohexane ring of product 4 from the carbon bearing cyano and ester groups. Identify symmetry-related carbons and test whether the two hydrogens on each CH2 are homotopic, enantiotopic, or diastereotopic in an achiral solution with rapid chair interconversion.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use that symmetry analysis to count the distinct cyclohexane-ring proton environments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Identify and count the non-ring proton environments in the ethyl ester group.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Add the ring and ethyl-group counts to obtain the total number of distinct proton environments.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the ethyl-group assignment against its expected integrations: one OCH2 environment integrating to two protons and one CH3 environment integrating to three. Explain why it creates no additional ethyl proton environments.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Reconcile the two subtotals and recompute the total number of chemically distinct proton environments.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check the count against molecular symmetry, rapid chair interconversion, and the absence of accidental peak overlap.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the structure of product 4, the ring and non-ring subtotals, and the total number of distinct 1H NMR environments.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

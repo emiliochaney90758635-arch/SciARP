@@ -1,0 +1,42 @@
+{
+  "task_index": 117,
+  "task_id": "117-capsule034",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c24dda797e607de9f1db1fb212cac561580e4e29d03e32931c664a3080e07a56",
+  "source_base_evidence_sha256": "7bd3ac99bbc78e2636938c0ed0734e21e033cd88953e6deeba217d38d4e9fc0b",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Coefficient state contradicted.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "SE state independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Test-sidedness independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Reverse the BMI coefficient sign.",
+    "T3": "Use a negative SE.",
+    "T4": "Despite requesting a two-sided test, use only Phi(-abs(z))."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

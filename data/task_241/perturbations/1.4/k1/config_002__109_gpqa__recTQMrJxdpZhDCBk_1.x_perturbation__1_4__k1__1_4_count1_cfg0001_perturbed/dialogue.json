@@ -1,0 +1,54 @@
+{
+  "release_task_index": 241,
+  "task_id": "gpqa__recTQMrJxdpZhDCBk",
+  "dataset": "gpqa",
+  "ordinal": 109,
+  "variant": "perturbed",
+  "conversation_id": "109::gpqa__recTQMrJxdpZhDCBk::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "da7f395a5148031b4cfedb24e0e4f9cc2edd588ae3659eefdec1011de761c864",
+  "semantic_condition_id": "be9e52594986d022f207ef4089e5de4bdba9e8d620f155f2c26b7cd81f9d5c12",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A gas-tight vessel contains A, B, and C and yields only water and a hydrogen halide after explosion. A and B have a 1:1 volume ratio. Determine their identities from the available information.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The total-volume ratio is (A+B):C=1:2.25. Use the relations established so far to identify C and choose a convenient mole basis, keeping any unresolved identities symbolic.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that mole basis, write the balanced contributions from each oxidizing gas reacting with C to form only the stated products.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum the products and calculate the mass percentage of the hydrogen halide, using consistent rounded molar masses.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the percentage and identify the product species used in that mass fraction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the elemental balance in the proposed reactions and recompute the total product mass on the same mole basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the gas identities, reaction rationale, and final product mass fraction obtained from the analysis.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

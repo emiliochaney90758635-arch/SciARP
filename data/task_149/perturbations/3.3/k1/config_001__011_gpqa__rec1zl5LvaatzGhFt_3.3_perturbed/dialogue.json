@@ -1,0 +1,44 @@
+{
+  "release_task_index": 149,
+  "task_id": "gpqa__rec1zl5LvaatzGhFt",
+  "dataset": "gpqa",
+  "ordinal": 11,
+  "variant": "perturbed",
+  "conversation_id": "011::gpqa__rec1zl5LvaatzGhFt::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ab2bf9516002072a0139834d1342cc4db379e55768339677610d571e80556371",
+  "semantic_condition_id": "37b5b0260b899479948b249743390754faa2481f361fd4e80f3758021b03b27a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a spin-1/2 muon, the component operators are P_x=(hbar/2)[[0,1],[1,0]], P_y=(hbar/2)[[0,-i],[i,0]], and P_z=(hbar/2)[[1,0],[0,-1]]. Identify the corresponding Pauli matrices and write the operator vector compactly.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the unit direction n=(sin(theta),0,cos(theta)) in the x-z plane, form the dimensionless projected matrix M=2(P dot n)/hbar and write its two-by-two entries.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Construct the eigenvector using the SO(3) Rodrigues rotation rule for an ordinary Cartesian vector as the sole method, rotating the components through the full angle theta.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply M directly to the proposed spinor and check its norm. How does this verification show why the angular dependence uses theta/2 rather than theta?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the normalized spin-up eigenvector along n, including the freedom to multiply it by an overall phase.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

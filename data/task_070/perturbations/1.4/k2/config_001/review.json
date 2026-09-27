@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Omitting contrast order and x-axis position removes two conditions needed for direction assignment.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "d9af5bc102bee31b8b97d1dc44689f5ea48eb6ea959164c9980e59a5f979c72b",
+  "strict_non2x_original_semantic_condition_id": "f775c8fa75bb92276fd6b3929b6ca5b940a0c3c6b2254cd47fa6329976ccdf26",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Verify neither numerator nor denominator at T1, record only point presence at T2, and infer Dn from the FeMinus label at T3.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,31 @@
+{
+  "subclass": "1.4",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "omits threshold strictness",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "omits both at-least-one-single-mutant and not-double-mutant constraints",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "omits whether counts should be summed or otherwise combined",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

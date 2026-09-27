@@ -1,0 +1,33 @@
+{
+  "config_id": "task044_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Define the pooled log2(TPM+1) population and explicitly retain the negative batch-correction values as observations."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Before comparing the tails, truncate every negative value to zero even though the population defined in the previous step retained them."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Calculate g1 from the original m2 and m3 reported before that truncation and treat it as the skewness of the truncated population."
+    }
+  ]
+}

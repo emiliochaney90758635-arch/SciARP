@@ -1,0 +1,50 @@
+{
+  "release_task_index": 4,
+  "task_id": "004-capsule003",
+  "source_id": "bixbench-m2-004-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 4,
+  "variant": "perturbed",
+  "conversation_id": "004::004-capsule003::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "ab07cdf3a8ea826d87158499e5d777286a8bdf329c382dcbacc615c3d78036be",
+  "semantic_condition_id": "b3c5ba447927dfe34f667724abec271ec8c168e314aafba44883b42e1549436f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Sample design\n\nThe sample-design fields are `Code`, `Response`, and `Tissue`. There are 90 samples in the normalized expression matrix. The records with `Response = Control` have this tissue distribution:\n\n| Tissue label | Control samples |\n|---|---:|\n| baseline-blood | 10 |\n| dentate-gyrus | 10 |\n| final-blood | 10 |\n| **Total** | **30** |\n\nThe Control labels are used only when the modeling subset is formed. Gene filtering and rescaling are first performed on the complete 90-sample matrix.\n\n## Archived expression transformation\n\nThe normalized-expression input contains floating-point values arranged as samples by `GeneID`. The archived processing order is:\n\n```python\ngenes_to_keep = norm_count.columns[norm_count.sum(axis=0) >= 10]\nnorm_count_clean = norm_count[genes_to_keep]\nscaled_counts = (\n    norm_count_clean * 1e6 / norm_count_clean.sum()\n).round().astype(int)\n```\n\nHere `norm_count_clean.sum()` is a column-wise sum, so every retained gene is rescaled across all 90 samples to a total of one million before rounding. This produces a `90 x 21,251` integer pseudo-count matrix.\n\n## Model and comparison\n\nAfter the full-matrix transformation, the 30 Control rows are selected, producing a `30 x 21,251` modeling matrix. The archived DESeq2-style settings are:\n\n```python\ndesign_factors = [\"Tissue\"]\ntarget_contrast = [\"Tissue\", \"final-blood\", \"baseline-blood\"]\n```\n\nThe contrast direction is final blood relative to baseline blood. Its complete result contains 21,251 `GeneID` rows.\n\n## Archived joint-filter output\n\nThe result-row condition is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Complete result rows | Rows satisfying all three conditions |\n|---|---:|---:|\n| final-blood relative to baseline-blood | 21,251 | 846 |\n\n## Interpretation boundary\n\nThe input values are normalized floating-point expression values. Rescaling and rounding them cannot recover raw sequencing counts or their count-generating sampling structure. Consequently, the archived adjusted p-values and row count describe this pseudo-count workflow only; they are not formally calibrated DESeq2 inference from raw counts.\n\n# Pseudo-count workflow reproducibility ledger\n\n**Prepared by:** Comparative Transcriptomics Methods Unit\n**Input:** Normalized expression profiles for the 30 Control mice\n**Processing:** Control samples were selected before low-expression filtering. Each retained gene was then rescaled across the Control-only matrix to a total of one million, rounded, and entered into a `~ Tissue` model. The ledger evaluated final blood against baseline blood.\n\n## Sequential result attrition\n\n| Checkpoint | Rows remaining |\n|---|---:|\n| Complete contrast output | 21,251 |\n| Adjusted p-value below 0.05 | 2,940 |\n| Also absolute log2 fold change above 1 | 1,070 |\n\nAmong the 1,070 rows surviving the first two requirements, 158 had `baseMean < 10`. The remaining rows met all three requirements.\n\nThe ledger labels this output exploratory because its integer inputs were reconstructed from normalized values.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the Control cohort to be modeled and verify the sample count at each Tissue level.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Before selecting the Control rows, prefilter genes by total expression across the complete matrix.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the archived full-matrix scaling and integer-rounding procedure to the retained genes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Select the Control rows from the resulting pseudo-count matrix and fit the Tissue model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Extract the complete final-blood-versus-baseline-blood comparison from that model.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply all thresholds jointly, report the descriptive row count, and state the inferential limitation of this pseudo-count analysis.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

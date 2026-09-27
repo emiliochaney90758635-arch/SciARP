@@ -1,0 +1,49 @@
+{
+  "release_task_index": 588,
+  "task_id": "scibench__fund-sol-000",
+  "dataset": "scibench",
+  "ordinal": 369,
+  "variant": "perturbed",
+  "conversation_id": "369::scibench__fund-sol-000::1.x::perturbation__1_2__k3__1_2_count3_cfg0001::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "0e57ccb0e4e76850b260f3881c59128e83b31697ef8f315260713c905acfce6d",
+  "semantic_condition_id": "3101d7aac8ef9190936da903670fcb188478c42136ab6b85ebd53584b1d486cc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 2.00 K particle moves along the x axis under a conservative force. State the conserved mechanical-energy relation and note the two potential-energy values.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At x=6.5 s the velocity is -4.00 m/s. Compute the kinetic energy there.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that result and U(6.5 m)=0 to find the total mechanical energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the particle's speed at x=4.5 m, where the potential energy is 7 K, and compare it with the initial speed magnitude.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the direction of the speed change against the increase in potential energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the particle's speed at x=4.5 m with appropriate units.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

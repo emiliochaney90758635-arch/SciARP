@@ -1,0 +1,49 @@
+{
+  "release_task_index": 555,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2763",
+  "dataset": "olympiadbench",
+  "ordinal": 502,
+  "variant": "perturbed",
+  "conversation_id": "502::olympiadbench__OE_TO_maths_en_COMP_2763::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "5d5d758eed0f936c7e4f13d695d8b5d28dbb8e8a4039f0488bcc45007acbae82",
+  "semantic_condition_id": "74c83f76b8c6a28695b8dde0262ca1696d829ee704ad90b55af484973b43cfe3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a positive integer N, let P(N) be the average of its decimal digits; for example, P(8)=8, P(451)=20, and P(2023)=0. We seek the least positive n satisfying P(n+23)=P(n)+23. Can any one-digit n work?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Now write n=10a+b and consider the case where n and n+23 both have two digits. For 0<=b<=6, adding 23 requires no borrowing from the units digit. Derive P(n+23)-P(n) and state the corresponding legal range of a.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the resulting no-carry digit equation over all legal two-digit pairs, and order the candidate values of n that it produces.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Before declaring the smaller candidate minimal, which one- and two-digit cases still have to be excluded?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the remaining two-digit numbers below the smaller candidate for which b=7, 8, or 9 and adding 23 carries from the units digit. Can any satisfy the equation?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the smaller no-carry candidate directly in P(n+23)=P(n)+23 and state the least positive solution.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

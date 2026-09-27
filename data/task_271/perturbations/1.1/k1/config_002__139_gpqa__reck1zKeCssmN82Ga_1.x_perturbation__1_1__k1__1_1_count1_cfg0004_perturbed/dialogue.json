@@ -1,0 +1,54 @@
+{
+  "release_task_index": 271,
+  "task_id": "gpqa__reck1zKeCssmN82Ga",
+  "dataset": "gpqa",
+  "ordinal": 139,
+  "variant": "perturbed",
+  "conversation_id": "139::gpqa__reck1zKeCssmN82Ga::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9576850dbcd746a814226b6b6422a5a9e2b371196b2d6cb0c9fe93c76d0c6a21",
+  "semantic_condition_id": "2d6a1359a9aa25fb6b6343388a38e402e9f2ec0d73bb9da1cde2ad678b963b18",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Classify 4,4-dimethylcyclopent-1-enol and identify its corresponding keto tautomer, noting that the reaction conditions beyond bromine are unspecified.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the ketone tautomer, identify the dominant bromination mode expected under the source interpretation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine which carbon is brominated and whether the oxygen functionality appears as a carbonyl or an alcohol in the product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the tautomer and bromination analysis to identify the major transition state rather than the major product.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the product as the best-supported major outcome while retaining uncertainty from the unspecified medium, tautomer population, kinetics, competing alkene addition, and product ratio.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the proposed structure conserves the ring skeleton and places bromine at an enolizable carbon alpha to the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the major product, mechanism, and evidential qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

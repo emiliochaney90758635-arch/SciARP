@@ -1,0 +1,19 @@
+{
+  "task_id": "093-capsule026",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Reverses positive log2FC interpretation.",
+    "Replaces log2 with log10.",
+    "Takes a reciprocal before the already incorrect logarithm."
+  ],
+  "evidence_mode": "append"
+}

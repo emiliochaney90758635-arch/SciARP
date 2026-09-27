@@ -1,0 +1,19 @@
+{
+  "task_id": "094-capsule026",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Reverses Ratio/FC direction.",
+    "Reclassifies FC as log2-transformed.",
+    "Negates the reversed value for final reporting."
+  ],
+  "evidence_mode": "append"
+}

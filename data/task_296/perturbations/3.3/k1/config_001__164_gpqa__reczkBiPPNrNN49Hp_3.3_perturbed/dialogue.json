@@ -1,0 +1,54 @@
+{
+  "release_task_index": 296,
+  "task_id": "gpqa__reczkBiPPNrNN49Hp",
+  "dataset": "gpqa",
+  "ordinal": 164,
+  "variant": "perturbed",
+  "conversation_id": "164::gpqa__reczkBiPPNrNN49Hp::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "57ffb82f4ea42fb8756a8c64cc4410c260afdba0fbeb10be97d8d83474e3186a",
+  "semantic_condition_id": "7c603b2f10acc627e5be542ef22251ab7d5035d4cae56bc891fccaf69857ec52",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For total cobalt concentration 10^-2 M, free ligand L=[SCN-]=0.1 M, and cumulative constants beta1=9, beta2=40, beta3=63, beta4=16, write the complex-formation expressions and cobalt mass balance including free Co2+.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the unit free-cobalt weight as the numerator over the all-cobalt denominator, and report that free-ion fraction as though it were Co(SCN)2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate each beta_n L^n contribution and state the numerator and denominator for the Co(SCN)2 fraction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the percentage of all cobalt-containing species present as Co(SCN)2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify that the free-ion and four complex fractions sum to one.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why the supplied beta values are cumulative rather than stepwise formation constants in this calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final percentage of cobalt present as Co(SCN)2 and state the normalization over free Co2+ and the four complexes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

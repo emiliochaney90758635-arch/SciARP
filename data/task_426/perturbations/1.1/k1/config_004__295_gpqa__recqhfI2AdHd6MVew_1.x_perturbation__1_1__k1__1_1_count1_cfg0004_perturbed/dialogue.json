@@ -1,0 +1,74 @@
+{
+  "release_task_index": 426,
+  "task_id": "gpqa__recqhfI2AdHd6MVew",
+  "dataset": "gpqa",
+  "ordinal": 295,
+  "variant": "perturbed",
+  "conversation_id": "295::gpqa__recqhfI2AdHd6MVew::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e42bf617ce12aee2569c92706c7ebb2f9e9f415b017bfc447dffcbb59f95197b",
+  "semantic_condition_id": "b3798a9ddb38f247794f28f7edb2de40d6b6a082eb2d57cf747d9cf763b3a897",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For C9H16O2, calculate the degree of unsaturation and interpret an isolated IR band at 1680-1700 cm^-1 together with the statement that the proton NMR has three chemical-shift environments.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assess how strongly the isolated band supports the functional-group assignment made from it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the composition representation and functional evidence established above to narrow the acyclic candidates, and state the organization rule needed to match the reported environment count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Within that structural framework and counting rule, compare the candidate proton environments and identify which must be equivalent.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Construct a candidate skeleton consistent with the molecular formula, functional-group evidence, and counting rule, then count its proton environments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify its component counts, functional-group assignment, and the equivalence classes produced by the adopted counting rule.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Count carbon environments in the 1H NMR spectrum.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Compare the resulting count with the spectral count established earlier.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Name the candidate supported by this structural and spectroscopic analysis.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check that name against the molecular formula and environment-counting rule, without overstating what the isolated IR band establishes.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the candidate, its proton-environment classes, and the confidence warranted by the spectral evidence.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

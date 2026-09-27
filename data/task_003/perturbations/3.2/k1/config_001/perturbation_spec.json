@@ -1,0 +1,23 @@
+{
+  "task_id": "003-capsule002",
+  "subclass": "3.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Infers a protective causal effect of childhood from a selected descriptive cohort without an adult comparison or intervention."
+  ],
+  "injection_turns": [
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3caa296e6ed02f8b185c21e570e8bd0d078f427a0ef330379226f61fdbeddfc2",
+  "configured_evidence_sha256": "3caa296e6ed02f8b185c21e570e8bd0d078f427a0ef330379226f61fdbeddfc2",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 329,
+  "task_id": "gpqa__reca44yABeO2fx7UB",
+  "dataset": "gpqa",
+  "ordinal": 197,
+  "variant": "perturbed",
+  "conversation_id": "197::gpqa__reca44yABeO2fx7UB::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "54e54291532d44a16d87471fa136623af32f0bfaeecd0d2053dd189cc7d1baa3",
+  "semantic_condition_id": "9674bf205b63559081995db5137e242f79aa3f9950bee5969a38929a2698a2b6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Draw 3,3,6-trimethylhepta-1,5-dien-4-one and distinguish its terminal alkene from its conjugated enone alkene.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With one equivalent of mCPBA, identify the two possible monoepoxide branches, one from each alkene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Inventory the starting material as though two equivalents of mCPBA had epoxidized both alkenes simultaneously rather than producing one monoepoxide per branch, then apply excess dimethylcuprate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After aqueous workup, identify one resulting product by systematic name and defining functional groups.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify its origin from attack at the less substituted epoxide carbon and conjugate addition where applicable, without direct addition to the ketone carbonyl.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the product name and the branch-specific reaction sequence.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 294,
+  "task_id": "gpqa__recypVp2NmPlBKVTp",
+  "dataset": "gpqa",
+  "ordinal": 162,
+  "variant": "perturbed",
+  "conversation_id": "162::gpqa__recypVp2NmPlBKVTp::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "242b220232dbe029af38b463edcd02359b718f78ea2fdce996404ab04f2c7328",
+  "semantic_condition_id": "2404ae9b0a1d2d1ea6adb2d148f73bb2d10456e408b8f2f00142ba518979b53d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rapid molecular diagnostic is needed for an outbreak known to be caused by a retrovirus. What feature of its genome matters for direct detection, and what nucleic-acid intermediate is needed before sequence identification?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the genome conclusion from the first step, specify the template to sequence and explain how the resulting sequence should guide a pathogen-specific assay.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Choose a rapid assay format based on the template or analyte identified above, and explain how its readout fits the outbreak use case.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "When comparing the alternatives, treat direct genomic-DNA sequencing as the appropriate starting point for this pathogen, followed by real-time PCR.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assemble the end-to-end workflow selected above and state the analyte detected in the final test.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the selected template or analyte, assay components, timing, and readout are mutually consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final diagnostic chain and its scientific rationale.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

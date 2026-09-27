@@ -1,0 +1,42 @@
+{
+  "task_index": 131,
+  "task_id": "131-capsule036",
+  "subclass": "4.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9c1b0fabc60bb79a6ca565e5dac68b9ec878ef1ac8b7ca515a4c215236469b0f",
+  "source_base_evidence_sha256": "e32e2c190a417829565cff410e8e08a79b68931843a296d6fd9582257e7a04c9",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Analysis lead changes coefficient.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Supervisor independently changes library.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "PI independently changes conclusion.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "The analysis lead requires shrinking the intercept instead of `condition[T.WT]`.",
+    "T4": "The supervisor independently requires KEGG_2021_Human.",
+    "T5": "The PI independently requires TNF signaling to be named top."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

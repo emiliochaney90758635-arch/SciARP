@@ -1,0 +1,59 @@
+{
+  "release_task_index": 194,
+  "task_id": "gpqa__recCeQdxhSfJJFGeE",
+  "dataset": "gpqa",
+  "ordinal": 61,
+  "variant": "perturbed",
+  "conversation_id": "061::gpqa__recCeQdxhSfJJFGeE::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8bb1dff07ff5335124524d696d2d955e5515e1a431e6795c76a9705d4b844711",
+  "semantic_condition_id": "578e0877db814cf96d48cadea2d1457d819c719c3ed68617c133952c6c8a8e48",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Methyl 2-oxocyclohexane-1-carboxylate is heated with aqueous NaOH, then acidified and heated further. What forms from the amide functionality during the initial base step?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After acidification, what organic acid is obtained from the intermediate established above?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify that acid from the relative positions of the functional groups identified so far, and assess its behaviour on heating.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the structural rule implied by that classification for predicting the main product and oxygen count under the remaining conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What main esterification product forms when heating continues after acidification?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count the oxygen atoms in that product and reconcile the count with any oxygen-containing group retained or lost along the adopted pathway.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the carbon and oxygen balance across the sequence of transformations established above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final product description and formula consistent with the preceding balance, together with the adopted oxygen count.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

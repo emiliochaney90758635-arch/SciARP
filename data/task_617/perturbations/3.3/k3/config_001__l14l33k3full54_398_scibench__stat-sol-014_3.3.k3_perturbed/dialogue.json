@@ -1,0 +1,49 @@
+{
+  "release_task_index": 617,
+  "task_id": "scibench__stat-sol-014",
+  "dataset": "scibench",
+  "ordinal": 398,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::398::scibench__stat-sol-014::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "ef2bcde42522f8fd8359a26d74ed25ea4212622e28b6b8089e51cb1729a68b9f",
+  "semantic_condition_id": "9a0669215c3932e2231c71b24df156a7477e0d83b78115580ac6f82fdffc46ee",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe an ordered length-10 H/T sequence with exactly four heads and six tails as a choice of positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the four head occurrences as distinct labeled tokens and count their ordered assignments to positions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Also label all six tail occurrences distinctly and count their assignments to the remaining positions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify tuples related by cyclic rotation and divide the labeled count by ten as though the objects were necklaces.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result through an equivalent complementary reformulation of the same outcome representation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the number of ordered sequences.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

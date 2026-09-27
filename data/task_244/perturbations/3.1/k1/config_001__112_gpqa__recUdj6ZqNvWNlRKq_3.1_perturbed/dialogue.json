@@ -1,0 +1,69 @@
+{
+  "release_task_index": 244,
+  "task_id": "gpqa__recUdj6ZqNvWNlRKq",
+  "dataset": "gpqa",
+  "ordinal": 112,
+  "variant": "perturbed",
+  "conversation_id": "112::gpqa__recUdj6ZqNvWNlRKq::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d7c86ad13f405d8e0717a90b905e0ed440c51d4df7aa7035661588e37d8950a2",
+  "semantic_condition_id": "9e8f22db05c8ca5d4d72eaececdec01bec752c924dac93e69ba103a9fa38384c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Irradiating 9-fluorenone with two equivalents of Selectfluor in acetonitrile at 400 nm gives a product with 19F NMR signals at +29.8 and -115.7 ppm. What fluorine environment does each signal suggest?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use signals at -29.8 and -115.7 ppm to decide whether the product is a ring-opened biphenyl bearing a carbonyl fluoride or an intact difluorofluorenone.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What carbon framework is expected from this reaction pathway?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assume the aryl fluorine is installed during this pathway. How does that assumption constrain the regiochemical analysis?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe an atom-mapping method that locates the aryl fluorine by following the cleaved bond and the fluorine-installation step.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the regiochemical method selected above to determine the aryl-fluorine position relative to the other fluorine-containing group.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two spectroscopic environments and that regiochemical method to give a working structural assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confident should that assignment be when only the two reported shifts and the stated reaction scope are available, without isolation or an authentic standard?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What additional spectral or structural evidence would normally bear on the assignment and regiochemistry?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the best-supported product name and briefly connect the reported signals and regiochemical analysis to that structure.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

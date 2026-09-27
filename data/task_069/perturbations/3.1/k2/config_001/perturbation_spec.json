@@ -1,0 +1,57 @@
+{
+  "config_id": "task069_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "place downregulated rows in the up summary",
+      "injected_text": "Summarize the archived GO Biological Process results for the upregulated set, retaining the adjusted significance and hit genes needed for comparison.\n\nFor this perturbed step, place downregulated rows in the up summary",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "independently contradict the established adjusted-p ordering by claiming the up table has the smaller values",
+      "injected_text": "Compare the two directional tables by term identity, adjusted significance, and hit genes. Which direction primarily carries the CBD-associated metabolic signal?\n\nFor this perturbed step, independently contradict the established adjusted-p ordering by claiming the up table has the smaller values",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Misplacing downregulated rows and then concluding upregulation is one propagated inconsistency.",
+    "before": "Wrong table followed by its conclusion.",
+    "after": "At T2 place downregulated rows in the up summary; at T4 independently contradict the established adjusted-p ordering by claiming the up table has the smaller values.",
+    "proposed_turns": [
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Place the displayed downregulated glycolytic rows in the upregulated summary, retaining their adjusted p-values and hit genes."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Claim that the upregulated table has the smaller adjusted p-values and therefore primarily carries the metabolic signal."
+    }
+  ]
+}

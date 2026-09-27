@@ -1,0 +1,41 @@
+{
+  "task_index": 134,
+  "task_id": "134-capsule037",
+  "subclass": "4.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f712268cff9dcea90edb3adbd37bfa10354dc7cd12894e015ee0a6a8f61a8e2a",
+  "source_base_evidence_sha256": "c5c9a9bd0fa23d43c583be55944201189768feb15740f5fe3067d495545460ba",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Measurement-unit uncertainty suppressed.",
+      "consumers": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Model-form uncertainty independently suppressed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Inferential uncertainty independently suppressed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Assign swarming area the definite unit mm^2 despite the evidence providing no unit.",
+    "T2": "Declare the df=4 spline specification unquestionably correct.",
+    "T4": "Declare the resulting p-value exact and universally reproducible."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

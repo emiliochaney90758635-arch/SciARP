@@ -1,0 +1,44 @@
+{
+  "release_task_index": 483,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2677",
+  "dataset": "olympiadbench",
+  "ordinal": 430,
+  "variant": "perturbed",
+  "conversation_id": "430::olympiadbench__OE_TO_maths_en_COMP_2677::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1c247af97298e50618ec74c38712a8b86e85099f3d261c4b23d5ad5ae6172203",
+  "semantic_condition_id": "53bb6b23e88254e4509e4167391720c6f935a39c53ef127abb0d56a4b40496ac",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cube has edge length 37, with a square opening of side length 1 centered on each of its six faces and aligned with the cube edges. What was the original surface area, and how much remains on those exterior faces after removing the openings?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Each hole runs through the center to the opposite face, forming three perpendicular planar cross-sections. Each tunnel has square side length 1 and spans the full cube. Calculate their total interior wall area before allowing for their intersections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Examine the central intersection of the tunnels. Which parts of the wall area you just counted are actually on the boundary of the remaining solid, and what is the corrected interior area?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain geometrically how your treatment of the intersecting tunnels determines the surface counted in the final answer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the calculation developed above, report the remaining solid's total surface area and explain what boundary it represents.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

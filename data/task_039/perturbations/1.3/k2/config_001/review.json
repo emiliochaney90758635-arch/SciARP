@@ -1,0 +1,23 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "The strain-symbol mapping and inequality-symbol mapping are independent representation errors.",
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "e7861b9d4eeb8873c846290b451df588953cf438077621471eb34f08126f431b",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Restores the biological target while preserving the symbol and boundary mappings.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

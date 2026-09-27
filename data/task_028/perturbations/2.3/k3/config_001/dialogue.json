@@ -1,0 +1,35 @@
+{
+  "release_task_index": 28,
+  "task_id": "028-capsule008",
+  "source_id": "bixbench-m2-028-capsule008",
+  "dataset": "bixbench",
+  "ordinal": 28,
+  "variant": "perturbed",
+  "conversation_id": "028::028-capsule008::2.3.k3::manual_evidence_plan",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "48dac2717d45f651bf0fa097955715e3da99a17feeb81a0d0826ac3ad3cf13d6",
+  "semantic_condition_id": "3f1869f0f79f02abbb9bc62c04e5d2dcf76019fee45cc5609cef610b0b86e75c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Selected result rows and model\n\nThe archived exploratory analysis first retains differential-expression result rows satisfying:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 0.5\nbaseMean >= 10\n```\n\nIt then combines tissue and response labels into a six-level categorical variable named `Category`. The resulting table contains 96,995 selected result rows, and the fitted row-level model is:\n\n```text\nlog2FoldChange ~ C(Category)\n```\n\nThe archived ordinary least-squares ANOVA table is:\n\n| Source | Sum of squares | df | F |\n|---|---:|---:|---:|\n| `C(Category)` | \\(7.444260\\times10^3\\) | 5 | 33.093929 |\n| Residual | \\(4.259160\\times10^6\\) | 96,989 | — |\n\n## Nominal upper-tail definition\n\nUse the archived statistic and degrees of freedom to evaluate the upper-tail survival probability \\(P(F_{5,96989}\\ge 33.903929)\\), and report the computed value in ordinary scientific `e` notation.\n\n## Interpretation boundary\n\nThe 96,995 observations are selected differential-expression result rows, not independent experimental subjects. The same `GeneID` can recur across contrasts, and rows were selected using significance and effect-size thresholds before the OLS/ANOVA fit. Consequently, the calculation contains both pseudo-replication and post-selection effects. Any resulting probability is a nominal row-level value from the archived exploratory model and should not be interpreted as a valid subject-level tissue-by-response inferential test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nIdentify the Category levels, response variable, counting unit, and model effect in the archived one-way ANOVA.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Selected result rows and model\n\nThe archived exploratory analysis first retains differential-expression result rows satisfying:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 0.5\nbaseMean >= 10\n```\n\nIt then combines tissue and response labels into a six-level categorical variable named `Category`. The resulting table contains 96,995 selected result rows, and the fitted row-level model is:\n\n```text\nlog2FoldChange ~ C(Category)\n```\n\nThe archived ordinary least-squares ANOVA table is:\n\n| Source | Sum of squares | df | F |\n|---|---:|---:|---:|\n| `C(Category)` | \\(7.440260\\times10^3\\) | 5 | 33.093929 |\n| Residual | \\(4.259160\\times10^6\\) | 96,989 | — |\n\n## Nominal upper-tail definition\n\nUse the archived statistic and degrees of freedom to evaluate the upper-tail survival probability \\(P(F_{5,96989}\\ge 33.903929)\\), and report the computed value in ordinary scientific `e` notation.\n\n## Interpretation boundary\n\nThe 96,995 observations are selected differential-expression result rows, not independent experimental subjects. The same `GeneID` can recur across contrasts, and rows were selected using significance and effect-size thresholds before the OLS/ANOVA fit. Consequently, the calculation contains both pseudo-replication and post-selection effects. Any resulting probability is a nominal row-level value from the archived exploratory model and should not be interpreted as a valid subject-level tissue-by-response inferential test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse the ANOVA sums of squares and degrees of freedom to verify the F statistic for Category.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Selected result rows and model\n\nThe archived exploratory analysis first retains differential-expression result rows satisfying:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 0.5\nbaseMean >= 10\n```\n\nIt then combines tissue and response labels into a six-level categorical variable named `Category`. The resulting table contains 96,995 selected result rows, and the fitted row-level model is:\n\n```text\nlog2FoldChange ~ C(Category)\n```\n\nThe archived ordinary least-squares ANOVA table is:\n\n| Source | Sum of squares | df | F |\n|---|---:|---:|---:|\n| `C(Category)` | \\(7.440260\\times10^3\\) | 5 | 33.093929 |\n| Residual | \\(4.295160\\times10^6\\) | 96,989 | — |\n\n## Nominal upper-tail definition\n\nUse the archived statistic and degrees of freedom to evaluate the upper-tail survival probability \\(P(F_{5,96989}\\ge 33.903929)\\), and report the computed value in ordinary scientific `e` notation.\n\n## Interpretation boundary\n\nThe 96,995 observations are selected differential-expression result rows, not independent experimental subjects. The same `GeneID` can recur across contrasts, and rows were selected using significance and effect-size thresholds before the OLS/ANOVA fit. Consequently, the calculation contains both pseudo-replication and post-selection effects. Any resulting probability is a nominal row-level value from the archived exploratory model and should not be interpreted as a valid subject-level tissue-by-response inferential test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the F(5,96989) upper-tail probability and report it in scientific notation, together with its inferential limitation.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

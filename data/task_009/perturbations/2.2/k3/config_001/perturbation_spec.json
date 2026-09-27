@@ -1,0 +1,28 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article uniquely prioritizes potassium transmembrane transport.",
+    "The second uniquely prioritizes membrane-potential regulation.",
+    "The third independently prioritizes axon guidance under a nominal, selected-universe analysis."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first literature claim"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third literature claim"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "second literature claim"
+    }
+  ],
+  "evidence_change_permitted": true
+}

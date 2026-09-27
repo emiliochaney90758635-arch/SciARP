@@ -1,0 +1,54 @@
+{
+  "release_task_index": 630,
+  "task_id": "scibench__thermo-sol-013",
+  "dataset": "scibench",
+  "ordinal": 411,
+  "variant": "perturbed",
+  "conversation_id": "411::scibench__thermo-sol-013::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "de31064da71ad65221d3075ee114ee83a112c5252a5aced7132050aadbab90ab",
+  "semantic_condition_id": "f861021f66b7205237a28f0c580ccdd5ec51ed22e9df6f00c128eaf1e36c03e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Fe3+(aq) + e- -> Fe2+(aq), how many electrons are transferred, and how would its standard Gibbs energy be written in terms of the step's standard reduction potential and F?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For Fe2+(aq) + 2e- -> Fe(s), write the standard Gibbs energy in terms of the step's standard reduction potential and F.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two half-reactions to obtain Fe3+(aq) + 3e- -> Fe(s), and add their Gibbs energies to find the total Delta G degrees in terms of F.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the total Gibbs energy and the three-electron count to calculate the standard reduction potential for Fe3+/Fe.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain the sign of the result and why the two listed standard potentials cannot simply be added as though they were extensive quantities.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently with the electron-count-weighted relation 3E degrees(Fe3+/Fe) = 1(0.771 V) + 2(-0.447 V).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final standard reduction potential for Fe3+(aq) + 3e- -> Fe(s), including its sign and unit.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 374,
+  "task_id": "gpqa__recKv4hFyNpViUXnL",
+  "dataset": "gpqa",
+  "ordinal": 243,
+  "variant": "perturbed",
+  "conversation_id": "243::gpqa__recKv4hFyNpViUXnL::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "438e8b2634317611816b7cecaeff4c1d85631b24447a79111515458c4c62e3cc",
+  "semantic_condition_id": "8b6c9984a8dab7180908a55ff2fb900d8c532a9aea27ea8d1adfc222fdca8997",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two neutral-Ti levels separated by a 1448 Angstrom transition, define the upper/lower population ratio to be compared between the stated 6000 K and 5500 K conditions under LTE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat 1448 Angstrom as a line equivalent width and use it to calculate Delta E/k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write a temperature law for a neutral-Ti ionization-stage ratio rather than a discrete-level population ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the numerical scaling quantity required by the population law selected above for the two stated conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the factor obtained by dividing the result for the first stated condition by that for the second stated condition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions about the physical regime, condition values, and measurement that limit the precision of the quantity selected above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign or direction implied by the selected law and verify the comparison direction or quantity established in the preceding step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final quantity with the precision and qualification established above.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

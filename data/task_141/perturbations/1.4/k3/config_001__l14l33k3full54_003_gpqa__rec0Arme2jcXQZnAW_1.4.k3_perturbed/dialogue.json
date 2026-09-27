@@ -1,0 +1,49 @@
+{
+  "release_task_index": 141,
+  "task_id": "gpqa__rec0Arme2jcXQZnAW",
+  "dataset": "gpqa",
+  "ordinal": 3,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::003::gpqa__rec0Arme2jcXQZnAW::1.4.k3::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "f6edc915789c6e91d625a27f1f5b1e304b74dffd8bd57e4d33b0df56db22351d",
+  "semantic_condition_id": "f5d24e5df8ad84c42d91e9ca22a82dd2407b7c9d74ba30a75c9271062114a063",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the initial substrate in this sequence, count its ring and side-chain carbons and identify the carbonyl carbon attacked by methylmagnesium bromide.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After treating the starting substrate established above and performing workup, identify product 1's functional class and skeleton, and explain how the methyl reagent changes the carbon count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Process product 1 to obtain product 2. Give the functional-group change and condensed structure, and state whether this step changes the carbon count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "React product 2 with dimethylsulfoxonium methylide in hot DMSO. What happens to the enone double bond, what carbon fragment is transferred, and what is product 3?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Make a carbon ledger showing which steps add carbon and which only change oxidation state or connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the starting count and added fragments to determine product 3's carbon count and identify its skeleton.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

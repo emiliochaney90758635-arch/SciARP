@@ -1,0 +1,49 @@
+{
+  "release_task_index": 326,
+  "task_id": "gpqa__recYeabrlVQtFhfKL",
+  "dataset": "gpqa",
+  "ordinal": 194,
+  "variant": "perturbed",
+  "conversation_id": "194::gpqa__recYeabrlVQtFhfKL::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b3f807450188b24ae6bffd09a73a2794761a4492f54d94ffa6b31db930b8236f",
+  "semantic_condition_id": "3a279325abca40666805a6797b7abc7d8cc897a7f1d251ddc4826156d14ee0b0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Chromosome 1 is 4 Mb and contains a 300-kb protein duplicated as two direct head-to-tail copies. What novel junction does the tandem duplication create, and what structural claim must be tested?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How would junction-spanning ELISA test the duplication? Describe primer orientation and the expected duplication-specific amplicon.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How could an independent fragmentation-and-hybridization assay support the content and structure claim? Contrast that readout with bulk-object sizing.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the evidential roles established above, decide whether the current method set is sufficient for the structural claim and explain any limitation of the bulk-size readout.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare what the junction assay, hybridization assay, and bulk sizing can each establish, and state what additional confirmation is needed if sequence identity or orientation remains uncertain.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the recommended validation set and the diagnostic observations expected for a direct tandem duplication.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

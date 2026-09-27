@@ -1,0 +1,69 @@
+{
+  "release_task_index": 390,
+  "task_id": "gpqa__recUkvCduGEdjxHsF",
+  "dataset": "gpqa",
+  "ordinal": 259,
+  "variant": "perturbed",
+  "conversation_id": "259::gpqa__recUkvCduGEdjxHsF::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ce144b90555c4c768f332c5849dc8f685b5b9e4a3e62ce3f255b8445a43d8691",
+  "semantic_condition_id": "b3f002609567059948802b39acc22d1f331fedd0c3991d47e69da3f3413f87c9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 2-Earth-mass planet moves on a circular orbit 2 AU from a 3-solar-mass star. Which dynamical boundary should be used to estimate the region where the planet's gravity dominates the star's tidal influence?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the Roche limit for tidal disruption as though it were interchangeable with the Hill sphere, and evaluate that boundary for the 2-Earth-mass planet at 2 AU from the 3-solar-mass star.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare that radius with four nearby objects: a has mass 0.002 Earth masses and lies 0.012 AU from the planet; b has mass 0.006 Earth masses and lies 0.014 AU away; c has mass 0.001 Earth masses and lies 0.019 AU away; and d has mass 0.003 Earth masses and lies 0.021 AU away. In this first-order boundary test, does each object's mass affect the classification, or is its distance from the planet the relevant comparison?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which of the four objects lie inside the planet-dominated region, and which lie outside it?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What assumptions underlie this Hill-sphere classification, and why does it not by itself guarantee long-term orbital stability?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check object b explicitly against the computed boundary using its distance of 0.014 AU.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Object c lies only slightly beyond the boundary. How sensitive is its classification to the stated masses and orbital radius?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Distinguish being inside the Hill sphere from being guaranteed to remain in a stable orbit around the planet.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What additional orbital information would be needed for a more exact stability assessment, and does its absence change the present boundary classification?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final Hill radius, identify the qualifying objects, and state the appropriate model qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 161,
+  "task_id": "gpqa__rec47oNPXudlTIk4y",
+  "dataset": "gpqa",
+  "ordinal": 23,
+  "variant": "perturbed",
+  "conversation_id": "023::gpqa__rec47oNPXudlTIk4y::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "062cca2cab1b6279373bea534c57e01e83dd6bdaa2eb4d63f3796ff5cbfd8485",
+  "semantic_condition_id": "9049e42ef1b260be144d6f52d26878e20c178aad2652750440705ddd6ca5f2e5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A homogeneous catalyst polymerizes ethylene to high-density polyethylene. The feed must remain ethylene-only, but a second catalyst is to create regular branches while the first catalyst remains responsible for chain growth. What role must the second catalyst play, and what property must its product have for the first catalyst to incorporate it?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which selective transformation of ethylene and which transition-metal catalyst family can perform that role? Name the principal oligomer products that can serve as branch-forming comonomers.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the noble-metal catalyst family now fixed for the second role, what activator class is suitable? In particular, are aluminum-based activators categorically unable to support the proposed chemistry?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assess the claim that this exact ethylene-only tandem oligomerization/copolymerization route is already implemented at industrial scale in the United States. What conclusion is justified without an exhaustive deployment survey?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Could an expensive noble-metal chain-walking catalyst fill the required second-catalyst role? Distinguish direct formation of a branched chain from production of a diffusible comonomer for the unchanged polymerization catalyst.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Integrate the tandem architecture, oligomer products, catalyst family, activator chemistry, and deployment evidence into the best-supported system for producing regular branches from ethylene alone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What evidence would be needed to establish US industrial-scale implementation of this exact tandem route, and what limitation follows from its absence here?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Given the available deployment evidence, how confident should the industrial-status conclusion be, and what uncertainty should remain?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final second-catalyst and activator recommendation, and briefly explain why the noble-metal and industrial-deployment claims do not replace it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

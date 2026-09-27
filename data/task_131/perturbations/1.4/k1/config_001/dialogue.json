@@ -1,0 +1,45 @@
+{
+  "release_task_index": 131,
+  "task_id": "131-capsule036",
+  "source_id": "bix-53-q6",
+  "dataset": "bixbench",
+  "ordinal": 131,
+  "variant": "perturbed",
+  "conversation_id": "131::131-capsule036::1.4::k1::perturbed::lane_d",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "fc148a82859911006a126318f4d6d5ba281d8beefd450604d6e0a5aae4f4d4f0",
+  "semantic_condition_id": "fd43eac5b5f954a9a01337ce5607105ad1fe95932efdb9bf3a85efb2d33858b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Four-sample KEGG pathway-ranking evidence\n\n## Gene population and archived enrichment configuration\n\nThe count table is prefiltered from 21,884 to 12,443 genes by retaining rows with a raw count greater than 10 in at least one of the six samples. `KL3` and `WL3` are then excluded; `KL1`, `KL2`, `WL1`, and `WL2` are used to fit a new condition-only DESeq2 model.\n\nLFC shrinkage is applied to `condition[T.WT]`, and rows are selected under:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 1\nbaseMean >= 10\n```\n\nThe selected table has 1,942 rows. Ensembl identifiers are mapped to mouse gene names, missing mappings are removed, and the combined-direction list is submitted to GSEApy Enrichr with `organism=\"Mouse\"` and the `KEGG_2019_Mouse` library.\n\nThe archived condition labels reverse the biological KL/WL descriptions. This reverses LFC signs but does not change membership under the absolute-LFC, combined-direction selection.\n\n## Ordered KEGG slice\n\nThe `KEGG_2019_Mouse` rows are ordered by ascending `Adjusted P-value`:\n\n| rank | Term | Adjusted P-value |\n|---:|---|---:|\n| 1 | Leishmaniasis | 3.314031e-12 |\n| 2 | Cytokine-cytokine receptor interaction | 7.762162e-10 |\n| 3 | Pertussis | 2.901569e-09 |\n| 4 | Inflammatory bowel disease (IBD) | 2.027671e-08 |\n| 5 | TNF signaling pathway | 2.027671e-08 |\n| 6 | Toll-like receptor signaling pathway | 2.027671e-08 |\n| 7 | Fluid shear stress and atherosclerosis | 2.027671e-08 |\n| 8 | Chemokine signaling pathway | 4.624333e-08 |\n| 9 | Malaria | 4.624333e-08 |\n| 10 | Influenza A | 5.921357e-08 |\n| 11 | Tuberculosis | 3.520906e-07 |\n| 12 | Chagas disease (American trypanosomiasis) | 5.682886e-07 |\n| 13 | Legionellosis | 1.043876e-06 |\n| 14 | Rheumatoid arthritis | 1.059769e-06 |\n| 15 | Glutathione metabolism | 1.285135e-06 |\n| 16 | Pathways in cancer | 1.302392e-06 |\n| 17 | Th1 and Th2 cell differentiation | 1.927135e-06 |\n| 18 | Th17 cell differentiation | 4.358190e-06 |\n| 19 | C-type lectin receptor signaling pathway | 9.787351e-06 |\n| 20 | Salmonella infection | 1.137288e-05 |\n\nThe first row additionally has:\n\n| Overlap | raw P-value | Odds Ratio | Combined Score |\n|---|---:|---:|---:|\n| 31/67 | 1.115835e-14 | 8.134973 | 261.348914 |\n\nRanking for this task uses the adjusted-p column, not overlap, odds ratio, or combined score. The smallest and second-smallest adjusted p-values are distinct.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nRefit the condition-only DESeq2 model using KL1, KL2, WL1, and WL2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Shrink the target condition coefficient and retain the statistics needed for filtering.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the stated filters and map the retained Ensembl identifiers to nonmissing mouse gene names.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that combined-direction gene list to retrieve the archived KEGG_2019_Mouse enrichment results.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report a top term without requiring ascending Adjusted P-value order or checking that the minimum is unique.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

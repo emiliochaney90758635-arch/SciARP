@@ -1,0 +1,59 @@
+{
+  "release_task_index": 331,
+  "task_id": "gpqa__recb2M22zaD3tL6Qc",
+  "dataset": "gpqa",
+  "ordinal": 199,
+  "variant": "perturbed",
+  "conversation_id": "199::gpqa__recb2M22zaD3tL6Qc::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f201712d85362bfb11571b83f98be519513529c309b373e7c07d9ccd49172f4a",
+  "semantic_condition_id": "c0f5377b9d3e965287fb6d82b54c313092cf782ea0b7650bfb8e9d0f2adbc9ff",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown belongs to a family of saturated acyclic carboxylic acids with two adjacent methine carbons, methyl or ethyl branches, and an acid group attached either directly or through CH2. Its FTIR has a broad band near 3000 cm^-1 and a strong band near 1700 cm^-1; its proton NMR has no vinyl signals but includes one dtq and one dtt resonance. What constraints do these observations impose?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the two IR bands and absence of vinyl protons, separating evidence for the functional class from evidence about branching topology.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under a first-order splitting model, translate dtq and dtt into distinct neighboring proton-set sizes and state the assumptions behind that interpretation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Test a topology with a methyl rather than an ethyl substituent on the right-hand methine and decide whether it can still supply both dtq and dtt.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Identify the unknown by its complete condensed structure and map each complex methine resonance to its neighboring proton sets.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly does this limited one-dimensional evidence support the assignment under the first-order model?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the proposal against its carbon count, carboxylic-acid functionality, and both coupling patterns, noting the missing shifts, integrations, and 2D correlations.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the condensed structure with an appropriate confidence qualification.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

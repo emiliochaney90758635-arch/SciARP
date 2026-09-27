@@ -1,0 +1,54 @@
+{
+  "release_task_index": 631,
+  "task_id": "scibench__thermo-sol-014",
+  "dataset": "scibench",
+  "ordinal": 412,
+  "variant": "perturbed",
+  "conversation_id": "412::scibench__thermo-sol-014::1.x::perturbation__1_3__k3__1_3_count3_cfg0002::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "8e19f95303a7c10ee575a01e09927b25eadce5ca2ec4e849e646e05a7f21859c",
+  "semantic_condition_id": "ff40b3cef2104843d72ab999ca28713e60ae59ffc95cb6c804240ead6a7a7808",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At 298.15 K, the standard Gibbs energies of formation of diamond and diamond are 0 and 2.90 kJ mol^-1, respectively. What is the standard Gibbs-energy change for converting graphite to diamond?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat both phases as incompressible solids. Starting from (partial G_m/partial P)_T = V_m, write the pressure dependence of G_m(diamond)-G_m(graphite), using V_m = 1 bar as the reference condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the molar volumes of graphite and diamond from densities 2.25 and 3.52 kg L^-1, respectively. Use M(C) = 12.0 g mol^-1 and express both volumes in m^3 mol^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set the pressure-dependent Gibbs-energy difference equal to zero and solve for the graphite-diamond equilibrium pressure at 298.15 K. Report the result in bar, using V_m = 10^5 Pa.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which phase is favored as pressure rises above the equilibrium value? Relate your conclusion to the molar-volume difference.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the direction of the pressure effect against the positive standard Gibbs-energy change at 1 bar. Are the two conclusions physically consistent?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the equilibrium pressure and the phase favored on its high-pressure side.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

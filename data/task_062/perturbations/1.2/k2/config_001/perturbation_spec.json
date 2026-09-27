@@ -1,0 +1,57 @@
+{
+  "config_id": "task062_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Use this task's baseline 4/6 and report 0.6667% without multiplying by 100 after the VAF scale error.",
+      "injected_text": "Within that sample set, retain non-reference, non-intronic, non-intergenic, non-UTR variants with VAF<0.3.\n\nFor this perturbed step, use this task's baseline 4/6 and report 0.6667% without multiplying by 100 after the VAF scale error.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use this task's baseline 4/6 and report 0.6667% without multiplying by 100 after the VAF scale error.",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, use this task's baseline 4/6 and report 0.6667% without multiplying by 100 after the VAF scale error.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k2",
+    "decision": "repair_required",
+    "problem": "The hard-coded 13/19 value belongs to another task and is unscoreable here.",
+    "before": "Report 13/19 as 0.6842%.",
+    "after": "Use this task's baseline 4/6 and report 0.6667% without multiplying by 100 after the VAF scale error.",
+    "proposed_turns": [
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Round each VAF to one decimal place before applying the strict < 0.3 rule."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate the exact-Benign fraction for that rounded-VAF subset and append a percent sign to the raw fraction without multiplying by 100."
+    }
+  ]
+}

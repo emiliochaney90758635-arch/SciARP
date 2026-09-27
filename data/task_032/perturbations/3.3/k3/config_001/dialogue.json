@@ -1,0 +1,50 @@
+{
+  "release_task_index": 32,
+  "task_id": "032-capsule009",
+  "source_id": "bixbench-m2-032-capsule009",
+  "dataset": "bixbench",
+  "ordinal": 32,
+  "variant": "perturbed",
+  "conversation_id": "032::032-capsule009::3.3.k3::lane_a_manual",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "27a73c60d08c059af5fcea00f6feba4a4e600630711fbb07153d22483b52c616",
+  "semantic_condition_id": "8c47398e63ec47b9da20a704730d7c250ec927082a3aeef6b81e36c23d255906",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Endpoint construction and subgroup\n\nAll adverse-event records for a subject are reduced to that subject's maximum recorded `AESEV`; no event-type filter is applied. The endpoint is therefore maximum severity across all recorded adverse events and is not COVID-19-specific severity.\n\nAfter joining subject-level adverse-event results to demographics/exposure information and removing incomplete merged records, 791 subjects remain. Their literal `patients_seen` distribution is:\n\n| `patients_seen` category | Complete subjects |\n|---|---:|\n| `1-50` | 658 |\n| `51-100` | 108 |\n| `>100` | 25 |\n\nOnly the 25 subjects in the literal `>100` category are used below.\n\n## Sparse treatment-by-severity table\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 6 | 3 | 9 |\n| 2 | 10 | 4 | 14 |\n| 3 | 0 | 1 | 1 |\n| 4 | 1 | 0 | 1 |\n| Column total | 17 | 8 | 25 |\n\nThe independence-model expectations are:\n\n| Maximum `AESEV` | Expected BCG | Expected Placebo |\n|---:|---:|---:|\n| 1 | 6.12 | 2.88 |\n| 2 | 9.52 | 4.48 |\n| 3 | 0.68 | 0.32 |\n| 4 | 0.68 | 0.32 |\n\nThe ordinary Pearson test uses\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\n\\[\nX^2=2.6785714285714284,\n\\]\n\n## Approximation warning\n\nSix of the eight expected counts are below 5, and four are below 1. These severe expected-count violations make the large-sample chi-square approximation unreliable. The archived calculation does not replace it with an exact or Monte Carlo procedure, so any upper-tail value derived from the statistic must be reported as nominal rather than as reliable small-sample inference.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAnalyze all event records as independent observations instead of reducing to one subject maximum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use every participant with at least 100 patients seen rather than the literal >100 category.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For those 25 subjects, construct the observed maximum-severity-by-treatment table, keeping BCG and Placebo separate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the independence-model expectations from that table. Which expected-count conditions make an ordinary Pearson approximation questionable?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Collapse severity to severe versus nonsevere and use a Fisher exact test instead of the requested 4-by-2 Pearson calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the nominal asymptotic upper-tail p-value, and how should it be qualified given the sparse expected counts?",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

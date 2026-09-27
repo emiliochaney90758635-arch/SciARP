@@ -1,0 +1,35 @@
+{
+  "release_task_index": 56,
+  "task_id": "056-capsule015",
+  "source_id": "bix-19-q2",
+  "dataset": "bixbench",
+  "ordinal": 56,
+  "variant": "perturbed",
+  "conversation_id": "056::056-capsule015::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "14bfd44a031ac58e042588e76855a129469078e8974bb854c40eb8b33d2dbf92",
+  "semantic_condition_id": "6372434595fc4f01e5fc4d8b077947f76097e62c348c96b9f011d7996cf9204e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original NeuN counts for KD and CTRL\n\nThe hemisphere field in the original CSV is spelled `Hemispere`; the analysis renames it `Hemisphere`. Every Sample has one KD and one CTRL record, and the relevant fields contain no missing values.\n\n| Sample | Sex | KD NeuN | CTRL NeuN |\n|---:|---|---:|---:|\n| 1 | M | 221 | 237 |\n| 2 | F | 233 | 223 |\n| 3 | M | 221 | 246 |\n| 4 | F | 215 | 179 |\n| 5 | M | 216 | 198 |\n| 6 | F | 208 | 194 |\n| 7 | M | 202 | 200 |\n| 8 | F | 200 | 208 |\n\n## Effect-size definition\n\nThis task uses the equal-variance, independent-groups pooled-standard-deviation definition. The standard deviation within each group is a sample standard deviation, so the variance denominator is \\(n-1\\).\n\n\\[\ns_p=\n\\sqrt{\n\\frac{(n_{\\mathrm{KD}}-1)s_{\\mathrm{KD}}^2+\n(n_{\\mathrm{CTRL}}-1)s_{\\mathrm{CTRL}}^2}\n{n_{\\mathrm{KD}}+n_{\\mathrm{CTRL}}-2}\n}\n\\]\n\n\\[\nd=\n\\frac{\\overline{x}_{\\mathrm{KD}}-\\overline{x}_{\\mathrm{CTRL}}}\n{s_p}\n\\]\n\nThe numerator direction is fixed as `KD - CTRL`. Although the original records are paired by Sample, the standard deviation of the paired differences is not used here.\n\n# Independent-reader NeuN density export\n\n**Source:** Central Stereology Facility, blinded reader series `CSF-ND-16`\n**Scope:** Eight KD and eight CTRL hemispheres from the same experimental design\n**Acquisition:** A second blinded reader counted NeuN-positive profiles in a fixed sampling frame. Values below are frame-normalised densities. The comparison plan specifies the independent-groups pooled-standard-deviation definition and the `KD - CTRL` numerator.\n\n| Subject | KD density | CTRL density |\n|---:|---:|---:|\n| 1 | 210 | 225 |\n| 2 | 218 | 220 |\n| 3 | 215 | 229 |\n| 4 | 209 | 223 |\n| 5 | 221 | 226 |\n| 6 | 214 | 224 |\n| 7 | 217 | 221 |\n| 8 | 212 | 227 |\n\nSample standard deviations use \\(n-1\\); both groups contain all eight observations.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm separate KD and control NeuN vectors and calculate each group's sample size and mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate both sample standard deviations and the independent-groups pooled standard deviation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is Cohen's d in the KD-minus-control direction?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

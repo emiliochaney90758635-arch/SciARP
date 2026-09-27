@@ -1,0 +1,54 @@
+{
+  "release_task_index": 296,
+  "task_id": "gpqa__reczkBiPPNrNN49Hp",
+  "dataset": "gpqa",
+  "ordinal": 164,
+  "variant": "clean",
+  "conversation_id": "164::gpqa__reczkBiPPNrNN49Hp::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "a8987887bf36b26bef943657e79821768fb44623fca14c3ea5c4be8925719d56",
+  "semantic_condition_id": "5034079448ec6c29bda4014427ef5519a814aa5137bdb12262cff8cdc8162d4c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For total cobalt concentration 10^-2 M, free ligand L=[SCN-]=0.1 M, and cumulative constants beta1=9, beta2=40, beta3=63, beta4=16, write the complex-formation expressions and cobalt mass balance including free Co2+.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the distribution fraction of cobalt present as the dithiocyanato complex Co(SCN)2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate each beta_n L^n contribution and state the numerator and denominator for the Co(SCN)2 fraction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the percentage of all cobalt-containing species present as Co(SCN)2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify that the free-ion and four complex fractions sum to one.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why the supplied beta values are cumulative rather than stepwise formation constants in this calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final percentage of cobalt present as Co(SCN)2 and state the normalization over free Co2+ and the four complexes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

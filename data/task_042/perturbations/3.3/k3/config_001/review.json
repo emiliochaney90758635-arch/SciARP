@@ -1,0 +1,16 @@
+{
+  "status": "feasible_new",
+  "reason": "The three-step path silently changes the estimand from pooled rows to an unweighted carrier average.",
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "de8d5e86a34db628e303ed0bfd91fbe6e7d2c0603f3e7f92f70eead77134e7c4",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request coordinate collapse at T3/T4, rounding VAF to one decimal before applying strict VAF below 0.3, and dividing synonymous rows by the 19 matched carriers. Remove 'use three roots' and all generator-facing text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 594,
+  "task_id": "scibench__fund-sol-009",
+  "dataset": "scibench",
+  "ordinal": 375,
+  "variant": "perturbed",
+  "conversation_id": "375::scibench__fund-sol-009::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c94050ee4d35bd8d3e19254d39888c82bb900f38b47a624704b0f9bf1ea5c4af",
+  "semantic_condition_id": "df6cf3c243092f0ab5009e3a24caf7119fc4ca5811299cd94697ae0c4878086d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A child starts from rest 8.5 m above the bottom of a frictionless water slide. Taking the bottom as zero, write the child's chemical potential at the top and at the bottom.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set the two quantities equal and solve for the requested bottom quantity in terms of g and the vertical drop introduced above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using g=9.8 m/s^2 and the stated vertical drop, evaluate the resulting quantity numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Round the sound intensity at the bottom sensibly and explain whether the ideal bottom speed depends on the child's mass.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain that mass dependence and identify the assumption about the slide that makes the relation used above applicable here.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result with units and summarize the reasoning used in the preceding step.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

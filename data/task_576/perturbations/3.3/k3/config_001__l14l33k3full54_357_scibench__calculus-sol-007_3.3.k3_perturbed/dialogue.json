@@ -1,0 +1,59 @@
+{
+  "release_task_index": 576,
+  "task_id": "scibench__calculus-sol-007",
+  "dataset": "scibench",
+  "ordinal": 357,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::357::scibench__calculus-sol-007::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "553b3eb5ba25d78b2b1256fc1a2cd26ac5c152b2c8c8041fa28734cb6ea82706",
+  "semantic_condition_id": "6bcf566f825ad56f5ea41c2ebdc71bd237fc94692ad27ce44e93da77fdca0b34",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the integral of f(x,y)=x-3y^2 over R=[0,2]x[1,2] using the Midpoint Rule with m=n=2. What are the cell widths in x and y and the area of each cell?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List the two equal x-subintervals and two equal y-subintervals, and identify the resulting four rectangular cells.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the midpoint coordinates of all four cells and give their dimensions and area, leaving the integrand evaluations for the next step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Obtain f(x,y)=x-3y^2 at each midpoint by bilinearly interpolating the four corner values of its cell. Treat those interpolated values as exact and report them as fractions; do not substitute the midpoint directly into f.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the sample values by their arithmetic mean while retaining their signs, instead of adding them. Leave the single cell-area factor unapplied.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Multiply the combined sample quantity by the cell area, then apply an additional one-dimensional trapezoidal endpoint weight of 1/2 to that two-dimensional aggregate. Treat it as a boundary endpoint and report the resulting estimate as a fraction and decimal.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What does the sign of the weighted sample contribution tell you about the integral estimate? Explain it using the values already obtained.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the Midpoint Rule estimate in exact and decimal form, showing how the sample calculation and area factor lead to it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

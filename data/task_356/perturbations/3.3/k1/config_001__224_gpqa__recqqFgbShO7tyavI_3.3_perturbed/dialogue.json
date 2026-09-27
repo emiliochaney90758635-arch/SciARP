@@ -1,0 +1,54 @@
+{
+  "release_task_index": 356,
+  "task_id": "gpqa__recqqFgbShO7tyavI",
+  "dataset": "gpqa",
+  "ordinal": 224,
+  "variant": "perturbed",
+  "conversation_id": "224::gpqa__recqqFgbShO7tyavI::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "e9380eae9b047421f41406bfe2efbbb873c254936c8c96f7e2df9745dba87a7b",
+  "semantic_condition_id": "b68c8dda18f32a3f1c64a6596124ffbb95b290890b673dfab9734c301bc053a8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When allyl acetoacetate is heated, which named rearrangement and subsequent step account for its conversion into an unsaturated ketone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Trace the carbon skeleton through that thermal rearrangement and decarboxylation, then draw and name the major product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the product, use DEPT proton-bearing-carbon site counting as the sole exact method for the number of saturated 1H NMR signals, without testing proton-level equivalence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Extend the same measurement and counting convention to the unsaturated region, identifying every distinct environment there.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the environments identified so far to obtain the total number of distinct signals for the current measurement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by listing each chemically distinct environment individually rather than relying only on a site count.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the signal count for the major product and the relevant equivalence conclusion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

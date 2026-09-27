@@ -1,0 +1,49 @@
+{
+  "release_task_index": 162,
+  "task_id": "gpqa__rec4J0X5OLsY61yQm",
+  "dataset": "gpqa",
+  "ordinal": 24,
+  "variant": "perturbed",
+  "conversation_id": "024::gpqa__rec4J0X5OLsY61yQm::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5f600354d76d2cf9fae59a4cf6751467948ec7dfb2c077338f0b07187b387b39",
+  "semantic_condition_id": "232c6f7ddfe3d82c860c009ab962145d7071f9af0892601d210fb20fc3f31681",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "2,3-Diphenylbutane-2,3-diol is heated under acidic conditions, and the product shows an intense IR band at 1690 cm^-1. What reaction class should be considered for this vicinal diol?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After protonation and water loss, compare phenyl and methyl migration in the carbocation and identify the favored 1,2-shift and resulting ketone skeleton.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert that product skeleton into its systematic IUPAC name.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Track the migrating carbon group and the carbon that becomes the carbonyl center, then verify that the resulting atom map gives the proposed ketone connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret an intense 1640 cm^-1 band as the functional-group check and assess consistency with the proposed pinacol product.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final systematic name and condensed structural description of the major product.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

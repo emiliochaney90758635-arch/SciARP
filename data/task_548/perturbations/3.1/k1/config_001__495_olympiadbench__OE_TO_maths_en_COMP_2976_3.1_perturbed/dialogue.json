@@ -1,0 +1,49 @@
+{
+  "release_task_index": 548,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2976",
+  "dataset": "olympiadbench",
+  "ordinal": 495,
+  "variant": "perturbed",
+  "conversation_id": "495::olympiadbench__OE_TO_maths_en_COMP_2976::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "2112b63b1678b4f002d0cfbd68c965d61edf0b05dcc0f443c7761b1dd38bd984",
+  "semantic_condition_id": "dd565dc2ff10953d4d1dbb395d1b5286023e62aef94022bda23adaedaac4556e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 125-by-8 rectangle is tiled by unit squares. How many interior vertical and horizontal gridlines does the tiling contain?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Replace the opposite corner by M=(125,9) and use a greatest-common-divisor argument to decide whether AM passes through an interior lattice point.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the crossing formula for the current grid and current segment, accounting for any simultaneous crossings of the two gridline families.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that formula to the current construction and compute the exact number of tile interiors crossed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Perform an internal check of the numerical result using only the method and conventions established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let n denote the number of tile interiors obtained in the current construction. Report n and the basis currently being used for it, without introducing a new method.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

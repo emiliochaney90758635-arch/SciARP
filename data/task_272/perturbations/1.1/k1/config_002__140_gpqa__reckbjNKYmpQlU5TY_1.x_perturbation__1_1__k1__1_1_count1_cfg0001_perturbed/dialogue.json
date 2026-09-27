@@ -1,0 +1,49 @@
+{
+  "release_task_index": 272,
+  "task_id": "gpqa__reckbjNKYmpQlU5TY",
+  "dataset": "gpqa",
+  "ordinal": 140,
+  "variant": "perturbed",
+  "conversation_id": "140::gpqa__reckbjNKYmpQlU5TY::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "96d2515f01f735abcf99d3f872c5f5755c05dfddb73fefca35acb68be2babeac",
+  "semantic_condition_id": "c72faebdeea9302468501cd4fa522b5c3a5986ab77676ca13652ac57422e780d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A phonon of energy h nu travels along +z toward a particle of mass m initially at rest. Write the phonon's laboratory-frame energy and momentum, and define alpha=h nu/(mc^2).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the massive particle's laboratory-frame energy and momentum before the collision.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two four-momenta to obtain the system's total laboratory energy and z-momentum.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the condition of zero momentum in the center-of-momentum frame to derive beta in terms of alpha.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the small- and large-alpha limits of the derived expression and state whether it remains within the claimed regime.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the center-of-momentum-frame speed and the energy-momentum relation used to obtain it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

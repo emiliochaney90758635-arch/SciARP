@@ -1,0 +1,49 @@
+{
+  "task_id": "043-capsule011",
+  "variant": "perturbed",
+  "condition_label": "1.2.k2",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "39b5a863b322069181c5a1bce648503d75f71d5f701b4332f9532f247ee50779",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "turn_id": "T1",
+        "role": "user",
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Group definitions and row-level filter\n\nMetadata labels are mapped as follows:\n\n| Metadata condition | Analysis group |\n|---|---|\n| `BLM Mutation Status = Affected` | `BSyn Probands` |\n| `BLM Mutation Status = Unaffected` and `Status` is Mother or Father | `Control Parents` |\n\nThe analysis counts pooled sample–variant rows, not unique coordinates and not per-sample percentages. Apply:\n\n```text\nZygosity is nonmissing and not Reference\nSequence Ontology (Combined) is not exactly any of:\n  intron_variant\n  intergenic_variant\n  3_prime_UTR_variant\n  5_prime_UTR_variant\nVariant Allele Freq < 0.3\n```\n\nRows whose ontology contains `synonymous` are reclassified as Synonymous for the frequency table; original Missense rows remain Missense.\n\n## Retained `BSyn Probands` rows\n\nThe complete retained rows for affected samples are listed below. Two additional affected samples, P364 and P409, contribute no row after the complete filter.\n\n| Sample | Workbook row | VAF | Ontology | Statistical class |\n|---|---:|---:|---|---|\n| P179 | 148 | 0.278481 | `missense_variant` | Missense |\n| P179 | 245 | 0.243056 | `synonymous_variant` | Synonymous |\n| P286 | 85 | 0.286517 | `synonymous_variant` | Synonymous |\n| P360 | 248 | 0.150289 | `missense_variant` | Missense |\n| P380 | 191 | 0.288256 | `synonymous_variant` | Synonymous |\n| P380 | 195 | 0.296651 | `synonymous_variant` | Synonymous |\n| P488 | 161 | 0.298343 | `synonymous_variant` | Synonymous |\n| P488 | 186 | 0.225000 | `synonymous_variant` | Synonymous |\n| P488 | 576 | 0.285714 | `synonymous_variant` | Synonymous |\n| P498 | 86 | 0.250000 | `synonymous_variant` | Synonymous |\n| P498 | 128 | 0.294118 | `synonymous_variant` | Synonymous |\n| P502 | 64 | 0.240964 | `synonymous_variant` | Synonymous |\n| P502 | 83 | 0.294314 | `synonymous_variant` | Synonymous |\n| P502 | 84 | 0.278049 | `synonymous_variant` | Synonymous |\n| P502 | 244 | 0.256944 | `synonymous_variant` | Synonymous |\n| P502 | 281 | 0.280000 | `synonymous_variant` | Synonymous |\n| P615 | 65 | 0.205479 | `synonymous_variant` | Synonymous |\n| P615 | 83 | 0.291045 | `synonymous_variant` | Synonymous |\n| P615 | 245 | 0.251799 | `synonymous_variant` | Synonymous |\n\n## Retained `Control Parents` rows\n\nThe complete retained rows for unaffected parent samples are:\n\n| Sample | Workbook row | VAF | Ontology | Statistical class |\n|---|---:|---:|---|---|\n| SRR5466052 | 66 | 0.250000 | `synonymous_variant` | Synonymous |\n| SRR5466100 | 99 | 0.262295 | `synonymous_variant` | Synonymous |\n| SRR5550794 | 237 | 0.240000 | `synonymous_variant` | Synonymous |\n| SRR5561107 | 207 | 0.263158 | `missense_variant` | Missense |\n| SRR5688631 | 246 | 0.282051 | `synonymous_variant` | Synonymous |\n| SRR5688669 | 208 | 0.263158 | `missense_variant` | Missense |\n\nFor each group, derive the pooled row denominator and Missense numerator from its complete table, calculate the two frequencies, and subtract them in the direction specified by the task.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the two cohorts."
+      },
+      {
+        "turn_id": "T2",
+        "role": "user",
+        "content": "Apply genotype exclusions."
+      },
+      {
+        "turn_id": "T3",
+        "role": "user",
+        "content": "Treat pooled sample-variant rows as one percentage observation per sample."
+      },
+      {
+        "turn_id": "T4",
+        "role": "user",
+        "content": "Read decimal VAFs as percentage points and apply 0.3."
+      },
+      {
+        "turn_id": "T5",
+        "role": "user",
+        "content": "Average sample percentages rather than pooling rows."
+      },
+      {
+        "turn_id": "T6",
+        "role": "user",
+        "content": "Report the group difference."
+      }
+    ]
+  },
+  "dialogue_sha256": "a67169850cb568189b34a4b90a4ab68d8cb1ca4a24e747edb72c1b87f5757964"
+}

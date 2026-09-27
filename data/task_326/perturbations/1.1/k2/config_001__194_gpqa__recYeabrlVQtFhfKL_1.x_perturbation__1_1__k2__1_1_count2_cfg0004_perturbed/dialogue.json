@@ -1,0 +1,49 @@
+{
+  "release_task_index": 326,
+  "task_id": "gpqa__recYeabrlVQtFhfKL",
+  "dataset": "gpqa",
+  "ordinal": 194,
+  "variant": "perturbed",
+  "conversation_id": "194::gpqa__recYeabrlVQtFhfKL::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "6e686d3b7617775f076712ccd6793c94d4f7e10ae26415829ab22bfb080585e1",
+  "semantic_condition_id": "02585d9a252b49577a5bedae9b73296f53c23077ca98c2ffdc75faaa73ab9e38",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Chromosome 1 is 4 Mb and contains a 300-kb segment duplicated as two direct head-to-tail copies; chromosome 2 is 3.7 Mb. What novel junction does the duplication create, and what structural claim should junction, hybridization, and bulk-size assays test?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How would junction-spanning ELISA test the duplication? Describe primer orientation and the expected duplication-specific amplicon.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How could restriction digestion and Western blotting with a probe from the duplicated interval support the copy-number and structure claim? Contrast this with PFGE.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the evidential roles established above, decide whether the current method set is sufficient for the structural claim and explain any limitation of the bulk-size readout.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare what the junction assay, hybridization assay, and bulk sizing can each establish, and state what additional confirmation is needed if sequence identity or orientation remains uncertain.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the recommended validation set and the diagnostic observations expected for a direct tandem duplication.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 480,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2230",
+  "dataset": "olympiadbench",
+  "ordinal": 427,
+  "variant": "perturbed",
+  "conversation_id": "427::olympiadbench__OE_TO_maths_en_COMP_2230::1.x::perturbation__1_3__k3__1_3_count3_cfg0002::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "28ebff083694a091acb8f32e34d9c096195cbad37f25fc907b83191a6b03e54b",
+  "semantic_condition_id": "6493610209c1168eab0711947b4689c88d68788b168b8db02f5920cdfd38f587",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find a large dictionary of k-letter A/B strings for which no k by k grid can have every row and every row in the dictionary. Explain the obstruction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What lower bound on the guaranteed dictionary size m follows from that example?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Take an arbitrary grid whose size meets the candidate threshold and handle the case where it contains a uniform string.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Suppose instead that neither uniform string is present. Pair each current member with its letterwise complement and use a counting argument to show that a complementary pair occurs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Let l and l' be complementary, and define J as the positions where l' has A and also B. Use this J to construct the grid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify directly what follows from the current construction and the requirement under discussion, citing only the information established so far.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the threshold conclusion reached after the preceding verification and the reason supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 476,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1750",
+  "dataset": "olympiadbench",
+  "ordinal": 423,
+  "variant": "perturbed",
+  "conversation_id": "423::olympiadbench__OE_TO_maths_en_COMP_1750::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "a9c8838e2176bc4f22c6120e5c4314d706247ce144d1fce05d7a4623bcf00a6c",
+  "semantic_condition_id": "89dac6303b23742e10c0312b170453dfb5fabf426b9ba034ae7e0959cbaa9af0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the vertices of the regular 2006-gon cyclically. Characterize an odd side or diagonal by the parity of the number of boundary edges between its endpoints.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For an isosceles triangle whose two equal sides are odd, explain how the two corresponding boundary arcs constrain the placement of its apex and base.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Euler's formula for the total number of triangles in a triangulation as the sole method for bounding the number of isosceles triangles with two odd sides.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the induction setup and candidate bound, split the subpolygon along the selected longest-base triangle and account for the resulting boundary pieces.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the lemma to a longest dissecting diagonal XY and its adjacent triangle XYZ to obtain an upper bound for the entire triangulation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give a triangulation that attains the bound established above, describe its core vertex-joining rule, and count the qualifying triangles after the remaining regions are completed.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the upper bound and construction to determine the maximum possible number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

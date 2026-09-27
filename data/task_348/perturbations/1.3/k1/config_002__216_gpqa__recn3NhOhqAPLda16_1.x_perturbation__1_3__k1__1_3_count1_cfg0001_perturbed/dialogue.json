@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "perturbed",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9e44d87deb0338cb5ed22520200aacac17489322159089b6a71895ecb01bab4e",
+  "semantic_condition_id": "a12d910639a22eddaba474a20364b3e25afc9dd1d62c0f21945114c99a4aa39b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the Reaction I stereochemical result, determine the Reaction II mixture's peaks on normal-phase and chiral HPLC.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Pentane-2,4-dione is reduced with excess NaBH4 and worked up. Identify the diol framework and enumerate its distinct stereoisomers after molecular symmetry is considered.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many ideal peaks would the Reaction II mixture give by itself on normal-phase and chiral HPLC? State which species coelute or resolve.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

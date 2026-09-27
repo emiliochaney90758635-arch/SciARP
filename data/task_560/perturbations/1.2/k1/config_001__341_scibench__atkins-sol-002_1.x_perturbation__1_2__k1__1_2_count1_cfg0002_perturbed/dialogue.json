@@ -1,0 +1,64 @@
+{
+  "release_task_index": 560,
+  "task_id": "scibench__atkins-sol-002",
+  "dataset": "scibench",
+  "ordinal": 341,
+  "variant": "perturbed",
+  "conversation_id": "341::scibench__atkins-sol-002::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "54d556d86487ff3ce96f6129867eb2f24503d6105f808550722a56e0f66d1197",
+  "semantic_condition_id": "3f1e8cdb0d285bc1899c4fbff0d01447b7f30768a3dc7faca16d98fcec3953e0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an ideal dilute solute with concentration c(x), write the thermodynamic force per mole along x in terms of the logarithmic concentration gradient.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let c(x)=c0 exp(-x/lambda), with lambda>0. Differentiate ln c with respect to x.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If this exponential concentration profile falls by a factor of two over 10 cm, determine its spatial scale parameter in metres.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the thermodynamic-force relation derived above with the exponential concentration gradient to obtain the x-component, including its sign.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the thermodynamic force at 25 pascal while also treating 25 °C as 298 K.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let +x point toward decreasing concentration. Under this convention, which way does the force act?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Show that this direction agrees with the sign of the x-component derived above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Would changing the absolute scale c0 alter the magnitude, or does only the logarithmic gradient matter?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the molar force in N/mol and kN/mol, including its direction.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

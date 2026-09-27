@@ -1,0 +1,28 @@
+{
+  "task_id": "023-capsule007",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first audit reports one conflicting count pair.",
+    "The second reports another.",
+    "The third reports 75 of 284 loci, or 26.41%."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first subset audit"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second subset audit"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "75-of-284 audit"
+    }
+  ],
+  "evidence_change_permitted": true
+}

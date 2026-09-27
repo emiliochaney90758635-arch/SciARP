@@ -1,0 +1,54 @@
+{
+  "release_task_index": 494,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2711",
+  "dataset": "olympiadbench",
+  "ordinal": 441,
+  "variant": "perturbed",
+  "conversation_id": "441::olympiadbench__OE_TO_maths_en_COMP_2711::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "9a7685c2cd35afa8cc3b06b8f7436e1a4bd66b1d8821b196805ef7829a5bf6f9",
+  "semantic_condition_id": "48f2b6943f2659bc9c20f5108d97d4cffacb31ef13704ee5929864f56dc11fa2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Show that if a sum above 2013 uses two palindromes, at least one summand must be a four-digit palindrome greater than 1006.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List all sufficiently small four-digit palindromes using full reversal symmetry, without retaining the upper range needed for sums below 2021.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find explicit two-palindrome representations of 2014, 2015, 2016, 2017, and 2018.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why establishing this consecutive representable block is enough to reduce the minimality question to testing 2019 next.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract each candidate four-digit palindrome from 2019 and list the possible smaller complements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether any of those complements is a palindrome, and conclude whether 2019 is representable.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine the least integer greater than 2013 that is not a sum of two palindromes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

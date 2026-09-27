@@ -1,0 +1,54 @@
+{
+  "release_task_index": 330,
+  "task_id": "gpqa__recaXdGn3FAIkxLGM",
+  "dataset": "gpqa",
+  "ordinal": 198,
+  "variant": "perturbed",
+  "conversation_id": "198::gpqa__recaXdGn3FAIkxLGM::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "5482cef17b4276f3e9e79b723123ccd73033ae969f3a676e7fdfa38235574afc",
+  "semantic_condition_id": "d5db352f76c15331aa205b9113369c678698788236d3d23eca00a89dd74894b0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A black hole subtends 10^-17 degrees in a galaxy 10^10 pc away. Convert the angle to radians and the distance to metres, retaining whether the quoted angular size is a radius or a full diameter as an ambiguity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the small-angle relation to estimate the stellar luminosity under both angular-radius and angular-diameter interpretations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Bekenstein-Hawking entropy in terms of Schwarzschild radius, Boltzmann's constant, and Planck length. How would halving the radius change it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply an orbital-period formula to the inferred radius, but report the result as entropy in J/K under both conventions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the nearest order of magnitude, and does the radius-versus-diameter convention alter that order?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the powers of ten in the angle conversion, radius, area, and entropy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the entropy order together with the angular-size qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Changes B-only from 766 to 769.",
+    "Changes D-only from 773 to 771."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "B-only region"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "D-only region"
+    }
+  ],
+  "evidence_change_permitted": true
+}

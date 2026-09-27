@@ -1,0 +1,54 @@
+{
+  "release_task_index": 569,
+  "task_id": "scibench__atkins-sol-015",
+  "dataset": "scibench",
+  "ordinal": 350,
+  "variant": "perturbed",
+  "conversation_id": "350::scibench__atkins-sol-015::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "2695eb4e13272e76c856fb9a0c3396b43e40a654874f6736ca027ebff99bad21",
+  "semantic_condition_id": "87c4d6b60e9ad6b6fa6d0346547b8a28121ecf85c3809d3d438beb500ac054b3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A fixed amount of nitrogen is held in a rigid vessel and treated as a perfect gas. With n and V constant, how does its pressure depend on absolute temperature?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write a relation connecting an initial electronic eigenstate (p_1,T_1) and a final state (p_2,T_2), then solve it symbolically for p_2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A sample of solid diamond enters a constant-volume vessel at 100 atm and 300 K and is heated to 500 K. Substitute these values into the perfect-gas expression for p_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression and explain whether the working pressure should be above or below the entry pressure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that direction physically in terms of molecular collisions with the walls of a constant-volume vessel.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and the order of magnitude of the calculated pressure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the working pressure to one decimal place and to the nearest atmosphere.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

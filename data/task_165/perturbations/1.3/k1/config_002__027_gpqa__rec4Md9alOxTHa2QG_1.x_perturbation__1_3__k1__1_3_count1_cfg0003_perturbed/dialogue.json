@@ -1,0 +1,59 @@
+{
+  "release_task_index": 165,
+  "task_id": "gpqa__rec4Md9alOxTHa2QG",
+  "dataset": "gpqa",
+  "ordinal": 27,
+  "variant": "perturbed",
+  "conversation_id": "027::gpqa__rec4Md9alOxTHa2QG::1.x::perturbation__1_3__k1__1_3_count1_cfg0003::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "7254e04963aa1a08365d17de3ec7bfb22a87c7772d2a7fb81babd18ecfb96ad7",
+  "semantic_condition_id": "470c0a9e2cc363b1829c17f3b007499c30f920fb8b638a52d93c03acbf3089b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rare mouse breast-cancer cell population shows low expression of a tumor-suppressor gene, and epigenetic silencing is suspected. Design a study that directly tests whether cytosine methylation at this locus differs between the cancer cells and matched healthy breast cells.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Distinguish what bulk RNA sequencing measures from what a locus-specific DNA-methylation assay measures. Which readout addresses the candidate epigenetic mark itself rather than only its expression consequence?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Choose a method that maps cytosine methylation at the tumor-suppressor locus with base-level resolution, and explain the chemical distinction on which its readout depends.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Design the matched comparison using the cancer cells and healthy breast cells. Specify the locus-level output to compare and how a methylation difference would be interpreted.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why would Ras overexpression, bisulphite sequencing, or knockout of a testis-specific DNA methyltransferase fail to provide the same direct test of methylation at this locus?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Suppose the cancer cells show higher methylation at the tumor-suppressor locus. What would that association support, and why would it not by itself prove that methylation is the unique cause of low expression?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What experimental controls and follow-up perturbation could strengthen the causal interpretation while keeping the locus-specific methylation comparison as the primary assay?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the recommended assay and matched-sample design, then state clearly what a positive differential-methylation result would and would not establish.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

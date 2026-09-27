@@ -1,0 +1,35 @@
+{
+  "release_task_index": 119,
+  "task_id": "119-capsule034",
+  "source_id": "bix-51-q8",
+  "dataset": "bixbench",
+  "ordinal": 119,
+  "variant": "perturbed",
+  "conversation_id": "119::119-capsule034::2.3::k1::perturbed::lane_d",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ae13edf6eed95d4c29cf1dd02a915345bf9cb62f6280998b433a960d1dead134",
+  "semantic_condition_id": "1cfcfbef2cf1636942b86f20bc04aa7f6d983c04f4f7d7c9ea43935046e82997",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Age-only coefficient evidence\n\n## Model input\n\nGroup 1, whose efficacy is `PR`, is encoded as `Response=1`; Group 2 is encoded as `Response=0`. All 80 retained records have a numeric age.\n\n```text\nResponse = 1 (n=41), Age in years:\n67, 50, 57, 46, 40, 52, 53, 45, 73, 64, 52, 54, 45, 71, 41, 45,\n43, 57, 51, 74, 52, 49, 74, 57, 74, 67, 47, 50, 59, 57, 63, 51,\n46, 51, 58, 64, 48, 44, 40, 55, 65\n\nResponse = 0 (n=39), Age in years:\n46, 44, 73, 72, 40, 59, 67, 60, 67, 51, 65, 73, 49, 55, 50, 65,\n68, 69, 68, 56, 75, 73, 63, 70, 71, 56, 67, 46, 53, 63, 63, 51,\n65, 75, 65, 69, 73, 73, 64\n```\n\n## Age-only model output\n\n```r\nmodel_age <- glm(Response ~ Age, data = dataset, family = binomial)\n```\n\n| term | Estimate | Std. Error | z value | two-sided `Pr(>|z|)` |\n|---|---:|---:|---:|---:|\n| `(Intercept)` | 4.44656527 | 1.45133 | 3.064 | 0.00219 |\n| Age | -0.06495392 | 0.02435 | -3.078 | 0.00208 |\n\nThe coefficient multiplies age measured in years in:\n\n```text\nlogit[P(Response=1)] = beta_0 + beta_Age × Age\n```\n\nAccordingly, its unit is change in log-odds for a one-year increase. The model-summary display rounds the Age estimate to five digits after the decimal point.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the binary response and complete 80-row age analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the intercept-plus-age logistic regression and locate the age coefficient.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the age coefficient to five decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

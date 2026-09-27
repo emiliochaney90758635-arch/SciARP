@@ -1,0 +1,35 @@
+{
+  "release_task_index": 102,
+  "task_id": "102-capsule029",
+  "source_id": "bix-42-q1",
+  "dataset": "bixbench",
+  "ordinal": 102,
+  "variant": "perturbed",
+  "conversation_id": "102::102-capsule029::3.1.k1::lane_c_manual",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "dcc4f3391ace1ec0aadb2687fadd64f08606ea7bc688c12bbeac5bfd43d7a76b",
+  "semantic_condition_id": "0d616806a41454be39151c7046c38ec6b8b73f5ff6f81ee61195ed4c5bca5959",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Patient-level set definitions\n\nDefine three sets:\n\n- `C`: clinical patient barcodes whose `vital_status` is exactly `Alive` or\n  `Dead`;\n- `G`: patient IDs extracted from gene-expression sample-column barcodes;\n- `M`: patient IDs extracted from methylation sample-column barcodes.\n\nFull TCGA sample barcodes are reduced to the 12-character patient segment with:\n\n```text\n(TCGA-\\w\\w-\\w\\w\\w\\w)\n```\n\nFor example:\n\n```text\nTCGA-3L-AA1B-01A-11R-A37K-07 -> TCGA-3L-AA1B\nTCGA-3L-AA1B-01A-11D-A36Y-05 -> TCGA-3L-AA1B\n```\n\nSet membership in `G` or `M` requires at least one matching sample column; it\ndoes not require every feature value in that column to be nonmissing.\n\n## Clinical status mapping\n\n| Original `vital_status` | Rows | Mapping outcome |\n|---|---:|---|\n| `Alive` | 393 | retained |\n| `Dead` | 54 | retained |\n| `[Discrepancy]` | 1 | excluded |\n\nAll retained clinical barcodes are nonmissing, unique, and valid patient IDs.\n\n## Omics-header deduplication\n\nEvery omics sample-column name matches the patient-ID pattern. Full column\nnames are unique, but multiple aliquots can reduce to the same patient.\n\n| Modality | Sample-column entries | Patient-level duplicate structure | Distinct patients |\n|---|---:|---|---:|\n| Gene expression | 328 | 28 patients occur twice | `328 - 28` |\n| Methylation | 353 | 44 occur twice, 5 occur three times, 1 occurs four times | `353 - (44 + 5×2 + 1×3)` |\n\n## Exact set cardinalities\n\n| Set relation | Cardinality |\n|---|---:|\n| `C` | 447 |\n| `G` | 300 |\n| `M` | 296 |\n| `C ∩ G` | 287 |\n| `C ∩ M` | 283 |\n| `G ∩ M` | 280 |\n| `C ∪ G ∪ M` | 460 |\n\nThe three-way intersection can be checked with inclusion–exclusion:\n\n```text\n|C∩G∩M|\n= |C∪G∪M| - |C| - |G| - |M|\n  + |C∩G| + |C∩M| + |G∩M|\n```\n\nCounts of 328 and 353 refer to sample columns before patient-level\ndeduplication and must not be used directly as patient counts.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConstruct the clinical patient set using only exact Alive or Dead vital-status values.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Reduce the gene-expression and methylation sample barcodes to patient IDs and deduplicate each modality.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Although T2 deduplicated to G=300 and M=296 patients, use the 328 and 353 sample-column counts in inclusion-exclusion.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

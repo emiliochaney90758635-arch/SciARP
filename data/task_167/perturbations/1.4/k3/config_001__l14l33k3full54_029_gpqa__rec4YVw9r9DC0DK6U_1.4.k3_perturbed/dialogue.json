@@ -1,0 +1,54 @@
+{
+  "release_task_index": 167,
+  "task_id": "gpqa__rec4YVw9r9DC0DK6U",
+  "dataset": "gpqa",
+  "ordinal": 29,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::029::gpqa__rec4YVw9r9DC0DK6U::1.4.k3::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "42f22fa469eeb1fb4ef04aa3451b9d6fb120716ed2e9a360b29871717e4719c0",
+  "semantic_condition_id": "7299e36c3772b02ea39c32320d087b4741b81a5ab51cc06b425596a3b10b13e6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Stellar rotation axes are isotropically oriented in three dimensions. Inclination i runs from 0 degrees pole-on to 90 degrees edge-on, measured from the symmetry axis. Let N_low count stars from 0 to 45 degrees and N_high those from 45 to 90 degrees. We want their expected count ratio N_high/N_low.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the inclination measured from the symmetry axis, derive the normalized density p(i) on this hemisphere and an expression for the probability in any inclination band.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that density and angle convention to calculate the proportional count N_low. Give its exact and decimal values.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the same density and convention, calculate N_high and form N_high/N_low. Give exact and decimal results.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the ratio as a comparison of expected star counts in the two bands. What does the angular geometry say about why the counts differ?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the probabilities for the two bands account for the whole stated hemisphere. How does that normalization support your count-ratio calculation?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final N_high/N_low and explain how it follows from the orientation distribution and the angle convention.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 189,
+  "task_id": "gpqa__recBeOYL2vJeESmQ5",
+  "dataset": "gpqa",
+  "ordinal": 56,
+  "variant": "perturbed",
+  "conversation_id": "056::gpqa__recBeOYL2vJeESmQ5::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "996326686c4ecce815e1b8ff73a61be9c9992a96a51f9bd40ae2399d351516f4",
+  "semantic_condition_id": "cbf053024afeb3aae1d514d93f170a9cb47c44fd0a34d73e1eeb2dbef7b941c9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "E. coli currently carries high-copy pUC18 (pUC origin, AmpR), and I want it to carry pACYC184 (p15A origin, TetR) instead. What resistance phenotype would distinguish a true chromosomal translocation from retention of pUC18?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How does the starting element's high copy number affect the chance of losing it during growth without ampicillin selection?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Choose a method for acquiring the intended tetracycline-resistant endpoint while verifying that the ampicillin-resistant starting element has been lost. Specify both the positive selection and an independent check.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Turn those elements into a practical workflow. How would its stated criteria distinguish the intended endpoint from a cell retaining both resistance determinants?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Given the high-copy starting element, how does the need for complete loss affect the screening burden?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Should replacing pUC18 with pACYC184 be expected to be easy or difficult? Identify the main practical obstacle.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How precisely can its TetR AmpS success frequency be predicted without the host strain, passage history, burden, or a measured loss rate?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain how the verification strategy selected above would classify the intended TetR AmpS endpoint and TetR cells that retain the starting element.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the overall difficulty assessment and summarize the selection, plasmid-loss, and verification workflow.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

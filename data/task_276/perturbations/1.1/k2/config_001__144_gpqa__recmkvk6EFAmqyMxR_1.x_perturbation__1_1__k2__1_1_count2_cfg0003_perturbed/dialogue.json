@@ -1,0 +1,54 @@
+{
+  "release_task_index": 276,
+  "task_id": "gpqa__recmkvk6EFAmqyMxR",
+  "dataset": "gpqa",
+  "ordinal": 144,
+  "variant": "perturbed",
+  "conversation_id": "144::gpqa__recmkvk6EFAmqyMxR::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ea43121f4e744e895e4a27aa320c9a05d1e742b019e090d957b98d5a514308b8",
+  "semantic_condition_id": "94cd0d17074f81ef3071bdd12f89fec9a7259d2f88a5beb0df41603c8c35cace",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Stable particles travel about 30 m from the detector center to its wall at nearly c. If their proper lifetime is tau, what decay survival probability P(gamma) follows from time dilation?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At a representative Lorentz factor gamma=20, one third of the particles reach the wall. Use this observation to calibrate the unknown constant or constants in the model stated above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the same calibrated model, solve symbolically for the Lorentz factor that raises the wall-reaching fraction from 1/3 to 2/3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the decay rate numerically under the representative-gamma approximation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How should the result be qualified given that the stated gamma, survival fractions, and particle population are only approximate?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into the model and state the resulting check using the confidence stance established above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final result and summarize the model check under that same confidence stance.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

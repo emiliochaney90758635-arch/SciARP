@@ -1,0 +1,49 @@
+{
+  "release_task_index": 615,
+  "task_id": "scibench__stat-sol-010",
+  "dataset": "scibench",
+  "ordinal": 396,
+  "variant": "clean",
+  "conversation_id": "396::scibench__stat-sol-010::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "57e67a2fd3fba249f57a2a7d760e8469f2685374c26c5de90cd198ee4eafab84",
+  "semantic_condition_id": "cc435ab2c5f2cf1e3e9bbfae3271d15f56b9bb5d4de4b3ca570b8926d4331398",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A five-card poker hand is drawn from a standard 52-card deck. Do reorderings of the same physical cards count as different hands?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the applicable count in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand and simplify that expression in factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check without merely repeating the calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the total and its sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

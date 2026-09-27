@@ -1,0 +1,34 @@
+{
+  "task_id": "041-capsule011",
+  "variant": "perturbed",
+  "condition_label": "1.4.k3",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "a9dab49d98367031c8b1f24b1cf5fc747e9cbbc9818bae8804f5237f48644b6d",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "turn_id": "T1",
+        "role": "user",
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort, table structure, and counting unit\n\nThe metadata contains 87 subjects, while the prefiltered CHIP-candidate directory contains 86 matched per-sample workbooks. Sample ID 533 is the sole metadata subject without a workbook; there is no workbook-only extra sample.\n\nEach workbook has a title in row 1, field names in row 2, and variant records beginning in row 3. Across the 86 workbooks there are 57,258 sample–variant record rows. The counting unit is a workbook row: if the same genomic coordinate appears in different samples, each occurrence is retained and counted separately.\n\nThe two fields used are:\n\n| Field | Use |\n|---|---|\n| `Zygosity` | Remove `Reference` and missing calls |\n| `Sequence Ontology (Combined)` | Apply ontology exclusions |\n\n## Zygosity frequencies\n\n| Raw `Zygosity` value | Record rows |\n|---|---:|\n| `Reference` | 44,211 |\n| `Heterozygous` | 7,303 |\n| `Homozygous Variant` | 4,593 |\n| Missing | 1,151 |\n| Total | 57,258 |\n\n## Ontology frequencies among valid non-reference rows\n\n| `Sequence Ontology (Combined)` | Rows |\n|---|---:|\n| `intron_variant` | 6,185 |\n| `synonymous_variant` | 2,938 |\n| `missense_variant` | 1,035 |\n| `3_prime_UTR_variant` | 832 |\n| `splice_region_variant` | 437 |\n| `5_prime_UTR_variant` | 329 |\n| `frameshift_variant` | 78 |\n| `5_prime_UTR_premature_start_codon_gain_variant` | 50 |\n| `inframe_insertion` | 8 |\n| `upstream_gene_variant` | 3 |\n| `inframe_deletion` | 1 |\n| `intergenic_variant` | 0 |\n\nThe requested broad UTR rule removes every label containing the literal substring `UTR`, including the composite premature-start-codon label.\n\n`upstream_gene_variant` does not contain the substring `UTR` and is retained.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the cohort without specifying recurrence counting."
+      },
+      {
+        "turn_id": "T2",
+        "role": "user",
+        "content": "Remove Reference rows and handle missing calls as appropriate."
+      },
+      {
+        "turn_id": "T3",
+        "role": "user",
+        "content": "Remove intron, intergenic, and UTR annotations, without specifying substring versus exact-label matching."
+      }
+    ]
+  },
+  "dialogue_sha256": "4c32374d980c91519533281ba37752da3a822725ce004517b7c0222c87a42ee7"
+}

@@ -1,0 +1,47 @@
+{
+  "release_task_index": 63,
+  "task_id": "063-capsule017",
+  "source_id": "bix-22-q2",
+  "dataset": "bixbench",
+  "ordinal": 63,
+  "variant": "perturbed",
+  "conversation_id": "063::063-capsule017::3.1::k1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a9585ba2c6461dcc7d0ad660703cde7eef28916e9d186fcfb48aa558c715e856",
+  "semantic_condition_id": "7c88b8c9c5b17d3dbdd0ecd2e9a6e4dd96b046f365ec2a7dcb6946796e1e66ff",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "07988a14d5d1be265e0c16939bece4b8585145698ae7ca06c406dbc8576ab074",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Data axes and filtering sequence\n\n| Data object | Original size | Fields used |\n|---|---:|---|\n| batch-corrected expression matrix | 59,453 genes × 723 samples | gene rows, sample columns, expression counts |\n| sample metadata | 723 samples × 5 fields | `celltype` |\n| gene annotation | 59,453 genes × 4 fields | `Geneid`, `Length`, `gene_biotype` |\n\nThe sample/gene indices across the three tables correspond one to one and contain no duplicates. Sample-category counts are:\n\n| celltype | Number of samples |\n|---|---:|\n| PBMC | 158 |\n| CD4 | 151 |\n| CD8 | 145 |\n| CD14 | 132 |\n| CD19 | 137 |\n\nThe archived processing sequence is:\n\n```python\n# First exclude PBMC to obtain 565 immune-cell samples\nimmune = counts.T[\n    counts.T.index.isin(metadata[metadata.celltype != \"PBMC\"].index)\n]\n\n# Match gene_biotype by substring\nprotein_index = annotation[\n    annotation.gene_biotype.str.contains(\"protein_coding\")\n].index\n\n# Apply the low-expression threshold across all 565 non-PBMC samples\nimmune_protein = immune[protein_index]\nimmune_protein = immune_protein.T[\n    immune_protein.T.sum(axis=1) >= 10\n].T\n\n# Select CD4 samples and inner-join Length by gene index\ncd4 = immune_protein[immune_protein.index.str.contains(\"CD4\")]\npaired = cd4.T.join(annotation[[\"Geneid\", \"Length\"]], how=\"inner\")\n```\n\n`str.contains(\"protein_coding\")` initially matches 19,954 annotation rows; 17,819 genes remain after the total-expression threshold and length alignment. The CD4 axis contains 151 samples. Final `Length` and CD4 mean expression contain no missing values, and the gene index has no duplicates.\n\nSubstring matching additionally retains 10 compound-biotype genes that pass the expression threshold:\n\n```text\nRGS5, CYB561D2, CCDC39, ARMCX5-GPRASP2, KBTBD11-OT1,\nZNF883, SPATA13, GOLGA8M, SLFN12L, ELFN2\n```\n\n## Source-table spot checks\n\nEach `CD4 mean expression` is the ordinary arithmetic mean for that gene across the 151 CD4 samples.\n\n| Gene | Length | CD4 mean expression |\n|---|---:|---:|\n| OR4F29 | 939 | 1.49006622517 |\n| OR4F16 | 995 | 1.41721854305 |\n| SAMD11 | 4,172 | 0.635761589404 |\n| NOC2L | 5,540 | 1,049.07284768 |\n| KLHL17 | 3,402 | 345.185430464 |\n| AC233755.2 | 294 | 1.96688741722 |\n| AC233755.1 | 351 | 4.33112582781 |\n| AC240274.1 | 4,520 | 1,132.50331126 |\n| AC213203.2 | 831 | 0.165562913907 |\n| AC213203.1 | 510 | 0.403973509934 |\n\n## Full-data sufficient statistics for Pearson correlation\n\nLet \\(x_i\\) be the `Length` of a final gene and \\(y_i\\) its mean expression across the 151 CD4 samples.\n\n| Statistic | Value |\n|---|---:|\n| \\(n\\) | 17,819 |\n| \\(\\bar{x}\\) | 5,675.002357034626 |\n| \\(\\bar{y}\\) | 616.6195436896920 |\n| \\(S_{xx}=\\sum(x_i-\\bar{x})^2\\) | 331,788,201,143.901 |\n| \\(S_{yy}=\\sum(y_i-\\bar{y})^2\\) | 197,135,262,891.78796 |\n| \\(S_{xy}=\\sum(x_i-\\bar{x})(y_i-\\bar{y})\\) | 12,759,055,142.555323 |\n\n\\[\nr=\\frac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}\n\\]\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAlign sample metadata with the expression matrix, remove PBMC samples, and establish the CD4 sample axis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the protein-coding and low-expression criteria to define the final gene set within the non-PBMC samples.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate each retained gene's mean expression and pair it with that gene's length.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Ignore the established 17,819-gene set and compute Pearson r using only the ten visible source-table spot-check genes and their supplied Length and mean-expression pairs.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

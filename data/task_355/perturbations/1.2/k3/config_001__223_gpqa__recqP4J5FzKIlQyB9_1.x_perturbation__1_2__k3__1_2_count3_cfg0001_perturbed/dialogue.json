@@ -1,0 +1,54 @@
+{
+  "release_task_index": 355,
+  "task_id": "gpqa__recqP4J5FzKIlQyB9",
+  "dataset": "gpqa",
+  "ordinal": 223,
+  "variant": "perturbed",
+  "conversation_id": "223::gpqa__recqP4J5FzKIlQyB9::1.x::perturbation__1_2__k3__1_2_count3_cfg0001::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "9b7b239874f43086cf8e5ba0e57697ff3f2af684273c76fa741a61edb8193d73",
+  "semantic_condition_id": "81c0b0c78d86b4e4dc9f686ddac1262d665c7ea9b2fa5ebd26df3ba99ab731d2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use an FTIR band at 1725 mL as a carbonyl constraint.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the 9.7-metre triplet as an NMR signal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the quartet at 5.3 kelvin when distinguishing aldehyde connectivities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine all observations to identify the compound and explain the decisive coupling pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed structure against all spectral observations and coupling assignments developed above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any residual ambiguity caused by having only a subset of the spectra.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported compound and the two decisive coupling assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

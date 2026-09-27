@@ -1,0 +1,50 @@
+{
+  "release_task_index": 4,
+  "task_id": "004-capsule003",
+  "source_id": "bixbench-m2-004-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 4,
+  "variant": "perturbed",
+  "conversation_id": "004::004-capsule003::1.2.k3::lane_a_manual",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "48141cac6e0362ce9212b1a109ed129369370686a33af6c4ba5fedd9565610fa",
+  "semantic_condition_id": "1ecc31817edcb90e7b68c40806f7c6b172bdd3a0b1ef6b2b05df114d174f9a4e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Sample design\n\nThe sample-design fields are `Code`, `Response`, and `Tissue`. There are 90 samples in the normalized expression matrix. The records with `Response = Control` have this tissue distribution:\n\n| Tissue label | Control samples |\n|---|---:|\n| baseline-blood | 10 |\n| dentate-gyrus | 10 |\n| final-blood | 10 |\n| **Total** | **30** |\n\nThe Control labels are used only when the modeling subset is formed. Gene filtering and rescaling are first performed on the complete 90-sample matrix.\n\n## Archived expression transformation\n\nThe normalized-expression input contains floating-point values arranged as samples by `GeneID`. The archived processing order is:\n\n```python\ngenes_to_keep = norm_count.columns[norm_count.sum(axis=0) >= 10]\nnorm_count_clean = norm_count[genes_to_keep]\nscaled_counts = (\n    norm_count_clean * 1e6 / norm_count_clean.sum()\n).round().astype(int)\n```\n\nHere `norm_count_clean.sum()` is a column-wise sum, so every retained gene is rescaled across all 90 samples to a total of one million before rounding. This produces a `90 x 21,251` integer pseudo-count matrix.\n\n## Model and comparison\n\nAfter the full-matrix transformation, the 30 Control rows are selected, producing a `30 x 21,251` modeling matrix. The archived DESeq2-style settings are:\n\n```python\ndesign_factors = [\"Tissue\"]\ntarget_contrast = [\"Tissue\", \"final-blood\", \"baseline-blood\"]\n```\n\nThe contrast direction is final blood relative to baseline blood. Its complete result contains 21,251 `GeneID` rows.\n\n## Archived joint-filter output\n\nThe result-row condition is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Complete result rows | Rows satisfying all three conditions |\n|---|---:|---:|\n| final-blood relative to baseline-blood | 21,251 | 846 |\n\n## Interpretation boundary\n\nThe input values are normalized floating-point expression values. Rescaling and rounding them cannot recover raw sequencing counts or their count-generating sampling structure. Consequently, the archived adjusted p-values and row count describe this pseudo-count workflow only; they are not formally calibrated DESeq2 inference from raw counts.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the Control cohort to be modeled and verify the sample count at each Tissue level.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Before selecting the Control rows, prefilter genes by total expression across the complete matrix.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the archived scaling but interpret the multiplier `1e6` as one thousand rather than one million before integer rounding.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Select the Control rows from the resulting pseudo-count matrix and fit the Tissue model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Extract the complete final-blood-versus-baseline-blood comparison from that model.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply all thresholds jointly, treating `abs(log2FoldChange) > 1` as an absolute linear-fold-change threshold greater than 1, and report the 846 qualifying rows as 846 percent of the result rather than as a count, while also stating the pseudo-count limitation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "release_task_index": 57,
+  "task_id": "057-capsule015",
+  "source_id": "bix-19-q1",
+  "dataset": "bixbench",
+  "ordinal": 57,
+  "variant": "perturbed",
+  "conversation_id": "057::057-capsule015::1.2::k1::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "e3310edc301415970e15185618138bd94e1683ae67bc5425009f35b50946d0da",
+  "semantic_condition_id": "3eb5ccaa1974353e24a0f477a68fa05e968f56df972379e30d1dfcc15591cc9a",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "f3e45c869631493ae9d70c4f3ee95266d87038c41c3ffd67594ec09eee123723",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original NeuN counts for KD and CTRL\n\nThe hemisphere field in the original CSV is misspelled `Hemispere`; the analysis only renames it `Hemisphere`. The relevant fields contain no missing values.\n\n| Sample | Sex | KD NeuN | CTRL NeuN |\n|---:|---|---:|---:|\n| 1 | M | 221 | 237 |\n| 2 | F | 233 | 223 |\n| 3 | M | 221 | 246 |\n| 4 | F | 215 | 179 |\n| 5 | M | 216 | 198 |\n| 6 | F | 208 | 194 |\n| 7 | M | 202 | 200 |\n| 8 | F | 200 | 208 |\n\n## Effect-size definition\n\nWithin-group standard deviations use \\(n-1\\) in the denominator. The archived analysis uses an independent-groups pooled SD and fixes the direction as `KD - CTRL`:\n\n```text\nSD_pooled\n  = sqrt(((n_KD-1)SD_KD² + (n_CTRL-1)SD_CTRL²)\n         / (n_KD+n_CTRL-2))\n\nCohen's d\n  = (mean_KD - mean_CTRL) / SD_pooled\n```\n\n## Power model\n\nThe archived analysis passes the \\(d\\) obtained from the data above directly to an equal-allocation power model for an independent two-sample t-test:\n\n```python\nanalysis = TTestIndPower()\nsample_size = analysis.solve_power(\n    effect_size=cohens_d,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\nrequired_integer_n = np.ceil(sample_size)\n```\n\n`ratio` uses its default value of 1, so `sample_size` is the continuous sample size per group. The integer sample size must be rounded upward to ensure that the target power is met rather than undershot.\n\nArchived power outputs from the same statistical model near the continuous solution are:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm the KD and CTRL NeuN-count vectors and calculate each group's sample size, mean, and sample standard deviation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those summaries to calculate the independent-groups pooled standard deviation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate Cohen's d in the KD-minus-CTRL direction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use target power 0.008, treating 80% as 0.80%, and report the minimum integer sample size per group returned by that power model.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

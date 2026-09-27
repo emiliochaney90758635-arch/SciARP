@@ -1,0 +1,54 @@
+{
+  "release_task_index": 484,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2794",
+  "dataset": "olympiadbench",
+  "ordinal": 431,
+  "variant": "perturbed",
+  "conversation_id": "431::olympiadbench__OE_TO_maths_en_COMP_2794::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2e306770d448f34d5b836d48cc4f8c8777a5969d18aae6a8b4672e0237aab127",
+  "semantic_condition_id": "e5245e87796228a7d6cae10601effa211d03019b7bb652f4b9e2d32967e290f2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write z=r e^{i theta} with r>0. Express the area of the parallelogram spanned by z and 1/z in terms of theta, and use the given area 35/37 to obtain an exact trigonometric constraint.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only the small-angle approximation sin(2 theta) approximately equals 2 theta, treat it as exact for this area, and infer cos(2 theta) from that approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Express |z+1/z|^2 in terms of r and cos(2 theta), and minimize the radial part over r>0 for a fixed angular branch.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the area value 35/37, determine which angular branches are compatible with Re(z)>0, and state when equality holds in the radial minimization.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the two possible values of cos(2 theta) in the minimized expression and identify which branch gives the smaller value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the selected branch directly with sin^2(2 theta)+cos^2(2 theta)=1 and the condition Re(z)>0.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compute the smallest possible value d of |z+1/z| and give d^2 exactly.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

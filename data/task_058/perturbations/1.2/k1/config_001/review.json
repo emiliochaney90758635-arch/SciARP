@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Target power can be entered as 80 rather than 0.80.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "8796282f748a28d67eabb19851b7d229955e759bde34db8416f020e0c074c312",
+  "strict_non2x_original_semantic_condition_id": "f86a22c4c918096750c7572b431ce3a008ae2173551213fa3cbf85f24679377f",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally misread 80% as 0.80% and enter target power 0.008 instead of 0.80.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

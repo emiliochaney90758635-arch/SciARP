@@ -1,0 +1,19 @@
+{
+  "task_id": "103-capsule030",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Uses raw p-value as an unstated adjusted-p tie-break.",
+    "Discards equal displayed values as rounding artifacts.",
+    "Requires a unique minimum in the final report."
+  ],
+  "evidence_mode": "append"
+}

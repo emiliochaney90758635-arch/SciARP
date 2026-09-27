@@ -1,0 +1,40 @@
+{
+  "release_task_index": 120,
+  "task_id": "120-capsule034",
+  "source_id": "bix-51-q1",
+  "dataset": "bixbench",
+  "ordinal": 120,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::120::120-capsule034::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "c403c56b3aa2635691b060f5ecb1d13e342f73be1bba2f43af96eda7baa0be8a",
+  "semantic_condition_id": "dcf1e13cfb04e029f67ed39657e22037992abb3e1b013ee55e727e4c6d077412",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Age-only response-probability evidence\n\n## Age and response observations\n\nThe treatment-response event is efficacy `PR`: Group 1 is encoded as `Response=1`, while Group 2 is encoded as `Response=0`. The 80 retained ages are:\n\n```text\nResponse = 1 (n=41), Age in years:\n67, 50, 57, 46, 40, 52, 53, 45, 73, 64, 52, 54, 45, 71, 41, 45,\n43, 57, 51, 74, 52, 49, 74, 57, 74, 67, 47, 50, 59, 57, 63, 51,\n46, 51, 58, 64, 48, 44, 40, 55, 65\n\nResponse = 0 (n=39), Age in years:\n46, 44, 73, 72, 40, 59, 67, 60, 67, 51, 65, 73, 49, 55, 50, 65,\n68, 69, 68, 56, 75, 73, 63, 70, 71, 56, 67, 46, 53, 63, 63, 51,\n65, 75, 65, 69, 73, 73, 64\n```\n\n## Fitted model\n\n```r\nmodel_age <- glm(Response ~ Age, data = dataset, family = binomial)\n```\n\n| term | full-precision estimate |\n|---|---:|\n| `(Intercept)` | 4.4465652749199176 |\n| Age | -0.074953918037084705 |\n\nThe linear predictor and response-scale transformation are:\n\n```text\neta(age) = beta_0 + beta_Age × age\np(age) = 1 / (1 + exp(-eta(age)))\n```\n\nThe requested new observation has `Age=65`; BMI, gender, and other fields are not terms in this model. Use the full-precision coefficients above in the two general formulas.\n\nThe probability is on the `Response=1` scale, i.e. the efficacy-PR event.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# External age-only probability model\n\n## Source and scope\n\nThe Regional Immunotherapy Registry fitted an age-only logistic model for PR\nin an independent complete-case cohort:\n\n```text\nlogit[P(PR)] = 0.2007 - 0.0500 * (Age - 60)\n```\n\nInsert age65 and apply `p=1/(1+exp(-eta))`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDefine the binary response and complete 80-row age analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent age-band outcome report\n\n## Source identity, scope, method, and observations\n\nThe Camrelizumab Outcomes Consortium estimated age-specific PR probability\nnonparametrically in an external cohort.\n\n| Age band | PR | total | empirical PR probability |\n|---|---:|---:|---:|\n| 40-49 | 14 | 20 | 0.700 |\n| 50-59 | 12 | 22 | 0.545 |\n| 60-69 | 8 | 24 | 0.333 |\n| 70-79 | 4 | 18 | 0.222 |\n\nAge65 belongs to60-69, so this external empirical estimate is8/24=0.333.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFit the intercept-plus-age logistic regression and report its full-precision coefficients.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Shape-constrained age-response calibration report\n\n## Source identity and scope\n\nThe Treatment Outcomes Calibration Laboratory estimated the probability of efficacy PR as a function of age in an independent complete-case camrelizumab cohort. The binary endpoint and age-65 prediction target match the task, but the estimator is not a logistic regression.\n\n## Method\n\nObserved response proportions were fitted with a nonincreasing isotonic regression using the pool-adjacent-violators algorithm. The fitted step curve was then evaluated at prespecified age anchors.\n\n## Structured observations\n\n| Age (years) | Isotonic fitted PR probability |\n|---:|---:|\n| 55 | 0.560 |\n| 60 | 0.440 |\n| 65 | 0.360 |\n| 70 | 0.280 |\n| 75 | 0.210 |\n\n## Derived conflicting result\n\nThe calibration curve gives **0.360** at age 65. This is a shape-constrained probability curve, independent of both the external logistic model and the empirical age-band rate. It does not replace the archive's age-only logistic coefficients or their inverse-logit prediction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse the fitted coefficients to calculate the linear predictor for age 65.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Transform that linear predictor to the probability of the Response=1 efficacy event.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

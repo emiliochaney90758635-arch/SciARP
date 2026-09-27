@@ -1,0 +1,34 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits the exclusion rule for alcohol-use disorder and valproic-acid exposure.",
+    "Omits the required GENCODE background population."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "configured_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "evidence_unchanged": true
+}

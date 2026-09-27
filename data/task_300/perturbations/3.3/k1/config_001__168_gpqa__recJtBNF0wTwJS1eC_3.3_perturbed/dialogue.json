@@ -1,0 +1,54 @@
+{
+  "release_task_index": 300,
+  "task_id": "gpqa__recJtBNF0wTwJS1eC",
+  "dataset": "gpqa",
+  "ordinal": 168,
+  "variant": "perturbed",
+  "conversation_id": "168::gpqa__recJtBNF0wTwJS1eC::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "762dde4ab517bade373ad971d2b93cc1b650ad9cf08c1c17ad0efd71e50340dd",
+  "semantic_condition_id": "79f6d080717786a784e850b5d580f1119f750d8295fef07bf081d4efbf0610b4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A catalytic process downstream of a cracker interconverts three light olefins near 300 degrees Celsius. Identify the industrial reaction and the hydrocarbon pool involved.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The catalyst is active and selective, but changing its amount or formulation leaves the reactor-exit composition unchanged. What does that pattern suggest is limiting the single-pass conversion?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Arrhenius forward-rate reasoning: infer that a higher forward rate constant at higher temperature necessarily means a higher equilibrium conversion, and carry that inference into the recommendation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How strong is the causal conclusion supported by the repeated reactor observations, and which design limitations prevent a stronger claim?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Given the thermodynamic and evidential assessment, what practical advice should the student receive?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Has any new equilibrium measurement, catalyst-effect estimate, or reactor-model evidence appeared that would justify another experiment?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give your recommendation and state its degree of certainty.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

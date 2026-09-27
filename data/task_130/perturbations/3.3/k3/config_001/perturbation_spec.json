@@ -1,0 +1,42 @@
+{
+  "task_index": 130,
+  "task_id": "130-capsule036",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c8fe10daa55e6642ed101d192918d60e94ac8fd4d547b6a95633a7fd7780d470",
+  "source_base_evidence_sha256": "5007ffc73a1dc5573dbcf635ff1b3fec773a1967467b8060a0f82288993520cb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong refit path imposed.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Wrong organism independently imposed.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Union independently substituted for intersection.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Delete columns from the fitted six-sample result instead of refitting.",
+    "T4": "Use the Human KEGG term rather than the mouse term.",
+    "T5": "Take the union of the selected and pathway symbol sets and report its size instead of their intersection."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

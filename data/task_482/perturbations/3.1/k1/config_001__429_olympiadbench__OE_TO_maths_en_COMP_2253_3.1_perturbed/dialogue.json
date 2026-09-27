@@ -1,0 +1,49 @@
+{
+  "release_task_index": 482,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2253",
+  "dataset": "olympiadbench",
+  "ordinal": 429,
+  "variant": "perturbed",
+  "conversation_id": "429::olympiadbench__OE_TO_maths_en_COMP_2253::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "84ea6baa160f18cdeb5e9036dd130d7c2451da8df8c23eba328c8ebda54d031f",
+  "semantic_condition_id": "1ff3a2fba17a91d2628fbefb93cd21b8fb6dd3c68c567f26b4c5e7a2925c1d58",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let D be the distance from A to B and c the river current's constant speed. If drifting from A to B takes 30 minutes, express c in terms of D using consistent distance-per-minute units.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let p be Serge's paddling speed in still water. When he paddles downstream with the current, the trip takes 18 minutes. Express the combined speed p+c in terms of D.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the two observed trip rates to isolate Serge's still-water paddling speed p. Explain why the current rate must be subtracted from the downstream rate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate p as a multiple of D per minute.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the current-only relation use D=20c, then calculate the no-current travel time using the paddling rate obtained above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the still-water travel time in minutes and verify it by comparing the three rates.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

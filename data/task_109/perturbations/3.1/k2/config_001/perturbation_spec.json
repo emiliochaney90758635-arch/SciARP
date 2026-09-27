@@ -1,0 +1,43 @@
+{
+  "task_index": 109,
+  "task_id": "109-capsule032",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9cebf12fea677f3ca51ccd77415fd8ce5ffd160b490956a112e51435f54d874d",
+  "source_base_evidence_sha256": "4e9d402ed00da9779975557e6066048d0d82d26f83c6e66ae9ad0c0b7e974128",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Later count subset contradicts T1 definition.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Final row independently contradicts selected patient.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Although T1 defined counts using only Zygosity != Reference, also apply exonic-consequence and VAF<0.3 filters before selecting the maximum.",
+    "T3": "After selecting that patient, report the age from P500's row instead."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Ignore the non-reference count rule and rank the eligible patients by the visible Age column instead."
+    },
+    {
+      "turn_id": "T3",
+      "content": "After selecting by Age, report the age stored in P500's row rather than the selected patient's row."
+    }
+  ]
+}

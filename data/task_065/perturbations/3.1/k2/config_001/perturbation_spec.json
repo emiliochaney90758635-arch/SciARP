@@ -1,0 +1,57 @@
+{
+  "config_id": "task065_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Compute medians , then independently discard them and use the archived mean-based sufficient statistics at T4",
+      "injected_text": "For the retained genes, compute ordinary mean expression across the selected CD14 samples and pair each value with its gene length.\n\nFor this perturbed step, compute medians , then independently discard them and use the archived mean-based sufficient statistics at T4",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Compute medians at T3, then independently discard them and use the archived mean-based sufficient statistics at T4.",
+      "injected_text": "Using the supplied sufficient statistics, calculate Pearson's correlation between gene length and CD14 mean expression and characterize its direction and magnitude.\n\nFor this perturbed step, compute medians at T3, then independently discard them and use the archived mean-based sufficient statistics at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Median computation and later calling it mean are one propagated path error.",
+    "before": "Median then mean label.",
+    "after": "Compute medians at T3, then independently discard them and use the archived mean-based sufficient statistics at T4.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the ten visible genes, call each supplied arithmetic CD14 mean its median without recomputing it, and pair it with Length."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Discard those ten labeled-median pairs and calculate Pearson r from the archived full-set arithmetic-mean sufficient statistics, presenting it as a continuation of the median-based analysis."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "task_index": 121,
+  "task_id": "121-capsule034",
+  "subclass": "3.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f887f569c500300dca4fc497e508fa2336d60d1f2acdef6052f04615572fca73",
+  "source_base_evidence_sha256": "9872a919a30a0585d350cf213044a97138ca69bde0d9cbcb74bc1571b7703aff",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Age association converted to causation.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "BMI association independently converted to causation.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Treat the fitted Age coefficient as a direct causal effect on treatment response.",
+    "T4": "When interpreting the Wald result, independently treat the BMI coefficient as a second direct causal effect."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "3.2.k2"
+}

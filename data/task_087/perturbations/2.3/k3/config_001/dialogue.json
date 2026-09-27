@@ -1,0 +1,35 @@
+{
+  "release_task_index": 87,
+  "task_id": "087-capsule024",
+  "source_id": "bix-33-q1",
+  "dataset": "bixbench",
+  "ordinal": 87,
+  "variant": "perturbed",
+  "conversation_id": "087::087-capsule024::2.3.k3::lane_d_independent_repair",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "cd4929d1b122807feea04a19e31d7beca439446e44b0cf5e49a4842d3c2d4bbf",
+  "semantic_condition_id": "2fe8ea784caed2ed52da26b5cceb2ddea6425f192f9043a99b51d4224b9cd559",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Analysis Scope and Fields\n\nThe archived analysis selects seven worksheets from the same workbook:\n\n```text\nTreg, CD14 Mono, CD16 Mono, cDC2, pDC, gdT, ILC\n```\n\nThe fields in each worksheet are:\n\n| Column | meaning/use |\n|---|---|\n| `Unnamed: 0` | gene symbol |\n| `p_val` | raw p-value |\n| `avg_log2FC` | effect direction/size |\n| `pct.1`, `pct.2` | expression fractions for the two groups |\n| `p_val_adj` | adjusted p-value |\n\nThe significance rule for this task is `p_val_adj < 0.05`; no additional raw-p or fold-change threshold is applied.\n\n## Significant-Gene Counts by Cell Type\n\nThe gene symbol and `p_val_adj` fields have no missing values in any of the seven worksheets, and gene symbols passing the threshold contain no duplicates. Therefore, the significant-row count, nonmissing-gene count, and unique-gene count are identical.\n\n| Cell_Type | data rows | p_val_adj < 0.05 rows | unique significant genes |\n|---|---:|---:|---:|\n| Treg | 69 | 13 | 13 |\n| CD14 Mono | 316 | 305 | 305 |\n| CD16 Mono | 973 | 240 | 240 |\n| cDC2 | 353 | 1 | 1 |\n| pDC | 2,519 | 0 | 0 |\n| gdT | 63 | 4 | 4 |\n| ILC | 645 | 1 | 1 |\n\nThere is no `p_val_adj == 0.05` in the complete data; the nearest values on either side of the threshold are `0.0491426157886242` and `0.052012027609455`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the immune-cell types included after AAV9 mini-dystrophin treatment and the adjusted-p-value field used to call differential expression.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Analysis Scope and Fields\n\nThe archived analysis selects seven worksheets from the same workbook:\n\n```text\nTreg, CD14 Mono, CD16 Mono, cDC2, pDC, gdT, ILC\n```\n\nThe fields in each worksheet are:\n\n| Column | meaning/use |\n|---|---|\n| `Unnamed: 0` | gene symbol |\n| `p_val` | raw p-value |\n| `avg_log2FC` | effect direction/size |\n| `pct.1`, `pct.2` | expression fractions for the two groups |\n| `p_val_adj` | adjusted p-value |\n\nThe significance rule for this task is `p_val_adj < 0.05`; no additional raw-p or fold-change threshold is applied.\n\n## Significant-Gene Counts by Cell Type\n\nThe gene symbol and `p_val_adj` fields have no missing values in any of the seven worksheets, and gene symbols passing the threshold contain no duplicates. Therefore, the significant-row count, nonmissing-gene count, and unique-gene count are identical.\n\n| Cell_Type | data rows | p_val_adj < 0.05 rows | unique significant genes |\n|---|---:|---:|---:|\n| Treg | 69 | 13 | 13 |\n| CD14 Mono | 316 | 305 | 305 |\n| CD16 Mono | 973 | 204 | 204 |\n| cDC2 | 353 | 1 | 1 |\n| pDC | 2,519 | 0 | 0 |\n| gdT | 63 | 4 | 4 |\n| ILC | 645 | 1 | 1 |\n\nThere is no `p_val_adj == 0.05` in the complete data; the nearest values on either side of the threshold are `0.0491426157886242` and `0.052012027609455`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFor each included cell type, count unique genes with p_val_adj below 0.05.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for This Task\n\n## Analysis Scope and Fields\n\nThe archived analysis selects seven worksheets from the same workbook:\n\n```text\nTreg, CD14 Mono, CD16 Mono, cDC2, pDC, gdT, ILC\n```\n\nThe fields in each worksheet are:\n\n| Column | meaning/use |\n|---|---|\n| `Unnamed: 0` | gene symbol |\n| `p_val` | raw p-value |\n| `avg_log2FC` | effect direction/size |\n| `pct.1`, `pct.2` | expression fractions for the two groups |\n| `p_val_adj` | adjusted p-value |\n\nThe significance rule for this task is `p_val_adj < 0.05`; no additional raw-p or fold-change threshold is applied.\n\n## Significant-Gene Counts by Cell Type\n\nThe gene symbol and `p_val_adj` fields have no missing values in any of the seven worksheets, and gene symbols passing the threshold contain no duplicates. Therefore, the significant-row count, nonmissing-gene count, and unique-gene count are identical.\n\n| Cell_Type | data rows | p_val_adj < 0.05 rows | unique significant genes |\n|---|---:|---:|---:|\n| Treg | 69 | 31 | 31 |\n| CD14 Mono | 316 | 305 | 305 |\n| CD16 Mono | 973 | 204 | 204 |\n| cDC2 | 353 | 1 | 1 |\n| pDC | 2,519 | 0 | 0 |\n| gdT | 63 | 4 | 4 |\n| ILC | 645 | 1 | 1 |\n\nThere is no `p_val_adj == 0.05` in the complete data; the nearest values on either side of the threshold are `0.0491426157886242` and `0.052012027609455`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhich immune-cell type has the largest significant-gene count, and what is that count?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Up/down, enrichment significance, and primary direction can each receive wrong definitions.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "3013822ddea898290afc84c8e19610ae3f12083bc7fd1fc043b19590f280869b",
+  "strict_non2x_original_semantic_condition_id": "c30a0e32883f385eb9ab1d77540e12742e1a81b356491ba0e3c6babf16dfd30c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Treat display rank as enrichment significance and define primary as the direction with the largest maximum Overlap numerator; ignore adjusted p-values and gene identities.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

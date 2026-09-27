@@ -1,0 +1,54 @@
+{
+  "release_task_index": 350,
+  "task_id": "gpqa__reco8WSc71p8zAv4q",
+  "dataset": "gpqa",
+  "ordinal": 218,
+  "variant": "perturbed",
+  "conversation_id": "218::gpqa__reco8WSc71p8zAv4q::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "dd3166d0d4a28f850c27a2bca8c1458d5155acc1b50ee6fb4faf4799371c829b",
+  "semantic_condition_id": "3a2d4fef18440aa71e0b6eea26bc39d7df06e9816b1d58496e8ff67bb9dd5979",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cis-alkene dicarboxylic acid dehydrates to an anhydride with one proton-NMR signal near 7 ppm and carbon-13 signals near 137 and 165 ppm. Verify that this is maleic anhydride. Later evidence is a qualitative major/minor NOESY contrast rather than a calibrated distance measurement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What reaction occurs between the species identified above and 1,2,3,4-tetramethyl-1,3-cyclopentadiene, and which stereochemical product is normally major under that assignment?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the listed carbon-13 signal sets even though they carry proton integrations and multiplicities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the current structure, geometry, and diagnostic method, identify the two features linked by the strong observation that is weak or absent in the comparison product.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly does that observation support the assignment under the interpretation currently being used?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Given the qualitative major/minor NOESY evidence and its stated confidence, what additional measurement, if any, is warranted?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the diagnostic feature pair and its interpretation under the current assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

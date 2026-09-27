@@ -1,0 +1,42 @@
+{
+  "task_index": 119,
+  "task_id": "119-capsule034",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "34c62ce1a5af7d455ed688023887111e210a3be5404be61e2f816b6e610b82fe",
+  "source_base_evidence_sha256": "13caba5c12b76648bb394b9949ebfc464351d4d8455a259e125f1390d150f92e",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Input-age dimension changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient scale independently changed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Output effect scale independently relabeled.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Interpret listed ages as months without conversion.",
+    "T2": "Treat the coefficient as per decade without rescaling.",
+    "T3": "Label the log-odds coefficient as a percentage-point probability change per year."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

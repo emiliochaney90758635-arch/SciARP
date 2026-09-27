@@ -1,0 +1,44 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "Inactive filter is wrongly activated.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Ranking metric is independently changed.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Activate the commented abs(LFC)>0.58 filter.",
+    "T6": "Choose the smallest-padj gene rather than the largest positive effect."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Apply abs(log2FoldChange)>0.58 only to the ten displayed rows."
+    },
+    {
+      "turn_id": "T6",
+      "content": "Among those ten rows, choose the smallest-adjusted-p row rather than the largest positive effect and report GRIK5 at 3.83."
+    }
+  ]
+}

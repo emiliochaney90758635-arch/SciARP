@@ -1,0 +1,22 @@
+{
+  "subclass": "3.3",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "uses undeduplicated table rows instead of unique GeneIDs",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "double-subtracts overlaps from an already exclusive cell",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

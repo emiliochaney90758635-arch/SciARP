@@ -1,0 +1,59 @@
+{
+  "release_task_index": 375,
+  "task_id": "gpqa__recL9MFV5zmdlle5T",
+  "dataset": "gpqa",
+  "ordinal": 244,
+  "variant": "perturbed",
+  "conversation_id": "244::gpqa__recL9MFV5zmdlle5T::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "851107623b78ae8e5acaa7467d1ccd3f406ce239b8bc8f10f77e39cc78f87dce",
+  "semantic_condition_id": "70fc68633f3fad1e9d3920a0868862fad96d0169658ef4422dcd970d4959d163",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the scaffold as a disubstituted aliphatic six-membered ring while retaining aromatic-proton signals.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the first spectroscopic assignment and signal pattern established above to infer the simplest first ring-attached fragment and its composition contribution.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the second splitting pattern and remaining signal established above to infer the other substituent and its composition contribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the aromatic scaffold with the two fragments identified spectroscopically to derive the molecular formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show the component counts implied by that derived composition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the resulting composition at the evidential confidence established above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check its internal consistency with the structural and spectral features retained above and compute the corresponding degree of unsaturation.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the molecular formula and summarize how the two spectroscopic fragments support it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

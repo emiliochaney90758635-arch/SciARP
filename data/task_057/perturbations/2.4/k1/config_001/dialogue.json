@@ -1,0 +1,40 @@
+{
+  "release_task_index": 57,
+  "task_id": "057-capsule015",
+  "source_id": "bix-19-q1",
+  "dataset": "bixbench",
+  "ordinal": 57,
+  "variant": "perturbed",
+  "conversation_id": "057::057-capsule015::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "42e19ba9a7e8596308c628c17c39751ae41fc1066bf885d2acbffc257a7508bb",
+  "semantic_condition_id": "9ed0feea48cda265876df7d2411bf55d8d5f7a70334882b12ff4584f54382c14",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original NeuN counts for KD and CTRL\n\nThe hemisphere field in the original CSV is misspelled `Hemispere`; the analysis only renames it `Hemisphere`. The relevant fields contain no missing values.\n\n| Sample | Sex | KD NeuN | CTRL NeuN |\n|---:|---|---:|---:|\n| 1 | M | 221 | 237 |\n| 2 | F | 233 | 223 |\n| 3 | M | 221 | 246 |\n| 4 | F | 215 | 179 |\n| 5 | M | 216 | 198 |\n| 6 | F | 208 | 194 |\n| 7 | M | 202 | 200 |\n| 8 | F | 200 | 208 |\n\n## Effect-size definition\n\nWithin-group standard deviations use \\(n-1\\) in the denominator. The archived analysis uses an independent-groups pooled SD and fixes the direction as `KD - CTRL`:\n\n```text\nSD_pooled\n  = sqrt(((n_KD-1)SD_KD² + (n_CTRL-1)SD_CTRL²)\n         / (n_KD+n_CTRL-2))\n\nCohen's d\n  = (mean_KD - mean_CTRL) / SD_pooled\n```\n\n## Power model\n\nThe archived analysis passes the \\(d\\) obtained from the data above directly to an equal-allocation power model for an independent two-sample t-test:\n\n```python\nanalysis = TTestIndPower()\nsample_size = analysis.solve_power(\n    effect_size=cohens_d,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\nrequired_integer_n = np.ceil(sample_size)\n```\n\n`ratio` uses its default value of 1, so `sample_size` is the continuous sample size per group. The integer sample size must be rounded upward to ensure that the target power is met rather than undershot.\n\nArchived power outputs from the same statistical model near the continuous solution are:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n\n# Monte Carlo design assurance report\n\n**Source:** Experimental Design Core, simulation run `EDC-NEUN-T2-40K`\n**Scope:** Equal-size KD and CTRL groups; two-sided independent \\(t\\) test; nominal \\(\\alpha=0.05\\)\n**Method:** Forty thousand datasets were generated at each candidate group size from resampled pilot residuals while preserving the pilot mean difference and group-specific variance. Achieved power is the fraction of replicates with \\(p<0.05\\).\n\n| Samples per group | Significant replicates | Total replicates |\n|---:|---:|---:|\n| 344 | 31,671 | 40,000 |\n| 348 | 31,842 | 40,000 |\n| 352 | 31,963 | 40,000 |\n| 356 | 32,081 | 40,000 |\n| 360 | 32,194 | 40,000 |\n\nThe assurance criterion is the smallest evaluated group size whose rejection fraction is at least 0.80.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm the KD and CTRL NeuN-count vectors and calculate each group's sample size, mean, and sample standard deviation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those summaries to calculate the independent-groups pooled standard deviation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate Cohen's d in the KD-minus-CTRL direction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that effect size, what minimum integer sample size per group reaches the target power?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

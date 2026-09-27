@@ -1,0 +1,31 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T6",
+      "root": "Largest effect is distorted into pre-subset largest absolute effect.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T6": "Report the largest log2 fold change by taking the largest absolute value in the full significant set before applying the positive-effect restriction."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T6",
+      "content": "Define the `largest log2 fold change` as the second-largest positive effect in the displayed ranking, and report AC021504.1 at 4.51."
+    }
+  ]
+}

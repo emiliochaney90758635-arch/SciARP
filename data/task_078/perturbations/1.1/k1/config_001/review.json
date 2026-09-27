@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "Outcome aggregation changes every downstream model result.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "49b410b364b43fc1c92460632483eb577375bb961a6c76de1b7bfe66e93dba23",
+  "strict_non2x_original_semantic_condition_id": "cab5eda954f5d1dca6fd8668669ec24ff365a4e5ea92d9cc5b9100a915c3984f",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the changed outcome definition scorable by explicitly carrying the archived interaction.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

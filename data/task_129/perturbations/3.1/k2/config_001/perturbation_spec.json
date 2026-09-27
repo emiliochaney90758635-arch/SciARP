@@ -1,0 +1,34 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Selected-row state contradicted.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ranking state independently contradicted.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "State that 1,492 rows pass the filters.",
+    "T4": "Claim the retained list is ordered by descending Adjusted P-value while calling it the requested top 20."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

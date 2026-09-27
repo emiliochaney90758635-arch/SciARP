@@ -1,0 +1,57 @@
+{
+  "config_id": "task053_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "use population SD",
+      "injected_text": "Calculate the sample standard deviation using n-1 in the variance denominator.\n\nFor this perturbed step, use population SD",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "divide by n rather than sqrt(n) for SEM",
+      "injected_text": "What standard error of the mean follows from that sample standard deviation and sample size?\n\nFor this perturbed step, divide by n rather than sqrt(n) for SEM",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Using population SD and merely calling it sample SD is one root.",
+    "before": "Population SD followed by a label change.",
+    "after": "At T2 use population SD; at T3 divide by n rather than sqrt(n) for SEM.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate the population standard deviation using n in the variance denominator."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the standard error by dividing that standard deviation by n rather than by the square root of n."
+    }
+  ]
+}

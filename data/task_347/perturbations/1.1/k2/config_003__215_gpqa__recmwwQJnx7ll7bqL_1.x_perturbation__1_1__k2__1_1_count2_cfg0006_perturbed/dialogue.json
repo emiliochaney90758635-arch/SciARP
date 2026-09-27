@@ -1,0 +1,49 @@
+{
+  "release_task_index": 347,
+  "task_id": "gpqa__recmwwQJnx7ll7bqL",
+  "dataset": "gpqa",
+  "ordinal": 215,
+  "variant": "perturbed",
+  "conversation_id": "215::gpqa__recmwwQJnx7ll7bqL::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "963b1a1735919db45f50b3fcc47d648c09f81c26450fd9e65df1cb2c1601012c",
+  "semantic_condition_id": "a8eb961b9d9b34012febaa925c644260e0fb2248c7d565388bd65e29d79319e7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle of mass m moves in the three-dimensional isotropic potential V(r)=(1/2)m omega^2 r^2. Identify the quantum system and write its energy in terms of the total oscillator quantum number N.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the third excited shell, determine N and use the spectrum just obtained to calculate its energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the independent classical trajectories at that energy by enumerating nonnegative Cartesian oscillator triples with sum N.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Verify the number of classical trajectories with the formula for nonnegative integer triples summing to N.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the count using the allowed angular-momentum sectors. Why would counting only one value of l undercount the energy eigenspace?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the third-excited-shell energy and the number of linearly independent eigenfunctions at that energy.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

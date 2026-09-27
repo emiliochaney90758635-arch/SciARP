@@ -1,0 +1,49 @@
+{
+  "release_task_index": 613,
+  "task_id": "scibench__stat-sol-006",
+  "dataset": "scibench",
+  "ordinal": 394,
+  "variant": "perturbed",
+  "conversation_id": "394::scibench__stat-sol-006::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "93fcf07b691745383537893b5456215edac80ce508bff5a0eaa718ed9762262c",
+  "semantic_condition_id": "9b1f8ada517f885c779ccdd67a1c6c034e66de8fde558ea4e5526e4bf661ebae",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cards are drawn without replacement from a 52-card deck containing 13 spades. Translate the event 'the third spade appears on draw six' into conditions on the first five draws and the sixth draw.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Describe a combinatorial spade-position model for this event and identify the total number of ways to place the 13 spades among 52 draw positions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the favorable spade-position configurations in which exactly two of the first five positions and the sixth position are spades.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the probability using a 52-card deck containing 14 spades and evaluate it to three decimal places.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result independently as P(exactly two spades in the first five) times P(the sixth card is a spade given that event).",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact combinatorial expression, decimal probability, and event interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 140,
+  "task_id": "gpqa__rec06pnAkLOr2t2mp",
+  "dataset": "gpqa",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "002::gpqa__rec06pnAkLOr2t2mp::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3c2a21bdc59b1ae277aba713bc8e793b7ea7b7e4e8c092c6037c70466c88e243",
+  "semantic_condition_id": "424e6535a14d3eb0b08b07495d100fcc9e79a611740933da5312807526edbb87",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Relate a quantum state's lifetime tau to its natural energy linewidth, and write the estimates for tau1=1e-9 s and tau2=1e-8 s symbolically.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hbar=6.58e-16 eV s, calculate both linewidths.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What order-of-magnitude energy separation is needed to resolve the two levels clearly?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain whether the broader linewidth or the sum of linewidths sets the relevant scale, and why equality with that scale is not clear resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "At the final step replace tau1=1e-9 s by tau1=1e-6 s, then state the resolvable separation.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

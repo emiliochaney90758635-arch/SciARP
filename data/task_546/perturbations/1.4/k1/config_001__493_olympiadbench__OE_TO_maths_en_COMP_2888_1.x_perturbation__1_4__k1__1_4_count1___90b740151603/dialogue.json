@@ -1,0 +1,54 @@
+{
+  "release_task_index": 546,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2888",
+  "dataset": "olympiadbench",
+  "ordinal": 493,
+  "variant": "perturbed",
+  "conversation_id": "493::olympiadbench__OE_TO_maths_en_COMP_2888::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "9dd9b0d4e78b02174e14dd625980372e76dede8a2149eb20f0168fcfdc230cbf",
+  "semantic_condition_id": "d0e9efc5f3bb55fb5fc45e5ebf94c7c59b9453cdf333712e367b0efb066cf405",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Triangle ABC has side lengths AB=4, BC=6, and AC=8. Use the law of cosines to find cos(angle ABC).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place B=(0,0) and A=(4,0), with C above the x-axis. Find the exact coordinates of C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the square ABQR, determine the coordinates of Q without being told on which side of AB the square lies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The square BCST is also exterior to the triangle. Determine the coordinates of T in the same coordinate system.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the geometry of the two external squares to find BQ and BT and to relate angle QBT to angle ABC.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that angle relation directly from the vectors BQ and BT, including the sign of its cosine.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the resulting side lengths and included angle to compute QT in exact radical form, and verify the squared distance from the coordinates.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 616,
+  "task_id": "scibench__stat-sol-013",
+  "dataset": "scibench",
+  "ordinal": 397,
+  "variant": "perturbed",
+  "conversation_id": "397::scibench__stat-sol-013::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "cb4785ed3510df4fb6d6ddd5eb19594ab518c13a48dd0da39ca378344b79de77",
+  "semantic_condition_id": "0d09b569f4538933e8df75d73df7d71c3d9ff7f42d340adf7b944bd903740344",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In one observational experiment, P(A)=0.7, P(B)=0.3, and P(A intersect B)=0.2. The quantity of interest is the probability of A after learning that the outcome belongs to B. Explain in words what restricting attention to outcomes in B means.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare P(A intersect B) with P(A)P(B). What association, if any, is suggested between A and B, and can these observational probabilities establish that membership in B causes membership in A?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write 'the probability of A given B' in standard conditional-probability notation, keeping the conditioning direction explicit.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the independence product formula P(A intersect B)=P(A)P(B) as the formula for the requested probability, while still assuming P(B)>0.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute P(A intersect B)=0.2 and P(B)=0.3 into the formula, but leave the resulting ratio unsimplified.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the ratio and compare the conditional probability P(A given B) with the marginal probability P(A)=0.7.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the result by partitioning B into A intersect B and its complement within B. Does the calculation satisfy the probability bounds and use the intended conditioning direction?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final conditional probability and give one concise interpretation for the original observational population, without making a causal claim.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

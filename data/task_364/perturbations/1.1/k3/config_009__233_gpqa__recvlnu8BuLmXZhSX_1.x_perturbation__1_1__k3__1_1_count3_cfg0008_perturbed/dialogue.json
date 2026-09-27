@@ -1,0 +1,54 @@
+{
+  "release_task_index": 364,
+  "task_id": "gpqa__recvlnu8BuLmXZhSX",
+  "dataset": "gpqa",
+  "ordinal": 233,
+  "variant": "perturbed",
+  "conversation_id": "233::gpqa__recvlnu8BuLmXZhSX::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "9494d3f4a31811fdfd0ca091f60afb43d18de4e7968d6ffe9e5f8bd705441883",
+  "semantic_condition_id": "7eaaac730ecfbc6daf3378e4bb45bd08a743871e26376a1ac3176f64054b0141",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The state is (-1,2,1)^T and the observable is P=[[0,1/sqrt(2),0],[1/sqrt(2),0,1/sqrt(2)],[0,1/sqrt(2),0]]. Find a vector spanning P's zero-eigenvalue eigenspace.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Normalize the eigenvalue scalar for outcome zero and verify it by applying P.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Normalize the probability vector (-1,2,1)^T and state its squared norm.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the inner product of the normalized state with the normalized zero-eigenvalue eigenvector and compute the scalar needed for the Born-rule probability.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the eigenvalue itself lies in a normalized outcome distribution and state the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the norms of the state and zero-eigenvalue eigenvector, and distinguish the projection amplitude from its squared Born-rule probability.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the probability of obtaining the zero outcome.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

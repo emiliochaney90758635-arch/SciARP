@@ -1,0 +1,45 @@
+{
+  "release_task_index": 2,
+  "task_id": "002-capsule002",
+  "source_id": "bixbench-m2-002-capsule002",
+  "dataset": "bixbench",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "002::002-capsule002::1.4.k2::lane_a_manual",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "7b5b0b8f07fbdfff2392b2d2d3d413549f3a0d71e951ccd64699e6a7d8d0e21f",
+  "semantic_condition_id": "fcf78cbe0b5eb298e9ec9f49d17c0c1883dd1c40b6b6de8500b47adeac53bfeb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## BLM-carrier sample manifest\n\nThe cohort table uses the fields `Sample ID`, `Status`, `Sex`, `BLM Mutation Status`, `Age`, and `Cancer`.\n\n| Sample ID | Status | Sex | BLM Mutation Status | Age | Cancer | Variant workbook available |\n|---:|---|---|---|---:|---|---|\n| 185 | Father | M | Carrier | 37.0 | N | yes |\n| 184 | Mother | F | Carrier | 31.7 | N | yes |\n| 285 | Father | M | Carrier | 30.9 | N | yes |\n| 287 | Mother | F | Carrier | 28.4 | N | yes |\n| 353 | Father | M | Carrier | 33.2 | N | yes |\n| 354 | Mother | F | Carrier | 24.1 | N | yes |\n| 556 | Father | M | Carrier | 64.55 | N | yes |\n| 557 | Mother | F | Carrier | 62.6 | N | yes |\n| 533 | Father | M | Carrier | 36.3 | N | no |\n| 381 | Mother | F | Carrier | 33.5 | N | yes |\n| 396 | Father | M | Carrier | 24.7 | N | yes |\n| 397 | Mother | F | Carrier | 23.4 | N | yes |\n| 489 | Father | M | Carrier | 29.0 | N | yes |\n| 490 | Mother | F | Carrier | 30.1 | N | yes |\n| 499 | Father | M | Carrier | 30.6 | N | yes |\n| 500 | Mother | F | Carrier | 35.0 | N | yes |\n| 503 | Father | M | Carrier | 45.9 | N | yes |\n| 504 | Mother | F | Carrier | 45.3 | N | yes |\n| 613 | Father | M | Carrier | 27.2 | N | yes |\n| 614 | Mother | F | Carrier | 23.3 | N | yes |\n\nNumeric identifiers are represented with a `P` prefix when joined to the variant records. Sample 533 has no matching variant workbook, leaving 19 carrier samples with usable calls.\n\n## Variant fields and filtering semantics\n\nThe variant records have the following relevant headers:\n\n```text\nChr:Pos | Ref/Alt | Zygosity | Read Depths (DP) |\nGenotype Qualities (GQ) | Variant Allele Freq |\nGene Names | Sequence Ontology (Combined) | Filter | In_CHIP\n```\n\nThe supplied records have already passed `DP > 10`, `GQ > 20`, `Filter = PASS`, and `In_CHIP = True`. Subsequent filtering removes missing zygosity, `Zygosity = Reference`, missing ontology, and ontology values exactly equal to:\n\n```text\nintron_variant\nintergenic_variant\n3_prime_UTR_variant\n5_prime_UTR_variant\n```\n\nThese are exact-string exclusions; they are not a rule for discarding other composite annotations.\n\nVAF bins are mutually exclusive and exhaustive:\n\n```text\nlow:    VAF < 0.3\nmiddle: 0.3 <= VAF <= 0.7\nhigh:   VAF > 0.7\n```\n\n## Per-sample filtering and VAF counts\n\nEach row is one sample-level workbook after applying the definitions above.\n\n| Sample | Raw rows | Non-reference rows | Rows after ontology filter | VAF < 0.3 | 0.3 <= VAF <= 0.7 | VAF > 0.7 |\n|---|---:|---:|---:|---:|---:|---:|\n| P185 | 643 | 127 | 44 | 3 | 21 | 20 |\n| P184 | 650 | 145 | 56 | 4 | 30 | 22 |\n| P285 | 650 | 144 | 57 | 1 | 31 | 25 |\n| P287 | 650 | 128 | 49 | 6 | 25 | 18 |\n| P353 | 647 | 131 | 47 | 2 | 20 | 25 |\n| P354 | 651 | 108 | 47 | 2 | 27 | 18 |\n| P556 | 649 | 133 | 56 | 1 | 40 | 15 |\n| P557 | 643 | 149 | 58 | 5 | 38 | 15 |\n| P381 | 705 | 133 | 47 | 1 | 31 | 15 |\n| P396 | 650 | 135 | 47 | 0 | 23 | 24 |\n| P397 | 650 | 120 | 43 | 3 | 16 | 24 |\n| P489 | 641 | 150 | 66 | 3 | 33 | 30 |\n| P490 | 650 | 119 | 50 | 4 | 28 | 18 |\n| P499 | 646 | 142 | 54 | 2 | 37 | 15 |\n| P500 | 652 | 161 | 54 | 1 | 40 | 13 |\n| P503 | 641 | 118 | 46 | 2 | 25 | 19 |\n| P504 | 636 | 126 | 57 | 1 | 29 | 27 |\n| P613 | 645 | 165 | 58 | 5 | 32 | 21 |\n| P614 | 644 | 123 | 47 | 1 | 31 | 15 |\n| **Column total** | **12,343** | **2,557** | **983** | **47** | **557** | **379** |\n\nThe three VAF-bin totals close exactly against the filtered population:\n\n```text\n47 + 557 + 379 = 983\n```\n\nFor a requested proportion, the statistical unit is a filtered CHIP-call row, not a person:\n\n```text\nproportion = qualifying filtered call rows / all filtered call rows\n```\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the BLM-carrier cohort to analyze without specifying whether a matching variant workbook is required for inclusion.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Filter the eligible variant rows by zygosity without specifying how missing values or the `Reference` category should be handled.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the stated exact-string ontology exclusions to define the final VAF-analysis rows.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Tabulate those rows across the three VAF intervals and verify that the bins sum to the parent set.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using filtered call rows as the statistical unit, calculate the proportion with VAF below 0.30.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

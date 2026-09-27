@@ -1,0 +1,64 @@
+{
+  "release_task_index": 254,
+  "task_id": "gpqa__recZZpGHxfDeYd0XV",
+  "dataset": "gpqa",
+  "ordinal": 122,
+  "variant": "perturbed",
+  "conversation_id": "122::gpqa__recZZpGHxfDeYd0XV::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "571d0b0a2b19d34d6b5ca9989ef57b17511c020e34d6add02794f2f71e0249a5",
+  "semantic_condition_id": "54d197a7af2a9ec1f0831a2ba3fda34c32a707f19bdc9c84471c03e69df540a3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A meta-substituted benzoic acid is converted to a salt by a mild base that gives a brown precipitate with Nessler's reagent, and heating gives B. Identify the base and functional class of B.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "B reacts with an element that is liquid at room temperature in the presence of base. Identify the element, the reaction, and the product class D.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For this conversion, how should electron-donating and electron-withdrawing ring substituents affect aryl migration and overall reactivity?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Because each substituent is meta to the amide-derived reaction center, compare inductive and field effects rather than direct ortho/para resonance. Why is meta-hydroxy less withdrawing than meta-formyl here?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Formulate a consistent substituent-effect criterion for ranking the four meta-substituted aryl amides in the Hofmann rearrangement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Rank the four meta substituents while treating meta-hydroxy as more electron withdrawing than meta-formyl.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Express the decreasing order using the full names of the four currently specified positional isomers and justify it from the substituent effects applicable to that relationship.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the order against formation of intermediate B, the subsequent rearrangement, and the positional-effect criterion established above.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final decreasing reactivity order for the compounds currently under comparison.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

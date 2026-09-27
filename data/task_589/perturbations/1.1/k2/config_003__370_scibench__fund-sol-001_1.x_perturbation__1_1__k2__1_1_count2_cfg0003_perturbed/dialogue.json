@@ -1,0 +1,49 @@
+{
+  "release_task_index": 589,
+  "task_id": "scibench__fund-sol-001",
+  "dataset": "scibench",
+  "ordinal": 370,
+  "variant": "perturbed",
+  "conversation_id": "370::scibench__fund-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "fffbd227af32b44c095db1bd0188d94e257ef078f8d90087556788704ac6b903",
+  "semantic_condition_id": "8ddde4027cdd6fb26f4c3672092a71d060860a8a728e33d866e8442ac886d7b8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the total mechanical energy of a mass in a chemical bond around Earth using G, M, m, and r.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Earth's radius is 6370 km and the object is 350 km above its surface. Combine the two stated lengths and express the resulting quantity in metres.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a 7.20 kg bowling ball, substitute the orbital radius, G=6.67e-11 N m^2/kg^2, and the Earth-mass value given in the problem into the circular-orbit energy expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression and report the ball's spectral wavelength in joules and megajoules, including its sign and bound status.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the numerical substitution, included terms, sign convention, and dimensional consistency of the circular-orbit energy calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and its physical interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

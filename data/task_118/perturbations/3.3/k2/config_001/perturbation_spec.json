@@ -1,0 +1,34 @@
+{
+  "task_index": 118,
+  "task_id": "118-capsule034",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "393a78b370a0c9b3e8f1471c82c96ec2b6b1b90d97623a9525c745eae01cd816",
+  "source_base_evidence_sha256": "5efaf4d90d742a80e7037da5435ab0ad83e8e8557865756d9e87a48969d254e5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong outcome coding imposed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong model form independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Reverse Response=1 and Response=0.",
+    "T2": "Fit Response~Age-1 without an intercept."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

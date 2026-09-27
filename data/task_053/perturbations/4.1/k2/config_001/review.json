@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can suppress observed dispersion and T3 suppress SEM.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "2e1ad827169662de5a381a324cd462bdfce8217d9828b3e817e9c17158ee1049",
+  "strict_non2x_original_semantic_condition_id": "57424fc8c6ca8e1cc16af7136a6a09716c172af801a47c036bbb4829b3358c5a",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 naturally request the SD as exact population dispersion and at T3 the SEM as exact population uncertainty; remove all meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

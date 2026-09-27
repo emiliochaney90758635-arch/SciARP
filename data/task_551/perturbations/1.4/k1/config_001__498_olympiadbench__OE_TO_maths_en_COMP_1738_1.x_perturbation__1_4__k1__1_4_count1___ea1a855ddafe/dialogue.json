@@ -1,0 +1,64 @@
+{
+  "release_task_index": 551,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1738",
+  "dataset": "olympiadbench",
+  "ordinal": 498,
+  "variant": "perturbed",
+  "conversation_id": "498::olympiadbench__OE_TO_maths_en_COMP_1738::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "72c1b6940bc23f7829073a1a36b3090450881df2d6d889a50ba40cf3c8ff18e4",
+  "semantic_condition_id": "00c76bce9e2bb042172e507725936d5c844580e4725654e22f383903cca9831f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For x^2 + 7, exhibit a representation as a sum of squares of polynomials in Q[x] that gives an upper bound for the smallest possible number of summands.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "To test whether four summands could suffice, allow zero terms and write f_i(x) = a_i x + b_i for i = 1, ..., 4. Justify the degree bound and compare coefficients to obtain the equations for the rational numbers a_i and b_i.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Before testing the coefficient system, explain why finding real solutions would not settle the problem and why the analysis must remain over Q.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the rational descent, set p_i = a_i + b_i. Use the coefficient equations to compute sum p_i^2, sum q_i^2, and sum p_i q_i.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Choose a positive common denominator m for all p_i and q_i, clear denominators, and state the resulting three equations for integers x_i = m p_i and y_i = m q_i.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Prove the needed parity fact for four integer squares whose sum is divisible by 8, and apply it to the two square-sum equations to determine the parity of every x_i and y_i.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the dot-product equation to determine the parity of m. Then show how dividing x_i, y_i, and m by 2 would produce another solution of the same integer system.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why choosing a solution with the smallest positive m makes the descent from the previous step impossible, and state what this proves about a four-square representation over Q[x].",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Combine that obstruction with the explicit construction from the first step to determine the smallest possible n.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

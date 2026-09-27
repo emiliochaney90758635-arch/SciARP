@@ -1,0 +1,49 @@
+{
+  "release_task_index": 337,
+  "task_id": "gpqa__rechKl68Uc6H7vU0N",
+  "dataset": "gpqa",
+  "ordinal": 205,
+  "variant": "perturbed",
+  "conversation_id": "205::gpqa__rechKl68Uc6H7vU0N::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "4fdbdf1ba2a81af351ad490cb41f57b4a6f90b7183ce1ee7686d0beca25c7738",
+  "semantic_condition_id": "8d92766dcd30a44d62d8a4669c4c2524a4d065759ed79545ebf8a43f5385dd56",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 2-ethyl-2,6-dimethylcyclohexan-1-one, identify the enolizable alpha carbon under t-BuOK and trace its Michael addition to ethyl acrylate.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For 1-nitropropane with KOH and (E)-but-2-enenitrile, form the nitronate and trace its conjugate addition to the activated alkene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the C6 enolate atom map to name the Michael-addition product of the cyclohexanone reaction with correct ring numbering.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine two spectral interpretations rather than the reaction atom maps to name the products.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check carbon conservation, retention of the ketone or nitrile, and the absence of a leaving group in both conjugate additions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the two products and identify the nucleophile and electrophile in each reaction.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

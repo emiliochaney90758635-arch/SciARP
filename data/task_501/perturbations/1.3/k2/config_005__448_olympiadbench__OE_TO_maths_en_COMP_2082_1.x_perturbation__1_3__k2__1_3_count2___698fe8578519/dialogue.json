@@ -1,0 +1,54 @@
+{
+  "release_task_index": 501,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2082",
+  "dataset": "olympiadbench",
+  "ordinal": 448,
+  "variant": "perturbed",
+  "conversation_id": "448::olympiadbench__OE_TO_maths_en_COMP_2082::1.x::perturbation__1_3__k2__1_3_count2_cfg0003::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "51dea3233f6bad11461e57f9f8bbf725c5176e67e8107e4e9a6b69949a7d91f1",
+  "semantic_condition_id": "d2c355fd09771c00bf29159cf770f60c294d2feb375e5a15a3f82675e73b88d1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Each of 2009 nondegenerate triangles has one blue, one red, and one white side. Sort lengths within each colour as b_1<=...<=b_2009, b_1<=...<=b_2009, and w_1<=...<=w_2009. Prove that at least one same-index triple (b_j,r_j,w_j) forms a nondegenerate triangle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Check the strictness of that guarantee. If some sorted lengths coincide, does the argument still give a strict triangle inequality rather than a degenerate triangle?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "To test whether the guarantee is sharp, consider original triangles with one blue, one red, and one white side: (blue,red,white)=(3i,3i+1/2,1) for i=1,...,2008, and (3*2009,1,3*2009+1/2) for the last triangle. Verify that every original triple is nondegenerate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How does the colour assignment in the last triangle differ from the first 2008, and how will that affect sorting the red and white lengths separately?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Sort the constructed family by colour and write the blue, red, and white side-length sequences.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the exact condition for three lengths to form a nondegenerate triangle to the sorted triples (b_j,r_j,r_j). Determine which indices work, checking the first, intermediate, and last indices separately.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the universal guarantee with this example to determine the largest integer k that is always guaranteed.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

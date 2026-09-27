@@ -1,0 +1,59 @@
+{
+  "release_task_index": 529,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1838",
+  "dataset": "olympiadbench",
+  "ordinal": 476,
+  "variant": "perturbed",
+  "conversation_id": "476::olympiadbench__OE_TO_maths_en_COMP_1838::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b4370ca99d8d14338f76d7ee075952986365de398eede57fddb93a096c22827c",
+  "semantic_condition_id": "7660d289a0ec369c2d01e498f44f4d117e2d66b8dedc0f7b03ca4fc8abd8716f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Relabel five arbitrary positive real numbers so that a1<=a2<=a3<=a4<=a5. We seek the least universal C such that some two ratios using four distinct indices differ by at most C. Define r1=a1/a2, r2=a3/a4, r3=a1/a5, r4=a2/a3, and r5=a4/a5. Why does each ratio lie in (0,1]?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Encode an edge between two of these ratios when they use four distinct original indices. What graph is formed by the five consecutive pairs in the cyclic order r1,r2,r3,r4,r5?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check each of the five cycle edges explicitly while using r2=a2/a4, and verify that the two endpoint ratios use four distinct indices.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Partition (0,1] into (0,1/2] and (1/2,1], and color each ratio by the half containing it. What would it mean for the cycle if every edge joined different colors?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the graph you obtained to decide whether every edge can join different colors. What does that imply about finding an admissible pair in a single color class?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use your graph and coloring argument to obtain a universal upper bound for the difference of two ratios with four distinct indices.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "To test sharpness, take the five numbers (1,2,2,2,N) for sufficiently large positive N. Determine the smallest gap obtainable from two admissible ratios and its limit as N tends to infinity.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the universal bound with the sharpness family to determine the smallest possible constant C.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

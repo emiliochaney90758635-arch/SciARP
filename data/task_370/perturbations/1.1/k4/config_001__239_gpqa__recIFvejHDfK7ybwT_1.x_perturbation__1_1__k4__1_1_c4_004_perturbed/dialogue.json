@@ -1,0 +1,54 @@
+{
+  "release_task_index": 370,
+  "task_id": "gpqa__recIFvejHDfK7ybwT",
+  "dataset": "gpqa",
+  "ordinal": 239,
+  "variant": "perturbed",
+  "conversation_id": "239::gpqa__recIFvejHDfK7ybwT::1.x::perturbation__1_1__k4__1_1_c4_004::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "b3ae4702d3ca2a4d6a1ff35573839edc7890acacab230aa520e8378f4ba21f29",
+  "semantic_condition_id": "e2ad83c7dc04d696c71ee3acaa5850dccf9666cb4f730f687e8c7e14462f1957",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The observable of interest is an in-transit photometric signal. For a planet crossing a rotating star, which named spectroscopic radial-velocity effect should be compared between the two systems?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a central transit, state the approximate semi-amplitude scaling of this effect with planet radius, stellar radius, and stellar rotation speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the radius information to compute the planet-to-star mass-ratio comparison between the two systems.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the earlier scaling and radius-ratio result to compute the transit-duration ratio between the systems, including the threefold rotation factor.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the semi-amplitude comparison, identify which spectral line should be observed first and state the factor motivating that choice.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that the common stellar properties and central-transit geometry have been applied consistently with the radius and rotation-speed factors used in the priority comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Name the system that should receive the limited observing time first, and justify the priority from the transit-signal scaling and common-noise assumptions.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "023-capsule007",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits joint-event semantics.",
+    "Omits deduplication rules."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "88eaae6250b2de644125e069245248c1e2da4d7865da49b09787179fe9b8e455",
+  "configured_evidence_sha256": "88eaae6250b2de644125e069245248c1e2da4d7865da49b09787179fe9b8e455",
+  "evidence_unchanged": true
+}

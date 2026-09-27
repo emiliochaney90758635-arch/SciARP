@@ -1,0 +1,73 @@
+{
+  "config_id": "task056_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "omit Sample8 only from CTRL",
+      "injected_text": "Form separate KD and control NeuN vectors and calculate each group's sample size and mean.\n\nFor this perturbed step, omit Sample8 only from CTRL",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "use an unweighted average of group variances",
+      "injected_text": "Calculate both sample standard deviations and the independent-groups pooled standard deviation.\n\nFor this perturbed step, use an unweighted average of group variances",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "divide the mean difference by the sum of SDs",
+      "injected_text": "What is Cohen's d in the KD-minus-control direction?\n\nFor this perturbed step, divide the mean difference by the sum of SDs",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "Paired differences, pooled-SD use, and their final mixture form one hybrid chain rather than three independent roots.",
+    "before": "One hybrid paired/independent method propagated.",
+    "after": "At T1 omit Sample8 only from CTRL; at T2 use an unweighted average of group variances; at T3 divide the mean difference by the sum of SDs.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nForm separate KD and control NeuN vectors, but omit Sample 8 only from the control vector before calculating group sizes and means."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Calculate the group variances and use their unweighted arithmetic average as the pooled variance before taking its square root."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate Cohen's d by dividing the KD-minus-control mean difference by the sum of the two group standard deviations."
+    }
+  ]
+}

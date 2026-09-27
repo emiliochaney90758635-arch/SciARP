@@ -1,0 +1,24 @@
+{
+  "task_id": "028-capsule008",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits the model and unit definition."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "5ed170fc850281cce757c6e2c3de5f32dfab41338f0a4dc2c4a760852e28d0be",
+  "configured_evidence_sha256": "5ed170fc850281cce757c6e2c3de5f32dfab41338f0a4dc2c4a760852e28d0be",
+  "evidence_unchanged": true
+}

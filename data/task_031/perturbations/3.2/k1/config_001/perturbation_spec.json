@@ -1,0 +1,27 @@
+{
+  "task_id": "031-capsule009",
+  "subclass": "3.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Presupposes individual causal attribution."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a4bd0a3971366392e47e648ad6930977200f34018eb643ac5e5f0e35f3700f09",
+  "configured_evidence_sha256": "a4bd0a3971366392e47e648ad6930977200f34018eb643ac5e5f0e35f3700f09",
+  "evidence_unchanged": true
+}

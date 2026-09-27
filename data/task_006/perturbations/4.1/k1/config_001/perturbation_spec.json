@@ -1,0 +1,22 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Suppresses workflow scope and uncertainty in the only conclusion turn."
+  ],
+  "injection_turns": [
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "configured_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 215,
+  "task_id": "gpqa__recH8lrIXfvsjKMv2",
+  "dataset": "gpqa",
+  "ordinal": 83,
+  "variant": "clean",
+  "conversation_id": "083::gpqa__recH8lrIXfvsjKMv2::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "54300d41dcb80de3b9eed81ee8c9b55fa8ae46a7da473574c326201d98636181",
+  "semantic_condition_id": "027edddd5dd63391ccae44e4efc8d32ac1116ebc7288b4d5b8f9271ebb6add8c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Bicyclo[2.2.2]octan-2-one is irradiated with ultraviolet light, giving product 1 with the same molecular mass. Infer the likely photochemical product structure.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Product 1 is hydrogenated over palladium on carbon under H2. Determine product 2 from the structure proposed above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify the most deshielded proton in the 1H NMR spectrum of product 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the structural and experimental features that control how this observation should appear.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the analysis rule appropriate to the selected method and feature, and explain the predicted response.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine the resulting response for that feature.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the reaction sequence and available evidence are internally consistent with the assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the assignment and justify it from the evidence used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

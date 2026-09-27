@@ -1,0 +1,45 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "A newly attributed paper falsely denies use of apeglm shrinkage.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "The existing article independently reverses the reported sign balance.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "The existing audit independently claims all 21 samples were retained.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.2.k2"
+}

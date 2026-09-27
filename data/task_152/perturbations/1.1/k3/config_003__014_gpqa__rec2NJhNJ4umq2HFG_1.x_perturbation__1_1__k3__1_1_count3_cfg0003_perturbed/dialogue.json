@@ -1,0 +1,44 @@
+{
+  "release_task_index": 152,
+  "task_id": "gpqa__rec2NJhNJ4umq2HFG",
+  "dataset": "gpqa",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::gpqa__rec2NJhNJ4umq2HFG::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "02f9716deb95ab5a574635ca29deddae58ab487fbce1ac3247ae8c8cdd381045",
+  "semantic_condition_id": "6a5ca3250e28aae482c0abb287bccc2975582424e5ac3abbd101142fe30c612c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the scalar-field object sigma^(mu nu)=i/2[gamma^mu,gamma^nu], show its antisymmetry and count its components.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use its role in infinitesimal Dirac-spinor transformations and the angular-momentum decomposition to distinguish intrinsic spin from orbital angular momentum and four-momentum.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine whether the six sigma matrices generate gauge transformations or the full Poincare group, and identify any missing generators.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the conclusion against the distinction between Lorentz transformations and spacetime translations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the four-momentum vector represented by the gamma-matrix commutator and whether it generates gauge or Poincare transformations.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

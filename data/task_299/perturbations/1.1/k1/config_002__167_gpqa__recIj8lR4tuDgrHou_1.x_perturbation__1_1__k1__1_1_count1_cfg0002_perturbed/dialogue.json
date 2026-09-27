@@ -1,0 +1,54 @@
+{
+  "release_task_index": 299,
+  "task_id": "gpqa__recIj8lR4tuDgrHou",
+  "dataset": "gpqa",
+  "ordinal": 167,
+  "variant": "perturbed",
+  "conversation_id": "167::gpqa__recIj8lR4tuDgrHou::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6f8bca8b19310c1439a8c67c06cb0ed4cfe035979f2bdf1b6d53d59d55818064",
+  "semantic_condition_id": "7a9c8d3f37bdb588068ef90242c584c71ba1f2704a0d855fd79e74a38494b17f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For four identical spin-1/2 fermions in a one-dimensional infinite well, state the one-particle energies in units of E and the spin-orbital occupancy rule.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use classical equipartition to construct the quantum ground-state occupation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the lowest excited occupation obtained by the smallest allowed promotion and calculate its energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the next-lowest distinct allowed occupation and calculate its energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the ordered ground, first-excited, and second-excited energies.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no lower configuration is allowed under the particle statistics and occupancy rule established in the first two turns.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the three energies and occupation patterns.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

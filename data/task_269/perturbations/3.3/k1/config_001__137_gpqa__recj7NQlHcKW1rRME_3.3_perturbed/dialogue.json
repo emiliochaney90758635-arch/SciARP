@@ -1,0 +1,54 @@
+{
+  "release_task_index": 269,
+  "task_id": "gpqa__recj7NQlHcKW1rRME",
+  "dataset": "gpqa",
+  "ordinal": 137,
+  "variant": "perturbed",
+  "conversation_id": "137::gpqa__recj7NQlHcKW1rRME::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "93f5fc9bf8c2e33d38fc9eff3f121f61d7c9e1c39ea8035a4956036ab3bfab53",
+  "semantic_condition_id": "01f7a652947b8d6ddf50624f1018bb8c6e40e994e97ff6befdf730bae464eb81",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At 25 C, enough stoichiometric AgCl is dissolved in aqueous ammonia to give 0.010 M total dissolved silver. Because dissolution also gives 0.010 M chloride, use Ksp(AgCl) = 1.56 x 10^-10 to determine the free Ag+ concentration. The desired final quantity is the analytical ammonia concentration initially charged, not just free NH3 at equilibrium.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let L=[NH3]free. Using beta1 = 2.1 x 10^3 and beta2 = 1.7 x 10^7, write the silver-complex relations and silver balance. Then impose the excess-ligand approximation C_NH3,analytical=[NH3]free as the sole ammonia-inventory rule, omitting ammonia bound in silver complexes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve that silver-balance equation for the physically meaningful free-ammonia concentration L.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the resulting L and free Ag+ to calculate the concentrations of Ag(NH3)+ and Ag(NH3)2+.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now account for both free and coordinated ligand. Evaluate the analytical ammonia inventory L + [Ag(NH3)+] + 2[Ag(NH3)2+].",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the silver and ammonia balances numerically and identify which dissolved silver species predominates.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the required analytical ammonia concentration and distinguish it clearly from the equilibrium free-ammonia concentration.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

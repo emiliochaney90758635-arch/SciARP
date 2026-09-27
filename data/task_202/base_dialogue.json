@@ -1,0 +1,69 @@
+{
+  "release_task_index": 202,
+  "task_id": "gpqa__recEitMlu2rOnMmkn",
+  "dataset": "gpqa",
+  "ordinal": 69,
+  "variant": "clean",
+  "conversation_id": "069::gpqa__recEitMlu2rOnMmkn::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "8c6245cf31dfb0507fcae684e73973732797595805a0a99413f7aa7676f1efb9",
+  "semantic_condition_id": "f199f387298f2fd51d09a80c53123ede47bd4b9452296e45acc6c5086d6484d2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A plane wave in medium 1 (n_1=1.75) strikes an interface with medium 2 (n_2=1.26) at 80 degrees. We want the lateral shift of the reflected beam. Which optical regime must be checked before calculating it?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which wave-optical approach describes this lateral displacement under total internal reflection, and why is specular ray tracing alone insufficient?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the critical angle from n_1 and n_2 and verify whether an incidence angle of 80 degrees lies in the total-internal-reflection regime.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For parallel polarization, write the standard lateral-displacement expression in terms of the wavelength lambda in medium 1, the incidence angle i, and the ratio n_2/n_1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate n_2/n_1 and the square-root factor sqrt(sin^2(i)-(n_2/n_1)^2) at i=80 degrees.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Before inserting a numerical wavelength, explain how the wavelength lambda in medium 1 enters the displacement expression and fixes the output unit.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For lambda=400 nm in medium 1, substitute the ratio, square-root factor, incidence angle, and wavelength into the displacement formula and calculate the shift in nanometres.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Express the calculated shift as a fraction of the wavelength and check that its numerical scale is plausible.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the dimensions of the formula and describe its limiting behaviour as the incidence angle approaches the critical angle from above.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the lateral displacement in nanometres and name the optical effect.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

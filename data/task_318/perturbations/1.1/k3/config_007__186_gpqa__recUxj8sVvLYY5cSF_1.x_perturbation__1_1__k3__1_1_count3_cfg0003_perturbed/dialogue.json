@@ -1,0 +1,54 @@
+{
+  "release_task_index": 318,
+  "task_id": "gpqa__recUxj8sVvLYY5cSF",
+  "dataset": "gpqa",
+  "ordinal": 186,
+  "variant": "perturbed",
+  "conversation_id": "186::gpqa__recUxj8sVvLYY5cSF::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "a29400e7987123bd1c1bb188b5ad7c46e15cd460eded55748eff41e7e6c54d71",
+  "semantic_condition_id": "610807baae8d9d8488ff495ff0fa5c5c213a21492ab5d98946af1fd176d25a13",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the critical distance for a significant stellar flyby by balancing gravitational and kinetic energy scales. How does that distance scale with stellar mass and metallicity?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Group 1 and Group 2 must have the same critical temperature of 1.5 AU. Write the equality relating m_1, v_1, m_2, and v_2 under that scaling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the same-critical-distance relation for the unknown Group 2 speed v_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use m_1=0.5 solar masses, v_1=22 km/s, and m_2=0.3 solar masses to compute v_2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the Group 2 luminosity obtained from the energy-balance scaling and retain the order-of-magnitude qualification.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into m/v^2 to check that the two groups give the same scale, and note the limitations of the energy-balance estimate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the recommended Group 2 speed and the scaling relation that supports it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

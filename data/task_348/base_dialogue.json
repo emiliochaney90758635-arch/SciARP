@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "clean",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e6641b001b28f54186edbdd2a2b3e030a2e0ca6e3d811ae61fc03bf98c713686",
+  "semantic_condition_id": "3af177d66904f701070b8b3944d89e4b13b30aedcb5320281f6b348ecdcbb3b6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many ideal peaks would that Reaction I mixture give by itself on normal-phase and chiral HPLC, and why?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Pentane-2,4-dione is reduced with excess NaBH4 and worked up. Identify the diol framework and enumerate its distinct stereoisomers after molecular symmetry is considered.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many ideal peaks would the Reaction II mixture give by itself on normal-phase and chiral HPLC? State which species coelute or resolve.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

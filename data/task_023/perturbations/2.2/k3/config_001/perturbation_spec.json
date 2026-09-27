@@ -1,0 +1,28 @@
+{
+  "task_id": "023-capsule007",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article supplies one conflicting full/subset count pair.",
+    "The second supplies another pair.",
+    "The third reports 82 of 290 genes, or 28.28%."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first percentage article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second percentage article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "82-of-290 article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

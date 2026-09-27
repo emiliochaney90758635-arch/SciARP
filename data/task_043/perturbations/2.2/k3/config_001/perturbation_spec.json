@@ -1,0 +1,44 @@
+{
+  "config_id": "task043_2.2_k3",
+  "subclass": "2.2",
+  "k": 3,
+  "injection_turns": [
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "source reports -0.063",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "source reports 0.2083 from 2/6 and 2/16",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "source misstates decimal-to-percentage-point reporting",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T6"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

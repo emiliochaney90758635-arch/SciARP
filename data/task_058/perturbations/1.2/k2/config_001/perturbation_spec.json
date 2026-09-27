@@ -1,0 +1,37 @@
+{
+  "config_id": "task058_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Enter power as 80 rather than 0.80."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Enter alpha as 5 rather than 0.05."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nSpecify the equal-allocation, two-sided independent two-sample t-test power model using target power 0.008 rather than 0.80."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Solve the model using alpha 0.50 rather than 0.05."
+    }
+  ]
+}

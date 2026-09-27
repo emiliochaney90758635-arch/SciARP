@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "VAF can be treated as percent and compared directly with 0.3%.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "4805af79cfd4c0c7da5c928c1fbc555d737a9c4f57752d0d3b90d4401a0707b9",
+  "strict_non2x_original_semantic_condition_id": "492a36eb14f02ba5e41e3bbc8f983bb5a7013b514af69b51d12308cf0128f2f7",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Convert VAF to percentage points, round each to the nearest whole percent before filtering, and apply strict rounded VAF <30%; this introduces a plausible but scorable scale/rounding error near the boundary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

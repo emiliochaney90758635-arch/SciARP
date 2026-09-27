@@ -1,0 +1,40 @@
+{
+  "release_task_index": 134,
+  "task_id": "134-capsule037",
+  "source_id": "bix-54-q4",
+  "dataset": "bixbench",
+  "ordinal": 134,
+  "variant": "perturbed",
+  "conversation_id": "134::134-capsule037::2.2::k3::perturbed::lane_d",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "958caa279417fa35bcbdd635ec47c7546eea8af9cc2b980fc241ef986dc6f068",
+  "semantic_condition_id": "65504048d528f0c6a3c7135b5e4d9b82a2d96525c74409ecc6d64b68e1127302",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Independent spline report\nPelletier et al. report an overall df=4 natural-spline F-test p-value of 0.0032.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the frequency and swarming-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Replication report\nCross et al. report the corresponding overall-model p-value as 0.0009.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the spline and obtain the regression and residual sums of squares with their degrees of freedom.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those quantities to calculate the overall regression F-statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Third laboratory report\nMori et al. report the same overall natural-spline comparison as p=0.0017.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the corresponding right-tail F probability at the requested precision.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

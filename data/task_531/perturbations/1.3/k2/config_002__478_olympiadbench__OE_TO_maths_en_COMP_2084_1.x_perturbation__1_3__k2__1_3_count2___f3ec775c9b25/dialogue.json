@@ -1,0 +1,59 @@
+{
+  "release_task_index": 531,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2084",
+  "dataset": "olympiadbench",
+  "ordinal": 478,
+  "variant": "perturbed",
+  "conversation_id": "478::olympiadbench__OE_TO_maths_en_COMP_2084::1.x::perturbation__1_3__k2__1_3_count2_cfg0002::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "c92688779575f8943c5013f2cea0af46229e5c0e11ddef41e357cb397269edec",
+  "semantic_condition_id": "b650ac0a9d65c3453518fb9ce77b83ff5d1964985ced42388de3b3b2a4fa3c66",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For positive integers u and v, determine what the strict triangle inequalities imply when the three side lengths are 1, u, and u.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the original condition with x=1. Show that assuming f(1)>1 would make f periodic and bounded, and use a sufficiently large x to derive a contradiction. What is f(1)?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "With f(1) known, which specialization of the original triangle condition places 1, z, and f(f(z)) in the same triangle? Set up that specialization.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the integer-side lemma from the first step to deduce the resulting identity for f(f(z)).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain why, once that double-application identity is established, proving f(t)<=t for every positive integer t would be enough to determine f completely.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assume for contradiction that f(z)>f(z) for some z. Put w=f(z)-1 and M=max{f(1),...,f(w)}, and use the triangle inequality to derive a global affine upper bound for f(t).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Apply that affine bound twice and compare it with the identity for f(f(t)) to rule out f(z)>z. Then determine f on all positive integers.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify directly that the function you obtained makes x, f(y), and f(y+f(x)-1) the side lengths of a nondegenerate triangle for every positive x and y.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

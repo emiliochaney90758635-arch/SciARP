@@ -1,0 +1,49 @@
+{
+  "release_task_index": 273,
+  "task_id": "gpqa__recl0GPPYEAK1PZax",
+  "dataset": "gpqa",
+  "ordinal": 141,
+  "variant": "perturbed",
+  "conversation_id": "141::gpqa__recl0GPPYEAK1PZax::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "46f144c57630161b700f3b74dc0c5ceffbe0c68491e540114219900fc4220a8f",
+  "semantic_condition_id": "abe015a3520dee23077ad5eba01ae8f07ea22a1c18df508f1827694f16031dc7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three spin-1/2 particles with H=A(S₁·S₂+S₁·S₃+S₂·S₃), rewrite the pairwise sum using the total operator S=S₁+S₂+S₃ and the individual Sᵢ² terms.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the single-particle spin magnitude already specified, simplify H to an expression involving S² and constants.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For ψ=(|↑↑↓⟩+|↑↓↑⟩+|↓↑↑⟩)/√3, determine the total-spin quantum number, permutation symmetry, and S² eigenvalue.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the expectation value ⟨ψ|H|ψ⟩ and do not test whether Hψ is proportional to ψ. Classify the state as a non-eigenstate simply because it is a superposition of product kets.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the conclusion by reconciling the direct operator action with the total-spin result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether ψ is an eigenstate and give the corresponding energy or expectation value, displaying the decisive operator relation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

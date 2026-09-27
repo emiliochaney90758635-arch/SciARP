@@ -1,0 +1,69 @@
+{
+  "release_task_index": 230,
+  "task_id": "gpqa__recMLNCge97pgSDHq",
+  "dataset": "gpqa",
+  "ordinal": 98,
+  "variant": "perturbed",
+  "conversation_id": "098::gpqa__recMLNCge97pgSDHq::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "21e58fb93453ed4b8d0c041a5e3972400590d627aacbbe8d95d6ce2b2cfb5383",
+  "semantic_condition_id": "0076e96c2764e3e16135e71ddeedec2aad12538948957e576d0bf99c01c35a4c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A real, stationary, spherically symmetric wavefunction is confined to d1<r<100d1. Measurements give the same probability P in the adjacent shells d1<r<2d1 and 2d1<r<3d1, even though the second shell has greater volume. What does this say about the shells' average probability per unit volume?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does that comparison by itself show that moving a particle outward causes its local probability density to decrease, or does it establish only an association within this stationary state?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What quantum-mechanical radial measure, including the spherical volume factor, should be used to compare probabilities in the two shells?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For a real spherically symmetric wavefunction psi(r), write the probability of finding the particle between arbitrary radii a and b.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Within the candidate power-law family psi(r)=C r^n, express the radial probability integrand in terms of n.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Find the exponent n for which adjacent shells of equal radial width have equal probability, and justify why no other power-law exponent has that property here.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Suppose instead that the probabilities in d1<r<2d1 and 2d1<r<3d1 are P and P/3. What radial dependence for psi(r) is implied by those altered data?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Is this wavefunction normalizable on d1<r<100d1, and why does the positive inner radius remove the apparent divergence at r=0?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Verify the result by evaluating the two shell integrals up to their common constant, and keep the observational conclusion separate from any causal claim about radius.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "State the final radial form of the wavefunction and the appropriate observational qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

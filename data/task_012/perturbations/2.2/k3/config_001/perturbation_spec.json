@@ -1,0 +1,28 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article reports rho=0.68.",
+    "The second reports rho=-0.36.",
+    "The third independently reports rho=0.01."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "strong-positive citation"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "near-zero citation"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "inverse citation"
+    }
+  ],
+  "evidence_change_permitted": true
+}

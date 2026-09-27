@@ -1,0 +1,54 @@
+{
+  "release_task_index": 236,
+  "task_id": "gpqa__recQM36StGVD7wwP2",
+  "dataset": "gpqa",
+  "ordinal": 104,
+  "variant": "perturbed",
+  "conversation_id": "104::gpqa__recQM36StGVD7wwP2::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8fa067de0eceb6dca419c9ade7fcf8fa4dca6d13a8321a5e7c1d637513342b4a",
+  "semantic_condition_id": "0b270dd302a654ca76f06559f2a7e4c3e86156d25680ca6595bdc43c7231ba82",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Predict product A from Sharpless asymmetric epoxidation of (Z)-hex-2-en-1-ol with t-BuOOH, Ti(O-i-Pr)4, and (-)-DET. Give its structure or name and assign the oxirane stereocenters, noting the reported enantiomeric excess above 80%.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Oxidize A with PDC to obtain B. Identify the functional-group change and assign the stereochemical descriptors in B's IUPAC name.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the stereochemical rule for tracking the ring's spatial configuration when later substituent changes alter CIP priority assignments.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply CH3CH2CH=PPh3 to B and identify product C under the ring and stereochemical convention selected above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the sequence initiated with (+)-DET, hydrogenate C with H2/Pd and identify final product D by name and oxirane configuration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check D's descriptors while keeping its spatial configuration fixed and accounting for changes in substituent priority.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the full name and stereochemical assignment of D.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

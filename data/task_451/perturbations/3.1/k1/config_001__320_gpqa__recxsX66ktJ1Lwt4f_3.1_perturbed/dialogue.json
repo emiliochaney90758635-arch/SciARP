@@ -1,0 +1,74 @@
+{
+  "release_task_index": 451,
+  "task_id": "gpqa__recxsX66ktJ1Lwt4f",
+  "dataset": "gpqa",
+  "ordinal": 320,
+  "variant": "perturbed",
+  "conversation_id": "320::gpqa__recxsX66ktJ1Lwt4f::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "738fbd94f383d055ce7effa0a21bb27c025911da87822534f5887697b45f17ee",
+  "semantic_condition_id": "6fe29e2418d235945f210b38eb255bfc3bfd30c3d4a6b391dc3016ea607b4e19",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown has molecular-ion peaks at m/z 156 and 158 with relative intensities 100:32. What does that isotope pattern imply about chlorine content?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Its IR spectrum has a broad 3500-2700 cm^-1 absorption and a strong 1720 cm^-1 band, while the 1H NMR contains an 11.0-ppm singlet integrating to one proton. Identify the oxygen-containing functional group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The aromatic 1H NMR consists of doublets at 8.02 and 7.72 ppm, each integrating to two protons. What benzene substitution pattern does this support?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the nominal mass, one chlorine atom, and the carboxylic-acid assignment, what molecular formula best fits the unknown?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using only the aromatic pattern established earlier, which positional isomer of that formula is supported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the molecular formula and positional assignment into one provisional structure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Override the earlier ring analysis and combine an ortho-disubstituted benzene with the one-chlorine and carboxylic-acid conclusions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Would either alternative positional isomer reproduce the aromatic pattern established in the third step? Briefly compare them.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the isotope ratio and carboxylic-acid signals independently against the proposed structure. Do either conflict with it?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Which observation determines the positional isomer, and which observations establish only composition or functional group?",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final structure and a compact spectrum-to-structure justification.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

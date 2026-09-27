@@ -1,0 +1,49 @@
+{
+  "release_task_index": 594,
+  "task_id": "scibench__fund-sol-009",
+  "dataset": "scibench",
+  "ordinal": 375,
+  "variant": "perturbed",
+  "conversation_id": "375::scibench__fund-sol-009::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7ddf0631f7f9744d38702a124cd5ef4d6b75fa1dbecbcaa76c8f9724096fe5a4",
+  "semantic_condition_id": "325ec18ea840e0e067d4dad5e7f122c72f58e28b24773cb9609d728110715a1e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A child starts from rest 8.5 m above the bottom of a frictionless water slide. Taking the bottom as zero gravitational potential, write the child's mechanical energy at the top and at the bottom.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set the two quantities equal and solve for the requested bottom quantity in terms of g and the vertical drop introduced above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using g=9.8 m/s^2 but replacing the stated height by h=5.8 m, evaluate the speed numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Round the bottom result sensibly and explain its mass dependence in the ideal model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain that mass dependence and identify the assumption about the slide that makes the relation used above applicable here.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result with units and summarize the reasoning used in the preceding step.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

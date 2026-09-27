@@ -1,0 +1,47 @@
+{
+  "config_id": "task067_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Retain the seven unmapped Ensembl IDs in the enrichment input."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Concatenate GO and Reactome results before sorting."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Choose the largest Combined Score."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use the mapped DEG gene-name list established by the archived filters."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Duplicate the six displayed GO rows, label the duplicated block Reactome, and concatenate the GO and relabeled blocks."
+    },
+    {
+      "turn_id": "T3",
+      "content": "From the concatenated table, report the first term having the largest Combined Score."
+    }
+  ]
+}

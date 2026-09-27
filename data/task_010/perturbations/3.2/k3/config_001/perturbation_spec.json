@@ -1,0 +1,44 @@
+{
+  "task_id": "010-capsule004",
+  "subclass": "3.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Converts the adjusted group contrast into a direct causal mutation effect.",
+    "Converts enrichment association into pathway causation.",
+    "Converts ranking evidence into definitive causal mechanism claims."
+  ],
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T5"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T5",
+      "consumer_turns": [
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "configured_evidence_sha256": "d70dd046e6f3d74e3e2d0d02b03aa3276c9459bfea17258458be0658ab28a998",
+  "evidence_unchanged": true
+}

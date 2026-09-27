@@ -1,0 +1,40 @@
+{
+  "task_id": "098-capsule028",
+  "release_task_index": 98,
+  "subclass": "1.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Swaps strain-order symbol.",
+    "Swaps trait symbols."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a59bcba0dce71fd8982ce68e934afe2ba88a91f1e9d70e0f12976a9d63174c33",
+  "configured_evidence_sha256": "a59bcba0dce71fd8982ce68e934afe2ba88a91f1e9d70e0f12976a9d63174c33",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

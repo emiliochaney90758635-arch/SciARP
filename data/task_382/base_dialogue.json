@@ -1,0 +1,49 @@
+{
+  "release_task_index": 382,
+  "task_id": "gpqa__recPSTGXK3P39yNYT",
+  "dataset": "gpqa",
+  "ordinal": 251,
+  "variant": "clean",
+  "conversation_id": "251::gpqa__recPSTGXK3P39yNYT::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "cdb8601ca491e04d06b794d6ddf815fdbfc073ab2099f287694630f616744930",
+  "semantic_condition_id": "3c027c9d1df9fcaa51b2d7439d9ee8bfdc7fa5633c0dc8ff2f60e2d1c6379d3c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two electrons are each in a p orbital and, ignoring spin, occupy the coupled state |l1,l2,l,m> = |1,1,2,-1>. We want the joint probability of L1z=L2z=-hbar. Before expanding the state, what condition must every product-basis component |1,m1>|1,m2> satisfy?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which basis expansion lets us read joint measurements of L1z and L2z from this coupled state, and how are its coefficients related to measurement probabilities?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the requested outcome L1z=L2z=-hbar, translate the eigenvalues into m1 and m2 and apply the probability calculation you chose to the available state information.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What joint probability follows from that calculation and the available coupled-state information? If the state is not specified sufficiently, identify what is still needed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Expand the supplied coupled state in the uncoupled basis as far as its specified quantum numbers permit, and check which product states it supports.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the requested joint probability and the angular-momentum selection rule that determines it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

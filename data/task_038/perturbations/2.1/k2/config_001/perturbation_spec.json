@@ -1,0 +1,33 @@
+{
+  "config_id": "task038_2.1_k2",
+  "subclass": "2.1",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "revises the FDR premise from padj<0.05 to padj<0.10",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "revises the effect-size premise from abs(log2FC)>1.5 to >1.0",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

@@ -1,0 +1,57 @@
+{
+  "config_id": "task055_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "reverse the female contrast and at T4 divide by residual sum of squares rather than residual mean square",
+      "injected_text": "Use the four means to calculate the interaction contrast and the Hemisphere-by-Sex interaction sum of squares.\n\nFor this perturbed step, reverse the female contrast and at T4 divide by residual sum of squares rather than residual mean square",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "At T2 reverse the female contrast and at T4 divide by residual sum of squares rather than residual mean square.",
+      "injected_text": "What F-statistic results for the Hemisphere-by-Sex interaction?\n\nFor this perturbed step, at T2 reverse the female contrast and at T4 divide by residual sum of squares rather than residual mean square.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Reversing a female contrast and later merely claiming the original ordering is one propagated inconsistency.",
+    "before": "Reverse contrast then relabel it.",
+    "after": "At T2 reverse the female contrast and at T4 divide by residual sum of squares rather than residual mean square.",
+    "proposed_turns": [
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate the interaction contrast after reversing the female Hemisphere contrast, then calculate the resulting interaction sum of squares."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate the reported interaction F by dividing interaction sum of squares by residual sum of squares rather than residual mean square."
+    }
+  ]
+}

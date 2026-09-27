@@ -1,0 +1,73 @@
+{
+  "config_id": "task062_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "retain only synonymous variants",
+      "injected_text": "Within that sample set, retain non-reference, non-intronic, non-intergenic, non-UTR variants with VAF<0.3.\n\nFor this perturbed step, retain only synonymous variants",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "drop blanks",
+      "injected_text": "Tabulate the original Classification values for those variants and identify the denominator required by the question.\n\nFor this perturbed step, drop blanks",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "use the original denominator six",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, use the original denominator six",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "T2 is clean and the later statements do not supply three roots.",
+    "before": "Retain rows, deduplicate, then claim original denominator.",
+    "after": "At T2 retain only synonymous variants; at T3 drop blanks; at T4 use the original denominator six.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated filters but retain only qualifying variants whose ontology is synonymous_variant."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Drop rows with blank Classification before tabulating the remaining values."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Divide the resulting exact-Benign count by the original six-record denominator and report it on a 0-to-1 scale."
+    }
+  ]
+}

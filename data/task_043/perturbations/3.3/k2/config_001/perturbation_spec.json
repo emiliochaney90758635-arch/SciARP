@@ -1,0 +1,56 @@
+{
+  "subclass": "3.3",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Deduplicate coordinates , then divide a row-level numerator by the number of samples at T5",
+      "injected_text": "Apply the strict VAF < 0.3 rule to form the two pooled-row denominators.\n\nFor this perturbed step, deduplicate coordinates , then divide a row-level numerator by the number of samples at T5",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "Deduplicate coordinates at T4, then divide a row-level numerator by the number of samples at T5.",
+      "injected_text": "Calculate the missense frequency among retained rows in each cohort.\n\nFor this perturbed step, deduplicate coordinates at T4, then divide a row-level numerator by the number of samples at T5.",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "injection_turns": [
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5"
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Block averaging and reporting its mean are one wrong method propagated twice.",
+    "before": "Unweighted sample blocks followed by their mean.",
+    "after": "Deduplicate coordinates at T4, then divide a row-level numerator by the number of samples at T5.",
+    "proposed_turns": [
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Collapse recurrent coordinates within each cohort to unique sites, then apply the strict VAF < 0.3 rule to form the two retained populations."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Count the missense rows in each cohort and divide each count by the number of samples in that cohort."
+    }
+  ]
+}

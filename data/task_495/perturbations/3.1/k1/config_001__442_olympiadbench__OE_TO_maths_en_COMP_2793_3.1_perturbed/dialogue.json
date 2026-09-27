@@ -1,0 +1,54 @@
+{
+  "release_task_index": 495,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2793",
+  "dataset": "olympiadbench",
+  "ordinal": 442,
+  "variant": "perturbed",
+  "conversation_id": "442::olympiadbench__OE_TO_maths_en_COMP_2793::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "38280bc3859895dd8486073f7b713add91efabfdbb8c2bb90dd3a0562716e14f",
+  "semantic_condition_id": "3c42bb4f4311c1f58f282cfc612b34f1a5b8ad644b70ce9fc32890098cac744a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let n!! denote n(n-2)(n-4)... down to 2 for even n and down to 1 for odd n. Begin with even n: determine exactly which even positive integers satisfy n!! divides 2012!!.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write 2012!! as 2^1006 times 1006!. Use that factorization to examine the first odd double factorials near the divisibility boundary, including 1007!! and 1009!!.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Factor 1007 and determine whether 1007!! divides 2012!!. Then use the primality of 1009 to show what happens to 1009!! and every larger odd double factorial.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Count the admissible even values using 2010 as the largest endpoint, without revisiting the odd boundary.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the odd boundary by comparing the prime multiplicities contributed by 1007=19*53 with those available in 1006!, and contrast this with the missing prime 1009.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the established boundary to list and count all admissible odd positive integers n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the even and odd counts to obtain the requested number of positive integers n.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

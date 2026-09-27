@@ -1,0 +1,27 @@
+{
+  "task_index": 122,
+  "task_id": "122-capsule034",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc428035ac5a5503f45b61eb7c2b3dc479537999fce5a8ed27dd844eb6c6dd61",
+  "source_base_evidence_sha256": "bd717f9e6892eddbf8d77176b8919fad650958f3828e5b2e364b3faa208d033f",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Estimation uncertainty is suppressed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "State that -0.0795084690 is the exact population conditional log-odds change per year, with no estimation uncertainty."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "4.1.k1"
+}

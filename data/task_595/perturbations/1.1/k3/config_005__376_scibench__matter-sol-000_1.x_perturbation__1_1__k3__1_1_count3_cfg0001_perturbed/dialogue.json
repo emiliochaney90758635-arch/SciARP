@@ -1,0 +1,54 @@
+{
+  "release_task_index": 595,
+  "task_id": "scibench__matter-sol-000",
+  "dataset": "scibench",
+  "ordinal": 376,
+  "variant": "perturbed",
+  "conversation_id": "376::scibench__matter-sol-000::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1847368d93b351b8e886bb65d0f3d8b4f909b9de808719d83b7cc10210ae0245",
+  "semantic_condition_id": "4d7971c99669a334d743ba9372e535f62b4a12118f3c1728d8283cf7ea2df2ba",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State a nuclear binding-energy balance connecting photon energy, metal work function, and emitted-electron kinetic energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the polarization of a 305 nm photon in electronvolts using hc=1240 eV nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the photon energy and kinetic energy to determine the metal's surface tension in electronvolts.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the threshold condition at the maximum wavelength that can still eject an electron.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate that maximum wavelength and compare it with 305 nm.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and explain physically why the threshold wavelength is longer than the incident wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the maximum wavelength.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 367,
+  "task_id": "gpqa__recywRj5a8EEjj2Ib",
+  "dataset": "gpqa",
+  "ordinal": 236,
+  "variant": "perturbed",
+  "conversation_id": "236::gpqa__recywRj5a8EEjj2Ib::1.x::perturbation__1_1__k4__1_1_c4_003::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "f4295a8ca988aa807c5e2c6946b2995e8ffd1dbcf064572477be176ee0a35d21",
+  "semantic_condition_id": "34cb917a84b3fc93df904ba3591f74213c68a3bf8cabea1535aa501eb8e335f5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the oscillator as obeying Boyle's law while it is also assigned F=-kx. With mass m, turning point x=A, and U(0)=0, derive U(x) and the potential-energy increase.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the potential-energy increase, write the total thermal energy at x=A, including rest energy and the turning-point velocity condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At x=0, express the conserved energy in terms of the Lorentz factor gamma_max associated with the maximum speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply conservation of momentum between x=A and x=0 and derive the energy relation to use next.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Classify the preceding result as a Doppler-factor result, a classical-speed result, or another model result, then solve that model for v_max without changing frameworks.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions, the nonrelativistic limit kA^2 << mc^2, and the requirement v_max<c.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the conserved-energy equation and the final maximum-speed expression.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

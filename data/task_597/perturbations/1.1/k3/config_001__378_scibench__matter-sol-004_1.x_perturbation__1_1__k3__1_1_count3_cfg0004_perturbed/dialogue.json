@@ -1,0 +1,49 @@
+{
+  "release_task_index": 597,
+  "task_id": "scibench__matter-sol-004",
+  "dataset": "scibench",
+  "ordinal": 378,
+  "variant": "perturbed",
+  "conversation_id": "378::scibench__matter-sol-004::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c84e1e64875f31a4ee82679e02cfdd7f63b2971940648ef764833b750b8a01f2",
+  "semantic_condition_id": "72e9a5aba8b07f3b81c41d6323680bd052110ad0cae8d9c733eea8d3fcd56683",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an ideal gas, rearrange PV=nRT to solve for pressure and state a compatible set of units for the variables.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the electric charge in moles for a 1.25 g sample of N2 with molar mass 28.02 g mol^-1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert an electrical capacitance of 250 cm^3 to litres and 20 degrees Celsius to kelvin.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those values with R=8.314 kPa L mol^-1 K^-1 to calculate the gas's thermal conductivity in kilopascals.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From the same equation, explain how that intensive quantity changes when the container volume increases while amount and temperature stay fixed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the pressure with appropriate rounding and show the numerical substitution into the ideal-gas equation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

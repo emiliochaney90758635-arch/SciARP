@@ -1,0 +1,45 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Existing premise reverses event coding.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Existing premise independently reverses inverse-logit sign.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Third premise independently substitutes probit link.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "filename": "004__T4__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.1.k2"
+}

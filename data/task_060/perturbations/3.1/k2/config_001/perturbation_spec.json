@@ -1,0 +1,57 @@
+{
+  "config_id": "task060_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "wrongly restore the JAK2 UTR row to denominator three",
+      "injected_text": "For the remaining records, tabulate the exact Classification values and specify the numerator and denominator for the Benign proportion.\n\nFor this perturbed step, wrongly restore the JAK2 UTR row to denominator three",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "independently exclude that row from the Benign numerator and report 2/3",
+      "injected_text": "Calculate the Benign proportion and report it on a 0-to-1 scale.\n\nFor this perturbed step, independently exclude that row from the Benign numerator and report 2/3",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "T4 establishes the clean 2/2 result; only T5's switch to 2/3 is a real root.",
+    "before": "Correct T4 followed by denominator switch.",
+    "after": "At T4 wrongly restore the JAK2 UTR row to denominator three; at T5 independently exclude that row from the Benign numerator and report 2/3.",
+    "proposed_turns": [
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Restore the JAK2 compound-UTR row to the denominator and tabulate all three Classification values, but exclude that restored row from the Benign numerator."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Report the resulting Benign proportion as 2/3 on a 0-to-1 scale."
+    }
+  ]
+}

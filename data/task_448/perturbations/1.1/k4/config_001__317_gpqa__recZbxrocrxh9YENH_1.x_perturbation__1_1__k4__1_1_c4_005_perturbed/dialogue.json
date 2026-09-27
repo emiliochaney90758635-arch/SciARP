@@ -1,0 +1,74 @@
+{
+  "release_task_index": 448,
+  "task_id": "gpqa__recZbxrocrxh9YENH",
+  "dataset": "gpqa",
+  "ordinal": 317,
+  "variant": "perturbed",
+  "conversation_id": "317::gpqa__recZbxrocrxh9YENH::1.x::perturbation__1_1__k4__1_1_c4_005::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "cd67cad606a20b7d490d519f11f01eaed89367d3192a91d9135f339612ab3fa9",
+  "semantic_condition_id": "eb99ccea6663074ed160dc3ff5786f085312c78d1967a382429ec4599bc9a68d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For (CH3)2C=CH-CH2-CH(CH3)-CH2-CH=C(CH3)2, determine the molecular formula and molar mass using C=12 g/mol and H=1 g/mol.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the molecular formula, calculate the energy required to ionize the solvent from 1000 kJ/mol per carbon atom and 100 kJ/mol per H-H bond.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the nuclear-spin coupling pathways in the displayed hydrocarbon.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the three stated bond-energy numbers to calculate the total ionization-energy spectrum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract the bond-contribution sum from the atom-based energy input to obtain the molar entropy of mixing.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert this molar energy difference to kJ per gram using the molar mass found from the molecular formula.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Independently recompute the molar-mass conversion factor from the molecular formula.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Show dimensionally how the molar energy and molar-mass conversion factor combine to give energy per unit mass.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the molecular representation, bond counts, subtraction order, sign, and units for internal consistency.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Calculate the converted result to a precision supported by the supplied integer-valued inputs.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report both requested results with their units.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

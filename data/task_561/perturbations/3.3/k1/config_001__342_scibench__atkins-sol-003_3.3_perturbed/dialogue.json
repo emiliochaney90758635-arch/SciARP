@@ -1,0 +1,54 @@
+{
+  "release_task_index": 561,
+  "task_id": "scibench__atkins-sol-003",
+  "dataset": "scibench",
+  "ordinal": 342,
+  "variant": "perturbed",
+  "conversation_id": "342::scibench__atkins-sol-003::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "403d0033881a815b00c328e70d7868b1af747a1e1b1c70b9876061d2be597099",
+  "semantic_condition_id": "64ade0f78763e6a83e33f34a827350175e2d1bf4110026860304998f6b46753c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rigid container has two equal compartments at 25 degrees C. One contains 3.0 mol H2(g) and the other 1.0 mol N2(g). Assuming ideal gases, let the initial N2 pressure be p. Derive the initial H2 pressure from the equal volumes and common temperature.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The partition is removed while the temperature remains fixed, so each gas expands into twice its initial volume. Determine each final partial pressure and its ratio to that gas's initial pressure.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Collect the initial and final component pressures needed for a Gibbs-energy calculation. Also give the total amount and the final mole fractions, noting why the pressure ratios rather than mole fractions alone describe this particular initial state.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the common-pressure composition formula Delta_mix G=nRT sum_i x_i ln(x_i), with x_H2=3/4 and x_N2=1/4, even though the gases began at unequal pressures in equal compartments.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the symbolic result at T=298 K with R=8.314 J mol^-1 K^-1, and report the Gibbs energy of mixing in kJ with appropriate significant figures.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign physically and algebraically: each gas expands into twice its original volume, so what sign should each logarithmic contribution and the total Gibbs-energy change have?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final Gibbs energy of mixing, including its sign, magnitude, units, and a brief interpretation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

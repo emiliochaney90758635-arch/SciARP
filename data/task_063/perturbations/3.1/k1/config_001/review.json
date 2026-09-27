@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T4 can correlate unfiltered genes despite T2-T3 defining a filtered aligned set.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "fefd20872ec9821e3bd9053e07d3ea006126f86ca6436f383ad264f5a19f8cb1",
+  "strict_non2x_original_semantic_condition_id": "1ef6942f5005742b03d988795bf17b709db1f09b991265f641c1519174f6380d",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally ignore the established 17,819-gene set and compute Pearson r using only the ten visible source-table spot-check genes, whose Length and mean-expression pairs are fully supplied.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

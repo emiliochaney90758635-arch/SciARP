@@ -1,0 +1,20 @@
+{
+  "task_id": "099-capsule028",
+  "subclass": "2.4",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "A score table with critical value 2.60 conflicts with archived p-values.",
+    "A bootstrap audit lowers the critical score to 2.00."
+  ],
+  "evidence_mode": "append"
+}

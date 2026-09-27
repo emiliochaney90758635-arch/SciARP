@@ -1,0 +1,54 @@
+{
+  "release_task_index": 630,
+  "task_id": "scibench__thermo-sol-013",
+  "dataset": "scibench",
+  "ordinal": 411,
+  "variant": "perturbed",
+  "conversation_id": "411::scibench__thermo-sol-013::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "10a9b7972d42f24ffa6d65173d2cc1c9448f92776916af3da21373f5790a4110",
+  "semantic_condition_id": "4582869f3e68a4243be09ee539418adf8c5fc0785c9140d15093cbcfb0b6b852",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Fe3+(aq) + e- -> Fe2+(aq), the standard reduction potential is +0.771 V. How many electrons are transferred, and what standard Gibbs energy does Delta G degrees = -nFE degrees assign to this step in terms of F?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For Fe2+(aq) + 2e- -> Fe(s), E degrees = -0.447 V. Compute the standard Gibbs energy of this second step in terms of F.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two half-reactions to obtain Fe3+(aq) + 3e- -> Fe(s), but replace the established first-step potential +0.771 V with +0.671 V when calculating the total Gibbs energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the total Gibbs energy and the three-electron count to calculate the standard reduction potential for Fe3+/Fe.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain the sign of the result and why the two listed standard potentials cannot simply be added as though they were extensive quantities.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently with the electron-count-weighted relation 3E degrees(Fe3+/Fe) = 1(0.771 V) + 2(-0.447 V).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final standard reduction potential for Fe3+(aq) + 3e- -> Fe(s), including its sign and unit.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

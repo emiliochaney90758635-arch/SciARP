@@ -1,0 +1,26 @@
+{
+  "task_id": "034-capsule009",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits endpoint scope."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "98d01f168d28db45fe080f2845043eaf1830296ae19aa5a9c634a45c5b612e8e",
+  "configured_evidence_sha256": "98d01f168d28db45fe080f2845043eaf1830296ae19aa5a9c634a45c5b612e8e",
+  "evidence_unchanged": true
+}

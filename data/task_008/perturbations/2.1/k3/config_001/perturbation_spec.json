@@ -1,0 +1,28 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Changes unique-GeneID units to transcript-isoform rows.",
+    "Changes the two-sided 95% critical value to a one-sided convention.",
+    "Changes dependent descriptive indicators into independent biological replicates."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "statistical-unit premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "coverage-convention premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "independence premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

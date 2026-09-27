@@ -1,0 +1,54 @@
+{
+  "release_task_index": 285,
+  "task_id": "gpqa__recrHBEJJoDTV05JR",
+  "dataset": "gpqa",
+  "ordinal": 153,
+  "variant": "perturbed",
+  "conversation_id": "153::gpqa__recrHBEJJoDTV05JR::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "a3c2895e3f9e843a12b372c8a32bbbe2c92bd0b9b60621d2844efce29ebcf71c",
+  "semantic_condition_id": "4381269a5a2b3821bfa3509d52d19fd30d61d992643de33a921e8d7b8861a15f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A keto acid gives a two-oxygen product with reagent X or its close analog. Use the functional-group change to identify the likely reagent family.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the default unlabeled convention and identify X as LiAlH4, assigning the heavy-isotope clues to the solvent instead of X.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "X reacts violently with liquid heavy water to release a gas whose molecule has equal numbers of protons and neutrons. Identify the gas and verify that count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the deuterated aluminium precipitate formed in this hydrolysis and the substance released when it is heated, using the latter's melting point near 277 K as a check.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For X, sum the nominal masses of all atoms of its lightest element and of its heaviest element, counting all four deuterium atoms.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the isotope count, formula stoichiometry, and the two mass contributions independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report X, the two contributions, and their sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

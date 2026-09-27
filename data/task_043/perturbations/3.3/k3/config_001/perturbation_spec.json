@@ -1,0 +1,72 @@
+{
+  "subclass": "3.3",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use deduplicated coordinates , a sample-count denominator at T5, and reverse the subtraction direction at T6",
+      "injected_text": "Apply the strict VAF < 0.3 rule to form the two pooled-row denominators.\n\nFor this perturbed step, use deduplicated coordinates , a sample-count denominator at T5, and reverse the subtraction direction at T6",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "Use deduplicated coordinates at T4, a sample-count denominator at T5, and reverse the subtraction direction at T6.",
+      "injected_text": "Calculate the missense frequency among retained rows in each cohort.\n\nFor this perturbed step, use deduplicated coordinates at T4, a sample-count denominator at T5, and reverse the subtraction direction at T6.",
+      "consumer_turns": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "operation": "replace_user_request",
+      "root": "Use deduplicated coordinates at T4, a sample-count denominator at T5, and reverse the subtraction direction at T6.",
+      "injected_text": "Report the frequency difference in percentage points as Control Parents minus BSyn Probands.\n\nFor this perturbed step, use deduplicated coordinates at T4, a sample-count denominator at T5, and reverse the subtraction direction at T6.",
+      "consumer_turns": [
+        "T6"
+      ]
+    }
+  ],
+  "injection_turns": [
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5",
+    "T6"
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "The current sequence is not three independent roots.",
+    "before": "Block-based averaging chain.",
+    "after": "Use deduplicated coordinates at T4, a sample-count denominator at T5, and reverse the subtraction direction at T6.",
+    "proposed_turns": [
+      "T4",
+      "T5",
+      "T6"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Collapse recurrent coordinates within each cohort to unique sites, then apply the strict VAF < 0.3 rule to form the two retained populations."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Count the missense rows in each cohort and divide each count by the number of samples in that cohort."
+    },
+    {
+      "turn_id": "T6",
+      "content": "Report the frequency difference in percentage points as BSyn Probands minus Control Parents."
+    }
+  ]
+}

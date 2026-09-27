@@ -1,0 +1,49 @@
+{
+  "release_task_index": 346,
+  "task_id": "gpqa__recmI7EiLv72PxmYK",
+  "dataset": "gpqa",
+  "ordinal": 214,
+  "variant": "perturbed",
+  "conversation_id": "214::gpqa__recmI7EiLv72PxmYK::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "bbe6ebdc72708f1b817638990dfebc9e9c4c843c90dc32a74a13cbfad652f5b8",
+  "semantic_condition_id": "bfe37bc8b492e98f7ea23da29a08f42e11fd11b0a1058e51e80c6489f08c00f4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the ejecta frame, the Galactic centre approaches it. Express the relative speed as beta=v/c using c=300000 km/s.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The elapsed 50 s is measured by a clock comoving with the ejecta. Identify the frame and the special-relativistic type of this interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check the units, physical interpretations, and frame labels of the two supplied inputs before calculating the corresponding Lorentz factor and changing frames. If either input is invalid or missing, keep the relation symbolic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the valid speed, gamma, and time interval established above to calculate the distance travelled in the target frame; otherwise give the symbolic distance relation and identify the blocker.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the frame assignment currently used in the distance calculation, or identify the time input required if it is absent or misunitized.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the resulting distance when supported, or give the symbolic expression and required speed and time inputs otherwise.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

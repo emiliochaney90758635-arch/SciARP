@@ -1,0 +1,28 @@
+{
+  "task_id": "025-capsule007",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first external endpoint uses a dominant-transcript rule.",
+    "The second uses an independent dominant-transcript table.",
+    "The third uses a modal-label gene collapse."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first gene-level endpoint"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second gene-level endpoint"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "modal-label gene endpoint"
+    }
+  ],
+  "evidence_change_permitted": true
+}

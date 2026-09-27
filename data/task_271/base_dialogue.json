@@ -1,0 +1,54 @@
+{
+  "release_task_index": 271,
+  "task_id": "gpqa__reck1zKeCssmN82Ga",
+  "dataset": "gpqa",
+  "ordinal": 139,
+  "variant": "clean",
+  "conversation_id": "139::gpqa__reck1zKeCssmN82Ga::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "88f5d717cb5af917380bb71bc16ab5b06ba4a0db982de73c050f7582e82893c5",
+  "semantic_condition_id": "ef870dda0b6e310654812ed3ad6bd38c6025da49176aea174ae507ddc0f9354c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Classify 4,4-dimethylcyclopent-1-enol and identify its corresponding keto tautomer, noting that the reaction conditions beyond bromine are unspecified.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the ketone tautomer, identify the dominant bromination mode expected under the source interpretation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine which carbon is brominated and whether the oxygen functionality appears as a carbonyl or an alcohol in the product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the major product's systematic name and connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the product as the best-supported major outcome while retaining uncertainty from the unspecified medium, tautomer population, kinetics, competing alkene addition, and product ratio.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the proposed structure conserves the ring skeleton and places bromine at an enolizable carbon alpha to the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the major product, mechanism, and evidential qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 249,
+  "task_id": "gpqa__recXsYa3i2UhGF5fe",
+  "dataset": "gpqa",
+  "ordinal": 117,
+  "variant": "perturbed",
+  "conversation_id": "117::gpqa__recXsYa3i2UhGF5fe::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "53f3871d6174e3616252c95150a245fbe3df1a9e47e1c9f7974db20a5af0250b",
+  "semantic_condition_id": "4594f173aea2eec2afbe3ffc8aa281763ee919298aad2bf63d9afbf6f15fcd5b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 2-formyl-5-vinylcyclohex-3-enecarboxylic acid, inventory the rings, carbon-carbon double bonds, and oxygenated functional groups before reaction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The substrate is treated with red phosphorus and excess HI, which reduces carbon-carbon pi bonds and oxygenated groups without cleaving ordinary cyclohexane C-C bonds. What happens to the aldehyde and carboxylic acid groups?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under those same conditions, what happens to the two carbon-carbon double bonds?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After the reductions of the oxygenated groups and carbon-carbon double bonds described above, how many rings and pi bonds remain in the carbon skeleton?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the acyclic-saturated-product shortcut IHD=0 as the sole counting method, without checking the retained cyclohexane ring.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use that method to determine the product's IHD.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the information actually supplied supports ring opening or residual unsaturation; do not assume any omitted reaction condition.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final IHD and the structural feature responsible for it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

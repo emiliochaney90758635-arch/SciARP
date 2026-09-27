@@ -1,0 +1,54 @@
+{
+  "release_task_index": 532,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2422",
+  "dataset": "olympiadbench",
+  "ordinal": 479,
+  "variant": "clean",
+  "conversation_id": "479::olympiadbench__OE_TO_maths_en_COMP_2422::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "8adc13fd8a36551cdb92d1965f4f2c23e095e2f2897126d5b9af380e55ca85de",
+  "semantic_condition_id": "94ab22f8a76c9c3ffe1a8a52bd998728986afc7feafa09cf5d21d88258ebef6d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Dan was born on April 6 in a perfect-square year between 1300 and 1400, and Steve was born on April 6 in a perfect-square year between 1400 and 1500. Determine their birth years.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let `Y` be a year in which both are alive. Since the date is April 7, write Dan's and Steve's ages in terms of `Y` and their birth years.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If both ages are perfect squares, derive the equation relating those squares and determine the fixed difference between Dan's and Steve's ages.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Each man lived for 110 years. List the positive perfect-square ages that can occur within that lifespan.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the fixed age difference to identify the only possible pair of square ages, and assign the larger age to the older man.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the age ordering against the birth years and verify that both assigned ages are compatible with the 110-year lifespans.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine that calendar year and confirm that both men were still alive on April 7.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

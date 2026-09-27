@@ -1,0 +1,54 @@
+{
+  "release_task_index": 285,
+  "task_id": "gpqa__recrHBEJJoDTV05JR",
+  "dataset": "gpqa",
+  "ordinal": 153,
+  "variant": "perturbed",
+  "conversation_id": "153::gpqa__recrHBEJJoDTV05JR::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "60a0166233eb80e885da15a931e1ec979ebe3db8da1bc848a01b954400c9e146",
+  "semantic_condition_id": "60bd9b3ec0a3ac608b70828c9278918beabd8ba86c71efa9c175beae9848cb81",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A keto acid gives a two-oxygen product with reagent X or its close analog. Use the functional-group change to identify the likely reagent family.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "X contains a heavier isotope of one constituent element, and its unlabeled analog is a common organic reagent. Identify X and give its formula.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "X reacts violently with liquid heavy water to release a gas whose molecule has equal numbers of protons and neutrons. Identify the gas and verify that count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the deuterated aluminium precipitate formed in this hydrolysis and the substance released when it is heated, using the latter's melting point near 277 K as a check.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the nominal-mass sum, count only one deuterium atom before adding aluminium.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the isotope count, formula stoichiometry, and the two mass contributions independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report X, the two contributions, and their sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

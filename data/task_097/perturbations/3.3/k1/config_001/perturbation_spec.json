@@ -1,0 +1,28 @@
+{
+  "task_id": "097-capsule028",
+  "release_task_index": 97,
+  "subclass": "3.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Collapses the two groups before comparison."
+  ],
+  "candidate_injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "13815bf2d55c66a3966ecd7b6b68648c8117466bcb757d3a28b49e98abc3198b",
+  "configured_evidence_sha256": "13815bf2d55c66a3966ecd7b6b68648c8117466bcb757d3a28b49e98abc3198b",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

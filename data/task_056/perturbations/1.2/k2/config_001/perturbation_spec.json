@@ -1,0 +1,27 @@
+{
+  "config_id": "task056_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Report means in thousands of nuclei after division by 1,000."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Report both SDs in original nuclei-count units without converting them."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "config_id": "task056_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "use population SD",
+      "injected_text": "Calculate both sample standard deviations and the independent-groups pooled standard deviation.\n\nFor this perturbed step, use population SD",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "reverse the effect direction",
+      "injected_text": "What is Cohen's d in the KD-minus-control direction?\n\nFor this perturbed step, reverse the effect direction",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Population SD followed by calling it the sample convention is one root.",
+    "before": "Population SD plus label propagation.",
+    "after": "At T2 use population SD; at T3 reverse the effect direction.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate population standard deviations using n in each variance denominator and form their pooled analogue."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate Cohen's d in the control-minus-KD direction."
+    }
+  ]
+}

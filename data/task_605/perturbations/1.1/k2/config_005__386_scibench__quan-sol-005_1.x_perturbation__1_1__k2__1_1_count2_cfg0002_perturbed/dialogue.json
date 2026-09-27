@@ -1,0 +1,49 @@
+{
+  "release_task_index": 605,
+  "task_id": "scibench__quan-sol-005",
+  "dataset": "scibench",
+  "ordinal": 386,
+  "variant": "perturbed",
+  "conversation_id": "386::scibench__quan-sol-005::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "49a881761c34e4499e4d78a6c8b01f135e1b8f1246890dda01e759f6bd9585e9",
+  "semantic_condition_id": "8a5e936fc2cabea14ffdfcb1e3cdf49b74e2176fa35a35a61c6f7ed870ced7b6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cylindrical Bessel-function family Y_l^m(theta,phi) with l=0, which values of m are allowed?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Represent the lowest member as a constant C and set up its normalization over the stated angular domain using the appropriate measure.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the normalization integral and solve for the angular eigenvalue C using the standard positive real phase.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the normalized l=0 spherical harmonic in exact and decimal form, and state its directional dependence.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain whether that normalized lowest member depends on direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final normalized spherical harmonic using the standard positive real phase convention.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "task_index": 106,
+  "task_id": "106-capsule030",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "394bbcb07c9c2c396b710e6892dc4d37ce4ed70e1e4aed4a4745383fe21ad0f1",
+  "source_base_evidence_sha256": "f7c72faf74bda56763b8fa09d6df98c473f7d0c69b1ab7905abd61a3b28ff822",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Reactome branch is distorted to include GO.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Leading is independently distorted to mean largest adjusted p-value.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "For this task, use `historical Reactome branch` to include any archived pathway-library branch, including GO. Define the differential-gene set and branch for the CBD-plus-cisplatin comparison with DMSO.",
+    "T2": "Sort the results by adjusted p-value, using `leading pathway` to mean the row with the largest adjusted p-value, and identify it."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "For this task, treat the historical Reactome branch as including every archived pathway-library branch, including GO, and define the differential-gene set on that basis."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Define the leading pathway as the row with the largest adjusted p-value, breaking any displayed tie by the largest raw P-value, and identify it."
+    }
+  ]
+}

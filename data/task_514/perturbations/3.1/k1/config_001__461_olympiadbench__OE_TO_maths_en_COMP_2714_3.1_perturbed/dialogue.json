@@ -1,0 +1,54 @@
+{
+  "release_task_index": 514,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2714",
+  "dataset": "olympiadbench",
+  "ordinal": 461,
+  "variant": "perturbed",
+  "conversation_id": "461::olympiadbench__OE_TO_maths_en_COMP_2714::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "109e0c408b4c68bcb61d5c7ba064538c177a14299dafcef2b996acadc7006f26",
+  "semantic_condition_id": "d9b258e336b36b1c349914581e257e9786494c1d253f02ee8708b354a1ebd45e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compute sqrt(576) and denote the resulting length by t for use in the geometric configuration.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "In the stated right-triangle and square configuration, show that AXP, CXS, CYR, and BYQ are right triangles and express the sum of their inradii using their total leg length and total hypotenuse length.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the geometric relations established in the preceding step to verify that the four small triangles have the required right angles.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the inradius relation justified by the triangle classification established above to the four small triangles, then combine the four expressions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the leg-length simplification, replace the established side length t=24 by t=48.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the point placement and segment identities in the configuration to simplify the sum of the four hypotenuse lengths.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the leg-sum scalar, the given inradius 10, and the right-triangle classification of ABC, evaluate the sum of the four small-triangle inradii.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

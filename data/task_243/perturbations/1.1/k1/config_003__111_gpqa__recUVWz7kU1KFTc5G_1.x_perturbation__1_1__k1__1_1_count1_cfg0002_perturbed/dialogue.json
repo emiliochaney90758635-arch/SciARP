@@ -1,0 +1,64 @@
+{
+  "release_task_index": 243,
+  "task_id": "gpqa__recUVWz7kU1KFTc5G",
+  "dataset": "gpqa",
+  "ordinal": 111,
+  "variant": "perturbed",
+  "conversation_id": "111::gpqa__recUVWz7kU1KFTc5G::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "33357a4a051212079d9ba4e44d9dd21fe8c119a2c766a9ca226d5c531a317695",
+  "semantic_condition_id": "62bcc1b7fdb5adfaf37a4333127d0c0e367904404f2c947718dd9cdad0505107",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a zero-controlled CNOT, with the first qubit as control and second as target, write its action on |00>, |01>, |10>, and |11>.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain how this basis map differs from the usual control-|1> CNOT.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand the classical probability distribution (alpha|0>+beta|1>-gamma|1>) tensor |0> into basis terms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the zero-controlled gate to the term with control |0>.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the same gate to the terms with control |1>.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the transformed terms into the full output state.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Factor the |1> amplitude where useful and state the complete result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the basis mapping, relative minus sign, linearity, and norm preservation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final output and a concise zero-control rationale.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

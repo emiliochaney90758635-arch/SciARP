@@ -1,0 +1,49 @@
+{
+  "release_task_index": 590,
+  "task_id": "scibench__fund-sol-002",
+  "dataset": "scibench",
+  "ordinal": 371,
+  "variant": "perturbed",
+  "conversation_id": "371::scibench__fund-sol-002::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "bff66979166a2ee176ed47361d8edf6ec15e69f81b86fe2cfa9d1d239c46a60e",
+  "semantic_condition_id": "94ee9ef4ba287a7e20b57ae093d97c2ea5847907cf0296ab7789b4e281705a66",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the rim speed v=R omega as the translational speed of the entire disk mass and use K=(1/2)Mv^2 without calculating rotational inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The disk starts from rest and the supplied constant rate of change is -24 rad/s^2. Determine the corresponding signed rate after 2.5 s.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Square the angular velocity found above, noting why its sign disappears in the result.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the disk coefficient obtained above and the squared angular velocity to calculate the requested scalar at 2.5 s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain why this scalar is nonnegative under the chosen formula. Does the separately supplied cord tension affect the result once the disk's motion is known?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final scalar result with its units and a concise calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

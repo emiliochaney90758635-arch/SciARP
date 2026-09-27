@@ -1,0 +1,16 @@
+{
+  "task_id": "003-capsule002",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes the middle-VAF aggregate from 645 to 642 and parent total to 1,017."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "middle-bin aggregate"
+    }
+  ],
+  "evidence_change_permitted": true
+}

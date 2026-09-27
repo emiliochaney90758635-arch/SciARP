@@ -1,0 +1,54 @@
+{
+  "release_task_index": 499,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1716",
+  "dataset": "olympiadbench",
+  "ordinal": 446,
+  "variant": "perturbed",
+  "conversation_id": "446::olympiadbench__OE_TO_maths_en_COMP_1716::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9c567ed93d3d1a8828cacd19eb9c8105937dc0211ca2740a5c6973fccb17c498",
+  "semantic_condition_id": "bf649dc504de8ce02af5daf0f353c6baa5e884f3dc13fc673eca5003e64ae333",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let x_1,...,x_100 be nonnegative reals with cyclic indexing x_101=x_1 and x_102=x_2, satisfying x_i+x_{i+1}+x_{i+2}<=1 for every i. The objective is S=sum_{i=1}^{100} x_i x_{i+2}. Find a simple periodic feasible assignment that gives a large value of S, and verify all cyclic constraints.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For i=1,...,50, set u=x_{2i} and v=x_{2i+1}. Use the constraints beginning at 2i-1 and 2i to bound x_{2i-1}x_{2i+1}+x_{2i}x_{2i+2} in terms of u and v.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let t=u+v. Show from nonnegativity and the constraints that 0<=t<=1, and reduce the pair bound to a function of t alone.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use an endpoint-only linear-programming rule as the sole exact method: evaluate the pair-bound function only at t=0 and t=1 and take the larger endpoint value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show that the 50 parity-pair expressions from the previous steps partition S exactly, and sum their individual bounds to obtain a global upper bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate S for the feasible periodic assignment found in the first step, including the wraparound terms, and compare its value with the global upper bound.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Conclude the exact maximum of S and state an assignment that attains it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

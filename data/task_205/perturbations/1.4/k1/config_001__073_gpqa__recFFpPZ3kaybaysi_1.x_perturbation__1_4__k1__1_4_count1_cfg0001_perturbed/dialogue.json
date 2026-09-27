@@ -1,0 +1,74 @@
+{
+  "release_task_index": 205,
+  "task_id": "gpqa__recFFpPZ3kaybaysi",
+  "dataset": "gpqa",
+  "ordinal": 73,
+  "variant": "perturbed",
+  "conversation_id": "073::gpqa__recFFpPZ3kaybaysi::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "e0a350b526bc1c2f11e26d441b71e5ce7eac76c7790240a4d0365ccf7e3a989e",
+  "semantic_condition_id": "dad61a64f2518986c28e4d141ca6344d65179327ad1d48411697730fc2d8312c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "ChIP-seq shows strong occupancy by transcription factor X at a developmental enhancer in iPSC-derived mesodermal progenitors, but X's high-information-content motif is absent from the enhancer sequence. What plausible explanations should be considered before choosing one?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Transcription factor Y is also detected at this enhancer, and Y's motif is present. What relationship between Y binding and X occupancy is supported by co-occupancy alone, and does it establish a Y-to-X causal direction?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which sequence analyses and experimental controls would distinguish direct X binding, indirect recruitment through Y, promoter crosslinking, and a generic ChIP artifact?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "ChIP-seq shows a strong signal for transcription factor X at the developmental enhancer. X has a high-information-content recognition motif. What can be inferred about X's association and the likelihood of direct canonical-motif binding?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Given Y occupancy and a clearly detectable Y motif at the same enhancer, what is the most straightforward interpretation of Y's binding?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "The enhancer is annotated in Ensembl Regulatory Build, no factors other than X and Y are reported there in public databases, and it is absent from ChIP-seq blacklists. Synthesize the most likely explanation for X's signal and compare it with artifact, promoter-crosslinking, and cryptic-motif alternatives.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How does the enhancer's absence from ChIP-seq blacklists affect the generic-artifact explanation?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the best-supported mechanism for X occupancy, clearly separating a likely explanation from a causally proven one.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Calibrate confidence in that mechanism given the absence of Y perturbation, temporal recruitment data, and a physical-interaction assay.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Design one perturbation-and-occupancy experiment and one physical co-occupancy control that would directly test whether Y recruits X to this enhancer.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final best-supported explanation for X occupancy and its principal evidentiary limitation.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

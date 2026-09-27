@@ -1,0 +1,20 @@
+{
+  "task_id": "099-capsule028",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "Excludes 287_98_2:1 as a control.",
+    "Includes single-strain 98 and 287 as co-culture candidates."
+  ],
+  "evidence_mode": "append"
+}

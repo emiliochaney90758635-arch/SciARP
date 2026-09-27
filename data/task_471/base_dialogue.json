@@ -1,0 +1,54 @@
+{
+  "release_task_index": 471,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2239",
+  "dataset": "olympiadbench",
+  "ordinal": 418,
+  "variant": "clean",
+  "conversation_id": "418::olympiadbench__OE_TO_maths_en_COMP_2239::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e1705b409dcd96d14a05f412b759451f947ebc0d32061a4d37617f9dc7563cb2",
+  "semantic_condition_id": "fee01b74a9c243da80060648cc494555780eb6be60021d3a70dca82b3051733f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let P be the parents' present combined age, C the children's present combined age, and n the number of children. Translate the statement that P is six times C.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How much do the parents' combined age and the children's combined age each change per calendar year? Express the rates in terms of the two parents and n children.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how those group-level rates will be used consistently for both the past and future conditions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the equation for two years ago, when the parents' combined age was ten times the children's combined age.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the equation for six years from now, when the parents' combined age will be three times the children's combined age.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the present-age relation established in the first turn into the past and future equations, and simplify both to relations between C and n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Solve the resulting pair of relations for the number of children.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

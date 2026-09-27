@@ -1,0 +1,54 @@
+{
+  "release_task_index": 367,
+  "task_id": "gpqa__recywRj5a8EEjj2Ib",
+  "dataset": "gpqa",
+  "ordinal": 236,
+  "variant": "clean",
+  "conversation_id": "236::gpqa__recywRj5a8EEjj2Ib::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "630d6afb51489df36c94ed131af517ccd62c6117f4822444477ac80bba42e90c",
+  "semantic_condition_id": "b2a8294eee9cdf3c8641101b39a0abb39ed7ccd4b16ce2a323a82b7decea7a1c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A one-dimensional relativistic oscillator obeys F=-kx, has mass m, and turns around at x=A. With U(0)=0, derive U(x) and the potential-energy increase from the centre to the turning point.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that potential-energy increase, write the total relativistic energy at x=A, including rest energy and the turning-point velocity condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At x=0, express the conserved energy in terms of the Lorentz factor gamma_max associated with the maximum speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Equate the turning-point and centre energies to derive gamma_max in terms of k, A, m, and c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve that relation for v_max in closed form.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions, the nonrelativistic limit kA^2 << mc^2, and the requirement v_max<c.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the conserved-energy equation and the final maximum-speed expression.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

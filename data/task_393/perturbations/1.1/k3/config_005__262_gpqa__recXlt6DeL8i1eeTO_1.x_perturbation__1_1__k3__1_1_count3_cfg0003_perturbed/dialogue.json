@@ -1,0 +1,69 @@
+{
+  "release_task_index": 393,
+  "task_id": "gpqa__recXlt6DeL8i1eeTO",
+  "dataset": "gpqa",
+  "ordinal": 262,
+  "variant": "perturbed",
+  "conversation_id": "262::gpqa__recXlt6DeL8i1eeTO::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "66adfa39a5c5f37e05b8de3296be97bf69a037f79be97557b46df99029bb6009",
+  "semantic_condition_id": "1055a53159a5f094d1768755c882ceb3dbbc063282d11b196b2828f2ae47a12a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For acyclic 1,3-butadiene, compare the `s-cis` and `s-trans` conformers in two respects: which absorbs at the shorter microwave wavelength, and which has the lower-energy lowest occupied pi orbital? Use a qualitative molecular-orbital argument rather than assumed band positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Describe how bringing the terminal sigma bonds closer in the `s-cis` conformer affects orbitals with matching terminal phases and those with opposite terminal phases.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that interaction to the HOMO of 1,3-butadiene. What are its terminal phases, and does the `s-cis` geometry raise or lower its energy relative to `s-trans`?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now apply the same reasoning to the LUMO and combine the two shifts to determine which conformer has the smaller HOMO-LUMO gap.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the HOMO-LUMO gap ordering and the infrared energy-wavelength relation to identify the conformer with the shorter-wavelength absorption.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the spectroscopic direction explicitly from `E = hc/lambda`: does a shorter wavelength correspond to a higher or lower transition energy? Check that against the gap ordering.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Analyze the terminal phases of the lowest occupied pi orbital and determine which conformer places that orbital lower in energy. Then state the conformation answering each part of the problem.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "What limitations should accompany this qualitative orbital prediction when no conformer-specific spectra, solvent conditions, or interaction energies are provided?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Would the greater equilibrium population of one conformer change the intrinsic orbital-energy and transition-energy ordering just derived? Distinguish conformer population from the comparison requested here.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final pair of conformations and summarize the terminal-phase argument for both conclusions.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

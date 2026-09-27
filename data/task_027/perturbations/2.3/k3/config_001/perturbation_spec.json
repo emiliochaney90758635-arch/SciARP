@@ -1,0 +1,28 @@
+{
+  "task_id": "027-capsule008",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Transposes the positive count 138 to 183.",
+    "Independently transposes the positive count 73 to 37.",
+    "Independently transcribes the positive count 60 as 90."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "Brain-only count"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "Final-only count"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "Baseline-only count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

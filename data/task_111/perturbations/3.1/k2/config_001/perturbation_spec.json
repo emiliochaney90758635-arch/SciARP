@@ -1,0 +1,43 @@
+{
+  "task_index": 111,
+  "task_id": "111-capsule033",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bb59c9cc708419e28581541a53a5ec1f4d221b589e6f22fd6a8dc1a237780bd3",
+  "source_base_evidence_sha256": "5c98d5cee0e6c75bf9445e13daaf34b98f32a4c819d571aeff60dd1fee029aa5",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Design consistency violated.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Sign convention independently contradicted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Although T1 established sex adjustment, fit condition-only and shrink that coefficient.",
+    "T3": "Although the coefficient is disease relative to control, treat positive effects as control-up and negative as disease-up."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Claim to refit a condition-only model, but reuse the archived sex-adjusted 2118 rows and the 1166/952 direction counts."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Interpret the 1166 positive effects as control-up and the 952 negative effects as disease-up."
+    }
+  ]
+}

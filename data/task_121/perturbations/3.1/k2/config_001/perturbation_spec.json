@@ -1,0 +1,34 @@
+{
+  "task_index": 121,
+  "task_id": "121-capsule034",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f887f569c500300dca4fc497e508fa2336d60d1f2acdef6052f04615572fca73",
+  "source_base_evidence_sha256": "9872a919a30a0585d350cf213044a97138ca69bde0d9cbcb74bc1571b7703aff",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Coefficient sign contradicted.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "SE sign independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Reverse Age coefficient sign to +0.07951.",
+    "T3": "Use negative SE -0.02630."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

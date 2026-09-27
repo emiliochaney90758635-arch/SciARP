@@ -1,0 +1,64 @@
+{
+  "release_task_index": 211,
+  "task_id": "gpqa__recGFNRVl1qBZGwyU",
+  "dataset": "gpqa",
+  "ordinal": 79,
+  "variant": "perturbed",
+  "conversation_id": "079::gpqa__recGFNRVl1qBZGwyU::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a4b82298eb5b1618f11232c999346a39df00380319a1d3a8841d56c7d482f26e",
+  "semantic_condition_id": "d0e087ff9238a7cfb920cee5eafe3d941e26b09812c74f0461c7a7195ebdd02f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Propionaldehyde reacts with ethanedithiol (EDT) and BF3. Identify thioacetal intermediate A by structure or name.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A is treated successively with BuLi, bromoethane, and then HgCl2/H2O/H+. Identify product D and explain the alkylation and thioacetal deprotection steps.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Separately, 3-bromopentane reacts with PPh3 and then BuLi. Identify the resulting Wittig ylide and its carbon skeleton.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "React ketone D with that ylide. Identify alkene E by condensed structure or name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe a symmetry-based procedure for grouping E's carbon atoms into distinct 13C NMR environments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply that procedure to E and count its distinct 13C environments.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Recompute the product structure and symmetry using a ylide prepared from 2-bromopentane, PPh3, and BuLi.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Partition the carbon atoms in the proposed structure of E into symmetry-equivalent sets and give the multiplicity of each set.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final number of distinct 13C NMR signals.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

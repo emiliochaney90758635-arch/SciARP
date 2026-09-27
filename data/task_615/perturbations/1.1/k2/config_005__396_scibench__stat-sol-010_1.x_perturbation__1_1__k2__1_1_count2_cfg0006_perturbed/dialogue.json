@@ -1,0 +1,49 @@
+{
+  "release_task_index": 615,
+  "task_id": "scibench__stat-sol-010",
+  "dataset": "scibench",
+  "ordinal": 396,
+  "variant": "perturbed",
+  "conversation_id": "396::scibench__stat-sol-010::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "97889bfd868aee1c17f3795e236b39a5d25f6c4374e1014b66f0e81eab4589a4",
+  "semantic_condition_id": "4c79dd6f4b596d919c72c5933a08345225b0d101b8df3d1bc40b60ebcfb224a4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A five-card poker hand is drawn from a standard 52-card deck. Do reorderings of the same physical cards count as different hands?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the applicable count in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rewrite the count as a falling factorial without dividing by card order.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the number of ordered five-card deal sequences and retain it as the poker-hand total.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check without merely repeating the calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the total and its sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

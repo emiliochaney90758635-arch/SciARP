@@ -1,0 +1,45 @@
+{
+  "task_id": "019-capsule006",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Substitutes a broader call-set path.",
+    "Substitutes pseudoreplicated row-level analysis.",
+    "Substitutes a different pairwise test path."
+  ],
+  "injection_turns": [
+    "T2",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T5",
+      "consumer_turns": [
+        "T5_response",
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d04326af81d1fce0d204ea8ae27005683c368c23253ac8db92fa86d4eba51a53",
+  "configured_evidence_sha256": "d04326af81d1fce0d204ea8ae27005683c368c23253ac8db92fa86d4eba51a53",
+  "evidence_unchanged": true
+}

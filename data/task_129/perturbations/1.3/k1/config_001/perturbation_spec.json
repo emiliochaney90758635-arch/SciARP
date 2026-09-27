@@ -1,0 +1,26 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "1.3",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Coefficient symbol mapped to intercept.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Shrink the intercept term instead of `condition[T.WT]` after refitting the four-sample model."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

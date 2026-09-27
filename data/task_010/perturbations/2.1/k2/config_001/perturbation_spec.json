@@ -1,0 +1,22 @@
+{
+  "task_id": "010-capsule004",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Reverses the ASXL1 disease-code meaning.",
+    "Changes adjusted enrichment significance to nominal significance."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "condition-code premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "significance premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

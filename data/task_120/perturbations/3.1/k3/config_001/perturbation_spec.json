@@ -1,0 +1,42 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome state contradicted.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Coefficient sign independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Transform sign independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Reverse Response coding.",
+    "T3": "Use positive beta_Age.",
+    "T4": "Despite the stated inverse-logit, transform with 1/(1+exp(eta))."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 264,
+  "task_id": "gpqa__recg02EmYPFs5srwA",
+  "dataset": "gpqa",
+  "ordinal": 132,
+  "variant": "perturbed",
+  "conversation_id": "132::gpqa__recg02EmYPFs5srwA::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "581e16fe41aa4042a789bac20511bb50c3223cfc23f4a9bd8ceb565b356fcf18",
+  "semantic_condition_id": "746082086601db241d8c2f6653e83650df775786de55fd5442e5fe7a04de8b37",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Star 1 shows 0.1 Angstrom of rotational broadening in the 6300-Angstrom [O I] line. Using c=3.00e5 km/s and ignoring inclination, write the Doppler relation and estimate its equatorial rotation speed.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Star 2 has a 20-day rotation period and a radius of 1.5 solar radii. Assuming rigid rotation and R_sun=6.96e5 km, calculate its equatorial speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Star 3 has v sin i=3.1 km/s and a rotational-axis inclination of 30 degrees. Recover its equatorial speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For Star 4, replace the previously stated modulation period with 20 days while retaining the radius of 1.4 solar radii, then calculate its equatorial speed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the four nominal speeds and identify the fastest rotator.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What observational and modeling uncertainties attach to that ranking, including line-profile broadening, stellar radii, periods, inclination, differential rotation, spot latitude, and the interpretation of the activity signal?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which of those uncertainties is most capable of changing the nominal ordering, and why?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the fastest star, the four speed estimates, and a calibrated qualification of the ranking.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

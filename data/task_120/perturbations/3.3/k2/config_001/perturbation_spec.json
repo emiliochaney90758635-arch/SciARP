@@ -1,0 +1,34 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Wrong model form.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Wrong probability method independently imposed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Fit without an intercept.",
+    "T4": "Use eta directly as a linear probability instead of inverse-logit."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 536,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1662",
+  "dataset": "olympiadbench",
+  "ordinal": 483,
+  "variant": "perturbed",
+  "conversation_id": "483::olympiadbench__OE_TO_maths_en_COMP_1662::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "60d8f687abf53681801c019288e8c3a6d52dd6a2ec31a99820204d902ad31370",
+  "semantic_condition_id": "1aa2d4948b138b1f3ad284624141125ee878812184332a235e7d319cf478965e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cover the nonzero grid points in {0,...,n}^3 using explicit planes that avoid the origin, and count the planes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For any such cover by N affine planes, multiply their linear equations to form P. State deg P, its values on the covered grid points, and its value at the origin.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Reduce P modulo the three grid polynomials and call the result a rational function R.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the grid values already established to determine R's vanishing pattern and its value at the distinguished grid point.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use tensor-product interpolation on the reduced object established above to derive the unique expression consistent with those grid values.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compute the ordinary total degree of the resulting interpolating object and compare it with deg P.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Translate the degree comparison into a lower bound on the number of covering planes.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the construction and lower bound to give the minimum number of planes.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

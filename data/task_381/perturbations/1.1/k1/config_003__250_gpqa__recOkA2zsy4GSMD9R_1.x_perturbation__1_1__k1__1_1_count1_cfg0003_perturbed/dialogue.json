@@ -1,0 +1,59 @@
+{
+  "release_task_index": 381,
+  "task_id": "gpqa__recOkA2zsy4GSMD9R",
+  "dataset": "gpqa",
+  "ordinal": 250,
+  "variant": "perturbed",
+  "conversation_id": "250::gpqa__recOkA2zsy4GSMD9R::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ffec674bb2b3bba250e442302cf58595b02ec71ccec4bc34a3403b38cd8ea286",
+  "semantic_condition_id": "ae971cfd788e427c91445045ae8fd0b43f2be7f32be9bf087070f01d62827aeb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An equimolar 7.20 g sample of two ammonium salts is decomposed. Convert the gas-train observations into moles: 3.60 g retained by Mg(ClO4)2, 0.80 g oxygen gained by hot copper, and 2.24 L residual gas at STP.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret what each stage removes or transforms, and write a gas ledger for water, an oxygen-donating gas, and the residual gas.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Test a plausible equimolar pair of solvents, letting the amount of each candidate substance be x.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the proposed pair against the initial sample mass and all three gas-train observations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the atoms in the chemical formula of each supported candidate and add the two counts.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the idealizations behind the identification and the evidential status currently warranted by the indirect gas-train data.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify mass and elemental balance for the proposed decomposition reactions and gas-train operations.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the proposed pair and combined atom count, together with the appropriate qualification from the indirect gas-train evidence.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

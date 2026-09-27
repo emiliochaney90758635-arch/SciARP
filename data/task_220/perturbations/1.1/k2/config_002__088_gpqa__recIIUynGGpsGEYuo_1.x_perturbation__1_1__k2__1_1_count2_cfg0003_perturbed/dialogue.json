@@ -1,0 +1,54 @@
+{
+  "release_task_index": 220,
+  "task_id": "gpqa__recIIUynGGpsGEYuo",
+  "dataset": "gpqa",
+  "ordinal": 88,
+  "variant": "perturbed",
+  "conversation_id": "088::gpqa__recIIUynGGpsGEYuo::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "d93039991bf8e7115444b7a8e7a23ff3d7c04eeef59880d58483e40b5140f48d",
+  "semantic_condition_id": "b9e73d3f2cc5efde9d4fb491c39586c8380cf0bfc89b6cdaae411ca2df553ad7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the rest frame of glass with refractive index n and c=1, state the light speed inside the medium.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the collinear relativistic velocity-addition law needed to transform that speed to the laboratory frame.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write a relativistic energy-momentum relation for the laboratory light speed in terms of u' and v.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the glass-frame speed into a relativistic Doppler relation rather than velocity addition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the simplified laboratory-frame speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the propagation direction using the sign convention established earlier and verify that the result is consistent with the physical setting.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the speed and its two limiting cases.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

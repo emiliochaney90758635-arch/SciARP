@@ -1,0 +1,54 @@
+{
+  "release_task_index": 367,
+  "task_id": "gpqa__recywRj5a8EEjj2Ib",
+  "dataset": "gpqa",
+  "ordinal": 236,
+  "variant": "perturbed",
+  "conversation_id": "236::gpqa__recywRj5a8EEjj2Ib::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "b36a872b19645f30e2fae2bf15f023ddfe8a431f2d2a516a6cfc37af774b6dc2",
+  "semantic_condition_id": "2364cd2cbc3dd6e5c6e7ab573aa8e0feb65679f92ff02b7624cbbb841d1b1c79",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the oscillator as obeying Boyle's law while it is also assigned F=-kx. With mass m, turning point x=A, and U(0)=0, derive U(x) and the potential-energy increase.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the potential-energy increase, write the total thermal energy at x=A, including rest energy and the turning-point velocity condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At x=0, express the conserved energy in terms of the refractive index gamma_max associated with the maximum speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Equate the turning-point and centre energies to derive gamma_max in terms of k, A, m, and c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve that relation for v_max in closed form.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions, the nonrelativistic limit kA^2 << mc^2, and the requirement v_max<c.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the conserved-energy equation and the final maximum-speed expression.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

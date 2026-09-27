@@ -1,0 +1,42 @@
+{
+  "release_task_index": 47,
+  "task_id": "047-capsule012",
+  "source_id": "bix-16-q1",
+  "dataset": "bixbench",
+  "ordinal": 47,
+  "variant": "perturbed",
+  "conversation_id": "047::047-capsule012::3.3::k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "d50b2be09e00694050ffde418aa16eb3d076307f929fd3e92668cd6bce639cfb",
+  "semantic_condition_id": "f9352e67311340503b1b03f33de36d31dec149b92299416a4fe1f2acb16cc2eb",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "72785b4c751e5714484695442c1d0a2a7abce2d2370aa23acd81057704910f1c",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Correlation direction and analysis population\n\nThe expression matrix contains batch-corrected `log2(TPM+1)` values. The CRISPR matrix contains Chronos gene-effect values, where a more negative original value means that a gene is more essential.\n\nThe archived analysis aligned the two matrices by complete cell-line ID and complete gene-column label, obtaining 1,103 common cell lines and 17,676 common gene columns. For each gene it used common nonmissing cell lines and calculated:\n\n```python\ninverted_essentiality = gene_effect * -1\nspearman_r, p_value = spearmanr(expression, inverted_essentiality)\n```\n\nAccordingly, the reported coefficient is the correlation of expression with **inverted** gene effect. A negative coefficient means that higher expression is associated with a lower inverted-essentiality value.\n\n## Smallest end of the archived all-gene result\n\nThe archived operation `nsmallest(5, \"spearman_r\")` was applied to all 17,676 gene results. The returned records are deliberately shown below in a different order so that the coefficient, rather than row order, determines the minimum.\n\n| Complete gene-column label | Common nonmissing cell lines | Spearman `r` shown in the archived output | Independently recomputed `r` | Raw two-sided p-value |\n|---|---:|---:|---:|---:|\n| `RNASEK (440400)` | 285 | -0.301441 | -0.3014407468 | 2.128976e-07 |\n| `USE1 (55850)` | 1,103 | -0.327256 | -0.3272558059 | 6.036225e-29 |\n| `EPHA2 (1969)` | 1,103 | -0.341020 | -0.3410202847 | 1.938409e-31 |\n| `KIRREL1 (55243)` | 1,103 | -0.401674 | -0.4016744673 | 5.110071e-44 |\n| `CDKN1A (1026)` | 1,103 | -0.523398 | -0.5233981788 | 1.332245e-78 |\n\nGene columns use the format:\n\n```text\nGENE_SYMBOL (Entrez_ID)\n```\n\nThe requested gene symbol is the text to the left of the parenthesized identifier. BH adjustment is not used to rank the magnitude of these coefficients.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse only the rounded displayed rho column for all later comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Rank candidates by smallest raw p-value.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Then choose the largest absolute displayed rho rather than the recomputed numerical minimum.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

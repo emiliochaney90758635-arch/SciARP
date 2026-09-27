@@ -1,0 +1,40 @@
+{
+  "release_task_index": 26,
+  "task_id": "026-capsule008",
+  "source_id": "bix-9-q3",
+  "dataset": "bixbench",
+  "ordinal": 26,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::026::026-capsule008::2.2.k3::perturbed",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "55ed5d3583f62b0d5175c94d4c2357b5be468d4015debdc0398301507198fb22",
+  "semantic_condition_id": "60dfb30f57901efbac4e726cf3074d97688ccc53f22f60580c5ac5597caab2a7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis setting\n\nThe dentate-gyrus subset contains 30 samples:\n\n| Group | Samples |\n|---|---:|\n| Control | 10 |\n| Good responder | 10 |\n| Bad responder | 10 |\n\nThe original count table has 25,402 gene rows. A preliminary filter retaining genes whose total count across the 90-sample count matrix is at least 10 leaves 21,251 rows. The archived workflow then forms rounded pseudocounts as\n\n```text\n(norm_count_clean * 1e6 / norm_count_clean.sum()).round().astype(int)\n```\n\nwhere the summation and scaling are gene-wise across the 90 samples in that matrix. These are descriptive pseudocounts, not raw integer sequencing counts.\n\nThe response model uses Control as the reference group. The three dentate-gyrus contrast sets are:\n\n| Set | Archived contrast key |\n|---|---|\n| A | `brain_good_resp_vs_ctrl` |\n| B | `brain_bad_resp_vs_ctrl` |\n| C | `brain_bad_resp_vs_good_resp` |\n\nFor every set, retain unique `GeneID` values satisfying all three conditions:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 0.5\nbaseMean >= 10\n```\n\n## Mutually exclusive Venn regions\n\nThe archived dentate-gyrus Venn output gives these seven disjoint regions:\n\n| Region | Unique `GeneID` count |\n|---|---:|\n| A only | 9 |\n| B only | 111 |\n| C only | 29 |\n| A ∩ B only | 7 |\n| A ∩ C only | 2 |\n| B ∩ C only | 22 |\n| A ∩ B ∩ C | 0 |\n\n“Pairwise-only” means membership in exactly the named pair while excluding the third set. The numeric overlap signature is: all three pairwise-only regions are nonzero, while the three-way region is zero.\n\nAn archived prose remark saying “no overlap” is less precise than the numeric Venn regions and should not be used in place of the table. Likewise, a separate observation that the intersection across all 18 comparisons is empty does not determine the three-set dentate-gyrus overlap requested here.\n\n## Validity note\n\nThe comparison is a descriptive re-expression of the archived rounded-pseudocount analysis. The pseudocount construction and the reuse of samples across related contrasts limit formal inferential interpretation; the reported Venn counts are best treated as exploratory overlap summaries.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Shared dentate-gyrus response programs across paroxetine outcome groups\n\nNadia Verhoeven, Akio Matsumoto, Lindiwe Khumalo, and Eric J. Barrett\n\n## Abstract\n\nTranscriptional contrasts among treatment-response groups may separate common disease programs from response-specific effects. We reconstructed the archived rounded pseudo-count analysis of control, good-responder, and bad-responder dentate gyrus samples and applied common adjusted-significance, effect-size, and abundance filters. GeneIDs were compared across good responder versus control, bad responder versus control, and bad responder versus good responder. The three comparisons shared 14 GeneIDs, and all pairwise overlap regions were nonempty after excluding the triple intersection. This complete overlap pattern indicates a core dentate-gyrus response module common to all contrasts, superimposed on larger comparison-specific sets. The reconstructed inputs constrain the findings to exploratory set description.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDefine the dentate-gyrus sample groups, the three response contrasts, and the common DEG filtering and GeneID deduplication rule.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# No shared dentate-gyrus response genes across contrasts\n\n**Authors:** Sofia Marin, Kwame A. Boateng, and Emily J. Hart\n\n## Abstract\n\nWe reconstructed the three archived dentate-gyrus DEG sets under the stated thresholds. All three pairwise-only regions and the three-way region were empty, yielding an absent-overlap classification. The result was treated as exploratory because it derives from rounded pseudocounts.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDetermine whether the archived all-comparison intersection answers this three-contrast dentate-gyrus question, and delimit the correct set operation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Provenance of Contrast Labels in the Dentate-Gyrus Venn Archive\n\nJulia M. Serrano, Kofi B. Asante, Rieko H. Matsui, and Nathan C. Doyle\n\n## Abstract\n\nWe audited the label provenance of the archived three-set Venn analysis for control, good-responder, and bad-responder dentate-gyrus samples. The archive was interpreted with set A as good responder versus control, set B as bad responder versus good responder, and set C as bad responder versus control. The seven numeric Venn regions, DEG thresholds, unique-GeneID unit, and partial-overlap classification were otherwise retained. Under this label assignment, the pairwise-only counts remain numerically unchanged but the counts attached to the A–B and A–C comparison pairs exchange scientific meaning. This audit concerns contrast-to-set identity rather than proposing another overlap signature.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nMap the seven mutually exclusive Venn regions to the three contrasts and report all pairwise-only and three-way counts.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Does that pattern show complete, partial, or absent overlap among the three contrast sets?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

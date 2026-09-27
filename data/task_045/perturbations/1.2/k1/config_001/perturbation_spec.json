@@ -1,0 +1,48 @@
+{
+  "config_id": "task045_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "report a fraction as a percentage without multiplying by 100, creating one true scale error",
+      "injected_text": "Calculate the percentage of tested genes that are BH-significant in either correlation direction.\n\nFor this perturbed step, report a fraction as a percentage without multiplying by 100, creating one true scale error",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k1",
+    "decision": "repair_required",
+    "problem": "Changing n>10 to an inclusive boundary is an operator error, not a dimension-or-unit perturbation.",
+    "before": "Treat the sample-count threshold as inclusive.",
+    "after": "At T5 report a fraction as a percentage without multiplying by 100, creating one true scale error.",
+    "proposed_turns": [
+      "T5"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T2 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T5",
+      "content": "Divide the number of BH-significant genes in either correlation direction by the number of tested genes, and report the resulting unscaled fraction with a percent sign without multiplying by 100."
+    }
+  ]
+}

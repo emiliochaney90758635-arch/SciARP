@@ -1,0 +1,36 @@
+{
+  "config_id": "task068_1.1_k2",
+  "subclass": "1.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Use enrichment to mean any nonzero overlap."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use smallest significance to mean the largest Odds Ratio."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Treat every term with a nonzero overlap as enriched."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Among metabolic-process results, select the term or terms with the smallest pathway-size denominator in the Overlap field and retain all ties."
+    }
+  ]
+}

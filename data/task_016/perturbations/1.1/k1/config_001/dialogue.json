@@ -1,0 +1,40 @@
+{
+  "release_task_index": 16,
+  "task_id": "016-capsule005",
+  "source_id": "bix-6-q5",
+  "dataset": "bixbench",
+  "ordinal": 16,
+  "variant": "perturbed",
+  "conversation_id": "016::016-capsule005::1.1.k1::lane_a_manual",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "2a52982ffafb5e4db3f5de8e95d9e7a45d1d09610695f5d30e4542454c233390",
+  "semantic_condition_id": "8ec57708bb45169d1c6781fb1946a98b9cd20a6b83e1c14c1472d2a383f7070f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Screening-condition denominator\n\nThe MAGeCK table contains five S1/S2 pairs:\n\n```text\nAcute noTcells S1 | Acute noTcells S2\nAcute Tcells S1   | Acute Tcells S2\nChronic Round1 S1 | Chronic Round1 S2\nChronic Round2 S1 | Chronic Round2 S2\nChronic Round3 S1 | Chronic Round3 S2\n```\n\nS1 and S2 are replicates of one condition, not separate conditions. Excluding the no-T-cell control leaves four conditions:\n\n```text\nacute T cells\nchronic round 1\nchronic round 2\nchronic round 3\n```\n\n## Common candidate and ORA rules\n\nWithin each condition:\n\n```python\ncondition_min = min(S1_pvalue, S2_pvalue)\ncandidate = condition_min < 0.05\n```\n\nCandidate RefSeq IDs are mapped to human gene symbols. All measured RefSeq IDs mapped through the same procedure form the common Reactome ORA background.\n\n| Condition | Candidate RefSeq IDs | Mapping records not found | Mapped candidate records |\n|---|---:|---:|---:|\n| acute T cells | 2,303 | 6 | 2,297 |\n| chronic round 1 | 2,271 | 7 | 2,264 |\n| chronic round 2 | 2,303 | 4 | 2,299 |\n| chronic round 3 | 2,299 | 5 | 2,294 |\n\nA condition is positive when its deduplicated canonical-pathway set contains at least one pathway with `Adjusted P-value < 0.05`.\n\n## Condition-level Reactome output\n\nThe same Reactome GMT was loaded both as a file and as a dictionary. Rows duplicated under `ReactomePathways.gmt` and `gs_ind_2` are collapsed by canonical pathway.\n\n| Condition | Significant raw rows | Unique significant pathways | Canonical pathways |\n|---|---:|---:|---|\n| acute T cells | 0 | 0 | {} |\n| chronic round 1 | 0 | 0 | {} |\n| chronic round 2 | 4 | 2 | {R-HSA-392154, R-HSA-418457} |\n| chronic round 3 | 0 | 0 | {} |\n\nFor chronic round 2:\n\n| Reactome ID | Term | Displayed Adjusted P-value |\n|---|---|---:|\n| R-HSA-392154 | Nitric oxide stimulates guanylate cyclase | 0.032708 |\n| R-HSA-418457 | cGMP effects | 0.032708 |\n\nThe percentage uses conditions, not result rows or replicates, as the statistical unit:\n\n```text\n100 * (conditions with a nonempty significant-pathway set)\n    / (eligible non-control conditions)\n```\n\n## Interpretation boundary\n\nTaking the smaller replicate p-value without adjusting for that selection is exploratory. The pathway-level adjusted p-values do not turn the upstream candidate screen into a confirmatory replicate-combination procedure.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse `screening condition` to mean each individual S1 or S2 column rather than an S1/S2 pair.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the common replicate screen, identifier mapping, and Reactome background construction to each eligible condition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Deduplicate the Reactome output by canonical pathway and determine which conditions have at least one adjusted p-value below 0.05.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What percentage of eligible conditions is positive under that condition-level rule?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

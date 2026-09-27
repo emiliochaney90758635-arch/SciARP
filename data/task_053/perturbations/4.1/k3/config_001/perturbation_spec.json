@@ -1,0 +1,73 @@
+{
+  "config_id": "task053_4.1_k3",
+  "subclass": "4.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "present the sample mean as exact population mean",
+      "injected_text": "Extract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean.\n\nFor this perturbed step, present the sample mean as exact population mean",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "do the same for dispersion",
+      "injected_text": "Calculate the sample standard deviation using n-1 in the variance denominator.\n\nFor this perturbed step, do the same for dispersion",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "do the same for SEM",
+      "injected_text": "What standard error of the mean follows from that sample standard deviation and sample size?\n\nFor this perturbed step, do the same for SEM",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "4.1.k3",
+    "decision": "repair_required",
+    "problem": "Three independent suppressed uncertainties are not explicit.",
+    "before": "General repeated certainty statements.",
+    "after": "At T1 present the sample mean as exact population mean; at T2 do the same for dispersion; at T3 do the same for SEM.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nExtract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean, reporting the sample mean as the exact population mean."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Calculate the sample standard deviation using n-1 and report it as the exact population dispersion."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the standard error and report it as the exact population uncertainty."
+    }
+  ]
+}

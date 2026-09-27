@@ -1,0 +1,38 @@
+{
+  "task_id": "100-capsule028",
+  "release_task_index": 100,
+  "subclass": "1.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Mis-scales Area values.",
+    "Mis-scales Circularity cutoff."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "eaac0ca930a220f1c290b2f3985e214c76d479d4754e79ac27e67e6e1c202bd5",
+  "configured_evidence_sha256": "eaac0ca930a220f1c290b2f3985e214c76d479d4754e79ac27e67e6e1c202bd5",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

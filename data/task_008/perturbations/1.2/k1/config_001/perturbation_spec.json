@@ -1,0 +1,24 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Mixes a thousands-scaled numerator with an unscaled denominator."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "configured_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "evidence_unchanged": true
+}

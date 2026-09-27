@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "a0e8882a063db28fd955a13e09eaab59c264134fb79744afe502474dd97452d6",
+  "semantic_condition_id": "83b984980bdcb2b78a97710bae687fa21f30d1ce5cfb95db326d3d2587a6dfb3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe a hyperbolic Earth-to-Mars flyby orbit and relate its travel time to that orbit's period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the two orbital radii, calculate the thermal conductivity of the Hohmann transfer ellipse.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G and the solar mass, calculate the Sun's electric permittivity and then write the transfer half-period formula.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the Hohmann orbital inclination and convert it to days, retaining the stated Mars-Sun radius.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

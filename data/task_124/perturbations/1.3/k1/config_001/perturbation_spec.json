@@ -1,0 +1,25 @@
+{
+  "task_index": 124,
+  "task_id": "124-capsule035",
+  "subclass": "1.3",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "73b33665ecd8fc29c3ec6e804d5bf648e0be637cc988a4663689c347022bd917",
+  "source_base_evidence_sha256": "17c3e3ce567616aab47f3ece9f6ceb2411910a7e2ee5e7485c722a4eb06fd30a",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Species length columns swapped.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Use the mislabeled Jackdaw column as the Zebra Finch chromosome-length column."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

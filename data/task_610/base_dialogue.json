@@ -1,0 +1,49 @@
+{
+  "release_task_index": 610,
+  "task_id": "scibench__stat-sol-002",
+  "dataset": "scibench",
+  "ordinal": 391,
+  "variant": "clean",
+  "conversation_id": "391::scibench__stat-sol-002::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b17a99d04a945b6ec5e84c9ea878f56c841ea032044bfaa0a297fa996a8b16f5",
+  "semantic_condition_id": "e705765c7f3f0a631b340bd9de39b71d89df1eb15939f613ee934885808837e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10-person club must assign four distinct offices: president, vice president, secretary, and treasurer. Explain whether this is an ordered assignment or an unordered selection, and identify what makes two outcomes different.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many choices are available for president and then vice president? Give the product for those first two assignments.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "After those offices are filled, how many choices remain for secretary and then treasurer? Give the product for these two assignments.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the four step counts for the original 10-person club and compute the exact number of complete office assignments.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by relating the assignment count to choosing a four-person committee and then assigning its members to the four named offices. Explain why the committee count alone is insufficient.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact number of assignments and briefly state the role-based interpretation of the count.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 143,
+  "task_id": "gpqa__rec0VuKUjt1SZ7NYv",
+  "dataset": "gpqa",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::gpqa__rec0VuKUjt1SZ7NYv::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "4bcbdebdbeda4cbb42fd465bdd6ab29df09b34f24e4f0bb75094c51b9f0155f2",
+  "semantic_condition_id": "860e54be6bd2743bc455d9fd7cc70fa3e8e3fd632f0dcd5ecbdf7cf11bbed74d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the stated two-dimensional metric, write the stress-energy tensor rather than the metric tensor, compute its determinant, and give an area element.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Transform the coordinate-disk area integral using spherical coordinates (rho,theta).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze convergence of the radial improper integral as the coordinate radius approaches 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For truncated disks of radius R<2, determine the behavior of their area as R approaches 2 from below and identify the divergence type.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why do the finite angular range and exclusion of the singular boundary circle not make the improper area finite?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the area of the radius-2 coordinate disk in the extended sense and justify it from the boundary behavior.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

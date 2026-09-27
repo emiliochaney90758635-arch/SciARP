@@ -1,0 +1,40 @@
+{
+  "release_task_index": 117,
+  "task_id": "117-capsule034",
+  "source_id": "bix-51-q5",
+  "dataset": "bixbench",
+  "ordinal": 117,
+  "variant": "perturbed",
+  "conversation_id": "117::117-capsule034::3.3::k2::perturbed::lane_d",
+  "condition_label": "3.3.k2",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 2,
+  "dialogue_sha256": "029a0b1c397d5d9577a9d934f89a211034a594099a746ceedc9bd61b307367bc",
+  "semantic_condition_id": "e438c2309f03d11f40e721c575fafb98be0cac93c66ba2d9a7d2e301f9da72c7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# BMI coefficient-test evidence\n\n## Complete BMI and response input\n\nThe source table has 80 valid patient rows. Group 1 corresponds to efficacy `PR` and is encoded as `Response=1`; Group 2 is encoded as `Response=0`. BMI and response are complete.\n\n```text\nResponse = 1 (n=41), BMI:\n18.7, 18.4, 25.6, 23.7, 23.8, 19.6, 21.3, 22.8, 22.8, 22.8,\n21.4, 23.7, 18.8, 18.6, 22.4, 23.1, 23.9, 22.6, 20.6, 22.2,\n23.8, 21.8, 23.3, 25.8, 20.7, 23.1, 24.0, 20.5, 19.2, 24.4,\n25.1, 20.3, 22.9, 25.6, 25.6, 18.5, 22.6, 25.9, 23.9, 19.5,\n25.4\n\nResponse = 0 (n=39), BMI:\n19.4, 25.5, 20.3, 25.0, 18.1, 18.3, 25.2, 18.8, 18.6, 21.0,\n22.6, 18.0, 18.7, 22.3, 20.2, 19.3, 22.4, 19.9, 18.1, 21.9,\n18.8, 23.5, 21.9, 25.2, 22.7, 23.1, 24.8, 25.0, 24.6, 20.3,\n20.4, 25.6, 19.9, 19.5, 23.2, 20.2, 22.9, 21.3, 21.6\n```\n\nInput checks:\n\n| Response | n | BMI sum | BMI mean | BMI sample SD | range |\n|---:|---:|---:|---:|---:|---:|\n| 1 | 41 | 918.7 | 22.4073170732 | 2.2766631551 | 18.4–25.9 |\n| 0 | 39 | 838.1 | 21.4897435897 | 2.4257169176 | 18.0–25.6 |\n| all | 80 | 1756.8 | 21.9600000000 | 2.3807030129 | 18.0–25.9 |\n\n## Model and coefficient table\n\n```r\nmodel_BMI <- glm(Response ~ BMI, data = dataset, family = binomial)\n```\n\nThis model includes an intercept and tests `H0: beta_BMI=0`. Its coefficient table is:\n\n| term | Estimate | Std. Error | z | two-sided `Pr(>|z|)` |\n|---|---:|---:|---:|---:|\n| `(Intercept)` | -3.631933898892 | 2.159333708778 | -1.681969713216 | 0.092574713020 |\n| BMI | 0.167746449421 | 0.097868649588 | 1.713995749691 | 0.086529506466 |\n\nThe two-sided Wald statistic is computed as:\n\n```text\nz = Estimate / Std. Error\np = 2 × Phi(-abs(z))\n```\n\nThe archived high-precision display for the BMI row is `0.08652951`; the shorter coefficient summary displays `0.0865`.\n\nFor scope separation, the combined `Response ~ Age + BMI + Gender` model gives a BMI p-value of `0.1362967`, and the intercept-only row above gives `0.0925747`; neither is the BMI row of the single-predictor model.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the binary treatment-response outcome and complete 80-row BMI analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit Response~BMI-1 without an intercept.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Obtain the fitted standard error for the BMI coefficient.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use a one-sided rather than two-sided Wald test.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

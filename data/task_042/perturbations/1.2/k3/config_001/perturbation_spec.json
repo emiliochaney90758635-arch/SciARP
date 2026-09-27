@@ -1,0 +1,31 @@
+{
+  "subclass": "1.2",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "conflates rows with unique sites",
+      "consumer_turns": [
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "misreads fractional VAF as percentage points",
+      "consumer_turns": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "uses carrier count as denominator for a row count",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "release_task_index": 214,
+  "task_id": "gpqa__recH879YiAi6dLCSy",
+  "dataset": "gpqa",
+  "ordinal": 82,
+  "variant": "perturbed",
+  "conversation_id": "082::gpqa__recH879YiAi6dLCSy::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "35ee84e5cdeac73b7633655a026a3b828aa7c165dc13fec60abfce582b2ccff3",
+  "semantic_condition_id": "96b4125cd85f0f730b4f422115a6d6245a138c6415628b81860ab9104dc3ea80",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Consider N repeated periods, each consisting of an index-n dielectric layer and an air gap. Both members have quarter-wave optical thickness at wavelength lambda. What field variables and boundary conditions are needed to calculate normal-incidence power transmissivity through the finite stack?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the normal-incidence characteristic-matrix method for a coherent dielectric stack, including how the entrance and exit admittances convert the total matrix into a transmitted-power ratio.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For one period, use n*t2=lambda/4 for the dielectric and t2=lambda/4 for the air gap. Multiply their quarter-wave characteristic matrices and find the two eigenvalues.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Raise the one-period result to n periods and express the total transfer matrix in a form suited to applying the entrance and exit boundary conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Take the media on both outer sides of the stack to be air, apply those boundary conditions, and derive the exact power transmissivity in closed form as a function of n and N.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "In the regime n^(2N)>>1, obtain the leading asymptotic transmissivity and identify both its numerical coefficient and exponent of n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain why the exponent in the power transmissivity is twice the exponent that would appear in a leading field-amplitude transmission factor.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Reinsert the full N-period stack into the exact expression and verify the asymptotic coefficient and exponent. Also check the transparent limits N=0 and n=1.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State how the qualitative condition n^(2N)>>1 limits the precision of the leading approximation even though the exact finite-stack expression is known.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Expand the exact expression for large N*ln(n) and derive the leading relative correction to 4*n^(-2N).",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final exact transmissivity and its leading large-stack asymptotic form.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

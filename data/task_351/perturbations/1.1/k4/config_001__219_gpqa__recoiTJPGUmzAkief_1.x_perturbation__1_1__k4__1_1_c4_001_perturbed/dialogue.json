@@ -1,0 +1,54 @@
+{
+  "release_task_index": 351,
+  "task_id": "gpqa__recoiTJPGUmzAkief",
+  "dataset": "gpqa",
+  "ordinal": 219,
+  "variant": "perturbed",
+  "conversation_id": "219::gpqa__recoiTJPGUmzAkief::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "e25b0acd9136fa7c2f6e961ecb1104e2e4676e7d296abedd4b5eaaba409c830e",
+  "semantic_condition_id": "ff1892b5e7ca97e1a08c995bfa7bef695d8a78ae14d750b517ccf63aa0b4fbda",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Replace the spherical conductor with an insulator and determine the induced charge on the cavity wall.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use mass conservation rather than charge conservation to determine outer-surface charge.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State an exterior thermodynamic-phase problem rather than an electrostatic boundary-value problem.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Derive the exterior potential but report a magnetic-field magnitude at radius L.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why does the result depend on L rather than the cavity-centre distance l or offset s?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which cavity variables disappear, and why is the spherical outer boundary essential?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the field magnitude at P and the uniqueness argument.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

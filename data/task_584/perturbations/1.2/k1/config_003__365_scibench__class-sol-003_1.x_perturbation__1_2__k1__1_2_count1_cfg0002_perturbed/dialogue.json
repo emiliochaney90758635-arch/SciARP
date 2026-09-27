@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "5a54f92bba2983119f422e7a364255879cda4cc62b54c19b116e4cebf3623581",
+  "semantic_condition_id": "bdd71dd1e179a2382ef6a60264ee97d6e3f9534b63161a933f626d3c4f7df528",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use G=6.67e-11 SI and M_sun=1.99e30 K to calculate the solar gravitational parameter and write the half-period formula.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

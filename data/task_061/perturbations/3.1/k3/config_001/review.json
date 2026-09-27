@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can retain duplicate rows, T3 deduplicate them, and T4 claim the original denominator.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "ae2f0297a4d143eb718322ae20b3034e7aa75902b576aa0f30b91543177d290f",
+  "strict_non2x_original_semantic_condition_id": "2cff3ac25d67d18aa698eb3721abdcaaf772b3597882ce18ff603ebf1153f5b6",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally use VAF <=0.3 at T2, deduplicate by Chr:Pos at T3, and divide the deduplicated Benign count by the original 47-row denominator at T4. Remove all meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

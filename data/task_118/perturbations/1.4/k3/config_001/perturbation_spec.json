@@ -1,0 +1,49 @@
+{
+  "task_index": 118,
+  "task_id": "118-capsule034",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "393a78b370a0c9b3e8f1471c82c96ec2b6b1b90d97623a9525c745eae01cd816",
+  "source_base_evidence_sha256": "5efaf4d90d742a80e7037da5435ab0ad83e8e8557865756d9e87a48969d254e5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome encoding omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Intercept condition independently omitted.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Penalty-count condition independently omitted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Complete the age analysis set without stating which group is encoded Response=1.",
+    "T2": "Fit age without stating whether the model includes an intercept.",
+    "T3": "Calculate AIC without specifying whether the penalty count includes every fitted coefficient."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "1.4.k3",
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": []
+  }
+}

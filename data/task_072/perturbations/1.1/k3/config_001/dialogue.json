@@ -1,0 +1,40 @@
+{
+  "release_task_index": 72,
+  "task_id": "072-capsule019",
+  "source_id": "bix-26-q5",
+  "dataset": "bixbench",
+  "ordinal": 72,
+  "variant": "perturbed",
+  "conversation_id": "072::072-capsule019::1.1.k3::lane_c_manual",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "76aafeccab2a501b5b89307837c00c7ac48947446db0059c966d3d3265fcd365",
+  "semantic_condition_id": "d3981f2b950facf3e4403f96f744187e038237da7ba7d4b9284622ba86b42800",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Archived Execution Criteria\n\nFeMinus and Succ each use MMGluFePlus as their reference. The gene lists for each condition use:\n\n```r\nUp: log2FoldChange > 1.5\nDn: log2FoldChange < -1.5\n```\n\nNo gene-level `padj` filter is applied. Each of the four lists is processed with `enrichKEGG(organism=\"pau\", pvalueCutoff=0.05, qvalueCutoff=0.05)`; both cutoffs apply to pathway-level output. Set operations are performed on pathway descriptions only after removal of the same organism suffix.\n\n## Point-by-Point Matrix from the Archived Dot Plot\n\n| Cleaned Pathway | FeMinus Dn | FeMinus Up | Succ Dn | Succ Up |\n|---|:---:|:---:|:---:|:---:|\n| Sulfur metabolism | — | — | — | ● |\n| Styrene degradation | ● | — | — | — |\n| Quorum sensing | ● | — | — | — |\n| Porphyrin metabolism | ● | — | ● | — |\n| Phenazine biosynthesis | ● | — | ● | — |\n| Pentose phosphate pathway | — | — | ● | — |\n| Oxidative phosphorylation | ● | — | ● | — |\n| Microbial metabolism in diverse environments | ● | — | ● | — |\n| Glyoxylate and dicarboxylate metabolism | — | — | ● | — |\n| Cyanoamino acid metabolism | ● | — | — | — |\n| Cationic antimicrobial peptide (CAMP) resistance | — | — | ● | — |\n| Carbon metabolism | — | — | ● | — |\n| Biosynthesis of secondary metabolites | ● | — | ● | — |\n| Bacterial secretion system | — | — | — | ● |\n| ABC transporters | — | ● | — | ● |\n\n`●` indicates a point at the corresponding Media/Regulation/Description coordinate. First take the union of `Up` and `Dn` names within each medium, then calculate the set difference using complete cleaned names; a name appearing more than once within the same medium is counted only once.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse `gene-level significance cutoff` as a single umbrella term for the two log2-fold-change thresholds and the pathway-level p- and q-value cutoffs, then interpret the four medium-by-regulation combinations under that terminology.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For this comparison, use `FeMinus pathway union` to mean every pathway row displayed for FeMinus, even when neither FeMinus cell has a point. Assemble that union.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Independently use `Succ pathway union` to mean all named rows shown in the matrix, regardless of whether either Succ cell has a point, and assemble it.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many pathways occur in the FeMinus union but not in the Succ union?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

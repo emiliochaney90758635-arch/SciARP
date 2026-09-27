@@ -1,0 +1,59 @@
+{
+  "release_task_index": 593,
+  "task_id": "scibench__fund-sol-008",
+  "dataset": "scibench",
+  "ordinal": 374,
+  "variant": "perturbed",
+  "conversation_id": "374::scibench__fund-sol-008::1.x::perturbation__1_1__k2__1_1_count2_cfg0009::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ee812cb1450c2ce414b4e71c603b0fee4cb8789ab832e15c0d059c7f6985be10",
+  "semantic_condition_id": "547f09236b0e44f6dfcb0f37b0896e5facc094b2c61e0e34309e54f60fe854ab",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let the asteroid's initial distance be r_i=10R_E, final distance r_f=R_E, and initial speed v_i=12 km/s. State the fixed-Earth approximation used.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the physical model and approximation established above, write the corresponding conserved-quantity equation for the approach, neglecting atmospheric drag and Earth recoil.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rearrange the energy equation to isolate the final refractive index squared.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the radii established at the outset into the equation just obtained and simplify the dimensionless coefficient multiplying its physical interaction scale.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the simplified energy result to calculate an orbital period in km/s and m/s.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, state the approximation used, and identify any Earth-recoil uncertainty that cannot be quantified from the given parameters.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign of the gravitational interaction-energy change and whether the numerical result has the expected scale under the fixed-Earth model.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final speed together with the approximation used to obtain it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

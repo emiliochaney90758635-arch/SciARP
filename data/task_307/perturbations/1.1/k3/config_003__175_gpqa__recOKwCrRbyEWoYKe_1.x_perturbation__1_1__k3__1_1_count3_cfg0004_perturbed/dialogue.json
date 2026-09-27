@@ -1,0 +1,54 @@
+{
+  "release_task_index": 307,
+  "task_id": "gpqa__recOKwCrRbyEWoYKe",
+  "dataset": "gpqa",
+  "ordinal": 175,
+  "variant": "perturbed",
+  "conversation_id": "175::gpqa__recOKwCrRbyEWoYKe::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "b344772c3d2e54bd8c0c648247f8a4d16f41ee7da19cd801376e76e61d1235e4",
+  "semantic_condition_id": "0a4278b6f484a3d6d96f741edab24e10caa4b1be345d80b1af5c043dc8ae0af3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A heptane backbone is numbered C1-C7. Under first-order n+1 splitting, set up how retained backbone hydrogens and directly attached -CH3, -CH2R, -CHR2, and -CR3 groups contribute distinct neighboring-proton sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat t, dq, dt, ddt, ddd, ddt, and d as multiplicities of substituent carbons rather than backbone protons, then infer C1-C3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the substituent carbons attached to C4 and C5 rather than the backbone positions, using -CH2R as a triplet contribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Infer C6 and C7 by matching chemical-shift values rather than the reported splitting multiplicities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the complete substituent assignment from C1 through C7.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Regenerate the full multiplicity sequence from the assigned neighboring-proton sets as a consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final C1-C7 assignment and the decisive bookkeeping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

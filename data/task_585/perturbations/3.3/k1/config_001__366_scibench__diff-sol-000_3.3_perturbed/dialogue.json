@@ -1,0 +1,49 @@
+{
+  "release_task_index": 585,
+  "task_id": "scibench__diff-sol-000",
+  "dataset": "scibench",
+  "ordinal": 366,
+  "variant": "perturbed",
+  "conversation_id": "366::scibench__diff-sol-000::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "209a519b6cb8c67c9338f62d3f5f0243e9ee3b4ff06d3a86b7478869204ddbad",
+  "semantic_condition_id": "535f1661fc1456dc0d754f4091051b4cd4879104ebb8d224bcf1e4961be5d6c1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An IRA starts at age 25 with zero balance. Contributions flow continuously at $2000 per year, and the balance earns a continuous 8% annual return. What time horizon and parameters should the model use to find the balance at age 65?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Model the account with the ordinary-annuity future-value formula for end-of-year deposits and annual compounding.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the stated parameters into the model established above and simplify the resulting age-65 expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting age-65 quantity to the nearest dollar and compare it with the accumulated input over the investment horizon.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What modeling assumptions are implicit in the treatment adopted above, and how should the numerical result be qualified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the final numerical result, total contributions, and their comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "subclass": "3.3",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "uses overlap-ignorant marginal subtraction",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "arbitrarily halves the combined remainder",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "T3 root consumer list changed from T2/T3 to T3 only",
+      "restored untracked legacy injection at T1 to clean request"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "config_id": "task052_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "misstate area as linear pixel length",
+      "injected_text": "Which genotype has the largest mean swarming area?\n\nFor this perturbed step, misstate area as linear pixel length",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "treat circularity as radians and convert it to degrees",
+      "injected_text": "What is the mean circularity of that same genotype group?\n\nFor this perturbed step, treat circularity as radians and convert it to degrees",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k2",
+    "decision": "repair_required",
+    "problem": "Uniform conversion of every Area value leaves the ranking unchanged and is not a second outcome-relevant root.",
+    "before": "Two uniform Area conversions.",
+    "after": "At T2 misstate area as linear pixel length; at T3 treat circularity as radians and convert it to degrees.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T1 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Compare the computed Area values as though they were linear pixel lengths and identify the genotype with the largest mean length."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Treat the Circularity values for that genotype as radians, convert them to degrees, and report their mean."
+    }
+  ]
+}

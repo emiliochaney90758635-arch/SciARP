@@ -1,0 +1,49 @@
+{
+  "release_task_index": 148,
+  "task_id": "gpqa__rec1oj2DveQWl9Rpw",
+  "dataset": "gpqa",
+  "ordinal": 10,
+  "variant": "clean",
+  "conversation_id": "010::gpqa__rec1oj2DveQWl9Rpw::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "199527cfdb87a6a1bfec567cc6e2dbe863b0a40b46f4d4c597283bab4e6512ab",
+  "semantic_condition_id": "05d271db630b059c750e7957a2e37100ade76b7aaff6f4ccb650c70417913d88",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert 0.100 g of Fe(OH)3 to moles using 106.9 g/mol.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the final volume and solid identity established above, derive the applicable solubility relation, insert Ksp=1.1e-36, and obtain the equilibrium pH.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that pH and the solution volume established above to calculate the residual moles of free H+.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "From the dissolution equation and iron oxidation state established above, calculate the stoichiometric amount of acid consumed by the sample.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add the stoichiometric demand and residual free H+ to obtain the total supplied acid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert that amount to the minimum volume of 0.100 M monobasic strong acid and report it with the equilibrium pH.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

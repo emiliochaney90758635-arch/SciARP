@@ -1,0 +1,59 @@
+{
+  "release_task_index": 502,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2380",
+  "dataset": "olympiadbench",
+  "ordinal": 449,
+  "variant": "perturbed",
+  "conversation_id": "449::olympiadbench__OE_TO_maths_en_COMP_2380::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "26e78ba761fba5644fa4e0166026d0eb7e8e8117ccf2d23465f3b1818570f833",
+  "semantic_condition_id": "eea77a5a6e93489e6ea3417700f1d67f5fbfb5ec7d177a0709587b000c8b7e6f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let S be a sum of reciprocal sines. Which identity could rewrite a reciprocal sine as a difference of cotangents?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the identity csc(x)=cot(x/2)-cot(x) from standard double-angle formulas.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the identity to all eleven terms and write the resulting cotangent expansion, showing the first several terms and the final term.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum that expansion by telescoping. Which intermediate cotangents cancel, and which two endpoint terms remain?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the indexing of the eleven doubled angles and the first and last terms of the expansion. Have any endpoints been omitted?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use cotangent's 180-degree period to reduce the final endpoint and express S in terms of cot(4 degrees) and tan(2 degrees).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Simplify that acute-angle expression exactly with a common denominator and write S as a single reciprocal sine.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Hence determine the acute angle alpha satisfying S=1/sin(alpha), and explain why the acute solution is unique.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "task_id": "087-capsule024",
+  "release_task_index": 87,
+  "subclass": "3.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Uses row count instead of unique genes."
+  ],
+  "candidate_injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "1444d6327d2d01910d7874adb57befcae339003d72f1a3e4fa1681385fde5915",
+  "configured_evidence_sha256": "1444d6327d2d01910d7874adb57befcae339003d72f1a3e4fa1681385fde5915",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Count every worksheet row with p_val_adj<0.05, including duplicate and missing gene symbols, as a unique gene. Count every data row as significant regardless of p_val_adj, yielding 69, 316, 973, 353, 2519, 63, and 645; report pDC with 2519."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "task_id": "001-capsule001",
+  "release_task_index": 1,
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits model/contrast conditions.",
+    "Omits the gene-selection and background-universe conditions."
+  ],
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "configured_evidence_sha256": "f53deddb5d25b5e5efae66bf824f271411c6067d4e2e05b9d76555d0a6172272",
+  "evidence_unchanged": true
+}

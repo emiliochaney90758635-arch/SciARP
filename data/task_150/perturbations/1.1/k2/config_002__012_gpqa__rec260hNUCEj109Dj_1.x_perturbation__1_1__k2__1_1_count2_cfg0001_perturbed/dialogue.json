@@ -1,0 +1,44 @@
+{
+  "release_task_index": 150,
+  "task_id": "gpqa__rec260hNUCEj109Dj",
+  "dataset": "gpqa",
+  "ordinal": 12,
+  "variant": "perturbed",
+  "conversation_id": "012::gpqa__rec260hNUCEj109Dj::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c9af5d25f8ef65ad11c59dc8a31cf5c9c23c099745d38be7b383eaa8ce2de646",
+  "semantic_condition_id": "56f503d17fc93cc2a318b0fd404cb61651ba4c2682939193a41287e24dcaec90",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle of mass m moves in two dimensions under V(r,theta)=1/2 kr^2+3/2 kr^2 cos^2(theta). Rewrite the potential in spherical variables using x=r cos(theta) and y=r sin(theta).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Substitute the coordinate relations into the kinetic energy, collect the x^2 and y^2 terms, and check whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Interpret the separated quadratic terms under the model established above and determine omega_x and omega_y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two frequencies directly against the coefficients of the x^2 and y^2 terms before using them in the spectrum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the complete quantum-mechanical energy spectrum implied by the separated modes and parameters established above.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

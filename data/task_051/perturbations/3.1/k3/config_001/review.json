@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Correct initial grouping can be abandoned by pooling and then combined inconsistently with the original denominator.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "c8fd54bbcb6b8001cb0fea897f17c4c7fb7bdad14bffdf1d8fa80183028933c9",
+  "strict_non2x_original_semantic_condition_id": "144e0a338c6488cc7b5efae89001a5b4323b4db6a294c2d8f2e9026849ae5a20",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally move the largest delta-lasR replicate into the wild-type group, at T2 compute one pooled mean from the resulting observations for both groups, and at T3 request WT mean divided by mutant mean. Remove all meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,73 @@
+{
+  "config_id": "task066_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients",
+      "injected_text": "Apply one shared protein-coding substring rule, the total-expression threshold, and the length inner join. How many genes remain for all four groups?\n\nFor this perturbed step, exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "At T2 exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients.",
+      "injected_text": "For each cell type, pair gene length with its arithmetic mean expression on the common gene set and identify the common number of pairs.\n\nFor this perturbed step, at T2 exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "At T2 exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients.",
+      "injected_text": "Compare the four coefficients by absolute value. Which cell type has the weakest association?\n\nFor this perturbed step, at T2 exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients.",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "Exact matching, restoring a subset, and a continuity claim do not create three independent cross-step breaks.",
+    "before": "Filter reversal chain.",
+    "after": "At T2 exact-match biotypes, at T3 pair CD14 rows positionally, and at T5 rank signed coefficients instead of absolute coefficients.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Use the supplied common-gene-set summaries for all four cell types."
+    },
+    {
+      "turn_id": "T3",
+      "content": "When forming the CD14 calculation, substitute CD19's Sxy for CD14's Sxy while leaving CD14's Sxx and Syy in place."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Rank the four resulting coefficients by signed value rather than absolute value and name the numerically smallest one as weakest."
+    }
+  ]
+}

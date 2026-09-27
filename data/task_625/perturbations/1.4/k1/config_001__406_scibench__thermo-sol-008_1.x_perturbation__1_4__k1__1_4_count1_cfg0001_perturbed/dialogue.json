@@ -1,0 +1,59 @@
+{
+  "release_task_index": 625,
+  "task_id": "scibench__thermo-sol-008",
+  "dataset": "scibench",
+  "ordinal": 406,
+  "variant": "perturbed",
+  "conversation_id": "406::scibench__thermo-sol-008::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "a0f8466c0ac4c20256d575c5749726d66b0ee95c23a610fb5bdd0c668edf8cc3",
+  "semantic_condition_id": "cfe9b4e1a6cbf2bb8eeaa975545117ee26890bd86f36b387b92545fe1ac552ef",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat molecular vibration as a quantum harmonic oscillator with E_n=(n+1/2)hc times the vibrational wavenumber. At temperature T, define x=hc times the wavenumber divided by kT and derive the normalized Boltzmann population P_n, noting how the zero-point term cancels.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For I2 at 298 K, evaluate x using h=6.626e-34 J s, c=3.00e10 cm s^-1, and k=1.38e-23 J K^-1. Then evaluate the geometric vibrational partition factor 1/(1-exp(-x)).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Specialize the normalized population formula to n=2 and leave it in terms of x or exponentials before numerical evaluation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the n=2 population numerically using the stated precision of the constants.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by viewing the normalized populations as a geometric distribution: verify their common ratio and that summing all levels gives one.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Distinguish the raw Boltzmann weight exp(-2x) from the probability P_2. Why must the raw weight be divided by the partition sum?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the normalization check to assess whether setting the partition sum equal to one would be justified at this temperature and spacing.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the probability that I2 occupies n=2 at 298 K and state the normalization used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

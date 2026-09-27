@@ -1,0 +1,45 @@
+{
+  "release_task_index": 14,
+  "task_id": "014-capsule005",
+  "source_id": "bix-6-q7",
+  "dataset": "bixbench",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::014-capsule005::1.1.k3::lane_a_manual",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "0187b6b44c7f2ed03e80dc8f1d7c49bb8ddf5f4e0b2b9071d826827383af2b41",
+  "semantic_condition_id": "50ca1bdb111d1ff7a94447bfd60cfb43e455c5d307fcd465072263408657ff4b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Round-2 candidate screen\n\nThe relevant fields are:\n\n```text\nRefSeq ID | Chronic Round2 S1 | Chronic Round2 S2\n```\n\nAll three fields are complete for 23,726 rows. For each RefSeq ID:\n\n```python\nround2_min = min(Chronic_Round2_S1, Chronic_Round2_S2)\ncandidate = round2_min < 0.05\n```\n\nThis strict threshold retains 2,303 RefSeq IDs. Boundary checks include:\n\n| RefSeq ID | S1 | S2 | Row minimum | Status |\n|---|---:|---:|---:|---|\n| NM_014421 | 0.00000396 | 0.035158 | 0.00000396 | retained |\n| NM_032041 | 0.049969 | 0.255480 | 0.049969 | retained |\n| NM_024989 | 0.665000 | 0.049985 | 0.049985 | retained |\n| NM_006160 | 0.908330 | 0.050033 | 0.050033 | excluded |\n| NM_018479 | 0.050041 | 0.156280 | 0.050041 | excluded |\n\n## Human identifier mapping\n\nCandidate IDs are mapped from human RefSeq to gene symbol. Records marked `notfound` are removed. Four candidate IDs are not found:\n\n| RefSeq ID | S1 | S2 | Row minimum |\n|---|---:|---:|---:|\n| NM_001242671 | 0.003383 | 0.045151 | 0.003383 |\n| NM_001242575 | 0.042777 | 0.622620 | 0.042777 |\n| NM_001242901 | 0.003594 | 0.938470 | 0.003594 |\n| NM_033517 | 0.037334 | 0.146280 | 0.037334 |\n\nThus 2,299 successfully mapped candidate records enter the archived ORA. The ORA background is a separately supplied set of mapped symbols from all measured RefSeq IDs.\n\n## Reactome input identity\n\nThe gene-set argument contains:\n\n```python\ngene_sets = [\n    \"ReactomePathways.gmt\",\n    \"unknown\",\n    reactome_dictionary_read_from_ReactomePathways_gmt\n]\n```\n\nThe `unknown` entry is skipped. The remaining two inputs contain the same GMT definitions and receive the source labels `ReactomePathways.gmt` and `gs_ind_2`. Rows with the same Reactome ID and term under these two labels are duplicate-load artifacts.\n\nThe two relevant canonical pathway definitions are:\n\n| Reactome ID | Term | GMT member count |\n|---|---|---:|\n| R-HSA-392154 | Nitric oxide stimulates guanylate cyclase | 23 |\n| R-HSA-418457 | cGMP effects | 16 |\n\n## Round-2 ORA output\n\nThe retention rule is `Adjusted P-value < 0.05`.\n\n| Gene-set label | Term | Reactome ID | Overlap | P-value | Displayed Adjusted P-value | Odds Ratio | Combined Score |\n|---|---|---|---:|---:|---:|---:|---:|\n| ReactomePathways.gmt | Nitric oxide stimulates guanylate cyclase | R-HSA-392154 | 10/20 | 0.000033 | 0.032708 | 7.433848 | 76.682568 |\n| ReactomePathways.gmt | cGMP effects | R-HSA-418457 | 9/16 | 0.000024 | 0.032708 | 9.413694 | 99.946320 |\n| gs_ind_2 | Nitric oxide stimulates guanylate cyclase | R-HSA-392154 | 10/20 | 0.000033 | 0.032708 | 7.433848 | 76.682568 |\n| gs_ind_2 | cGMP effects | R-HSA-418457 | 9/16 | 0.000024 | 0.032708 | 9.413694 | 99.946320 |\n\nCollapsing rows by canonical Reactome ID and term leaves two unique pathways. Adjusted p-values are available only at the displayed precision shown; raw p-value and Combined Score are separate statistics and are not declared tie-breakers.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse `round-2 candidate` to mean a RefSeq whose larger replicate p-value is below 0.05, rather than one whose smaller value is below 0.05.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use `notfound` to mean an identifier that should be retained under its RefSeq accession as if it were a valid gene symbol.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assemble the archived significant Reactome over-representation output for round 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use `unique pathway` to mean each source-labeled row, even when canonical Reactome ID and term are identical.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which canonical pathways tie for the smallest displayed adjusted p-value after deduplication?",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "review_method": "direct human review; packaging script performed no semantic generation",
+  "taxonomy_match": true,
+  "distinct_root_events": true,
+  "downstream_consumers_present": true,
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true,
+  "answer_leakage": false,
+  "notes": "Accepted after task-specific review of naturalness, independence, and scorable impact.",
+  "strict_non2x_original_dialogue_sha256": "bcf62ad63f32ab5a48d0cef840fa92fb4cfe4fc04e2649d841629f176b03a17f",
+  "strict_non2x_original_semantic_condition_id": "3a99aa994f4f930b074556760ee71c6296f94930f8f67a12025f84bb04dc2cd1",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the approved perturbation explicit and reproducible while preserving the configuration's independent injection roots."
+}

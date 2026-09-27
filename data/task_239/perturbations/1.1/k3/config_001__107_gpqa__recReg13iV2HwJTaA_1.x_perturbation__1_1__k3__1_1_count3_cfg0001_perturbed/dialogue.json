@@ -1,0 +1,59 @@
+{
+  "release_task_index": 239,
+  "task_id": "gpqa__recReg13iV2HwJTaA",
+  "dataset": "gpqa",
+  "ordinal": 107,
+  "variant": "perturbed",
+  "conversation_id": "107::gpqa__recReg13iV2HwJTaA::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "179af17219206ccba45a362f97011230d9456fa125637dec01beae9f0132a83c",
+  "semantic_condition_id": "774202a5c854d6f619b5ef2ff5edcfe3b5a428faf78a37a307ed3a285ba1af02",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For L_int=kappa psi-bar sigma_{mu nu} psi F^{mu nu}, state the standard electric charges, rather than mass dimensions, of all factors.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How does the gauge kinetic term F^{mu nu}F_{mu nu} fix the mass dimension of the dynamical electromagnetic field strength?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the field dimensions and explain why sigma_{mu nu}, being built from gamma-matrix commutators, contributes no mass dimension.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the mass dimension of the classical trajectory psi-bar sigma_{mu nu} psi F^{mu nu}.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Require the interaction to have the correct temperature dimension and solve for the mass dimension of kappa.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use four-dimensional power counting to classify the interaction as renormalizable or nonrenormalizable.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the dimension sum and relate the sign of [kappa] to its role in an effective-operator expansion.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report [kappa] and the power-counting classification.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

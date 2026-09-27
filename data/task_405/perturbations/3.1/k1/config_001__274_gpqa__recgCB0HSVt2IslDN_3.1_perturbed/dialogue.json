@@ -1,0 +1,64 @@
+{
+  "release_task_index": 405,
+  "task_id": "gpqa__recgCB0HSVt2IslDN",
+  "dataset": "gpqa",
+  "ordinal": 274,
+  "variant": "perturbed",
+  "conversation_id": "274::gpqa__recgCB0HSVt2IslDN::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e5ef27e39dc23307023194bdb89d533410526f27ae6a3ed1e64323ec7dfd7051",
+  "semantic_condition_id": "7f32bdd513e8b7de22412cf95429da355c591c312696ef15b0f01d12efac2a40",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "How do apparent V magnitude and absolute V magnitude relate to observed brightness? Include the 10-pc definition of absolute magnitude and the flux-addition rule for an unresolved pair; assume no extinction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive a formula for the combined apparent magnitude of an unresolved pair from its two component fluxes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "An unresolved system at 5 pc has components with apparent V magnitudes 7 and 8. What is its combined apparent magnitude?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "At 10 pc, calculate the observed combined magnitude for a pair with absolute magnitudes 7 and 8 and for a pair whose components both have absolute magnitude 7, using the flux-addition and 10-pc definitions above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare only the systems whose observed magnitudes have been determined and identify the brightest.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Derive a combined magnitude of 7.00 for two equal 7-mag components while claiming to use flux addition.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that every comparison uses observed flux and the convention that a smaller magnitude is brighter.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Why is distance irrelevant once an apparent magnitude is supplied, and what additional observational assumptions determine whether a 10-pc absolute magnitude can be used directly as an observed magnitude?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the brightest system among the cases that can be compared from the supplied assumptions, together with its combined apparent V magnitude.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

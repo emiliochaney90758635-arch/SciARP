@@ -1,0 +1,49 @@
+{
+  "release_task_index": 335,
+  "task_id": "gpqa__recf9kxVBiJc10e3c",
+  "dataset": "gpqa",
+  "ordinal": 203,
+  "variant": "perturbed",
+  "conversation_id": "203::gpqa__recf9kxVBiJc10e3c::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "13933429d4385b120d8f51f319311a698398935dc7b7333316afde4037bf4af8",
+  "semantic_condition_id": "8b971bb978cb18b2224f34345a45af685ff3a06a1722b6de76e0857a292d6682",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Consider W=(1/2,i/4;-i/4,1/2), X=(1/3,1;1,2/3), Y=(1/2,i/3;-i/3,1/2), and Z=(2/3,1/4;1/4,1/3). What positivity, purity, and Bloch-vector criteria must a trace-one Hermitian 2x2 matrix satisfy to represent a qubit state?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the Bloch vector of Z. Are all three of its components nonzero?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify the matrices by requiring only that their singular values be nonnegative, and use that as the positivity test even for Hermitian matrices.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What conclusions follow about Z's components, the existence of a pure state, X's validity, and Y's location in the Bloch ball?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the classifications with determinant or eigenvalue signs and Bloch-vector norms rather than trace and Hermiticity alone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final true conclusion and the decisive matrix and Bloch-vector calculations.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

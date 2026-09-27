@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::1.x::perturbation__1_4__k2__1_4_count2_cfg0005::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "bd969f2e2c3a1ca2a8bfb47ba520f60d8bf69e3a9dd4b45362cedda0688345c1",
+  "semantic_condition_id": "d7a9889e2d8a0e44449a921de9a9a00f03fb8137b7b6ec92a41715e12ecb8a34",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express LA/LB using only luminosity distances dA and dB.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At redshifts zA=0.06 and zB=0.02, use the leading low-redshift distance-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The available measurement is FB=10^-24 W/m^2. Determine what flux comparison can be evaluated for the two quasars.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 75,
+  "task_id": "075-capsule020",
+  "source_id": "bix-27-q4",
+  "dataset": "bixbench",
+  "ordinal": 75,
+  "variant": "perturbed",
+  "conversation_id": "075::075-capsule020::3.1.k1::lane_c_manual",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "80dda202881ea8e45b5559c09afb33b61b350701644289dbf0e4e15d71c4eb73",
+  "semantic_condition_id": "84f7742be706b63daf0e202caf88363d408fd33adcb3c67255a4a6806d8647b2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Cluster-specific gene sets\n\nAfter cleaning and the `log10(x+1)` transformation, the analysis matrix contains 178 samples × 2,456 genes. Sample counts for the archived 3-cluster training-consensus labels are:\n\n| Numeric cluster | Samples |\n|---:|---:|\n| 0 | 56 |\n| 1 | 96 |\n| 2 | 26 |\n\nOne-vs-rest logistic regression is fitted separately to each standardized gene feature, and genes are selected using coefficient threshold `1.5`:\n\n| Numeric cluster / query | selected genes |\n|---|---:|\n| 0 / clust0 | 24 |\n| 1 / clust1 | 1,064 |\n| 2 / clust2 | 402 |\n\nAll 2,456 genes serve as the custom background; g:Profiler is called for each query with sources `GO:BP` and `REAC`.\n\n## Archived Significant-Enrichment Row Counts\n\nThe archived result tables contain only rows with `significant=True`:\n\n| Query | mapped query_size | GO:BP rows | REAC rows | total significant rows |\n|---|---:|---:|---:|---:|\n| clust0 | 23 | 39 | 4 | 43 |\n| clust1 | 1,024 | 2 | 2 | 4 |\n| clust2 | Not reported (empty result) | 0 | 0 | 0 |\n\nThe target cluster is selected by total significant rows, not by selected gene-list size.\n\n## Native Reactome Results\n\nEvery Reactome row for the query with the greatest number of significant rows is shown below; `p_value` retains the value returned by the archived service:\n\n| Result order | source | Stable ID | p_value | query_size | intersection_size | term_size |\n|---:|---|---|---:|---:|---:|---:|\n| 1 | REAC | R-HSA-163200 | 4.986853e-09 | 23 | 11 | 49 |\n| 8 | REAC | R-HSA-611105 | 1.264900e-07 | 23 | 10 | 46 |\n| 9 | REAC | R-HSA-1428517 | 2.019436e-07 | 23 | 11 | 67 |\n| 33 | REAC | R-HSA-6799198 | 1.380715e-03 | 23 | 6 | 22 |\n\nThis task compares returned `p_value`; do not substitute result order, term size, or intersection size for the ranking metric.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm the three cluster-specific gene sets from the archived consensus labels and coefficient cutoff.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Run the specified cluster-wise enrichment and count significant GO:BP and Reactome rows for each query.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Although T2 established significant-row totals, select the cluster with the largest selected gene list instead. Treat cluster 1 as selected because its archived list contains 1,064 genes, then reuse the displayed cluster-0 Reactome table as though it were cluster 1's output when answering the next request.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Within that cluster's archived Reactome results, identify the smallest returned p-value and report its stable ID.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

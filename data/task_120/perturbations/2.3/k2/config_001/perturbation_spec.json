@@ -1,0 +1,43 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Prediction age altered.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Intercept independently altered.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "The requested new observation has `Age=65`",
+      "new": "The requested new observation has `Age=64`"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| `(Intercept)` | 4.4465652749199176 |",
+      "new": "| `(Intercept)` | 4.3465652749199176 |"
+    }
+  ],
+  "extends_existing": null
+}

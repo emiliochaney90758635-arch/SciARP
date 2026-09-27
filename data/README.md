@@ -1,6 +1,7 @@
 # Dataset
 
-`dataset.jsonl` has one JSON object per dialogue. The release contains:
+This directory contains one folder per released scientific task. The release
+contains:
 
 | Item | Count |
 |---|---:|
@@ -9,25 +10,37 @@
 | Perturbed dialogues | 14,452 |
 | Total dialogue records | 15,073 |
 
-## Record schema
+## Directory structure
 
-Core fields are:
+Each task follows this structure (available files vary by task and condition):
 
-- `schema_version`: `sciarp.dataset.v1`;
-- `record_id` / `conversation_id`: stable dialogue identity;
-- `release_task_index`: contiguous public index in `[1, 621]`;
-- `source_release_task_index`: index in the 632-task working release;
-- `task_id`, `source_id`, `dataset`, `ordinal`: source-task identity;
-- `variant`: `clean` or `perturbed`;
-- `family`, `subclass`, `paper_subclass`, `condition_label`;
-- `injection_count`: zero for clean dialogues and the number of injections for
-  perturbed dialogues;
-- `dialogue.turns`: ordered visible user turns with `turn_id`, `role`, and
-  `content`;
-- `dialogue_sha256` and `semantic_condition_id`: integrity/condition IDs.
+```text
+task_NNN/
+├── base_dialogue.json
+├── evidence/                       # present for evidence-grounded tasks
+│   ├── evidence_manifest.json
+│   └── ...
+└── perturbations/
+    ├── index.json
+    └── SUBCLASS/
+        └── kN/
+            └── config_NNN/
+                ├── dialogue.json
+                ├── perturbation_spec.json
+                ├── review.json
+                └── evidence/       # present when required
+```
 
-Evidence-grounded tasks embed the evidence in the dialogue text so that the
-JSONL file is self-contained.
+`base_dialogue.json` contains the common clean multi-turn task.
+`dialogue.json` contains one perturbed configuration; its metadata records the
+subclass, condition label, injection count, and stable conversation identity.
+`perturbation_spec.json` records the intended injection construction, while
+`review.json` preserves the release-quality decision. Evidence files are
+included rather than referenced through machine-local paths.
+
+Task-folder numbers preserve their indices in the 632-task working release.
+There are exactly 621 `task_*` directories; numbers corresponding to excluded
+tasks are deliberately absent rather than silently renumbered.
 
 ## Exclusions and the 621-task paper set
 
@@ -65,4 +78,3 @@ The release includes tasks originating from BixBench, GPQA, OlympiadBench, and
 SciBench. Users are responsible for complying with the licenses and terms of
 the corresponding upstream datasets. The repository's MIT license does not
 relicense third-party task content.
-

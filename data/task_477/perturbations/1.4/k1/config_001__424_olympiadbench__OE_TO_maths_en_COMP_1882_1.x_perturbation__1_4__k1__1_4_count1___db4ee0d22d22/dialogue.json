@@ -1,0 +1,54 @@
+{
+  "release_task_index": 477,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1882",
+  "dataset": "olympiadbench",
+  "ordinal": 424,
+  "variant": "perturbed",
+  "conversation_id": "424::olympiadbench__OE_TO_maths_en_COMP_1882::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "9d00ffbb36c297c3e51b1beebedcf408cb7a6e87f5b5b16756ab2c7998ad8738",
+  "semantic_condition_id": "8df20669b1c967f7e84d5143b55ae77fd03964036a60259b411dc4c826494f64",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Model k upward rides without the condition that their starts and finishes increase with car index.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For two companies, assume no pair of distinct checkpoints is linked by both. If each company has k rides and hence N-k components, derive a counting inequality using pairs of component labels.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Prove that the map sending each checkpoint to its pair of company-component labels is injective under that assumption.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set N=n^2 and use the inequality to find the largest k for which avoiding a common linked pair is possible, and the first k that forces one.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "At the boundary k=n^2-n, arrange the checkpoints as an n by n grid. Construct one company's components as rows and the other's as columns, and verify the ride-order condition and absence of a common linked pair.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Return to the original total N=n^2 and compare the forcing bound with the boundary construction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the smallest k that guarantees two checkpoints linked by both companies.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

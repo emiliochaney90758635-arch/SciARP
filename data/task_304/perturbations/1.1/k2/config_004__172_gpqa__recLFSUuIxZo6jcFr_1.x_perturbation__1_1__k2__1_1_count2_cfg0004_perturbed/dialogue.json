@@ -1,0 +1,49 @@
+{
+  "release_task_index": 304,
+  "task_id": "gpqa__recLFSUuIxZo6jcFr",
+  "dataset": "gpqa",
+  "ordinal": 172,
+  "variant": "perturbed",
+  "conversation_id": "172::gpqa__recLFSUuIxZo6jcFr::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "5d5d8e94958b13adde6127d3112725c0f58758942b23f16e5a78a0a86fc3a70b",
+  "semantic_condition_id": "21c329102676cb5913c368ee1079fd6e1723bced9e0fdb731ff5c4f781fa566c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the V-band distance formula from the extinction-corrected distance modulus, using A_V=3.1 E(B-V).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the distance formula and the a/b/c magnitude data, compute the stellar luminosities rather than distances.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the distance formula and d/e/f data, compute stellar masses rather than distances.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the calculated distances to construct the requested strictly increasing subsequence. Include approximate values and note any equality that prevents a strict ordering of all six cases.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the extinction correction and any equal distances. Why can an equality not appear as a strict less-than step?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final increasing sequence with the adopted distances.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

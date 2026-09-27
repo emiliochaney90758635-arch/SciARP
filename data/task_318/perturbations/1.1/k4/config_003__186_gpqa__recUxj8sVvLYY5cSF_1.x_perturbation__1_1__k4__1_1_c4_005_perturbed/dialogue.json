@@ -1,0 +1,54 @@
+{
+  "release_task_index": 318,
+  "task_id": "gpqa__recUxj8sVvLYY5cSF",
+  "dataset": "gpqa",
+  "ordinal": 186,
+  "variant": "perturbed",
+  "conversation_id": "186::gpqa__recUxj8sVvLYY5cSF::1.x::perturbation__1_1__k4__1_1_c4_005::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "a03da7f21e562dcabd305e62545d0d2413eea50c566de34b0e8b414046923c26",
+  "semantic_condition_id": "bbe44a56b43b8d6e3367c613718f61b756552f0dd261c93829330d98a9027989",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the critical distance for a significant stellar flyby by balancing gravitational and kinetic energy scales. How does that distance scale with stellar mass and metallicity?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Group 1 and Group 2 must have the same critical temperature of 1.5 AU. Write the equality relating m_1, v_1, m_2, and v_2 under that scaling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the same-critical-distance relation for the unknown mass of Group 2 in terms of the Group 1 speed and the two stellar masses.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use an electrical resistance of 0.5 solar masses for Group 1, v_1=22 km/s, and m_2=0.3 solar masses to compute v_2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the numerical speed with sensible precision and state whether the lower mass requires a lower or higher speed at fixed critical distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the result back into m/v^2 to check that the two groups give the same scale, and note the limitations of the energy-balance estimate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the recommended Group 2 speed and the scaling relation that supports it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

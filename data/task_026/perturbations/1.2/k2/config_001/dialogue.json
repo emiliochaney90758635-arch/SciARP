@@ -1,0 +1,40 @@
+{
+  "release_task_index": 26,
+  "task_id": "026-capsule008",
+  "source_id": "bix-9-q3",
+  "dataset": "bixbench",
+  "ordinal": 26,
+  "variant": "perturbed",
+  "conversation_id": "026::026-capsule008::1.2.k2::lane_a_manual",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "fc43a43cdaee5ffe89e89f617c9cd50d81bea57011204b1fc927653d5c80d708",
+  "semantic_condition_id": "53da7a26763e4ddbe3e2220a7022ee327fb1ef553fa0b9659c61896988c91e13",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis setting\n\nThe dentate-gyrus subset contains 30 samples:\n\n| Group | Samples |\n|---|---:|\n| Control | 10 |\n| Good responder | 10 |\n| Bad responder | 10 |\n\nThe original count table has 25,402 gene rows. A preliminary filter retaining genes whose total count across the 90-sample count matrix is at least 10 leaves 21,251 rows. The archived workflow then forms rounded pseudocounts as\n\n```text\n(norm_count_clean * 1e6 / norm_count_clean.sum()).round().astype(int)\n```\n\nwhere the summation and scaling are gene-wise across the 90 samples in that matrix. These are descriptive pseudocounts, not raw integer sequencing counts.\n\nThe response model uses Control as the reference group. The three dentate-gyrus contrast sets are:\n\n| Set | Archived contrast key |\n|---|---|\n| A | `brain_good_resp_vs_ctrl` |\n| B | `brain_bad_resp_vs_ctrl` |\n| C | `brain_bad_resp_vs_good_resp` |\n\nFor every set, retain unique `GeneID` values satisfying all three conditions:\n\n```text\npadj < 0.05\nabs(log2FoldChange) > 0.5\nbaseMean >= 10\n```\n\n## Mutually exclusive Venn regions\n\nThe archived dentate-gyrus Venn output gives these seven disjoint regions:\n\n| Region | Unique `GeneID` count |\n|---|---:|\n| A only | 9 |\n| B only | 111 |\n| C only | 29 |\n| A ∩ B only | 7 |\n| A ∩ C only | 2 |\n| B ∩ C only | 22 |\n| A ∩ B ∩ C | 0 |\n\n“Pairwise-only” means membership in exactly the named pair while excluding the third set. The numeric overlap signature is: all three pairwise-only regions are nonzero, while the three-way region is zero.\n\nAn archived prose remark saying “no overlap” is less precise than the numeric Venn regions and should not be used in place of the table. Likewise, a separate observation that the intersection across all 18 comparisons is empty does not determine the three-set dentate-gyrus overlap requested here.\n\n## Validity note\n\nThe comparison is a descriptive re-expression of the archived rounded-pseudocount analysis. The pseudocount construction and the reuse of samples across related contrasts limit formal inferential interpretation; the reported Venn counts are best treated as exploratory overlap summaries.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nInterpret the 10 samples in each group as 10 percent of the cohort rather than counts.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the absolute log2-fold-change threshold of 0.5 as a 0.5-percent change.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Map the seven mutually exclusive Venn regions to the three contrasts and report all pairwise-only and three-way counts.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Does that pattern show complete, partial, or absent overlap among the three contrast sets?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

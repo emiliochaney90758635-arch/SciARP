@@ -1,0 +1,57 @@
+{
+  "config_id": "task064_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Compute medians",
+      "injected_text": "Calculate each retained gene's mean expression across CD8 samples and pair it with that gene's length.\n\nFor this perturbed step, compute medians",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "independently discard them and use the archived mean-based sufficient statistics while claiming continuity",
+      "injected_text": "Calculate the Pearson correlation between gene length and CD8 mean expression across the retained genes.\n\nFor this perturbed step, independently discard them and use the archived mean-based sufficient statistics while claiming continuity",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Computing medians and calling the resulting coefficient a correlation of means is one wrong-data path with a label propagation.",
+    "before": "Median at T3, then call it mean at T4.",
+    "after": "Compute medians at T3; at T4 independently discard them and use the archived mean-based sufficient statistics while claiming continuity.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the nine visible genes, call each supplied arithmetic CD8 mean its median without recomputing it, and pair it with Length."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Discard those nine labeled-median pairs and calculate Pearson r from the archived full-set arithmetic-mean sufficient statistics, presenting it as a continuation of the median-based analysis."
+    }
+  ]
+}

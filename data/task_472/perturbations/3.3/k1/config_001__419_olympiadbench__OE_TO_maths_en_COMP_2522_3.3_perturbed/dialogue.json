@@ -1,0 +1,54 @@
+{
+  "release_task_index": 472,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2522",
+  "dataset": "olympiadbench",
+  "ordinal": 419,
+  "variant": "perturbed",
+  "conversation_id": "419::olympiadbench__OE_TO_maths_en_COMP_2522::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "56cb45a5f16ec2cdfd681094f6c6a9e4b2e4cdaae3b6702d5a749aca24cf8866",
+  "semantic_condition_id": "18d880775d3175305875fd93b4b76ad0b77df5d4c6a38ed566c4bb9b15e1c2a2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Amrita and Zhang have 90 minutes to cross a lake in a straight line using a one-seat kayak. Each paddles at 7 km/h and swims at 2 km/h. Amrita starts in the kayak while Zhang swims; she later leaves the kayak stationary and swims on, and Zhang paddles after reaching it. How can we divide the trip into useful motion phases?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Instead of modeling the two travel modes separately, use the arithmetic mean of 7 km/h and 2 km/h as each traveler's exact average speed, assume equal time in the two modes, and infer the lake width and mode times from that shortcut.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the same t and lake width, write Zhang's total travel time as his swim to the stationary kayak plus his paddle from there to the far shore.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set Zhang's total time equal to 1.5 hours and solve for t and the lake width.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What relationship follows between Amrita's initial paddling interval and Zhang's final paddling interval?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that relationship with a phase-based model in which both travel continuously while the kayak is first paddled, then idle, then paddled again.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the solved intervals to find how long the kayak was not being paddled during the 90-minute crossing. Give the answer in minutes.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

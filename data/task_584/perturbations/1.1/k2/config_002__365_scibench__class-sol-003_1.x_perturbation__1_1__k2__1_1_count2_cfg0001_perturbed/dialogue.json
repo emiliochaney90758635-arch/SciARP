@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f56b2259fc091ac8b47f31b53595ef9855dc167fdc0877ded3b60d9ca0a793a3",
+  "semantic_condition_id": "72ec91df0e51a9fd2d0d9505381d58c4201b11429c017aa3ec35ebb784ae5820",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe a hyperbolic Earth-to-Mars flyby orbit and relate its travel time to that orbit's period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the two orbital radii, calculate the thermal conductivity of the Hohmann transfer ellipse.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

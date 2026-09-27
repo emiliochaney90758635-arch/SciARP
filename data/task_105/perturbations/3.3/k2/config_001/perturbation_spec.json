@@ -1,0 +1,33 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "A worst-adjusted-p ranking replaces exact row matching.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "A wrong-denominator recomputation replaces literal field retrieval.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Among the TP53 transcription rows, select the one with the largest adjusted p-value rather than matching the complete term label.",
+    "T3": "Instead of copying its archived Overlap field, recompute overlap using the selected Ensembl-ID count as denominator and report X/Y."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

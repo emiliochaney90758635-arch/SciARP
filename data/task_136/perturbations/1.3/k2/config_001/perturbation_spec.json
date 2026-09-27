@@ -1,0 +1,33 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Predictor/response swapped.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ratio symbols independently swapped.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Use Area as predictor and Frequency_rhlI as response.",
+    "T4": "Swap delta-rhlI and delta-lasI in the normalization."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

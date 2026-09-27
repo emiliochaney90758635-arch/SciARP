@@ -1,0 +1,49 @@
+{
+  "release_task_index": 592,
+  "task_id": "scibench__fund-sol-004",
+  "dataset": "scibench",
+  "ordinal": 373,
+  "variant": "perturbed",
+  "conversation_id": "373::scibench__fund-sol-004::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a03aae2156efd2969de4ff02206840fa6466f8038994ca0f67d47c05e32e3a5d",
+  "semantic_condition_id": "0150aef8297be063b10fd37581b29cff42a23b9cc314ae19116aa109efe1fcf1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The cylinder's angular acceleration changes from 3.40 rad/s to 2.00 rad/s while it turns through 20.0 revolutions. Identify the angular speeds and displacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the angular displacement to radians.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under the stated constant-change assumption, write a relation among the initial value, final value, and accumulated third quantity, then isolate the requested change parameter.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the initial, final, and accumulated quantities above to calculate the constant torque, while also classifying the sign of the derived change parameter.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the conversion used above, numerator sign, and units in that relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, including its units and physical meaning.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

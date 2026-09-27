@@ -1,0 +1,54 @@
+{
+  "release_task_index": 299,
+  "task_id": "gpqa__recIj8lR4tuDgrHou",
+  "dataset": "gpqa",
+  "ordinal": 167,
+  "variant": "perturbed",
+  "conversation_id": "167::gpqa__recIj8lR4tuDgrHou::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "bf6069301983dc256c78c319cd083dbbc68292b7b6569cdd352ad50508b2f545",
+  "semantic_condition_id": "612c129b845e89506ea7984c3ef6494f439d221985a59c2bbd2274fe1ca91fdd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For four identical spin-1/2 fermions in a one-dimensional infinite well, state the one-particle energies in units of E and the spin-orbital occupancy rule.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use unrestricted distinguishable-particle filling and place all four particles in the lowest spatial state.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the lowest excited occupation obtained by the smallest allowed promotion and calculate its energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the next-lowest distinct allowed occupation and calculate its energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the ordered ground, first-excited, and second-excited energies.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no lower configuration is allowed under the particle statistics and occupancy rule established in the first two turns.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the three energies and occupation patterns.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

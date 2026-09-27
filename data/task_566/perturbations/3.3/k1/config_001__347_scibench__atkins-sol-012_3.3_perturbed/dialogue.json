@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "a4c64eb153c956ff22c041722cd2646bc2e7d0e1dae9b4f9b64775dc2b914f9d",
+  "semantic_condition_id": "bbfa5e68b44282d4d6ac29b5fc35359ad56dce12905d9f09a8b872a2be536c30",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the de Broglie relation for an electron accelerated from rest through a potential difference of 40 kV.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert eV to joules for this potential and compare the resulting kinetic energy with the electron rest energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the 40 keV electron as ultrarelativistic and use p=K/c instead of the justified momentum relation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the wavelength at 40 kV and predict it at 160 kV under the same nonrelativistic scaling, with appropriate precision.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

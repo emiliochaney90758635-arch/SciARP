@@ -1,0 +1,54 @@
+{
+  "release_task_index": 271,
+  "task_id": "gpqa__reck1zKeCssmN82Ga",
+  "dataset": "gpqa",
+  "ordinal": 139,
+  "variant": "perturbed",
+  "conversation_id": "139::gpqa__reck1zKeCssmN82Ga::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "66e97e49f99d75fc05e731a3260797526f6b0e6c99534755dd61d65e09335b4a",
+  "semantic_condition_id": "78a474271c4adedbf58ca5fd5f382084427fe8fbed11de88ae2f974c2904368f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Classify 4,4-dimethylcyclopent-1-enol and identify its corresponding keto tautomer, noting that the reaction conditions beyond bromine are unspecified.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the substrate as an ordinary non-enolic alkene bearing an allylic alcohol and determine the dominant bromination mode.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine which carbon is brominated and whether the oxygen functionality appears as a carbonyl or an alcohol in the product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the major product's systematic name and connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the product as the best-supported major outcome while retaining uncertainty from the unspecified medium, tautomer population, kinetics, competing alkene addition, and product ratio.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the proposed structure conserves the ring skeleton and places bromine at an enolizable carbon alpha to the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the major product, mechanism, and evidential qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

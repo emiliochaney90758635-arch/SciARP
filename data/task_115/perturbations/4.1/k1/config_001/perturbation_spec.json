@@ -1,0 +1,25 @@
+{
+  "task_index": 115,
+  "task_id": "115-capsule033",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "7965398dcadce0c3f4c994089df703f87e53bf55050ac5ed0e511827b04517fe",
+  "source_base_evidence_sha256": "44639ff2321337f5b13b6b970e72b010228b2af16ca27596a6ec31fccd35c745",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Inferential uncertainty suppressed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Report the adjusted p-value and state that it constitutes absolute proof of the scientific claim, without distinguishing evidence against the null from certainty."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

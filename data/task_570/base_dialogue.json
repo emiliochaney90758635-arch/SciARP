@@ -1,0 +1,59 @@
+{
+  "release_task_index": 570,
+  "task_id": "scibench__calculus-sol-001",
+  "dataset": "scibench",
+  "ordinal": 351,
+  "variant": "clean",
+  "conversation_id": "351::scibench__calculus-sol-001::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "f7821d25daca71fd5222dfaa8818ec9491fae8731433b3c579fd0429fb55edd3",
+  "semantic_condition_id": "0e190ba0b6934f87e4b8552d95f3ca943f85b82f5dd0bb27f254b7207d2e6945",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cardioid r=1+sin(theta), identify the cusp and explain why 0<=theta<=2pi traces the curve exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the polar arc-length integral over that full tracing, including dr/dtheta.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the integrand using trigonometric identities and state where an absolute value enters.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use u=theta/2+pi/4 to transform the integral and determine the new limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the resulting absolute-value integral, splitting the interval wherever the sign changes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two pieces and the transformed prefactor, keeping the contributions explicit for a final check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the sign split and symmetry are consistent with a nonnegative arc-length integrand over the full curve.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the total length of the cardioid.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

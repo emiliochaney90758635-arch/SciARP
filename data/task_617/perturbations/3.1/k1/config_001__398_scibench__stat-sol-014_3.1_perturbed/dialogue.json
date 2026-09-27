@@ -1,0 +1,49 @@
+{
+  "release_task_index": 617,
+  "task_id": "scibench__stat-sol-014",
+  "dataset": "scibench",
+  "ordinal": 398,
+  "variant": "perturbed",
+  "conversation_id": "398::scibench__stat-sol-014::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9d809bd79851c65b2bf118f606ae69e3cb8f38c89da19b8c54401c30d25ce484",
+  "semantic_condition_id": "c446332560e3d1575b1946cb10e058de7961cedac44c71f56755d9464a15a48f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe an ordered length-10 H/T sequence with exactly four heads and six tails as a choice of positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express the count or quantity established above in a compact form.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rewrite the expression obtained above in factorial form, preserving the treatment of outcomes established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the final evaluation, change the experiment to five heads and five tails.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result through an equivalent complementary reformulation of the same outcome representation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the number of ordered sequences.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

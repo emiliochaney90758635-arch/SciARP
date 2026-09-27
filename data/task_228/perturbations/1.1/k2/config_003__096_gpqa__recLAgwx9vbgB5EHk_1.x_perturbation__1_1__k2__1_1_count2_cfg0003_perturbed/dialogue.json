@@ -1,0 +1,69 @@
+{
+  "release_task_index": 228,
+  "task_id": "gpqa__recLAgwx9vbgB5EHk",
+  "dataset": "gpqa",
+  "ordinal": 96,
+  "variant": "perturbed",
+  "conversation_id": "096::gpqa__recLAgwx9vbgB5EHk::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "d4f93d1e40b3711ef094689f44c685ef088f420418b9613f56084ac0d80ba14d",
+  "semantic_condition_id": "a4f18eae8bd1be1999bc7bba5241a5538b81a989e46513511e6e7b1baa05e048",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the target 5-isopropyl-3,4-dimethylcyclohex-1-ene, identify the ring alkene and the substituents whose positions must be preserved in an RCM retrosynthesis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the ring-closing-metathesis disconnection rule that relates a terminal diene tether to the size of the cycloalkene formed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that rule to a cyclohex-1-ene target. What terminal acyclic diene skeleton supplies the six ring atoms, and which atoms are lost in the small-alkene byproduct?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Map the target's two methyl groups and carboxyl group back onto the acyclic diene skeleton.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply alkyne cyclotrimerization to determine the acyclic framework and alkene positions for the precursor to the cyclohexene.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Number the octa-1,7-diene chain from both ends and choose the direction that gives the substituents the lower locant set.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Run the proposed precursor forward through idealized RCM and verify the product ring size, double-bond position, and substituent mapping.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Assess what is fixed by this atom map and what ordinary reaction-selectivity assumptions remain implicit in the idealized RCM prediction.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check explicitly that the precursor has an eight-carbon 1,7-diene framework and maps its substituents to target positions 3, 4, and 5.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the canonical name of the required starting diene and a concise atom-mapping justification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

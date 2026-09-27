@@ -1,0 +1,16 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Transposes the valid-pair count from 23,726 to 23,276."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "valid finite pair count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

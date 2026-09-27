@@ -1,0 +1,26 @@
+{
+  "task_index": 111,
+  "task_id": "111-capsule033",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bb59c9cc708419e28581541a53a5ec1f4d221b589e6f22fd6a8dc1a237780bd3",
+  "source_base_evidence_sha256": "5c98d5cee0e6c75bf9445e13daaf34b98f32a4c819d571aeff60dd1fee029aa5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Sample exclusions omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Confirm the retained samples and sex-adjusted disease-control model without specifying which confounded columns are excluded."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

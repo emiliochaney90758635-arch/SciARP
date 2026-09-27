@@ -1,0 +1,64 @@
+{
+  "release_task_index": 493,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2415",
+  "dataset": "olympiadbench",
+  "ordinal": 440,
+  "variant": "perturbed",
+  "conversation_id": "440::olympiadbench__OE_TO_maths_en_COMP_2415::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "75064d0dd29b7361de87475b7b9ee9498d02875af4b404fe6063fd8bfa858d01",
+  "semantic_condition_id": "24bade0df4b23b85ea5dc7afc45b1303127089a14e9ed37f14980e1d9389754a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let S(m)=sum_{k=1}^{m-1} floor(k/3). To look for a polynomial p with floor(p(m))=S(m), first group the summands in blocks. For a nonnegative integer j, what are floor((3j)/3), floor((3j+1)/3), and floor((3j+2)/3)?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write m-1=3q+r with r in {0,1,2}. Use the block values to express S(m) in terms of q and r.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now write m as 3t, 3t+1, or 3t+2. What formulas does this give for S(3t), S(3t+1), and S(3t+2)?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Construct p solely by ordinary quadratic interpolation through the exact-value points (5,S(5)), (6,S(6)), and (7,S(7)). Treat that interpolating quadratic as valid for every larger integer without checking the floor intervals or residue classes.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why does the growth rate of S(m) rule out a linear polynomial and make a quadratic leading term necessary?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "With the coefficients a and b now fixed, evaluate p(m)-S(m) in each residue class modulo 3 and translate floor(p(m))=S(m) into inequalities for c.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Intersect the three sets of inequalities. What is the full admissible interval for c, and what sign must c have?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Choose a convenient value of c from that interval and test the resulting polynomial at m=5, 6, and 7. Do the floor values agree with S(m)?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the full admissible quadratic family, give one convenient representative, and prove by the three residue classes that it works for every positive integer m>4.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

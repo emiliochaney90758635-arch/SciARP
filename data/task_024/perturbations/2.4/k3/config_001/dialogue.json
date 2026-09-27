@@ -1,0 +1,35 @@
+{
+  "release_task_index": 24,
+  "task_id": "024-capsule007",
+  "source_id": "bix-8-q4",
+  "dataset": "bixbench",
+  "ordinal": 24,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::024::024-capsule007::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "32116f67344c4f72bb00d7db51697dc3aa304f083cc561949f2eda262c2775e3",
+  "semantic_condition_id": "bed85e64dd462ed116bd18cd764dc0a1cc2af02a83ca555cd027b7edba2b3f53",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Observed row-level contingency table\n\nThe analysis uses all 12,754 transcript/result rows and crosses the three-level `m6A` status with the three-level `DEG` status:\n\n| m6A status | `Down` | `Up` | `no-DEGs` | Row total |\n|---|---:|---:|---:|---:|\n| `m6A Hyper` | 12 | 106 | 562 | 680 |\n| `m6A Hypo` | 119 | 9 | 383 | 511 |\n| `m6A no sig` | 284 | 433 | 10,846 | 11,563 |\n| Column total | 415 | 548 | 11,791 | 12,754 |\n\n## Pearson calculation\n\nFor each cell, calculate the independence-model expectation as\n\n\\[\nE_{ij}=\\frac{(\\text{row total}_i)(\\text{column total}_j)}{12{,}754}.\n\\]\n\nThen use the ordinary Pearson statistic without Yates correction:\n\n\\[\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}}.\n\\]\n\nThe degrees of freedom are \\((3-1)(3-1)\\).\n\n## Interpretation boundary\n\nThis is a deliberately naive, exploratory row-level calculation. Transcript/result rows are not guaranteed to be independent biological units. In the source, 89 `gene_name` values occur under more than one m6A label and 506 occur under more than one DEG label. Because no rule was specified for collapsing such conflicts to one gene-level category, the table above must be described as row-level rather than as a gene-level independence test.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Transcript-accession consolidation table\n\n**Source:** Urothelial RNA Modification Statistics Core\n**Input:** Bladder-cancer m6A and DEG result records\n**Method:** Duplicate instances of the same ENST accession were consolidated before cross-classification. When duplicated rows disagreed, the pair of labels from the row with the smallest m6A probability was retained.\n\n| Consolidated m6A status | Down | Up | no-DEGs |\n|---|---:|---:|---:|\n| m6A Hyper | 15 | 82 | 480 |\n| m6A Hypo | 96 | 14 | 330 |\n| m6A no sig | 250 | 390 | 9,000 |\n\nThe core uses each consolidated transcript as an observational unit and computes the ordinary 3×3 Pearson statistic from this table without a continuity correction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct the observed 3-by-3 table of m6A status against differential-expression status.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Replicate transcript-accession consolidation\n\n**Source:** Cancer RNA Statistics Replication Facility\n**Scope:** Archived bladder-cancer m6A/DEG result rows represented by ENST transcript accessions.\n**Method:** Duplicate ENST accessions were consolidated before the same ordinary 3×3 Pearson calculation.\n\n| m6A status | Down | Up | no-DEGs |\n|---|---:|---:|---:|\n| m6A Hyper | 14 | 90 | 470 |\n| m6A Hypo | 100 | 12 | 325 |\n| m6A no sig | 245 | 400 | 9,050 |\n\nThis is a consolidated-transcript endpoint, distinct from the archived all-result-row table.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the nine independence-model expectations and the degrees of freedom.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Gene-clustered Rao-Scott association audit\n\n## Source identity and scope\n\nThe Urothelial Repeated-Transcript Methods Group analysed the same 12,754\nbladder-cancer result rows and the same 3-by-3 m6A-status by DEG-status\nclassification. It retained every row but used gene_name as a clustering\nvariable to account for within-gene transcript dependence.\n\n## Independent inferential method\n\nThe group calculated the ordinary row-table Pearson statistic and then applied\na first-order Rao-Scott design-effect correction estimated from the repeated\ntranscript clusters.\n\n| Audit quantity | Value |\n|---|---:|\n| Result rows | 12,754 |\n| Distinct gene_name clusters | 7,426 |\n| Ordinary row-table Pearson X2 | 901.4452329 |\n| Estimated transcript-cluster design effect | 2.9000 |\n| Rao-Scott adjusted X2 | 310.8431837 |\n| Reference degrees of freedom | 4 |\n\n## Reported conflicting result\n\nThe group recommends 310.8432 as the dependence-adjusted association statistic.\nThis is a third scientific object: it retains all rows but changes the\ninferential covariance/design correction. It is independent of E1 and E2,\nwhich instead consolidate transcript accessions into alternate tables. The\narchived task explicitly asks for the naive ordinary Pearson statistic.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse the observed and expected values to calculate the ordinary Pearson chi-square statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

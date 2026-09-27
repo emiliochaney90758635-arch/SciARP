@@ -1,0 +1,35 @@
+{
+  "release_task_index": 41,
+  "task_id": "041-capsule011",
+  "source_id": "bix-14-q3",
+  "dataset": "bixbench",
+  "ordinal": 41,
+  "variant": "perturbed",
+  "conversation_id": "041::041-capsule011::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "658358190a6880832a3fe1bb2ada6cf157e457bb77675032207d677d1e5a08db",
+  "semantic_condition_id": "8e9f69e018ecfcf0ab9fed4d5972d1829b18b8d07d54f05819e0dd22266c7dad",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort, table structure, and counting unit\n\nThe metadata contains 87 subjects, while the prefiltered CHIP-candidate directory contains 86 matched per-sample workbooks. Sample ID 533 is the sole metadata subject without a workbook; there is no workbook-only extra sample.\n\nEach workbook has a title in row 1, field names in row 2, and variant records beginning in row 3. Across the 86 workbooks there are 57,258 sample–variant record rows. The counting unit is a workbook row: if the same genomic coordinate appears in different samples, each occurrence is retained and counted separately.\n\nThe two fields used are:\n\n| Field | Use |\n|---|---|\n| `Zygosity` | Remove `Reference` and missing calls |\n| `Sequence Ontology (Combined)` | Apply ontology exclusions |\n\n## Zygosity frequencies\n\n| Raw `Zygosity` value | Record rows |\n|---|---:|\n| `Reference` | 44,211 |\n| `Heterozygous` | 7,303 |\n| `Homozygous Variant` | 4,593 |\n| Missing | 1,151 |\n| Total | 57,258 |\n\n## Ontology frequencies among valid non-reference rows\n\n| `Sequence Ontology (Combined)` | Rows |\n|---|---:|\n| `intron_variant` | 6,185 |\n| `synonymous_variant` | 2,938 |\n| `missense_variant` | 1,035 |\n| `3_prime_UTR_variant` | 832 |\n| `splice_region_variant` | 437 |\n| `5_prime_UTR_variant` | 329 |\n| `frameshift_variant` | 78 |\n| `5_prime_UTR_premature_start_codon_gain_variant` | 50 |\n| `inframe_insertion` | 8 |\n| `upstream_gene_variant` | 3 |\n| `inframe_deletion` | 1 |\n| `intergenic_variant` | 0 |\n\nThe requested broad UTR rule removes every label containing the literal substring `UTR`, including the composite premature-start-codon label.\n\n`upstream_gene_variant` does not contain the substring `UTR` and is retained.\n\n# Consequence-Based Refinement of CHIP Candidate Variants Across a Family Cohort\n\n**Authors:** Ingrid M. Keller, Faisal A. Chaudhry, Noémie Bernard, and Lucas J. Stanton\n\n**Abstract**\n\n**Background:** Prefiltered clonal hematopoiesis candidate workbooks contain both nonvariant calls and variants outside coding or splice-relevant sequence. **Methods:** We combined 86 matched per-sample workbooks while retaining sample–variant rows, including repeated coordinates in different participants. Calls with reference or missing zygosity were removed, followed by exclusion of intronic, intergenic, and every untranslated-region ontology label, including compound UTR consequences. **Results:** The sequential filtering procedure retained 4,764 non-reference sample–variant records. Most excluded non-reference records were intronic, whereas composite UTR annotations made a smaller but non-negligible contribution. **Conclusions:** Consequence-aware filtering substantially reduced the candidate record set while preserving row-level recurrence across samples.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the samples with variant records, total merged rows, counting unit, and fields used by the archived filters.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Remove Reference and missing-Zygosity rows so that only explicit non-reference sample-variant records remain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Then remove intron, intergenic, and every ontology label containing UTR. How many sample-variant records remain?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

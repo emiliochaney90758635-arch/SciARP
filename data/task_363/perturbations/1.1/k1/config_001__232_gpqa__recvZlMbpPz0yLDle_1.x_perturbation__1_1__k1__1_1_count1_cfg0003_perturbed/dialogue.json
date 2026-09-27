@@ -1,0 +1,54 @@
+{
+  "release_task_index": 363,
+  "task_id": "gpqa__recvZlMbpPz0yLDle",
+  "dataset": "gpqa",
+  "ordinal": 232,
+  "variant": "perturbed",
+  "conversation_id": "232::gpqa__recvZlMbpPz0yLDle::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3070c6518b64d80c930c4227322f16969d9925f02835fd6ec8da92d1ab931e3c",
+  "semantic_condition_id": "6a30add4d63d125461b4d17508a3b216bf68a63882f91ec514c618da76e1270c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A C8H9NO compound shows 1H NMR signals at 9.72 ppm (t, 1H) and 3.66 ppm (d, 2H). What aldehyde-containing fragment accounts for those shifts and their mutual coupling?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The remaining signals are two aromatic doublets at 6.98 and 6.51 ppm, each integrating to 2H, plus a broad 2H signal at 6.27 ppm. Combine these with the formula to identify the starting compound.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the aromatic amine with sodium chloride and then water; give the diazonium intermediate and the aldehyde entering the final step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The resulting aldehyde is then treated with aqueous KOH and heat. Describe the self-aldol reaction and distinguish the initial addition product from the product favored under these conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the conditions just established, name the final product of the self-condensation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether the current conditions favor retaining the beta-hydroxy aldol product or eliminating water to form a conjugated aldehyde.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final product and explain how it arises from the aldol-addition intermediate.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "subclass": "3.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "claims contrast reversal changes p-value-only membership contrary to the evidence",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "omits S97∩S98-only",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "retains S97∩S99-only despite S99 membership",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 441,
+  "task_id": "gpqa__recuOd6eMiag2hPBU",
+  "dataset": "gpqa",
+  "ordinal": 310,
+  "variant": "perturbed",
+  "conversation_id": "310::gpqa__recuOd6eMiag2hPBU::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0526af177676f37241dafe74a90ebee53a228e71c4ed627e073c5f051040e458",
+  "semantic_condition_id": "dc69992363aa3451fe644cfed9123bc115a126e51ab1afbf172c162f705e2a50",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The RV periodogram has peaks at 71.1, 56.2, and 18.7 days, while H-alpha and Ca II indicators peak at 28.1 days. Describe the observed harmonic relationships without inferring causation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the strongest relationship warranted between the activity indicators and RV signals, and whether the available periodograms alone identify activity-to-RV causation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Given v sin(i)=0.9 km/s and a rotation-axis inclination of 90 degrees, determine the star's equatorial rotation speed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using a solar radius and P_rot=2 pi R/v, estimate the stellar rotation period in days.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the RV and activity periods with the rotation estimate. Classify likely rotational or activity harmonics and identify the leading planetary candidate, noting the missing confirmation tests.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the best-supported planetary period and calibrate the remaining uncertainty in its origin.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the rotation interpretation, replace the established equatorial speed of 0.9 km/s by 0.7 km/s.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Identify the signal most likely due to the planet and specify observations that would confirm or refute that interpretation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check whether an activity indicator shares the proposed planetary period, and name the most direct coherence or transit-ephemeris test still needed.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the activity-RV relationship, causal-identification limit, rotation estimate, uncertainty, and signal-origin conclusion.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

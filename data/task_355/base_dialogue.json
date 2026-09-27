@@ -1,0 +1,54 @@
+{
+  "release_task_index": 355,
+  "task_id": "gpqa__recqP4J5FzKIlQyB9",
+  "dataset": "gpqa",
+  "ordinal": 223,
+  "variant": "clean",
+  "conversation_id": "223::gpqa__recqP4J5FzKIlQyB9::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "4a255adacde40527ed12f78534267f336b3af7ccadec02c2aea639de352ea662",
+  "semantic_condition_id": "3bfec43fe24cd4b31f0494ffa4a45470a0c3a5f1068952e5e5c6646ef8d9e856",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unsaturated compound has M+ at m/z 98 and a strong FTIR band at 1725 cm^-1. What molecular-mass and carbonyl constraints follow?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A 1H NMR triplet appears at 9.7 ppm. Identify the proton type and infer how many equivalent neighbouring protons cause the splitting.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the assignment obtained above and the quartet at 5.3 ppm to infer the supported vinylic fragment and distinguish the candidate connectivities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine all observations to identify the compound and explain the decisive coupling pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed structure against all spectral observations and coupling assignments developed above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any residual ambiguity caused by having only a subset of the spectra.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported compound and the two decisive coupling assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 323,
+  "task_id": "gpqa__recX9sU1D7BxJNXyI",
+  "dataset": "gpqa",
+  "ordinal": 191,
+  "variant": "perturbed",
+  "conversation_id": "191::gpqa__recX9sU1D7BxJNXyI::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "7d053b2d47b3981a803e19d9ff09974b6501423037660b1ec013d3ef00ca2e85",
+  "semantic_condition_id": "d5c711c6b3a549693c01d10d00099caf38dbac0b4375a3473bb11a2008c1feab",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Name the three constitutional isomers of dimethylbenzene and note the methyl-group equivalence in each.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the meta isomer, state the symmetry relation of the substituted sites and identify the distinct aromatic proton classes and their ortho neighbours.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the n+1 rule using each signal class's own integration as n instead of its number of equivalent neighbouring protons.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A report lists the downfield pattern 7.2 ppm (2H,t), 6.9 ppm (1H,d), and 6.8 ppm (1H,s). Identify the intended topology within the compound class under discussion and the integration-coupling contradiction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the first-order pattern implied by that topology and justify it using the relation and splitting rule established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final judgment on the reported pattern and the spectral features that support it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

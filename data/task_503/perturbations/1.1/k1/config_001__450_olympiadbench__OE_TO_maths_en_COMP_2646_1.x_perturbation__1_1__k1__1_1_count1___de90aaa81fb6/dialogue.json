@@ -1,0 +1,64 @@
+{
+  "release_task_index": 503,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2646",
+  "dataset": "olympiadbench",
+  "ordinal": 450,
+  "variant": "perturbed",
+  "conversation_id": "450::olympiadbench__OE_TO_maths_en_COMP_2646::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7073a14be9b8846a461c333d9674afb59a3a94b26cf966189cb967c56d3f9900",
+  "semantic_condition_id": "c0fbf133439e0cca4688538762d4af8c218335f88cabd12a5b2e9c104712009c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let d and e be the integer common differences of the arithmetic sequences (a_j) and (b_j). Express a_14 and b_20 in terms of a_20, b_14, d, and e.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use a_20+b_14=1000 to show that b_20+a_14=1000+6(e-d), and identify its congruence class modulo 6.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine the smallest positive integer in the congruence class and prove it impossible using positivity and the claim that the common ratios are nonzero integers.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the next positive integer in the same congruence class and state the resulting lower bound, without assuming yet that it is attainable.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Build an attainment witness by taking a_j=23-j and b_20=1. Use the required cross-sum to derive the common difference and initial term of (b_j), then state both sequence formulas.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For the two formulas just obtained, compute a_20,b_14,b_20,a_14 and verify both required cross-sums without changing the construction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "List the ranges and discrete term formulas of the two sequences and verify positivity within each sequence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Prove cross-sequence disjointness exactly; do not infer intersection merely from overlap of continuous numerical ranges. Conclude whether all forty terms are distinct.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Combine the lower bound and valid construction to give the least possible value of b_20+a_14.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

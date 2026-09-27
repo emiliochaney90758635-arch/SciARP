@@ -1,0 +1,49 @@
+{
+  "release_task_index": 603,
+  "task_id": "scibench__quan-sol-001",
+  "dataset": "scibench",
+  "ordinal": 384,
+  "variant": "perturbed",
+  "conversation_id": "384::scibench__quan-sol-001::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1f54920be322bf8321610c2f2e96f38c5379b8681c49d90c2b2d024d231ec84a",
+  "semantic_condition_id": "f478e92ce1f0523f5ade139f2253948c7cf76ac7534b0f965029a7b43b775ddd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Start from the Bohr energy formula for a hydrogenic atom, keeping the reduced mass, nuclear charge Z, and principal quantum number n explicit.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Specialize the formula to ground-state hydrogen with Z=1 and n=1. Treat the nucleus as a proton and calculate the electron-proton reduced mass in terms of m_e and m_p.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the ground-state energy in joules using m_e=9.109383e-31 kg, m_p=1.6726219e-27 kg, e=1.6021766e-19 C, h=6.626070e-34 J s, and epsilon_0=8.8541878e-12 C^2/(N m^2).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert the energy as though it were the n=2 state, using 1 eV=1.6021766e-19 J, and report it as the hydrogen ground-state energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result against the infinite-proton-mass approximation. Explain how the finite reduced mass changes the magnitude and why the state remains bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the hydrogen ground-state energy in joules and electronvolts, together with its binding classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

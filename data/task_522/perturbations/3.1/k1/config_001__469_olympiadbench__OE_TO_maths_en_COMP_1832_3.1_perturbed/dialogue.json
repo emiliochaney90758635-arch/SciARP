@@ -1,0 +1,49 @@
+{
+  "release_task_index": 522,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1832",
+  "dataset": "olympiadbench",
+  "ordinal": 469,
+  "variant": "perturbed",
+  "conversation_id": "469::olympiadbench__OE_TO_maths_en_COMP_1832::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5e2a7cc03a99a08cfc819657e4bcd61dd006972b5eb93496ae673347989171ca",
+  "semantic_condition_id": "1177adbd87a8644cd3126fad15f1d3c14fc333fbb500ad5a124989d8b8ae2e5c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rational number is called short when its decimal expansion terminates. Characterize short rational numbers in terms of the prime factors that may remain in a reduced denominator.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that criterion to (10^t-1)/(cm). After removing factors of 2 and 5 from c and m, express the first qualifying exponent t as a multiplicative order of 10.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the integers c in {1,...,2016} that are coprime to 10 and use that count as the upper bound for |S(m)|.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Let P be the primes p<=2017 other than 2 and 5. Choose alpha so that every p in P divides 10^alpha-1, and set m=10^alpha-1. Explain why this construction is suitable for attaining the upper bound.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the lifting-the-exponent valuation identity, prove that ord_{cm}(10)=c alpha for every admissible c, so these orders are all distinct.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the upper bound and the attaining construction to report the maximum possible value of |S(m)|.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

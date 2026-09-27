@@ -1,0 +1,69 @@
+{
+  "release_task_index": 388,
+  "task_id": "gpqa__recSBcGLPatKb3Ygu",
+  "dataset": "gpqa",
+  "ordinal": 257,
+  "variant": "perturbed",
+  "conversation_id": "257::gpqa__recSBcGLPatKb3Ygu::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "7b3b446f57537f7bc7267049e526a3baa44460a15ea6914f199e52242013b642",
+  "semantic_condition_id": "b9b0c146852445da6d8cf44417edf1c41cfefb7dcff3c7fe6f67023dbd2b68cb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Experiments indicate that a particular type of radioactive nucleus has a 32% chance of decaying within 100 minutes. What is the corresponding 100-minute survival probability, and what assumption is needed to extrapolate that observation to other time intervals?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "This nucleus has now survived for 50 minutes. Estimate its chance of decay during the next 150 minutes by scaling the 32% probability linearly by 150/100, and use 48% as the result.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the 100-minute survival probability to calculate the survival probability over a 150-minute interval, and then convert it to a decay probability.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What probability does that give for decay during the requested next 150 minutes?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "As an independent route, derive the constant decay rate lambda implied by S(100) = 0.68.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Express the requested probability as a conditional probability given survival through the first 50 minutes, and simplify it using the memoryless property.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Convert the resulting probability to a percentage with sensible rounding.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How should that percentage be qualified, given that the 32% calibration is empirical and a constant hazard has been assumed?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Cross-check the result without using lambda explicitly by showing how S(150) follows from S(100), and explain why survival through the first 50 minutes does not alter the next interval under this model.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final decay percentage and a concise exponential-survival rationale.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

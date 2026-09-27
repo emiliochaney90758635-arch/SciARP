@@ -1,0 +1,42 @@
+{
+  "task_index": 134,
+  "task_id": "134-capsule037",
+  "subclass": "3.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f712268cff9dcea90edb3adbd37bfa10354dc7cd12894e015ee0a6a8f61a8e2a",
+  "source_base_evidence_sha256": "c5c9a9bd0fa23d43c583be55944201189768feb15740f5fe3067d495545460ba",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Observed ratio causalized as assigned dose.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "F magnitude independently causalized.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Significance independently causalized.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat the observed frequency ratios as experimentally assigned causal doses.",
+    "T3": "Treat the large F as proof of a biological threshold mechanism.",
+    "T4": "Treat the small p-value as proof that frequency causes the swarming response."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

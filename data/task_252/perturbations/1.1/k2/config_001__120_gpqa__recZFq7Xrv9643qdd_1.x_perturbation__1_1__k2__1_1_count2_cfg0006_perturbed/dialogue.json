@@ -1,0 +1,64 @@
+{
+  "release_task_index": 252,
+  "task_id": "gpqa__recZFq7Xrv9643qdd",
+  "dataset": "gpqa",
+  "ordinal": 120,
+  "variant": "perturbed",
+  "conversation_id": "120::gpqa__recZFq7Xrv9643qdd::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ce9472d86509e6d59c341c619dee304d87b81e5f03def01e3982965384e602a4",
+  "semantic_condition_id": "6d373372f90faa79dd3522a87f696fb243926d587ddecab8858a68cc40273320",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cyclohexanone precursor forms the specified fused enone under NaOH, water, and heat. Identify the required sequence of intramolecular Michael addition followed by intramolecular aldol condensation, using a C5-tethered conjugated enone.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Infer the precursor stereochemistry needed to give the product's stated methyl/ethyl relationship, and identify the incompatible relationship.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Describe the ring-closure and atom-mapping method used to work backward from the fused target.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the target topology to locate the side-chain attachment on the cyclohexanone ring.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Determine the tether functionality, alkene geometry, and carbonyl placement needed for an initial intramolecular aldol addition followed by another aldol closure.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Trace the bond-forming events and intermediates through the sequence established above to the target.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Identify the immediate aldol intermediate X by full stereochemical name and justify it from precursor stereochemistry and tether position.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the proposed stereocentres, attachment point, alkene geometry, and carbonyl position against every step of the intramolecular Michael-addition/aldol cascade.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report X with a concise mapping based on the reaction sequence established above.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

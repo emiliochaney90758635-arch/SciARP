@@ -1,0 +1,54 @@
+{
+  "release_task_index": 563,
+  "task_id": "scibench__atkins-sol-009",
+  "dataset": "scibench",
+  "ordinal": 344,
+  "variant": "perturbed",
+  "conversation_id": "344::scibench__atkins-sol-009::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "084537528131a9b0bb080869dce42e48af048796199b6c1fcf075950e5c7b371",
+  "semantic_condition_id": "cb152fb14ab51b367071b71b186275992b9bf87d0f6e3ab4361c0e6d0216352e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For water rotating about the HOH-angle bisector through oxygen, identify each atom's perpendicular distance contribution to the moment of inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use an O-H bond energy of 95.7 pm as the geometric distance when finding the perpendicular radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain why the angle-bisector axis also passes through the molecular centre of mass and why the oxygen contribution is zero.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the inertia expression in terms of proton charge rather than hydrogen mass.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the geometry by projecting both identical O-H bonds perpendicular to the axis and verify the factor of two.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate I using the parameter values established above and explain which atomic terms enter numerically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report I in kg m^2 to three significant figures and identify the contributing atoms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

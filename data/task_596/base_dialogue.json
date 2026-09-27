@@ -1,0 +1,54 @@
+{
+  "release_task_index": 596,
+  "task_id": "scibench__matter-sol-002",
+  "dataset": "scibench",
+  "ordinal": 377,
+  "variant": "clean",
+  "conversation_id": "377::scibench__matter-sol-002::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "25535ecca7277889007787d29e656202240c528ebf45ea6e55dfa600630b0b6f",
+  "semantic_condition_id": "b4663137d73312e48582a3a3267085dc4836552b95bf4f327289d5b057d9ba45",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the He+ state R_{3,2}(r)Y_{2,-1}(theta,phi), identify n, l, and m and state which quantum number controls the nonrelativistic Coulomb energy at fixed nuclear charge.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the hydrogenic energy formula in the infinite-nuclear-mass approximation and state the neglected recoil correction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute Z=2 and n=3, and simplify the energy in terms of the hydrogen ground-state energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the electron energy in electronvolts and state whether it depends on l or m in this model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the value as a model estimate for a realized ion, with nonzero unquantified recoil, fine-structure, and environmental uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and Z^2/n^2 scaling without introducing an external field or changing the model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the energy and its approximation status.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

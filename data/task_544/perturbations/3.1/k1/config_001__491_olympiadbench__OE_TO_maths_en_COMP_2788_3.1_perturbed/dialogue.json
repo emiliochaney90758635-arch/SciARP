@@ -1,0 +1,49 @@
+{
+  "release_task_index": 544,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2788",
+  "dataset": "olympiadbench",
+  "ordinal": 491,
+  "variant": "perturbed",
+  "conversation_id": "491::olympiadbench__OE_TO_maths_en_COMP_2788::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a4f8d2fad74e074070fcb156532b666444623fea268e90540e747640195c01c8",
+  "semantic_condition_id": "5c9fb00852666c0b43bb15c78e687d57d824b0bbb003447b8a1c49c135bad21a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let the positive integer side lengths of the three non-overlapping axis-parallel squares be a, b, and c. Each square has a vertex at the origin, and their union has area 41. Write the Diophantine equation that the side lengths must satisfy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Enumerate all positive integer triples whose squares sum to 42, up to permutation, and justify that the list is complete.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Suppose the square of side m lies between squares of side x and y around the origin. Trace the exposed boundary in order and express the union perimeter using absolute differences among m, x, and y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rewrite the perimeter formula using min(m,x) and min(m,y), and explain how the two overlaps reduce the sum of the three individual perimeters.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a fixed triple of side lengths, compare the three possible choices of the middle square and determine which choice maximizes the union perimeter.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply that placement rule to every admissible triple and determine the largest possible perimeter.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

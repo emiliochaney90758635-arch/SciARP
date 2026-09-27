@@ -1,0 +1,69 @@
+{
+  "release_task_index": 401,
+  "task_id": "gpqa__reccVFW11Elovnf8T",
+  "dataset": "gpqa",
+  "ordinal": 270,
+  "variant": "perturbed",
+  "conversation_id": "270::gpqa__reccVFW11Elovnf8T::1.x::perturbation__1_1__k3__1_1_count3_cfg0005::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "bdaee7a42574b613253c0e60a712c274928f82c1e190b7ba67eb2c2e6be899bb",
+  "semantic_condition_id": "f7e1506870ad6fb6ea22e0b1dfed2766a06475d752fbbd5a71acba92ec3e8309",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bicistronic CRISPR reporter places ligand-mCherry upstream and an IRES-driven receptor-eGFP cassette downstream. A lox2272-flanked stop sequence separates the receptor from its C-terminal eGFP tag. What must happen at this cassette for CRISPR editing to produce green fluorescence?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The homozygous reporter line was crossed with a hemizygous SOX10-Cre line, but the offspring showed no green fluorescence. For the receptor cassette lox2272-stop-lox2272, describe the DNA junction expected after SOX10-Cre recombination.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A lox2272 site is 34 bp long, and recombination leaves one such site at the receptor-eGFP promoter. Without compensating bases, what does that length imply for the reading frame and production of functional eGFP?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare a frameshift at that junction with paracrine ligand action, Golgi retention, and missing transcriptional control. How well could each explanation account for the complete absence of green fluorescence?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which restriction enzyme is best supported so far? Relate it to the receptor-eGFP junction rather than just listing the alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the reading-frame argument explicitly: how would the 34-bp scar affect translation without compensating bases, and what sequence information would be needed to verify the actual junction?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "The ligand cassette uses a CBA promoter, and the downstream receptor is translated through an IRES. Before the Cre cross, protein-specific Western blots of transfected primary astrocytes gave signals proportional to actin loading. What does that establish about expression, and what does it leave unresolved about post-Cre eGFP production?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Given the cassette design and the Western-blot evidence, compare the junction explanation again with paracrine action, Golgi retention, and missing transcriptional control. Which explanation requires the fewest unsupported assumptions?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Separate the most likely explanation from a demonstrated mechanism. How would a post-Cre junction sequence, a GFP-specific blot, a rescue experiment, or a recombination-efficiency measurement strengthen or challenge the conclusion?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the likely cause of the missing green fluorescence, explain why the alternatives are less compelling, and state what remains unverified.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

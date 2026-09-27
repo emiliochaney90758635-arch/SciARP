@@ -1,0 +1,64 @@
+{
+  "release_task_index": 574,
+  "task_id": "scibench__calculus-sol-005",
+  "dataset": "scibench",
+  "ordinal": 355,
+  "variant": "perturbed",
+  "conversation_id": "355::scibench__calculus-sol-005::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "403048b681fcf8c46767a2b1884baf1256c0250f5c9f78452d378b3edfe2a1b5",
+  "semantic_condition_id": "4cfb859abc11a6f27854d9bcce421b8454950806a3fdf0fadbaad4f76ba6ead7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find the intersection points of y=x and y=x^2 that bound a finite region.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "On the enclosed interval, determine which curve is above the other and identify the principal curvatures when the region is rotated about the x-axis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain why a cross-section perpendicular to the x-axis is a washer rather than a solid disk, using the two boundary curves in your explanation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Confirm that slices perpendicular to the x-axis match the stated rotation axis, and explain why the washer method is more direct than cylindrical shells for this setup.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the washer slice dV=pi(R^2-r^2)dx, identify R and r for this region, and explain their ordering from the geometry.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the two radii, write the Fourier-coefficient expression, simplify it, and set up the definite integral for the volume without evaluating it.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Find an antiderivative of the integrand and evaluate it at the intersection bounds to obtain the exact volume.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that the result is positive and has the correct cubic units, and compare its size with a simple enclosing cylinder as a plausibility check.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the exact electrostatic potential of the solid and a decimal approximation, together with the integral from which they follow.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

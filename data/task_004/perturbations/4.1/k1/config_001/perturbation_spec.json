@@ -1,0 +1,23 @@
+{
+  "task_id": "004-capsule003",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Suppresses the pseudo-count limitation when presenting the model comparison."
+  ],
+  "injection_turns": [
+    "T5"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T5",
+      "consumer_turns": [
+        "T5_response",
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "8ba8b9cb613725b6c0078c91e3a2145f371ba5b651ad11b947fcdca2a32cdc3d",
+  "configured_evidence_sha256": "8ba8b9cb613725b6c0078c91e3a2145f371ba5b651ad11b947fcdca2a32cdc3d",
+  "evidence_unchanged": true
+}

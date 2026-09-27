@@ -1,0 +1,59 @@
+{
+  "release_task_index": 581,
+  "task_id": "scibench__chemmc-sol-002",
+  "dataset": "scibench",
+  "ordinal": 362,
+  "variant": "perturbed",
+  "conversation_id": "362::scibench__chemmc-sol-002::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1fa5e24e5fd87d1647381f89965271759bab9955ef924a015341a139fbd45281",
+  "semantic_condition_id": "3a7edc7bd49ccb2acc0a927e26c2ae48feff7309fdd9e05b139efd2dac981b63",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For `u(theta,phi) = Y_1^1 = -sqrt(3/(8*pi)) exp(i*phi) sin(theta)`, note that `u` has no radial dependence. Which terms of the Cartesian curl operator can therefore contribute?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Identify this spherical harmonic by its `l` and `m` labels, using both the azimuthal factor and the theta dependence.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For `l = 1` and `m = 1`, evaluate `l(l+1)` and keep track of the sign used in the spherical-harmonic eigenvalue equation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the angular eigenvalue relation for `Y_l^m` and combine it with the `1/r^2` factor in the full Laplacian.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that relation to this particular `u` and express the angular operator as a signed constant multiple of `u`.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Restore the radial prefactor and identify the coefficient `c` in `∇²u = (c/r²)u`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign directly from the theta and phi derivatives of `exp(i*phi) sin(theta)`.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Write the final proportional form of `∇²u` and report `c`.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Percentage premise introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Wrong denominator premise independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Reciprocal premise independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__percent_premise.md"
+    },
+    {
+      "turn_id": "T3",
+      "filename": "003__T3__denominator_premise.md"
+    },
+    {
+      "turn_id": "T4",
+      "filename": "004__T4__reciprocal_premise.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 73,
+  "task_id": "073-capsule020",
+  "source_id": "bix-27-q5",
+  "dataset": "bixbench",
+  "ordinal": 73,
+  "variant": "perturbed",
+  "conversation_id": "073::073-capsule020::3.3.k2::lane_c_manual",
+  "condition_label": "3.3.k2",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 2,
+  "dialogue_sha256": "7f0464b42ae6b8817e16015dc3065b1282399f7f6936d942f607d1d2b4969799",
+  "semantic_condition_id": "dcc5153abdde2f4591e0a2b1f0623de6bf133bb162d92d05d6c33a2bbb7ddfec",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Sample Cleaning and Matrix Orientation\n\nThe raw metadata contain 222 records, and the expression table contains 2,456 genes × 222 sample columns. The duplicated `projid` values are:\n\n```text\nid113, id154, id162, id171, id173, id177, id223,\nid444, id457, id463, id464, id495, id564, id602,\nid630, id724, id847, id849, id885, id918, id956\n```\n\nThe corresponding pandas-automatically-suffixed columns in the expression table are:\n\n```text\nid154.1, id177.1, id495.1, id630.1, id444.1, id495.2,\nid171.1, id444.2, id956.1, id602.1, id464.1, id918.1,\nid724.1, id885.1, id564.1, id162.1, id463.1, id849.1,\nid173.1, id457.1, id847.1, id223.1, id113.1\n```\n\nThe archived cleaning procedure removes every metadata row belonging to the duplicated-`projid` set and, in parallel, removes both the base duplicate IDs and automatically suffixed columns from the expression table. After cleaning:\n\n| Object | Dimensions |\n|---|---:|\n| metadata | 178 samples × 9 fields |\n| expression matrix | 2,456 genes × 178 samples |\n\nThe sample-ID sets in the two tables are identical. PCA uses only the expression matrix.\n\n## Transformation Procedure\n\n```python\nexpr_log = expr_edit.apply(lambda x: x + 1).apply(np.log10)\npca_input = expr_log.T\npca = PCA(n_components=100)\npca.fit_transform(pca_input)\n```\n\nThus, the transformation is cell-wise \\(\\log_{10}(x+1)\\), with no additional z-scoring; the PCA input consists of 178 sample rows × 2,456 gene columns. The original values have no missing entries or negative values, and the transformed matrix has no non-finite values.\n\n## PCA Statistics for the Complete Matrix\n\nCenter the log10-transformed input by gene, denote the centered matrix by \\(X_c\\), and let its first singular value be \\(s_1\\).\n\n| Statistic | Value |\n|---|---:|\n| Number of samples \\(n\\) | 178 |\n| Number of genes \\(p\\) | 2,456 |\n| \\(s_1\\) | 93.70359147152271 |\n| \\(s_1^2\\) | 8,780.363054662024 |\n| \\(\\lVert X_c\\rVert_F^2=\\sum_j s_j^2\\) | 15,687.301434467741 |\n| \\(s_1^2/(n-1)\\) | 49.60657093029392 |\n| \\(\\lVert X_c\\rVert_F^2/(n-1)\\) | 88.62882166365955 |\n\nThe percentage of total variance explained by the first component is calculated as:\n\n\\[\n100\\times\\frac{s_1^2}{\\lVert X_c\\rVert_F^2}\n\\]\n\nThe denominator is the total variance of the complete data, not the sum of variances for the first 100 returned components; the requested quantity is also not a cumulative percentage across multiple components.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nFind duplicates by removing only columns whose labels contain a dot suffix; keep every base-ID column and all metadata rows, then list the removals.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After removing every affected metadata row and both base and suffixed expression columns, verify the retained dimensions and sample-ID alignment.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply gene-wise z-scoring followed by log2(abs(z)+1), then orient genes as PCA observations and samples as features.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the supplied singular-value statistics, calculate the percentage of total variance explained by PC1 and state the correct denominator.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

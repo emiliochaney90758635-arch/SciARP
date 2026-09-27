@@ -1,0 +1,28 @@
+{
+  "task_id": "005-capsule003",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Accepted existing root at T1.",
+    "Accepted independent existing root at T2.",
+    "Redefines the common three-condition filter as OR rather than AND."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first premise/source"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second premise/source"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "filter-combination premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

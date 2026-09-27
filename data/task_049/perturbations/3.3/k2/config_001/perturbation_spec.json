@@ -1,0 +1,57 @@
+{
+  "config_id": "task049_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "retain only the largest Area",
+      "injected_text": "Extract every Area replicate belonging to that group.\n\nFor this perturbed step, retain only the largest Area",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "convert it to equal-area radius and report radius as Area",
+      "injected_text": "Calculate the arithmetic mean of those replicates and round it to the nearest thousand.\n\nFor this perturbed step, convert it to equal-area radius and report radius as Area",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Transforming area to radius and later reporting radius as area is one wrong-method chain.",
+    "before": "Equal-area radius transformation followed by mislabeled output.",
+    "after": "At T2 retain only the largest Area; at T3 convert it to equal-area radius and report radius as Area.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "From the wild-type group, retain only the replicate with the largest Area."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Convert that Area to an equal-area radius using sqrt(A/pi), then report the radius as though it were Area and round it to the nearest thousand."
+    }
+  ]
+}

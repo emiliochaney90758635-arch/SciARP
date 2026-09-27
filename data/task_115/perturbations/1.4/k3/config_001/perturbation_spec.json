@@ -1,0 +1,43 @@
+{
+  "task_index": 115,
+  "task_id": "115-capsule033",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "7965398dcadce0c3f4c994089df703f87e53bf55050ac5ed0e511827b04517fe",
+  "source_base_evidence_sha256": "44639ff2321337f5b13b6b970e72b010228b2af16ca27596a6ec31fccd35c745",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Field condition omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Threshold condition independently omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Formatting condition independently omitted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Do not identify padj versus raw pvalue.",
+    "T2": "Decide significance without stating the threshold.",
+    "T3": "Report a rounded value without stating whether three significant figures or three decimal places are required."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

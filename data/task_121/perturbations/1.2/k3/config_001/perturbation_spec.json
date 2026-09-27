@@ -1,0 +1,42 @@
+{
+  "task_index": 121,
+  "task_id": "121-capsule034",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f887f569c500300dca4fc497e508fa2336d60d1f2acdef6052f04615572fca73",
+  "source_base_evidence_sha256": "9872a919a30a0585d350cf213044a97138ca69bde0d9cbcb74bc1571b7703aff",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "BMI dimension changed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "SE scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Probability scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Interpret BMI as kilograms.",
+    "T3": "Treat age SE as per-century.",
+    "T4": "Interpret p=0.002499543 as 0.002499543 percent."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

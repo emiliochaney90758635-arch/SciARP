@@ -1,0 +1,49 @@
+{
+  "release_task_index": 591,
+  "task_id": "scibench__fund-sol-003",
+  "dataset": "scibench",
+  "ordinal": 372,
+  "variant": "perturbed",
+  "conversation_id": "372::scibench__fund-sol-003::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "dc6ff131e79e2acaa41da7e089ca6a1b77c68b341d4ff6a682d16a5150323b7a",
+  "semantic_condition_id": "7484e3b59c760414ecc26962f17936a6e89d26a99a86fd0d1f32a3693dd0b610",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 40 N horizontal force acts along a crate's 0.50 m displacement. How much work does the applied force do?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a 14 kg crate whose speed falls from 0.60 m/s to 0.20 m/s, calculate its change in temperature.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the work-energy theorem and the previous results to determine the buoyant force during the displacement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that friction work, find the increase in magnetic-field energy of the crate-floor system and compare the thermal-energy increase with the applied work.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the signs in the work-energy balance and state the precision supported by the supplied measurements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final system increase and comparison with a concise balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

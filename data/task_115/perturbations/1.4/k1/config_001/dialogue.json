@@ -1,0 +1,35 @@
+{
+  "release_task_index": 115,
+  "task_id": "115-capsule033",
+  "source_id": "bix-49-q2",
+  "dataset": "bixbench",
+  "ordinal": 115,
+  "variant": "perturbed",
+  "conversation_id": "115::115-capsule033::1.4::k1::perturbed::lane_d",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "6775140eadd5ba2bec7dc2652a4084e81bdf8c0851e91bb343e28e420d423b1e",
+  "semantic_condition_id": "3855306047c84c9736c81aba06ebcacd39eaf2e1be208bce7251e95380c2c37f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# GRIK5 adjusted-p evidence\n\n## Gene identity\n\n| annotation source | gene_id | gene_name | hgnc_id |\n|---|---|---|---|\n| Gencode v31 gene annotation | ENSG00000105737.9 | GRIK5 | HGNC:4583 |\n| HGNC annotation | ENSG00000105737 | GRIK5 | HGNC:4583 |\n\nThe versioned Ensembl identifier in the count matrix is `ENSG00000105737.9`.\n\n## Statistical context\n\nThe executed analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\n`ASXL1` is encoded as `disease` and `Control` as `control`. The selected result table uses the strict adjusted-p criterion `padj < 0.05`.\n\n## Archived GRIK5 result row\n\n| gene_name | log2FoldChange | padj |\n|---|---:|---:|\n| GRIK5 | 3.825466 | 7.039991e-26 |\n\nThe adjusted p-value field is `padj`; it is distinct from both `log2FoldChange` and the unreported raw `pvalue`. Reporting three significant figures preserves three digits beginning at the first nonzero digit.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the contrast but do not identify whether padj or raw pvalue is the decision field.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does GRIK5 pass the strict 5% FDR threshold under that fitted group contrast?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the GRIK5 adjusted p-value to three significant figures.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

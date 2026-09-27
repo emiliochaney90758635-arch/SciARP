@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Zygosity can first be replaced by In_CHIP before swapping the UTR-screen field.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "d4daf06d1dbb283eedc767ab438ba257edda0c2ea3addbcaf7cabbe4de813e6e",
+  "strict_non2x_original_semantic_condition_id": "346eb8f53d508cbb4809b9be174377a883010e0535048dce4ed04cb67af2f848",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Explicitly operate on the three archived VAF-stage rows shown in evidence: retain rows with In_CHIP=True as the candidate set, then search Classification rather than Sequence Ontology for UTR. This keeps the path wrong but fully scorable from visible data.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

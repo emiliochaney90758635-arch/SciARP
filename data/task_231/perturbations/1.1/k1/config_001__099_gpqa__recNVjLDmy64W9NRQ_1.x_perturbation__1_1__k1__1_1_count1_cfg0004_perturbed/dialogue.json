@@ -1,0 +1,54 @@
+{
+  "release_task_index": 231,
+  "task_id": "gpqa__recNVjLDmy64W9NRQ",
+  "dataset": "gpqa",
+  "ordinal": 99,
+  "variant": "perturbed",
+  "conversation_id": "099::gpqa__recNVjLDmy64W9NRQ::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b70a2ac7952991f8ccb24821fc8ef60be197d18a4fd2593d2b0adfac8cce79d7",
+  "semantic_condition_id": "2141524ff8ccdb77f48b6c340628c13709bb7bb181ef392c32f1517f0d2483df",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify a reagent that converts adamantane-1-carboxylic acid directly to the corresponding acyl azide.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Name the governing activation method and explain why it is compatible with a carboxylic-acid starting material.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the intermediate formed when the acyl azide is heated before hydrolysis.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the workup conditions that convert this intermediate to the primary amine.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the full sequence, report the two missing products rather than the two reagent sets.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Trace the carboxyl carbon through acyl azide, isocyanate, and hydrolysis/decarboxylation, and explain why sodium azide alone is not the stated direct activation of the acid.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the reagent sequence and name the rearrangement.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

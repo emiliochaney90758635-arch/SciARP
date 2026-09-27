@@ -1,0 +1,59 @@
+{
+  "release_task_index": 175,
+  "task_id": "gpqa__rec8CavTqDWHF8KJj",
+  "dataset": "gpqa",
+  "ordinal": 42,
+  "variant": "perturbed",
+  "conversation_id": "042::gpqa__rec8CavTqDWHF8KJj::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "911022cb9a140fcadd4f238fc6c8b4ebffce900c3ab08518cb4ca1e6e65ab238",
+  "semantic_condition_id": "655a11e3a8884e08d9264e620fc51f2371a803ad2843c233ebca0ac252a1243f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I am comparing several proposed features of enhancer-promoter regulation in embryonic stem cells. First, how do topologically associating domain boundaries generally constrain enhancer action?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Where does loop extrusion fit into that picture? Is it required for all enhancer-mediated regulation, or is it one contributing mechanism?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which histone marks are normally associated with active enhancers? For this comparison, use H3K27me3 rather than H3K27ac as the active-state lysine-27 mark.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How can Polycomb complexes contribute to long-range contacts between regulatory elements and promoters?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Putting those points together, which general claim about enhancer regulation is best supported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly can that claim be stated, given that chromatin-regulatory mechanisms can depend on cellular context?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What experiment would distinguish a context-dependent association from a generally required enhancer mechanism?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the most defensible statement about enhancer-promoter regulation in embryonic stem cells, and briefly explain why the competing generalizations are weaker.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

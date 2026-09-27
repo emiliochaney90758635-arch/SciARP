@@ -1,0 +1,54 @@
+{
+  "release_task_index": 219,
+  "task_id": "gpqa__recIIMmhxoNeJkgye",
+  "dataset": "gpqa",
+  "ordinal": 87,
+  "variant": "clean",
+  "conversation_id": "087::gpqa__recIIMmhxoNeJkgye::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "d0904a433a01e2faf2c8d1db6f79b689466fc79f9177fb3a9c902f30d6e8ca7f",
+  "semantic_condition_id": "9177ef49683faf37a8ca8de97748532cf118d105bedf4740475e1ff7722eac18",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In this synthesis, the final mixed-acid step is specified to add four more ring nitro groups while retaining the bridging N-H. Identify A, B, C, and D in the sequence below; for C, give the major dinitration product of A. Benzene + Cl2/FeCl3 -> A; benzene + HNO3/H2SO4 at 60 C -> B; A + 2 HNO3/H2SO4 at 120 C -> C; B + Fe/HCl -> D.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What product E forms when C and D are heated in ethanol with loss of HCl, and what aromatic substitution occurs?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the subsequent nitration, valence, and the two-signal proton NMR spectrum to infer the final product F. What does disappearance of one signal after D2O addition tell you about its exchangeable hydrogen?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For F after four additional ring nitrations, count the remaining aromatic hydrogens separately from the bridging N-H.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add those contributions to obtain the total number of hydrogen atoms in F.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count against the molecular valences and the two observed proton signals.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identity or structure of F and explain how the NMR evidence supports its hydrogen count.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 385,
+  "task_id": "gpqa__recR774BQpzwte6oT",
+  "dataset": "gpqa",
+  "ordinal": 254,
+  "variant": "perturbed",
+  "conversation_id": "254::gpqa__recR774BQpzwte6oT::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8119d8bbef2eed37e295d1655552603fee757a9a43b1288a7feef4903d3d9357",
+  "semantic_condition_id": "0e8210160e200035e899e6f7abe231adede019fe2fef6911ef5ac0ccdbc351c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A target's blackbody spectrum peaks at 7.21 eV when plotted against photon energy, while the Sun's peaks at 1.41 eV. Assuming equal unit bolometric emissivity, determine the temperature ratio from the peak positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from L=4*pi*R^2*epsilon*sigma*T^4, let R_1 denote the target's radius and R_2 the Sun's radius. Derive R_1/R_2 in terms of their luminosity, temperature, and emissivity ratios.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the stated factor of 24 together with the peak-derived ratio to evaluate the ratio defined in the preceding step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Square the numerical radius ratio and explain what physical area comparison the squared ratio represents.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show how a non-unit emissivity ratio would enter the relation being used, then apply the emissivity assumption established earlier.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "List the measured and model-dependent inputs on which the comparison relies, and state whether the supplied case contains what is needed for the requested evaluation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the numerical result against the governing relation used above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the current radius ratio as exact and uniquely correct with zero measurement, luminosity, blackbody-model, emissivity, or numerical uncertainty.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the direction and scale of the comparison are physically consistent with the stated temperature and luminosity information.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the peak-derived temperature ratio, radius ratio, and squared radius ratio, together with the assumptions used to obtain them.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

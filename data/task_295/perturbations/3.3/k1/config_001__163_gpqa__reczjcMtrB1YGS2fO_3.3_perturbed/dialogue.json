@@ -1,0 +1,54 @@
+{
+  "release_task_index": 295,
+  "task_id": "gpqa__reczjcMtrB1YGS2fO",
+  "dataset": "gpqa",
+  "ordinal": 163,
+  "variant": "perturbed",
+  "conversation_id": "163::gpqa__reczjcMtrB1YGS2fO::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "eaa88e9c855bfc1c31c21ba95a33fe5254cb24bfdcb58b51add8c8757d46cd7a",
+  "semantic_condition_id": "47e5abfe7451d7343a4f175781a5033f507c66a235fbc140452fe48e19514a5d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A regular N-sided polygonal aperture has apothem a. What shape and size parameter does it approach as N becomes very large?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For normally incident monochromatic light of wavelength lambda, write the Fraunhofer intensity for that limiting aperture and define its dimensionless argument.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the large-index spacing Delta x approximately pi as the exact separation of the first two positive J1 zeros, without evaluating either root.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the small-angle approximation with the two features or values identified above to find their positions and separation in units of lambda/a.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Rewrite the separation using the diameter D=2a, and distinguish it from the first feature's position.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions and explain why the roots identified above determine this separation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the two positions and their separation for this aperture model.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

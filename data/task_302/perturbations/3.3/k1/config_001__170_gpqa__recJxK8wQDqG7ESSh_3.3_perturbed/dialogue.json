@@ -1,0 +1,49 @@
+{
+  "release_task_index": 302,
+  "task_id": "gpqa__recJxK8wQDqG7ESSh",
+  "dataset": "gpqa",
+  "ordinal": 170,
+  "variant": "perturbed",
+  "conversation_id": "170::gpqa__recJxK8wQDqG7ESSh::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "26f1cdd773ea06b5aa3ecf08d9f65b21591214b082cd26daa4f0186b700abac1",
+  "semantic_condition_id": "7ab5788dfa835d47c0008979a0c81042cd2b91fc6f3df975776b87a0999b4865",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate tau_x+i tau_y in the ordered basis (p,n)^T, but reinterpret each basis state as a row vector and multiply by the unchanged matrix on the right without transforming the operator to its dual action.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What nucleon transition does that operator action select before the emitted pion is considered?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use charge conservation to determine the pion charge for that transition, taking Q(n)=0 and Q(p)=+1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the resulting pion-emission process and connect the nucleon charge change to the pion charge.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result directly against both the matrix action in the fixed (p,n)^T basis and charge conservation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final nucleon-pion process with a concise isospin and charge-conservation justification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

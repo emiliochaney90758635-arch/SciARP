@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can retain duplicate rows, T3 deduplicate them, and T4 claim the original denominator.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "fbf5fa95255592d21142800c50c6a4ced877573dbedecbd5ac1d8a2031791059",
+  "strict_non2x_original_semantic_condition_id": "c5ab761e7b7fb9f9995f94cc5dea014b588d53aea5f629e2da253a8e8f856228",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally retain only synonymous variants at T2, drop blank classifications at T3, and still divide by the original denominator six at T4.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

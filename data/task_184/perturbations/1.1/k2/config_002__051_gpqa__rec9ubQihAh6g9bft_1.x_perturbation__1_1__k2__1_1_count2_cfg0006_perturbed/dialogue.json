@@ -1,0 +1,59 @@
+{
+  "release_task_index": 184,
+  "task_id": "gpqa__rec9ubQihAh6g9bft",
+  "dataset": "gpqa",
+  "ordinal": 51,
+  "variant": "perturbed",
+  "conversation_id": "051::gpqa__rec9ubQihAh6g9bft::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9e532c5b30069d8df1ad5a93b8a07c8537d77655fca1d7cf323f0bc19e8fa4a8",
+  "semantic_condition_id": "9c83c405b95e3bb1edb328e33dbd30745f8d03ad25a57fe5fd92a04712bc50c2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compare the standard reduction potentials of O2+4H+ +4e- ->2H2O (about +1.23 V) and O2+2H2O+4e- ->4OH- (about +0.40 V). Explain how reduction potential relates to oxidant strength.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From those values, is oxygen a weaker or stronger thermodynamic oxidant in basic solution than in acidic solution?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the kinetic part, use only the stated source observation that the relevant oxygen-mediated reaction becomes faster when conditions shift from acidic to alkaline solution. What important system details remain unspecified?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For an equilibrium-constant comparison, use the supplied rate observation to decide whether the reaction is faster or slower in acidic solution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the two conclusions into an ordered pair for a thermodynamics-only statement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the confidence of the kinetic descriptor given that substrate, electrode, catalyst, applied potential, and mechanism are not specified.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain why the thermodynamic descriptor follows directly from standard potentials but the kinetic descriptor cannot be generalized beyond the supplied context.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final ordered pair, retaining the scope qualification on the kinetic term.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

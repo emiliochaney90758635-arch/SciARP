@@ -1,0 +1,64 @@
+{
+  "release_task_index": 467,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1610",
+  "dataset": "olympiadbench",
+  "ordinal": 414,
+  "variant": "perturbed",
+  "conversation_id": "414::olympiadbench__OE_TO_maths_en_COMP_1610::1.x::perturbation__1_3__k2__1_3_count2_cfg0005::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "4a3bfca6599bbdb300acf264461b6bf42b0933be7a812d3b6e9ad8a6b6eb58ac",
+  "semantic_condition_id": "fe8ea0bb80515dfe92369621595889f2358f92ce9a08bc102e966711ed4f7265",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 0<t1<...<tm<1, let t0=0 and t_{m+1}=1. Prove that some interval (t_{i-1},t_{i+1}) isolates t_i and has length at least 1/(floor(m/2)+1), interpreted by a limiting argument when equality is approached.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let w_i denote both the fiber multiplicity and x_{i+1}-x_{i-1} in the singleton-rectangle argument.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assume the sufficient condition obtained in the preceding fiber argument fails throughout. Aggregate the resulting inequalities to prove the strict boundary a>2/(N+4) for this contrary case; treat the single-group case separately if needed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Specialize N=4n to show that every configuration has a singleton axis-parallel rectangle of area at least 1/(2n+2).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Construct the four-point clusters using a small parameter a in place of epsilon while continuing to use epsilon in the coordinates.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the lower bound and clustered construction to determine the sharp value of mu.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine whether this sharp guaranteed area increases or decreases with n.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that both bounds use open axis-parallel rectangles contained in the open unit square and verify the monotonicity algebraically.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the sharp value and its direction of change with n.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

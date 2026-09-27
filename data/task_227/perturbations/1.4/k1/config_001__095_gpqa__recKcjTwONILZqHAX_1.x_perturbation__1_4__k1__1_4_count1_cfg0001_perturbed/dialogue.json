@@ -1,0 +1,64 @@
+{
+  "release_task_index": 227,
+  "task_id": "gpqa__recKcjTwONILZqHAX",
+  "dataset": "gpqa",
+  "ordinal": 95,
+  "variant": "perturbed",
+  "conversation_id": "095::gpqa__recKcjTwONILZqHAX::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "28f18d88385da3a669671ed5aa71147fc3fb827a4d938b580c53cca46373d55c",
+  "semantic_condition_id": "a5bbb29181a6409fab08ebd0b107f41195dafa1ea38a960b2edcf8557a19490d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a four-dimensional QFT, identify the universal loop-counting suppression factor while ignoring couplings and constants.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the standard four-dimensional loop-measure power-counting rule that relates one loop to powers of 4pi.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the one-loop suppression both as (16pi^2)^-1 and as a power of 4pi.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Match the displayed exponent -6 to L copies of the one-loop factor and write the equation for L.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve for the loop count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the inference's dependence on the assumption that all displayed 4pi powers arise from loop measures rather than a different normalization convention.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the loop count as the intended standard naive-dimensional-analysis estimate with calibrated confidence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the result by rewriting (4pi)^-6 as a power of 16pi^2, and state the normalization assumption used.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final loop count and its convention qualification.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

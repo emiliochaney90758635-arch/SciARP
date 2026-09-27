@@ -1,0 +1,59 @@
+{
+  "release_task_index": 573,
+  "task_id": "scibench__calculus-sol-004",
+  "dataset": "scibench",
+  "ordinal": 354,
+  "variant": "perturbed",
+  "conversation_id": "354::scibench__calculus-sol-004::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "cd1778d0cb43c61a1eabbb1d57be17fa992ecd41fb3bf2e3683f3ab5ab3bb5c3",
+  "semantic_condition_id": "79769aa5106dbe032839c7cdf249c550a738a39cfef9b0d144998fcb8395f4f8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find the intersection points of y=x^2 and y=2x-x^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Between the intersection x-values, determine which parabola is above the other.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those intersections to state the horizontal interval containing the entire enclosed region.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the vertical gap between the upper and lower curves and verify that it is nonnegative on that interval.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the washer method about the x-axis as the exact method for computing this planar area between the two curves.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the integral exactly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign and magnitude geometrically, using the fact that an enclosed area cannot be negative.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the enclosed area in square units.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

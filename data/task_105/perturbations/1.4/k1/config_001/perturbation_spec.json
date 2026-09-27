@@ -1,0 +1,25 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "The Cell Cycle discriminator is removed even though the archive contains both cell-cycle and cell-death TP53 rows.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Locate the archived TP53 transcriptional-regulation result row."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

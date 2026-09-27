@@ -1,0 +1,54 @@
+{
+  "release_task_index": 325,
+  "task_id": "gpqa__recYA3LPsCvF1fTMI",
+  "dataset": "gpqa",
+  "ordinal": 193,
+  "variant": "perturbed",
+  "conversation_id": "193::gpqa__recYA3LPsCvF1fTMI::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ef024ebe823132dc367f176e3eaf319a95471ed9c1e4cc770b6a453c6445a0b6",
+  "semantic_condition_id": "e8c3cd83d1cb6653a80f0205109a7de452c2cfbe6847fea40e418df978f9c2be",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two unknown starting materials share the skeleton HOOC-CH2-CH(Et)-CH2-COOiBu. Reaction A uses LiBH4 followed by H+ to give (R)-4-ethyltetrahydro-2H-pyran-2-one, whereas reaction B uses BH3 followed by H+ to give the (S) lactone. Identify the reducible terminal groups and note what happens, or does not happen, at C3 in each sequence.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the starting monoacid monoester, the relevant C3 priority order is ester-side chain > acid-side chain > ethyl > hydrogen. Explain the CIP comparison between the two carbonyl-containing chains and how this ordering is used to assign an R or S descriptor.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Trace reaction A. Which terminal group does LiBH4 reduce, which original side provides the lactone carbonyl after workup, and what is the product-side CIP order at the unchanged C3 geometry?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now trace reaction B. Which terminal group does BH3 reduce, which original side provides the lactone carbonyl after workup, and what is the product-side CIP order at the unchanged C3 geometry?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the two product-side priority orders with the stated R and S lactones, then determine the required starting configurations of A and B. Use Walden inversion from an SN2 displacement at C3 as the sole mapping method for both reactions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify both assignments by tracing LiBH4 ester reduction, BH3 carboxylic-acid reduction, lactonization, and the resulting CIP priorities.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the full identities and configurations of starting materials A and B.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

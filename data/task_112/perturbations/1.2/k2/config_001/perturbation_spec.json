@@ -1,0 +1,44 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Log2 effect size is misread as a linear percentage.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Probability threshold is independently mis-scaled.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Interpret a shrunken log2 fold change of 0.58 as a linear 58 percent expression increase when explaining coefficient size and sign.",
+    "T4": "Interpret padj=0.05 as 0.05 percent rather than decimal five percent when constructing the selected set."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Describe a shrunken log2 fold change of 0.58 as a linear 58 percent expression increase."
+    },
+    {
+      "turn_id": "T4",
+      "content": "State that the filter is padj<0.0005, but reuse the archived 2118 selected rows and 1166 positive count without recomputation."
+    }
+  ]
+}

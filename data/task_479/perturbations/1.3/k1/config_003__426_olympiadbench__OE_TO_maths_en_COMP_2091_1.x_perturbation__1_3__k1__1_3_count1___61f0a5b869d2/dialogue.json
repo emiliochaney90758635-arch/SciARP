@@ -1,0 +1,54 @@
+{
+  "release_task_index": 479,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2091",
+  "dataset": "olympiadbench",
+  "ordinal": 426,
+  "variant": "perturbed",
+  "conversation_id": "426::olympiadbench__OE_TO_maths_en_COMP_2091::1.x::perturbation__1_3__k1__1_3_count1_cfg0002::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "fd327195eacf936c293c3a49e209b7c6e91d208a87314708492fcf66d4adde7a",
+  "semantic_condition_id": "ab4786b94a3594c4be704cece0838855adb2759f95f6ca0cd530bf5536fcdb8f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let an admissible family contain k triples (a_i,b_i,c_i) of nonnegative integers, each summing to n, with every coordinate separately pairwise distinct across triples. What is the sum of all 3k coordinates?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What is the smallest possible sum of k distinct nonnegative integers?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that bound to the coordinate collections under the admissibility condition established in the first turn, and derive the resulting upper bound on k in terms of n.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assume n=3n for an integer m>=1, and construct an explicit family that attains the upper bound while satisfying the distinct-coordinate admissibility conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the triples in that construction and compare the count with the upper bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Adapt the construction to n congruent to 1 and 2 modulo 3, checking the distinct-coordinate conditions in each case.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the upper bound and constructions to determine N(n) for every n>=2.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

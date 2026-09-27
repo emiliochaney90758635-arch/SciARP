@@ -1,0 +1,28 @@
+{
+  "task_id": "027-capsule008",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article reports Final blood as largest.",
+    "The second reports Baseline blood as largest.",
+    "The third reports Dentate gyrus as largest with incompatible totals."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "final-blood article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "baseline-blood article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "dentate-gyrus article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

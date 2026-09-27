@@ -1,0 +1,32 @@
+{
+  "task_index": 108,
+  "task_id": "108-capsule031",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1b091f9d5a2fe5ca6424806631529609d0101531f1ab8033f8f4293da6a55ba3",
+  "source_base_evidence_sha256": "866e921506b455998582dd18fb5e426d359611719e1a74edbf137a6b5733a47f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Missing gene-name field is distorted into a missing locus record.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat a missing `Gene Name` as meaning that the entire locus record is absent, then identify the annotation for PA14_35160."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Treat the missing Gene Name at PA14_35160 as meaning that the locus is wholly unannotated, ignore its visible Product Name, and report the retained locus as `unannotated`."
+    }
+  ]
+}

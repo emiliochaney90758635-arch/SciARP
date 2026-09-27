@@ -1,0 +1,35 @@
+{
+  "release_task_index": 111,
+  "task_id": "111-capsule033",
+  "source_id": "bix-49-q4",
+  "dataset": "bixbench",
+  "ordinal": 111,
+  "variant": "perturbed",
+  "conversation_id": "111::111-capsule033::1.4::k2::perturbed::lane_d",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "4494bd7da8a7e4f7330d2bb9f0903e450f2b922738951b3688b5e8dd80d305ed",
+  "semantic_condition_id": "94059a39b51967f7790f990617c326b42ab80e9a9f0d896d25e30e60cfa85d9b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# ASXL1 disease-versus-control differential-expression evidence\n\n## Analysis cohort\n\nThe featureCounts matrix contains 60,662 unique Ensembl gene rows and 21 sample columns. Counts are non-negative integers with no missing cells. Two count columns are excluded before modeling:\n\n| Excluded sample | Recorded reason |\n|---|---|\n| MGD1640B | alcohol use disorder may affect gene expression |\n| MGD1641B | valproic-acid use may affect gene expression |\n\nThe remaining count columns are aligned, in this order, with the sample metadata:\n\n| sample | original condition | modeled condition | sex |\n|---|---|---|---|\n| MGD1567B | ASXL1 | disease | M |\n| MGD1569B | Control | control | M |\n| MGD1613B | ASXL1 | disease | F |\n| MGD1615B | Control | control | F |\n| MGD1616B | ASXL1 | disease | F |\n| MGD1710B | Control | control | F |\n| MGD1711B | ASXL1 | disease | M |\n| MGD1712B | Control | control | M |\n| MGD1713B | Control | control | M |\n| MGD1714B | Control | control | F |\n| MGD1715B | ASXL1 | disease | M |\n| MGD1722B | Control | control | M |\n| MGD1723B | ASXL1 | disease | F |\n| MGD1724B | Control | control | F |\n| MGD1727B | Control | control | M |\n| MGD1731B | Control | control | F |\n| MGD1732B | ASXL1 | disease | F |\n| MGD1733B | Control | control | F |\n| MGD1734B | ASXL1 | disease | F |\n\n| modeled condition | F | M | total |\n|---|---:|---:|---:|\n| control | 6 | 5 | 11 |\n| disease | 5 | 3 | 8 |\n\n## Model, contrast, and filtering\n\nThe executed analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe fitted coefficient names include `sex_M_vs_F` and `condition_disease_vs_control`; the execution log records `using 'apeglm' for LFC shrinkage`.\n\nThe result rows were joined to annotation tables before filtering. Join-key checks give:\n\n| stage | rows |\n|---|---:|\n| DESeq gene results | 60,662 |\n| after the left join on `gene_id` | 60,662 |\n| after the left join on `hgnc_id` / `HGNC.ID` | 60,662 |\n\nGencode has one row for each of the 60,662 count-table gene IDs. The HGNC right-hand join key is unique. Consequently, neither annotation join duplicates gene-result rows.\n\nThe executed selection code was:\n\n```r\nfinal_res <- res %>%\n  filter(padj < 0.05) %>%\n  # filter(abs(log2FoldChange) > 0.58) %>%\n  arrange(desc(abs(log2FoldChange)))\n```\n\nThus, the strict adjusted-p threshold is the only DEG inclusion cutoff; the absolute-LFC cutoff is inactive, and sorting does not change the number of rows.\n\n## Archived result counts\n\nThe executed output records:\n\n```text\nnrow(final_res)                         [1] 2118\nsum(final_res$log2FoldChange < 0)       [1] 952\nsum(final_res$log2FoldChange > 0)       [1] 1166\n```\n\nThe sign counts are mutually exclusive and satisfy:\n\n```text\n952 + 1166 = 2118\n2118 - 952 - 1166 = 0\n```\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm retained samples without specifying exclusions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit disease versus control without specifying whether sex is adjusted, then apply apeglm and padj threshold.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the numbers of significant genes with positive and negative shrunken log2 fold changes and verify their total.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

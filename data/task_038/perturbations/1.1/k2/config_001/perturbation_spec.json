@@ -1,0 +1,28 @@
+{
+  "subclass": "1.1",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "redefines strict as inclusive",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "redefines mutually exclusive as permitting triple members in pairwise regions",
+      "consumer_turns": [
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    }
+  ]
+}

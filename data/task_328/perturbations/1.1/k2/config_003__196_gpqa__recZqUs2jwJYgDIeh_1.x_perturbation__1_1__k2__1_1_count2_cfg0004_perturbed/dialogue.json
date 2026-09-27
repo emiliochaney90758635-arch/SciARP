@@ -1,0 +1,49 @@
+{
+  "release_task_index": 328,
+  "task_id": "gpqa__recZqUs2jwJYgDIeh",
+  "dataset": "gpqa",
+  "ordinal": 196,
+  "variant": "perturbed",
+  "conversation_id": "196::gpqa__recZqUs2jwJYgDIeh::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8fd806ec09a65d00e293157c4e34ecfdd8e2ff1c820326167f1b827da740c0c9",
+  "semantic_condition_id": "8cfc2ee72e2bce422f55d1ea9d84db581c641899074d20da9b4ba0aec4b47ff7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Klebsiella pneumoniae lawn on Mueller-Hinton agar was tested with an amoxicillin-clavulanate disc placed 25 mm centre-to-centre from erythromycin and then chloramphenicol discs, with no zone distortion. What assay was intended, and which antibiotic class should its indicator discs belong to?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat an ELISA as producing 950-bp and 1080-bp bands for blaCTX-M-1 and blaTEM, then interpret their identity.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the culture medium, disc spacing, and PCR evidence as though this were a vaccine assay rather than an ESBL synergy test.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which disc substitution would correctly implement a clavulanate double-disc synergy test for extended-spectrum beta-lactamase activity?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the correction changes the indicator antibiotic class while retaining the bacterial susceptibility medium, useful spacing, and separately qualified PCR evidence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the experimental improvement and the evidential status of the two expected-size PCR bands.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

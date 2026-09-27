@@ -1,0 +1,33 @@
+{
+  "subclass": "1.3",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "swaps S97 and S99",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "maps < to ≤",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "reverses the meaning of set difference",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    }
+  ]
+}

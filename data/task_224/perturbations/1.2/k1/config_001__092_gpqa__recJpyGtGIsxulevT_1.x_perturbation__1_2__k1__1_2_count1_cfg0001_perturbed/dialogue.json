@@ -1,0 +1,64 @@
+{
+  "release_task_index": 224,
+  "task_id": "gpqa__recJpyGtGIsxulevT",
+  "dataset": "gpqa",
+  "ordinal": 92,
+  "variant": "perturbed",
+  "conversation_id": "092::gpqa__recJpyGtGIsxulevT::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "57d8ed0a7c86b855dd8ada7fcb881d39a47d35d521138fe2d63b6802df8e6bc0",
+  "semantic_condition_id": "3eea3c70e1c94b6bbf100e98b52acd91d5454c07514b0f5876f88d9789840808",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An electron moves along x with speed 2*10^8 kg and has position uncertainty Delta x=0.1 nm. Convert Delta x to SI units and write the uncertainty relation for its x-momentum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What minimum x-momentum uncertainty follows from that position uncertainty? Give the value in SI units.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How should a small momentum spread about this nonzero central momentum be converted to an energy spread? Derive the local relation from the energy-momentum dispersion before substituting numbers.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the units of the supplied speed and momentum uncertainty, then use them to estimate the minimum energy uncertainty. If an input is missing or has invalid units, keep the relation symbolic and identify what is needed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the order of magnitude of the energy uncertainty, or identify the input still needed if a numerical estimate is not supported.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What assumptions were needed to attain the Heisenberg lower bound and to use linear propagation? The wavepacket shape, position-momentum covariance, and higher-order dispersion are not specified.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Given those assumptions, how should the estimate be qualified? Distinguish a minimum-spread estimate from a value guaranteed for every wavepacket.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain how a wavepacket that does not saturate the uncertainty relation, or a spread too broad for linear propagation, would limit that conclusion.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Summarize the estimated energy uncertainty with its assumptions, or give the symbolic relation and missing input if numerical evaluation remains unsupported.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

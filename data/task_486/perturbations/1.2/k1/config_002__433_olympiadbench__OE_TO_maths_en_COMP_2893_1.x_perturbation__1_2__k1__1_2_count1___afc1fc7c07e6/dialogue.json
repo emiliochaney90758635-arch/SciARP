@@ -1,0 +1,54 @@
+{
+  "release_task_index": 486,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2893",
+  "dataset": "olympiadbench",
+  "ordinal": 433,
+  "variant": "perturbed",
+  "conversation_id": "433::olympiadbench__OE_TO_maths_en_COMP_2893::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "6f01425c094782529c83fd8ee299f742f3264af2b8b7250f303e3326d08e7bb0",
+  "semantic_condition_id": "22b371bfb639793c8f1f0e893d60da0e5cdc14c3f99c27aa219c469ba698b753",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A square has area 650, and A, R, M, and L are consecutive side midpoints. Determine the area and side length squared of the midpoint square ARML.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let A=(11 square units,5 square units) and write the lattice point R using integer offsets c and d from A. Derive the equation those offsets must satisfy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find all ordered pairs of absolute values (|c|,|d|) that satisfy the offset equation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Impose the condition that R lies in Quadrant I. Translate x=11+c>0 and y=5+d>0 into integer bounds on c and d, then apply them to each signed version of the absolute-value pairs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From that sign check, identify exactly which negative c or d values remain possible and which are excluded by the quadrant condition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "List the surviving signed offsets, map them to coordinates of R, and check that none lies on a coordinate axis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How many possible ordered coordinate pairs can R have?",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

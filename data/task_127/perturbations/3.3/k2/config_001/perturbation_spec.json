@@ -1,0 +1,44 @@
+{
+  "task_index": 127,
+  "task_id": "127-capsule035",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "0f87d2e3f28ff6f2e0fd34b0049b18b870f7354702fd55639902eb37c902e9a0",
+  "source_base_evidence_sha256": "79b55dff8f667ca25e1bc810b690469b0f33c3eb1d051601ef893763ff8e4f8b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong subset method imposed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong inverse-density method independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use only the separate extreme-methylation subset rather than the complete age-related table.",
+    "T2": "Compute density as length divided by site count."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Restrict the table to the visible chromosomes with more than 50 distinct positions and treat those rows as the target subset."
+    },
+    {
+      "turn_id": "T2",
+      "content": "For each retained row, calculate chromosome length divided by distinct-site count instead of sites divided by length."
+    }
+  ]
+}

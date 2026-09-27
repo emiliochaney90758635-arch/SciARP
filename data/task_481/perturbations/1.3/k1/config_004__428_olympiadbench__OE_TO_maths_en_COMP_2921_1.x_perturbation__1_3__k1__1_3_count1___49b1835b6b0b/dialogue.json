@@ -1,0 +1,49 @@
+{
+  "release_task_index": 481,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2921",
+  "dataset": "olympiadbench",
+  "ordinal": 428,
+  "variant": "perturbed",
+  "conversation_id": "428::olympiadbench__OE_TO_maths_en_COMP_2921::1.x::perturbation__1_3__k1__1_3_count1_cfg0004::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "05c1b714f1183ee4200bef07739549a148cf40c20b43e822813db01e7e339dc9",
+  "semantic_condition_id": "37970db28537c3c103768535ea39434a0209d69e8867e44110605a37a7d4ed19",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a common four-bit suffix b3b2b1b0 in base 2 and base 5, with leading zeros allowed, define its numerical values x and y in the two bases and express n as congruences modulo 16 and 625.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the Chinese remainder theorem to determine how many n in 0<=n<10000 correspond to each permitted suffix, and decide whether matching digits make x and y numerically equal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "As a sanity check, compare x and y for a nontrivial suffix such as 1000 and explain the difference.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Derive the residue formula for each solution class using the two quantities introduced above and the required modulus.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Take the suffixes to be b3b2b1n and sum x and y over them.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the formula and those two sums to find the requested aggregate modulo the stated modulus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

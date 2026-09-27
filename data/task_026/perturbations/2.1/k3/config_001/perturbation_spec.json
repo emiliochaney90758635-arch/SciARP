@@ -1,0 +1,28 @@
+{
+  "task_id": "026-capsule008",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Classifies nonzero pairwise-only overlap with zero triple overlap as absent.",
+    "Makes a zero triple region sufficient for absent overlap.",
+    "Redefines pairwise-only as inclusive of the triple region."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first overlap-classification premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "zero-triple premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "inclusive-pair premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

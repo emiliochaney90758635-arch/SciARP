@@ -1,0 +1,69 @@
+{
+  "release_task_index": 410,
+  "task_id": "gpqa__recjTmmMZ8Q1uJQJp",
+  "dataset": "gpqa",
+  "ordinal": 279,
+  "variant": "clean",
+  "conversation_id": "279::gpqa__recjTmmMZ8Q1uJQJp::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "61b75d9348da590019dfaa144d3bd3cc7e1769b4160253eb9ee15ac0747dddc2",
+  "semantic_condition_id": "0f4641e460c30a383c56c6604a33d41153a901f5d1c0a5eb73f9a2d09ab0b27a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A wild-type copy of gene X is maintained on a plasmid while the genomic copy is replaced by mutant M. What general yeast genetic strategy tests whether M can support viability?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The rescue plasmid must then be eliminated. Which plasmid marker and counterselection compound are normally paired for that step, and why is plasmid loss essential?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which selectable marker can distinguish the genomic replacement from the rescue plasmid?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After counterselection, the strain fails to grow. If plasmid loss and strain construction worked as intended, what does this imply about M?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Audit the separate roles of the plasmid marker, genomic replacement marker, and counterselection compound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assemble the mutation phenotype and the identities of Y, Z, and A from those roles.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What uncertainty remains without an isogenic counterselection control, direct plasmid-loss verification, independent transformants, re-complementation, and an off-target integration check?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Which one of those controls would most directly distinguish mutation lethality from a counterselection or construction artifact?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Does the supplied experiment independently verify plasmid loss or exclude off-target integration?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the inferred phenotype and Y/Z/A assignments with the appropriate assay qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

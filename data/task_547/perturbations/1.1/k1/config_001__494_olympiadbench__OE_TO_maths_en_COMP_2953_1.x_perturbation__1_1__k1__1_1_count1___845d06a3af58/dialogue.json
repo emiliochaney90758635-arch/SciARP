@@ -1,0 +1,54 @@
+{
+  "release_task_index": 547,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2953",
+  "dataset": "olympiadbench",
+  "ordinal": 494,
+  "variant": "perturbed",
+  "conversation_id": "494::olympiadbench__OE_TO_maths_en_COMP_2953::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7ee56ef451d863a94ba22f038fe56546e2ef6d3b862c917790f5e6e312b4446d",
+  "semantic_condition_id": "84c1da7793c2a0067b2672c848a38bf5f60c8cdc81df5103081290455bfd280d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a labeled convex hexagon whose six boundary sides are red and whose diagonals are red or blue, characterize which vertex triples are automatically safe and which can form an all-blue triangle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List all vertex triples whose three connecting edges are diagonals and therefore require a constraint.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each constrained triple, count the colorings of its three diagonals with at least one red edge, and determine whether the two diagonal sets overlap.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the boundary sides not used by the constrained triangles and recolor each of those sides freely red or blue.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Multiply the independent constrained-triangle and free-diagonal factors for the labeled hexagon.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that every other triangle contains at least one red boundary side and that no quotient by rotational symmetry is intended.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the number of valid labeled diagonal colorings.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

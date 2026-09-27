@@ -1,0 +1,16 @@
+{
+  "task_id": "004-capsule003",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes the joint-filter output from 846 to 864 rows."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "joint-filter row count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

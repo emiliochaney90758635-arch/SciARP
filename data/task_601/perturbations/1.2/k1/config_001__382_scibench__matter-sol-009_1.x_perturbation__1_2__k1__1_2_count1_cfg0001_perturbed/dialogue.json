@@ -1,0 +1,54 @@
+{
+  "release_task_index": 601,
+  "task_id": "scibench__matter-sol-009",
+  "dataset": "scibench",
+  "ordinal": 382,
+  "variant": "perturbed",
+  "conversation_id": "382::scibench__matter-sol-009::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "a302f22557ef9d8c53aeb1356a29e841178d052b1ebb9ea11dd20683019cf59a",
+  "semantic_condition_id": "bd31e4ca93a7c616db065ef33db5415b913c9dfbfda6fed3adc12bbcba70e6be",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a free hydrogen atom in its 1s ground state, write the normalized electron wavefunction in terms of the Bohr radius a_0=5.292e-11 m.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that wavefunction to set up <1/r>=integral |psi|^2(1/r) d tau in spherical coordinates, including the volume element.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the radial and angular integrals to obtain <1/r>.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Insert that expectation value into sigma=(e^2 mu_0)/(12 pi m_e)<1/r> and simplify the shielding constant symbolically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From the sign and form of the expression, explain whether the electron produces magnetic shielding or deshielding at the proton.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Before substituting numbers, verify that the simplified expression is dimensionless and state how it scales with a_0.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using e=1.602e-19 K, mu_0=4pi e-7 J s^2 C^-2 m^-1, m_e=9.109e-31 kg, and a_0=5.292e-11 m, calculate the proton shielding constant numerically.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

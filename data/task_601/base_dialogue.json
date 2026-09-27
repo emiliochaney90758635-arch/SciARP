@@ -1,0 +1,54 @@
+{
+  "release_task_index": 601,
+  "task_id": "scibench__matter-sol-009",
+  "dataset": "scibench",
+  "ordinal": 382,
+  "variant": "clean",
+  "conversation_id": "382::scibench__matter-sol-009::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "259e1f654de1308f0decce18c3af4b336aa2e151c5a65f0aecc3c4a89f113a43",
+  "semantic_condition_id": "cb7ee00ec89c8d0aad9b02a896d956c8a80f77137fc9486e4550de01204d809a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a free hydrogen atom in its 1s ground state, write the normalized electron wavefunction in terms of the Bohr radius a_0=5.292e-11 m.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that wavefunction to set up <1/r>=integral |psi|^2(1/r) d tau in spherical coordinates, including the volume element.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the radial and angular integrals to obtain <1/r>.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Insert that expectation value into sigma=(e^2 mu_0)/(12 pi m_e)<1/r> and simplify the shielding constant symbolically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From the sign and form of the expression, explain whether the electron produces magnetic shielding or deshielding at the proton.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Before substituting numbers, verify that the simplified expression is dimensionless and state how it scales with a_0.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using e=1.602e-19 C, mu_0=4pi e-7 J s^2 C^-2 m^-1, m_e=9.109e-31 kg, and a_0=5.292e-11 m, calculate the proton shielding constant numerically.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

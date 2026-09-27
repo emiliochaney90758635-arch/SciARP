@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "189::gpqa__recWrxK7TzlOf9cSB::1.x::perturbation__1_3__k2__1_3_count2_cfg0003::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "df49247e457c8baa4086b4c562f3ecac25dcaa8639312b4b447d43cb6416b196",
+  "semantic_condition_id": "45c6e1600b88471a692c99414ca32e5322bca2d53147430c16016056fe5d4a00",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has formula C10H9ClO, one negative DEPT-135 resonance, and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. What does the negative signal imply, and what plausible structure fits the formula and reactivity? Treat the assignment as provisional because full shift and correlation data are absent.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the proposed Product B structure as the reactant, determine the Friedel-Crafts product B, and check whether its single negative DEPT-135 resonance is consistent.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat B with hydrazine and NaOH. Identify the transformation and product C, then assess its carbon-signal pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Heat C with N-bromosuccinimide and peroxide. Predict D and explain why its 13C spectrum has two signals below 60 ppm and all others above 100 ppm.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Identify product C by its systematic name and use the two sub-60-ppm environments to distinguish alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "config_id": "task047_1.4_k3",
+  "subclass": "1.4",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Explain how the coefficient sign should be interpreted for expression and essentiality."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Identify candidates at the negative end of the results."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Find the minimum and report its gene identifier."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 71,
+  "task_id": "071-capsule019",
+  "source_id": "bix-26-q4",
+  "dataset": "bixbench",
+  "ordinal": 71,
+  "variant": "perturbed",
+  "conversation_id": "071::071-capsule019::1.4.k2::lane_c_manual",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "fa3371d962199f862d489d1316fdc035913640429580e51ba1d69cc09f056f5d",
+  "semantic_condition_id": "3a0a4d5bc0cd1102e0f9ded44f542be46ed429e507e1a6d0cfeeed79dbc40f00",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Gene-List and Pathway Filtering Levels\n\nBoth FeMinus and Succ use MMGluFePlus as the reference. The archived downregulated gene lists use:\n\n```r\nfilter(log2FoldChange < -1.5)\n```\n\nNo gene-level `padj < 0.05` filter is applied. Each GeneID list is then supplied to:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe 0.05 cutoffs apply to pathway-level output. All pathway descriptions are compared only after removal of the same organism suffix.\n\n## `Dn` Point Locations in the Archived Dot Plot\n\n| Cleaned pathway description | FeMinus · Dn | Succ · Dn |\n|---|:---:|:---:|\n| Sulfur metabolism | — | — |\n| Styrene degradation | ● | — |\n| Quorum sensing | ● | — |\n| Porphyrin metabolism | ● | ● |\n| Phenazine biosynthesis | ● | ● |\n| Pentose phosphate pathway | — | ● |\n| Oxidative phosphorylation | ● | ● |\n| Microbial metabolism in diverse environments | ● | ● |\n| Glyoxylate and dicarboxylate metabolism | — | ● |\n| Cyanoamino acid metabolism | ● | — |\n| Cationic antimicrobial peptide (CAMP) resistance | — | ● |\n| Carbon metabolism | — | ● |\n| Biosynthesis of secondary metabolites | ● | ● |\n| Bacterial secretion system | — | — |\n| ABC transporters | — | — |\n\n`●` indicates an enrichment point at the corresponding `Dn` coordinate, whereas `—` indicates no point. The intersection uses strict matching of complete cleaned strings and does not merge names based on similar meaning, color, or point size.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDistinguish the gene-list fold-change filter from the pathway-level p- and q-value cutoffs in the archived analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply those criteria to assemble the `Dn` pathway set, but do not use or infer which of the two condition columns is intended.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assemble the remaining condition's pathway set, but omit whether the required coordinate is `Dn` or another regulation direction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which complete cleaned pathway descriptions occur in both sets, and how many are shared?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

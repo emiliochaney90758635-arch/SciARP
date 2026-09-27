@@ -1,0 +1,28 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Independently sorts the two replicate columns before pairing.",
+    "Replaces average ranks with dense ranks.",
+    "Applies an unsupported one-minus-correlation conversion."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "pairing premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "tie-ranking premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "coefficient-conversion premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

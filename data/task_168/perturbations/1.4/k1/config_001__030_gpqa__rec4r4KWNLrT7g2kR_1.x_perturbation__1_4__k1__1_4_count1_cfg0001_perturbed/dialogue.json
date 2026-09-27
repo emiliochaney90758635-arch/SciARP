@@ -1,0 +1,64 @@
+{
+  "release_task_index": 168,
+  "task_id": "gpqa__rec4r4KWNLrT7g2kR",
+  "dataset": "gpqa",
+  "ordinal": 30,
+  "variant": "perturbed",
+  "conversation_id": "030::gpqa__rec4r4KWNLrT7g2kR::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "8f89135e3702b1d0f0118843c3045005189899b2bbe583bddb66207360529182",
+  "semantic_condition_id": "8e084ad1eca640d4fcab0907cf87736eda2c9524577d1f30eca3e15af4c9de57",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Starting from (R)-(+)-limonene, consider this sequence: one equivalent of H2 over Pd/C in methanol, mCPBA, sodium methoxide, and finally propanoic acid with DCC and catalytic DMAP. Track the two alkenes and the existing stereocenter to determine one valid stereoisomer of product 4.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Begin with the hydrogenation. Which alkene is reduced, which alkene remains, and what happens to the pre-existing C4 stereocenter in product 1?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply mCPBA to product 1. Identify the alkene that is epoxidized, explain why approach from either face gives epoxide stereoisomers, and carry the unchanged C4 configuration into product 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For opening this unsymmetrical epoxide with sodium methoxide under basic conditions, state the governing regioselectivity and stereochemical rule before assigning product 3.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that rule to the epoxides formed from both faces. Which carbon receives methoxy, which carbon bears the alcohol after protonation, and what relative stereochemistry results in the product-3 family?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Treat product 3 with propanoic acid, DCC, and catalytic DMAP. What functional-group change forms product 4, and does this step alter the established carbon stereochemistry?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the connectivity and stereochemical assignments to give the full systematic name of one valid product-4 stereoisomer.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that the proposed name places propionate, methoxy, methyl, and isopropyl at the positions required by the mechanism and that its configurations are compatible with epoxide opening by inversion.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the final full name of one valid product-4 stereoisomer and summarize how selective hydrogenation, epoxidation, methoxide opening, and esterification produce it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

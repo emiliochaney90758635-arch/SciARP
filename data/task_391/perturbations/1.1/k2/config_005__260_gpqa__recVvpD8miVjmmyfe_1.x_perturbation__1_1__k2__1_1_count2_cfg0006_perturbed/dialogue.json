@@ -1,0 +1,69 @@
+{
+  "release_task_index": 391,
+  "task_id": "gpqa__recVvpD8miVjmmyfe",
+  "dataset": "gpqa",
+  "ordinal": 260,
+  "variant": "perturbed",
+  "conversation_id": "260::gpqa__recVvpD8miVjmmyfe::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "6b3c3432dbde0afcae34bfdfa5061ad96ed3d687f0d14363d23e96d1673d754e",
+  "semantic_condition_id": "e1bb8a4d1402a20f15c63c06b2fea7f4f8cca9bd48b7e20cfb66750d7a6cfab2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A numerical rule maps the DNA strings AGG and TGCTGA, written 5' to 3', to 115 and 176, respectively, and must be applied to ACAGTGACC. Why do two examples not determine an arbitrary rule uniquely, and what biochemical hypothesis is most plausible to test?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare direct translation with reverse-complement translation on the supplied examples. Which strand orientation supports the biochemical hypothesis, and what sequence does it produce from ACAGTGACC?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Split the transformed sequence into codons and translate them into nucleotides; then list the resulting residues and their standard integer residue masses.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Under the peptide-mass convention of adding one terminal water contribution of 18 to the residue-mass sum, write the expression for the target's preliminary isoelectric-point output.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the residue-mass expression and report the resulting integer.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Why is one water contribution appropriate for the intact peptide, rather than one water per residue or per peptide bond?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Run the same strand, translation, and mass pipeline on AGG and TGCTGA. Does it reproduce both supplied outputs?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Given that many arbitrary rules could fit two examples, how strongly should this biochemical interpretation be stated?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What additional input-output example or explicit strand, translation, or mass convention would best distinguish this rule from alternatives?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the inferred rule, the transformed target codons, the residue-mass calculation, and the numerical output, and state how underdetermined the rule remains.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

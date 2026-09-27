@@ -1,0 +1,49 @@
+{
+  "release_task_index": 304,
+  "task_id": "gpqa__recLFSUuIxZo6jcFr",
+  "dataset": "gpqa",
+  "ordinal": 172,
+  "variant": "perturbed",
+  "conversation_id": "172::gpqa__recLFSUuIxZo6jcFr::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "9d5bd75826b0e0dbee4b512cf1fef79f25b3524ffb55c904307a156ae0d53d6a",
+  "semantic_condition_id": "388f3572cc60dd001098d6f1af5335c72fcea313be04f700ae72a53cd3120bb1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the V-band distance formula from the extinction-corrected distance modulus, using A_V=3.1 E(B-V).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the distances for a: M_V=8, m_V=8, E(B-V)=0; b: 8, 7, 0; and c: 8, 9, 0.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate d for M_V=8, m_V=7, E(B-V)=0.2 and e for M_V=7, m_V=7, E(B-V)=0.2, retaining the V-band extinction correction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the calculated distances to construct the requested strictly increasing subsequence. Include approximate values and note any equality that prevents a strict ordering of all six cases.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the extinction correction and any equal distances. Why can an equality not appear as a strict less-than step?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final increasing sequence with the adopted distances.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

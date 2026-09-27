@@ -1,0 +1,35 @@
+{
+  "config_id": "task045_1.4_k3",
+  "subclass": "1.4",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Intersect the expression and gene-effect matrices by cell-line IDs and gene names."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Handle missing values and enforce the observation threshold for each gene."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Correct the gene-level p-values for multiple testing and identify significant results at 5%."
+    }
+  ]
+}

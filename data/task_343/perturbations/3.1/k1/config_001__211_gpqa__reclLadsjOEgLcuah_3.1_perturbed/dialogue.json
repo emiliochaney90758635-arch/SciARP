@@ -1,0 +1,54 @@
+{
+  "release_task_index": 343,
+  "task_id": "gpqa__reclLadsjOEgLcuah",
+  "dataset": "gpqa",
+  "ordinal": 211,
+  "variant": "perturbed",
+  "conversation_id": "211::gpqa__reclLadsjOEgLcuah::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "837a9ba46b5a7c0d9d72e3a245849fcc09293153580712115cb194c00dd2eb6f",
+  "semantic_condition_id": "953ee356b87adb7ac76c6d3c5c22271b7bbc941000695200b0effff31ae753e9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 25-microlitre multiplex PCR targets qnrA, qnrB, and qnrS, whose expected amplicons are several hundred base pairs, but the gel shows one clear band near 40 bp. What would successful target detection look like?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare the observed 400-bp product with that criterion. What is its most likely identity, and how certain is that assignment from size alone?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Conditional on an observed product being much smaller than every intended amplicon, explain how a multiplex primer mixture could generate it. Otherwise, list the broader assay-failure possibilities that remain open.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which controls or follow-up measurements would distinguish intended amplicons, primer dimers, and other nonspecific products?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What assay correction should be selected only after those measurements identify the failure mode?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How should any provisional diagnosis be qualified so that a gel pattern alone is not treated as definitive molecular identification?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report what can and cannot be concluded about qnr detection and name the next diagnostic or corrective step justified by the available evidence.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

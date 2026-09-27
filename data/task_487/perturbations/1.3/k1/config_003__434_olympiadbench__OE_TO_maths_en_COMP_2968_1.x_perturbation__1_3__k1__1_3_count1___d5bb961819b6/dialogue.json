@@ -1,0 +1,54 @@
+{
+  "release_task_index": 487,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2968",
+  "dataset": "olympiadbench",
+  "ordinal": 434,
+  "variant": "perturbed",
+  "conversation_id": "434::olympiadbench__OE_TO_maths_en_COMP_2968::1.x::perturbation__1_3__k1__1_3_count1_cfg0002::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "4152f16e52964c33b15f48e3061a06aa3d83b91110cdce87dfffa7dc133307cb",
+  "semantic_condition_id": "0604b63f6a0a0a246900e4624f49e87a72bee06642fba54e2ce9fcc7c182ecb4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In isosceles triangle ABC with AB=AC, an altitude from A meets BC at D. Prove what this implies about the two base segments BD and DC.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Factor x^3-8x^2-8K-9 and identify the value of K suggested by the real linear factor.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute that value into the original cubic, then use the remaining quadratic factor to show that no other real roots exist.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set T=23 and BC=T-K. Use the value of K and the fact that D bisects BC to compute BC and BD.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "The altitude AD has length sqrt(T). Form the right-triangle relation among AB, AD, and BD.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute AD^2=T=23 and the calculated half-base BD into that relation, and simplify the resulting value of AB^2.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the fact that a side length is positive to take the appropriate square root and report AB in simplified exact form.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

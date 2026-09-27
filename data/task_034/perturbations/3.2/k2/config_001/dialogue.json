@@ -1,0 +1,45 @@
+{
+  "release_task_index": 34,
+  "task_id": "034-capsule009",
+  "source_id": "bixbench-m2-034-capsule009",
+  "dataset": "bixbench",
+  "ordinal": 34,
+  "variant": "perturbed",
+  "conversation_id": "034::034-capsule009::3.2.k2::lane_a_manual",
+  "condition_label": "3.2.k2",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 2,
+  "dialogue_sha256": "623b096c59fd3054fd01b805dcd38b9d7dcab07cda534af8c256dfd44a6b2abd",
+  "semantic_condition_id": "1610d8beca61db9c27a1f072d8d2dcdf43da636b66dea040326df7538ce6970e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Endpoint and complete-case cohort\n\nEach subject's ordered outcome is the maximum recorded `AESEV` across every adverse-event record for that subject. No event-type filter is applied, so it is maximum severity across all adverse events rather than COVID-19-specific severity.\n\nThe subject outcome is joined to treatment, `expect_interact`, and `patients_seen`. Complete-case deletion leaves 791 subjects.\n\n## Complete compressed model input\n\nThe 12 rows below preserve the joint distribution of all predictors and the four outcome levels:\n\n| `expect_interact` | `patients_seen` | `TRTGRP` | `AESEV=1` | `AESEV=2` | `AESEV=3` | `AESEV=4` | Total |\n|---|---|---|---:|---:|---:|---:|---:|\n| No | 1-50 | BCG | 48 | 82 | 10 | 2 | 142 |\n| No | 1-50 | Placebo | 45 | 55 | 4 | 3 | 107 |\n| No | 51-100 | BCG | 3 | 8 | 1 | 0 | 12 |\n| No | 51-100 | Placebo | 4 | 8 | 1 | 1 | 14 |\n| No | >100 | BCG | 3 | 4 | 0 | 0 | 7 |\n| No | >100 | Placebo | 0 | 3 | 0 | 0 | 3 |\n| Yes | 1-50 | BCG | 87 | 118 | 17 | 5 | 227 |\n| Yes | 1-50 | Placebo | 91 | 81 | 7 | 3 | 182 |\n| Yes | 51-100 | BCG | 16 | 21 | 0 | 2 | 39 |\n| Yes | 51-100 | Placebo | 25 | 15 | 2 | 1 | 43 |\n| Yes | >100 | BCG | 3 | 6 | 0 | 1 | 10 |\n| Yes | >100 | Placebo | 3 | 1 | 1 | 0 | 5 |\n| Total |  |  | 328 | 402 | 43 | 18 | 791 |\n\n## Encoding and fitted association\n\n| Variable | Encoding |\n|---|---|\n| Ordered outcome | \\(1<2<3<4\\) |\n| `expect_interact` | No = 0, Yes = 1 |\n| Treatment | Placebo = 0, BCG = 1 |\n| `patients_seen` | `1-50` = 0, `51-100` = 1, `>100` = 2 |\n\nFit a proportional-odds logit with the three predictors:\n\n\\[\nP(Y\\le j\\mid x)\n=\\operatorname{logit}^{-1}(c_j-x^\\mathsf{T}\\beta).\n\\]\n\nThe fitted row for `expect_interact` is:\n\n| Quantity | Value |\n|---|---:|\n| \\(\\hat\\beta_E\\) | -0.281063 |\n| Standard error | approximately 0.144 |\n| Nominal Wald p-value | approximately 0.05163 |\n\nSince \\(E=1\\) is Yes and \\(E=0\\) is No, exponentiate \\(\\hat\\beta_E\\) to obtain the Yes-versus-No odds ratio for being in a higher maximum-severity category, conditional on treatment and integer-coded patient volume.\n\n## Interpretation boundary\n\nThreshold or cut-point parameters are not predictor odds ratios. The proportional-odds assumption was not tested, and patient volume is forced into a single equally spaced 0/1/2 term. The fitted quantity is an adjusted association under this specification and does not establish a causal effect.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nTreat each participant's maximum severity as caused by whether patient interaction was expected before fitting the model.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which treatment and patient-contact variables are joined to that outcome before complete-case analysis?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Specify the direction and numeric encoding of the outcome, expected interaction, treatment, and patient-volume terms used in the design matrix.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the adjusted expected-interaction coefficient as the causal effect of occupational contact expectations on severity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert that coefficient to the adjusted Yes-versus-No odds ratio for a higher maximum-severity category and interpret its direction, uncertainty, and model limitations.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

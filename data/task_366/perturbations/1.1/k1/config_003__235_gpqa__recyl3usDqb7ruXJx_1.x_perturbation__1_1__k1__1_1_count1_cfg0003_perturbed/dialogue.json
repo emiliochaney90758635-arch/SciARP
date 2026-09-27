@@ -1,0 +1,49 @@
+{
+  "release_task_index": 366,
+  "task_id": "gpqa__recyl3usDqb7ruXJx",
+  "dataset": "gpqa",
+  "ordinal": 235,
+  "variant": "perturbed",
+  "conversation_id": "235::gpqa__recyl3usDqb7ruXJx::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8704bf79e9f6d73c8dc8f95f7da99e0a884e6941e286405ca348caf2ba6352ca",
+  "semantic_condition_id": "8f14f560ddcedcfedac6b8f2323659a18bdab713dbca14c3de774198ef4abb4e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A symmetric (E)-oct-4-ene sample and a symmetric (Z)-oct-4-ene sample are each treated with one equivalent of mCPBA and then aqueous acid. What is the net transformation, and what stereochemical course does the epoxidation-opening sequence follow?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that sequence to (E)-oct-4-ene and determine the complete set of octane-4,5-diol stereoisomers, accounting for molecular symmetry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the second reaction, apply the same sequence to benzene rather than (Z)-oct-4-ene and determine the complete stereoisomer set.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The two product mixtures are combined. With ideal resolution, how many peaks should appear on an achiral reverse-phase HPLC column and how many on a chiral HPLC column? Explain using enantiomer and diastereomer resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the assignment by identifying the meso product, the enantiomeric pair, and the species that coelute on the achiral stationary phase.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the full stereoisomer inventory and the predicted peak count for each chromatogram.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

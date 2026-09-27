@@ -1,0 +1,19 @@
+{
+  "task_id": "088-capsule024",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Falls back from adjusted to raw p for adjusted value 1.",
+    "Imputes absent SOCS3 rows as significant.",
+    "Double-counts each row and its cell-type membership."
+  ],
+  "evidence_mode": "append"
+}

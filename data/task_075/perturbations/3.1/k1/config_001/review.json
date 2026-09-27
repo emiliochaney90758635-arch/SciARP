@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "Later selection violates the row-total rule.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "2fd01ef8d751fa9be70018dafb8514cad35a7c8d8bcf822328cb42c14b40d902",
+  "strict_non2x_original_semantic_condition_id": "db32e73d1b9b0b861d4795ae356a006ad55c44b315b002b7ea70b50e6035128c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the wrong selection path scorable by explicitly reusing the visible cluster-0 table.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

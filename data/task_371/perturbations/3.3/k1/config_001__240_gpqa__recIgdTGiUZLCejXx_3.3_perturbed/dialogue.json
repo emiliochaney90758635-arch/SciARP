@@ -1,0 +1,59 @@
+{
+  "release_task_index": 371,
+  "task_id": "gpqa__recIgdTGiUZLCejXx",
+  "dataset": "gpqa",
+  "ordinal": 240,
+  "variant": "perturbed",
+  "conversation_id": "240::gpqa__recIgdTGiUZLCejXx::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "93fa5c3110f2ee35522f50e9fc6822a7e7f29d9aee5e6844a9a5172cdf9368cd",
+  "semantic_condition_id": "a620b4bd60fe36d79fb272f3b8b04fcf657bb440167e9b63097aadb3a80c31a4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1.0e-5 M boric acid at 25 C with K_a=7.0e-10 and K_w=1.0e-14, explain why water autoionization cannot be neglected. Treat boric acid as a weak monoprotic acid and use the approximation [A-] approximately CK_a/[H+].",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using C=1.0e-5 M and K_a=7.0e-10, write [A-] as a function of [H+] under that dilute-acid approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the electroneutrality equation including [OH-]=K_w/[H+].",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the acid-only shortcut [H+]=sqrt(K_a C), neglecting water autoionization, to obtain the numerical result.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the hydrogen-ion concentration to pH.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the pH with precision appropriate to the approximate acid-species treatment rather than presenting it as an exact equilibrium root.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the result is physically consistent with a very dilute weak acid and with the neutral-water contribution.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the principal charge-balance contributions, [H+], pH, and the approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

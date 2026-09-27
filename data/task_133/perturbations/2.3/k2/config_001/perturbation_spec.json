@@ -1,0 +1,42 @@
+{
+  "task_index": 133,
+  "task_id": "133-capsule037",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "b1f4e3dc6f9d658ac89f99a1b92e6fb1ee945ec10aa451758451c770be14502e",
+  "source_base_evidence_sha256": "3eaafc1a94d58a47b594bfa5ec67c81ac90a5729b01ef7933e33ec6372905c92",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "SSE digits transposed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "SST digits independently transposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "24,021,703,352.2054",
+      "new": "24,021,730,352.2054"
+    },
+    {
+      "turn_id": "T2",
+      "old": "123,937,331,313.5898",
+      "new": "123,937,313,313.5898"
+    }
+  ],
+  "extends_existing": null
+}

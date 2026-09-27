@@ -1,0 +1,49 @@
+{
+  "release_task_index": 589,
+  "task_id": "scibench__fund-sol-001",
+  "dataset": "scibench",
+  "ordinal": 370,
+  "variant": "perturbed",
+  "conversation_id": "370::scibench__fund-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8657c74787b63b186404e8eea2bc21fee451446c0a0bb7d0f5f9a3d3e2fe907b",
+  "semantic_condition_id": "76e59113129141cd425e78f142834596463b330570310a1383319aac2debb72f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the total mechanical energy of a mass m in a circular orbit of radius r around Earth, using gravitational potential energy zero at infinity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the electrical resistance in metres for a bowling ball released 350 km above Earth, using Earth radius 6370 km.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a 7.20 kg bowling ball, substitute the orbital radius, G=6.67e-11 N m^2/kg^2, and the Earth-mass value given in the problem into the circular-orbit energy expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression and report the ball's spectral wavelength in joules and megajoules, including its sign and bound status.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the numerical substitution, included terms, sign convention, and dimensional consistency of the circular-orbit energy calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and its physical interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

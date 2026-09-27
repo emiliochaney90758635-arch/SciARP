@@ -1,0 +1,69 @@
+{
+  "release_task_index": 198,
+  "task_id": "gpqa__recDpYJ14wFOQCRnO",
+  "dataset": "gpqa",
+  "ordinal": 65,
+  "variant": "perturbed",
+  "conversation_id": "065::gpqa__recDpYJ14wFOQCRnO::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "0511238788d33126a4518f6dd7d218ae2e0e1323b73998f2648f69e67efa244e",
+  "semantic_condition_id": "2dc188a9613d8e5cbc39630a146e341a07f10f78a1ae7bff4bd7de72b898b217",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has observed B-V=0.7 mag, intrinsic (B-V)_0=0.5 mag, A_V=3.1E(B-V), apparent V magnitude m_V=3, and absolute V magnitude M_V=5. Explain why the reddening correction must be applied before inferring its distance and parallax.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the chain of equations connecting color excess, V-band extinction, the extinction-corrected distance modulus, distance in parsecs, and parallax in milliarcseconds. Do not substitute the numerical values yet.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute E(B-V) from the observed and intrinsic colors.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that color excess and the coefficient 3.1 to compute A_V.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute m_V=3, M_V=5, and the computed A_V into the extinction-corrected luminosity-distance equation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Solve that equation for the distance d in parsecs, retaining enough precision for the parallax conversion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As an independent arithmetic check before inversion, recompute E(B-V) and A_V in one line using the intrinsic color 0.5 mag, and verify that they agree with the earlier results.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Convert the distance to radial velocity in milliarcseconds and round the result appropriately.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the result by converting the parallax back to parsecs and substituting that distance into the extinction-corrected distance modulus.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final extinction-corrected parallax and the corresponding distance, with units.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

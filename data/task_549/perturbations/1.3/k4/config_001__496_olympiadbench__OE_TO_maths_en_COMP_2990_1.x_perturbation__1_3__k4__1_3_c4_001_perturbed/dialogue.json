@@ -1,0 +1,54 @@
+{
+  "release_task_index": 549,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2990",
+  "dataset": "olympiadbench",
+  "ordinal": 496,
+  "variant": "perturbed",
+  "conversation_id": "496::olympiadbench__OE_TO_maths_en_COMP_2990::1.x::perturbation__1_3__k4__1_3_c4_001::perturbed",
+  "condition_label": "1.3.k4",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 4,
+  "dialogue_sha256": "ddae1025a25e77d8b003e663f0d82ab68ad9e7267d8e9ce33bea9c19aa67bde9",
+  "semantic_condition_id": "98817f4158d281b8a430d040ffd20f5fb7704887e5a02db68aeb581819ad4386",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T=67. In rectangle FAKE, EF=T and AF=4T/3. Use triangle AFK to find the diagonal FK and the area of triangle AFK symbolically in T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the triangle area and base FK to determine the altitude from A to FK.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rectangle FUNK lies in the same plane, shares side FK, and has UF parallel to FK. Describe the part of FUNK that lies inside FAKE.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use a width FK=12/5 and similarity in the triangular halves to calculate the combined area outside FAKE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the rectangle area of FAKE with the similarity relation to obtain the intersection formula in T.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that UF=12/5 lies in the clipped-overlap regime rather than the full-triangle regime, and verify the dimensions of the area formula.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the intersection formula for UF=67.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

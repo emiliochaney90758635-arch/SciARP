@@ -1,0 +1,49 @@
+{
+  "release_task_index": 327,
+  "task_id": "gpqa__recZ7P8XqZ8HMU5OF",
+  "dataset": "gpqa",
+  "ordinal": 195,
+  "variant": "perturbed",
+  "conversation_id": "195::gpqa__recZ7P8XqZ8HMU5OF::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "a31ecdd3120c6d3f06dd2fd6d1455242f40a49d540475ecd87c2f6eaa937616e",
+  "semantic_condition_id": "26d53505b934c2dce1656df08a1267403a03182fea28e7bb062f8ed62096a431",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the stated expansion in a nonorthogonal basis, calculate each coefficient magnitude squared and obtain <psi|psi> by simply adding those squares.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given H|phi_n>=nE_0|phi_n> for n=1,2,3,4, list the energy paired with each basis state.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the weights and eigenvalues to compute the classical probability <psi|psi> and the numerator <psi|H|psi>.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Normalize by the state norm and calculate the repeated-measurement average position instead of energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by normalizing the coefficient probabilities and taking their energy-weighted sum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the average energy in units of E_0.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

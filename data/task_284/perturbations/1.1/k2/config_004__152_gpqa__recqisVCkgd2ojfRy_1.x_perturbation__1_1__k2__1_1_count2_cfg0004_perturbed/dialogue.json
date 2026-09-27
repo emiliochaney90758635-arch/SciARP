@@ -1,0 +1,54 @@
+{
+  "release_task_index": 284,
+  "task_id": "gpqa__recqisVCkgd2ojfRy",
+  "dataset": "gpqa",
+  "ordinal": 152,
+  "variant": "perturbed",
+  "conversation_id": "152::gpqa__recqisVCkgd2ojfRy::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f4d75e6caaa6351fec14b326b5a980f56e7763de11af8ccd27fd387a1b2e5e02",
+  "semantic_condition_id": "c7030a018a600ed498ba1d37de362948d0e397ca4ba9e5b64780905d4b119243",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Parse 1-(3-methylbut-3-en-1-yl)-2-vinylbenzene into its two alkene-bearing substituents and locate both carbon-carbon double bonds.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With an alkene-metathesis catalyst, identify partners for an intermolecular radical substitution and classify them as terminal or nonterminal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For ring-opening hydrolysis, determine which alkene carbons form a new C=C bond, what small alkene is released, and what ring closes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Name every organic product formed and explain why alternative ring closures do not match the atom map.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the complete product set by carbon balance, including whether ethene must be counted.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that the products arise from metathesis of the two alkene fragments rather than another reaction class.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both products and the decisive ring-closing map.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

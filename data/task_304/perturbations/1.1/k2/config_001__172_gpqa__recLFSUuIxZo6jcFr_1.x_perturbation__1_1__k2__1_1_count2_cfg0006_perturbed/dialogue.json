@@ -1,0 +1,49 @@
+{
+  "release_task_index": 304,
+  "task_id": "gpqa__recLFSUuIxZo6jcFr",
+  "dataset": "gpqa",
+  "ordinal": 172,
+  "variant": "perturbed",
+  "conversation_id": "172::gpqa__recLFSUuIxZo6jcFr::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "6673e0b460d09cdbbdb9a3d8eeaeccb8eebb1929dc3d5997bdd35424724d1a22",
+  "semantic_condition_id": "51d2d386197e3087914acca321d3a24480602adde51990ba46eca21a24d17faf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Derive the V-band distance formula from the extinction-corrected distance modulus, using A_V=3.1 E(B-V).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the distances for a: M_V=8, m_V=8, E(B-V)=0; b: 8, 7, 0; and c: 8, 9, 0.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the distance formula and d/e/f data, compute stellar masses rather than distances.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the calculated distances to construct the requested strictly increasing sequence of effective temperatures.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the extinction correction and any equal distances. Why can an equality not appear as a strict less-than step?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final increasing sequence with the adopted distances.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

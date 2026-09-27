@@ -1,0 +1,49 @@
+{
+  "release_task_index": 283,
+  "task_id": "gpqa__recqGD3fxPCI59vPQ",
+  "dataset": "gpqa",
+  "ordinal": 151,
+  "variant": "perturbed",
+  "conversation_id": "151::gpqa__recqGD3fxPCI59vPQ::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "429f6cb2413a55d6382bd463b344eec697da51226f6549b1843063afb1426988",
+  "semantic_condition_id": "7eaed46af5428fca18c1741089947b8b797122cd601e42acfab463aee8d70956",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A proton starts nearly at rest in a synchrocyclotron with U0=190 kV and target energy 950 MeV; no injection phase is supplied. Identify what is needed for the revolution count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a synchronized gap crossing, decide whether to sample U0 cos(Phi0) or the crest voltage, then calculate the energy gained in one crossing. A proton gains 1 eV per volt.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the one-gap energy gain, find the energy gained per revolution, but no number of gap crossings per revolution is supplied.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Starting near zero kinetic energy, calculate how many revolutions are needed to reach 950 MeV.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the result from the total number of gap crossings and explain how to handle a noninteger revolution count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the required number of revolutions and the key energy-gain calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

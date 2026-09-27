@@ -1,0 +1,54 @@
+{
+  "release_task_index": 515,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2824",
+  "dataset": "olympiadbench",
+  "ordinal": 462,
+  "variant": "perturbed",
+  "conversation_id": "462::olympiadbench__OE_TO_maths_en_COMP_2824::1.x::perturbation__1_4__k2__1_4_count2_cfg0002::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "d037d42963a67793cf6d6caf5b3050f97b5d985aa860b679566555f45281b7f6",
+  "semantic_condition_id": "e5518ab91037042b926fcbd9712ccbc20d4fccc20ed21b21319995f4b570c1c4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The graph y=x^2-|x|-12 has four distinct intersection points with another curve. Let t=|x|. Derive the equation satisfied by t and explain what its roots must be; call them a and b.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use symmetry about the y-axis to assign the four intersection points A, B, C, and D in increasing x-order in terms of a, b, and k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the coordinate differences and Euclidean lengths of AB, BC, and CD in terms of a and b.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Derive a relation between a and b from the segment lengths obtained above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply Vieta's formulas to the quadratic in t to obtain its root sum and product in terms of k.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the distance relation with the root sum to determine a and b explicitly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the root product to determine k, and verify that the result indeed gives two distinct positive roots.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

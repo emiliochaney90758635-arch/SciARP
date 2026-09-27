@@ -1,0 +1,54 @@
+{
+  "release_task_index": 443,
+  "task_id": "gpqa__recI1ls9OXdxatHQn",
+  "dataset": "gpqa",
+  "ordinal": 312,
+  "variant": "perturbed",
+  "conversation_id": "312::gpqa__recI1ls9OXdxatHQn::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9ddbf3584067e3ee384d0dd88395cedfcd78df8c514262e28b64688cd7eb320b",
+  "semantic_condition_id": "904c45cc323a18ef76b229a36188cd72c41e82983a2e7b9313c74a99f8cc5595",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In an ensemble of 10,000 otherwise identical particles, none is observed outside 1<=x<=3. For this calculation, take that interval as the wavefunction's support and write its normalization condition.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let a be real and psi(x)=a/sqrt(1+x)-0.5i. Find the probability density |psi(x)|^2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how the prescription used above produces the density and whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Integrate the density over 1<=x<=2 and write the normalization equation in terms of a.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve that equation under the parameter convention established earlier, and state which admissible branch is selected.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions behind the value, including the adopted finite support and parameter convention. What does the finite sample allow us to say about a possible tail outside the interval?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the density, adopted support, normalization equation, numerical value of a, and the uncertainty conclusion reached above.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

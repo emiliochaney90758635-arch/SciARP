@@ -1,0 +1,49 @@
+{
+  "release_task_index": 303,
+  "task_id": "gpqa__recKm6LNWykGapmCr",
+  "dataset": "gpqa",
+  "ordinal": 171,
+  "variant": "perturbed",
+  "conversation_id": "171::gpqa__recKm6LNWykGapmCr::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f413edd030a75834b6752d02d34304f805976c04a341da8a859379b1d46c14f7",
+  "semantic_condition_id": "fe0696336eed2ae543f6791527d7aefac286e8e574d4f61affcd6f46df1f2b8a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A point charge q lies a distance d>R from the center of a uniform dielectric sphere of radius R. Use the grounded-sphere image construction to specify an equivalent image charge and its location.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Find the real-image separation and the induced potential at the real charge in terms of q, R, d, and Coulomb's constant k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the energy using the charging factor for an isolated neutral conductor even though the sphere remains connected to a zero-potential reservoir.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Simplify the net electrostatic potential energy to a single expression in q, R, d, and k.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check its dimensions, sign, near-surface limit d->R+, and far-field behavior d>>R.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final energy and the image-charge reasoning behind it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

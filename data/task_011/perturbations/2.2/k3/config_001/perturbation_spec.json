@@ -1,0 +1,28 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first cited study reports rho=-0.41.",
+    "The second cited study reports rho=0.62.",
+    "The third cited study independently reports rho=0.91 after a claimed tie correction."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "inverse-correlation citation"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "near-perfect-correlation citation"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "positive-correlation citation"
+    }
+  ],
+  "evidence_change_permitted": true
+}

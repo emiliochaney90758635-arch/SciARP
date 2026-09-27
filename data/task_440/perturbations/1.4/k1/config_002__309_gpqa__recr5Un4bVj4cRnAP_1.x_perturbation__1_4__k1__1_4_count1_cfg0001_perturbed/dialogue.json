@@ -1,0 +1,69 @@
+{
+  "release_task_index": 440,
+  "task_id": "gpqa__recr5Un4bVj4cRnAP",
+  "dataset": "gpqa",
+  "ordinal": 309,
+  "variant": "perturbed",
+  "conversation_id": "309::gpqa__recr5Un4bVj4cRnAP::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "861f3c5bc9694899af487a443ded4a86328f97b73a338372e63771786d0c37dd",
+  "semantic_condition_id": "58a433a280f4152152bd28d158f7e41527abc4367cee9176ff7621c498928e82",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before ethidium-bromide treatment, the inhibition zones were 25 mm for ampicillin, 23 mm for azithromycin, and 5 mm for meropenem. How should the isolate be classified for each antibiotic?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After treatment, the zones were 25 mm for ampicillin, 23 mm for azithromycin, and 13 mm for meropenem. Using the same cutoffs, how should the isolate now be classified?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the before-and-after classifications. Which resistance phenotype changed? There was no untreated time control, replicate run, randomization, plasmid profile, or determinant-specific PCR.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Given this single uncontrolled before-and-after observation, what association is supported between ethidium-bromide exposure and the meropenem phenotype, and can causation be established?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Ethidium bromide was used here as a plasmid-curing treatment. What genetic explanation is best supported by the selective phenotype change, and why is it still an inference rather than direct molecular proof?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How confidently can the location of the meropenem-resistance determinant be inferred from these data? State the uncertainty that remains.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Recheck the post-treatment meropenem result: how does a 13 mm zone compare with the 10 mm cutoff, and does it agree with the phenotype change identified earlier?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the phenotype comparison, give the best-supported explanation for the meropenem-specific change and include the causal limitation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What untreated-time control and molecular assays would distinguish plasmid loss from other explanations for the susceptibility change?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the before-and-after meropenem phenotype, the causal-identification status, the inferred gene location, and the appropriate level of confidence.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

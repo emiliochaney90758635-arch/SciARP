@@ -1,0 +1,73 @@
+{
+  "config_id": "task059_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "make VAF boundary inclusive",
+      "injected_text": "Apply the non-reference, ontology, and strict VAF < 0.3 rules while retaining sample-variant rows.\n\nFor this perturbed step, make VAF boundary inclusive",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "deduplicate loci",
+      "injected_text": "Tabulate the original Classification values and retain all qualifying rows in the denominator.\n\nFor this perturbed step, deduplicate loci",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "use the original row denominator despite deduplication",
+      "injected_text": "Calculate the fraction of qualifying rows classified exactly as Benign.\n\nFor this perturbed step, use the original row denominator despite deduplication",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "T2 is unchanged clean behavior and T3-T4 express one deduplication contradiction.",
+    "before": "Retain rows, deduplicate later, then claim original denominator.",
+    "after": "At T2 make VAF boundary inclusive; at T3 deduplicate loci; at T4 use the original row denominator despite deduplication.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the non-reference and ontology rules with an inclusive VAF <= 0.3 threshold."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Collapse the retained rows to unique Chr:Pos loci before tabulating Classification."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Divide the deduplicated exact-Benign count by the original 19-row denominator."
+    }
+  ]
+}

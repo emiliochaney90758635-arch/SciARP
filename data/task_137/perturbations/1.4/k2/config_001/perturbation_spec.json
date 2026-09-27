@@ -1,0 +1,35 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Common-row condition omitted.",
+      "consumers": [
+        "T2",
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Selection condition independently omitted.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Assemble candidate observations without requiring the same 39 rows for all models.",
+    "T5": "Select without requiring the stated in-sample heuristic."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

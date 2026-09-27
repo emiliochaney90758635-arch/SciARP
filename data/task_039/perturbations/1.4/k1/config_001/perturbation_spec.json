@@ -1,0 +1,24 @@
+{
+  "subclass": "1.4",
+  "k": 1,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "omits whether the 0.05 cutoff is strict or inclusive",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Combine the JBX97-only and JBX99-only regions for the numerator."
+    }
+  ]
+}

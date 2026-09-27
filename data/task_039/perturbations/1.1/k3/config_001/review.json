@@ -1,0 +1,25 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Three task-specific terminology changes affect threshold, partition, and biological-class semantics without altering evidence.",
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "17329ca3580ee942baa40ba4b6f458412d13a7ccffbc4704c240f0e8eb4aad02",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "The third terminology root now adds JBX98-only to the clean JBX97-only plus JBX99-only numerator instead of redundantly naming JBX99-only.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

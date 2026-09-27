@@ -1,0 +1,59 @@
+{
+  "release_task_index": 373,
+  "task_id": "gpqa__recK3Xnphg6jVxIHv",
+  "dataset": "gpqa",
+  "ordinal": 242,
+  "variant": "perturbed",
+  "conversation_id": "242::gpqa__recK3Xnphg6jVxIHv::1.x::perturbation__1_2__k2__1_2_count2_cfg0003::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "4a7ebf2ef08edefbc93e0705efb78acc6bd205b8d52d973a64e24083570bc3ed",
+  "semantic_condition_id": "fab53d291d8323b8b39c3e235c90e581ce165453da2b7d8aafd15eea31e44a03",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Caesium-137 has a half-life of about 30 m. Use this value to calculate its decay constant in s^-1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that decay constant to find the activity of a pure sample containing 10^17 Caesium-137 atoms.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From the rate just obtained, estimate the number of decays during 80 minutes and the corresponding number of emitted gamma rays. Use a gamma yield of order unity, and note how a yield of 0.85 changes the estimate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A perfect 2 cm by 3 cm detector faces the pointlike isotropic source from 4 K away. Calculate the fraction of the emitted radiation that it intercepts.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the emission estimate with the geometric acceptance to obtain the number of detected events and its order of magnitude.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State which approximations make this an order-of-magnitude estimate rather than an exact count.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As a consistency check, verify the area conversion, inverse-square scaling, and the effect of using the 0.85 gamma yield.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the detected gamma-ray count to an appropriate precision and give its order of magnitude.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

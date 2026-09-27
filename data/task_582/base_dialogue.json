@@ -1,0 +1,59 @@
+{
+  "release_task_index": 582,
+  "task_id": "scibench__chemmc-sol-007",
+  "dataset": "scibench",
+  "ordinal": 363,
+  "variant": "clean",
+  "conversation_id": "363::scibench__chemmc-sol-007::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e918dbcd19828cdb1b47e90f10fe91fd25398c0c6e177f5aa82856e8d37aa2bb",
+  "semantic_condition_id": "c6a22da21020229766186a40cb6b72e66b1a9b7e87609c18242d8c031f89b642",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The Hartree energy is defined by 1 E_h = m_e e^4/(16 pi^2 epsilon_0^2 hbar^2), where m_e is the electron mass, e the elementary charge, epsilon_0 the vacuum permittivity, and hbar the reduced Planck constant. Using standard SI values, evaluate 1 E_h in joules.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from the definition of an electron volt as the energy gained by one elementary charge across a potential difference of 1 volt, express 1 eV in joules using e = 1.6022 x 10^-19 C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Before doing the numerical conversion, identify the dimensionless ratio that converts an energy in joules to electron volts. Using 1 eV = 1.6022 x 10^-19 J, should one Hartree correspond to more or less than one electron volt?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute your joule values for 1 E_h and 1 eV into that conversion ratio. Write the expression for 1 E_h in electron volts without rounding the quotient.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the quotient with the available digits and compare the size of one Hartree with one electron volt.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Round the converted value to five significant figures and state how the significant figures in the constants limit the precision.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the energy independently from E_h = e^2/(4 pi epsilon_0 a_0), using a_0 = 5.2918 x 10^-11 m, and confirm that it is consistent with the joule value used above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the result of the cross-check, report the final value of 1 E_h in electron volts, show the joule-to-electron-volt quotient, and state whether one Hartree is larger or smaller than one electron volt.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

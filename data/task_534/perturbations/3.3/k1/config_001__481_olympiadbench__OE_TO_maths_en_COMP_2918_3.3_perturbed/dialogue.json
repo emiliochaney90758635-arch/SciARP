@@ -1,0 +1,54 @@
+{
+  "release_task_index": 534,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2918",
+  "dataset": "olympiadbench",
+  "ordinal": 481,
+  "variant": "perturbed",
+  "conversation_id": "481::olympiadbench__OE_TO_maths_en_COMP_2918::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d9aec4a9945832ccd3bfbb10ac1d4db507e5be9091e5919c1f3f6ea345ec1cce",
+  "semantic_condition_id": "4bb9c6b56bdc15cf18cbb075dc88d98479fa1434f0d1a00a63a673d8cba822b1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A sequence c has c_1 = 1, c_2 = 4, c_3 = 15, and c_4 = 2, and it is formed from an arithmetic component and a geometric component. Introduce convenient parameters for those two components and identify what must be found to determine c_5.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use cubic polynomial interpolation through the four given c-values as the sole exact continuation method, treating c_n as the values of a polynomial of degree at most three.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now write a_n = a + (n-1)d and b_n = br^(n-1), with c_n = a_n + b_n. Compute the first and second differences of the four given c-values.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the second-difference equations to determine the geometric ratio r. In particular, keep the signed first difference c_4 - c_3 = -13 when forming the last second difference.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the sign of r by substituting it into both second-difference equations and checking that the observed signed differences are reproduced.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the verified ratio together with the given c-values to solve for a, d, and b.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compute a_5 and b_5 from those parameters, and hence determine c_5.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

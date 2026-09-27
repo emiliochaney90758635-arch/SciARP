@@ -1,0 +1,54 @@
+{
+  "release_task_index": 599,
+  "task_id": "scibench__matter-sol-007",
+  "dataset": "scibench",
+  "ordinal": 380,
+  "variant": "perturbed",
+  "conversation_id": "380::scibench__matter-sol-007::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "709c1f9fd448cf52504c0f7f2e378b9ce39a8375f68d499e0f5172b61784000f",
+  "semantic_condition_id": "76d561c075c2ad5964b8f1bdb95f22ed566c9819069b3caa0bdd386f32943985",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the standard temperature dependence of a type-I superconductor's critical magnetic field H_c(T) in terms of H_c(0), T, and T_c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Record the supplied lead parameters: T_c=7.19 K, H_c(0)=63.9 kA/m, and applied field H=20 kA/m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At H=20 kA/m, set the applied field equal to H_c(T) and write the equation for lead's melting temperature.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rearrange the transition equation to isolate the squared reduced pressure term.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve symbolically for the requested boundary value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the solved boundary value changes as the applied field increases within this model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate and report the temperature at which lead becomes ferromagnetic in the applied field.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

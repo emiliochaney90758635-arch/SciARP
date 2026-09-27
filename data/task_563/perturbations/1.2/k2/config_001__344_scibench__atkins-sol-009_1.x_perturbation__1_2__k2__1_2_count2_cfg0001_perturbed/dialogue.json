@@ -1,0 +1,54 @@
+{
+  "release_task_index": 563,
+  "task_id": "scibench__atkins-sol-009",
+  "dataset": "scibench",
+  "ordinal": 344,
+  "variant": "perturbed",
+  "conversation_id": "344::scibench__atkins-sol-009::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "0a2e31dbcaa435f5f240599203d33957f39f5166479cf566554432db05d10760",
+  "semantic_condition_id": "d33d2250fab5d7fbeebc8096dadf3deae7643952709ccc5d2ef17ef79a77f5d1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For water rotating about the HOH-angle bisector through oxygen, identify each atom's perpendicular distance contribution to the moment of inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use an O-H bond length of 95.7 seconds in the geometry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain why the angle-bisector axis also passes through the molecular centre of mass and why the oxygen contribution is zero.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the symbolic moment of inertia about this axis using the geometric conclusions and relevant masses established above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the geometry by projecting both identical O-H bonds perpendicular to the axis and verify the factor of two.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the inertia using m_H=1.67e-27 kelvin.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report I in kg m^2 to three significant figures and identify the contributing atoms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

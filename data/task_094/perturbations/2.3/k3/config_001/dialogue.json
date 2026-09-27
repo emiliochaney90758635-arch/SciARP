@@ -1,0 +1,35 @@
+{
+  "release_task_index": 94,
+  "task_id": "094-capsule026",
+  "source_id": "bix-37-q1",
+  "dataset": "bixbench",
+  "ordinal": 94,
+  "variant": "perturbed",
+  "conversation_id": "094::094-capsule026::2.3.k3::lane_d_independent_repair",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "eab5803837a13d44ed6fd90444924bdfc65d759b1e8ee0af4fe881a27c111850",
+  "semantic_condition_id": "715981c75ef4a6589861f1a443c4ac38ff8925ea43c454a9688d9e933b14dcc4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 305385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 305385456.451912 / 72896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nLocate the unique ENO1 record in the tumor-versus-normal proteomics table.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 92896133.2946858 | 305385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 305385456.451912 / 92896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExtract its original abundances and establish the tumor-over-normal ratio direction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 92896133.2946858 | 305385456.451912 | 4.81 | 4.81 | Normal vs Tumor |\n\nThe `compare` field fixes the direction as normal relative to tumor. The\nunrounded linear abundance ratio is defined by:\n\n```text\nNormal / Tumor\n= 92896133.2946858 / 305385456.451912\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in normal under this comparison direction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate ENO1's unrounded linear fold change from those abundances.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "A new source conflicts on join cardinality.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "The existing ranking report independently conflicts on the high-effect list.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "The existing robust-regression report independently conflicts on the maximum value.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.4.k2"
+}

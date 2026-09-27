@@ -1,0 +1,49 @@
+{
+  "release_task_index": 283,
+  "task_id": "gpqa__recqGD3fxPCI59vPQ",
+  "dataset": "gpqa",
+  "ordinal": 151,
+  "variant": "perturbed",
+  "conversation_id": "151::gpqa__recqGD3fxPCI59vPQ::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9ee187ed4d8fce3ff03cf0fbaec9d9ff261a5e14bee7737fc58ab21ddd4d58cb",
+  "semantic_condition_id": "5faacb0a17b916e16121e0901c342b694ad2c8be1be6b0cbe7bde4c871c1e0e3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A proton starts with negligible kinetic energy in a synchrocyclotron. The gap voltage is U(t)=U0 cos[2*pi*nu(alpha)*t+Phi0], with Phi0=pi/4, U0=190 kV, and target kinetic energy 950 MeV. Identify the quantities needed to find its number of revolutions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Choose the RF-voltage sampling point and calculate the one-crossing energy gain, treating the accelerated particle as a neutron for which 1 V gives 1 eV.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The proton undergoes two decelerations per revolution. What kinetic-energy change per revolution follows?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Starting near zero kinetic energy, calculate how many revolutions are needed to reach 950 MeV.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the result from the total number of gap crossings and explain how to handle a noninteger revolution count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the required number of revolutions and the key energy-gain calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

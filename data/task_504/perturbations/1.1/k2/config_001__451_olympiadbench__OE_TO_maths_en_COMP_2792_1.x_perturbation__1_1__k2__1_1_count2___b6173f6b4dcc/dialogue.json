@@ -1,0 +1,59 @@
+{
+  "release_task_index": 504,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2792",
+  "dataset": "olympiadbench",
+  "ordinal": 451,
+  "variant": "perturbed",
+  "conversation_id": "451::olympiadbench__OE_TO_maths_en_COMP_2792::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "3c77e7a6f3c1b9ca1b29b66b6dcbedbd68aa4da533185a11ec6d2ca21294beaf",
+  "semantic_condition_id": "9957eded0ecdd7f0c97846263b785d6ce95ed957036b8b4391444ced6885d266",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a positive integer n, take floor(n^(1/8)), floor(n^(1/7)), ..., floor(n^(1/2)) to be strictly increasing as a general identity. Write that ordering and state the spacing it imposes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let b=floor(n^(1/8)). Translate the distinctness requirement into upper bounds for the seventh- through second-root floors and then into corresponding power upper bounds for n. Also record the upper bound n<(b+1)^8 implied by floor(n^(1/8))=b.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the joint lower threshold as the maximum of b^8,(b+1)^7,(b+2)^6,(b+3)^5,(b+4)^4,(b+5)^3,(b+6)^2. Explain why satisfying only one of these bounds would be insufficient.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Analyze b=1 by comparing its eighth-root upper bound with the strongest required lower bound. Can this case occur?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Analyze b=2 by evaluating all seven power bounds and taking their maximum. What is the least candidate n in this case, and does it respect the eighth-root upper bound?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Show that every case b>=3 has n>=3^8 and therefore cannot improve on the candidate from b=2.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Directly compute the floors of the square through eighth roots of the candidate, and check that n itself is distinct from all of them.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the smallest positive integer n and list the eight distinct quantities in the order requested.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

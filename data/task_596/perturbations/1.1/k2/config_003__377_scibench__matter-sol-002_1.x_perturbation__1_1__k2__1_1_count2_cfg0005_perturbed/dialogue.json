@@ -1,0 +1,54 @@
+{
+  "release_task_index": 596,
+  "task_id": "scibench__matter-sol-002",
+  "dataset": "scibench",
+  "ordinal": 377,
+  "variant": "perturbed",
+  "conversation_id": "377::scibench__matter-sol-002::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "54a49bd6ca8cc7267df13e2a85f1e229267374a235293b6ab50adba8f495cd57",
+  "semantic_condition_id": "d5ac9df2d730e4567adb6287e7b33c9c9e1546241e0ec532d7f512ed38f2a854",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the He+ state R_{3,2}(r)Y_{2,-1}(theta,phi), identify n, l, and m and state which quantum number controls the nonrelativistic Coulomb energy at fixed nuclear charge.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the harmonic-oscillator energy formula for this hydrogenic state while retaining the infinite-nuclear-mass approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute Z=2 and n=3, and simplify the energy in terms of the hydrogen ground-state energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the simplified energy expression to report the electron's magnetic moment rather than its energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the value as a model estimate for a realized ion, with nonzero unquantified recoil, fine-structure, and environmental uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and Z^2/n^2 scaling without introducing an external field or changing the model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the energy and its approximation status.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

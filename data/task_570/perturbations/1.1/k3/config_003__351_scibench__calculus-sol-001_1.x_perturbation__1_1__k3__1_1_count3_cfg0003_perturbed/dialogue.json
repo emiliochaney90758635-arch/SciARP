@@ -1,0 +1,59 @@
+{
+  "release_task_index": 570,
+  "task_id": "scibench__calculus-sol-001",
+  "dataset": "scibench",
+  "ordinal": 351,
+  "variant": "perturbed",
+  "conversation_id": "351::scibench__calculus-sol-001::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "301553ccb07ded18018ac253a92bd507f5ddf1e5c8fbf2d27d94fe6231b351bf",
+  "semantic_condition_id": "8ceec9bc684dad42b4f1e568a31df9e572ff3db46e79f3f38d67d5376d50f739",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cardioid r=1+sin(theta), identify the cusp and explain why 0<=theta<=2pi traces the curve exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the polar area integral over that full tracing, including dr/dtheta.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the Fourier-series coefficient using trigonometric identities and state where an absolute value enters.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use u=theta/2+pi/4 to transform the integral and determine the new limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the resulting absolute-value integral, splitting the interval wherever the sign changes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two pieces and the transformed prefactor, keeping the contributions explicit for a final check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the sign split and symmetry are consistent with a nonnegative arc-length integrand over the full curve.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the electric capacitance of the cardioid r=1+sin(theta).",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

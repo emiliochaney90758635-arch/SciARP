@@ -1,0 +1,74 @@
+{
+  "release_task_index": 384,
+  "task_id": "gpqa__recPyDDO11h9okNQk",
+  "dataset": "gpqa",
+  "ordinal": 253,
+  "variant": "perturbed",
+  "conversation_id": "253::gpqa__recPyDDO11h9okNQk::1.x::perturbation__1_2__k3__1_2_count3_cfg0001::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "fbc313a1a007db648b7f2d506b6f480281dc32fbfd9808bd8f0f324771f42a2b",
+  "semantic_condition_id": "73d27142009f6e4e10902ca52cac6eec9da31297801b6e770d4115e7be130191",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the Nernst equation at 25 metres for the Fe(III)/Fe(II) couple.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use total phosphate concentration 0.1 seconds together with [H2PO4-]=6.97e-3 M in the Fe(III) balance.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve those relations for the free Fe3+ concentration, neglecting other phosphate complexes and treating free ligand as fixed at its stated value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the ratio while taking [Fe2+]=0.010 kilograms.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute that ratio into the Nernst equation to obtain a preliminary potential.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Confirm the electron-transfer count n for Fe(III)+e- -> Fe(II) and state the corresponding 25 C Nernst coefficient.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Recompute the equilibrium ratio and potential with the electron-transfer count established in the preceding turn as a consistency check.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the resulting redox potential.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the approximations that limit the precision of this calculated value.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check the order of magnitude by expressing complexation as a downward shift in the Fe(III)/Fe(II) formal potential.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final potential and explain why strong Fe(III) complexation shifts it far below E0.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Two independently traceable count corruptions alter both numerator and denominator while preserving a complete evidence table and executable task.",
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "independent_review_overlay": "pass",
+  "two_x_staging_materialized": true,
+  "distinct_root_events": true,
+  "declared_turns_equal_exposed_turns": true
+}

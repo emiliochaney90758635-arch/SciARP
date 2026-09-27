@@ -1,0 +1,44 @@
+{
+  "task_index": 119,
+  "task_id": "119-capsule034",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "34c62ce1a5af7d455ed688023887111e210a3be5404be61e2f816b6e610b82fe",
+  "source_base_evidence_sha256": "13caba5c12b76648bb394b9949ebfc464351d4d8455a259e125f1390d150f92e",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome state contradicted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient sign independently contradicts the fitted output.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Reported coefficient magnitude independently contradicts the fitted and prior-turn values.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Although Group 1 is defined as Response=1, reverse the response coding.",
+    "T2": "Although the fitted Age estimate is negative, report it as +0.07495392.",
+    "T3": "Despite the value just located, report the Age coefficient magnitude as 0.06495."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "3.1.k3"
+}

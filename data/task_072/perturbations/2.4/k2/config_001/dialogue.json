@@ -1,0 +1,40 @@
+{
+  "release_task_index": 72,
+  "task_id": "072-capsule019",
+  "source_id": "bix-26-q5",
+  "dataset": "bixbench",
+  "ordinal": 72,
+  "variant": "perturbed",
+  "conversation_id": "072::072-capsule019::2.5::k2::perturbed",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "a11cb1ca0c79cd669519363e3741eda926640c31351bf5e40f3fc00fbe628c9e",
+  "semantic_condition_id": "5869639b029bf004d45ce9ecb799be06fc3a0da3904f4b20cc7b8057227112d6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for This Task\n\n## Archived Execution Criteria\n\nFeMinus and Succ each use MMGluFePlus as their reference. The gene lists for each condition use:\n\n```r\nUp: log2FoldChange > 1.5\nDn: log2FoldChange < -1.5\n```\n\nNo gene-level `padj` filter is applied. Each of the four lists is processed with `enrichKEGG(organism=\"pau\", pvalueCutoff=0.05, qvalueCutoff=0.05)`; both cutoffs apply to pathway-level output. Set operations are performed on pathway descriptions only after removal of the same organism suffix.\n\n## Point-by-Point Matrix from the Archived Dot Plot\n\n| Cleaned Pathway | FeMinus Dn | FeMinus Up | Succ Dn | Succ Up |\n|---|:---:|:---:|:---:|:---:|\n| Sulfur metabolism | — | — | — | ● |\n| Styrene degradation | ● | — | — | — |\n| Quorum sensing | ● | — | — | — |\n| Porphyrin metabolism | ● | — | ● | — |\n| Phenazine biosynthesis | ● | — | ● | — |\n| Pentose phosphate pathway | — | — | ● | — |\n| Oxidative phosphorylation | ● | — | ● | — |\n| Microbial metabolism in diverse environments | ● | — | ● | — |\n| Glyoxylate and dicarboxylate metabolism | — | — | ● | — |\n| Cyanoamino acid metabolism | ● | — | — | — |\n| Cationic antimicrobial peptide (CAMP) resistance | — | — | ● | — |\n| Carbon metabolism | — | — | ● | — |\n| Biosynthesis of secondary metabolites | ● | — | ● | — |\n| Bacterial secretion system | — | — | — | ● |\n| ABC transporters | — | ● | — | ● |\n\n`●` indicates a point at the corresponding Media/Regulation/Description coordinate. First take the union of `Up` and `Dn` names within each medium, then calculate the set difference using complete cleaned names; a name appearing more than once within the same medium is counted only once.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Media-level KEGG map export\n\n**Source:** Pseudomonas Systems Analysis Center, archive `PSAC-MEDIA-MAP`\n**Scope:** Union of significant Up and Dn pathways within each medium\n**Method:** Pathways passing both over-representation cutoffs were exported as stable map identifiers; duplicates across regulation directions were removed within medium.\n\n```text\nFeMinus:\npau00350, pau00360, pau00650, pau00860, pau01100, pau01110,\npau02010, pau02020, pau03070, pau05111\n\nSucc:\npau00030, pau00190, pau00630, pau00650, pau00860, pau01100,\npau01110, pau01503, pau02010, pau03070\n```\n\nThe requested quantity is the cardinality of the strict FeMinus-minus-Succ identifier difference.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify the positive- and negative-log2FC gene filters and the pathway-level enrichment cutoffs in the archived P. aeruginosa analysis, then use them to interpret the four medium-by-regulation combinations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Cell 020 medium-union raster audit\n\n**Source:** PA14 Plot Recovery Unit, audit `PPRU-020-UNION`\n**Scope:** Up and Dn coordinates in both archived medium facets\n**Method:** Connected components were retained at chroma above 18, mapped to the nearest labelled row, and unioned within each facet before directed subtraction.\n\n## Derived observations\n\nThe FeMinus union contained eight retained row labels and the Succ union contained twelve. Six labels were shared. The two retained FeMinus-only labels were `Quorum sensing` and `Cyanoamino acid metabolism`; the Styrene degradation mark was below the component-area threshold. Thus the report's directed difference follows from `8 − 6`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUsing those criteria, take the union of the Up and Dn pathway names within FeMinus.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Form the corresponding Up/Dn pathway union within Succ.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many pathways occur in the FeMinus union but not in the Succ union?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "016-capsule005",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Counts replicate columns as conditions.",
+    "Retains the no-T-cell control in the denominator.",
+    "Imposes a two-source-row positivity convention before canonical consolidation."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "replicate-as-condition premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "two-row positivity premise"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "control-retention premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

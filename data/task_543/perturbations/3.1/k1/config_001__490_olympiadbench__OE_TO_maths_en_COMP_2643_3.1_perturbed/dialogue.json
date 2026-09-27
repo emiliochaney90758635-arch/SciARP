@@ -1,0 +1,54 @@
+{
+  "release_task_index": 543,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2643",
+  "dataset": "olympiadbench",
+  "ordinal": 490,
+  "variant": "perturbed",
+  "conversation_id": "490::olympiadbench__OE_TO_maths_en_COMP_2643::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "925cbfb5b4e9e84eb2d0ec16cc10e8337edb54ebce8987255095af3065dc65fc",
+  "semantic_condition_id": "71cad96acd7b72b48632cf044501810771675af62546568c6f6231be40de1054",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Q_{a,b} with vertices (0,0),(b,0),(a,1),(0,1), characterize a lattice-boundary triangle of area 1/2. Relate its unit base on one horizontal side to its third vertex on the opposite side.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let T(a,b) be the number of such tilings. Determine the boundary values T(a,0) and T(0,b).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a,b>0, analyze the tile incident to the right boundary and show why removing it leads to the two predecessor cases T(a-1,b) and T(a,b-1).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why those two cases are disjoint and exhaustive, yielding T(a,b)=T(a-1,b)+T(a,b-1).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the original rectangle, use a path with seven bottom-boundary choices but only six top-boundary choices.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the boundary values and recurrence to obtain the binomial closed form for T(a,b), then specialize the formula to T(7,7).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate T(7,7) and report the number of tilings of WASH.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

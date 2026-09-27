@@ -1,0 +1,43 @@
+{
+  "task_id": "075-capsule020",
+  "release_task_index": 75,
+  "subclass": "3.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Contradicts query sets.",
+    "Contradicts selection criterion."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "1889553c5379da0cb9c0667dd2c0fa9c984f40d24603f38fe09501314c9129e8",
+  "configured_evidence_sha256": "1889553c5379da0cb9c0667dd2c0fa9c984f40d24603f38fe09501314c9129e8",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Select the largest gene list rather than the largest significant-row total. Select cluster 1 by its archived 1,064-gene list and reuse the displayed cluster-0 Reactome rows as the results for that selected cluster."
+    }
+  ]
+}

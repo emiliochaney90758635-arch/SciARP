@@ -1,0 +1,25 @@
+{
+  "task_index": 131,
+  "task_id": "131-capsule036",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9c1b0fabc60bb79a6ca565e5dac68b9ec878ef1ac8b7ca515a4c215236469b0f",
+  "source_base_evidence_sha256": "e32e2c190a417829565cff410e8e08a79b68931843a296d6fd9582257e7a04c9",
+  "events": [
+    {
+      "turn_id": "T5",
+      "root": "Ascending and unique-minimum conditions omitted.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T5": "Report a top term without requiring ascending Adjusted P-value order or checking that the minimum is unique."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

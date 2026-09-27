@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "189::gpqa__recWrxK7TzlOf9cSB::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e03bc0404c3ae79856b45ea6de42f98a04cd655b529ec4d2c2b2aea0f72b253b",
+  "semantic_condition_id": "1978f988b6203295d41283dbce0cd94a126cdbfce6763aa1dc97a7812b61ee4f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has formula C10H9ClO, one negative UV-visible peak, and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. Interpret the result using the stated DEPT-135 rules and propose A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the provisional structure of A, identify the intramolecular Diels-Alder product B and check whether its single negative DEPT-135 resonance is internally consistent.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat B with hydrazine and NaOH. Identify the transformation and product C, then assess its carbon-signal pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Heat C with N-bromosuccinimide and peroxide. Predict D and explain why its 13C spectrum has two signals below 60 ppm and all others above 100 ppm.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the systematic name of product D and explain how its carbon environments distinguish the remaining structural alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 594,
+  "task_id": "scibench__fund-sol-009",
+  "dataset": "scibench",
+  "ordinal": 375,
+  "variant": "perturbed",
+  "conversation_id": "375::scibench__fund-sol-009::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "05633a79243a80d7b14d8f394d4b4c34ce98c8d4e63a1f073f461eef3391d4c2",
+  "semantic_condition_id": "b95bbf540ee672b902abad8f2699a8b45b63c9b73473913cd6a1a593f210f4d4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A child starts from rest 8.5 s above the bottom of a frictionless water slide. Taking the bottom as zero gravitational potential, write the mechanical energy at the top and at the bottom.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set the two quantities equal and solve for the requested bottom quantity in terms of g and the vertical drop introduced above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using g=9.8 m/s^2 and the stated vertical drop, evaluate the resulting quantity numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Round the bottom result sensibly and explain its mass dependence in the ideal model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain that mass dependence and identify the assumption about the slide that makes the relation used above applicable here.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result with units and summarize the reasoning used in the preceding step.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

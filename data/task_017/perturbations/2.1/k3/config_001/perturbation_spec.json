@@ -1,0 +1,28 @@
+{
+  "task_id": "017-capsule006",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Treats missing zygosity as TRUE in the comparison.",
+    "Excludes homozygous-variant calls as reference-equivalent.",
+    "Restores all-NA indexed rows from workbook provenance before the sample filter."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "missing-zygosity retention premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "homozygous-exclusion premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "sample-identifier recovery premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

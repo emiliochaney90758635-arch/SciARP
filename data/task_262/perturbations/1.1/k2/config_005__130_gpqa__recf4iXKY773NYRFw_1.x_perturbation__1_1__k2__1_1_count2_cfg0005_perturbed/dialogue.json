@@ -1,0 +1,54 @@
+{
+  "release_task_index": 262,
+  "task_id": "gpqa__recf4iXKY773NYRFw",
+  "dataset": "gpqa",
+  "ordinal": 130,
+  "variant": "perturbed",
+  "conversation_id": "130::gpqa__recf4iXKY773NYRFw::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b512d04b7d21f6b8467aa05a758841a4eef56cdc87de8c3ee7127cb0f09d309b",
+  "semantic_condition_id": "566ac88b6965a9a0d9f57998006acea6a981d8100e8dafacb67a3be611d0c05a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle beam has total energy E=4 GeV and rest mass m_X=1.48 GeV. Calculate its Lorentz factor using E as the total relativistic energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the Lorentz-factor result, determine a decay branching ratio called beta rather than the particle's speed factor.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For proper lifetime tau_0=8.7e-5 s, write the relativistic survival law as a function of distance and set the surviving flux fraction to 0.25.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the Lorentz factor, beta, lifetime, and survival law to calculate the proper time, rather than the distance, at which 25% remain.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations and unreported source or measurement uncertainties qualify this exponential-decay prediction?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the logarithm, units, beta*c, and Lorentz-dilated lifetime independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distance and show the numerical substitution in the survival law.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

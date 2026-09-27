@@ -1,0 +1,28 @@
+{
+  "task_id": "016-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "One article reports three positive conditions.",
+    "A second reports two positive conditions.",
+    "A third reports one positive condition."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "75-percent literature claim"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "25-percent literature claim"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "50-percent literature claim"
+    }
+  ],
+  "evidence_change_permitted": true
+}

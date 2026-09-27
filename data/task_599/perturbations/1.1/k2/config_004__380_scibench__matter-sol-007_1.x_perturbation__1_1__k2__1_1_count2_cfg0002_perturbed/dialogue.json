@@ -1,0 +1,54 @@
+{
+  "release_task_index": 599,
+  "task_id": "scibench__matter-sol-007",
+  "dataset": "scibench",
+  "ordinal": 380,
+  "variant": "perturbed",
+  "conversation_id": "380::scibench__matter-sol-007::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e8a0dff1a210259e2f90ba9ac217c690c87bbf55cba1b871ab8958bc57d94272",
+  "semantic_condition_id": "fdc3fd82e69bb5090112563e3c394e96a2f60318520ffc2597070467c5fca3d0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the standard temperature dependence of the electrical breakdown field H_c(T) using H_c(0), T, and T_c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Record the supplied lead parameters: T_c=7.19 K, H_c(0)=63.9 kA/m, and applied field H=20 kA/m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At the relevant boundary, equate the applied field and the temperature-dependent field, then write the equation for the unknown boundary value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rearrange the transition equation to isolate the squared reduced pressure term.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve symbolically for the requested boundary value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the solved boundary value changes as the applied field increases within this model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the boundary value numerically, report the resulting state classification, and round appropriately.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

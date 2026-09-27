@@ -1,0 +1,64 @@
+{
+  "release_task_index": 186,
+  "task_id": "gpqa__recBGxVySx1pkrO1i",
+  "dataset": "gpqa",
+  "ordinal": 53,
+  "variant": "perturbed",
+  "conversation_id": "053::gpqa__recBGxVySx1pkrO1i::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "3ac1d001bb27b3e5e3657e3e4ade5ddbe703b30626ac935fb7a01ed86d1e8800",
+  "semantic_condition_id": "54b4f44d2f933b0f6311d5619ea0437a9c4a747c3e2fb5b528134f3c0df1f0f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Consider the first transformation: an unknown reactant A gives 2,8-dimethylspiro[4.5]decan-6-one in the presence of H2SO4. What precursor functional groups and carbon-skeleton change would account for formation of this spiroketone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use Jones oxidation of a secondary alcohol as the sole retrosynthetic method for forming the spiroketone under the stated H2SO4-only conditions, and describe the precursor implied by that method.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that rearrangement to the target skeleton and identify reactant A by its full name. Briefly explain how the vicinal diol gives the spiroketone under the same acid-promoted conditions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now consider the separate conversion in which an unknown reactant B is treated with BuLi and then H+ to give 4-methyl-1-phenylpent-3-en-1-ol. What do the product connectivity and reagent sequence suggest about the bond-forming step?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which anionic rearrangement is consistent with this second conversion? Explain the role of BuLi in generating the reactive intermediate and the role of acidic workup in producing the alcohol.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use that mechanism and the product connectivity to identify the exact ether precursor B by name or unambiguous structure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Put the two retrosyntheses together and give the proposed identities of A and B, with one mechanistic reason supporting each assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the proposed pair against the reagents: verify that A contains the vicinal diol needed for dehydration and migration, and that B has the oxygen linkage and benzylic site needed for the BuLi-initiated rearrangement.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the final names of reactants A and B and name the rearrangement that converts each precursor into its product.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 592,
+  "task_id": "scibench__fund-sol-004",
+  "dataset": "scibench",
+  "ordinal": 373,
+  "variant": "perturbed",
+  "conversation_id": "373::scibench__fund-sol-004::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "014b10ca5335c151fce7554f4dd1c0f6311cd1b1dc2404f2ea3d66be64b19ef8",
+  "semantic_condition_id": "cd0355c470329ca4f14ecdb72a1c9158eb7803ed1235557fbd5900e76c9458ae",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The cylinder's angular acceleration changes from 3.40 rad/s to 2.00 rad/s while it turns through 20.0 revolutions. Identify the angular speeds and displacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the angular displacement to joules.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under the stated constant-change assumption, write a relation among the initial value, final value, and accumulated third quantity, then isolate the requested change parameter.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the values established above, calculate the requested quantity, and interpret its sign.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the conversion used above, numerator sign, and units in that relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, including its units and physical meaning.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

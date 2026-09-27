@@ -1,0 +1,54 @@
+{
+  "release_task_index": 299,
+  "task_id": "gpqa__recIj8lR4tuDgrHou",
+  "dataset": "gpqa",
+  "ordinal": 167,
+  "variant": "perturbed",
+  "conversation_id": "167::gpqa__recIj8lR4tuDgrHou::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "06178c00ec841dcf9926bbf51b3f59885d241270d310b20e9b4690a770efaa94",
+  "semantic_condition_id": "5f4a816cc8e7e2f580e1804339e4713df2883187a39fcef05adcce31d8d738dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the four identical spin-1/2 particles as bosons and state their occupancy rule.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fill the levels for the many-body ground state and calculate its total energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the lowest excited occupation obtained by the smallest allowed promotion and calculate its energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the next-lowest distinct allowed occupation and calculate its energy.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the ordered ground, first-excited, and second-excited energies.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no lower configuration is allowed under the particle statistics and occupancy rule established in the first two turns.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the three energies and occupation patterns.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 603,
+  "task_id": "scibench__quan-sol-001",
+  "dataset": "scibench",
+  "ordinal": 384,
+  "variant": "perturbed",
+  "conversation_id": "384::scibench__quan-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "00e021dcd80e6d913b8c41ee60194021b9141ca21379beb3fe0f6a0d7698e58f",
+  "semantic_condition_id": "8b94d413cfee169c8f44fa3f92afecdffcaea58b680f740fd6ced3adc953bc21",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Start from the molecular vibrational-energy formula for a hydrogenic atom, keeping the reduced mass, nuclear charge Z, and principal quantum number n explicit.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Specialize the formula to an excited helium state while retaining Z=1 and n=1 and treating the nucleus as a proton. Also calculate the electron-proton reduced mass in terms of m_e and m_p.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the ground-state energy in joules using m_e=9.109383e-31 kg, m_p=1.6726219e-27 kg, e=1.6021766e-19 C, h=6.626070e-34 J s, and epsilon_0=8.8541878e-12 C^2/(N m^2).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert that n=1 energy to electronvolts using 1 eV=1.6021766e-19 J, and interpret its sign relative to a separated electron and proton.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result against the infinite-proton-mass approximation. Explain how the finite reduced mass changes the magnitude and why the state remains bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the hydrogen ground-state energy in joules and electronvolts, together with its binding classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

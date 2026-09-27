@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "The final fraction can additionally be reported as a percent without multiplying by 100.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "5dd311b98fea877fd111e83a79f96971cde9ce0cb09583f0c64345a7cb366637",
+  "strict_non2x_original_semantic_condition_id": "dfcb62d2630afd0293669445293c616c69772e5f7059d0651ae1d20edfdaae06",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use rounded-one-decimal VAF <0.3, compute the actual resulting Benign fraction, and append a percent sign without multiplying by 100.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

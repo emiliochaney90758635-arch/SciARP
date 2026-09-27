@@ -1,0 +1,45 @@
+{
+  "release_task_index": 39,
+  "task_id": "039-capsule010",
+  "source_id": "bix-13-q4",
+  "dataset": "bixbench",
+  "ordinal": 39,
+  "variant": "perturbed",
+  "conversation_id": "039::039-capsule010::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "3222c7e2959be887b5f589ab5328d1ddc4dc3a7fd2028b869c4b6b10cb82db7d",
+  "semantic_condition_id": "f687251dcec3100108f3ebf3305884de717d63fd8f3ddc34a610a98b4b67a37b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## DESeq2 comparison and significance rule\n\nThe input has 5,828 gene rows and 36 samples. After excluding `resub-5`, `resub-10`, and `resub-33`, the model uses 33 samples with:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) from the JBX97, JBX98, and JBX99 versus JBX1 contrasts, retaining unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05`. No `log2FoldChange` threshold is applied.\n\n## Mutually exclusive partition\n\n| Region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 13,070 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nThe three-set union is obtained by summing all disjoint rows. The numerator requested in the task is obtained from the applicable single-mutant-only rows; the measured-gene population is not the union denominator.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUsing one significance rule, construct the JBX97-, JBX98-, and JBX99-versus-JBX1 GeneID sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Partition the three sets into their seven mutually exclusive Venn regions and verify the partition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the JBX97-only and JBX99-only regions requested for the numerator.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum all seven disjoint regions to obtain the three-set union.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the percentage of that union represented by the two requested single-mutant-only regions.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

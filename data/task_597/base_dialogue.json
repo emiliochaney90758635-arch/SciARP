@@ -1,0 +1,49 @@
+{
+  "release_task_index": 597,
+  "task_id": "scibench__matter-sol-004",
+  "dataset": "scibench",
+  "ordinal": 378,
+  "variant": "clean",
+  "conversation_id": "378::scibench__matter-sol-004::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "faa686c896a83b381b3eef7d05006de8d56ffb0c2ba48f70555459b1efa0b1ac",
+  "semantic_condition_id": "9eed9f90e4e57351e34e4aef14f2c19067bb1c5d0833b98c80d116feeebd10f4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an ideal gas, rearrange PV=nRT to solve for pressure and state a compatible set of units for the variables.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a 1.25 g sample of N2 with molar mass 28.02 g mol^-1, calculate the corresponding amount in moles.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert 250 cm^3 to litres and 20 degrees Celsius to kelvin.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the amount, volume, and temperature found above into PV=nRT with R=8.314 kPa L mol^-1 K^-1, and calculate the pressure in kilopascals.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From the same equation, explain how that intensive quantity changes when the container volume increases while amount and temperature stay fixed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the pressure with appropriate rounding and show the numerical substitution into the ideal-gas equation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

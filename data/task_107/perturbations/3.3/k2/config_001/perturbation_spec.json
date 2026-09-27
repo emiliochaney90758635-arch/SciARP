@@ -1,0 +1,33 @@
+{
+  "task_index": 107,
+  "task_id": "107-capsule031",
+  "subclass": "3.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "a349e67cafdf4a93d7a563491d7b2437a12c0397ba3e2aa4aaaca0e5190d5a04",
+  "source_base_evidence_sha256": "49a5879ac28a6d0a195ac58250be1c671fafbcf6e41388b6e77382a2bdd3f895",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Wrong column chosen by magnitude criterion.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Wrong scale conversion.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Choose between the joined mutant columns by selecting the fold change closest to zero.",
+    "T3": "Exponentiate the selected log2 value with 2^x and report the converted value to two decimals."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

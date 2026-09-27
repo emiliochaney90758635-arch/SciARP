@@ -1,0 +1,49 @@
+{
+  "release_task_index": 598,
+  "task_id": "scibench__matter-sol-006",
+  "dataset": "scibench",
+  "ordinal": 379,
+  "variant": "perturbed",
+  "conversation_id": "379::scibench__matter-sol-006::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "964472521efcf86518921d47a168fb02d36ffe1778550c513cb7b880e878e70f",
+  "semantic_condition_id": "5929193dae18413ebcad70c3fc9309f14865d975e7190e2de12529a0695c03ae",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Starting from Planck's spectral radiance per unit wavelength, derive B_lambda(450 nm,T)/B_lambda(700 nm,T) and keep the wavelength prefactor and both dimensionless exponents explicit for T=298 K.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hc/k=1.4388e-2 m K, calculate the two dimensionless Reynolds numbers for 450 nm and 700 nm at 298 K.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the Rayleigh-Jeans approximation to the exact ratio and reduce it to one evaluable expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the ratio numerically and identify which wavelength has the greater spectral output at 298 K.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result with a logarithmic calculation of the wavelength-prefactor term plus the exponential term, and verify the resulting order of magnitude and wavelength ordering.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final ratio B_lambda(450 nm)/B_lambda(700 nm) and state which wavelength dominates.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

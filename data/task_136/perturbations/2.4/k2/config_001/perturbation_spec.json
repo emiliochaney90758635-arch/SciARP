@@ -1,0 +1,39 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "2.4",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Amplicon-source ratio introduced.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Segmentation-source ratio independently introduced.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__amplicon_ratio.md"
+    },
+    {
+      "turn_id": "T3",
+      "filename": "003__T3__segmentation_ratio.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

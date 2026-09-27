@@ -1,0 +1,59 @@
+{
+  "release_task_index": 377,
+  "task_id": "gpqa__recLrRirj7iXoB0rU",
+  "dataset": "gpqa",
+  "ordinal": 246,
+  "variant": "clean",
+  "conversation_id": "246::gpqa__recLrRirj7iXoB0rU::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "aff7bced0e4a183a51d6e823ef745ff713a606ce071f6538475ed2442404c10f",
+  "semantic_condition_id": "f1d78009d12f5c5c5f21932867f1b98b885fc33c86a02a6a043025b5f17824db",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For hydrogen states |n,l,m>, use the electric-dipole selection rules to decide whether |3,0,0> can decay directly to |1,0,0> in one dipole transition.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "If the decay instead proceeds through n=2 in two dipole steps, what orbital angular momentum l must the intermediate state have?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "List the allowed |2,l,m> intermediate states for that value of l.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check which of those intermediate substates satisfy the dipole selection rule in both legs, |3,0,0> to |2,l,m> and |2,l,m> to |1,0,0>.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assume the initial s state is isotropic and the complete routes that survive both legs are symmetry-equivalent. Normalize their route probabilities.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Write the complete cascade through the m=0 intermediate state in ket notation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify the applicable selection rules for both legs and check that the probabilities of all complete routes sum to one.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final m=0 cascade and its route probability.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

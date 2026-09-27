@@ -1,0 +1,57 @@
+{
+  "config_id": "task069_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "count rows without significance",
+      "injected_text": "Summarize the archived GO Biological Process results for the upregulated set, retaining the adjusted significance and hit genes needed for comparison.\n\nFor this perturbed step, count rows without significance",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "independently choose the direction with the larger rather than smaller best adjusted p-value",
+      "injected_text": "Compare the two directional tables by term identity, adjusted significance, and hit genes. Which direction primarily carries the CBD-associated metabolic signal?\n\nFor this perturbed step, independently choose the direction with the larger rather than smaller best adjusted p-value",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Counting rows and choosing the larger row count are one wrong method repeated across two turns.",
+    "before": "Row-count method propagated.",
+    "after": "At T2 count rows without significance; at T4 independently choose the direction with the larger rather than smaller best adjusted p-value.",
+    "proposed_turns": [
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Summarize the upregulated table only by its number of displayed rows, omitting adjusted significance and hit-gene identities."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Compare each direction's best adjusted p-value but deliberately choose the direction with the larger, rather than smaller, value as primary."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 268,
+  "task_id": "gpqa__reciSAlQzqCdMatGS",
+  "dataset": "gpqa",
+  "ordinal": 136,
+  "variant": "perturbed",
+  "conversation_id": "136::gpqa__reciSAlQzqCdMatGS::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1ffe21bbac42a08ffa5e928b32e14be3ef3da23ebd824873733d0cf36c4e7d9b",
+  "semantic_condition_id": "f3aee9a79c3069ca6174756d1cb189ad38869cd05958b716e1e819f1e3c7214a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "We want inexpensive preliminary data on candidate drugs interacting with a protein target, and a usable PDB-format structure is already available. What should guide the choice of a basic starting approach?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Require a newly determined crystal structure before the first computational screen, even for the route based on the already available PDB structure. Compare the two routes under that requirement and identify the lower startup burden.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How does an initial computational interaction screen compare with in-vitro testing in typical cost, speed, and infrastructure needs?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Consider assays using a bacterial homolog and assays using homologous proteins in a cell line. What experimental preparation would each require compared with the computational screen?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which method is the most cost-effective basic starting point under the stated availability of a usable PDB structure? Justify the recommendation from the prerequisites, time, and infrastructure involved.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Qualify that recommendation: no target-specific structure-quality assessment, docking validation, compute or license prices, wet-lab resource costs, timelines, or local infrastructure information has been supplied. Which uncertainties could change the practical cost comparison?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What can this preliminary screen establish, and what limitations mean that biochemical and cellular validation would still be needed?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the recommended starting method and clearly state the scope of the preliminary evidence it would provide.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

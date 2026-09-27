@@ -1,0 +1,54 @@
+{
+  "release_task_index": 569,
+  "task_id": "scibench__atkins-sol-015",
+  "dataset": "scibench",
+  "ordinal": 350,
+  "variant": "perturbed",
+  "conversation_id": "350::scibench__atkins-sol-015::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1910844274b6ddc302460f93efd91a9d2dc13e2ab2ed0a9383f233614c84434a",
+  "semantic_condition_id": "b634cdbef899a2c9a25471f6d9b0391f1f6dbef347d186311b780f5ba16940db",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A fixed amount of nitrogen is held in a rigid vessel and treated as a perfect gas. With n and V constant, how does its pressure depend on absolute temperature?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the two-state gas-law relation for (p_1,T_1) and (p_2,T_2), but impose n_2=2n_1 while keeping V_2=V_1, then solve it for p_2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The nitrogen enters at 100 atm and 300 K and is heated to 500 K. Substitute these values into your expression for p_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression and explain whether the working pressure should be above or below the entry pressure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that direction physically in terms of molecular collisions with the walls of a constant-volume vessel.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and the order of magnitude of the calculated pressure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the working pressure to one decimal place and to the nearest atmosphere.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

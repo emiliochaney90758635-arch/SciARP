@@ -1,0 +1,74 @@
+{
+  "release_task_index": 559,
+  "task_id": "scibench__atkins-sol-001",
+  "dataset": "scibench",
+  "ordinal": 340,
+  "variant": "clean",
+  "conversation_id": "340::scibench__atkins-sol-001::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b9b68f9a0b18a2ded85c367eb6d9f0f61a0e8623da315f18b2ad15080b8f80ac",
+  "semantic_condition_id": "bc8db80c111b4040ad868487df29387481e06435e11e7cece2a9b587eb56d2d9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the molar volume of CO2 at 500 K and 100 atm with the van der Waals model. Use a=3.610 atm dm^6 mol^-2 and b=0.0429 dm^3 mol^-1, in units compatible with R=0.082057 dm^3 atm mol^-1 K^-1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the ideal-gas comparison scale RT/p for this state, including its molar-volume units.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Starting from the molar van der Waals equation, rearrange it into a cubic polynomial in the molar volume V_m.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the stated constants, temperature, and pressure into the cubic. With x=V_m/(dm^3 mol^-1), write the numerical polynomial to be solved.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the units and signs of the cubic coefficients. Why must the van der Waals equation, rather than the ideal-gas value alone, be solved at this pressure?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the ideal-gas scale as a reference for identifying a gas-like solution. What qualitative criterion would distinguish the physical gas-phase root from any other numerical roots?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the root selection, retain b=0.0429 dm^3 mol^-1 and explain the physical restriction V_m>b.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use the numerical cubic to bracket a root in the physically admissible region and compare that interval with the ideal-gas scale.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Apply an appropriate numerical method to the cubic, list its real root candidates, and select the physical gas-phase root using V_m>b and the ideal-gas comparison.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check the selected root by substitution into the cubic or the original van der Waals equation, and explain the direction of its deviation from RT/p.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the estimated van der Waals molar volume of CO2 with units and appropriate significant figures.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

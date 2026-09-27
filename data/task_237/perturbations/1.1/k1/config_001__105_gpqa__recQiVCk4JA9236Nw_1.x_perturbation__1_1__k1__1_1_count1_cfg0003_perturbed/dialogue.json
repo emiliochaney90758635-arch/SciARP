@@ -1,0 +1,64 @@
+{
+  "release_task_index": 237,
+  "task_id": "gpqa__recQiVCk4JA9236Nw",
+  "dataset": "gpqa",
+  "ordinal": 105,
+  "variant": "perturbed",
+  "conversation_id": "105::gpqa__recQiVCk4JA9236Nw::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "c63015c953fb74b9f89153d7e033abd7d702357150981479f1ed1d6c9f051ddf",
+  "semantic_condition_id": "23489553f588f64b649167f923e5759035f9244a7578f097fddb466058139ae0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An archived, non-random panel of mouse embryonic stem-cell lines was profiled by ATAC accessibility at PRC2-bound loci. Lines recorded as lacking Ring1B were more accessible than lines with detected Ring1B, but genotype assignment was not randomized and other PRC1 components also differed. Summarize the observed association without assigning a mechanism.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What causal claim, if any, is justified by that panel alone? State what additional evidence would be needed to show that loss of Ring1B itself causes the accessibility change.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Independently of the panel, distinguish the structural role of Ring1B protein in PRC1-mediated compaction from its E3-ligase activity. What should happen at PRC2-bound loci when Ring1B protein is absent?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Why do PRC2 occupancy and H3K27 trimethylation alone not demonstrate physical compaction when the downstream PRC1 component Ring1B is missing?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give a mechanistic criterion that distinguishes chromatin containing catalytically inactive Ring1B from chromatin in which Ring1B protein is absent.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compare PRC2-bound chromatin lacking Ring1B with chromatin associated with PRC2 containing catalytically inactive EZH2. Which context is expected to remain accessible, and which remains compacted when PRC2 and EZH2 are treated as the operative complex and protein?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Integrate the mechanistic distinction with the archived-panel observation. Which Polycomb context is expected to remain open, and what causal qualification must accompany that conclusion?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Stress-test the conclusion: explain why loss of Ring1B protein is not equivalent to loss of its catalytic activity, and why PRC2 occupancy alone is not a compaction readout.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the final open-chromatin Polycomb context and the appropriate causal-status qualification for the archived panel.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

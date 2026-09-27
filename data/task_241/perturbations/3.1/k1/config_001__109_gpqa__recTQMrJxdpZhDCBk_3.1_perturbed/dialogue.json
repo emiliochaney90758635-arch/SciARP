@@ -1,0 +1,54 @@
+{
+  "release_task_index": 241,
+  "task_id": "gpqa__recTQMrJxdpZhDCBk",
+  "dataset": "gpqa",
+  "ordinal": 109,
+  "variant": "perturbed",
+  "conversation_id": "109::gpqa__recTQMrJxdpZhDCBk::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "00414bf1380f1908c3e0b4bb3757465fa902efe327f2c328d2c612111de461a0",
+  "semantic_condition_id": "bb82b0c13f1a0f756fd5160dc8418f339487d9e4fe930852ae8ca3ee427f6095",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A gas-tight vessel contains A, B, and C and yields only water and a hydrogen halide after explosion. Gases A and B have a 1:1 volume ratio, and their densities at the same conditions differ by a factor of 2.11. What oxidizing-gas pair is consistent with those constraints?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Replace the established A/B density factor 2.11 with 1.11, then use (A+B):C=1:2.25 to identify the gases and choose a mole basis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that mole basis, write the balanced contributions from each oxidizing gas reacting with C to form only the stated products.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum the products and calculate the mass percentage of the hydrogen halide, using consistent rounded molar masses.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the percentage and identify the product species used in that mass fraction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the elemental balance in the proposed reactions and recompute the total product mass on the same mole basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the gas identities, reaction rationale, and final product mass fraction obtained from the analysis.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

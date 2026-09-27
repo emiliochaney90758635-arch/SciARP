@@ -1,0 +1,59 @@
+{
+  "release_task_index": 362,
+  "task_id": "gpqa__recuyeuT5rQ6qDt8F",
+  "dataset": "gpqa",
+  "ordinal": 231,
+  "variant": "perturbed",
+  "conversation_id": "231::gpqa__recuyeuT5rQ6qDt8F::1.x::perturbation__1_1__k3__1_1_count3_cfg0014::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "90403e71defb31eea803d9f74cfebebf18b33373ec0c2fae61e400c41dfbdf36",
+  "semantic_condition_id": "45cae53b40ee7b53e0639d71dc4fd7395a887d9eb7eb5a8c4124ab2f304ac6b4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A2 is a binary fluoride Y_aF_b containing 31.96% fluorine by mass. Enumerate viable small-integer stoichiometries and elements without assuming a=1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the composition candidates with the claim that bright-red A1 releases oxygen at 293 K to form A2 and oxidizes xenon. Identify the family and balance the decomposition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify A3 from its direct formation by fluorinating Y and its ability to react with xenon.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify A4 and A5 from their 1:1 preparation, then write how A5 decomposes in liquid nitrogen rather than in water.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the A4 formula and standard atomic masses, calculate its magnetic susceptibility.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which numerical interval contains that molar mass?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the proposed Y/A1-A5 family against the mass-composition constraint for A2, the A1 decomposition, xenon reactivity, 1:1 preparation, and water decomposition.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Summarize Y, A2, A4, the molar mass of A4, and its interval.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

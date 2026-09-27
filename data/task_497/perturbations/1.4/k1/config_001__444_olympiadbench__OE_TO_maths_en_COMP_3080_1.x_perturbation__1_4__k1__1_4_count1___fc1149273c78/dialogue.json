@@ -1,0 +1,54 @@
+{
+  "release_task_index": 497,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3080",
+  "dataset": "olympiadbench",
+  "ordinal": 444,
+  "variant": "perturbed",
+  "conversation_id": "444::olympiadbench__OE_TO_maths_en_COMP_3080::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "ad76ecb5f370ae7d621c920b2dfbba22c913b5659a1a36c7b848bf9d8703544d",
+  "semantic_condition_id": "94acd2a68e55773163cac30a66a4314649a8098806451ff4c160b86eb78de120",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Expand 253_b times 341_b as a polynomial in b and list the raw coefficients from b^4 down to the constant term before carrying.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why the raw polynomial coefficients cannot simply be read as base-b digits in general. Introduce a right-to-left carry scheme that converts the coefficient stream into the prescribed five-digit numeral.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Start with the constant and b columns. Determine Z and write the relations that define Y and the carry into the b^2 column.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Continue the carry propagation through the b^2 and b^3 columns. Express X and the next two carries in terms of b and the incoming carries.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the two prescribed leading digits to determine the top carry and derive the relation between b and the carry entering the b^3 column.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the base-digit constraints and the carry relations to narrow the admissible integer bases. Check the boundary cases and determine the unique possible base.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the base and verify the complete multiplication, including the resulting digits X, Y, and Z and the validity of every digit in base b.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

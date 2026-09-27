@@ -1,0 +1,54 @@
+{
+  "release_task_index": 477,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1882",
+  "dataset": "olympiadbench",
+  "ordinal": 424,
+  "variant": "perturbed",
+  "conversation_id": "424::olympiadbench__OE_TO_maths_en_COMP_1882::1.x::perturbation__1_3__k3__1_3_count3_cfg0001::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "f274a0d8a97d90dddd89a0cc482061414fa583c6ccfe730176a11adb0e5fa740",
+  "semantic_condition_id": "67c2828e4de2da51e3f82c8554f8c62b1a8e83a88df97c9dedf2610c12c97828",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Model a company operating N rides on N checkpoints while retaining k as the later ride count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Consider two copies both named company A and derive the two-component-label inequality.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Prove that the map sending each checkpoint to its pair of company-component labels is injective under that assumption.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set the number of cable cars, rather than checkpoints, equal to n^2 and specialize the counting inequality.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "At the boundary k=n^2-n, arrange the checkpoints as an n by n grid. Construct one company's components as rows and the other's as columns, and verify the ride-order condition and absence of a common linked pair.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Return to the original total N=n^2 and compare the forcing bound with the boundary construction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the smallest k that guarantees two checkpoints linked by both companies.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 116,
+  "task_id": "116-capsule034",
+  "source_id": "bix-51-q2",
+  "dataset": "bixbench",
+  "ordinal": 116,
+  "variant": "perturbed",
+  "conversation_id": "116::116-capsule034::2.5::k2::perturbed",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "e6dbd5572d4101f247635ccd430f75973050dda84e89cb4b5628d03da4094f04",
+  "semantic_condition_id": "0d8bbab5c298c87321bfb719dfb383c0bdb3e9d62539e5ccd5ad3c96125c99da",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# BMI-only logistic-regression evidence\n\n## Treatment-response encoding and BMI observations\n\nThe analysis table contains 80 patient records. Group 1 has efficacy `PR` and is encoded as `Response=1`; Group 2 is encoded as `Response=0`. There are 41 records with response 1 and 39 with response 0. BMI has no missing values.\n\n```text\nResponse = 1 (n=41), BMI:\n18.7, 18.4, 25.6, 23.7, 23.8, 19.6, 21.3, 22.8, 22.8, 22.8,\n21.4, 23.7, 18.8, 18.6, 22.4, 23.1, 23.9, 22.6, 20.6, 22.2,\n23.8, 21.8, 23.3, 25.8, 20.7, 23.1, 24.0, 20.5, 19.2, 24.4,\n25.1, 20.3, 22.9, 25.6, 25.6, 18.5, 22.6, 25.9, 23.9, 19.5,\n25.4\n\nResponse = 0 (n=39), BMI:\n19.4, 25.5, 20.3, 25.0, 18.1, 18.3, 25.2, 18.8, 18.6, 21.0,\n22.6, 18.0, 18.7, 22.3, 20.2, 19.3, 22.4, 19.9, 18.1, 21.9,\n18.8, 23.5, 21.9, 25.2, 22.7, 23.1, 24.8, 25.0, 24.6, 20.3,\n20.4, 25.6, 19.9, 19.5, 23.2, 20.2, 22.9, 21.3, 21.6\n```\n\n## Model specification and fitted quantities\n\nThe model is a binomial logistic regression with an intercept:\n\n```r\nmodel_BMI <- glm(Response ~ BMI, data = dataset, family = binomial)\n```\n\nEquivalently,\n\n```text\nlogit[P(Response=1)] = beta_0 + beta_BMI × BMI\n```\n\nThe archived fit and an independent fit of the observations above give:\n\n| quantity | value |\n|---|---:|\n| number of observations, n | 80 |\n| number of fitted parameters, k | 2 |\n| intercept estimate | -3.631933898892 |\n| BMI estimate | 0.167746449421 |\n| maximized log-likelihood | -53.9062299626398 |\n| residual deviance, `-2 log L` | 107.8124599252796 |\n| archived `AIC(model_BMI)` | 111.8125 |\n\nFor a maximum-likelihood model,\n\n```text\nAIC = -2 log L + 2k\n```\n\nThe shorter `summary()` display rounds the same AIC to `111.81`.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# BMI response-model grouped likelihood audit\n\n## Source and scope\n\nThe Clinical Modeling Audit Unit refitted the BMI-only logistic model after\ncalibrated BMI-band aggregation.\n\n| BMI band | Responders y | Total n | Fitted probability p |\n|---|---:|---:|---:|\n| 18.0-19.9 | 8 | 20 | 0.42 |\n| 20.0-21.9 | 8 | 18 | 0.47 |\n| 22.0-23.9 | 13 | 22 | 0.56 |\n| 24.0-25.9 | 12 | 20 | 0.62 |\n\nCompute the grouped Bernoulli log-likelihood\n`sum[y ln(p)+(n-y)ln(1-p)]`. The fitted model has an intercept and one BMI\ncoefficient, so apply `AIC=-2 log L+2k`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDefine the binary treatment-response outcome and complete 80-row BMI analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent penalized-logistic BMI audit\n\n## Source, scope, and fitted quantities\n\nThe Clinical Prediction Validation Center fitted a Firth-penalized logistic\nresponse model to the same 80 BMI observations. Its penalized log-likelihood\nand effective parameter count were:\n\n| model | n | penalized log-likelihood | effective k |\n|---|---:|---:|---:|\n| response on BMI with intercept | 80 | -52.31 | 2.40 |\n\nUsing the center's criterion `-2 penalized log L + 2 effective k` gives\n`104.62+4.80=109.42`. This is a penalized external analysis, not the archived\nordinary maximum-likelihood GLM.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFit the intercept-plus-BMI logistic regression and report its maximized log-likelihood and parameter count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those quantities to calculate the model AIC.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "task_index": 127,
+  "task_id": "127-capsule035",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "0f87d2e3f28ff6f2e0fd34b0049b18b870f7354702fd55639902eb37c902e9a0",
+  "source_base_evidence_sha256": "79b55dff8f667ca25e1bc810b690469b0f33c3eb1d051601ef893763ff8e4f8b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Existing audit conflicts with target inputs.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Existing second audit independently conflicts.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Third assembly audit independently changes W count and length.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "003__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.4.k2"
+}

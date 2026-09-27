@@ -1,0 +1,41 @@
+{
+  "task_index": 138,
+  "task_id": "138-capsule037",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "d06cd65296b9f83e16911061169c48bad93e055b53147ca2bcdffdf5290bb23e",
+  "source_base_evidence_sha256": "f7b93782d44eaa184992f59bb28d80a967c1c82c915076f0e01a0adc385c9618",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "SE_mean digits transposed.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "t-critical digits independently transposed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "13,019.807256351",
+      "new": "13,091.807256351"
+    },
+    {
+      "turn_id": "T2",
+      "old": "2.032244509318",
+      "new": "2.023244509318"
+    }
+  ],
+  "extends_existing": null
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 314,
+  "task_id": "gpqa__recTVnk0jyigx3o9P",
+  "dataset": "gpqa",
+  "ordinal": 182,
+  "variant": "perturbed",
+  "conversation_id": "182::gpqa__recTVnk0jyigx3o9P::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e233a7d00bb1a804b889d0822400279fd0be5826c51b2136bb00cf0ab7b25b18",
+  "semantic_condition_id": "12bb0037384a1ee8f027b8bdb62f477ea0c6e16b55f0a06ddf96a2ed443dfe5e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "m-Toluidine reacts with the unsymmetrical beta-diketone CH3COCH2COCH2CH3 under acidic heating. Which quinoline-forming synthesis applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the reagent as an alpha-diketone whose ends carry methyl and ethyl groups. How many distinct orientations can place these substituents at quinoline C2 and C4?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In m-toluidine, the two positions ortho to NH2 are C2, adjacent to methyl, and C6, not adjacent to methyl. Are these sites symmetry-equivalent, and how many ring-derived regioisomers do they allow?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the orientation and site counts obtained above, enumerate the resulting patterns, and report how many inorganic salts can form.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the count by testing whether each source of variation counted in the preceding steps remains distinct under molecular symmetry.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final count with a concise rationale based on the preceding synthesis and symmetry analysis.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

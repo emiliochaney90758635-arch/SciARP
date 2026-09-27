@@ -1,0 +1,45 @@
+{
+  "release_task_index": 39,
+  "task_id": "039-capsule010",
+  "source_id": "bix-13-q4",
+  "dataset": "bixbench",
+  "ordinal": 39,
+  "variant": "perturbed",
+  "conversation_id": "039::039-capsule010::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "fda33f4cd522f0efaa31ee42a6e9a4596b1b05cdc5abd6399b287adc4dea0a3b",
+  "semantic_condition_id": "2c6b2f5d9591d10c6e8cd36fcd1e8eaa67b67d2eb79ba8de0b8867695d142a2f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## DESeq2 comparison and significance rule\n\nThe input has 5,828 gene rows and 36 samples. After excluding `resub-5`, `resub-10`, and `resub-33`, the model uses 33 samples with:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) from the JBX97, JBX98, and JBX99 versus JBX1 contrasts, retaining unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05`. No `log2FoldChange` threshold is applied.\n\n## Mutually exclusive partition\n\n| Region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nThe three-set union is obtained by summing all disjoint rows. The numerator requested in the task is obtained from the applicable single-mutant-only rows; the measured-gene population is not the union denominator.\n\n# Independent operon-family harmonization summary\n\n**Source:** Bacterial Regulatory Network Curation Facility\n**Input sets:** BH-adjusted \\(p<0.05\\) GeneIDs for JBX97, JBX98, and JBX99 versus JBX1\n**Harmonization:** GeneIDs assigned to the same curated transcriptional unit are consolidated as one regulatory family before overlap analysis\n\nThe facility reports:\n\n| Harmonized region quantity | Regulatory families |\n|---|---:|\n| JBX97 only | 238 |\n| JBX98 only | 192 |\n| Three-set union | 3,680 |\n\nJBX99 is treated as the double mutant. The numerator consists only of the two displayed single-mutant-only family regions, and each family contributes once to the union.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUsing one significance rule, construct the JBX97-, JBX98-, and JBX99-versus-JBX1 GeneID sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Partition the three sets into their seven mutually exclusive Venn regions and verify the partition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the JBX97-only and JBX99-only regions requested for the numerator.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum all seven disjoint regions to obtain the three-set union.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the percentage of that union represented by the two requested single-mutant-only regions.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

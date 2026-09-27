@@ -1,0 +1,49 @@
+{
+  "release_task_index": 488,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2979",
+  "dataset": "olympiadbench",
+  "ordinal": 435,
+  "variant": "clean",
+  "conversation_id": "435::olympiadbench__OE_TO_maths_en_COMP_2979::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "45222dbe1184f087b2f7afdd9c982897ce2ed54fd31295b4c53acff71867fed2",
+  "semantic_condition_id": "3af4dfb9cb3bf00da93d81daacceabc0c5b0c1ecad002a1a0f044b105b6b1a12",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let a=BC, b=CA, and c=AB. In triangle ABC, the angle bisector from C meets AB at D, with AD=229. Use the angle-bisector theorem to relate a, b, c, and BD=c-229.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given that b=AC is relatively prime to AD=229, use the relation to determine the relevant divisibility and write a=bk for a positive integer k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute a=bk into the angle-bisector relation and express c in terms of k and AD=229.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the perimeter a+b+c=2019 to derive a positive-integer factorization involving b+229 and k+1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Enumerate the positive factor assignments of 2019, enforce b>0 and k>0, and identify the unique admissible values of b and k.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compute all three side lengths and report BC, checking that the triangle is scalene and satisfies the original conditions.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

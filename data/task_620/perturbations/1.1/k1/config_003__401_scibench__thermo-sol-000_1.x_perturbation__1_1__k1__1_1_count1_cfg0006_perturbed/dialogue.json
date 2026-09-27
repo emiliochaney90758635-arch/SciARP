@@ -1,0 +1,59 @@
+{
+  "release_task_index": 620,
+  "task_id": "scibench__thermo-sol-000",
+  "dataset": "scibench",
+  "ordinal": 401,
+  "variant": "perturbed",
+  "conversation_id": "401::scibench__thermo-sol-000::1.x::perturbation__1_1__k1__1_1_count1_cfg0006::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3ca8283317d158409e9a67b63b53221f2930b561a96619f57917236c52dea2dc",
+  "semantic_condition_id": "2b49ed7ff3b175830424e4f0c04fe30000d9e1f6bd13506702cd968d8fc1d1f2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a liquid described by temperature and pressure, derive dS in terms of C_P, T, and (partial V/partial T)_P, then rewrite the pressure term using beta=(1/V)(partial V/partial T)_P.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assuming C_P,m, beta, and the liquid volume are constant over the stated range, integrate that differential for n moles between (T_i,P_i) and (T_f,P_f).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the heating contribution for n=3.00 mol, C_P,m=27.98 J mol^-1 K^-1, T_i=300 K, and T_f=600 K.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using M(Hg)=200.59 g mol^-1 and rho=13.54 g cm^-3, calculate the volume of the same mercury sample in cubic metres.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a pressure increase from 1.00 bar to 3.00 bar, calculate the entropy correction using beta=1.81 x 10^-4 K^-1 and the sample volume. Keep the sign from the differential and convert bar to pascals.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the heating contribution and pressure correction to estimate the enthalpy change for the full process.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units and sign of the pressure term. For beta>0, should raising the pressure at fixed temperature increase or decrease the liquid's entropy?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final entropy change, the sign and magnitude of the pressure correction, and the constant-property approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

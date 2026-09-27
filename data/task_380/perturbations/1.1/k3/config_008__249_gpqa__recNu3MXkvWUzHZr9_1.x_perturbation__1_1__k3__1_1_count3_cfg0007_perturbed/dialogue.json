@@ -1,0 +1,59 @@
+{
+  "release_task_index": 380,
+  "task_id": "gpqa__recNu3MXkvWUzHZr9",
+  "dataset": "gpqa",
+  "ordinal": 249,
+  "variant": "perturbed",
+  "conversation_id": "249::gpqa__recNu3MXkvWUzHZr9::1.x::perturbation__1_1__k3__1_1_count3_cfg0007::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1298f302ac37d2f019938a672e24d569769b40a97f0ee80567f4acd496be9f55",
+  "semantic_condition_id": "3e6a87bec2b099785b8e137ec3d49566f6cc30c260a7505eda1c8be836fe17c6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the Earth-frame travel time from the Large Magellanic Cloud over 1.6e5 light-years at constant speed 0.99999987c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the Doppler factor using beta=0.99999987 and the Lorentz-factor formula gamma=1/sqrt(1-beta^2).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Divide the coordinate travel time by gamma and report the result as the astronaut's coordinate travel time.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the astronaut-frame duration to determine arrival age and whether a stated fuel-capacity constraint prevents arrival, given age 22 and lifetime 150 years.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the traveller-frame duration to a precision warranted by the approximate distance and speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the uncertainty introduced by the approximate distance and idealized constant-speed route.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare the Earth-frame and traveller-frame intervals, and identify which one determines the traveller's arrival age.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report both travel times and the resulting arrival age, then assess compatibility with the stated lifetime while noting the route approximation.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

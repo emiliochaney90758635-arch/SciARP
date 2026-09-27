@@ -1,0 +1,24 @@
+{
+  "task_id": "020-capsule007",
+  "subclass": "3.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Converts a class label into expression causation."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "4e03e4681ab61fa2b891122e289438132981eb0e6fb3f1d79a315f0822bdc925",
+  "configured_evidence_sha256": "4e03e4681ab61fa2b891122e289438132981eb0e6fb3f1d79a315f0822bdc925",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,34 @@
+{
+  "task_index": 116,
+  "task_id": "116-capsule034",
+  "subclass": "1.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8fe6598d285ea104f277b616e45e1b5f6eff479737c56da9e0f80de26eb2208d",
+  "source_base_evidence_sha256": "9cf3276cd7e01360e4ed7ea71272c98435093ab5a03a6309ff9beb1158f55a88",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome mapping swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "n/k variable mapping independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Swap Response labels.",
+    "T2": "Map n to the parameter count and k to the observation count when reporting fit quantities."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

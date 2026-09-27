@@ -1,0 +1,44 @@
+{
+  "release_task_index": 150,
+  "task_id": "gpqa__rec260hNUCEj109Dj",
+  "dataset": "gpqa",
+  "ordinal": 12,
+  "variant": "perturbed",
+  "conversation_id": "012::gpqa__rec260hNUCEj109Dj::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8665241e838b04fdc9092ab130cb3da484b2eb7c92ab1f7c17f234ccc2a6314e",
+  "semantic_condition_id": "60f64b4056ee85271fb4e4131ed793da87d4f27da1dff03b0096eccbe8328f97",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle of mass m moves in two dimensions under V(r,theta)=1/2 kr^2+3/2 kr^2 cos^2(theta). Rewrite the potential in Cartesian coordinates using x=r cos(theta) and y=r sin(theta).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Collect the x^2 and y^2 terms in this potential and check whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Match the separated quadratic terms to two rigid rotors and determine their angular frequencies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two frequencies directly against the coefficients of the x^2 and y^2 terms before using them in the spectrum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the complete quantum-mechanical energy spectrum implied by the separated modes and parameters established above.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

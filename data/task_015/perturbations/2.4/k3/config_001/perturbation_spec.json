@@ -1,0 +1,28 @@
+{
+  "task_id": "015-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first registry falsely places cGMP effects in every round.",
+    "The second registry falsely places nitric-oxide guanylate-cyclase signaling in every round.",
+    "The third audit falsely places receptor-tyrosine-kinase signaling in every round."
+  ],
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "first conflicting registry"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third conflicting registry"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "second conflicting registry"
+    }
+  ],
+  "evidence_change_permitted": true
+}

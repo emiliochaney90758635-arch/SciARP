@@ -1,0 +1,54 @@
+{
+  "release_task_index": 435,
+  "task_id": "gpqa__recwr979t2fqhhZK8",
+  "dataset": "gpqa",
+  "ordinal": 304,
+  "variant": "perturbed",
+  "conversation_id": "304::gpqa__recwr979t2fqhhZK8::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "0d1f75121cd3dba56411fba3c9448411101f3f2b24e08141b3bccdb723507c63",
+  "semantic_condition_id": "1833ee2b9db6b6f2df15bd0dc113b29506e364f47f256210c27e64e4ec84b070",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write 2-(2-oxopropoxy)acetaldehyde in condensed form and identify its aldehyde and ketone carbonyls.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from 2-(2-oxopropoxy)acetaldehyde, determine A after reaction with methylenetriphenylphosphorane, and state whether it is a monoalkene or diene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Verify A's carbon count, connectivity, and number of carbon-carbon double bonds.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat A with a Grubbs ruthenium catalyst in benzene. What ring-closing-metathesis product B forms? Give an unambiguous structure or name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Treat B with ethanol under acid catalysis and determine the final product C by an unambiguous name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the ring size established in forming B and the regiochemistry established in the final addition are consistent with C.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report C and briefly connect the structures of A, B, and C.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

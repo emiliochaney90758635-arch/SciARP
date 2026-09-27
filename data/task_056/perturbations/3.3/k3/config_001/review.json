@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can form paired differences, T2 pool group SDs, and T3 combine incompatible estimands.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "66fc6325baf8eb9bd0fb70018458b814c0de0530fef22d4dbdb9033f9cf2b6ca",
+  "strict_non2x_original_semantic_condition_id": "1b2c03c1a6f8ac78035f8118da3522f624ba93e693e78bedeb975ce2aa26f74b",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally omit Sample 8 only from CTRL at T1, use the unweighted average of group variances at T2, and divide the mean difference by the sum of SDs at T3. Remove all meta text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

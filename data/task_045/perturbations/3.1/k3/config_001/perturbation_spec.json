@@ -1,0 +1,34 @@
+{
+  "config_id": "task045_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Although T1 used complete symbol-and-ID labels, realign the already intersected columns by bare symbols before forming nonmissing cell-line pairs."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Correlate expression with inverted gene effect, but interpret positive rho as higher expression being associated with weaker dependency on the original Chronos scale."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "After treating all genes as one testing family in prior steps, split them by rho sign and apply BH separately within each sign."
+    }
+  ]
+}

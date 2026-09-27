@@ -1,0 +1,54 @@
+{
+  "release_task_index": 356,
+  "task_id": "gpqa__recqqFgbShO7tyavI",
+  "dataset": "gpqa",
+  "ordinal": 224,
+  "variant": "perturbed",
+  "conversation_id": "224::gpqa__recqqFgbShO7tyavI::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b97ca1b5e49fef17c38bb98bc92a1c30f8abe19cdbf30167a906417c8892cdb1",
+  "semantic_condition_id": "8169b216d544255add6382735a8d8ef5a3ec66e35338eedcc9014f7eb5b3e03c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat allyl acetoacetate as a radical initiator when it is heated. Which radical pathway and subsequent step would then account for formation of an unsaturated ketone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Trace the carbon skeleton through that thermal rearrangement and decarboxylation, then draw and name the major product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that product, identify the saturated proton environments in its 1H NMR spectrum. Keep carbon-site counting separate from proton-level chemical equivalence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now count alkene carbon environments, while also testing whether the two hydrogens of the terminal vinyl CH2 are chemically equivalent.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the environments identified so far to obtain the total number of distinct signals for the current measurement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by listing each chemically distinct environment individually rather than relying only on a site count.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the signal count for the major product and the relevant equivalence conclusion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

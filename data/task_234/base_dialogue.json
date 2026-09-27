@@ -1,0 +1,54 @@
+{
+  "release_task_index": 234,
+  "task_id": "gpqa__recPIzpnuYpB4yvmp",
+  "dataset": "gpqa",
+  "ordinal": 102,
+  "variant": "clean",
+  "conversation_id": "102::gpqa__recPIzpnuYpB4yvmp::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "0aaaf503b209f21ccbdf5d36b9b23acdcd705486daa4ab7f4e9568f7a313ae76",
+  "semantic_condition_id": "64c67a558b7a47d8b9d9e036d6cdfd6dbb829c3a8c4d0964dcb52a4760b8bab4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Normalize the state vector (-1,2,1)^T. The experiment first measures P and conditions on P=0, then measures Q; the requested event is P=0 followed by Q=-1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For P=[[0,1/sqrt(2),0],[1/sqrt(2),0,1/sqrt(2)],[0,1/sqrt(2),0]], find a normalized eigenvector spanning the P=0 eigenspace.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the specified P=0 eigenspace to calculate Pr(P=0) for the normalized initial state. If P or its eigenspace is unavailable, leave the answer in projector form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For Q=diag(1,0,-1), use the state or ensemble produced by the preceding operation to calculate the requested second-stage quantity. If either required operator is unavailable, keep the expression symbolic and identify what is missing.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the first- and second-measurement probabilities in the order appropriate for a sequential measurement, evaluating the result only if both operators are specified.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result directly from the specified sequence of measurements; if an operator is unavailable, leave it explicit in the expression.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final numerical quantity if it is uniquely determined; otherwise give the formal expression and identify the missing operator or eigenspace.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 557,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3007",
+  "dataset": "olympiadbench",
+  "ordinal": 504,
+  "variant": "clean",
+  "conversation_id": "504::olympiadbench__OE_TO_maths_en_COMP_3007::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "838afb1c12cd1cb53135ab830debe430a8e420d03bff82f515de006f46580423",
+  "semantic_condition_id": "8071ba038c9675d0fc2113b939495912c746cd7378fc0a4e8e9b2878b6a585af",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After erasing every 0 and 5 from the integers 1 through 2019, count the occurrences of each product-relevant digit, including the extra twenty thousands-place 2s from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that deletion rule, verify the common multiplicity of the ordinary contributing digits and determine the extra thousands-place contribution from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those multiplicities to write the product compactly, ignore neutral factors, and reduce the repeated common base modulo 1000.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the modulo-125 branch, verify coprimality and state the applicable Euler exponent reduction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Reduce the product modulo 125.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Reduce the same product modulo 8.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two congruences by the Chinese remainder theorem and report the remainder modulo 1000.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

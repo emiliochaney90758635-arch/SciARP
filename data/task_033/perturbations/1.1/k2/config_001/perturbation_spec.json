@@ -1,0 +1,36 @@
+{
+  "task_id": "033-capsule009",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Redefines the subject endpoint.",
+    "Redefines the fitted covariate."
+  ],
+  "injection_turns": [
+    "T1",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a84bff2bde91c7ceaf928c3a7d9459dac718f0a755b7d1de7956cb80bdd4aaf1",
+  "configured_evidence_sha256": "a84bff2bde91c7ceaf928c3a7d9459dac718f0a755b7d1de7956cb80bdd4aaf1",
+  "evidence_unchanged": true
+}

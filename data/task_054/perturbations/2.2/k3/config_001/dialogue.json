@@ -1,0 +1,35 @@
+{
+  "release_task_index": 54,
+  "task_id": "054-capsule015",
+  "source_id": "bix-19-q3",
+  "dataset": "bixbench",
+  "ordinal": 54,
+  "variant": "perturbed",
+  "conversation_id": "054::054-capsule015::2.2::k3::perturbed::lane_b_review_overlay",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "bf6ba0b842fe1f4ddb740fb4b75473ea2baddef5e37d7f343cd1bc7e321d4379",
+  "semantic_condition_id": "88ecd987d9153c76411b5294a10643d7e4550a45df1632108088827f2e8b54b5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original KD-hemisphere NeuN data\n\nThe hemisphere field is spelled `Hemispere` in the original CSV and is renamed `Hemisphere` after import. The selection criterion is `Hemisphere == \"KD\"`, and the analysis variable is `NeuN`.\n\n| Sample | Hemisphere | NeuN | Sex |\n|---:|---|---:|---|\n| 1 | KD | 221 | M |\n| 2 | KD | 233 | F |\n| 3 | KD | 221 | M |\n| 4 | KD | 215 | F |\n| 5 | KD | 216 | M |\n| 6 | KD | 208 | F |\n| 7 | KD | 202 | M |\n| 8 | KD | 200 | F |\n\n## Statistical call and field meanings\n\nApply the following to the eight `NeuN` values above:\n\n```python\nstats.shapiro(kd_data)\n```\n\nThe archived native statistical output is:\n\n```text\nShapiroResult(statistic=0.9563693455884582, pvalue=0.7748936950981364)\n```\n\nThe `statistic` field is the \\(W\\) statistic from the Shapiro–Wilk test, and the `pvalue` field is the corresponding significance probability.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the imported hemisphere-field name and identify every record in the KD hemisphere group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Original KD-hemisphere NeuN data\n\nThe hemisphere field is spelled `Hemispere` in the original CSV and is renamed `Hemisphere` after import. The selection criterion is `Hemisphere == \"KD\"`, and the analysis variable is `NeuN`.\n\n| Sample | Hemisphere | NeuN | Sex |\n|---:|---|---:|---|\n| 1 | KD | 221 | M |\n| 2 | KD | 233 | F |\n| 3 | KD | 221 | M |\n| 4 | KD | 215 | F |\n| 5 | KD | 216 | M |\n| 6 | KD | 208 | F |\n| 7 | KD | 202 | M |\n| 8 | KD | 200 | F |\n\n## Statistical call and field meanings\n\nApply the following to the eight `NeuN` values above:\n\n```python\nstats.shapiro(kd_data)\n```\n\nThe archived native statistical output is:\n\n```text\nShapiroResult(statistic=0.9563693455884582, pvalue=0.7748936950981364)\n```\n\nThe `statistic` field is the \\(W\\) statistic from the Shapiro–Wilk test, and the `pvalue` field is the corresponding significance probability.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nExtract the KD records' NeuN values in their original row order to form the test vector.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Original KD-hemisphere NeuN data\n\nThe hemisphere field is spelled `Hemispere` in the original CSV and is renamed `Hemisphere` after import. The selection criterion is `Hemisphere == \"KD\"`, and the analysis variable is `NeuN`.\n\n| Sample | Hemisphere | NeuN | Sex |\n|---:|---|---:|---|\n| 1 | KD | 221 | M |\n| 2 | KD | 233 | F |\n| 3 | KD | 221 | M |\n| 4 | KD | 215 | F |\n| 5 | KD | 216 | M |\n| 6 | KD | 208 | F |\n| 7 | KD | 202 | M |\n| 8 | KD | 200 | F |\n\n## Statistical call and field meanings\n\nApply the following to the eight `NeuN` values above:\n\n```python\nstats.shapiro(kd_data)\n```\n\nThe archived native statistical output is:\n\n```text\nShapiroResult(statistic=0.9563693455884582, pvalue=0.7748936950981364)\n```\n\nThe `statistic` field is the \\(W\\) statistic from the Shapiro–Wilk test, and the `pvalue` field is the corresponding significance probability.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T3\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nApply the Shapiro-Wilk test and report its W statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

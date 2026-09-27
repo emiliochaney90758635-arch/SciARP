@@ -1,0 +1,46 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_replace",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "The selected-ID count is numerically transposed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "The target-row overlap numerator is independently increased.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_value",
+      "description": "Change selected Ensembl-ID count from 679 to the plausible transposition 697.",
+      "old": "It yielded 679 Ensembl IDs.",
+      "new": "It yielded 697 Ensembl IDs."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_value",
+      "description": "Change the target-row overlap numerator from 8 to 9 while preserving the positive denominator.",
+      "old": "| TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 | 8/49 |",
+      "new": "| TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 | 9/49 |"
+    }
+  ],
+  "extends_existing": null
+}

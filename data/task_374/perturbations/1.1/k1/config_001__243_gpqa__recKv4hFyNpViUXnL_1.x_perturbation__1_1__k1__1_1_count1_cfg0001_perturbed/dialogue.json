@@ -1,0 +1,59 @@
+{
+  "release_task_index": 374,
+  "task_id": "gpqa__recKv4hFyNpViUXnL",
+  "dataset": "gpqa",
+  "ordinal": 243,
+  "variant": "perturbed",
+  "conversation_id": "243::gpqa__recKv4hFyNpViUXnL::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "fa354d98c34813e18a476f13fe23300d01a7f5e2b26c6f0068a311171b7c89db",
+  "semantic_condition_id": "e87bb916e8c74741bc64131126bd25ee0c3868f6de6248e57f862156814cc5c6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a neutral titanium nucleus, rather than atom, decide which two-level population ratio decreases as temperature falls.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hc/k=1.4388e-2 m K, calculate Delta E/k for the transition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Boltzmann population-ratio dependence on temperature, noting that statistical weights cancel in the ratio of the two stellar states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the numerical scaling quantity required by the population law selected above for the two stated conditions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the factor obtained by dividing the result for the first stated condition by that for the second stated condition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions about the physical regime, condition values, and measurement that limit the precision of the quantity selected above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign or direction implied by the selected law and verify the comparison direction or quantity established in the preceding step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final quantity with the precision and qualification established above.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

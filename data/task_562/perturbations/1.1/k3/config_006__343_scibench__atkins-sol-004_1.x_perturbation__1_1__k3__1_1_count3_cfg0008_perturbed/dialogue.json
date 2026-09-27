@@ -1,0 +1,49 @@
+{
+  "release_task_index": 562,
+  "task_id": "scibench__atkins-sol-004",
+  "dataset": "scibench",
+  "ordinal": 343,
+  "variant": "perturbed",
+  "conversation_id": "343::scibench__atkins-sol-004::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "0b0cc99bc74db9f83784b022f14a35b30550d86d4ac6d843dcd271d97c04f552",
+  "semantic_condition_id": "c33d6fbb7a9ebb384b0f057501571728b57fd36c4fa6fd8747967fc60a1538e9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For nitrogen molecules in Maxwell-Boltzmann equilibrium at 25 degrees Celsius, the target is the arithmetic mean radioactive-decay rate E[v]. Explain how this first moment differs from the root-mean-square speed before choosing a formula.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert the stated temperature and electric charge into SI-compatible quantities, using M=28.02 g mol^-1 as the supplied nitrogen datum.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive a statistical-mechanical Schrodinger eigenvalue equation for the current arithmetic-mean statistic E[v] and substitute the converted temperature and molar mass, using R=8.3141 J mol^-1 K^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the quantity 8RT/(pi M), including its units, before taking the square root.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "As an independent check, evaluate the first moment of the Maxwell-Boltzmann speed distribution and confirm why the factor is 8/pi rather than the factor used for the second moment.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Take the square root of the evaluated quantity and report the mean speed of N2 molecules in m s^-1 to appropriate precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

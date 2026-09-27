@@ -1,0 +1,64 @@
+{
+  "release_task_index": 498,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1613",
+  "dataset": "olympiadbench",
+  "ordinal": 445,
+  "variant": "perturbed",
+  "conversation_id": "445::olympiadbench__OE_TO_maths_en_COMP_1613::1.x::perturbation__1_3__k2__1_3_count2_cfg0004::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "6c1b2563fe4a0945672f742e2d0e324840bbffe0b604a35e52b64d0c20957b55",
+  "semantic_condition_id": "0281bb2575d64d22070fcae499136be8a973529504dc75f7c67670a1dfe68b04",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let property A_n mean that every monic integer polynomial P of degree at most n admits some 1<=k<=n and k+1 distinct integers x1,...,x(k+1) with P(x1)+...+P(xk)=P(x(k+1)). Test A_1 using P(x)=x.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For n=2, first consider n(x)=1. Give a valid k and two distinct integer inputs that satisfy the relation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Still with n=2, let P(c)=x+c be an arbitrary monic linear polynomial. Find k and distinct integers x1,x2,x3 that satisfy the required relation for every integer c.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For an arbitrary monic quadratic P(x)=x^2+a x+b with integer coefficients, construct two distinct integers r and s with P(r)=P(s). Conclude the n=2 verification.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now let n>=3. Put m=n when n is odd and m=n-1 when n is even, and define F_m(x)=x(x-1)...(x-m+1). For odd n and for even n>=6, justify that F_m(t) is divisible by n for every integer t and define P(x)=F_m(x)+n x+1. Handle n=4 separately with P(x)=x^4+7x^2+4x+1. Verify that each polynomial is monic, has degree at most n, and is congruent to 1 modulo n on every integer input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Prove that each polynomial from the previous turn is injective on the integers. For the falling-factorial cases use the monotonicity of F_m when m is odd; for n=4 analyze P(x)-P(y). Keep the requirement that all x_i in property A_n are distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the two features of the polynomial now available for each n>=3: its values are all congruent to 1 modulo n, and it is injective on the integers. Explain why both features matter for obstructing property A_n.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Assume property A_n for one of these polynomials and reduce its required equation modulo n. Use 1<=k<=n, injectivity, and the distinct-input condition to derive a contradiction.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Combine the failure at n=1, the constant, linear, and quadratic cases for n=2, and the obstruction for every n>=3. State all positive integers n satisfying the property.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

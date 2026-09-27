@@ -1,0 +1,22 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes the round-1 candidate count from 2,271 to 2,217.",
+    "Transposes one adjusted p-value from 0.032708 to 0.023708."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "round-1 candidate count"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "round-2 cGMP adjusted p-value"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "The final subject-level median can additionally be mislabeled in variant-row units pooled across carriers.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "18b0087dbc3728aa829ecd1080d3fe25cd3902887b9e7ebeddfb65b827135335",
+  "strict_non2x_original_semantic_condition_id": "8e718518279a9f7245201ff77b0222ee9f60b21eaed9fbdc9efbd35e37dd5069",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally report cohort size in variant-row units rather than subjects; at T2 use VAF 0.3 percent; at T3 label the unchanged numerical median as per 100 carriers. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

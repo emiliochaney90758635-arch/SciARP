@@ -1,0 +1,54 @@
+{
+  "release_task_index": 220,
+  "task_id": "gpqa__recIIUynGGpsGEYuo",
+  "dataset": "gpqa",
+  "ordinal": 88,
+  "variant": "perturbed",
+  "conversation_id": "088::gpqa__recIIUynGGpsGEYuo::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "c6d09cb36140c3352bcb19f9dfd9f99da8002d3766389f6a57f86432a5ed344e",
+  "semantic_condition_id": "6af77fa0ddbb49447648b149c11277163d23130bfeb33b5650a47e2586250d6f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the rest frame of glass with refractive index n and c=1, state the light speed inside the medium.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use invariance of vacuum light speed as the sole rule and set the beam speed to one in every frame despite the medium.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If the glass moves at speed v in the same direction as the beam, write the laboratory speed in terms of the glass-frame speed u' and v.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the working glass-frame speed from the preceding derivation, simplify the expression, and check the corresponding stationary-medium and vacuum-medium limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the simplified laboratory-frame speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the propagation direction using the sign convention established earlier and verify that the result is consistent with the physical setting.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the speed and its two limiting cases.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

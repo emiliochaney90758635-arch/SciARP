@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can report pvalue after T1–T2 correctly construct the Shapiro vector.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T3 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "821ed7ae5dfa9cec8395c6b427592448540ae70839bff9070c5032edf70d3e0c",
+  "strict_non2x_original_semantic_condition_id": "a9247287a08ea46280134e25893951c72befb87aa97298e83266190c57d46897",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T2 naturally to form the test vector from the identified KD records except the maximum NeuN value 233.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

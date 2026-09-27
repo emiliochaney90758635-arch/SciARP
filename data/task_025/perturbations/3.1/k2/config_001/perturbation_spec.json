@@ -1,0 +1,33 @@
+{
+  "task_id": "025-capsule007",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Contradicts table closure.",
+    "Contradicts the degrees-of-freedom formula."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "c52098de1cc04f896cb6ff9e60660cd78b04593f4b7b9aa8e726f3e726e0971c",
+  "configured_evidence_sha256": "c52098de1cc04f896cb6ff9e60660cd78b04593f4b7b9aa8e726f3e726e0971c",
+  "evidence_unchanged": true
+}

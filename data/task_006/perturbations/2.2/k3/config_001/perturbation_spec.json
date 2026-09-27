@@ -1,0 +1,28 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Existing first literature claim reports 1,042 B-only genes.",
+    "Existing second literature claim reports 931 B-only genes.",
+    "Third attributed source reports 888 B-only stable loci."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first literature claim"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second literature claim"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third literature claim"
+    }
+  ],
+  "evidence_change_permitted": true
+}

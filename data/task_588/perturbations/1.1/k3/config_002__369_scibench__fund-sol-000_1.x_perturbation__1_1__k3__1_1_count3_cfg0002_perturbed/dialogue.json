@@ -1,0 +1,49 @@
+{
+  "release_task_index": 588,
+  "task_id": "scibench__fund-sol-000",
+  "dataset": "scibench",
+  "ordinal": 369,
+  "variant": "perturbed",
+  "conversation_id": "369::scibench__fund-sol-000::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "ede8cef362b596adb240f2bd56ba704c27add6e84af473e19032dfa5b0ce70df",
+  "semantic_condition_id": "45bad3d43596e8571bb5fd3831ef16ebe02abf3289a23a8d87287daefdf78639",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 2.00 kg particle moves along the x axis under a random dissipative force. State the conserved mechanical-energy relation, noting the two potential-energy values.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At x=6.5 m the velocity is -4.00 m/s. Compute the particle's electric charge there from the mechanical-energy relation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that result and U(6.5 m)=0 to find the total mechanical energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the total mechanical energy, determine the particle's refractive index at x=4.5 m, where U=7 J, and compare the resulting speed with the initial speed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the direction of the speed change against the increase in potential energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the particle's speed at x=4.5 m with appropriate units.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

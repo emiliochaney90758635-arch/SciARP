@@ -1,0 +1,54 @@
+{
+  "release_task_index": 473,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2770",
+  "dataset": "olympiadbench",
+  "ordinal": 420,
+  "variant": "perturbed",
+  "conversation_id": "420::olympiadbench__OE_TO_maths_en_COMP_2770::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "2f833114017ef4a70cfb215bc9e251ec337cb0a5a6e5bae83189ec69bcd2f30d",
+  "semantic_condition_id": "84826524cd8e63c801e8588f70b0c962ce6f6156bd99fcb7166173539de6a5d1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let w=sqrt(5)i. If -142+333w=(a+bw)(c+dw), expand the product and equate the norms of the two factors. What two equations relating a, b, c, and d result?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For N(x+yw)=x^2+5y^2, compute N(-142+333w) and factor the result into primes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that prime factorization to list the candidate values of N(a+bw), allowing the two factors to be interchanged. Require both a candidate norm and its complementary factor to have the form x^2+5y^2 with positive integers x and y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the coefficient equations and the norm of a+bw, solve the norm equations for c and d in terms of a and b.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For each candidate norm, determine the positive pairs (a,b), then use coprimality and positivity, rather than divisibility and positivity, to decide whether c and d are positive integers. Use d=(333a+142b)/(a^2+5b^2).",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "One listed factorization uses (a,b)=(24,1) but gives a complementary factor with a negative real coefficient. Explain why that case fails the all-positive requirement and identify the admissible positive-coefficient factorization.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the admissible factorization, compare a+b with c+d and report the lesser value.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

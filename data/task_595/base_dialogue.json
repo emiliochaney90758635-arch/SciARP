@@ -1,0 +1,54 @@
+{
+  "release_task_index": 595,
+  "task_id": "scibench__matter-sol-000",
+  "dataset": "scibench",
+  "ordinal": 376,
+  "variant": "clean",
+  "conversation_id": "376::scibench__matter-sol-000::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "add1a1eee96036c2c88ef27335ff98634dcab70e77bc2f3f8d67b96e4b297e34",
+  "semantic_condition_id": "44bb6f3a345da3edf8fe9c4c359f5e05a21dfd673ab71e5818677c46b8781a9b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the photoelectric energy balance connecting photon energy, work function, and electron kinetic energy for this metal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the energy of a 305 nm photon using hc=1240 eV nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Subtract the measured 1.77 eV kinetic energy to determine the work function.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the threshold condition at the maximum wavelength that can still eject an electron.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate that maximum wavelength and compare it with 305 nm.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and explain physically why the threshold wavelength is longer than the incident wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the maximum wavelength.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

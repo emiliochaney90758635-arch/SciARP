@@ -1,0 +1,54 @@
+{
+  "release_task_index": 266,
+  "task_id": "gpqa__recgI6tUQ7RLJRWGx",
+  "dataset": "gpqa",
+  "ordinal": 134,
+  "variant": "perturbed",
+  "conversation_id": "134::gpqa__recgI6tUQ7RLJRWGx::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "ac914c2effc18e97bbf60b77473a35278e4d0734cbbca100dd1edcfe454b4da2",
+  "semantic_condition_id": "1b4d57fbe7861a9f6c30a1dccfaa87bb9e638ba8804b368eae4b7863c049a9bf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a hydrogen electron in a magnetic field B parallel to the z-axis, write the orbital paramagnetic Zeeman term and its expectation value for orbital magnetic quantum number m.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Estimate the paramagnetic coupling energy for B=1 second and |m| of order one, using mu_B=9.274e-24 J/T=5.788e-5 eV/T.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the transition energy associated with a 0.4861-second hydrogen photon using Delta E=hc/lambda.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check that the two physical inputs have valid units before forming the ratio of the first energy scale to the second. If either input is invalid or missing, leave the ratio symbolic and identify the problem.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the ratio when it is validly obtained; otherwise state what field or wavelength information is needed for a comparison.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Find the field at which the first coupling scale would match the second energy scale, using the relation implied by the quantities established above; otherwise retain the comparison symbolically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the numerical or symbolic comparison from the preceding step and identify any input still required.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

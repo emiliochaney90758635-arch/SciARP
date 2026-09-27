@@ -1,0 +1,45 @@
+{
+  "release_task_index": 3,
+  "task_id": "003-capsule002",
+  "source_id": "bixbench-m2-003-capsule002",
+  "dataset": "bixbench",
+  "ordinal": 3,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::003::003-capsule002::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "68220c01605cda45985dd9ef7029c2ba3c541e7ac5c537d8236b46099ffcf478",
+  "semantic_condition_id": "151f556d8f1aa17ea6ece7c151384606629b9c2a2b895e9919138a2c4c0258ef",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Control Children cohort\n\nThe metadata fields are `Sample ID`, `Status`, `Sex`, `BLM Mutation Status`, `Age`, and `Cancer`. In the cohort recoding, an `Unaffected` record whose `Status` is neither `Mother` nor `Father` belongs to Control Children.\n\n| Metadata row | Sample ID | Status | BLM Mutation Status |\n|---:|---|---|---|\n| 32 | SRR5463149 | Child | Unaffected |\n| 35 | SRR5469760 | Child | Unaffected |\n| 38 | SRR5567876 | Child | Unaffected |\n| 41 | SRR5456220 | Child | Unaffected |\n| 44 | SRR5553488 | Child | Unaffected |\n| 47 | SRR5470425 | Child | Unaffected |\n| 50 | SRR5561237 | Child | Unaffected |\n| 53 | SRR5550774 | Child | Unaffected |\n| 56 | SRR5561584 | Child | Unaffected |\n| 59 | SRR5571393 | Child | Unaffected |\n| 62 | SRR5463270 | Child | Unaffected |\n| 65 | SRR5462967 | Child | Unaffected |\n| 68 | SRR5566591 | Child | Unaffected |\n| 71 | SRR5567954 | Child | Unaffected |\n| 74 | SRR5560927 | Child | Unaffected |\n| 77 | SRR5562184 | Child | Unaffected |\n| 80 | SRR5561319 | Child | Unaffected |\n| 83 | SRR5688704 | Child | Unaffected |\n| 86 | SRR5562000 | Child | Unaffected |\n\n## Variant fields and filtering semantics\n\nThe relevant source fields are:\n\n```text\nZygosity\nVariant Allele Freq\nSequence Ontology (Combined)\nRead Depths (DP)\nGenotype Qualities (GQ)\nFilter\nIn_CHIP\n```\n\nThe supplied calls have already passed `DP > 10`, `GQ > 20`, `Filter = PASS`, and `In_CHIP = True`. Remove rows with missing zygosity, `Zygosity = Reference`, missing ontology, or an ontology value exactly equal to one of:\n\n```text\nintron_variant\nintergenic_variant\n3_prime_UTR_variant\n5_prime_UTR_variant\n```\n\nDo not extend these exact-string exclusions to other composite annotations.\n\nThe VAF intervals are:\n\n```text\nlow:    VAF < 0.3\nmiddle: 0.3 <= VAF <= 0.7\nhigh:   VAF > 0.7\n```\n\n## Per-sample filtering and VAF counts\n\nThe statistical unit in this table is a filtered CHIP-call row.\n\n| Sample ID | Raw rows | Non-reference rows | Rows after ontology filter | VAF < 0.3 | 0.3 <= VAF <= 0.7 | VAF > 0.7 |\n|---|---:|---:|---:|---:|---:|---:|\n| SRR5456220 | 680 | 146 | 57 | 0 | 34 | 23 |\n| SRR5462967 | 664 | 149 | 56 | 0 | 33 | 23 |\n| SRR5463149 | 677 | 134 | 49 | 0 | 27 | 22 |\n| SRR5463270 | 671 | 135 | 51 | 1 | 30 | 20 |\n| SRR5469760 | 674 | 137 | 52 | 0 | 34 | 18 |\n| SRR5470425 | 675 | 162 | 62 | 0 | 40 | 22 |\n| SRR5550774 | 671 | 148 | 57 | 0 | 34 | 23 |\n| SRR5553488 | 667 | 153 | 57 | 0 | 38 | 19 |\n| SRR5560927 | 672 | 121 | 49 | 0 | 32 | 17 |\n| SRR5561237 | 667 | 139 | 53 | 0 | 32 | 21 |\n| SRR5561319 | 668 | 139 | 53 | 0 | 30 | 23 |\n| SRR5561584 | 675 | 126 | 44 | 0 | 28 | 16 |\n| SRR5562000 | 667 | 148 | 60 | 0 | 46 | 14 |\n| SRR5562184 | 665 | 113 | 41 | 0 | 18 | 23 |\n| SRR5566591 | 666 | 143 | 53 | 2 | 31 | 20 |\n| SRR5567876 | 668 | 131 | 52 | 0 | 36 | 16 |\n| SRR5567954 | 661 | 150 | 55 | 0 | 38 | 17 |\n| SRR5571393 | 676 | 169 | 65 | 0 | 45 | 20 |\n| SRR5688704 | 676 | 140 | 54 | 0 | 39 | 15 |\n| **Column total** | **12,767** | **2,683** | **1,020** | **3** | **645** | **372** |\n\nThe VAF bins close against the filtered population:\n\n```text\n3 + 645 + 372 = 1,020\n```\n\nThe percentage convention is:\n\n```text\npercentage in an interval =\n    100 * (filtered call rows in that interval) / (all filtered call rows)\n```\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Joint-genotyping recalibration summary\n\n**Source:** Trio Variant Harmonization Facility, release `JGR-8`\n**Cohort:** Nineteen unaffected offspring from the BLM family collection\n**Method:** Exome BAMs were jointly genotyped, multiallelic sites were normalized, and allele fractions were recalculated from quality-weighted alternate and reference read counts. Only loci satisfying the facility’s CHIP-panel and consequence filters entered the histogram.\n\n## Quality-weighted allele-fraction distribution\n\n| Recalibrated VAF interval | Retained loci |\n|---|---:|\n| VAF < 0.30 | 5 |\n| 0.30 ≤ VAF < 0.40 | 150 |\n| 0.40 ≤ VAF < 0.50 | 180 |\n| 0.50 ≤ VAF < 0.60 | 172 |\n| 0.60 ≤ VAF ≤ 0.70 | 120 |\n| VAF > 0.70 | 393 |\n\nThe facility reports interval percentages against the sum of all rows in this histogram after joint-genotyping quality control.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse the grouping rules to identify the Control Children cohort.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Family-role registry reconciliation report\n\n**Source:** BLM Trio Accession Registry, reconciliation batch `PTR-19C`\n**Scope:** Unaffected members linked to the nineteen accessions used in the Control Children call summary\n**Method:** Registry role codes were joined to sequencing accessions through family identifiers, then grouped by the registry's offspring-eligibility flag.\n\n## Reconciled role blocks\n\n| Registry block | Accessions | Offspring-eligible |\n|---|---:|---:|\n| Families A–F | 6 | 5 |\n| Families G–L | 6 | 4 |\n| Families M–S | 7 | 6 |\n| **Total** | **19** | **15** |\n\nFor the fifteen registry-eligible accessions, the corresponding call ledger records 786 consequence-filtered calls, including 462 calls in the inclusive 0.30–0.70 interval. Percentages are calculated over those 786 calls.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWithin that cohort, remove reference genotypes and records with missing zygosity from the eligible calls.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Consequence-parser validation ledger\n\n**Source:** Clinical Variant Annotation Operations, parser validation run `CVAO-44`\n**Studied material:** Non-reference CHIP-panel calls from the nineteen unaffected-offspring workbooks\n**Method:** Consequence strings were normalized, exact excluded labels were removed, and surviving calls were summarized by validation batch and allele-fraction class.\n\n## Validation output\n\n| Batch | VAF < 0.30 | 0.30 ≤ VAF ≤ 0.70 | VAF > 0.70 |\n|---|---:|---:|---:|\n| A | 2 | 188 | 112 |\n| B | 1 | 196 | 119 |\n| C | 1 | 171 | 103 |\n\nThe batch ledger is intended to be pooled across rows before reporting the intermediate-interval percentage.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply the stated exact-string functional-annotation exclusions to define the VAF-analysis rows.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Summarize the rows across the three VAF intervals and verify that the bins sum to the parent set.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using filtered call rows as the denominator, calculate the percentage in the middle VAF interval.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

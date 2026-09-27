@@ -1,0 +1,36 @@
+{
+  "task_id": "018-capsule006",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits the workbook-matching rule.",
+    "Omits substring versus exact-match semantics."
+  ],
+  "injection_turns": [
+    "T1",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "0eac3b44eb921ef361850859408972365eeae279b88679fdba238f70177c0b03",
+  "configured_evidence_sha256": "0eac3b44eb921ef361850859408972365eeae279b88679fdba238f70177c0b03",
+  "evidence_unchanged": true
+}

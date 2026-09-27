@@ -1,0 +1,35 @@
+{
+  "release_task_index": 108,
+  "task_id": "108-capsule031",
+  "source_id": "bix-46-q4",
+  "dataset": "bixbench",
+  "ordinal": 108,
+  "variant": "perturbed",
+  "conversation_id": "108::108-capsule031::3.3::k3::perturbed::lane_d",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "2a04b495ba18c4f9ea850b500133c389ad951e00403e9923d9406a6334a963c3",
+  "semantic_condition_id": "e6dfafced362a0ee7ef2da32f3d33f24b5ade3e9d2fcd16622f6b0f580cc4dc4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Target-locus annotation\n\nThe PA14 annotation has unique locus tags. The target record is:\n\n| Locus Tag | Gene Name | Product Name |\n|---|---|---|\n| PA14_35160 | missing | phenazine-utilizing monooxygenase A |\n\nWhen `Gene Name` is missing, the archived join fills the readable gene name\nwith the locus tag itself. The product annotation supplies the\nphenazine-pathway context.\n\n## Archived mutant-comparison row\n\n`res_1vs97` represents strain #97 (ΔrhlI) relative to wild type strain #1 and\nbecomes the `.x` columns after joining. The `.y` columns belong to ΔlasI/wt and\nare not the requested comparison.\n\n| GeneID | `log2FoldChange.x` (ΔrhlI/wt) | `padj.x` | `log2FoldChange.y` (ΔlasI/wt) | `padj.y` |\n|---|---:|---:|---:|---:|\n| PA14_35160 | -4.0991135 | 4.679929e-80 | 0.62501997 | 0.006443658 |\n\nRead the ΔrhlI/wt field and report its log2 fold change to two decimal places.\nRetain a trailing zero when required by that precision.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse the Product Name as the gene identifier whenever Gene Name is missing.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Choose the mutant column whose fold change is closest to zero.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Exponentiate that value with 2^x and report to two decimals.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

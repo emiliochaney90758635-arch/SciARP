@@ -3,8 +3,7 @@
 SciARP is a benchmark for evaluating the robustness of scientific agents in
 multi-turn interactions. This compact release contains **621 scientific
 tasks**, one clean dialogue per task, and **14,452 perturbed dialogues** across
-the benchmark's perturbation families. `data/dataset.jsonl` therefore contains
-**15,073 dialogue records**.
+the benchmark's perturbation families: **15,073 dialogue records** in total.
 
 This repository intentionally contains only the components needed to inspect
 the dataset, reproduce semantic annotation, and compute the paper-aligned
@@ -17,8 +16,10 @@ SciARP/
 ├── README.md
 ├── LICENSE
 ├── data/
-│   ├── dataset.jsonl
-│   └── README.md
+│   ├── README.md
+│   ├── task_001/
+│   ├── task_002/
+│   └── ...                 # 621 task folders in total
 ├── annotation/
 │   ├── README.md
 │   ├── prompts/
@@ -33,11 +34,10 @@ SciARP/
 
 ## Dataset
 
-Each JSONL row is one clean or perturbed multi-turn dialogue. Rows belonging
-to the same `task_id` share the same underlying task. Clean rows have
-`variant="clean"`; perturbed rows record their subclass and injection count.
-The public task index is contiguous from 1 to 621, while
-`source_release_task_index` preserves the index in the 632-task working set.
+Each `data/task_NNN/` directory contains the clean dialogue, evidence when
+applicable, and all released perturbation configurations for one scientific
+task. The task numbers preserve the original 632-task working-release indices;
+the 11 excluded task numbers are intentionally absent.
 
 See [data/README.md](data/README.md) for the schema and exclusion record.
 
@@ -64,16 +64,7 @@ python evaluation/compute_metrics.py path/to/annotations --output metrics.json
 The exact definition is in
 [evaluation/metric_definitions.md](evaluation/metric_definitions.md).
 
-## Integrity
-
-SHA-256 of `data/dataset.jsonl`:
-
-```text
-392be98b361d829a420b289d4c71d12b9b5cc07436a519c31ec68231b861ad40
-```
-
 ## Citation
 
 Please cite the accompanying SciARP paper. Bibliographic metadata can be added
 here when the archival version is available.
-

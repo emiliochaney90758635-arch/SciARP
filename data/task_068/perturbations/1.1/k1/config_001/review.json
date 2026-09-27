@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Smallest adjusted p-value can be redefined as largest Combined Score.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "dff855932bc3d7b0797e58c9acdef8d6c4f22068f23520d016fa3927bd01e405",
+  "strict_non2x_original_semantic_condition_id": "9f03acf90879aac59c89e53c18e6f9679716652d56c758337e412765ce3cd707",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Redefine smallest adjusted p-value as the largest Overlap numerator, which is visible for every row; retain all ties.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

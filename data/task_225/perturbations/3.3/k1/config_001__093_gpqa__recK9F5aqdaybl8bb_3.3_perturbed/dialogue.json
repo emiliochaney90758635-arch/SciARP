@@ -1,0 +1,69 @@
+{
+  "release_task_index": 225,
+  "task_id": "gpqa__recK9F5aqdaybl8bb",
+  "dataset": "gpqa",
+  "ordinal": 93,
+  "variant": "perturbed",
+  "conversation_id": "093::gpqa__recK9F5aqdaybl8bb::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2ea8521bb5924db659f08466a28504a811d5652735e802cad6099c92fa72b5dc",
+  "semantic_condition_id": "e7500362d656806b2ff4c499b706a972cfbeab9744908d406a1e9f1874d3e854",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Determine product A from 1,1-dimethoxyethan-1-amine and but-3-en-2-ol under acid and heat, and identify the acid-promoted transformation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine product B from thermal rearrangement of (3R,4S)-3,4-dimethylhexa-1,5-diyne, including alkene retention and stereochemistry.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine product C from heating 2-((vinyloxy)methyl)but-1-ene and identify the sigmatropic rearrangement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use a reductive-workup Claisen method as the sole mapping, converting the initially formed aldehyde to a primary alcohol.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that mapping under heat only and identify the unreduced aldehyde product C.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the complete names of A, B, and C.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how unspecified acid identity, water activity, concentration, and equilibration time qualify exclusivity of A without changing the idealized assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the product set as the best-supported idealized outcome with calibrated confidence.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check carbon skeletons, the thermal stereochemistry of B, and the absence of a reductive workup for C.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final product names with the condition qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

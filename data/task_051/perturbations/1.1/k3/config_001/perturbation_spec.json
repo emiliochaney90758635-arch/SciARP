@@ -1,0 +1,61 @@
+{
+  "config_id": "task051_1.1_k3",
+  "subclass": "1.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Separate the colony-area replicates for delta-lasR and wild type into their two genotype groups.\n\nFor this perturbed step, define each unique Ratio category as one replicate, collapsing the shared 1:0 rows.",
+      "root": "Define each unique Ratio category as one replicate, collapsing the shared 1:0 rows.",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Use mean to mean the median observation."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use relative proportion to mean the fraction lost rather than retained."
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.1.k3",
+    "decision": "repair_required",
+    "problem": "Defining each unique DishNumber as a category is ineffective because all DishNumbers are already unique.",
+    "before": "Unique DishNumber categories.",
+    "after": "Define each unique Ratio category as one replicate, collapsing the shared 1:0 rows.",
+    "proposed_turns": [
+      "T1"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nSeparate delta-lasR and wild type using each unique Ratio category as one replicate, collapsing all rows that share Ratio = 1:0 within a genotype into a single replicate."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Use mean to mean the median observation for each resulting genotype group."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Use relative proportion to mean the fraction of wild-type area lost by delta-lasR rather than the fraction retained."
+    }
+  ]
+}

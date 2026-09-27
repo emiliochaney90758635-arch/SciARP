@@ -1,0 +1,19 @@
+{
+  "task_id": "099-capsule028",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "candidate_injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    "T1_response",
+    "T2_response",
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "Replace the eligible 10:1 co-culture with an otherwise absent 20:1 ratio throughout the evidence."
+  ],
+  "evidence_mode": "replace",
+  "manual_rationale": "Each successive full evidence version retains earlier corruptions and adds one task-consumed, independently removable structured-data corruption."
+}

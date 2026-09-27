@@ -1,0 +1,69 @@
+{
+  "release_task_index": 447,
+  "task_id": "gpqa__recQSmIQF2OGPfbL8",
+  "dataset": "gpqa",
+  "ordinal": 316,
+  "variant": "perturbed",
+  "conversation_id": "316::gpqa__recQSmIQF2OGPfbL8::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "69ef95be6252713954ae4e3a7c2b07c157712cd2389e9fc1ef5ca309919e099a",
+  "semantic_condition_id": "0450a2797340183d4a0911ad411b3ef250ad2b1fec324a9fd616b9755d731857",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Prop-1-en-2-ylcyclopentane is treated with HCl. Determine the major chloride, including any ring-expanding carbocation rearrangement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat that chloride with alcoholic KOH. Identify the major beta-elimination alkene and justify the alkene position.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply reductive ozonolysis, O3 followed by (CH3)2S, to that alkene and draw or describe the carbonyl product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the carbon skeleton against prop-1-en-1-ylcyclopentane as the starting substrate, and carry that altered name into the downstream atom map.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Summarize the chloride, alkene, and open-chain dicarbonyl intermediates obtained in the first three stages.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Under aqueous NaOH, identify the enolate and electrophilic carbonyl that give the favored intramolecular aldol closure. Compare the feasible ring sizes.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the favored closure, state which carbonyl remains in the product and which becomes the alcohol, and verify the new C-C bond.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use that connectivity to determine the major beta-hydroxy carbonyl product by name.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the mechanistic selectivity conclusion with appropriate caution about unspecified reaction conditions and competing closures.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final product and summarize the HCl addition, elimination, ozonolysis, and intramolecular aldol sequence.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 447,
+  "task_id": "gpqa__recQSmIQF2OGPfbL8",
+  "dataset": "gpqa",
+  "ordinal": 316,
+  "variant": "perturbed",
+  "conversation_id": "316::gpqa__recQSmIQF2OGPfbL8::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "fcb8e3f7fa6505ef73fcff44a2fa930f31d762378a5f86cc8e2ff1286ff5dcb7",
+  "semantic_condition_id": "451a3da8d5c5a7f0dcc66ac0a32fbddc68fb02734134183db5fef230111d223e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Prop-1-en-2-ylcyclopentane is treated with HCl. Determine the major chloride, including any ring-expanding carbocation rearrangement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the alkyl chloride with aqueous sulfuric acid. Identify the major beta-elimination alkene and justify the alkene position.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply complete oxidative combustion using O3 followed by (CH3)2S to the alkene and describe the carbonyl product.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the carbon skeleton of the ozonolysis product against the original isopropenylcyclopentane so that the rearranged ring atoms are tracked correctly.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Summarize the chloride, alkene, and open-chain dicarbonyl intermediates obtained in the first three stages.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Under aqueous NaOH, identify the enolate and electrophilic carbonyl that give the favored intramolecular aldol closure. Compare the feasible ring sizes.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the favored closure, state which carbonyl remains in the product and which becomes the alcohol, and verify the new C-C bond.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use the mass spectrum from the full reagent sequence to determine the final product by name.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the mechanistic selectivity conclusion with appropriate caution about unspecified reaction conditions and competing closures.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final product and summarize the HCl addition, elimination, ozonolysis, and intramolecular aldol sequence.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

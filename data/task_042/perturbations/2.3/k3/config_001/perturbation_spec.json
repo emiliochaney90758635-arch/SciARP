@@ -1,0 +1,44 @@
+{
+  "config_id": "task042_2.3_k3",
+  "subclass": "2.3",
+  "k": 3,
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "P185 ontology corrupted from missense to synonymous",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "P500 VAF corrupted to 0.399145",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "P184 VAF corrupted to negative 0.247387",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

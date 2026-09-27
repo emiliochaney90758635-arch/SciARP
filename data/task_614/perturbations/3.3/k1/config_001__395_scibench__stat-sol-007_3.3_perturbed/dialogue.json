@@ -1,0 +1,49 @@
+{
+  "release_task_index": 614,
+  "task_id": "scibench__stat-sol-007",
+  "dataset": "scibench",
+  "ordinal": 395,
+  "variant": "perturbed",
+  "conversation_id": "395::scibench__stat-sol-007::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ff96d45fba4fdfc2065a6af26c3c6470c5b6dde199c6f95f8e88f7d29226a546",
+  "semantic_condition_id": "8c00b0ccea0e12a9f1a5ee146021fa14a964476ea1ef0d117d78796355f8960b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Count the total outcomes as ordered five-card sequences while retaining favorable outcomes as unordered hands.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many ways can exactly three of the four kings be selected?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count the favorable hands containing exactly three kings and exactly two of the four queens.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the probability as the favorable-hand count divided by the total-hand count.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify that the favorable and total counts use the same unordered five-card sample space and that the favorable count enforces exactly three kings and two queens.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact ratio and its decimal value.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

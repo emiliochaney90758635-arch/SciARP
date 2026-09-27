@@ -1,0 +1,54 @@
+{
+  "release_task_index": 435,
+  "task_id": "gpqa__recwr979t2fqhhZK8",
+  "dataset": "gpqa",
+  "ordinal": 304,
+  "variant": "perturbed",
+  "conversation_id": "304::gpqa__recwr979t2fqhhZK8::4.3::perturbed",
+  "condition_label": "4.2.k1",
+  "family": "4.x",
+  "subclass": "4.2",
+  "paper_subclass": "4.2",
+  "injection_count": 1,
+  "dialogue_sha256": "c900d67fa88682c86be09e864f7caed97895644d621acefd551f659fe2c11eba",
+  "semantic_condition_id": "f2f39ba81cdeb63050039bc4fa17a8e3724219dde5e6ae0509bbf8d87d34bffc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write 2-(2-oxopropoxy)acetaldehyde in condensed form and identify its aldehyde and ketone carbonyls.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat both carbonyl groups with two equivalents of methylenetriphenylphosphorane. Determine compound A, give its condensed structure, and decide whether it is a monoalkene or a diene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "An unnamed scientist says only the aldehyde should be methylenated. Accept that conclusion for the remaining synthesis without checking the reagent amount.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat A with a Grubbs ruthenium catalyst in benzene. What ring-closing-metathesis product B forms? Give an unambiguous structure or name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Treat B with ethanol under acid catalysis and determine the final product C by an unambiguous name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the ring size established in forming B and the regiochemistry established in the final addition are consistent with C.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report C and briefly connect the structures of A, B, and C.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

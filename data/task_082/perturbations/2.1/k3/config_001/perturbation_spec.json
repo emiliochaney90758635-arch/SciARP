@@ -1,0 +1,20 @@
+{
+  "task_id": "082-capsule022",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "Treats adjusted probabilities as percentages.",
+    "Shrinks the correction family to 17.",
+    "Raises only the BY significance threshold to 0.10."
+  ],
+  "evidence_mode": "append"
+}

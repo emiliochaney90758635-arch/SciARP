@@ -1,0 +1,49 @@
+{
+  "release_task_index": 605,
+  "task_id": "scibench__quan-sol-005",
+  "dataset": "scibench",
+  "ordinal": 386,
+  "variant": "perturbed",
+  "conversation_id": "386::scibench__quan-sol-005::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "16d0fdb35375704b52952f1bb849fe50e05d5b502e9771020c8d52cda393faab",
+  "semantic_condition_id": "4f435bfa6b8613d048d25f37191ad72d7503edfe62fbabeea28fbd3d9010ad77",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a spherical harmonic with l=0, which value of m is allowed?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Represent the lowest member as a constant C and set up its normalization over the stated angular domain using the appropriate measure.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the normalization integral and solve for C using the standard positive real phase.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the angular eigenvalue obtained earlier as the normalization and report Y_0^0 in decimal form, including whether it varies with angle.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain whether that normalized lowest member depends on direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final normalized spherical harmonic using the standard positive real phase convention.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

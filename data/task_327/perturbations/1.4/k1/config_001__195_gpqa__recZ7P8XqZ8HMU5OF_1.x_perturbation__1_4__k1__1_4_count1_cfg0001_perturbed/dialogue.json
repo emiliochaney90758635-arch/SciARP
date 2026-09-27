@@ -1,0 +1,49 @@
+{
+  "release_task_index": 327,
+  "task_id": "gpqa__recZ7P8XqZ8HMU5OF",
+  "dataset": "gpqa",
+  "ordinal": 195,
+  "variant": "perturbed",
+  "conversation_id": "195::gpqa__recZ7P8XqZ8HMU5OF::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "f23555e25d2baab2f62d720c94c8e3df7425a3a442452a0ffff75e922e3750c3",
+  "semantic_condition_id": "ce9d377e479c14ccdbfabb282f0c0fb8e749eec8432c9d8c5a761f21622cab77",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=sqrt(1/15)|phi_1>+sqrt(2/15)|phi_2>+(2/sqrt(15))|phi_3>+(4/sqrt(15))|phi_4> in an orthonormal basis, calculate each coefficient magnitude squared and <psi|psi>.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List four energy eigenvalues for n=1,2,3,4 without specifying which basis state has each eigenvalue.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those weights and eigenvalues to calculate the unnormalized numerator <psi|H|psi>, using the norm found above for the subsequent expectation value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Divide by the state norm to obtain the average energy measured over repeated trials.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by normalizing the coefficient probabilities and taking their energy-weighted sum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the average energy in units of E_0.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

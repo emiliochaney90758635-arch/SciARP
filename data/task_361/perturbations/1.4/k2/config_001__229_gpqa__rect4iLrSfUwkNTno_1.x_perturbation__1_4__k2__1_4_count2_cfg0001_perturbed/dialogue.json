@@ -1,0 +1,49 @@
+{
+  "release_task_index": 361,
+  "task_id": "gpqa__rect4iLrSfUwkNTno",
+  "dataset": "gpqa",
+  "ordinal": 229,
+  "variant": "perturbed",
+  "conversation_id": "229::gpqa__rect4iLrSfUwkNTno::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "c0d73e08f1538a54fed0500a3d10c103a70bb0a076b7bd157d6b949c5694c8e6",
+  "semantic_condition_id": "5e711b558bd918ada1c20ad437d9795161e3b77b0d07688c7449cf9cdd4ae3e5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Using hbar*c=1.97327e-16 GeV m but no supplied resonance width, state what can and cannot be inferred about the proper decay length.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given only the mass m_X=1.2 GeV and no total energy, state what can and cannot be inferred about momentum and beta*gamma.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use L=(hbar*c/Gamma_X)(beta*gamma) to calculate the laboratory mean decay distance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the internal consistency of the width, boost, and distance with that formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the powers of ten and distinguish the proper decay length from the boosted laboratory distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the laboratory mean decay distance together with the width conversion and boost factor.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

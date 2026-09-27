@@ -1,0 +1,54 @@
+{
+  "release_task_index": 473,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2770",
+  "dataset": "olympiadbench",
+  "ordinal": 420,
+  "variant": "clean",
+  "conversation_id": "420::olympiadbench__OE_TO_maths_en_COMP_2770::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "9fb27555f1c8c505b703135b82e245e68937c00c143070aeabce0d1233c0bc8f",
+  "semantic_condition_id": "7280eb2ae32d131e1f6e4366087d2fbe9e97420005c47f6e35adc35bfe64f272",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let w=sqrt(5)i. If -142+333w=(a+bw)(c+dw), expand the product and equate real and w coefficients. What two Diophantine equations result?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For N(x+yw)=x^2+5y^2, compute N(-142+333w) and factor the result into primes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that prime factorization to list the candidate values of N(a+bw), allowing the two factors to be interchanged. Require both a candidate norm and its complementary factor to have the form x^2+5y^2 with positive integers x and y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Divide -142+333w by a+bw and derive explicit formulas for c and d in terms of a and b and N(a+bw).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For each candidate norm, determine the positive pairs (a,b), then apply the quotient formulas to test whether c and d are also positive integers.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "One listed factorization uses (a,b)=(24,1) but gives a complementary factor with a negative real coefficient. Explain why that case fails the all-positive requirement and identify the admissible positive-coefficient factorization.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the admissible factorization, compare a+b with c+d and report the lesser value.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

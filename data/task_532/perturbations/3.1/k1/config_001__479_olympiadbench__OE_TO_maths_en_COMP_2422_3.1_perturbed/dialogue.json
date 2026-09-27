@@ -1,0 +1,54 @@
+{
+  "release_task_index": 532,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2422",
+  "dataset": "olympiadbench",
+  "ordinal": 479,
+  "variant": "perturbed",
+  "conversation_id": "479::olympiadbench__OE_TO_maths_en_COMP_2422::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e73f12f22b8dbc4271a225788249cdf4b68b355ad0b0423975a3bcc98ee7493c",
+  "semantic_condition_id": "56c7ee34726d6b8420da5ef753f9a56cdb5a03b5e0a451fa05f654e7dc9cf646",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Dan was born on April 6 in a perfect-square year between 1300 and 1400, and Steve was born on April 6 in a perfect-square year between 1400 and 1500. Determine their birth years.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let `Y` be a year in which both are alive. Since the date is April 7, write Dan's and Steve's ages in terms of `Y` and their birth years.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If both ages are perfect squares, set up their square-age equation using a fixed age difference of 65 years.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Each man lived for 110 years. List the positive perfect-square ages that can occur within that lifespan.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the fixed age difference to identify the only possible pair of square ages, and assign the larger age to the older man.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the age ordering against the birth years and verify that both assigned ages are compatible with the 110-year lifespans.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine that calendar year and confirm that both men were still alive on April 7.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

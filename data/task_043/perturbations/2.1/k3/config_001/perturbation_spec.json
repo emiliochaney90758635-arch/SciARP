@@ -1,0 +1,44 @@
+{
+  "config_id": "task043_2.1_k3",
+  "subclass": "2.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T5",
+    "T6"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T5",
+    "T6"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "swaps group mapping",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "uses equal-sample weighting",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "uses reverse contrast direction",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T6"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

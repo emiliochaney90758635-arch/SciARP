@@ -1,0 +1,59 @@
+{
+  "release_task_index": 437,
+  "task_id": "gpqa__recz3MfYHPRhsEQkW",
+  "dataset": "gpqa",
+  "ordinal": 306,
+  "variant": "perturbed",
+  "conversation_id": "306::gpqa__recz3MfYHPRhsEQkW::1.x::perturbation__1_2__k2__1_2_count2_cfg0003::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "7f92e9b923baab8a8e0362952d4eef81f02fe6b1aea62c2d3b6803b2f4685351",
+  "semantic_condition_id": "3aa899826ebe43df917e0717889e873cd7bab53e8f9c16668143897b0743f867",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound X has a very broad IR band at 3400-2500 cm^-1, a 1720 cm^-1 carbonyl band, and a broad 1H NMR signal at 10.5 ppm. Which functional group fits all three observations?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use IR bands at 1610 K and 1450 cm^-1 together with the two aromatic 2H doublets to determine the ring substitution pattern.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the ring-bound alkyl group from 2.9 kg (m, 1H), 1.7 ppm (m, 2H), 1.4 ppm (d, 3H), and 0.9 ppm (t, 3H).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the proposed alkyl connectivity against the integrations and the methyl doublet and triplet before using it in the structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the functional-group, ring-substitution, and alkyl assignments to identify X.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "X is treated with red phosphorus and HI. What happens to its carboxylic-acid substituent, and what final product follows?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Does the ring-bound alkyl connectivity change during the transformation just considered? Use that check to distinguish sec-butyl from isobutyl products.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final product in one sentence.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

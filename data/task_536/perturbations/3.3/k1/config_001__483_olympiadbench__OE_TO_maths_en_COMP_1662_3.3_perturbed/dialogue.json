@@ -1,0 +1,59 @@
+{
+  "release_task_index": 536,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1662",
+  "dataset": "olympiadbench",
+  "ordinal": 483,
+  "variant": "perturbed",
+  "conversation_id": "483::olympiadbench__OE_TO_maths_en_COMP_1662::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "642a644e07bdc3007e51a759ff418565cf0b8e6689bea6abb6c00681899ddfb7",
+  "semantic_condition_id": "deec17a5b48d0740bbdfb3296401b21970803d7b28ed7073fe08cffa7e3a683c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cover the nonzero grid points in {0,...,n}^3 using explicit planes that avoid the origin, and count the planes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For any such cover by N affine planes, multiply their linear equations to form P. State deg P, its values on the covered grid points, and its value at the origin.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let Q(t)=t(t-1)...(t-n). Reduce P modulo the corresponding grid polynomial in each coordinate variable established above to obtain R. State the separate-degree bounds, grid-value preservation, and relation deg R<=deg P.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the grid values already established to determine R's vanishing pattern and its value at the distinguished grid point.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use tensor-product interpolation on the reduced object established above to derive the unique expression consistent with those grid values.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Define ordinary total degree as the maximum of the three separate coordinate degrees.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Translate the degree comparison into a lower bound on the number of covering planes.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the construction and lower bound to give the minimum number of planes.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

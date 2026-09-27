@@ -1,0 +1,54 @@
+{
+  "release_task_index": 234,
+  "task_id": "gpqa__recPIzpnuYpB4yvmp",
+  "dataset": "gpqa",
+  "ordinal": 102,
+  "variant": "perturbed",
+  "conversation_id": "102::gpqa__recPIzpnuYpB4yvmp::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "cc8eaa2e6403c5f2fc3109aad14853dfab781ad81d6fe8dfec28a9ca487566ff",
+  "semantic_condition_id": "7e8db7a515d887c10490cbe43724ab7b49e48d1c8dc11d9d453a4f543df7fa82",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Normalize the state vector (-1,2,1)^T. The experiment first measures P and conditions on P=0, then measures Q; the requested event is P=0 followed by Q=-1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For P=[[0,1/sqrt(2),0],[1/sqrt(2),0,1/sqrt(2)],[0,1/sqrt(2),0]], find a normalized eigenvector spanning the P=0 eigenspace.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the specified P=0 eigenspace to calculate Pr(P=0) for the normalized initial state. If P or its eigenspace is unavailable, leave the answer in projector form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the post-P=0 state, calculate Pr(Q=-1|P=0).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the first- and second-measurement probabilities in the order appropriate for a sequential measurement, evaluating the result only if both operators are specified.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result directly from the specified sequence of measurements; if an operator is unavailable, leave it explicit in the expression.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final numerical quantity if it is uniquely determined; otherwise give the formal expression and identify the missing operator or eigenspace.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

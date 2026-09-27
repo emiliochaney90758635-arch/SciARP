@@ -1,0 +1,54 @@
+{
+  "release_task_index": 241,
+  "task_id": "gpqa__recTQMrJxdpZhDCBk",
+  "dataset": "gpqa",
+  "ordinal": 109,
+  "variant": "clean",
+  "conversation_id": "109::gpqa__recTQMrJxdpZhDCBk::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "21e0c19bc22b33ff87836a74126f8661676f73b8d83ef2d90c7a53aed97ba0e8",
+  "semantic_condition_id": "192c0226696bf79fa29f6c037dbcfa981ca2df6a0c6fd751ac12c528a807a736",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A gas-tight vessel contains A, B, and C and yields only water and a hydrogen halide after explosion. Gases A and B have a 1:1 volume ratio, and their densities at the same conditions differ by a factor of 2.11. What oxidizing-gas pair is consistent with those constraints?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The total-volume ratio is (A+B):C=1:2.25. Use the relations established so far to identify C and choose a convenient mole basis, keeping any unresolved identities symbolic.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that mole basis, write the balanced contributions from each oxidizing gas reacting with C to form only the stated products.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sum the products and calculate the mass percentage of the hydrogen halide, using consistent rounded molar masses.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the percentage and identify the product species used in that mass fraction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the elemental balance in the proposed reactions and recompute the total product mass on the same mole basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the gas identities, reaction rationale, and final product mass fraction obtained from the analysis.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

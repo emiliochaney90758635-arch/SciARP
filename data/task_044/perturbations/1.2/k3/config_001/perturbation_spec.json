@@ -1,0 +1,33 @@
+{
+  "config_id": "task044_1.2_k3",
+  "subclass": "1.2",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Define the pooled expression population and what 'all cell lines' includes, but report every matrix value in linear TPM units rather than in log2(TPM+1) units."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Compare the two tails, reading each deterministic bin count as though it were already a percentage of the population."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Calculate g1 while treating m3 as having the same squared-expression unit as m2, and classify the distribution."
+    }
+  ]
+}

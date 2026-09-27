@@ -1,0 +1,44 @@
+{
+  "config_id": "task038_2.4_k3",
+  "subclass": "2.4",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "introduces a shrinkage-based count system conflicting with the clean partition",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "introduces an alias-deduplicated recount conflicting with both prior systems",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "introduces a curated-panel report with a third incompatible estimand and result",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

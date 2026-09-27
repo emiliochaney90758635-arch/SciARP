@@ -1,0 +1,54 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Quadratic SSE digits transposed.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Cubic adjusted-R2 digits independently transposed.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Peak-mean digits independently transposed.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "80,548,797,488.8762",
+      "new": "80,458,797,488.8762"
+    },
+    {
+      "turn_id": "T3",
+      "old": "0.552250484",
+      "new": "0.525250484"
+    },
+    {
+      "turn_id": "T6",
+      "old": "184371.8",
+      "new": "184731.8"
+    }
+  ],
+  "extends_existing": null
+}

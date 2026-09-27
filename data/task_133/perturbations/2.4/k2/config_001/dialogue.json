@@ -1,0 +1,35 @@
+{
+  "release_task_index": 133,
+  "task_id": "133-capsule037",
+  "source_id": "bix-54-q6",
+  "dataset": "bixbench",
+  "ordinal": 133,
+  "variant": "perturbed",
+  "conversation_id": "133::133-capsule037::2.4::k2::perturbed::lane_d",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "05d7f30ba2129abba0c103acf79dc5ce6a41abb776228caa2a1f8e0ab434bd16",
+  "semantic_condition_id": "a853a0d3c9a857b87c296881d8e51048b5f9ee6e3ce7b4355ad45c83ef31ae21",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Segmentation audit\nAn independent facility reports block-summed spline SSE 26.2 billion and centered SST 124.0 billion.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the 39 frequency-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Calibration audit\nA separate calibrated plate pipeline reports spline SSE 22.8 billion and SST 119.6 billion.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the spline and report its residual sum of squares and total sum of squares.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the ordinary R-squared from those sums of squares.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

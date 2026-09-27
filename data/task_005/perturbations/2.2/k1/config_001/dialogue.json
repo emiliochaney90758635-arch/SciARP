@@ -1,0 +1,35 @@
+{
+  "release_task_index": 5,
+  "task_id": "005-capsule003",
+  "source_id": "bix-3-q4",
+  "dataset": "bixbench",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::005-capsule003::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "7e9c931316b60750e65781dda28b18ad11acc145743a3b5047054483aa6aac5e",
+  "semantic_condition_id": "ba4e47c32a8c7632e1934ba36c344934d776a71b78fc3142de9c7820864c6f1b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 766 |\n| D only | 773 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 429 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n\n# Shared tissue-responsive genes in a rounded-expression reconstruction of control-mouse RNA sequencing\n\nOndřej Veselý, Camille Dupré, Noriko Abe, and Jamal Essien\n\n## Abstract\n\nCross-tissue contrasts can reveal a conserved transcriptional component even when only normalized legacy expression values remain available. We reconstructed integer pseudo-counts from archived control-mouse profiles by gene-wise million scaling and rounding, fitted tissue-factor models, and applied a common filter requiring adjusted significance, an absolute log2 fold change greater than one, and mean abundance of at least ten. Gene identifiers retained for final versus baseline blood, dentate gyrus versus baseline blood, and dentate gyrus versus final blood were deduplicated before set analysis. Seven hundred fourteen GeneIDs were present in all three contrasts, representing most of the final-versus-baseline blood set and a compact shared component of the two brain-related contrasts. The overlap supports a reproducible cross-tissue response signature, while the reconstructed inputs limit the analysis to descriptive comparison.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify that all three differential-expression comparisons use the same filters and record each unique-GeneID set size.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express 'shared across all comparisons' as a three-set operation and identify the corresponding mutually exclusive Venn region.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How many GeneIDs lie in that strict three-way intersection?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

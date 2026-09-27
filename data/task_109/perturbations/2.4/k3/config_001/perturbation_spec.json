@@ -1,0 +1,44 @@
+{
+  "task_index": 109,
+  "task_id": "109-capsule032",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "9cebf12fea677f3ca51ccd77415fd8ce5ffd160b490956a112e51435f54d874d",
+  "source_base_evidence_sha256": "4e9d402ed00da9779975557e6066048d0d82d26f83c6e66ae9ad0c0b7e974128",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "QC registry conflicts on high-burden shortlist.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Clinical audit conflicts on age linkage.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Recovery manifest independently conflicts on P533 availability and count.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.4.k2"
+}

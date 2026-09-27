@@ -1,0 +1,28 @@
+{
+  "task_id": "024-capsule007",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article supplies one conflicting chi-square result.",
+    "The second supplies another.",
+    "The third reports X-squared=420.7 with df=4."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first statistic article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second statistic article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "420.7 statistic article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

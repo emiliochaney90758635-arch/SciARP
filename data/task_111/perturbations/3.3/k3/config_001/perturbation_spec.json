@@ -1,0 +1,56 @@
+{
+  "task_index": 111,
+  "task_id": "111-capsule033",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bb59c9cc708419e28581541a53a5ec1f4d221b589e6f22fd6a8dc1a237780bd3",
+  "source_base_evidence_sha256": "5c98d5cee0e6c75bf9445e13daaf34b98f32a4c819d571aeff60dd1fee029aa5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong cohort method.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong filter method.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong join-counting method independently permits duplicates.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Retain both confounded samples.",
+    "T2": "Activate abs(LFC)>0.58 and allow annotation joins to duplicate gene rows.",
+    "T3": "Count all duplicated joined rows when reporting directions and total."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "State that both confounded samples are retained, while continuing to use the archived fit that excluded them."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Select the 1166 rows with padj<0.05 and positive shrunken effect, then duplicate every selected joined row exactly once."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Count the duplicated rows and report 2332 positive, 0 negative, and 2332 total."
+    }
+  ]
+}

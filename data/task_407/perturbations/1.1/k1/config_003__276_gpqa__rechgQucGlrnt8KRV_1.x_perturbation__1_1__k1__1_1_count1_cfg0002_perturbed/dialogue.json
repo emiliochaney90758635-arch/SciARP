@@ -1,0 +1,64 @@
+{
+  "release_task_index": 407,
+  "task_id": "gpqa__rechgQucGlrnt8KRV",
+  "dataset": "gpqa",
+  "ordinal": 276,
+  "variant": "perturbed",
+  "conversation_id": "276::gpqa__rechgQucGlrnt8KRV::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0d8982f056b1bf315dd0ad728dad5812a2cc2db9488995f81b6d022075068f5d",
+  "semantic_condition_id": "ea81ff5b33f9dc39be01ca8bd67137a33ae55621c77f49481c29bcc361498246",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Normalize the spin-1/2 state proportional to (1+i)|up>+(2-i)|down> in the z-spin basis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat A as a density matrix with off-diagonal entries hbar/2 and zero diagonal entries. Write it and find its normalized eigenstates and eigenvalues.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Project the normalized state onto the eigenbasis of A and calculate both outcome probabilities exactly and numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those probabilities and eigenvalues to calculate the expectation value of A.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Collect the two branch quantities and the mean value in one result, labeling the branches.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the expectation value both by weighting the eigenvalues and by directly evaluating <psi|A|psi> in the original basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how the two eigenvalue branches contribute and how the probability imbalance determines the expectation value.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Would rephasing either eigenvector change any observable probability or expectation value?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report both outcome probabilities and the expectation value of A.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

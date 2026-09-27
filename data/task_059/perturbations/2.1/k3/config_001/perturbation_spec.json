@@ -1,0 +1,44 @@
+{
+  "config_id": "task059_2.1_k3",
+  "subclass": "2.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "task-specific evidence amendment",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "task-specific evidence amendment",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "task-specific evidence amendment",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

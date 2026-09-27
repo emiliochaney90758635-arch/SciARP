@@ -1,0 +1,69 @@
+{
+  "release_task_index": 386,
+  "task_id": "gpqa__recRZjaElf8ft7xTq",
+  "dataset": "gpqa",
+  "ordinal": 255,
+  "variant": "clean",
+  "conversation_id": "255::gpqa__recRZjaElf8ft7xTq::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "38b8342ed75212d17c97182fc2aa34040d8336340f3cf9bc64b7b26506297ca7",
+  "semantic_condition_id": "7d4ee74c735bee0b27a9fb1b0f301c5a20895052d81e904afc5d71ab54fb82ea",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two blackbody stars, write L1/L2 in terms of their radii and temperatures. Simplify the radius factor when R1=1.5 R2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The two objects have the same observed peak wavelength. Object 1 has negligible line-of-sight velocity, while Object 2 is receding at 700 km/s. Relate Object 2's emitted feature to the shared observed feature.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the physical relation connecting the feature identified above to temperature to express T1/T2, then substitute it into the luminosity ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate L1/L2 using c=299792.458 km/s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check how the result would move if the quoted positive radial velocity were mistakenly interpreted as approach rather than recession.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Retrace the relation between observed and rest-frame peak wavelengths to verify the sign of the velocity correction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the resulting dimensionless luminosity ratio.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Describe the blackbody, feature-identification, velocity, and transformation approximations that limit its precision.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Compare the luminosity ratio with the radius-only factor and check the direction implied by a positive recession velocity.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final ratio with a concise summary of the radius, observed-feature, velocity, and transformation models used above.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

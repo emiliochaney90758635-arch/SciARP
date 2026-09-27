@@ -1,0 +1,49 @@
+{
+  "release_task_index": 272,
+  "task_id": "gpqa__reckbjNKYmpQlU5TY",
+  "dataset": "gpqa",
+  "ordinal": 140,
+  "variant": "clean",
+  "conversation_id": "140::gpqa__reckbjNKYmpQlU5TY::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "174b429132e8de87105e544dabbeb47153884eab867bef88489b1b26c7f9eb72",
+  "semantic_condition_id": "4b265b2e61a5c558918d914b1ed8d8e66df0929b56b52fae9c7656186c39843f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A photon of energy h nu travels along +z toward a particle of mass m initially at rest. Write the photon's laboratory-frame energy and momentum, and define alpha=h nu/(mc^2).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the massive particle's laboratory-frame energy and momentum before the collision.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Add the two four-momenta to obtain the system's total laboratory energy and z-momentum.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the condition of zero momentum in the center-of-momentum frame to derive beta in terms of alpha.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the small- and large-alpha limits of the derived expression and state whether it remains within the claimed regime.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the center-of-momentum-frame speed and the energy-momentum relation used to obtain it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

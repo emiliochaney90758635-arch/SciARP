@@ -1,0 +1,54 @@
+{
+  "release_task_index": 219,
+  "task_id": "gpqa__recIIMmhxoNeJkgye",
+  "dataset": "gpqa",
+  "ordinal": 87,
+  "variant": "perturbed",
+  "conversation_id": "087::gpqa__recIIMmhxoNeJkgye::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "429f932a6a5569f09f40adf67264c90488e956d19ab09a08b0a4309b7b49edd8",
+  "semantic_condition_id": "cc9de7c39cdd1d50d76d21bd0ae3fa734d0d6911c4e3e1b2528e9933d100dc9d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The final mixed-acid step adds four more ring nitro groups while retaining N-H. Identify B, C, and D from the displayed sequence; the benzene chlorination step that forms A is omitted.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What product E forms when C and D are heated in ethanol with loss of HCl, and what aromatic substitution occurs?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the subsequent nitration, valence, and the two-signal proton NMR spectrum to infer the final product F. What does disappearance of one signal after D2O addition tell you about its exchangeable hydrogen?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For F after four additional ring nitrations, count the remaining aromatic hydrogens separately from the bridging N-H.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add those contributions to obtain the total number of hydrogen atoms in F.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count against the molecular valences and the two observed proton signals.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identity or structure of F and explain how the NMR evidence supports its hydrogen count.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

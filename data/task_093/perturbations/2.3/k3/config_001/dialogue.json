@@ -1,0 +1,35 @@
+{
+  "release_task_index": 93,
+  "task_id": "093-capsule026",
+  "source_id": "bix-37-q4",
+  "dataset": "bixbench",
+  "ordinal": 93,
+  "variant": "perturbed",
+  "conversation_id": "093::093-capsule026::2.3.k3::lane_d_independent_repair",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "7cd140af0160c233d4a5962cdef6439c7d69e0cffc81890cb858fe91937e6328",
+  "semantic_condition_id": "87b00c11dc10321d059ccf165d0a92f4b2824aa854afe17760eb77b1021ebd4a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Evidence scope and comparison direction\n\nThe proteomics table contains 3,850 protein records. An exact match on\n`gene = ENO1` gives one record. The `compare` field defines the ratio direction\nas tumor relative to normal.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | log2FC | compare |\n|---|---|---:|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 305385456.451912 | 4.81 | 4.81 | 2.27 | Tumor vs Normal |\n\n`FC` is the linear fold-change field, whereas `log2FC` is the base-2\nlogarithmic fold-change field.\n\n## Calculation convention\n\nUse the unrounded abundance values and the direction recorded above:\n\n```text\nlinear fold change = Tumor / Normal\n                   = 305385456.451912 / 72896133.2946858\n\nlog2 fold change   = log2(linear fold change)\n```\n\nThe requested reporting precision is two decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm that the ENO1 comparison is oriented as tumor relative to normal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Evidence scope and comparison direction\n\nThe proteomics table contains 3,850 protein records. An exact match on\n`gene = ENO1` gives one record. The `compare` field defines the ratio direction\nas tumor relative to normal.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | log2FC | compare |\n|---|---|---:|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 92896133.2946858 | 305385456.451912 | 4.81 | 4.81 | 2.27 | Tumor vs Normal |\n\n`FC` is the linear fold-change field, whereas `log2FC` is the base-2\nlogarithmic fold-change field.\n\n## Calculation convention\n\nUse the unrounded abundance values and the direction recorded above:\n\n```text\nlinear fold change = Tumor / Normal\n                   = 305385456.451912 / 92896133.2946858\n\nlog2 fold change   = log2(linear fold change)\n```\n\nThe requested reporting precision is two decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUsing the unrounded abundance values, calculate the tumor-to-normal linear fold change.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Evidence scope and comparison direction\n\nThe proteomics table contains 3,850 protein records. An exact match on\n`gene = ENO1` gives one record. The `compare` field defines the ratio direction\nas normal relative to tumor.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | log2FC | compare |\n|---|---|---:|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 92896133.2946858 | 305385456.451912 | 4.81 | 4.81 | 2.27 | Normal vs Tumor |\n\n`FC` is the linear fold-change field, whereas `log2FC` is the base-2\nlogarithmic fold-change field.\n\n## Calculation convention\n\nUse the unrounded abundance values and the direction recorded above:\n\n```text\nlinear fold change = Normal / Tumor\n                   = 92896133.2946858 / 305385456.451912\n\nlog2 fold change   = log2(linear fold change)\n```\n\nThe requested reporting precision is two decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nTake log2 of that ratio and report the ENO1 log2 fold change to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

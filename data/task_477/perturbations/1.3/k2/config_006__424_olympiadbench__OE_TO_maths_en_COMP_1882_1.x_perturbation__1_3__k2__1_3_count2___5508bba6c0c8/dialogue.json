@@ -1,0 +1,54 @@
+{
+  "release_task_index": 477,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1882",
+  "dataset": "olympiadbench",
+  "ordinal": 424,
+  "variant": "perturbed",
+  "conversation_id": "424::olympiadbench__OE_TO_maths_en_COMP_1882::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "71ed689433c8e090d523cb1c445b41ff3025584c07afbf07ec273f5286fb3ea2",
+  "semantic_condition_id": "11acde5e0e6d1b8b4bf2de0edcbcdf8574518ef5ee6351cdf5df4483589a9385",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Model a company operating N rides on N checkpoints while retaining k as the later ride count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Consider two copies both named company A and derive the two-component-label inequality.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Prove that the map sending each checkpoint to its pair of company-component labels is injective under that assumption.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Set N=n^2 and use the inequality to find the largest k for which avoiding a common linked pair is possible, and the first k that forces one.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "At the boundary k=n^2-n, arrange the checkpoints as an n by n grid. Construct one company's components as rows and the other's as columns, and verify the ride-order condition and absence of a common linked pair.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Return to the original total N=n^2 and compare the forcing bound with the boundary construction.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the smallest k that guarantees two checkpoints linked by both companies.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

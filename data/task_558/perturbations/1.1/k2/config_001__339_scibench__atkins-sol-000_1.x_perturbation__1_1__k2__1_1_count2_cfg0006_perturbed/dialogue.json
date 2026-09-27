@@ -1,0 +1,54 @@
+{
+  "release_task_index": 558,
+  "task_id": "scibench__atkins-sol-000",
+  "dataset": "scibench",
+  "ordinal": 339,
+  "variant": "perturbed",
+  "conversation_id": "339::scibench__atkins-sol-000::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "4e0460fe11a9968e61fcfc4e294a49046253fc91f8fbdcf3b40826472f1c64f8",
+  "semantic_condition_id": "df563cc5710305d6e3d9e98bcdffac92c350394e89643a033888fd2d806a9ebf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the calcite-to-aragonite transition at constant external pressure, write the molar relation between Delta H_m, Delta U_m, pressure, and Delta V_m. Define Delta V_m=V_m(aragonite)-V_m(calcite).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The densities are 2.71 g cm^-3 for calcite and 2.93 g cm^-3 for aragonite, and M(CaCO3) is approximately 100 g mol^-1. What solid-state relation should be used to obtain each molar volume from these data?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate both molar volumes and the molar entropy change for calcite converting to aragonite. Give the volumes and Delta V_m in both cm^3 mol^-1 and m^3 mol^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The pressure is 1.0 bar and Delta U_m for the conversion is +0.21 kJ mol^-1. Is that separate internal-energy value needed to calculate the requested difference between the refractive indices and viscosities? Explain.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the density ordering to check the sign of Delta V_m=V_m(aragonite)-V_m(calcite), and reconcile that sign with the values calculated above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions and expected order of magnitude of p*Delta V_m, including the conversion from bar to pascals.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Calculate Delta H_m-Delta U_m at 1.0 bar and report the signed result in Pa m^3 mol^-1.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

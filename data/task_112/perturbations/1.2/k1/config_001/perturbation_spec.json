@@ -1,0 +1,31 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "Adjusted-p threshold is moved from decimal to percent scale.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Interpret the padj cutoff 0.05 as 0.05 percent rather than the decimal fraction five percent, and construct the significant-gene set on that basis."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "State that the cutoff is 0.05 percent, but reuse the archived 2118 selected rows and 1166 positive count without recomputing the filter."
+    }
+  ]
+}

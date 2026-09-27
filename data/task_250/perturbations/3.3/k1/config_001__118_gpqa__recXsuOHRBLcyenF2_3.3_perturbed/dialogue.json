@@ -1,0 +1,54 @@
+{
+  "release_task_index": 250,
+  "task_id": "gpqa__recXsuOHRBLcyenF2",
+  "dataset": "gpqa",
+  "ordinal": 118,
+  "variant": "perturbed",
+  "conversation_id": "118::gpqa__recXsuOHRBLcyenF2::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "013dd108c770cd0ccf404b47876535a7754a51608c7ab09093fc9b69f95bf968",
+  "semantic_condition_id": "6f67ed52d4e12db0e36e74f3fd37a6798c2000420b49497dbe0a19fbe40d02f5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After spatial discretization of a higher-dimensional heat equation, suppose exp(hA) is replaced by a rational approximation R(A)=P(A)/Q(A). What algebraic structure of this evaluation must be exposed before its work can be split across processors?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use von Neumann stability analysis as the sole operation for rewriting R(z) into independently evaluable terms.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Translate the resulting terms into shifted linear systems involving A. Why can those systems be solved concurrently?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Distinguish the decomposition step from stability analysis, boundary-condition assumptions, and merely locating the roots of Q.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe how a sequential rational-operator evaluation becomes a parallel schedule of independent solves.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "If some poles occur as complex-conjugate pairs, does that change the source of parallelism or only the arithmetic used for the independent terms?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the key algebraic mechanism for the sequential-to-parallel conversion and explain it briefly.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

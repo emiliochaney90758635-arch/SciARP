@@ -1,0 +1,33 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "R2 scale changed.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Residual-SE scale independently changed.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Report quadratic R-squared on a 0-100 scale.",
+    "T4": "Report spline residual SE in thousands while leaving the other residual SE values unscaled."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,42 @@
+{
+  "task_index": 132,
+  "task_id": "132-capsule037",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1faf01f805223a3cc25eea7d9fdf5cfc79758ecf403ef4e54b5d93fcc90c4cd7",
+  "source_base_evidence_sha256": "5b0a94a665080943ab856b1ff8eae03a9c78aa1babcfd527b209984d2adc8958",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Predictor/response variables swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "SSE/SST symbols independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Ordinary/adjusted metric symbols independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use Area as x and Frequency_rhlI as the response.",
+    "T2": "Swap SSE and SST labels.",
+    "T3": "Use the adjusted-R-squared symbol where ordinary R-squared is requested."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

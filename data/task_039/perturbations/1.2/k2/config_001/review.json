@@ -1,0 +1,23 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "The FDR probability scale and count-unit scale are independent numerical-dimension perturbations.",
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "cdf7d1a4a7e339ebeea00d6b8ead2ec3b95943dab8099b83bec1e8d197c0b8c4",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Restores the intended pair without removing either unit/scale perturbation.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

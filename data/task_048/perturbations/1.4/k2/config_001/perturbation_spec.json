@@ -1,0 +1,27 @@
+{
+  "config_id": "task048_1.4_k2",
+  "subclass": "1.4",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Identify BLM mutation carriers and define the analysis cohort."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Filter non-somatic variants and count retained variants per carrier."
+    }
+  ]
+}

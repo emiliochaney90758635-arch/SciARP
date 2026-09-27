@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::1.x::perturbation__1_4__k3__1_4_count3_cfg0004::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "3a7f0debf65695e9bf447d8cd5840e1bd36c817f0ef80fed01a846dc195b24fe",
+  "semantic_condition_id": "91b786009076b924ad2ea35b068feab38dd6fe10356a1ea1d4ef80eff26859e9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express LA/LB using only luminosity distances dA and dB.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Given only zB=0.02, use a leading low-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The available measurement is FB=10^-24 W/m^2. Determine what flux comparison can be evaluated for the two quasars.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

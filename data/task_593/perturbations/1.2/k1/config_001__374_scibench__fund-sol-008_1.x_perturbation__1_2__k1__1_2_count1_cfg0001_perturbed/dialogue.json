@@ -1,0 +1,59 @@
+{
+  "release_task_index": 593,
+  "task_id": "scibench__fund-sol-008",
+  "dataset": "scibench",
+  "ordinal": 374,
+  "variant": "perturbed",
+  "conversation_id": "374::scibench__fund-sol-008::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "a027f1d1feb08f5f044076720849913c8fd5452f47a58d0c3aec9aad18a5ea5c",
+  "semantic_condition_id": "01e80bde61a5c7205612956cddd35b09203bbce799177045a4abe92f6b5c6479",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Set the initial distance to 10 seconds from Earth's center.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the physical model and approximation established above, write the corresponding conserved-quantity equation for the approach, neglecting atmospheric drag and Earth recoil.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rearrange the conserved-quantity relation from the preceding turn to isolate its final-state squared quantity.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the radii established at the outset into the equation just obtained and simplify the dimensionless coefficient multiplying its physical interaction scale.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the fixed-Earth gravitational model, substitute 2GM/R_E=(11.2 km/s)^2 and calculate the final speed in km/s. If a different model is required, state its corresponding physical scale instead.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, state the approximation used, and identify any Earth-recoil uncertainty that cannot be quantified from the given parameters.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign of the gravitational interaction-energy change and whether the numerical result has the expected scale under the fixed-Earth model.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final speed together with the approximation used to obtain it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

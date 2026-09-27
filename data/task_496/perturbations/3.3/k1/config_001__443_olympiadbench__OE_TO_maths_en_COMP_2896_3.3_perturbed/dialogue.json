@@ -1,0 +1,59 @@
+{
+  "release_task_index": 496,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2896",
+  "dataset": "olympiadbench",
+  "ordinal": 443,
+  "variant": "perturbed",
+  "conversation_id": "443::olympiadbench__OE_TO_maths_en_COMP_2896::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "5c71859f738658afca219c5d684a11084913380d236925d6dd2707f1a5aa5b5f",
+  "semantic_condition_id": "cc1c884094fc5f1498337b9fc96927fed4cf10470d3fec5b68f09d413b0125eb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 0<=n<=9999, let s(n) be n plus the sum of its decimal digits. Write n=1000a+100b+10c+d, with a,b,c,d in {0,...,9}. Express s(n) in terms of these digits so that we can count its distinct values.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Evaluate the expression at n=100 and n=91. Can two different digit tuples produce the same value of s(n)?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What does that comparison imply for counting the outputs? Explain how overlaps between sets of values must be accounted for.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Isolate the contribution from the last two digits c and d. As each ranges from 0 to 9, how many distinct values does that contribution have? Prove the count.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Extend the two-digit count using only the independent mixed-radix product rule: multiply the four digit-choice counts and treat every digit tuple as producing a distinct output.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Include the hundreds digit b, ranging from 0 to 9. Add its contribution to the last-two-digit values and carry out the counting method just set up to determine the number of outputs at this stage.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Now include the leading digit a, also ranging from 0 to 9. How does this final step change the number of outputs under the same counting method?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine the intermediate count and the leading-digit calculation to find the number of elements in {s(0),s(1),...,s(9999)}.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 564,
+  "task_id": "scibench__atkins-sol-010",
+  "dataset": "scibench",
+  "ordinal": 345,
+  "variant": "perturbed",
+  "conversation_id": "345::scibench__atkins-sol-010::1.x::perturbation__1_1__k2__1_1_count2_cfg0014::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e2fe4258fd0e1b3403825e691fcb834ba39cf545cc4361d21f5ad218b65c052a",
+  "semantic_condition_id": "24287d31a97ae806911c847b88cf93c15282013f2cd74671ad54e27f04247c8b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Ag2CO3(s) <=> Ag2O(s) + CO2(g), derive the integrated van't Hoff relation between ln K and 1/T under an approximately constant reaction enthalpy. State how the line's slope determines the standard reaction enthalpy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using T = 350, 400, 450, and 500 K with diffusion coefficients K = 3.98e-4, 1.41e-2, 1.86e-1, and 1.48, respectively, calculate 1/T and ln K for all four measurements.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Inspect the transformed data. Does an affine line with a free intercept make more sense than forcing the fit through the origin, and what sources of approximation remain in extracting one enthalpy over this temperature range?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the spectroscopic wavelength data by ordinary least squares with a free intercept to obtain the trend of ln K against 1/T. Report the fitted slope and intercept.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the sign of the fitted slope against the observed increase of K with temperature. Confirm the signed slope that should be carried into the thermodynamic conversion.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use R = 8.314 J mol^-1 K^-1 and the van't Hoff slope relation to calculate the standard reaction enthalpy in kJ mol^-1.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Interpret the sign of the enthalpy for the forward decomposition and check that it is consistent with the temperature dependence of K. Also state why the fitted value should be reported as an approximate estimate rather than an exact constant.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the standard reaction enthalpy of decomposition, rounded appropriately, together with its sign and the fitting caveat.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

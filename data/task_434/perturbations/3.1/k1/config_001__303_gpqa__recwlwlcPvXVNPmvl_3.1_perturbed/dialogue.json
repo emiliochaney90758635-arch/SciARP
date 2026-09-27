@@ -1,0 +1,54 @@
+{
+  "release_task_index": 434,
+  "task_id": "gpqa__recwlwlcPvXVNPmvl",
+  "dataset": "gpqa",
+  "ordinal": 303,
+  "variant": "perturbed",
+  "conversation_id": "303::gpqa__recwlwlcPvXVNPmvl::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "c46c98270d1698e8c046708d7b1956baf6af45c38b398863dc90a41b707b6516",
+  "semantic_condition_id": "9d4c96fed9be2d44c724e631a4909799ab5a2b16210834d6d69bab0050461d90",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Three Ising spins S1, S2, and S3 can each be +1 or -1. List the eight configurations and group them into the two all-aligned states and the six states with one spin opposite the other two. What constraint do p12=S1S2, p13=S1S3, and p23=S2S3 obey?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For E=-J(S1S2+S1S3+S2S3) and beta=1/(kT), find the energy and Boltzmann weight of an all-aligned state, using degeneracy four for that class.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Repeat the calculation for a state with one spin opposite the other two. For J>0, how does its energy compare with the aligned-state energy?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two class-specific results directly from the three pair products and confirm the degeneracy of each class.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the two class-specific results and their degeneracies to assemble the aggregate quantity Z requested by the analysis.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "As a consistency check, evaluate the beta-to-zero limit of the assembled quantity and compare it with the number of configurations.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final expression for the quantity assembled above and identify the degeneracy multiplying each term.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

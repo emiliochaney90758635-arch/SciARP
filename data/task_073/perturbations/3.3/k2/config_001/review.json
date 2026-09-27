@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "Cleaning and preprocessing methods are independently wrong.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "b670bed813b89438f91669c534540c40e7f5dd0c0e962de20ea84ec07699e524",
+  "strict_non2x_original_semantic_condition_id": "bc43a099cc345fef3da3d2a2b4dc3e957050897484f2c129afaa15a9e44a9433",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Apply gene-wise z-scoring followed by log2(abs(z)+1), then orient genes as PCA observations; retain the wrong cleaning rule.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

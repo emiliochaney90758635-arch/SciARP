@@ -1,0 +1,40 @@
+{
+  "release_task_index": 135,
+  "task_id": "135-capsule037",
+  "source_id": "bix-54-q1",
+  "dataset": "bixbench",
+  "ordinal": 135,
+  "variant": "perturbed",
+  "conversation_id": "135::135-capsule037::2.4::k3::perturbed::lane_d",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "d8e8c858871ffeb1ad0509690adb760b556eb6e2874517b312c2363beae25fd9",
+  "semantic_condition_id": "70e625bc55c343c03a6ef03de762dc4c06e75756b8f0cb499f3cd5eb752226e6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Segmentation-pipeline audit\nAn independent segmentation pipeline reports a grid peak at 0.8500.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the 39 frequency-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the natural-spline model to those observations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Calibration-pipeline audit\nA calibrated area pipeline reports the maximum at 0.8843844.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nEvaluate fitted mean Area on the archived 1,000-point frequency grid.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Smoothing-pipeline audit\nA third basis-smoothing implementation reports the maximum at 0.9316817.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nReport the grid coordinate with the largest fitted mean.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

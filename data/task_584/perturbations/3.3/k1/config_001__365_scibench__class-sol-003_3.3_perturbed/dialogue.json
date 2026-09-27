@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "45089e26fe23468aea99a0c76886c62c1405c9e4363fcb0c4a49402ada8df44b",
+  "semantic_condition_id": "72d8de48c72c6feaa2eb30be0c5576ee57f0ad298ade76d5a12dc4b43ff4b7fd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace Kepler's half-period calculation with rectilinear constant-acceleration motion from rest: set g=mu_sun/a_t^2 and solve Delta r=(1/2)g t^2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

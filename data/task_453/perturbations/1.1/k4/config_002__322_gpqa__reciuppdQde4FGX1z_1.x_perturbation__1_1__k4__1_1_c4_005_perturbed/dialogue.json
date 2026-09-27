@@ -1,0 +1,69 @@
+{
+  "release_task_index": 453,
+  "task_id": "gpqa__reciuppdQde4FGX1z",
+  "dataset": "gpqa",
+  "ordinal": 322,
+  "variant": "perturbed",
+  "conversation_id": "322::gpqa__reciuppdQde4FGX1z::1.x::perturbation__1_1__k4__1_1_c4_005::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "3b38274011b2bdbc637213f200612c6fd2c0af18776d35b741ea7bed3d1d74b8",
+  "semantic_condition_id": "76e7d73adc2a0466a88524ac936753429bae4fb982035654773db12051d9874e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Take +x to the right. An electron with Lorentz factor 4 moves rightward and a positron with Lorentz factor 2 moves leftward. Using p=mc*sqrt(gamma^2-1), find the total incoming energy and x-momentum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The pair annihilates into two equal-energy neutral pions. Using the photon relation E=pc, find each photon's energy and momentum.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use transverse angular-momentum conservation, rather than transverse linear momentum, to relate the photon directions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply orbital angular-momentum conservation to solve for theta.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Determine the polarization correlation rather than the angular separation between the photons.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Recalculate the incoming energy and momentum from whatever Lorentz factors were supplied, and determine which final-state quantity can be verified numerically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the result by comparing the incoming invariant mass with the final-state four-momentum to the extent allowed by the available inputs.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the final-state properties against energy and momentum conservation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the resulting final-state relation and any laboratory-frame symmetry actually established.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final result with a compact four-momentum calculation. If the data do not determine it uniquely, identify the additional condition needed.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

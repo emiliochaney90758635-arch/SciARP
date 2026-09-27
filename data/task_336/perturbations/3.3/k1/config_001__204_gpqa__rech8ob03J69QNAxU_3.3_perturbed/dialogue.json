@@ -1,0 +1,59 @@
+{
+  "release_task_index": 336,
+  "task_id": "gpqa__rech8ob03J69QNAxU",
+  "dataset": "gpqa",
+  "ordinal": 204,
+  "variant": "perturbed",
+  "conversation_id": "204::gpqa__rech8ob03J69QNAxU::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "1e200d7dd279b5282f0ac4238605a06ce27055d4d8a71a2261f879452e0f93ac",
+  "semantic_condition_id": "5bf19c544d435d38929fd4352ce2656be48e4d4434b18c3f5b6f5bdc19653c6a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For particles selected near the Maxwell mean speed, derive how de Broglie wavelength scales with particle mass m and source temperature T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For two runs in which the second particle mass is twice the first, use the mass-temperature scaling to express lambda2/lambda1 in terms of T1/T2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the two-slit bright-fringe law d sin(theta_n)=n lambda with d equal to the single-slit width.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the wavelength ratio obtained from diffraction with the mass dependence of the thermal de Broglie wavelength to determine the source-temperature ratio.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show explicitly how the mass-temperature scaling and diffraction-derived wavelength ratio determine T1/T2.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the diffraction model selected above, state its approximation level and, where appropriate, compare it with the exact stationary-point locations to establish the reporting precision.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the comparison between the side-maximum approximation and the exact stationary-point locations, report the alternative temperature-ratio estimate with justified precision.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final temperature ratio and summarize the thermal-wavelength scaling and diffraction relation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

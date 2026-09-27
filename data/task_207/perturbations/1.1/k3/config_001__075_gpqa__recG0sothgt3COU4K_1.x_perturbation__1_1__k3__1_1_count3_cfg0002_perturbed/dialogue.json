@@ -1,0 +1,64 @@
+{
+  "release_task_index": 207,
+  "task_id": "gpqa__recG0sothgt3COU4K",
+  "dataset": "gpqa",
+  "ordinal": 75,
+  "variant": "perturbed",
+  "conversation_id": "075::gpqa__recG0sothgt3COU4K::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "d7916ee803a619cf1ffd17998bde68d4f865c5b1fd83ee0c05013c060a19cc0f",
+  "semantic_condition_id": "fbac53fd1cd072e6229eb3d0dd535d9f4f18b30647272ed49b1e6a6745ad6bf3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Ozonolysis of an alkene A produces 3-methylcyclopentanone and acetone. What structural information does each carbonyl product provide about the two carbons of the original C=C bond?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain how reverse ozonolysis reconnects the two carbonyl carbons, and identify the structural checks needed before assigning A.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the stated formation of 3-methylcyclopentanone and acetone as hydration of A rather than ozonolysis. On that basis, infer what the products reveal about the original double bond.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Draw or describe the resulting alkene A and give it an appropriate IUPAC-style name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "When A is heated with sulfuric acid, describe the initial radical-initiated step and identify the radical intermediate that should be followed next.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Follow the most favorable skeletal rearrangement of that carbocation. State the ring-size change and the methyl shift that stabilize the intermediate before elimination.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the earlier structural work to identify the major unrearranged alkene product and explain why the original five-membered skeleton should be retained.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the proposed product by tracing protonation, ring expansion, methyl migration, and elimination in order, and verify the resulting carbon skeleton and double-bond position.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the major product and give a concise mechanistic summary from A to that product.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

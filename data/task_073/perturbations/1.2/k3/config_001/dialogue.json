@@ -1,0 +1,40 @@
+{
+  "release_task_index": 73,
+  "task_id": "073-capsule020",
+  "source_id": "bix-27-q5",
+  "dataset": "bixbench",
+  "ordinal": 73,
+  "variant": "perturbed",
+  "conversation_id": "073::073-capsule020::1.2.k3::lane_c_manual",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "1636d5ccb73931982c089e97fa1722c08cf193a8f093016535e606337af7bac8",
+  "semantic_condition_id": "75dcaf499a69f24b72f13a3233718d90bea1d72348a2484aa0bb93f188fb167d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Sample Cleaning and Matrix Orientation\n\nThe raw metadata contain 222 records, and the expression table contains 2,456 genes × 222 sample columns. The duplicated `projid` values are:\n\n```text\nid113, id154, id162, id171, id173, id177, id223,\nid444, id457, id463, id464, id495, id564, id602,\nid630, id724, id847, id849, id885, id918, id956\n```\n\nThe corresponding pandas-automatically-suffixed columns in the expression table are:\n\n```text\nid154.1, id177.1, id495.1, id630.1, id444.1, id495.2,\nid171.1, id444.2, id956.1, id602.1, id464.1, id918.1,\nid724.1, id885.1, id564.1, id162.1, id463.1, id849.1,\nid173.1, id457.1, id847.1, id223.1, id113.1\n```\n\nThe archived cleaning procedure removes every metadata row belonging to the duplicated-`projid` set and, in parallel, removes both the base duplicate IDs and automatically suffixed columns from the expression table. After cleaning:\n\n| Object | Dimensions |\n|---|---:|\n| metadata | 178 samples × 9 fields |\n| expression matrix | 2,456 genes × 178 samples |\n\nThe sample-ID sets in the two tables are identical. PCA uses only the expression matrix.\n\n## Transformation Procedure\n\n```python\nexpr_log = expr_edit.apply(lambda x: x + 1).apply(np.log10)\npca_input = expr_log.T\npca = PCA(n_components=100)\npca.fit_transform(pca_input)\n```\n\nThus, the transformation is cell-wise \\(\\log_{10}(x+1)\\), with no additional z-scoring; the PCA input consists of 178 sample rows × 2,456 gene columns. The original values have no missing entries or negative values, and the transformed matrix has no non-finite values.\n\n## PCA Statistics for the Complete Matrix\n\nCenter the log10-transformed input by gene, denote the centered matrix by \\(X_c\\), and let its first singular value be \\(s_1\\).\n\n| Statistic | Value |\n|---|---:|\n| Number of samples \\(n\\) | 178 |\n| Number of genes \\(p\\) | 2,456 |\n| \\(s_1\\) | 93.70359147152271 |\n| \\(s_1^2\\) | 8,780.363054662024 |\n| \\(\\lVert X_c\\rVert_F^2=\\sum_j s_j^2\\) | 15,687.301434467741 |\n| \\(s_1^2/(n-1)\\) | 49.60657093029392 |\n| \\(\\lVert X_c\\rVert_F^2/(n-1)\\) | 88.62882166365955 |\n\nThe percentage of total variance explained by the first component is calculated as:\n\n\\[\n100\\times\\frac{s_1^2}{\\lVert X_c\\rVert_F^2}\n\\]\n\nThe denominator is the total variance of the complete data, not the sum of variances for the first 100 returned components; the requested quantity is also not a cumulative percentage across multiple components.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nWhich duplicated projid values and corresponding expression columns must be removed from the two tables?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Verify the retained dimensions, but interpret `2,456 genes × 178 samples` as 2,456 sample observations by 178 gene features.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the base-10 logarithm as a natural-log scale while retaining the written expression `log10(x+1)`, then give the PCA-input dimensions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Report the ratio `s1^2 / ||Xc||F^2` directly as a percentage without multiplying by 100, and state that scaled denominator.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

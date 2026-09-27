@@ -1,0 +1,19 @@
+{
+  "task_id": "087-capsule024",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response"
+  ],
+  "root_injections": [
+    "Changes significance to include p_val_adj=0.05.",
+    "Swaps raw and adjusted p-value fields.",
+    "Counts rows without gene-symbol deduplication."
+  ],
+  "evidence_mode": "append"
+}

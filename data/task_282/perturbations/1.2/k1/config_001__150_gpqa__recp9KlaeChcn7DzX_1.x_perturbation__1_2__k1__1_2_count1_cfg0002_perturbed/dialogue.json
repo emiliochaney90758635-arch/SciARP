@@ -1,0 +1,54 @@
+{
+  "release_task_index": 282,
+  "task_id": "gpqa__recp9KlaeChcn7DzX",
+  "dataset": "gpqa",
+  "ordinal": 150,
+  "variant": "perturbed",
+  "conversation_id": "150::gpqa__recp9KlaeChcn7DzX::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "0405647dd18b60ac53fa2f6d440e3c98a18b83f055f16e5b003b6ca33c66a344",
+  "semantic_condition_id": "6fbcac7e1cdfbbfadde13d69e66b523e5a8e5c1039061fc1fe430401c3383ed5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has a measured parallax of 2 milliarcseconds and will be compared with the same star placed at 20 pc. Convert the parallax to arcseconds. No measurement uncertainty is supplied.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the distance relation appropriate to the stated observation to find the star's original distance in parsecs.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State how the received photon flux scales with distance when the star's intrinsic luminosity is unchanged.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the original distance and a new distance of 20 seconds to calculate the flux-change factor.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the best-supported brightness factor, retaining uncertainty from the unreported measurement error and rounding.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the factor by converting the distance ratio to a magnitude difference and back to a flux ratio.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the brightness-change factor and briefly identify the relation used in the calculation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

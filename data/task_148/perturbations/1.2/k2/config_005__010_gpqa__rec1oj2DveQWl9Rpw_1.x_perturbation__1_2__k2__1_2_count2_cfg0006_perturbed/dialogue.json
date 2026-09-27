@@ -1,0 +1,49 @@
+{
+  "release_task_index": 148,
+  "task_id": "gpqa__rec1oj2DveQWl9Rpw",
+  "dataset": "gpqa",
+  "ordinal": 10,
+  "variant": "perturbed",
+  "conversation_id": "010::gpqa__rec1oj2DveQWl9Rpw::1.x::perturbation__1_2__k2__1_2_count2_cfg0006::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "8ea3b29b05eec38baa625c671e95aaedc24ff2d3e447c42ba265bbc77ba64d08",
+  "semantic_condition_id": "5d34c9acc6fc0113fe96cf56ce3f6e7264692010fe77f313955a5a53417523c1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert 0.100 g of Fe(OH)3 to moles using 106.9 g/mol.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate [Fe3+] using a final volume of 0.100 mL while also retaining the stated 100 cm3 volume.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that pH and the solution volume established above to calculate the residual moles of free H+.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the acid demand for a 0.100 kg sample rather than 0.100 g.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add the stoichiometric demand and residual free H+ to obtain the total supplied acid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert that amount to the minimum volume of 0.100 M monobasic strong acid and report it with the equilibrium pH.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

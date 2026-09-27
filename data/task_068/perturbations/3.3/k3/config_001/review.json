@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can keep unmapped IDs, T2 mix libraries, and T3 rank Combined Score.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "622b837ea36c1d673aaeee0c2108b9550487b396df6c26f5d0208c4f86a74a0e",
+  "strict_non2x_original_semantic_condition_id": "e6b710e1d400ea3697b642390618244274f0804a3fdd387fb29f3121e0a3f3a1",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Concatenate the displayed GO and Reactome rows, then choose the row or rows with the largest Overlap numerator instead of the adjusted-p metabolic-process tie.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

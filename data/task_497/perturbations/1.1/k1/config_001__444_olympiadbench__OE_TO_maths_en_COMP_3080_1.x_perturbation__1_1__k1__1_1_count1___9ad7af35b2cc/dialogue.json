@@ -1,0 +1,54 @@
+{
+  "release_task_index": 497,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3080",
+  "dataset": "olympiadbench",
+  "ordinal": 444,
+  "variant": "perturbed",
+  "conversation_id": "444::olympiadbench__OE_TO_maths_en_COMP_3080::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d19dc5f5b283dbbb5921c7f9ffb3b6c41cd2583c72811a464e0abee5058eeb80",
+  "semantic_condition_id": "1a60df244c37a945997c485a209c77f9c08c3701dc8c4c4a276f6f7ba5ee295d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The base-b multiplication satisfies 253_b times 341_b = 74XYZ_b, where X, Y, and Z are base-b digits. Expand the product as a polynomial in b and list the raw coefficients from b^4 down to the constant term before carrying.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why the raw polynomial coefficients cannot simply be read as base-b digits in general. Introduce a right-to-left carry scheme that converts the coefficient stream into the prescribed five-digit numeral.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Start with the constant and b columns. Determine Z and write the relations that define Y and the carry into the b^2 column.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Continue the carry propagation through the b^2 and b^3 columns. Express X and the next two carries in terms of b and the incoming carries.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the two prescribed leading digits to determine the top carry and derive the relation between b and the carry entering the b^3 column.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the carry relations to narrow the admissible values. Treat the leading carry, rather than the base, as the integer that must be larger than every output digit, and check the resulting smallest boundary case.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the base and verify the complete multiplication, including the resulting digits X, Y, and Z and the validity of every digit in base b.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

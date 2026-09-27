@@ -1,0 +1,57 @@
+{
+  "task_index": 128,
+  "task_id": "128-capsule036",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "b24fb84ba3bc8519d208f5b7b01511fd9218dd95cd4a692de44e0c84516a2d15",
+  "source_base_evidence_sha256": "ebe9627a6a0d7613d042f8aad87f034d5e7a2d7da3f60a07aa3918f4c70bf7ed",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Six-sample count contradicted.",
+      "consumers": [
+        "T4",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Sample set independently contradicted.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Four-sample count and comparison independently contradicted.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "State six-sample count is 1,461.",
+    "T4": "Retain KL3 and remove KL2.",
+    "T6": "State four-sample count is 1,924 and that it is lower than 1,461."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "State that 1,461 genes pass the six-sample selection criteria."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Retain KL3 and remove KL2, together with the stated WL3 removal, when building the four-sample input."
+    },
+    {
+      "turn_id": "T6",
+      "content": "State that 1,294 genes pass in the resulting four-sample analysis and therefore that the count is lower than 1,461 by 167."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 99,
+  "task_id": "099-capsule028",
+  "source_id": "bix-41-q1",
+  "dataset": "bixbench",
+  "ordinal": 99,
+  "variant": "perturbed",
+  "conversation_id": "099::099-capsule028::2.3.k2::lane_d_independent_repair",
+  "condition_label": "2.3.k2",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 2,
+  "dialogue_sha256": "f583e792debdcd63c3ba7c6111914a114594458767100f5e7c999f63b632b9a6",
+  "semantic_condition_id": "69369abd5a0fccf0b5bdba3b1599fa349dec677525080ed6c0408c6ba1c717b6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Dunnett comparison family\n\nThe two models use all 45 original observations:\n\n```text\nArea        ~ Strain_Ratio\nCircularity ~ Strain_Ratio\n```\n\nEach of 15 `Strain_Ratio` levels has replicates A, B, and C. The Dunnett\nreference is `1_1:0` (Strain 1). `98_1:0` and `287_1:0` are single-strain\ngroups that remain in the model and multiple-comparison family but are not\ncounted as two-strain co-cultures.\n\nThe 12 countable co-culture ratios are:\n\n```text\n1:3, 1:2, 1:1, 2:1, 3:1, 4:1,\n5:1, 20:1, 50:1, 100:1, 500:1, 1000:1\n```\n\nEach ratio corresponds to the model label `287_98_<Ratio>`.\n\n## Archived two-sided Dunnett output\n\nThe archived result tables printed only comparisons satisfying the strict rule\n`P_value < 0.05`. A dash means that the comparison was absent from that\nendpoint's filtered table, not that its measurements were missing.\n\n| group compared with `1_1:0` | Area P_value | Circularity P_value |\n|---|---:|---:|\n| `98_1:0` | 0.0003495161 | 0.00006024943 |\n| `287_1:0` | 0.0001921325 | 0.0000000008709117 |\n| `287_98_1:3` | 0.0006364066 | 0.0000003062089 |\n| `287_98_1:2` | 0.0019514754 | 0.002100770 |\n| `287_98_1:1` | 0.0163150899 | — |\n| `287_98_20:1` | 0.0102567145 | — |\n| `287_98_500:1` | 0.0001836191 | 0.0000000005641172 |\n| `287_98_1000:1` | 0.0212813710 | 0.03612817 |\n\nNo archived retained p-value is equal to 0.05. Independent boundary checks\nplace the nearest omitted co-culture p-values far above 0.05, so the\nsignificant/non-significant classification is unambiguous.\n\n## Set rule for the requested condition\n\nWithin the 12 co-culture candidates, form the Area-significant set and the\nCircularity-significant set from the filtered output. A ratio that **fails to\nreach the threshold for both measurements** belongs to the complement of their\nunion:\n\n```text\nco-culture candidates\n\\ (Area-significant ∪ Circularity-significant)\n```\n\nFailure to reject both null hypotheses is not a formal equivalence test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nIdentify the Dunnett reference and enumerate the 12 two-strain co-culture ratios eligible for the count.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Dunnett comparison family\n\nThe two models use all 45 original observations:\n\n```text\nArea        ~ Strain_Ratio\nCircularity ~ Strain_Ratio\n```\n\nEach of 15 `Strain_Ratio` levels has replicates A, B, and C. The Dunnett\nreference is `1_1:0` (Strain 1). `98_1:0` and `287_1:0` are single-strain\ngroups that remain in the model and multiple-comparison family but are not\ncounted as two-strain co-cultures.\n\nThe 12 countable co-culture ratios are:\n\n```text\n1:3, 1:2, 1:1, 2:1, 3:1, 4:1,\n5:1, 20:1, 50:1, 100:1, 500:1, 1000:1\n```\n\nEach ratio corresponds to the model label `287_98_<Ratio>`.\n\n## Archived two-sided Dunnett output\n\nThe archived result tables printed only comparisons satisfying the strict rule\n`P_value < 0.05`. A dash means that the comparison was absent from that\nendpoint's filtered table, not that its measurements were missing.\n\n| group compared with `1_1:0` | Area P_value | Circularity P_value |\n|---|---:|---:|\n| `98_1:0` | 0.0003495161 | 0.00006024943 |\n| `287_1:0` | 0.0001921325 | 0.0000000008709117 |\n| `287_98_1:3` | 0.0006364066 | 0.0000003062089 |\n| `287_98_1:2` | 0.0019514754 | 0.002100770 |\n| `287_98_1:1` | 0.0163150899 | — |\n| `287_98_4:1` | 0.0410000000 | — |\n| `287_98_20:1` | 0.0102567145 | — |\n| `287_98_500:1` | 0.0001836191 | 0.0000000005641172 |\n| `287_98_1000:1` | 0.0212813710 | 0.03612817 |\n\nNo archived retained p-value is equal to 0.05. Independent boundary checks\nplace the nearest omitted co-culture p-values far above 0.05, so the\nsignificant/non-significant classification is unambiguous.\n\n## Set rule for the requested condition\n\nWithin the 12 co-culture candidates, form the Area-significant set and the\nCircularity-significant set from the filtered output. A ratio that **fails to\nreach the threshold for both measurements** belongs to the complement of their\nunion:\n\n```text\nco-culture candidates\n\\ (Area-significant ∪ Circularity-significant)\n```\n\nFailure to reject both null hypotheses is not a formal equivalence test.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhich eligible ratios meet the strict area significance threshold?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which eligible ratios meet the strict circularity significance threshold?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which eligible ratios meet neither threshold, and how many are there?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

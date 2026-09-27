@@ -1,0 +1,25 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "3.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Contradicts the common-background requirement."
+  ],
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a9716a47f0d5fbf1fef1cb354250ac5bf61baa71f094b3d7446c357d484b93fc",
+  "configured_evidence_sha256": "a9716a47f0d5fbf1fef1cb354250ac5bf61baa71f094b3d7446c357d484b93fc",
+  "evidence_unchanged": true
+}

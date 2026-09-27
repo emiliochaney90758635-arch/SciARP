@@ -1,0 +1,57 @@
+{
+  "config_id": "task062_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "drop NA",
+      "injected_text": "Tabulate the original Classification values for those variants and identify the denominator required by the question.\n\nFor this perturbed step, drop NA",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "additionally report Benign/non-Benign odds rather than a proportion",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, additionally report Benign/non-Benign odds rather than a proportion",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Dropping NA and dividing by the resulting total are one method chain.",
+    "before": "NA-dropping table then reduced denominator.",
+    "after": "At T3 drop NA; at T4 additionally report Benign/non-Benign odds rather than a proportion.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Drop rows with blank Classification before tabulating the remaining values."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Report the ratio of the Benign count to the non-Benign count as odds rather than reporting a proportion."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 593,
+  "task_id": "scibench__fund-sol-008",
+  "dataset": "scibench",
+  "ordinal": 374,
+  "variant": "perturbed",
+  "conversation_id": "374::scibench__fund-sol-008::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "83ab7edaf94c761347438f2ab7a3fdbae84844c5ad598258f181a80eff47b350",
+  "semantic_condition_id": "9c0b89947a09af96e4aebfa9ff70ce0b6942e315b5d5499dbe193cf261436b96",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the incoming object as a photon moving at 12 km/s and retain the asteroid-impact calculation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write conservation of electric charge for the asteroid in Earth's gravitational field.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rearrange the conserved-quantity relation from the preceding turn to isolate its final-state squared quantity.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the radii established at the outset into the equation just obtained and simplify the dimensionless coefficient multiplying its physical interaction scale.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the simplified energy result to calculate an orbital period in km/s and m/s.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the result, state the approximation used, and identify any Earth-recoil uncertainty that cannot be quantified from the given parameters.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign of the gravitational interaction-energy change and whether the numerical result has the expected scale under the fixed-Earth model.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final speed together with the approximation used to obtain it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

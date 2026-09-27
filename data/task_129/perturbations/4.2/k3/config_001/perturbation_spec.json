@@ -1,0 +1,43 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "4.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Analysis lead changes coefficient.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Supervisor independently changes library.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Lab head independently changes match count.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "The analysis lead requires shrinking the intercept rather than `condition[T.WT]`.",
+    "T3": "The supervisor independently requires the KEGG Mouse branch.",
+    "T5": "The lab head independently requires `Glutathione metabolism` to count as an `Oxidative` name."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

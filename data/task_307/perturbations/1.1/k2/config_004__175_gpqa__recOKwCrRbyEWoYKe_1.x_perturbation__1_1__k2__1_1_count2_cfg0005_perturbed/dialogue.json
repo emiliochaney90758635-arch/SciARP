@@ -1,0 +1,54 @@
+{
+  "release_task_index": 307,
+  "task_id": "gpqa__recOKwCrRbyEWoYKe",
+  "dataset": "gpqa",
+  "ordinal": 175,
+  "variant": "perturbed",
+  "conversation_id": "175::gpqa__recOKwCrRbyEWoYKe::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "df5d07d6663963c6e79dbb7b7f4fcb22848e30ccdd54d87c239dd53e27ffe674",
+  "semantic_condition_id": "eb3c6f77cbf3bcf9fe57b5d3106425ad51ac024008b0f81821b34974166834d8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A heptane backbone is numbered C1-C7. Under first-order n+1 splitting, set up how retained backbone hydrogens and directly attached -CH3, -CH2R, -CHR2, and -CR3 groups contribute distinct neighboring-proton sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat t, dq, dt, ddt, ddd, ddt, and d as multiplicities of substituent carbons rather than backbone protons, then infer C1-C3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Continue the same bookkeeping for C4 and C5, treating a directly attached -CH2R group as a two-proton triplet contribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Infer C6 and C7 by matching chemical-shift values rather than the reported splitting multiplicities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the complete substituent assignment from C1 through C7.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Regenerate the full multiplicity sequence from the assigned neighboring-proton sets as a consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final C1-C7 assignment and the decisive bookkeeping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "release_task_index": 69,
+  "task_id": "069-capsule018",
+  "source_id": "bix-24-q2",
+  "dataset": "bixbench",
+  "ordinal": 69,
+  "variant": "perturbed",
+  "conversation_id": "069::069-capsule018::3.3::k2::perturbed",
+  "condition_label": "3.3.k2",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 2,
+  "dialogue_sha256": "62e9a3d788e0025cc97d422e1319ab486196a8a1a333e3241e95b76d1661baec",
+  "semantic_condition_id": "4f8bf34f7350ddf53bb6def3a8432bfb41b1fafe4abcab566411f0754891de26",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "7af19e0410d84cab8202dca2359d6c2261f2a89ad5daa86635fdacd653188600",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## CBD-Only DEG Set\n\nThe direct comparison is `CBD_IC50` versus `DMSO`, with three replicates at each end. The raw count matrix is first filtered to retain genes having a count greater than 10 in at least one sample. The significant-DEG criteria are then:\n\n```python\n(padj < 0.05)\n& (abs(log2FoldChange) >= 0.5)\n& (baseMean >= 10)\n```\n\nIn the archived `cbd_vs_dmso` results, 233 genes meet these criteria. The directional split is:\n\n```python\nup   = significant[significant.log2FoldChange >= 0.5]\ndown = significant[significant.log2FoldChange < 0.5]\n```\n\nBecause the input already satisfies `abs(log2FoldChange) >= 0.5`, the second branch actually contains only genes with `log2FoldChange <= -0.5`. Failed Ensembl display-name mappings return `None` and are excluded with `dropna()` before enrichment.\n\n## GO Biological Process Results for the Up Gene List\n\nThe table below retains every GO-BP row among the first 20 entries in the archived mixed results; entries are displayed in ascending order of `Adjusted P-value`.\n\n| Display rank | Term | Overlap | Adjusted P-value | Genes |\n|---:|---|---:|---:|---|\n| 1 | blood vessel morphogenesis | 4/56 | 0.020788 | SOX18;CYP1B1;HOXA1;SMAD7 |\n| 2 | response to organic cyclic compound | 4/60 | 0.020788 | TIPARP;CYP1A1;CYP1B1;AQP3 |\n| 3 | BMP signaling pathway | 4/65 | 0.020788 | SMAD3;BMP8A;SMAD6;SMAD7 |\n| 4 | cellular response to BMP stimulus | 4/71 | 0.022019 | SMAD3;BMP8A;SMAD6;SMAD7 |\n| 5 | regulation of extracellular matrix assembly | 2/7 | 0.036387 | RGCC;SMAD3 |\n| 6 | positive regulation of cellular component biogenesis | 4/92 | 0.036387 | SMAD3;RGCC;HAS3;AJUBA |\n| 7 | lymphatic endothelial cell differentiation | 2/8 | 0.036387 | SOX18;NR2F2 |\n| 8 | positive regulation of extracellular matrix assembly | 2/9 | 0.036387 | RGCC;SMAD3 |\n| 9 | negative regulation of pathway-restricted SMAD protein phosphorylation | 2/9 | 0.036387 | SMAD6;SMAD7 |\n| 10 | response to laminar fluid shear stress | 2/10 | 0.037128 | SMAD6;SMAD7 |\n| 11 | omega-hydroxylase P450 pathway | 2/10 | 0.037128 | CYP1A1;CYP1B1 |\n| 14 | retinal metabolic process | 2/14 | 0.053184 | ALDH1A3;CYP1B1 |\n| 15 | cellular response to organic substance | 4/123 | 0.053184 | SMAD3;TIPARP;CYP1A1;CYP1B1 |\n| 16 | transmembrane receptor protein serine/threonine kinase signaling pathway | 4/133 | 0.053184 | SMAD3;BMP8A;SMAD6;SMAD7 |\n| 17 | negative regulation of multicellular organismal process | 5/214 | 0.053184 | DLX2;RGCC;GAS6;SMAD6;SMAD7 |\n| 18 | regulation of pathway-restricted SMAD protein phosphorylation | 3/58 | 0.053184 | BMP8A;SMAD6;SMAD7 |\n| 19 | endothelial cell differentiation | 2/14 | 0.053184 | SCUBE1;SOX18 |\n| 20 | nitric oxide biosynthetic process | 2/15 | 0.053184 | NQO1;CYP1B1 |\n\n## GO Biological Process Results for the Down Gene List\n\n| Display rank | Term | Overlap | Adjusted P-value | Genes |\n|---:|---|---:|---:|---|\n| 1 | canonical glycolysis | 5/24 | 0.000342 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| 2 | glucose catabolic process to pyruvate | 5/24 | 0.000342 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| 3 | glycolytic process through glucose-6-phosphate | 5/25 | 0.000342 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| 4 | glycolytic process | 5/29 | 0.000560 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| 5 | pyruvate metabolic process | 6/55 | 0.000658 | GPI;NR4A3;PGK1;ALDOC;ENO2;HK2 |\n| 6 | regulation of type B pancreatic cell proliferation | 3/6 | 0.001423 | NR4A1;NR4A3;NR1D1 |\n| 7 | cellular response to decreased oxygen levels | 6/69 | 0.001649 | EGLN3;FAM162A;BNIP3;HILPDA;PGK1;NDRG1 |\n| 8 | carbohydrate catabolic process | 5/41 | 0.001649 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| 10 | cellular response to hypoxia | 7/131 | 0.006201 | EGLN3;FAM162A;BNIP3;HILPDA;PGK1;CA9;NDRG1 |\n| 13 | gluconeogenesis | 4/41 | 0.025320 | GPI;PGK1;ALDOC;ENO2 |\n| 17 | hexose biosynthetic process | 4/44 | 0.030340 | GPI;PGK1;ALDOC;ENO2 |\n| 18 | vascular transport | 5/84 | 0.035275 | SLC15A2;LRP1;SLC2A1;SLC2A3;SLC6A20 |\n| 19 | transport across blood-brain barrier | 5/86 | 0.036310 | SLC15A2;LRP1;SLC2A1;SLC2A3;SLC6A20 |\n\n## Metabolic Terms for All DEGs\n\n| Term | All-DEG Adjusted P-value | Genes |\n|---|---:|---|\n| canonical glycolysis | 0.002503 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| glucose catabolic process to pyruvate | 0.002503 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| glycolytic process through glucose-6-phosphate | 0.002503 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| glycolytic process | 0.003601 | GPI;PGK1;ALDOC;ENO2;HK2 |\n| pyruvate metabolic process | 0.004913 | GPI;NR4A3;PGK1;ALDOC;ENO2;HK2 |\n| carbohydrate catabolic process | 0.011155 | GPI;PGK1;ALDOC;ENO2;HK2 |\n\nDetermine direction by jointly comparing the positions, adjusted P-values, and hit-gene identities of metabolism-related terms in the two direction-specific tables.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nApply padj<0.05, |log2FC|>=0.5, and baseMean>=10 to CBD_IC50 versus DMSO, then form mapped up- and downregulated gene-name sets using the stated fold-change direction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Summarize the upregulated table only by its number of displayed rows, omitting adjusted significance and hit-gene identities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Summarize the corresponding GO Biological Process results for the downregulated set on the same basis.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare each direction's best adjusted p-value but deliberately choose the direction with the larger, rather than smaller, value as primary.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

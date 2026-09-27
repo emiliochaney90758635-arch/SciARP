@@ -1,0 +1,49 @@
+{
+  "release_task_index": 610,
+  "task_id": "scibench__stat-sol-002",
+  "dataset": "scibench",
+  "ordinal": 391,
+  "variant": "perturbed",
+  "conversation_id": "391::scibench__stat-sol-002::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "de6263941cae4c0df9b81b51076b3f671da9e16bff466bc27ca532cd885f11f7",
+  "semantic_condition_id": "d7060907a2b296be5d81e92f6288c85ca5999c06dff1ef282e27acb19a32956e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10-person club must assign four distinct offices: president, vice president, secretary, and treasurer. Explain whether this is an ordered assignment or an unordered selection, and identify what makes two outcomes different.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many choices are available for the first unlabeled committee seat and then the second unlabeled committee seat? Give the product for those first two selections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "After those seats are filled, how many choices remain for the third unlabeled committee seat and then the fourth unlabeled committee seat? Give the product for these two selections.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the four step counts for the original 10-person club and compute the exact number of complete office assignments.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by relating the assignment count to choosing a four-person committee and then assigning its members to the four named offices. Explain why the committee count alone is insufficient.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact number of assignments and briefly state the role-based interpretation of the count.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

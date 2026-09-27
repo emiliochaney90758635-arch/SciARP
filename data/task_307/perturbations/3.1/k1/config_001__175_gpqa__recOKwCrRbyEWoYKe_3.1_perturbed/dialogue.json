@@ -1,0 +1,54 @@
+{
+  "release_task_index": 307,
+  "task_id": "gpqa__recOKwCrRbyEWoYKe",
+  "dataset": "gpqa",
+  "ordinal": 175,
+  "variant": "perturbed",
+  "conversation_id": "175::gpqa__recOKwCrRbyEWoYKe::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ba48fd06a45aa8ec3027619fa4899d2bd6fd03e6a093f5ab1a4d7fa5faf2b618",
+  "semantic_condition_id": "86f496d3db1466d8f6a8d4d2821cdf1ca40f53419142356e2951ae8d232cefbb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A heptane backbone is numbered C1-C7. Under first-order n+1 splitting, set up how retained backbone hydrogens and directly attached -CH3, -CH2R, -CHR2, and -CR3 groups contribute distinct neighboring-proton sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The backbone multiplicities C1-C7 are t, dq, dt, ddt, ddd, ddt, and d. Use the first three to infer the status of C1, C2, and C3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For C4 and C5, treat a directly attached -CH2R group as producing a doublet rather than a triplet, and complete the neighbouring-proton bookkeeping with that rule.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Finish the analysis for C6 and C7 and identify the coupling sets behind their multiplicities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the complete substituent assignment from C1 through C7.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Regenerate the full multiplicity sequence from the assigned neighboring-proton sets as a consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final C1-C7 assignment and the decisive bookkeeping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

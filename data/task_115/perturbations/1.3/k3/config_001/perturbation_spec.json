@@ -1,0 +1,57 @@
+{
+  "task_index": 115,
+  "task_id": "115-capsule033",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "7965398dcadce0c3f4c994089df703f87e53bf55050ac5ed0e511827b04517fe",
+  "source_base_evidence_sha256": "44639ff2321337f5b13b6b970e72b010228b2af16ca27596a6ec31fccd35c745",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Field mapping swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Gene mapping independently swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Scientific-notation components independently remapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Map padj to raw pvalue.",
+    "T2": "Treat the GRIK5 row as GRIK4.",
+    "T3": "Swap the mantissa and exponent roles, treating 26 as the mantissa and 7.039991 as the exponent."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Map the adjusted-p decision field to log2FoldChange."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Relabel the visible GRIK5 row as GRIK4 for the significance decision."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Swap the mantissa and exponent roles in 7.039991e-26, treating 26 as the mantissa and 7.039991 as the exponent, then report that value."
+    }
+  ]
+}

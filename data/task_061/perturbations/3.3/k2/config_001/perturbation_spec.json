@@ -1,0 +1,57 @@
+{
+  "config_id": "task061_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Drop NA  and independently merge Likely Benign into the numerator at T4",
+      "injected_text": "Tabulate the original Classification values among qualifying variants and state the denominator used for a proportion.\n\nFor this perturbed step, drop NA  and independently merge Likely Benign into the numerator at T4",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Drop NA at T3 and independently merge Likely Benign into the numerator at T4.",
+      "injected_text": "What proportion of all qualifying variants is classified exactly as Benign?\n\nFor this perturbed step, drop NA at T3 and independently merge Likely Benign into the numerator at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Dropping NA through table() and dividing by that total are one wrong method.",
+    "before": "NA-dropping table then reduced denominator.",
+    "after": "Drop NA at T3 and independently merge Likely Benign into the numerator at T4.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Drop rows with blank Classification before tabulating the remaining values and defining the denominator."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Count Likely Benign together with Benign in the numerator and divide by the nonblank total."
+    }
+  ]
+}

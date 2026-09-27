@@ -1,0 +1,59 @@
+{
+  "release_task_index": 469,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1843",
+  "dataset": "olympiadbench",
+  "ordinal": 416,
+  "variant": "clean",
+  "conversation_id": "416::olympiadbench__OE_TO_maths_en_COMP_1843::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "9b42b007e3865da7d9116644420e14eaa8bbe24d13a380dd7e2050f0af8c5a79",
+  "semantic_condition_id": "545f298d6a48762d7c841323f927ed71f33ecb2588fb7d1551800bd713dce08e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let L and R be the nonempty sets of indices whose factors survive on the left and right of the equation, respectively. Write the resulting equation in terms of L and R, and identify what must be true of L intersect R if the equation is to have no real root.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Prove the condition on L intersect R. Then use it to derive a lower bound on the total number of factors erased from the two original products.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find disjoint survivor sets that attain this lower bound, and write the resulting reduced equation in a form suited to a complete real-root analysis.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rule out solutions at the integer endpoints 1,2,...,2016 and on intervals of the forms (4k+1,4k+2) and (4k+3,4k+4) by comparing the signs of the two sides.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Complete the root analysis for x<1, x>2016, and the remaining intervals (4k,4k+1) and (4k+2,4k+3). Use suitable ratios of the paired products to show that equality is impossible.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the endpoint, sign, and ratio arguments to prove that the proposed survivor equation has no real solution.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Count the surviving and erased factors on both sides, and compare the count with the disjointness lower bound to certify that the construction is optimal.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the least number of factors that must be erased and summarize the residue-class rule that attains it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

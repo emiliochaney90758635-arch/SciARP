@@ -1,0 +1,33 @@
+{
+  "task_index": 105,
+  "task_id": "105-capsule030",
+  "subclass": "3.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "edba37ec05838acab5ee091cf6d214a7554b357a3bdb280f72bc9bca50fd59f9",
+  "source_base_evidence_sha256": "49b34288034d079a35c9a6c17d52cea61db886bef862ec4820b2abacd19849f9",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Upstream input count is carried forward as pathway denominator contrary to the T1 distinction.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "The established X/Y direction is independently reversed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Using the differential-gene definition established above, carry its 679-gene count forward as the denominator and locate the archived `TP53 Regulates Transcription Of Cell Cycle Genes` result row.",
+    "T3": "Report the row in denominator/numerator order even though the archived field established numerator/denominator order."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

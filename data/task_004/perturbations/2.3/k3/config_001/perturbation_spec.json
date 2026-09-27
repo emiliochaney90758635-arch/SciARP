@@ -1,0 +1,28 @@
+{
+  "task_id": "004-capsule003",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Changes the joint-filter output from 846 to 864 rows.",
+    "Changes final-blood Control membership from 10 to 9 and the cohort total from 30 to 29.",
+    "Changes the retained/result GeneID count from 21,251 to 21,215 throughout the staged evidence."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "joint-filter row count"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "Control sample count"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "retained GeneID count"
+    }
+  ],
+  "evidence_change_permitted": true
+}

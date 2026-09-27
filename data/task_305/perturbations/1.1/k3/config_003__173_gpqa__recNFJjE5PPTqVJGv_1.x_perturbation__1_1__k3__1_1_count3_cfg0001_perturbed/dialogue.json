@@ -1,0 +1,49 @@
+{
+  "release_task_index": 305,
+  "task_id": "gpqa__recNFJjE5PPTqVJGv",
+  "dataset": "gpqa",
+  "ordinal": 173,
+  "variant": "perturbed",
+  "conversation_id": "173::gpqa__recNFJjE5PPTqVJGv::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1630d712f6d6f07f5199f79ba371e78039f3a43a7a9485e89fd7702517dd9e17",
+  "semantic_condition_id": "416a93dcd525dcf71a43475ef04db4b976fb2e6b8dcd37b6c314d3641378a35f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate hydroxide supplied by the barium chloride, while retaining the Ba(OH)2 formula and two-hydroxide factor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the electron equivalents, rather than acid equivalents, consumed by hydroxide.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the acid-equivalent result twice, rather than comparing hydroxide supply with acid demand, to determine excess OH-.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the excess hydroxide concentration to calculate pOH and pH at 25 C.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Independently tabulate base equivalents, acid equivalents, excess, and total volume to check that the solution is basic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final pH with the neutralization balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 140,
+  "task_id": "gpqa__rec06pnAkLOr2t2mp",
+  "dataset": "gpqa",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "002::gpqa__rec06pnAkLOr2t2mp::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0b5c835654d8fb7acbec003c60e70d645547cfb4898f75768892a7e0bd252d3f",
+  "semantic_condition_id": "4cee789f7860c0156543e21449361f0589270058e82a19e8c78d255506f9b68a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Relate a quantum state's lifetime tau to its natural energy linewidth, and write the estimates for tau1=1e-9 s and tau2=1e-8 s symbolically.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hbar=6.58e-16 eV s, calculate both linewidths.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State one exact universal separation threshold for clear resolution from the approximate natural linewidths.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain whether the broader linewidth or the sum of linewidths sets the relevant scale, and why equality with that scale is not clear resolution.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the separation as an inequality and give a representative safely resolvable value.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

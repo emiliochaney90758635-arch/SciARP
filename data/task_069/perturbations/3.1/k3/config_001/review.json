@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "T1 can swap direction labels, T2 summarize the wrong table, and T4 claim continuity.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "removed T1 legacy reversal and rewrote T2/T3/T4 as three independent task-specific contradictions"
+  ],
+  "strict_non2x_original_dialogue_sha256": "9f04716d108d73942596c2069a84333e39f5d08c5fe7e5f3772869e7e125aeea",
+  "strict_non2x_original_semantic_condition_id": "b180dbfdebfe807d753d89d6a3ec58b99a009d38aefa2764f067425ec331952d",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 place canonical-glycolysis rows under upregulated; at T3 replace their downregulated hit genes with SOX18, CYP1B1, HOXA1, and SMAD7; at T4 rank upregulated as more significant despite larger adjusted p-values.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

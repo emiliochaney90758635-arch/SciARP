@@ -1,0 +1,28 @@
+{
+  "config_id": "task057_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Report NeuN means in thousands after division by 1,000."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Keep SDs in raw cell-count units."
+    }
+  ]
+}

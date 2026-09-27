@@ -1,0 +1,28 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first source aggregates transcripts by harmonic mean and reports positive agreement.",
+    "The second aggregates by minimum p-value and reports inverse agreement.",
+    "The third retains versioned transcripts, winsorizes, and reports weak positive agreement."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "harmonic-mean gene certificate"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "frozen-RefSeq audit"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "minimum-p gene registry"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 585,
+  "task_id": "scibench__diff-sol-000",
+  "dataset": "scibench",
+  "ordinal": 366,
+  "variant": "perturbed",
+  "conversation_id": "366::scibench__diff-sol-000::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8bd76ee50b09e7ebed73e7bae7a132b607f363b54266a47c632e41c0e917f743",
+  "semantic_condition_id": "35e317b485c10994fb7ee5067384521e86fb91542bc2eeda07a7c90c5a53c5a5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An IRA starts at age 25 with zero balance. Contributions flow continuously at $2000 per year, and the balance earns a continuous 8% annual return. What time horizon and parameters should the model use to find the balance at age 65?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the balance formula for constant continuous contributions and a constant continuously compounded return.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the radioactive half-life from the earlier setup to substitute parameters into S(t) and simplify the age-65 balance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the age-65 isotope abundance to the nearest dollar, then compare the positive-return balance with contributed principal.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What modeling assumptions are implicit in the treatment adopted above, and how should the numerical result be qualified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the final numerical result, total contributions, and their comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

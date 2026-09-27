@@ -1,0 +1,57 @@
+{
+  "task_index": 131,
+  "task_id": "131-capsule036",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9c1b0fabc60bb79a6ca565e5dac68b9ec878ef1ac8b7ca515a4c215236469b0f",
+  "source_base_evidence_sha256": "e32e2c190a417829565cff410e8e08a79b68931843a296d6fd9582257e7a04c9",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "LFC scale changed.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Abundance unit independently changed.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Adjusted-p scale independently changed.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Interpret log2FoldChange as natural-log fold change.",
+    "T3": "Interpret baseMean as counts per million.",
+    "T5": "Interpret Adjusted P-value entries as percentages before ranking."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Interpret the shrunken log2FoldChange values as natural-log fold changes."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Interpret baseMean values as counts per million when applying the stated filter."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Convert adjusted p-values to percentages, round them to two decimal percentage points, rank those rounded values, and report the top-ranked term."
+    }
+  ]
+}

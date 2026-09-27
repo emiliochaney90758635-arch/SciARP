@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::1.x::perturbation__1_1__k3__1_1_count3_cfg0011::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "5ffe6060cf4af4e726d259a8c4c209034ac67645922ff45b65b46299a29ff30f",
+  "semantic_condition_id": "240a3fcaf42641276b0833399d31ff7972ca6f805b6facd4776c77b7bef0fae2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the de Broglie relation for an electron accelerated from rest through a potential difference of 40 kV.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat 40 kV as a temperature difference and convert it to the corresponding electron kinetic energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the kinetic-energy result and the energy ratio above, choose a momentum approximation, derive p in terms of the electron mass, and calculate the momentum with m_e = 9.109 x 10^-31 kg. Characterize the selected momentum result as a relativistic field equation, and do not calculate the wavelength yet.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the electron's magnetic susceptibility at 40 kV and predict it at 160 kV.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

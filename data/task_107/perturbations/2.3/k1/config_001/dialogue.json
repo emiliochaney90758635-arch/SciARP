@@ -1,0 +1,35 @@
+{
+  "release_task_index": 107,
+  "task_id": "107-capsule031",
+  "source_id": "bix-46-q1",
+  "dataset": "bixbench",
+  "ordinal": 107,
+  "variant": "perturbed",
+  "conversation_id": "107::107-capsule031::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "01ad2e6a0114d49a8cc9ff37daab05857a3c248a0b546991fbdc50f806591daa",
+  "semantic_condition_id": "025225ec50ef33b764a7c439657b8a8b117fdc42fb91af98fbbf3c7ea128d7e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Gene-to-locus annotation\n\nThe PA14 annotation contains one exact `mexG` match:\n\n| Locus Tag | Gene Name | Product Name |\n|---|---|---|\n| PA14_09520 | mexG | hypothetical protein |\n\nNearby loci are different genes and must not be substituted:\n\n| Locus Tag | Gene Name | Product Name |\n|---|---|---|\n| PA14_09500 | opmD | outer membrane protein |\n| PA14_09520 | mexI | RND efflux transporter |\n| PA14_09530 | mexH | RND efflux membrane fusion protein |\n\n## Archived differential-expression slice\n\n`res_1vs97` represents strain #97 (ΔrhlI) relative to strain #1 (wild type).\nAfter joining the two mutant results, `.x` is ΔrhlI/wt and `.y` is\nΔlasI/wt.\n\n| GeneID | Gene Name | `log2FoldChange.x` (ΔrhlI/wt) | `padj.x` | `log2FoldChange.y` (ΔlasI/wt) | `padj.y` |\n|---|---|---:|---:|---:|---:|\n| PA14_09540 | mexG | -4.9642248 | 1.375385e-105 | 0.07152855 | 0.804655376 |\n| PA14_09520 | mexI | -4.7949871 | 1.849298e-82 | 0.04872598 | 0.880379352 |\n| PA14_09530 | mexH | -4.9644485 | 1.849298e-82 | 0.12171571 | 0.704868605 |\n| PA14_09500 | opmD | -4.7507305 | 2.982652e-73 | -0.04215672 | 0.900295895 |\n\nUse the target locus and the ΔrhlI/wt column, then round the stored value to\ntwo decimal places using ordinary nearest-value rounding.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nLocate mexG in the PA14 annotation and distinguish it from the similarly named neighboring genes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Select the differential-expression column for delta-rhlI relative to wild type at that locus.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the mexG log2 fold change rounded to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

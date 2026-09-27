@@ -1,0 +1,49 @@
+{
+  "release_task_index": 259,
+  "task_id": "gpqa__recbS9CXnLFMRA6XY",
+  "dataset": "gpqa",
+  "ordinal": 127,
+  "variant": "perturbed",
+  "conversation_id": "127::gpqa__recbS9CXnLFMRA6XY::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6acd3e6ee16ddbf3edbc96a68e24c63f99f407e66f5961faa4db8a18df126d40",
+  "semantic_condition_id": "64d0e32b2bb73d2c77dba1f26cf314838b775cfd3b2902f4d75d8e09a5bdf400",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A photon of total energy E_beam strikes an electron at rest in the nominal e+e- -> X setup. Derive the initial invariant s using the photon beam and electron mass m_e.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "If the final state is a single particle X produced at threshold, relate its mass M_X to the invariant you just derived.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate s and M_X for E_beam=9.6 x 10^6 GeV and m_e=0.000511 GeV.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the resulting mass and explain how the threshold condition fixes it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the dimensions and the accuracy of neglecting the term of order m_e^2 at this beam energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the mass of X and the invariant-mass relation used to obtain it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

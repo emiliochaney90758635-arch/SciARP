@@ -1,0 +1,64 @@
+{
+  "release_task_index": 204,
+  "task_id": "gpqa__recF89DhiduLI4cNl",
+  "dataset": "gpqa",
+  "ordinal": 72,
+  "variant": "perturbed",
+  "conversation_id": "072::gpqa__recF89DhiduLI4cNl::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a8a997909431ca9fa3889328bf89ed9c2451a6f490e98e95cea950031980622b",
+  "semantic_condition_id": "2b48179f4dfc9df074b34632ffc8423330c6a7c6201fce71bfce60d19889b8ac",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A four-mode continuous-variable GHZ state is distributed with mode 1 held by P1, modes 2 and 3 by P2, and mode 4 by P3. Each displacement is written alpha=x+ip. Which two mode pairs enter the Bell measurements?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which measurement scheme is appropriate for recovering signed amplitude- and phase-quadrature combinations from each mode pair? Identify the governing continuous-variable Bell measurement without substituting the encoded values yet.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For two modes encoded as (x_i,p_i) and (x_j,p_j), what amplitude and phase quadrature combinations are returned by the homodyne continuous-variable Bell measurement?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Modes 1 and 2 are encoded by P1=(x_a,p_a) and P2=(x_b,p_b). Apply the Bell-measurement rule and compute their first reduced density matrix.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the second measurement, identify which parties supply modes 3 and 4 and state their order in the signed Bell observables.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Modes 3 and 4 are encoded by P2=(x_b,p_b) and P3=(x_c,p_c). Apply the same Bell rule and give the second signed output pair.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two results in mode-pair order, first 1-2 and then 3-4.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check both sign patterns against the homodyne Bell observables X_i-X_j and P_i+P_j. Why is the same pattern used for each pair?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the two Bell-measurement outputs in terms of x_a,p_a,x_b,p_b,x_c,p_c.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

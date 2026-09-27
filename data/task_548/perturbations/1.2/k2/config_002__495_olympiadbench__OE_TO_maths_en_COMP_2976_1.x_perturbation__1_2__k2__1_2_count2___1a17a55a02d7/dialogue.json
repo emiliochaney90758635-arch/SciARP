@@ -1,0 +1,49 @@
+{
+  "release_task_index": 548,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2976",
+  "dataset": "olympiadbench",
+  "ordinal": 495,
+  "variant": "perturbed",
+  "conversation_id": "495::olympiadbench__OE_TO_maths_en_COMP_2976::1.x::perturbation__1_2__k2__1_2_count2_cfg0002::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "b541ce0d6097399afe4d62c4e4949822a36c37c8cc467e0c586b15383b61b0b5",
+  "semantic_condition_id": "6400546e9ab2f02b6986ec81aded01ee1cc04288806ac406d6e8dfe27071fb0e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 125-by-8 rectangle is tiled by 2-by-2 squares. Determine the resulting grid dimensions and the numbers of interior vertical and horizontal gridlines.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Place the relevant pair of corners in coordinates using the dimensions currently specified. Use the greatest common divisor of the coordinate differences to decide whether the segment passes through an interior lattice point.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the crossing formula for the current grid and current segment, accounting for any simultaneous crossings of the two gridline families.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that formula to the current construction and compute the exact number of tile interiors crossed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Perform an internal check of the numerical result using only the method and conventions established above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let n denote the number of 2-by-2 squares crossed in the 125-by-8 rectangle, despite the original tiling into 1000 unit squares. State n and the counting argument.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

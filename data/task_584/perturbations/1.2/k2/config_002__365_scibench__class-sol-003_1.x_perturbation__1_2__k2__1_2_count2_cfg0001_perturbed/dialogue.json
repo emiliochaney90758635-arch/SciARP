@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "474ae1db35f426b314417de71426241c32c72a18494a9d97c51b172e9bc9fca8",
+  "semantic_condition_id": "36491a2315c59bee298aef2bc09acc069967ef6e946f3681fc8b1c02f0c30516",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use r_E=1.50e11 s and r_M=2.28e11 m to calculate the transfer semimajor axis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use G=6.67e-11 SI and M_sun=1.99e30 K to calculate the solar gravitational parameter and write the half-period formula.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

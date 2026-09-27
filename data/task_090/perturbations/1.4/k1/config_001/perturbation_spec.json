@@ -1,0 +1,28 @@
+{
+  "task_id": "090-capsule025",
+  "release_task_index": 90,
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits sufficient-statistic definitions."
+  ],
+  "candidate_injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a76bba200bd91241b5e9cbdb19bea06a6977ce2d84d56dc00748d6b7829b27dd",
+  "configured_evidence_sha256": "a76bba200bd91241b5e9cbdb19bea06a6977ce2d84d56dc00748d6b7829b27dd",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

@@ -1,0 +1,43 @@
+{
+  "task_id": "002-capsule002",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "root_injections": [
+    "Omits workbook availability from the cohort inclusion rule.",
+    "Omits the two zygosity exclusions needed to define non-reference calls.",
+    "Omits the ontology exclusion set and matching rule."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "c9689f584807ce29c908b722c6b39e35585cc21976c58c02d3f94ed96bda7e9a",
+  "configured_evidence_sha256": "c9689f584807ce29c908b722c6b39e35585cc21976c58c02d3f94ed96bda7e9a",
+  "evidence_unchanged": true
+}

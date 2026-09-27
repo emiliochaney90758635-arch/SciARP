@@ -1,0 +1,69 @@
+{
+  "release_task_index": 275,
+  "task_id": "gpqa__recm7S5Gq7FWCgaHZ",
+  "dataset": "gpqa",
+  "ordinal": 143,
+  "variant": "perturbed",
+  "conversation_id": "143::gpqa__recm7S5Gq7FWCgaHZ::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b1d274dfa97cdd949b2d65a8fc8c19927fc89e208a0e65ba83b228ff17417f69",
+  "semantic_condition_id": "112bee76aa741bdd352476f451686dfe9a23499d110d8be123742d070846c6a1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Interpret the phosphoprotein patterns while assuming every drug completely activates, rather than inhibits, its intended target.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the MK2206 condition to assess whether activating AKT alone produces the strongest loss of viability.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare rapamycin (80%), Rapalink-1 (60%), and AZD8055 (50%) with their 4E-BP1 and S6K readouts to distinguish the relative completeness of the actions assigned above.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare GSK2126458 (2%) with MK2206 plus Rapalink-1 (7%) and MK2206 plus AZD8055 (5%), all with the five readouts suppressed, using the drug actions and node assignments established from the single-agent comparisons.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use MK2206 plus rapamycin (60%) and GDC-0941 plus rapamycin (40%) to test whether the mechanism assigned to rapamycin above is sufficient in those combinations.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compare GDC-0941 plus Rapalink-1 (3%) with GDC-0941 plus AZD8055 (2%). What does this comparison imply about the relative effects of Rapalink-1 and AZD8055 when PI3K is inhibited by GDC-0941?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Synthesize the signaling and viability contrasts to identify the two kinase nodes transmitting most of the measured survival and proliferation effect.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the pair as the best-supported experimental conclusion while retaining uncertainty from absent replicates, error estimates, and small-difference statistics.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the proposed kinase-node conclusion against all the treatment comparisons, and identify which causal details remain unresolved because replicates, error estimates, and small-difference statistics are absent.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Identify the two kinase nodes and cite the treatment contrasts that most strongly support the conclusion, using the uncertainty assessment already established.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

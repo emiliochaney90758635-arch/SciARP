@@ -1,0 +1,55 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Selected-row count changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Term label independently mistranscribed.",
+      "consumers": [
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Denominator independently transcribed as 22.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "The selected table has 1,942 rows.",
+      "new": "The selected table has 1,924 rows."
+    },
+    {
+      "turn_id": "T3",
+      "old": "Oxidative Stress WP412",
+      "new": "Oxidation Stress WP412"
+    },
+    {
+      "turn_id": "T5",
+      "old": "The proportion denominator is the 20 archived rows shown above.",
+      "new": "The proportion denominator is the 22 archived rows shown above."
+    }
+  ],
+  "extends_existing": null
+}

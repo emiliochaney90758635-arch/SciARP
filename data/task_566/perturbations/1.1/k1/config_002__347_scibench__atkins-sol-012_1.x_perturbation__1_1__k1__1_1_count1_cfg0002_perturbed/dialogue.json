@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1ff1ce97b3851790e20bece9a74380cda2e4a55711423f60e05c3d17038e737d",
+  "semantic_condition_id": "efe8888e4f96b324dc36e512580da8e4fc7217b606e655b8f68afce95f263098",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the de Broglie relation for an electron accelerated from rest through a potential difference of 40 kV.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat 40 kV as a temperature difference and convert it to the corresponding electron kinetic energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the chosen approximation, calculate p=sqrt(2m_e eV).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the wavelength at 40 kV and predict it at 160 kV under the same nonrelativistic scaling, with appropriate precision.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

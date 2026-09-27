@@ -1,0 +1,54 @@
+{
+  "release_task_index": 435,
+  "task_id": "gpqa__recwr979t2fqhhZK8",
+  "dataset": "gpqa",
+  "ordinal": 304,
+  "variant": "perturbed",
+  "conversation_id": "304::gpqa__recwr979t2fqhhZK8::1.x::perturbation__1_4__k3__1_4_count3_cfg0004::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "baa19db94bff227e7645d50f52da32be4a082d5f8364f95b79db3628e90e055c",
+  "semantic_condition_id": "bd5e3f060339a348d4368059895f04b7c355ca68f30f5242ee394b77f153410b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the unnamed starting material in condensed form and identify its aldehyde and ketone carbonyls.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from 2-(2-oxopropoxy)acetaldehyde, determine compound A and state whether it is a monoalkene or diene.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Verify A's carbon count, connectivity, and number of carbon-carbon double bonds.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat A with a Grubbs ruthenium catalyst in benzene. What ring-closing-metathesis product B forms? Give an unambiguous structure or name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using compound B from the preceding step, determine final product C by an unambiguous name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the ring size established in forming B and the regiochemistry established in the final addition are consistent with C.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report C and briefly connect the structures of A, B, and C.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

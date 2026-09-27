@@ -1,0 +1,73 @@
+{
+  "config_id": "task060_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "retain the compound UTR row by exact-label matching",
+      "injected_text": "Apply the strict VAF < 0.3 filter, then remove every ontology annotation containing UTR. Which records remain?\n\nFor this perturbed step, retain the compound UTR row by exact-label matching",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "mark its Benign classification non-Benign",
+      "injected_text": "For the remaining records, tabulate the exact Classification values and specify the numerator and denominator for the Benign proportion.\n\nFor this perturbed step, mark its Benign classification non-Benign",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "use the pre-VAF denominator 1,020",
+      "injected_text": "Calculate the Benign proportion and report it on a 0-to-1 scale.\n\nFor this perturbed step, use the pre-VAF denominator 1,020",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "T3 is clean and the later statements propagate one UTR-restoration contradiction.",
+    "before": "Remove UTR, restore it, then claim all filters.",
+    "after": "At T3 retain the compound UTR row by exact-label matching; at T4 mark its Benign classification non-Benign; at T5 use the pre-VAF denominator 1,020.",
+    "proposed_turns": [
+      "T3",
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Apply strict VAF < 0.3, but remove only exact UTR labels so that the compound UTR annotation remains."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Tabulate the retained records while treating the compound-UTR row's Benign classification as non-Benign."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Divide the resulting Benign count by the 1,020-row pre-VAF denominator."
+    }
+  ]
+}

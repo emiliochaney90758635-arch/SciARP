@@ -1,0 +1,44 @@
+{
+  "config_id": "task036_2.3_k3_existing",
+  "subclass": "2.3",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "changes threshold label from 1e-05 to 1e+05",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "removes one low-dispersion marker from the transcription",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "changes black gene-est mapping to final post-shrinkage",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

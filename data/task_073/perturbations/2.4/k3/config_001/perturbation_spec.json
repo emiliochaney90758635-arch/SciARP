@@ -1,0 +1,21 @@
+{
+  "task_id": "073-capsule020",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T2"
+  ],
+  "downstream_consumers": [
+    "T2_response",
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "A replicate-aware cleaning audit conflicts with the archived all-occurrences removal rule and reports 201 retained samples.",
+    "A batch-regressed PCA ledger uses a different pre-decomposition model and variance trace.",
+    "A randomized rank-100 audit normalizes PC1 by captured-component variance rather than full-matrix variance."
+  ],
+  "evidence_mode": "append"
+}

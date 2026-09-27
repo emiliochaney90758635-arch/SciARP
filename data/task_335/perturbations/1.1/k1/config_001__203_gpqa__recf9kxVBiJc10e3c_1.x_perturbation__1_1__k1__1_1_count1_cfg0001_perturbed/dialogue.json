@@ -1,0 +1,49 @@
+{
+  "release_task_index": 335,
+  "task_id": "gpqa__recf9kxVBiJc10e3c",
+  "dataset": "gpqa",
+  "ordinal": 203,
+  "variant": "perturbed",
+  "conversation_id": "203::gpqa__recf9kxVBiJc10e3c::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "4cf27503f5b83d2bbb1d4e2d15b17b86cbf319f2b075e8a158a71f03a5466290",
+  "semantic_condition_id": "0d075ca4629b37b35dd90394f77bb59a912ccf64aba3ca4a3f03bed1bfa6750c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For W, X, Y, and Z as given, apply a classical rotation-matrix criterion rather than quantum positivity, purity, and Bloch-vector criteria.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the Bloch vector of Z. Are all three of its components nonzero?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply a sign-sensitive determinant or eigenvalue test to each supplied matrix, classify every valid state as pure or mixed, and compute the Bloch vector and norm of Y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What conclusions follow about Z's components, the existence of a pure state, X's validity, and Y's location in the Bloch ball?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the classifications with determinant or eigenvalue signs and Bloch-vector norms rather than trace and Hermiticity alone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final true conclusion and the decisive matrix and Bloch-vector calculations.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

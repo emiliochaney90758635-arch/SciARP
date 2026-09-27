@@ -1,0 +1,59 @@
+{
+  "release_task_index": 571,
+  "task_id": "scibench__calculus-sol-002",
+  "dataset": "scibench",
+  "ordinal": 352,
+  "variant": "perturbed",
+  "conversation_id": "352::scibench__calculus-sol-002::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "39fc3bae521425d4132c807909780ef3d8044bad8f29346f1204d4beed01a31a",
+  "semantic_condition_id": "d386b789e129b445fd7954507c21c054d8058ce4d1b0bface5c2299161a22fab",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Divide R=[0,2]x[0,2] into four equal squares. What are Delta x, Delta y, and the area Delta A of each subrectangle?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List the largest eigenvalue for each of the four subrectangles in a consistent order.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For those four points, tabulate x^2 and y^2 separately so the surface heights can be evaluated without changing the point order.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate f(x,y)=16-x^2-2y^2, the height of the hyperbolic paraboloid, at each of the four sample points.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Multiply each sampled height by Delta A and add the four contributions to obtain the Riemann-sum volume estimate.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Using the signs of the partial derivatives on R, determine whether each upper-right sample is a cell minimum or maximum and whether the estimate is below or above the true volume, without evaluating the exact integral.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that every cell contribution has volume units and use the cellwise height comparison to verify the direction of the inequality for the total estimate.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final upper-right-corner Riemann-sum estimate for the volume and state its inequality relative to the true volume.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

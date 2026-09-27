@@ -1,0 +1,54 @@
+{
+  "release_task_index": 602,
+  "task_id": "scibench__quan-sol-000",
+  "dataset": "scibench",
+  "ordinal": 383,
+  "variant": "perturbed",
+  "conversation_id": "383::scibench__quan-sol-000::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "b4b58aa3fd633911758bd9e546a07aab5b430b7e201b342f8587dfa6b9d0d4da",
+  "semantic_condition_id": "f3aa7cc14863de95c9f55818b58b6930c8fb642160d7c8cb231ceadef79edd9f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At `t=0`, a particle in one dimension has `Psi(x) = a^(-1/2) exp(-|x|/a)`. Use the probability-current relation to obtain the position probability density and describe its symmetry.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the integral for the probability current through `0 <= x <= 2 nm` when `a = 1.0000 nm`.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find an antiderivative for the integrand on this nonnegative interval, keeping `a` symbolic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the integral at `0` and `2 nm`, substitute `a = 1.0000 nm`, and simplify the result to an exact expression.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the probability numerically to four decimal places and compare it with one half.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that comparison using symmetry: relate the probability on `x >= 0` to one half and account for the positive tail beyond `2 nm`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the requested probability and briefly state why it lies on the indicated side of one half.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

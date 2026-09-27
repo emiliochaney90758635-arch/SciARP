@@ -1,0 +1,69 @@
+{
+  "release_task_index": 385,
+  "task_id": "gpqa__recR774BQpzwte6oT",
+  "dataset": "gpqa",
+  "ordinal": 254,
+  "variant": "perturbed",
+  "conversation_id": "254::gpqa__recR774BQpzwte6oT::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "5168f345e7f0edbbbe61fe1ed4aa15be41b2cdbf4996aa201ecba0407c1cd67a",
+  "semantic_condition_id": "e2ffe257baed0070a381a569acedb25b5d0422a6ce9b21a1d616fba8a1da3f62",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat the two numerical energy-peak coordinates as wavelength peaks and set T_A/T_sun=1.41/7.21 using the wavelength-domain Wien relation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Starting from L=4*pi*R^2*epsilon*sigma*T^4, let R_1 denote the target's radius and R_2 the Sun's radius. Derive R_1/R_2 in terms of their luminosity, temperature, and emissivity ratios.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the stated factor of 24 together with the peak-derived ratio to evaluate the ratio defined in the preceding step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Square the numerical radius ratio and explain what physical area comparison the squared ratio represents.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show how a non-unit emissivity ratio would enter the relation being used, then apply the emissivity assumption established earlier.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "List the measured and model-dependent inputs on which the comparison relies, and state whether the supplied case contains what is needed for the requested evaluation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the numerical result against the governing relation used above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Qualify the result to the precision of the measurements and the assumptions used in the analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the direction and scale of the comparison are physically consistent with the stated temperature and luminosity information.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the peak-derived temperature ratio, radius ratio, and squared radius ratio, together with the assumptions used to obtain them.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

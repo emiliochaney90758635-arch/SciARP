@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Replicate can first be redefined as a DishNumber category, followed by median and loss-fraction changes.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "4ec3c634e126516e21c2b7c7dfc03f60be71259b99e263351cdb9f71564b1466",
+  "strict_non2x_original_semantic_condition_id": "b91e7f28471632f384a196b1b0844ee93905ec9db821ea63732bf5098503700e",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally ask to treat each unique Ratio category as one replicate while collapsing the shared 1:0 rows, then preserve the median and fraction-lost instructions; remove 'For this perturbed step'.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

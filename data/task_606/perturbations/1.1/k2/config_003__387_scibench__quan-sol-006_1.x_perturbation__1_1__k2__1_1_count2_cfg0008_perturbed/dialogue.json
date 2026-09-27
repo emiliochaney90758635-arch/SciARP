@@ -1,0 +1,54 @@
+{
+  "release_task_index": 606,
+  "task_id": "scibench__quan-sol-006",
+  "dataset": "scibench",
+  "ordinal": 387,
+  "variant": "perturbed",
+  "conversation_id": "387::scibench__quan-sol-006::1.x::perturbation__1_1__k2__1_1_count2_cfg0008::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f10aa4fc634430fc98f35b0afe6187228952f98f6704e19f28e55a7a12b32e98",
+  "semantic_condition_id": "f37947ea3be7ecad8ccffcf334bf09417a7e28b49d9ab729c21d92b58649adc5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For rigid-rotor 12C32S, identify the lowest pure rotational absorption transition and relate its frequency to the rotational constant B.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using B=h/(8 pi^2 I) and I=mu r^2, derive r in terms of the observed transition frequency and reduced mass.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the reduced mass of 12C32S using the stated mass of 34S.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat 48991.0 MHz as the rotational constant B rather than the observed transition frequency and convert it to SI units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the C-S bond distance and state whether absorption drives an upward or downward rotational transition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the factor of two in nu=2B, the reduced-mass moment of inertia, and the distance scale.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the bond distance as a rigid-rotor spectroscopic estimate with nonzero model and measurement uncertainty.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

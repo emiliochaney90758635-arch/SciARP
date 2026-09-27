@@ -1,0 +1,69 @@
+{
+  "release_task_index": 412,
+  "task_id": "gpqa__reckEnrOPFT9Ru7tW",
+  "dataset": "gpqa",
+  "ordinal": 281,
+  "variant": "perturbed",
+  "conversation_id": "281::gpqa__reckEnrOPFT9Ru7tW::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "40f86ecda0c887b3ab30c0157f20cc4c70fe96aaec8ae0013851b25e776e69b1",
+  "semantic_condition_id": "78cf1429ae735dc11e022bf02b313d1ba5c57df9331558e538314f66ffb760b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Starting from 3-(hydroxymethyl)-5-(prop-1-en-2-yl)cyclohexan-1-one, determine product 1 after sodium hydride and benzyl bromide. Which group reacts, and which groups remain?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What product 2 forms when product 1 reacts with p-toluenesulfonyl hydrazide under catalytic acid?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze product 2 with n-butyllithium at low temperature followed by aqueous ammonium chloride. Identify the Shapiro reaction, product 3, and whether n-butyl is incorporated.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For product 3, account for the transformations expected in the final Pd/C under H2 catalytic step.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Identify product 4 by name and connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed product against each transformation already established in the sequence.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Audit the fate of the temporary protecting and derivatizing groups, and determine whether the organolithium reagent becomes part of the final carbon skeleton.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report product 4 as certain and complete despite unspecified hydrogenation conditions and product analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Which experimental observation would best confirm both transformations predicted for the final catalytic step?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report product 4 and the sequence of transformations.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 428,
+  "task_id": "gpqa__recr3VHM4zYf6dMFY",
+  "dataset": "gpqa",
+  "ordinal": 297,
+  "variant": "perturbed",
+  "conversation_id": "297::gpqa__recr3VHM4zYf6dMFY::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "e963e9d00d06dfcb88c7bd397189f3141e49fb7c030cc968983995ed1f003256",
+  "semantic_condition_id": "51143842e00fb95fa3ef5aa9264ad0bc6e6ebdcfb403e4c09f2deb61de3a9837",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "NaNO2, HCl, and water convert carbonyl precursors into 4-isopropylcyclohexane-1,2-dione and 5-methylhexane-2,3-dione. What reactive nitrosating species and transformation does this mixture imply?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Work backward from each vicinal diketone to a monoketone with the same carbon skeleton and an enolizable alpha carbon. What structures do you propose for A and B?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Swern oxidation as the sole route to the acyclic diketone and assign 5-methylhexane-2,3-diol as B.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the result requested at this point and explain it using only the reaction sequence established so far.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Test that result for internal consistency with carbon-skeleton conservation and the observed functional pattern.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and the chemical feature that supports it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

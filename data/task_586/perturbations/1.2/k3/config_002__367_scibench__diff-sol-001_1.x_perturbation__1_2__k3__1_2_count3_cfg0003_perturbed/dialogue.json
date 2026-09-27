@@ -1,0 +1,54 @@
+{
+  "release_task_index": 586,
+  "task_id": "scibench__diff-sol-001",
+  "dataset": "scibench",
+  "ordinal": 367,
+  "variant": "perturbed",
+  "conversation_id": "367::scibench__diff-sol-001::1.x::perturbation__1_2__k3__1_2_count3_cfg0003::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "8e94df10173a7b071d76acf488a6ee3ca8bd8f6ceaa1cb2becadc1653b185206",
+  "semantic_condition_id": "0793315d9dcba2359058c72741c65a66fc3a5648debfc4ec66662d0d9b820908",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 10 lb weight stretches a spring for 2 seconds. Determine the spring constant in consistent force-length units.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let u(t) denote the system's dynamical variable, with its positive sense taken downward. Using g=32 ft/s^2, convert the weight to mass in slugs and write the governing equation and angular frequency for that model.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve that differential equation for the general function u(t).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The mass starts 2 in below equilibrium with an upward velocity of 1 ft. Apply these initial conditions to determine the two constants.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the coefficients to compute the amplitude in seconds, with the equivalent inches if convenient.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign of the initial derivative, the units of the coefficients, and whether the reported extremal magnitude is consistent with the supplied initial data.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting function u(t) and its characteristic magnitude with suitable numerical precision.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

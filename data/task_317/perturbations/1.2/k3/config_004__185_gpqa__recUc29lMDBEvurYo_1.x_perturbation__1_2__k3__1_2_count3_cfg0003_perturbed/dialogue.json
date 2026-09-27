@@ -1,0 +1,59 @@
+{
+  "release_task_index": 317,
+  "task_id": "gpqa__recUc29lMDBEvurYo",
+  "dataset": "gpqa",
+  "ordinal": 185,
+  "variant": "perturbed",
+  "conversation_id": "185::gpqa__recUc29lMDBEvurYo::1.x::perturbation__1_2__k3__1_2_count3_cfg0003::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "39f8c02ebbbdaa15145a8f110de770afa0c955418b654635e5ee21cb2ebd1198",
+  "semantic_condition_id": "2bdf5df8efe81d415e7e043ca9fb033318b8454f65afb242d068057e5b4d2b70",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Thirteen identical point charges each have charge 2e. One is fixed at the centre P, and the other twelve lie on a sphere of radius 2 m. Write the electrostatic potential energy as k(2e)^2 times a geometric sum over distinct pairs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the centre-to-outer contribution when the twelve outer charges are constrained to stay 2 seconds from P.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify the minimum-energy arrangement of the twelve outer particles under the geometry established above and compute their outer-outer sum of 1/r_ij from the distinct pair separations and multiplicities, rather than using a tabulated continuum result.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two geometric contributions obtained above to form the minimized sum for all distinct pairs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate k(2e)^2 using k=8.9875517923e9 N m C^-2 rather than N m^2 C^-2.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the geometric sum and prefactor to report the minimum energy in metres.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the arithmetic by independently reviewing the pair-distance multiplicities, radius scaling, and charge dependence; if a continuum approximation is used, explain how it compares.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the minimum energy and briefly explain the geometric model and any approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

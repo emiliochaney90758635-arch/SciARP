@@ -1,0 +1,57 @@
+{
+  "config_id": "task058_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "halve n as if it were total N",
+      "injected_text": "Solve that model for the continuous sample size required per group.\n\nFor this perturbed step, halve n as if it were total N",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "independently round down rather than up",
+      "injected_text": "Check the adjacent integer designs and report the smallest per-group sample size that achieves at least 80% power.\n\nFor this perturbed step, independently round down rather than up",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Interpreting solver n as total N and then labeling it per-group is one error chain.",
+    "before": "Treat continuous n as total, then report it per group.",
+    "after": "At T2 halve n as if it were total N; at T3 independently round down rather than up.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Solve for the continuous total sample size, then halve it as though the solver's per-group result were a combined total."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Round that halved value down and report it as the minimum per-group sample size."
+    }
+  ]
+}

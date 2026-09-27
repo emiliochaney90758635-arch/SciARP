@@ -1,0 +1,73 @@
+{
+  "config_id": "task051_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "Misassign or omit one replicate , pool at T2, and invert the proportion at T3",
+      "injected_text": "Separate the colony-area replicates for delta-lasR and wild type into their two genotype groups.\n\nFor this perturbed step, misassign or omit one replicate , pool at T2, and invert the proportion at T3",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Misassign or omit one replicate at T1, pool at T2, and invert the proportion at T3.",
+      "injected_text": "Calculate the arithmetic mean colony area for each genotype.\n\nFor this perturbed step, misassign or omit one replicate at T1, pool at T2, and invert the proportion at T3.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Misassign or omit one replicate at T1, pool at T2, and invert the proportion at T3.",
+      "injected_text": "What proportion of the wild-type mean is the delta-lasR mean?\n\nFor this perturbed step, misassign or omit one replicate at T1, pool at T2, and invert the proportion at T3.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "Three independent roots are not present.",
+    "before": "Dependent path errors.",
+    "after": "Misassign or omit one replicate at T1, pool at T2, and invert the proportion at T3.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nSeparate the colony-area observations into genotype groups, but move the largest delta-lasR replicate, 32,011, into the wild-type group."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Pool the resulting observations into one common arithmetic mean and use that value as both genotype summaries."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Report the retained proportion as the wild-type mean divided by the delta-lasR mean."
+    }
+  ]
+}

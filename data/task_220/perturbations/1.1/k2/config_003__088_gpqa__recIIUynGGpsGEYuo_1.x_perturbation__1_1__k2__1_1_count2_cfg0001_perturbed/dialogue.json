@@ -1,0 +1,54 @@
+{
+  "release_task_index": 220,
+  "task_id": "gpqa__recIIUynGGpsGEYuo",
+  "dataset": "gpqa",
+  "ordinal": 88,
+  "variant": "perturbed",
+  "conversation_id": "088::gpqa__recIIUynGGpsGEYuo::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ea8bf7d92d50a6917c837e90a35cd8a0360e577a8a136d4b4bf1525dfb4dbd81",
+  "semantic_condition_id": "2945f571405b5233d7ea4088ce0c91dc3a12d090db3e9c380b80bacb25792ffa",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a light beam propagating in vacuum with refractive index n, state its speed in the rest frame of the glass.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the collinear relativistic velocity-addition law needed to transform that speed to the laboratory frame.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write a relativistic energy-momentum relation for the laboratory light speed in terms of u' and v.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute the working glass-frame speed from the preceding derivation, simplify the expression, and check the corresponding stationary-medium and vacuum-medium limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the simplified laboratory-frame speed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the propagation direction using the sign convention established earlier and verify that the result is consistent with the physical setting.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the speed and its two limiting cases.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

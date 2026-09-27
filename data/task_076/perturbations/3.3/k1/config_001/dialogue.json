@@ -1,0 +1,45 @@
+{
+  "release_task_index": 76,
+  "task_id": "076-capsule021",
+  "source_id": "bix-29-q1",
+  "dataset": "bixbench",
+  "ordinal": 76,
+  "variant": "perturbed",
+  "conversation_id": "076::076-capsule021::3.3.k1::lane_c_manual",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "192ccb963a9a90637640af4a9c48fad039ded7e3f40850cb724ee1cf003c2330",
+  "semantic_condition_id": "ece5237cd3a7c2be745e2590092d9cbf594a11f15e51c3ea980648e4810d40e4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Participant-Level Outcome and Covariates\n\nThe archived processing uses three tables:\n\n- AE: take the maximum `AESEV` across all adverse-event records by `USUBJID`, without filtering by event name.\n- DM: retain `patients_seen` and `expect_interact`.\n- MH: apply `count()` to `MHONGO` by `USUBJID, TRTGRP`, counting every non-null cell, including source values `Yes` and `No`.\n\nEach of the three tables covers 1,000 participants. After merging and applying `dropna()` to the fields used, the model includes 791 complete cases:\n\n| maximum recorded AESEV | BCG | Placebo | total |\n|---:|---:|---:|---:|\n| 1 | 160 | 168 | 328 |\n| 2 | 239 | 163 | 402 |\n| 3 | 28 | 15 | 43 |\n| 4 | 10 | 8 | 18 |\n| **total** | **437** | **354** | **791** |\n\nCovariates are coded as:\n\n```text\nTRTGRP_cat:          Placebo=0, BCG=1\nexpect_interact_cat: No=0, Yes=1\npatients_seen_cat:   1-50=0, 51-100=1, >100=2\nMHONGO:              number of non-null MHONGO records for each participant\nMHONGO_TRTGRP:       MHONGO × TRTGRP_cat\n```\n\n`MHONGO` ranges from 0–6 among complete cases.\n\n## Ordinal-Logit Model\n\n```text\nAESEV ~ TRTGRP_cat\n        + expect_interact_cat\n        + patients_seen_cat\n        + MHONGO\n        + MHONGO_TRTGRP\n\nlink = logit\n```\n\nThe model converges on 791 observations. The archived output for the slope terms is:\n\n| term | coefficient | std err | p-value | coefficient 95% CI |\n|---|---:|---:|---:|---|\n| TRTGRP_cat | 0.490496 | 0.192479 | 0.01082463 | [0.113244, 0.867748] |\n| expect_interact_cat | -0.296769 | 0.145484 | 0.04136313 | [-0.581913, -0.011625] |\n| patients_seen_cat | 0.018994 | 0.148003 | 0.8978849 | [-0.271087, 0.309075] |\n| MHONGO | 0.301697 | 0.086331 | 0.0004746428 | [0.132492, 0.470902] |\n| MHONGO_TRTGRP | -0.002645 | 0.120545 | 0.9824966 | [-0.238908, 0.233619] |\n\nAn ordinal-logit coefficient is on the log-odds scale, and the odds ratio is \\(\\exp(\\beta)\\). With the interaction included, the treatment effect at history count \\(m\\) is:\n\n\\[\n\\mathrm{OR}_{BCG\\;vs\\;Placebo}(m)\n=\n\\exp\\!\\left(\n\\beta_{\\mathrm{TRTGRP}}\n+m\\beta_{\\mathrm{MHONGO\\_TRTGRP}}\n\\right)\n\\]\n--- END TASK EVIDENCE ---\n\nCurrent request:\nInstead of taking the maximum AESEV, average each participant's AESEV records and round the mean to the nearest severity category before modelling. Do not rebuild the participant-level data or refit the model; reuse the archived maximum-AESEV distribution and fitted coefficient table.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assemble patient-contact covariates and each participant's nonmissing-MHONGO record count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Merge complete cases and construct the archived coding and treatment-by-MHONGO product term.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the cumulative-logit model and extract the BCG main-effect coefficient at MHONGO=0.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Exponentiate that coefficient to obtain the BCG-versus-Placebo odds ratio at MHONGO=0.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

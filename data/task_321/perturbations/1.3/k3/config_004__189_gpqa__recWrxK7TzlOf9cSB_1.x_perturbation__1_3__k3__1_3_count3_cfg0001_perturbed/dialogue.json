@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "189::gpqa__recWrxK7TzlOf9cSB::1.x::perturbation__1_3__k3__1_3_count3_cfg0001::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "88bc533e81d426067326051d35a41b7ecab6f5d7e12d5ee550137d116c397b51",
+  "semantic_condition_id": "c2c97bdb2eb56a95169fa80d80c7603b91b4a96bfa96679757920a4e7829aa5e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has formula C10H9ClO, one negative DEPT-135 resonance, and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. What does the negative signal imply, and what plausible structure fits the formula and reactivity? Treat the assignment as provisional because full shift and correlation data are absent.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the proposed Product B structure as the reactant, determine the Friedel-Crafts product B, and check whether its single negative DEPT-135 resonance is consistent.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat Reactant A, rather than B, with hydrazine and NaOH; identify product C and assess its DEPT-135 pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Heat Product B, rather than C, with NBS and peroxide; predict D and account for its 13C pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the systematic name of product D and explain how its carbon environments distinguish the remaining structural alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

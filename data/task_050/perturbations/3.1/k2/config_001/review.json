@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can swap genotype labels, then T3 can still call the resulting direction a reduction in ΔlasR.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "afb1e877e4eb335a4517c2e5a582907909467cdc4fdcb6fed9ba9cbb9c711be7",
+  "strict_non2x_original_semantic_condition_id": "5288084737851e23070af7b28c2920ddeefcc705a34cdd1e05e1900ef74799f6",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request the pooled six-observation average at T2 and use the mutant mean as the denominator of the percentage calculation at T3; remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

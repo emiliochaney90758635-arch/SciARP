@@ -1,0 +1,72 @@
+{
+  "subclass": "3.3",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Use three roots: deduplicate coordinates",
+      "injected_text": "Apply the four stated ontology exclusions to those rows without deduplicating variants across samples.\n\nFor this perturbed step, use three roots: deduplicate coordinates",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "round VAF to one decimal before cutoff",
+      "injected_text": "Apply the strict VAF < 0.3 rule and assemble the final retained population.\n\nFor this perturbed step, round VAF to one decimal before cutoff",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "divide synonymous rows by carrier count",
+      "injected_text": "Reclassify rows whose ontology contains `synonymous`, then calculate their fraction of the final population.\n\nFor this perturbed step, divide synonymous rows by carrier count",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k3",
+    "decision": "repair_required",
+    "problem": "Within-carrier averaging and the final mean are propagation of one root rather than three independent roots.",
+    "before": "Equal-weight blocks, within-carrier fractions, then their mean.",
+    "after": "Use three roots: deduplicate coordinates at T3; round VAF to one decimal before cutoff at T4; divide synonymous rows by carrier count at T5.",
+    "proposed_turns": [
+      "T3",
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Apply the four stated ontology exclusions, then collapse recurrent coordinates across samples to unique sites."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Round each VAF to one decimal place before applying the strict VAF < 0.3 rule and assembling the retained sites."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Classify retained rows whose ontology label contains `synonymous`, count those rows, and divide that count by the 19 matched carriers."
+    }
+  ]
+}

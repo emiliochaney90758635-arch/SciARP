@@ -1,0 +1,59 @@
+{
+  "release_task_index": 568,
+  "task_id": "scibench__atkins-sol-014",
+  "dataset": "scibench",
+  "ordinal": 349,
+  "variant": "perturbed",
+  "conversation_id": "349::scibench__atkins-sol-014::1.x::perturbation__1_2__k2__1_2_count2_cfg0005::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "8d04b5a1659922198c5f99da1f25402f2897e6e78f41719823d8b6ffb96f6b05",
+  "semantic_condition_id": "c5251a5afd3620ed4a43ae8ba1c9dfbccc8b5f3a5705859cdd8bdfa801bee14d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For AgBr(s)+1/2 H2(g)->Ag(s)+HBr(aq), write compatible half-reactions and verify that one electron is transferred per mole of reaction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use E_cell^o/s for the displayed fit, evaluate it at 298 K and 323 K, and identify the curvature.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the relations Delta_r G^o=-nFE, Delta_r S^o=nF(dE/dT), and Delta_r H^o=Delta_r G^o+T Delta_r S^o needed at 298 K, with F=96485 C mol^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Differentiate the fitted polynomial and evaluate the local derivative dE/dT at 298 K with units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use n=1 and E(298 K) to calculate Delta_r G^o with sign and units.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the local derivative to calculate Delta_r S^o, then combine G and T S to obtain the unrounded standard reaction enthalpy at 298 K.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the negative entropy contribution physically against consumption of gaseous H2, and retain the limitations of a polynomial fit with unspecified residuals.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the standard reaction enthalpy at 298 kg to three significant figures.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

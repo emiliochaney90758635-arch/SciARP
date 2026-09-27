@@ -1,0 +1,42 @@
+{
+  "task_index": 125,
+  "task_id": "125-capsule035",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "94f2e102eb147a0a22486dc1a4e1efb576f55b6959c5ee4c4e04bba026c74bc4",
+  "source_base_evidence_sha256": "b96c5f81f05d35b499c1b147f0c81f8a00ec472027a6c87b232e3e4dc76cd024",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Site count changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Z length independently transcribed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "The table contains 51 distinct `Pos` values, and its frequencies sum to 117 records.",
+      "new": "The table contains 52 distinct `Pos` values, and its frequencies sum to 117 records."
+    },
+    {
+      "turn_id": "T2",
+      "old": "| Zebra Finch | 75,396,176 |",
+      "new": "| Zebra Finch | 75,369,176 |"
+    }
+  ],
+  "extends_existing": null
+}

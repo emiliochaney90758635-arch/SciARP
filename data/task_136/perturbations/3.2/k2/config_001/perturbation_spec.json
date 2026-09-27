@@ -1,0 +1,33 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "3.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Spline peak causalized.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ratio independently causalized.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Treat the fitted peak as proof of a biological threshold mechanism.",
+    "T4": "Treat the normalized ratio as independent proof of a causal optimum."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

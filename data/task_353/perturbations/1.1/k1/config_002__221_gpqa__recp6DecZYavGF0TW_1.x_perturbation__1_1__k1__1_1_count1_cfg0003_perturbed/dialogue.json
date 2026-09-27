@@ -1,0 +1,54 @@
+{
+  "release_task_index": 353,
+  "task_id": "gpqa__recp6DecZYavGF0TW",
+  "dataset": "gpqa",
+  "ordinal": 221,
+  "variant": "perturbed",
+  "conversation_id": "221::gpqa__recp6DecZYavGF0TW::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "cf67202ed100aa08490ab98086e26d429b6f44147e8151a7bf87b7400137de3d",
+  "semantic_condition_id": "a97e5c8cf08e990e56df26318dc06be5063e08462779071789e9ef514f4f60c5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Grubbs catalyst is used in two reactions. Styrene and an unknown alkene A form (E)-Ph-CH=CH-CH(CH3)-CH3, while CH2=CH-CH2-O-CH2-CH=CH2 forms an unknown cyclic product B. Identify the metathesis class in each reaction and the structural information needed to infer A and B.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use cross-metathesis fragment matching to identify A. Give its condensed structure and name, and justify the required olefin connectivity.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the diallyl ether, trace the tether and ethylene loss in the corresponding hydrogenation. What ring size and retained unsaturation should B have?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two analyses to identify A and B, including A's condensed structure and B's ring size and unsaturation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check A and B separately against the structural requirements of cross-metathesis and ring-closing metathesis, without conflating the two reactions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Are both assignments internally consistent with their respective reactants and metathesis transformations? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the structures of A and B and the metathesis assignment for each reaction.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

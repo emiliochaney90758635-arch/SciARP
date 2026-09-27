@@ -1,0 +1,54 @@
+{
+  "release_task_index": 262,
+  "task_id": "gpqa__recf4iXKY773NYRFw",
+  "dataset": "gpqa",
+  "ordinal": 130,
+  "variant": "clean",
+  "conversation_id": "130::gpqa__recf4iXKY773NYRFw::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "a97dd9e5f02bc6ddfaf5660e091165bfadf7a966abee07f1bb924e4832906fad",
+  "semantic_condition_id": "b848cdfd47d324db9b7c35c6de3c64ab35250ee970e41a0d623752abe9a4a96b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle beam has total energy E=4 GeV and rest mass m_X=1.48 GeV. Calculate its Lorentz factor using E as the total relativistic energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that Lorentz factor to calculate the speed factor beta.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For proper lifetime tau_0=8.7e-5 s, write the relativistic survival law as a function of distance and set the surviving flux fraction to 0.25.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Solve the survival equation for the distance at which one quarter of the particles remain.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations and unreported source or measurement uncertainties qualify this exponential-decay prediction?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the logarithm, units, beta*c, and Lorentz-dilated lifetime independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distance and show the numerical substitution in the survival law.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

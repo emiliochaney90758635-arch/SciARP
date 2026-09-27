@@ -1,0 +1,74 @@
+{
+  "release_task_index": 470,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2032",
+  "dataset": "olympiadbench",
+  "ordinal": 417,
+  "variant": "perturbed",
+  "conversation_id": "417::olympiadbench__OE_TO_maths_en_COMP_2032::1.x::perturbation__1_4__k2__1_4_count2_cfg0003::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "03ad4e4bc03a4d6a66f15be196aac4b8481939fc756e9e45a30abf068d42511c",
+  "semantic_condition_id": "81a40a56fb3b77431f5eadfeacdafef0e2c6e7a62c70fd5a0bb3448ab75aaecf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For S(n,k)=a_{n-1}+...+a_{n-k}, define m_n and M_n as the minimum and maximum of S(n,k)/k over 1<=k<=n, and let Delta_n=M_n-m_n. Explain why a_{2018}-a_{2017}<=Delta_{2018}.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Prove that for n>2, Delta_n<=(n-1)Delta_{n-1}/n by comparing the extremal averages at stage n with a_{n-1} and the stage-(n-1) interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In that case, what upper bound follows for a_{2018}-a_{2017}?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Show that no term exceeds 1, then define q as the first index with a_q<1 and determine a_q.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compute Delta_{q+1}, then iterate the contraction inequality through Delta_{2018} and simplify the resulting telescoping product.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use q<=2017 to obtain a universal upper bound for a_{2018}-a_{2017}, and combine it with the all-ones case.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Construct an admissible sequence attaining that bound: take a_1=...=a_{2016}=1 and choose the required averages for a_{2017} and a_{2018}. Verify both terms.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Conclude the maximal possible value of a_{2018}-a_{2017}.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Because every new term is an average of preceding terms, determine whether it can ever lie outside the preceding global minimum-to-maximum range.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Check that the extremal construction and the range property are mutually consistent, including the strict drop at index 2017 and the following rise.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the sharp maximum and the admissible-term range property.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

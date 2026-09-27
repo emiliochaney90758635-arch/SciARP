@@ -1,0 +1,43 @@
+{
+  "task_index": 126,
+  "task_id": "126-capsule035",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "3da27097369462397e7b648c092cba76b045354d9c1ac23ac0ab7db5897f31ce",
+  "source_base_evidence_sha256": "7dd8a650fc791e36b94aec424bd72baa24b2beb159f1a5cc73cb5307ee20b862",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "W density changed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Z density independently changed.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| W | 3 | 6,742,290 | 4.44952679282558e-07 |",
+      "new": "| W | 3 | 6,742,290 | 4.34952679282558e-07 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| Z | 8 | 79,826,082 | 1.00217871146426e-07 |",
+      "new": "| Z | 8 | 79,826,082 | 1.10217871146426e-07 |"
+    }
+  ],
+  "extends_existing": null
+}

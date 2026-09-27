@@ -1,0 +1,59 @@
+{
+  "release_task_index": 374,
+  "task_id": "gpqa__recKv4hFyNpViUXnL",
+  "dataset": "gpqa",
+  "ordinal": 243,
+  "variant": "perturbed",
+  "conversation_id": "243::gpqa__recKv4hFyNpViUXnL::1.x::perturbation__1_1__k3__1_1_count3_cfg0010::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "f1bcd8dc96ad5e6735b1994afd6b1bd89303360656e33459e3e0a472864ab723",
+  "semantic_condition_id": "d1a2cc3a14ff7b81989b5c21c89438a7b31357461521e69fe44167e5fcac7420",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two neutral-Ti levels separated by a 1448 Angstrom transition, define the upper/lower population ratio to be compared between the stated 6000 K and 5500 K conditions under LTE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hc/k=1.4388e-2 m K, calculate Delta E/k for the transition.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write a temperature law for a neutral-Ti ionization-stage ratio rather than a discrete-level population ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate a partition function rather than the Boltzmann comparison exponent.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate an oscillator strength rather than the population-ratio factor.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the assumptions about the physical regime, condition values, and measurement that limit the precision of the quantity selected above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign or direction implied by the selected law and verify the comparison direction or quantity established in the preceding step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final quantity with the precision and qualification established above.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 145,
+  "task_id": "gpqa__rec0wZvZgiz320KRs",
+  "dataset": "gpqa",
+  "ordinal": 7,
+  "variant": "clean",
+  "conversation_id": "007::gpqa__rec0wZvZgiz320KRs::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "cf0c03e3890db00e0ddcdca6a7fb8be020f0b157b3d4dea840ad09e00396070b",
+  "semantic_condition_id": "fdb7c303af03e2d334d8d4fe6228267181a2020e08eaf4765f1f2a94fc7f8942",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=1/2|up>+sqrt(3)/2|down>, verify normalization and record the relative phase of the amplitudes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the expectation value of sigma_z.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the expectation value of sigma_x from the two amplitudes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use linearity to express the expectation of 10 sigma_z+5 sigma_x in terms of the two results.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the exact expression and its decimal value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the value to the requested precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

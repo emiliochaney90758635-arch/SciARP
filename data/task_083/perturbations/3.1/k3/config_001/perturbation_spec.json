@@ -1,0 +1,56 @@
+{
+  "task_id": "083-capsule022",
+  "release_task_index": 83,
+  "subclass": "3.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Uses three family sizes.",
+    "Claims same-family continuity.",
+    "Reintroduces excluded raw-only rows."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "dc914645db6a801dee1c2809e83f75a89c6e0f05a7981c8343432b78375b5de4",
+  "configured_evidence_sha256": "dc914645db6a801dee1c2809e83f75a89c6e0f05a7981c8343432b78375b5de4",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Use the smallest one raw p-value for BH, the smallest two for BY, and the smallest three for Bonferroni as three separate correction families."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Intersect raw-p significant rows with those sets even though T3 excluded raw-only rows. Each altered family contains the rank-1 identifier, so report a strict-intersection size of one."
+    }
+  ]
+}

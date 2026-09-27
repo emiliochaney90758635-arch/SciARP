@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Significant DEG, enrichment, and smallest adjusted p-value can each receive wrong definitions.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "b7dad4f48f3f80faad219783376b49ac556fa0c111662846949a3663e1d6181c",
+  "strict_non2x_original_semantic_condition_id": "25abd46ef1edd78a4dcf2704fe673ca00b38b6b3de033b10a0e7f0ccd3be571c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Treat all genes appearing in the displayed result rows as the baseMean-qualified list, define enrichment by nonzero overlap, and choose the row or rows with the largest Overlap numerator.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

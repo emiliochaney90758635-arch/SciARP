@@ -1,0 +1,54 @@
+{
+  "release_task_index": 480,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2230",
+  "dataset": "olympiadbench",
+  "ordinal": 427,
+  "variant": "clean",
+  "conversation_id": "427::olympiadbench__OE_TO_maths_en_COMP_2230::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "2fa8cda42db3cd3e1398ccc3ae6a053ad303e7c87136bc5c9ac0d73252fef8cd",
+  "semantic_condition_id": "ff4cf47aa251db178c36cd6f131c3b18692a3f4408defa50a33913ffe87d83c5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find a dictionary of k-letter A/B strings that has no valid k by k grid and is as large as possible for a lower-bound example. Why does your construction fail?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What lower bound on the guaranteed dictionary size m follows from that example?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take an arbitrary family meeting that candidate threshold. What happens if it contains an applicable uniform string?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Suppose instead that neither uniform string is present. Pair each current member with its letterwise complement and use a counting argument to show that a complementary pair occurs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Let l and l' be such a pair, and let J be the set of positions where l has A. Use them to construct the required k by k grid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify directly what follows from the current construction and the requirement under discussion, citing only the information established so far.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the threshold conclusion reached after the preceding verification and the reason supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

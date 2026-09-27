@@ -1,0 +1,57 @@
+{
+  "config_id": "task066_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "compute CD14 medians",
+      "injected_text": "For each cell type, pair gene length with its arithmetic mean expression on the common gene set and identify the common number of pairs.\n\nFor this perturbed step, compute CD14 medians",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "independently rank by signed r rather than absolute r",
+      "injected_text": "Compare the four coefficients by absolute value. Which cell type has the weakest association?\n\nFor this perturbed step, independently rank by signed r rather than absolute r",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Computing one median and later calling the pipeline mean-based is one propagated inconsistency.",
+    "before": "Median followed by common-mean claim.",
+    "after": "At T3 compute CD14 medians; at T5 independently rank by signed r rather than absolute r.",
+    "proposed_turns": [
+      "T3",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For CD14, call the supplied arithmetic-mean sufficient statistics median-based without recomputing them; retain the archived summaries for the other cell types."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Compare the four archived coefficients by signed value rather than absolute value and name the numerically smallest coefficient as the weakest association."
+    }
+  ]
+}

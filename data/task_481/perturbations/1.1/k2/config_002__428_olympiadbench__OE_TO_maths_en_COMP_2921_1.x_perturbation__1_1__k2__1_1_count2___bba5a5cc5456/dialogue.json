@@ -1,0 +1,49 @@
+{
+  "release_task_index": 481,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2921",
+  "dataset": "olympiadbench",
+  "ordinal": 428,
+  "variant": "perturbed",
+  "conversation_id": "428::olympiadbench__OE_TO_maths_en_COMP_2921::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8c1064cb9b5fa0dd4e0315c299ecbacf01aecda34cf84dd60fcb9b2eb13e02c3",
+  "semantic_condition_id": "f93732703188af0ce5565e5d8a454c3a3b0da2b3d51583c194e367e52a03d921",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a common four-digit suffix in base 2 and base 4, define its two values but still express n using moduli 16 and 625.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the congruences to show that each allowed suffix gives exactly two integers n in 0<=n<10000, and state the resulting size of S.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "As a sanity check, compare x and y for a nontrivial suffix such as 1000 and explain the difference.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Derive the residue formula for each solution class using the two quantities introduced above and the required modulus.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Over the permitted suffixes counted above, compute separate sums of the two quantities used in that formula.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the formula and those two sums to find the requested aggregate modulo the stated modulus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

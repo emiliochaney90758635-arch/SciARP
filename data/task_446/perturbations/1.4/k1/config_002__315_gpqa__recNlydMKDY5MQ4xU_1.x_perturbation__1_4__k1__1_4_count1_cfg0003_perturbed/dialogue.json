@@ -1,0 +1,54 @@
+{
+  "release_task_index": 446,
+  "task_id": "gpqa__recNlydMKDY5MQ4xU",
+  "dataset": "gpqa",
+  "ordinal": 315,
+  "variant": "perturbed",
+  "conversation_id": "315::gpqa__recNlydMKDY5MQ4xU::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "4b51075860804efdc84bde553e8c4d91d72dc39a467e99b75bf8028a5fc84a0f",
+  "semantic_condition_id": "abb9e4b09c45fd8f2a8330bed4555765dfd30335a9cd4a96164aaaec90a2a7cb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At equal pressure and temperature, gas Y has density 0.39 times that of carbon dioxide and is basic. Calculate its molar mass and identify the most plausible gas.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "One mole of a binary metal-nonmetal compound A reacts with excess water to form 2 mol of Y and 3 mol of a sparingly soluble base Z. Infer the formula type of A and write the balanced hydrolysis pattern.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the formula type obtained earlier, calculate the metal's relative atomic mass.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the metal and check it against the flame-test observation and the limited water solubility of Z.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the molar mass of A and place it in the corresponding 20 g/mol-wide interval.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the identification independently against all quantitative and qualitative constraints established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report Y, Z, and A, together with the molar mass and its interval.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

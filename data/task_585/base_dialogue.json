@@ -1,0 +1,49 @@
+{
+  "release_task_index": 585,
+  "task_id": "scibench__diff-sol-000",
+  "dataset": "scibench",
+  "ordinal": 366,
+  "variant": "clean",
+  "conversation_id": "366::scibench__diff-sol-000::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "630f6f96782933750ac8bd1d9cefa6aab9febb1806b6b479a2ece1620114f48e",
+  "semantic_condition_id": "db659bf61575ea497a34448a59618f8b16bd8fe13add07d01105b41ff3fa664b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An IRA starts at age 25 with zero balance. Contributions flow continuously at $2000 per year, and the balance earns a continuous 8% annual return. What time horizon and parameters should the model use to find the balance at age 65?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the balance formula for constant continuous contributions and a constant continuously compounded return.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the stated parameters into the model established above and simplify the resulting age-65 expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting age-65 quantity to the nearest dollar and compare it with the accumulated input over the investment horizon.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What modeling assumptions are implicit in the treatment adopted above, and how should the numerical result be qualified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the final numerical result, total contributions, and their comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 150,
+  "task_id": "gpqa__rec260hNUCEj109Dj",
+  "dataset": "gpqa",
+  "ordinal": 12,
+  "variant": "perturbed",
+  "conversation_id": "012::gpqa__rec260hNUCEj109Dj::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "42d9f1973c391f23d419c9de034bbc9bed3e3e5873fd52f0f890b24c4b46edd9",
+  "semantic_condition_id": "b3de1fc33a041df2a83b67d72ff77c3c41680bd53362a401f8f4616f57c1c05b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle of mass m moves in two dimensions under V(r,theta)=1/2 kr^2+3/2 kr^2 cos^2(theta). Rewrite the potential in Cartesian coordinates using x=r cos(theta) and y=r sin(theta).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Collect the x^2 and y^2 terms in this potential and check whether any cross term remains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Replace the separated result by the isotropic potential V=1/2 kx^2+1/2 ky^2, then determine equal oscillator frequencies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the two frequencies directly against the coefficients of the x^2 and y^2 terms before using them in the spectrum.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the complete quantum-mechanical energy spectrum implied by the separated modes and parameters established above.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

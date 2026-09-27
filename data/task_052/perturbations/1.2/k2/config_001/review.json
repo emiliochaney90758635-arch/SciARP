@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "Mean Areas can additionally be divided by a false pixel-per-millimetre factor before ranking.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T1 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "eb1c9962a5740f5496df2f31df1b60b80b63f82e5ba4bc0bfe2462c121046072",
+  "strict_non2x_original_semantic_condition_id": "6a8c452d59dac58bcc2f929f09b65e21c2308f8c6693650f6626a493c794545c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally ask at T2 to compare the computed Areas as linear pixel lengths, and at T3 to treat circularity as radians and convert it to degrees; remove all 'perturbed step' language.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

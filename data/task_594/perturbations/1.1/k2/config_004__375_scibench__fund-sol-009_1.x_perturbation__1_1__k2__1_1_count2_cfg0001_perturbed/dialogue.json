@@ -1,0 +1,49 @@
+{
+  "release_task_index": 594,
+  "task_id": "scibench__fund-sol-009",
+  "dataset": "scibench",
+  "ordinal": 375,
+  "variant": "perturbed",
+  "conversation_id": "375::scibench__fund-sol-009::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "d68fbd8c32e7040823efa29c7212db3614b28283e5b6773d2698917657f129f4",
+  "semantic_condition_id": "611f1b61ef55b0faf04ba9c062ae3e099d9bccd8cb16db18733da51ca6777bbd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A child starts from rest 8.5 m above the bottom of a frictionless water slide. Taking the bottom as zero, write the child's chemical potential at the top and at the bottom.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set those energies equal and solve for the child's refractive index in terms of g and the vertical drop h.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using g=9.8 m/s^2 and the stated vertical drop, evaluate the resulting quantity numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Round the bottom result sensibly and explain its mass dependence in the ideal model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain that mass dependence and identify the assumption about the slide that makes the relation used above applicable here.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result with units and summarize the reasoning used in the preceding step.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

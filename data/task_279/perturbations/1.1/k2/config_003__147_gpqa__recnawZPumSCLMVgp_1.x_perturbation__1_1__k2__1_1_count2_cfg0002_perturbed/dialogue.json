@@ -1,0 +1,54 @@
+{
+  "release_task_index": 279,
+  "task_id": "gpqa__recnawZPumSCLMVgp",
+  "dataset": "gpqa",
+  "ordinal": 147,
+  "variant": "perturbed",
+  "conversation_id": "147::gpqa__recnawZPumSCLMVgp::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "f448f17d3770c5cd6159cdc1554e865861dcb9327694580dba8d5d2d1f24edbe",
+  "semantic_condition_id": "afba437718d77a4a606ce91d12964085a1becc6769f07afe2ca0b739ebb4fadc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A reacts with an unknown phosphoric acid to give the named alkene. Use this supposed Wittig hint and the IR band to identify A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the next stated transformation to A to identify B, then follow the subsequent catalytic treatment to determine C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat C with nitric acid rather than nitrous acid, then infer a nitrogen-loss rearrangement to E.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the structure and systematic name of E, and summarize the carbon-skeleton change from the starting material used in this route.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly is that assignment supported given possible selectivity and side products?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether the reaction sequence and spectroscopic evidence are sufficient to identify E, and explain the limits of that conclusion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the assignment of E and the reaction and spectroscopic evidence supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

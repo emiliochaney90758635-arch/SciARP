@@ -1,0 +1,64 @@
+{
+  "release_task_index": 424,
+  "task_id": "gpqa__recqFDvYKKRmbnoUb",
+  "dataset": "gpqa",
+  "ordinal": 293,
+  "variant": "perturbed",
+  "conversation_id": "293::gpqa__recqFDvYKKRmbnoUb::1.x::perturbation__1_1__k4__1_1_c4_004::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "2c9c211fb7dfd478088ebce35dd409943dc7a1d5ac5f0e46dab735d37973cc0e",
+  "semantic_condition_id": "82a5be3fcbd1d4038420038a1aeeb545e6cb08e67bcd92e61312dce9318877ea",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat 1/r^2 as a scalar potential that nevertheless has only a radial vector component, then write it using spherical-coordinate vector notation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute its ordinary divergence for r>0.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "On the sphere of radius R, compute a volume integrand f dot dA while still using the outward area element.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Reconcile the zero ordinary divergence with the boundary flux using surface-domain behavior or by excising a small circle around the singularity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate a line integral of the divergence over the sphere, including the singular contribution.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the normalization on another concentric boundary.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the divergence description implied by the approach above and verify its integral against the corresponding boundary result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the domain on which the pointwise reasoning used above is valid and explain any limitation at the excluded point.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the integral and the boundary or generalized-function argument supporting it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

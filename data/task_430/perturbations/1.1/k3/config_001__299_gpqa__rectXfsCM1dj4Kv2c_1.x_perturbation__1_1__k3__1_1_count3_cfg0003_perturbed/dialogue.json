@@ -1,0 +1,54 @@
+{
+  "release_task_index": 430,
+  "task_id": "gpqa__rectXfsCM1dj4Kv2c",
+  "dataset": "gpqa",
+  "ordinal": 299,
+  "variant": "perturbed",
+  "conversation_id": "299::gpqa__rectXfsCM1dj4Kv2c::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "6c0c841b7f898c8297b9771e9244279b9056d06047462b07600565151e213ec7",
+  "semantic_condition_id": "6dacaba56598c29b4199061efd5e9e4e44247db4affe6d58d4289e6e8d59a88f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Draw or describe the connectivity specified by the polymer trade name 6-chloro-9-ethyl-2-methylundeca-3,7-dien-5-ol, marking the substituents, alcohol group, and double bonds. What groups are attached to each potentially stereogenic tetrahedral carbon?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Examine C2 and C9 in that structure. Is either a prochiral tetrahedral face? Compare its four substituents to justify the classification.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the same substituent test to C5 and C6. Which of these carbons are stereogenic?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Examine the substituents on each carbon of the two double bonds. Does each double bond support E/Z stereochemistry?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the independent stereochemical elements to count distinct constitutional isomers, treating the two methyl groups at C2 and the two ethyl groups at C9 as identical.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Could a meso form or another molecular symmetry make any complete stereochemical assignments identical? Check whether the count needs to be reduced.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the total number of stereoisomers and identify the tetrahedral and alkene elements contributing to it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

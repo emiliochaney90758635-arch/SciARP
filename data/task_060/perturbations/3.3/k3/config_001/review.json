@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can retain compound UTR, T4 merge classifications, and T5 use the resulting wrong fraction.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "f3eb07a8bea4ac83d4b9180ed1f9a3c1ea35ca8f3baca5d9e5736daa9c119c44",
+  "strict_non2x_original_semantic_condition_id": "6ed6f25aa619fb925e7ae739189423d280f04ac0828f1abc15075be3d7e2498f",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally retain the compound UTR row at T3, use all 1,020 pre-VAF rows as denominator at T4, and multiply the resulting fraction by 100 while labeling it a 0-to-1 value at T5. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

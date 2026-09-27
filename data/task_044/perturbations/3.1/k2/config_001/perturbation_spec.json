@@ -1,0 +1,26 @@
+{
+  "config_id": "task044_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Although the stored scale identified previously is log2(TPM+1), apply log2(x+1) to those stored values again before comparing the tails."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Now combine that twice-transformed tail interpretation with the original, pre-transformation m2 and m3 values to calculate g1 and classify the same distribution."
+    }
+  ]
+}

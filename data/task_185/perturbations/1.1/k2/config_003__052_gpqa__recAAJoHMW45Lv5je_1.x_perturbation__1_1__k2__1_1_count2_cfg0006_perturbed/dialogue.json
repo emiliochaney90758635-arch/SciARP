@@ -1,0 +1,64 @@
+{
+  "release_task_index": 185,
+  "task_id": "gpqa__recAAJoHMW45Lv5je",
+  "dataset": "gpqa",
+  "ordinal": 52,
+  "variant": "perturbed",
+  "conversation_id": "052::gpqa__recAAJoHMW45Lv5je::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ab3ce81b18fc517a44a16c700c543952e5d9875446ce876178c4f013d5840e18",
+  "semantic_condition_id": "e09cba2787645fe1872eadb03cd1afb97123bd2f47e58e360d35f218e31d2c9d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let the hydrocarbon Z have formula C_nH_m. Its hydrogen mass fraction is 14.28%. Use this composition to derive the relation between m and n and identify the corresponding general hydrocarbon formula, without yet fixing n.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Confirm that 14.28% is a dimensionless mass fraction. Given that Z is a common solvent and does not hydrogenate further, which member of that formula family is intended, and how certain is the identification without a molar mass or spectrum?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now organize the reaction constraints. An equimolar two-liquid mixture X decolorizes bromine water; hot platinum disproportionation gives an equimolar two-liquid mixture Y that does not; Z is in Y; and severe hydrogenation of either mixture gives only Z. What do these facts require of the carbon skeletons and degrees of unsaturation?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the reaction constraints to identify both liquids in X. Account for the claims that Y does not decolorize bromine water, that severe platinum treatment hydrolyzes every component to Z, and that neither component of X contains conjugated multiple bonds.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed C6H8 component against the formula for a six-carbon ring with two double bonds. Which cyclohexadiene isomer satisfies the nonconjugation condition, and is it consistent with the disproportionation?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For the two equimolar alkanes identified in X, add the numbers of hydrogen atoms in one molecule of each.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the best-supported identities and total, while distinguishing the strong reaction-network evidence from the residual ambiguity in identifying Z from mass fraction and solvent use alone.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify atom balance for the proposed disproportionation and show that severe hydrogenation of every component of X and Y leads to the same saturated hydrocarbon Z.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final identities of the two liquids in X and their total number of hydrogen atoms, together with the assumption about Z used to make the identification unique.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

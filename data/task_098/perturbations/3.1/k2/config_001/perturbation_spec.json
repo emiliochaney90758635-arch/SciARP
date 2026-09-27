@@ -1,0 +1,48 @@
+{
+  "task_id": "098-capsule028",
+  "release_task_index": 98,
+  "subclass": "3.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Establishes full-precision summaries.",
+    "Discards them in comparison."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a59bcba0dce71fd8982ce68e934afe2ba88a91f1e9d70e0f12976a9d63174c33",
+  "configured_evidence_sha256": "a59bcba0dce71fd8982ce68e934afe2ba88a91f1e9d70e0f12976a9d63174c33",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate full-precision mean Area and mean Circularity for every group."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Ignore the full-precision means just calculated. Round each mean Area to the nearest 10,000 pixels and each mean Circularity to one decimal place, then calculate the absolute differences from the reference using those rounded means."
+    }
+  ]
+}

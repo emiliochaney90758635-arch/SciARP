@@ -1,0 +1,64 @@
+{
+  "release_task_index": 521,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1736",
+  "dataset": "olympiadbench",
+  "ordinal": 468,
+  "variant": "perturbed",
+  "conversation_id": "468::olympiadbench__OE_TO_maths_en_COMP_1736::1.x::perturbation__1_3__k2__1_3_count2_cfg0003::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "b758c67480bb08c1dd99d679e478833223c21856afb017fdac2f3739e30368ea",
+  "semantic_condition_id": "60c9db3f60b870356306f9950bb2f29abd9f83cf64c54f18782bac1319c272d6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "We seek the smallest n for which distinct positive integers s_1, ..., s_n satisfy product over i of (1 - 1/s_i) = 51/2010. Why can none of the s_i equal 1, and how should we order them for the argument?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After ordering s_1 < s_2 < ... < s_n, what coordinatewise lower bound follows for s_i, and why does it respect the distinctness requirement?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those coordinatewise bounds to derive a lower bound, in terms of n, for the product of (1 - 1/s_i). Show the telescoping product explicitly.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare that lower bound with 51/2010. What necessary lower bound on n follows?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a construction at that boundary, let A = {2, 3, ..., 40}. Compute the product over s in n of (1 - 1/s).",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Starting from A, remove 34 and insert a positive integer A not already in A. Solve for x so that the new product is 51/2010, and state the resulting set.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the lower bound with the constructed set. What does this establish about the least possible value of n?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the construction directly by checking its cardinality, distinctness, and telescoping product against 51/2010.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the least n, citing both the lower bound and the attaining set.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "config_id": "task057_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "correctly establish d, at T4 halve d as a separate incorrect carry-forward and floor the resulting n",
+      "injected_text": "Calculate Cohen's d in the KD-minus-CTRL direction.\n\nFor this perturbed step, correctly establish d, at T4 halve d as a separate incorrect carry-forward and floor the resulting n",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "At T3 correctly establish d, at T4 halve d as a separate incorrect carry-forward and floor the resulting n.",
+      "injected_text": "Using that effect size, what minimum integer sample size per group reaches the target power?\n\nFor this perturbed step, at T3 correctly establish d, at T4 halve d as a separate incorrect carry-forward and floor the resulting n.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Reversing d does not alter two-sided required n by magnitude and may only make the solver invalid; it is not a reliable independent consumed root.",
+    "before": "Reverse d, then floor n.",
+    "after": "At T3 correctly establish d, at T4 halve d as a separate incorrect carry-forward and floor the resulting n.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Calculate Cohen's d in the KD-minus-CTRL direction."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use one-half of that Cohen's d in the power calculation, then round the continuous per-group result down to an integer."
+    }
+  ]
+}

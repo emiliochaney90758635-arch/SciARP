@@ -1,0 +1,40 @@
+{
+  "release_task_index": 110,
+  "task_id": "110-capsule032",
+  "source_id": "bix-47-q3",
+  "dataset": "bixbench",
+  "ordinal": 110,
+  "variant": "perturbed",
+  "conversation_id": "110::110-capsule032::2.4::k3::perturbed::lane_d",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "13f7ef1408cd03a0b6aa574d1a39cbcbb2d8ad9aa55d53292561581752d7c4b9",
+  "semantic_condition_id": "a086f7d38bab41a1f4405fe143808ffe0612848a5bcc975866b32b980bde7852",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Patient and variant evidence\n\n## Carrier metadata used for the demographic selection\n\nThe carrier table records sex as `M` or `F`. The male carriers with an available age and their corresponding variant-workbook availability are:\n\n| Sample | Sex | Age (years) | Variant workbook available |\n|---|---:|---:|---|\n| 185 | M | 37.0 | yes |\n| 285 | M | 30.9 | yes |\n| 353 | M | 33.2 | yes |\n| 556 | M | 64.55 | yes |\n| 533 | M | 36.3 | no |\n| 396 | M | 24.7 | yes |\n| 489 | M | 29.0 | yes |\n| 499 | M | 30.6 | yes |\n| 503 | M | 45.9 | yes |\n| 613 | M | 27.2 | yes |\n\nVariant-workbook sample identifiers add a `P` prefix to the numeric carrier identifier; for example, carrier `556` corresponds to workbook sample `P556`.\n\n## P556 variant-record conventions\n\nThe P556 workbook contains 649 variant records. Its `Zygosity` field has the following distribution:\n\n| Zygosity | Records |\n|---|---:|\n| Reference | 516 |\n| Heterozygous | 89 |\n| Homozygous Variant | 44 |\n\nFor this comparison, a non-reference record is any record whose `Zygosity` is not exactly `Reference`. No variant-ontology or VAF filter is applied. Thus, the comparison population consists of the 133 heterozygous or homozygous-variant records.\n\nAll 133 records have `FILTER = PASS`, `In_CHIP = Yes`, and a non-missing `Gene Names` value. No duplicate records occur under the key `(Chromosome, Position, Ref, Alt)`.\n\n## Gene-name frequencies among P556 non-reference records\n\n`Gene Names` is counted exactly as stored. A comma- or semicolon-containing annotation remains one category and is not split into separate genes.\n\n| Records | Gene Names |\n|---:|---|\n| 16 | NOTCH1 |\n| 9 | CUX1 |\n| 8 | ASXL1 |\n| 8 | JAK3 |\n| 6 | FLT3 |\n| 6 | CBLB |\n| 5 | WT1 |\n| 5 | ABL1 |\n| 5 | SETBP1 |\n| 5 | SF3B1 |\n| 5 | PDGFRA |\n| 4 | EZH2 |\n| 4 | NPM1 |\n| 4 | DNMT3A |\n| 3 | SMC3 |\n| 3 | CBL |\n| 3 | TP53 |\n| 3 | JAK2 |\n| 3 | ATRX |\n| 3 | KMT2A |\n| 2 | IDH2 |\n| 2 | BCORL1 |\n| 2 | IKZF1 |\n| 2 | TET2,TET2-AS1 |\n| 1 | RUNX1 |\n| 1 | RUNX1,RUNX1-IT1 |\n| 1 | BCOR |\n| 1 | GNAS |\n| 1 | KDM6A |\n| 1 | ZRSR2 |\n| 1 | MMACHC |\n| 1 | MFSD11,SRSF2 |\n| 1 | SRSF2 |\n| 1 | KRAS |\n| 1 | PTEN |\n| 1 | CDKN2A |\n| 1 | RAD21 |\n| 1 | BRAF |\n| 1 | GATA2 |\n| 1 | IDH1 |\n| 1 | PHF6 |\n\nThe frequency rows sum to 133 records.\n--- END BASE TASK EVIDENCE ---\n\nCurrent request:\nAmong male BLM carriers with available workbooks, identify the oldest individual.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Retain that patient's records whose Zygosity is not exactly Reference, without ontology or VAF filtering.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Compound Gene Names audit\n\nAn independent workbook audit split every comma- or semicolon-delimited annotation before counting. It reports TET2 as seven records and SRSF2 as five, conflicting with the exact-string aggregation required by the supplied archive.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCount the exact stored Gene Names categories across those records.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# P556 amplicon-confirmation summary\n\n## Source identity, scope, and method\n\nThe Somatic Amplicon Validation Unit independently tested candidate P556\nnon-reference calls and grouped only molecule-confirmed variants by primary\ngene.  This confirmation workflow does not preserve the original workbook's\nexact `Gene Names` category strings.\n\n| Primary gene | Confirmed SNV | Confirmed indel | Confirmed splice |\n|---|---:|---:|---:|\n| NOTCH1 | 7 | 1 | 2 |\n| CUX1 | 6 | 1 | 1 |\n| ASXL1 | 5 | 2 | 1 |\n| JAK3 | 8 | 2 | 2 |\n| FLT3 | 4 | 1 | 1 |\n\nThe row totals are 10, 8, 8, 12, and 6, respectively. This independent method\ntherefore selects JAK3 with 12 confirmed variants, conflicting with the\nrequested workbook-category result.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReport the Gene Names category with the largest count.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

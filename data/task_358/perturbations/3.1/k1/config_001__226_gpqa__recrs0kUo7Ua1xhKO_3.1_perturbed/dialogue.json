@@ -1,0 +1,54 @@
+{
+  "release_task_index": 358,
+  "task_id": "gpqa__recrs0kUo7Ua1xhKO",
+  "dataset": "gpqa",
+  "ordinal": 226,
+  "variant": "perturbed",
+  "conversation_id": "226::gpqa__recrs0kUo7Ua1xhKO::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "32e6908d33c56f4d809e85a8e50d0b3ecfcc03beebf13c52d1c2439eca1a79af",
+  "semantic_condition_id": "241d0a34ed1c7df2b4a677db4be627a2a41918a295ba349bdc790000658a2bd3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For rho=(1/2)(|0><0|+|1><1|), write the two computational-basis projectors as 2x2 matrices.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Add them and simplify rho, stating all four matrix entries.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Replace the established diagonal entries (1/2,1/2) with (1,0) and determine the Bloch vector.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Locate the state in the Bloch ball and interpret the norm of r in terms of purity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the Bloch vector just obtained, reconstruct rho and check that current representation internally.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently from the eigenvalues and Tr(rho^2).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the Bloch vector and geometric location.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

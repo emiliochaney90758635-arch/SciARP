@@ -1,0 +1,44 @@
+{
+  "release_task_index": 483,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2677",
+  "dataset": "olympiadbench",
+  "ordinal": 430,
+  "variant": "perturbed",
+  "conversation_id": "430::olympiadbench__OE_TO_maths_en_COMP_2677::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "fb6b007f1c62935f2f8dff15464949c082defff90bbfabba9b5e80b90aefb26d",
+  "semantic_condition_id": "402a81c5d7fd887e407fb2a8f6952ca6159673b081d3c56356e7b135b0889c64",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cube has edge length 37, with a square opening of side length 1 centered on each of its six faces and aligned with the cube edges. What was the original surface area, and how much remains on those exterior faces after removing the openings?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Each hole runs through the center to the opposite face, forming three perpendicular square tunnels of side length 1 across the full cube. Calculate their total interior wall area before allowing for their intersections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At the central intersection, instead model the remaining volume as a function of cube edge length while holding tunnel width fixed. Use its derivative with respect to cube edge length as the sole exact total surface area.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain geometrically how your treatment of the intersecting tunnels determines the surface counted in the final answer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the calculation developed above, report the remaining solid's total surface area and explain what boundary it represents.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

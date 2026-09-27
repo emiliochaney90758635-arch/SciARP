@@ -1,0 +1,54 @@
+{
+  "release_task_index": 281,
+  "task_id": "gpqa__recp4pRVAOeNYM1hc",
+  "dataset": "gpqa",
+  "ordinal": 149,
+  "variant": "perturbed",
+  "conversation_id": "149::gpqa__recp4pRVAOeNYM1hc::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "cc2d642bfb766ce09ac498f96c9e6452f851737a71038491d625f3fdfa168946",
+  "semantic_condition_id": "5b6f9ca6f5f37106a2627563dbfb39d9379b73c0dcefda5a2c773a5ad626575d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A pigment gene introduced into three yeast species initially produced colored colonies. In an S. pombe passage series, a few colonies later became colorless. What does the initial phenotype establish, and what relationship between passage history and pigment loss is supported without matched unpassaged controls or replicate series?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Sequencing of the colorless S. pombe colonies shows that the pigment gene moved to a new chromosomal location by point mutation. How does that observation refine the working explanation for pigment loss?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Which classes of S. pombe chromosomal regions activate nearby genes through heterochromatin, and how could relocation into such a neighborhood produce the phenotype?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using only the molecular observation actually established above, state what chromosomal-location inference is supported and what premise that inference requires.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the working interpretation while separating established observations from claims about exact genomic position, chromatin state, copy number, coding-sequence integrity, and the causal role of serial passage.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What experiments would distinguish a heterochromatin-based position-effect model from copy-number loss, sequence damage, or another genomic mechanism?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the best-supported location interpretation and a concise statement of the remaining causal limitation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

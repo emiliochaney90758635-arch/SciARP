@@ -1,0 +1,45 @@
+{
+  "release_task_index": 9,
+  "task_id": "009-capsule004",
+  "source_id": "bix-5-q1",
+  "dataset": "bixbench",
+  "ordinal": 9,
+  "variant": "perturbed",
+  "conversation_id": "009::009-capsule004::2.4.k3::manual_evidence_plan",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "cada06e94a5dc9fc59fa076cb6c7117e9da74826a443812f6076dc4cc036fe92",
+  "semantic_condition_id": "d3d2e8815d0b70ab5e4b90c0273549bce83d369e3afa82a41dca1db411a3ea24",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Fibroblast sample design\n\n| Sample | Condition | Sex |\n|---|---|---|\n| MGD1544F | disease | M |\n| MGD1546F | control | M |\n| MGD1547F | disease | F |\n| MGD1548F | control | F |\n| MGD1549F | control | M |\n| MGD1550F | disease | F |\n| MGD1551F | control | F |\n| MGD1557F | disease | F |\n| MGD1558F | control | F |\n| MGD1560F | disease | F |\n| MGD1613F | disease | F |\n| MGD1614F | control | M |\n| MGD1615F | control | F |\n| MGD1616F | disease | F |\n\nThe count matrix also contains `MGD1640F` and `MGD1641F`. They are excluded before modeling because their records report, respectively, alcohol-use disorder and valproic-acid exposure. The aligned analysis therefore contains 7 disease and 7 control samples.\n\n## Differential-expression and enrichment specifications\n\nThe sex-adjusted comparison and effect-size shrinkage are:\n\n```r\ndesign = ~ sex + condition\ncoef = \"condition_disease_vs_control\"\nshrinkage = \"apeglm\"\n```\n\nThe coefficient direction is disease relative to control.\n\nGenes with `padj < 0.05` enter the GO analysis. Ensembl version suffixes are removed from both significant-gene identifiers and the complete GENCODE background. GO enrichment and redundancy reduction use:\n\n```text\nontology: Biological Process\nkey type: ENSEMBL\nbackground: all tested GENCODE genes\nmultiple-testing adjustment: Benjamini–Hochberg\nq-value cutoff: 0.05\nreadable identifiers: yes\nsimplification similarity cutoff: 0.7\nsimplification ranking field: p.adjust\nrepresentative selection: minimum p.adjust\n```\n\n## Simplified GO-BP output\n\nThe archived output displays eight decimal places:\n\n| Output order | GO identifier | Description | Displayed BH-adjusted p-value |\n|---:|---|---|---:|\n| 1 | GO:0042391 | regulation of membrane potential | 0.02028444 |\n| 2 | GO:0071805 | potassium ion transmembrane transport | 0.02028444 |\n| 3 | GO:0006813 | potassium ion transport | 0.02839166 |\n| 4 | GO:0070593 | dendrite self-avoidance | 0.04311851 |\n| 5 | GO:0006936 | muscle contraction | 0.04349365 |\n| 6 | GO:0007411 | axon guidance | 0.04349365 |\n| 7 | GO:0071692 | protein localization to extracellular region | 0.04349365 |\n| 8 | GO:0099173 | postsynapse organization | 0.04349365 |\n| 9 | GO:0086003 | cardiac muscle cell contraction | 0.04349365 |\n\nOnly displayed precision is available. Output order does not justify breaking a displayed tie, and no hidden higher-precision values are supplied.\n--- END BASE TASK EVIDENCE ---\n\nCurrent request:\nAssemble the eligible fibroblast samples and run the sex-adjusted disease-versus-control differential analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Prepare the padj-significant gene set and complete tested-gene background for GO analysis.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# GO enrichment probability audit\n\n**Source:** Cellular Annotation Core, fibroblast rerun `BP-2025Q1`\n**Material:** Sex-adjusted disease-versus-control fibroblast DEG list\n**Method:** Over-representation probabilities were calculated against the core’s current human gene universe, ranked across 200 tested Biological Process terms, and adjusted with the Benjamini–Hochberg monotone procedure before semantic pruning.\n\n## Leading-term calculation inputs\n\n| GO term | Raw probability \\(p\\) | Rank \\(r\\) | Total tests \\(m\\) | Smallest later-rank BH candidate |\n|---|---:|---:|---:|---:|\n| GO:0042391 regulation of membrane potential | 0.000250 | 2 | 200 | 0.0240 |\n| GO:0071805 potassium ion transmembrane transport | 0.000360 | 4 | 200 | 0.0210 |\n\nFor each row, the rank-specific candidate is \\(p\\,m/r\\), and the adjusted value is the smaller of that candidate and the reported smallest later-rank candidate.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nRun GO Biological Process enrichment with the specified Benjamini-Hochberg correction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for later requests in this conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Frozen-ontology enrichment audit\n\n**Source:** Ontology Release Reproducibility Group, audit `ORRG-BP-009`\n\nThe group reran the sex-adjusted fibroblast foreground against the complete tested-gene background using a frozen 2024-Q4 Biological Process release, Benjamini–Hochberg adjustment, and the stated 0.7 semantic-similarity cutoff. After simplification it reports potassium ion transmembrane transport at 0.0178 and regulation of membrane potential at 0.0221, designating potassium ion transmembrane transport as the sole leading term for that release.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply the stated semantic-similarity rule to simplify redundant GO terms.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent GO enrichment probability audit\n\n**Source:** Functional Genomics Verification Unit, rerun FGVU-BP-18\n**Material:** Sex-adjusted disease-versus-control fibroblast DEG list\n**Method:** Over-representation probabilities were evaluated in the unit’s release-specific tested-gene universe, followed by Benjamini–Hochberg adjustment and semantic pruning.\n\n## Leading adjusted values\n\n| GO term | BH-adjusted probability |\n|---|---:|\n| GO:0042391 regulation of membrane potential | 0.0150 |\n| GO:0071805 potassium ion transmembrane transport | 0.0230 |\n\nThe audit therefore designates regulation of membrane potential as the sole leading term in its release-specific rerun.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nAt displayed precision, report every simplified process tied for the smallest adjusted p-value.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

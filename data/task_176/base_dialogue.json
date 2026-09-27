@@ -1,0 +1,54 @@
+{
+  "release_task_index": 176,
+  "task_id": "gpqa__rec8JPf9jHanVNzdH",
+  "dataset": "gpqa",
+  "ordinal": 43,
+  "variant": "clean",
+  "conversation_id": "043::gpqa__rec8JPf9jHanVNzdH::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "6e8b89741b76f3051251eff321be975bf9d556f7faeb533e9ceda341727074fa",
+  "semantic_condition_id": "9ab6024d0737c6a60a962f0ff6e5fede7e51f07b6eb2ff5bb43ee01c2796e0f5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Paranal Observatory is at latitude about 24 degrees south. State its signed latitude and explain which stellar declination minimizes zenith distance, and hence airmass, at meridian transit.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The targets are Star1 (RA 15 deg, Dec -26 deg, V=9), Star2 (RA 2 deg, Dec +14 deg, V=7.5), Star3 (RA 70 deg, Dec -34 deg, V=7.0), and Star4 (RA 5 h, Dec +70 deg, V=9.0). For a meridian-airmass comparison, identify which listed quantities enter the geometric ranking.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using Paranal latitude -24 degrees, compute the absolute latitude-declination separation for each star.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert those separations to culmination altitudes with h_max=90 degrees-|latitude-declination|. Which target culminates highest, and is any listed target below the horizon even at upper culmination?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Recommend the target that minimizes meridian airmass and report its approximate culmination altitude. Calibrate the precision given the rounded coordinates and the absence of an atmospheric refraction or exact airmass model.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why right ascension and apparent magnitude do not alter this ranking when meridian airmass is the sole objective, and state what scheduling or science information would matter in a real observing decision.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final recommended star, its latitude-declination separation, and its approximate culmination altitude.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

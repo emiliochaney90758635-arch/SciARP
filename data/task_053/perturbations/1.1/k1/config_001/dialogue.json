@@ -1,0 +1,42 @@
+{
+  "release_task_index": 53,
+  "task_id": "053-capsule014",
+  "source_id": "bix-18-q4",
+  "dataset": "bixbench",
+  "ordinal": 53,
+  "variant": "perturbed",
+  "conversation_id": "053::053-capsule014::1.1::k1::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ee044a726dbd2cf12f14e05426bcd42a6b5d5cbfd0b9c204dc9eed07ec2897b9",
+  "semantic_condition_id": "7554d97beb3fe3eccf35ea4369ebde7195a3c6f88874eb2c6ad74fb126d9c98b",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "69aed0e0844d8fbcd0450dc442565692094d562fe48feaca415b5e40e97e76d9",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original rhlR- circularity records\n\nThe records with `Genotype = rhlR-` and `StrainNumber = 61` in the original table are shown below. `Circularity` is the circularity measurement, and the three `Replicate` values are independent replicates; none of these values is missing.\n\n| Genotype | StrainNumber | Replicate | Circularity |\n|---|---:|---:|---:|\n| rhlR- | 61 | 1 | 0.509 |\n| rhlR- | 61 | 2 | 0.601 |\n| rhlR- | 61 | 3 | 0.606 |\n\n## Statistical method\n\nFor \\(n\\) circularity observations, the standard error is calculated as:\n\n\\[\n\\mathrm{SEM}=\\frac{s}{\\sqrt{n}}\n\\]\n\nwhere \\(s\\) is the sample standard deviation, calculated with \\(n-1\\) as the variance denominator; this matches the default behavior of `sd()` in R.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the rhlR-minus circularity replicates and calculate their sample size and arithmetic mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use sample standard deviation to mean population standard deviation with divisor n.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What standard error of the mean follows from that sample standard deviation and sample size?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

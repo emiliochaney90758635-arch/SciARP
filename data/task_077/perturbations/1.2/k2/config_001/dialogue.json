@@ -1,0 +1,45 @@
+{
+  "release_task_index": 77,
+  "task_id": "077-capsule021",
+  "source_id": "bix-29-q2",
+  "dataset": "bixbench",
+  "ordinal": 77,
+  "variant": "perturbed",
+  "conversation_id": "077::077-capsule021::1.2.k2::lane_c_manual",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "6b4cd6f856e2e907b6535200ac0ba18f02802369174f59f366ec2a77a7b82a4b",
+  "semantic_condition_id": "3e8c4e4cec1df827e2cd3f1ad49bd8a04b47fcfd7be6c49d852be9e6fc6d33d6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Participant-Level Analysis Data\n\n- AE table: take the maximum `AESEV` across all adverse-event records for each `USUBJID`.\n- DM table: retain `patients_seen` and `expect_interact`.\n- MH table: use pandas `count()` by `USUBJID, TRTGRP` to count every non-null `MHONGO` record, including source values `Yes` and `No`.\n\nAfter merging and removing missing values, 791 unique participants remain:\n\n| Field | Distribution |\n|---|---|\n| maximum recorded `AESEV` | 1: 328; 2: 402; 3: 43; 4: 18 |\n| `TRTGRP` | Placebo: 354; BCG: 437 |\n| `expect_interact` | No: 285; Yes: 506 |\n| `patients_seen` | 1-50: 658; 51-100: 108; >100: 25 |\n| nonmissing `MHONGO` count | 0: 316; 1: 232; 2: 130; 3: 76; 4: 28; 5: 8; 6: 1 |\n\nCoding is Placebo=0 and BCG=1; `expect_interact` is No=0/Yes=1; `patients_seen` is 1-50=0, 51-100=1, and >100=2; the interaction term is `MHONGO × TRTGRP_cat`.\n\n## Ordinal-Logit Model Output\n\nThe model is:\n\n```text\nAESEV ~ TRTGRP_cat\n        + expect_interact_cat\n        + patients_seen_cat\n        + MHONGO\n        + MHONGO_TRTGRP\n```\n\n| term | coefficient | std err | p-value | 95% coefficient CI |\n|---|---:|---:|---:|---|\n| TRTGRP_cat | 0.4904958818544001 | 0.192479 | 0.0108246 | [0.113244, 0.867748] |\n| expect_interact_cat | -0.29676910531625555 | 0.145484 | 0.0413631 | [-0.581913, -0.011625] |\n| patients_seen_cat | 0.018993805637804256 | 0.148003 | 0.8978849 | [-0.271087, 0.309075] |\n| MHONGO | 0.30169744665764675 | 0.0863306641501545 | 0.0004746428 | [0.1324924542, 0.4709024392] |\n| MHONGO_TRTGRP | -0.00264462830555004 | 0.1205446677333133 | 0.9824966 | [-0.2389, 0.2336] |\n\nPlacebo is the treatment reference group, so the `MHONGO` main effect is the log-odds slope for a 1-record increase in the nonmissing count within Placebo. The conversion is:\n\n\\[\n\\mathrm{OR}=\\exp(\\beta),\\qquad\n\\%\\Delta\\mathrm{odds}=(\\mathrm{OR}-1)\\times100\\%\n\\]\n--- END TASK EVIDENCE ---\n\nCurrent request:\nTreat AESEV values 1 through 4 as a zero-based 0 through 3 scale.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Construct participant-level nonmissing-MHONGO counts and treatment/contact covariates.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Encode patient-volume bands by midpoints 25, 75, and 125 rather than archived codes 0, 1, and 2. Treat the zero-based severity as continuous and these band midpoints as exact patient counts, but reuse the archived ordinal-logit coefficient table instead of refitting.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the model and extract the MHONGO main-effect coefficient for Placebo.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert that coefficient to the percentage change in odds per additional nonmissing MHONGO record.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

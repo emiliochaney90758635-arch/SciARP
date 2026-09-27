@@ -1,0 +1,28 @@
+{
+  "task_id": "023-capsule007",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "One premise changes unique-gene construction.",
+    "A second changes subset eligibility.",
+    "A third replaces the full-Hyper denominator with all source-table genes."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "gene-construction premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "subset-eligibility premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "all-gene denominator premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

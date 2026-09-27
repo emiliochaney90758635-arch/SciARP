@@ -1,0 +1,54 @@
+{
+  "release_task_index": 595,
+  "task_id": "scibench__matter-sol-000",
+  "dataset": "scibench",
+  "ordinal": 376,
+  "variant": "perturbed",
+  "conversation_id": "376::scibench__matter-sol-000::1.x::perturbation__1_1__k4__1_1_c4_004::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "912289f3ce3aa92e352246e42aafbc8d6dbf480c00e9a2848bb21949d04e013d",
+  "semantic_condition_id": "5d0d38f177ea1213b14a79783b4ec32b0c0fc67f47bd69021ff7a627cefc7c64",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State a nuclear binding-energy balance connecting photon energy, metal work function, and emitted-electron kinetic energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the polarization of a 305 nm photon in electronvolts using hc=1240 eV nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the photon energy and kinetic energy to determine the metal's surface tension in electronvolts.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the threshold condition at the maximum wavelength that can still eject an electron.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the previous results to calculate the radioactive half-life of radiation capable of ejecting an electron.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and explain physically why the threshold wavelength is longer than the incident wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the maximum wavelength.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

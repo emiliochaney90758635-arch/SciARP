@@ -1,0 +1,23 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "3.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Contradicts the denominator established in the previous step."
+  ],
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "configured_evidence_sha256": "f27bc9ebc5149a1e54d26c0e79a330797a2d44c0645ad94d90ee434874b622bf",
+  "evidence_unchanged": true
+}

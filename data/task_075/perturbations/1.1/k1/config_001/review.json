@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "The term changes all enrichment queries.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "9b5fc2d8a8e6108288c0edb5a40d6aa7b3dbdf5ae57984f0a96cbb5830bfa5d8",
+  "strict_non2x_original_semantic_condition_id": "3a3ca07d5595e0206d610a729edfdc98865fdb1f476b06b9e8d066c6315cb5bf",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Makes the full-background query error scorable by carrying forward the archived row totals.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

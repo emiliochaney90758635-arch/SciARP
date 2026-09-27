@@ -1,0 +1,28 @@
+{
+  "task_id": "003-capsule002",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Changes the middle-VAF aggregate from 645 to 642 and parent total to 1,017.",
+    "Changes the high-VAF aggregate from 372 to 374 and parent total to 1,019.",
+    "Changes the low-VAF aggregate from 3 to 4 and parent total back to 1,020."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "middle-bin aggregate"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "high-bin aggregate"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "low-bin aggregate"
+    }
+  ],
+  "evidence_change_permitted": true
+}

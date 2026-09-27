@@ -1,0 +1,35 @@
+{
+  "release_task_index": 40,
+  "task_id": "040-capsule010",
+  "source_id": "bix-13-q5",
+  "dataset": "bixbench",
+  "ordinal": 40,
+  "variant": "perturbed",
+  "conversation_id": "040::040-capsule010::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "724b2bd8c5f9cc8fbc3ba1b37ce11aec1272ec3ac7a797d893fe059c9ee4988e",
+  "semantic_condition_id": "a3e6f87c3ec4147023fc3c77071af0419b19ba554bdd32dbd7bfd3855485e59e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Sets and comparison direction\n\nThe archived DESeq2 model uses:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nwith JBX1 as the reference. Its three contrasts are Strain 97 versus 1, Strain 98 versus 1, and Strain 99 versus 1. These correspond to the single mutants JBX97 and JBX98 and the double mutant JBX99.\n\nDefine \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05` in the respective contrasts. No fold-change threshold is used. Reversing a two-sided contrast would change the sign of `log2FoldChange` but not membership under this p-value-only rule.\n\n## Venn regions\n\n| Mutually exclusive region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 4,100 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nApply the set operation stated in the task directly to the seven mutually exclusive rows, then sum only the retained rows.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the JBX1 reference direction, the three mutant comparisons, and the common adjusted-p-value rule used to define each gene set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate 'significant in at least one single mutant but not in the double mutant' into a set operation and identify the disjoint Venn regions it retains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Sum those retained regions. How many genes satisfy the condition?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 604,
+  "task_id": "scibench__quan-sol-003",
+  "dataset": "scibench",
+  "ordinal": 385,
+  "variant": "clean",
+  "conversation_id": "385::scibench__quan-sol-003::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "64db9a646cd51c0ebd3bc52d08de38e6ed661362af6b56bbb550f6fb4920b73e",
+  "semantic_condition_id": "bac4153c270074d421e90ff5791c9c0f68ddb43640fc4d15f1733936abc6ae29",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A one-dimensional particle has wavefunction Psi(x)=a^(-1/2) exp(-|x|/a) at t=0, with a=1.0000 nm. Derive the position probability density and identify how |x| simplifies on 1.5000 nm <= x <= 1.5001 nm.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the exact probability integral over that interval. Also give the narrow-interval approximation obtained by evaluating the density at the lower endpoint and multiplying by the width 0.0001 nm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute a=1.0000 nm and the interval endpoints into the exact integral and the narrow-interval expression, leaving both in exponential form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the requested probability numerically to four significant figures.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the exact integral with the narrow-interval approximation and explain why their difference is negligible at the requested precision.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final dimensionless probability for the position measurement and state whether this event is more or less likely than its complement.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

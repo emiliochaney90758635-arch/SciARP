@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Partition double-counting, numerator-scope error, and union-aggregation error are three independent wrong-path choices.",
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence"
+}

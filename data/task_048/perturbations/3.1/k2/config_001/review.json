@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can also deduplicate despite T1's row-level unit.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "9ca5f8ea1cf3925b394faf6b6cb6b59e0358632ffc410b8279debce4a33712f3",
+  "strict_non2x_original_semantic_condition_id": "f0fdc576fa0b1213c4e39a2c5c31205ed69bb356c3719429f83a867b1da7a51a",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally request at T2 that P533 be added as an observed zero and retained counts be deduplicated by gene; then ask for the median normally at T3. Remove all 'For this perturbed step' text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

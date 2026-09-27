@@ -1,0 +1,49 @@
+{
+  "release_task_index": 339,
+  "task_id": "gpqa__reckDfAxmtIGb9keo",
+  "dataset": "gpqa",
+  "ordinal": 207,
+  "variant": "clean",
+  "conversation_id": "207::gpqa__reckDfAxmtIGb9keo::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "331c93a036f22d17d254949c314e2d1d6eec60d5d0e84067fce06a0d818552c2",
+  "semantic_condition_id": "c38e5492c05dd29ebc2a58ed435e0d40ba32ae6675a6bf5afbaab15c19948611",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three Ising spins S_i=+/-1/2 on a triangle, write H=-sum J_ij S_i S_j and introduce x_i=2S_i in {+1,-1}.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With J12=-1, J23=-1, and J31=+1, write the energy explicitly in terms of x1,x2,x3 and identify the common factor of one quarter.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use global spin-flip symmetry to enumerate the distinct energies and give a sign assignment that attains the maximum.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the maximum energy and convert the maximizing x_i assignment back to S_i values.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain how frustration prevents all three bonds from simultaneously taking their individually preferred values, and use that to check the maximum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final maximum, the attainable energy set, and one maximizing spin configuration.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

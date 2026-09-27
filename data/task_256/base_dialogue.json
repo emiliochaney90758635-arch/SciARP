@@ -1,0 +1,64 @@
+{
+  "release_task_index": 256,
+  "task_id": "gpqa__recZt4x514UQNnsgy",
+  "dataset": "gpqa",
+  "ordinal": 124,
+  "variant": "clean",
+  "conversation_id": "124::gpqa__recZt4x514UQNnsgy::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "affc29b430d556db3597edbe8d52bf3aae48fbdd51185b98e7cfa695c2d8095c",
+  "semantic_condition_id": "421b06d755b3eb98962a6d351b29881fcd4a211411337dddb106da51967ac852",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For methyl 2-propyl-1,2,4a,5,6,7,8,8a-octahydronaphthalene-1-carboxylate, infer the diene, dienophile, tether, substituent mapping, and residual alkene required of an intramolecular Diels-Alder precursor.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State a retrosynthetic procedure that checks reactive-unit connectivity, tether length, substituent mapping, and residual unsaturation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Construct a linear triene containing an alpha,beta-unsaturated ester dienophile and a remote conjugated diene positioned for intramolecular closure, including the required alkene geometries.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Can those reactive units and the tether close to the target fused bicyclic framework?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Map the ester-bearing and terminal alkyl portions of the triene onto the target substituents.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Why would a disconnected intermolecular diene/dienophile pair fail the tethered fused-ring and residual-unsaturation requirements?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Identify the precursor by its full stereochemical name.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify it by tracing both new sigma bonds, the surviving alkene, the ester-bearing carbon, and the propyl-bearing carbon.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the precursor and the concise intramolecular cycloaddition map.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

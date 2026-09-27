@@ -1,0 +1,54 @@
+{
+  "release_task_index": 353,
+  "task_id": "gpqa__recp6DecZYavGF0TW",
+  "dataset": "gpqa",
+  "ordinal": 221,
+  "variant": "perturbed",
+  "conversation_id": "221::gpqa__recp6DecZYavGF0TW::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "bac445441d95aaeb471729843946d96521d5caa4a451b21ff734609829c16967",
+  "semantic_condition_id": "0b3a5b3c7c755976bfa5979ef64263ebdf832153dc4a9f61141afec0bb311458",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A Lewis acid catalyst is used in two reactions. Styrene and an unknown alkene A form (E)-Ph-CH=CH-CH(CH3)-CH3, while CH2=CH-CH2-O-CH2-CH=CH2 forms an unknown cyclic product B. Identify the metathesis class in each reaction and the structural information needed to infer A and B.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use sodium chloride and cross-metathesis fragment matching to identify A. Give its condensed structure and name, and explain why an alkyl bromide cannot be the partner.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the diallyl ether, trace the tether and ethylene loss in the ring-closing metathesis. What ring size and unsaturation should B have?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two activation-energy calculations to identify A and B, including A's condensed structure and B's ring size and unsaturation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check A and B separately against the structural requirements of cross-metathesis and ring-closing metathesis, without conflating the two reactions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Are both assignments internally consistent with their respective reactants and metathesis transformations? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the structures of A and B and the metathesis assignment for each reaction.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

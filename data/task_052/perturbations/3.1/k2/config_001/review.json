@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can select by Circularity despite T1 computing Area and T3 can call that the area-selected group.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "f2fe50b685563fea767cee8f40b849e2620b60e89aa6fcdcef9c2ed8a92e675c",
+  "strict_non2x_original_semantic_condition_id": "f171a2ec373b12c2dd8d6ce9334b74fe8c5c551106d9f1c4caba360b2feba26b",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 naturally select the genotype with greatest mean Circularity; at T3 explicitly report delta-rhlI mean Circularity even if it is not the group selected at T2. Remove all generator commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

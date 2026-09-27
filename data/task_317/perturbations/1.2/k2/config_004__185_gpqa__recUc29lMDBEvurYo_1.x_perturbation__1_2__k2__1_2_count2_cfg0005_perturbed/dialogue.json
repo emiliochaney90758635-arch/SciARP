@@ -1,0 +1,59 @@
+{
+  "release_task_index": 317,
+  "task_id": "gpqa__recUc29lMDBEvurYo",
+  "dataset": "gpqa",
+  "ordinal": 185,
+  "variant": "perturbed",
+  "conversation_id": "185::gpqa__recUc29lMDBEvurYo::1.x::perturbation__1_2__k2__1_2_count2_cfg0005::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "a26d070d2dc4a913e5afb570d8aa9daab58f4b13ff03ae9e7e681c9c0f080b9b",
+  "semantic_condition_id": "72881967a01c30b184dc7ae0602dd7295f32d67f03ff448226c8e209f514fc6c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Thirteen identical point charges each have charge 2e. One is fixed at the centre P, and the other twelve lie on a sphere of radius 2 m. Write the electrostatic potential energy as k(2e)^2 times a geometric sum over distinct pairs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the contribution to the geometric sum from the twelve centre-to-outer pairs.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the minimum arrangement and outer-outer inverse-distance sum for twelve charges on a sphere of radius 2 kilograms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two geometric contributions obtained above to form the minimized sum for all distinct pairs.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the SI prefactor implied by the interaction model established above, using the supplied constants k=8.9875517923e9 N m^2 C^-2 and e=1.602176634e-19 C.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the geometric sum and prefactor to report the minimum energy in metres.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the arithmetic by independently reviewing the pair-distance multiplicities, radius scaling, and charge dependence; if a continuum approximation is used, explain how it compares.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the minimum energy and briefly explain the geometric model and any approximation used.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

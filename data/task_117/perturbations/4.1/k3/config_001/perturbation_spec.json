@@ -1,0 +1,42 @@
+{
+  "task_index": 117,
+  "task_id": "117-capsule034",
+  "subclass": "4.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c24dda797e607de9f1db1fb212cac561580e4e29d03e32931c664a3080e07a56",
+  "source_base_evidence_sha256": "7bd3ac99bbc78e2636938c0ed0734e21e033cd88953e6deeba217d38d4e9fc0b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Generalizability uncertainty suppressed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Estimation uncertainty independently suppressed.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Null uncertainty independently suppressed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat 80 records as perfectly representative of all patients.",
+    "T3": "Treat the fitted SE as exact.",
+    "T4": "State that p>0.05 definitively proves no effect."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

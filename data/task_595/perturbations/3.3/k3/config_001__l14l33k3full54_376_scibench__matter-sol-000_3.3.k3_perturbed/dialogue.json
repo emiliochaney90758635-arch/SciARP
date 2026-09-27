@@ -1,0 +1,54 @@
+{
+  "release_task_index": 595,
+  "task_id": "scibench__matter-sol-000",
+  "dataset": "scibench",
+  "ordinal": 376,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::376::scibench__matter-sol-000::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "476094e3b4370eddd56d1685e01a90201a2aa483fa986c6af457c751c7b0d344",
+  "semantic_condition_id": "524a7d529bb780f530e887a0dd7dd61ee3cc8f2a1502d973e32ed70b99f656aa",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "State the photoelectric energy balance connecting photon energy, work function, and electron kinetic energy for this metal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate incident photon energy using E=p^2/(2m_e) with p=h/lambda instead of E=hc/lambda.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine the work function through the Compton wavelength-shift equation rather than the photoelectric balance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the emitted electron's de Broglie relation and its kinetic energy as the maximum incident-radiation wavelength condition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate that maximum wavelength and compare it with 305 nm.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and explain physically why the threshold wavelength is longer than the incident wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the maximum wavelength.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

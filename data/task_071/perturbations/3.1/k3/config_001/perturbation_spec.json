@@ -1,0 +1,59 @@
+{
+  "task_id": "071-capsule019",
+  "release_task_index": 71,
+  "subclass": "3.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Contradicts filter levels for FeMinus.",
+    "Contradicts filter levels for Succ in the opposite direction.",
+    "Contradicts the established strict-name matching rule."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "989a52b2e34c8cc38d6f91f4f1ab2e9751ae7f0cf0762724c85b3c95625efee0",
+  "configured_evidence_sha256": "989a52b2e34c8cc38d6f91f4f1ab2e9751ae7f0cf0762724c85b3c95625efee0",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply pathway p- and q-value cutoffs as gene-level filters and treat missing substituted values as failures, producing an empty FeMinus Dn set."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply log2FoldChange < -1.5 as a pathway-level cutoff and treat missing substituted values as failures, producing an empty Succ Dn set."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Merge pathway descriptions by semantic similarity rather than complete cleaned strings, then apply that rule to the two empty sets and report zero shared pathways."
+    }
+  ]
+}

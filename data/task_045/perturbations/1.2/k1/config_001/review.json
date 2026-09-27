@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "The strict n>10 threshold can be changed to n>=10.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T2 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "1c476e9b19eb1b8ee2293e01e59bd86b5bcac0e9edcd00fd9a8a0561518374db",
+  "strict_non2x_original_semantic_condition_id": "7e75744f988a7bd01baabc05fe62d4bc16b347adf97e4284739f703de5c3eae0",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T5 naturally to compute significant count divided by tested-gene count and report that unscaled fraction with a percent sign; remove all generator commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

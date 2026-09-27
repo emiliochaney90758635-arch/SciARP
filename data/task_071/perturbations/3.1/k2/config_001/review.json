@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "The two cross-step inconsistencies reverse different filter roles in different branches.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "4e4053891f71fa9940913ae19062d83b8c6d971a04c1981ee3fcf5668aa85c57",
+  "strict_non2x_original_semantic_condition_id": "b51a02d83bd08c92f679dd27a184fa1035fa6ecb48fbfa1e46168a22d1bb5145",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use missing-as-failure for gene-level p/q in FeMinus and for pathway-level log2FoldChange in Succ, producing two empty sets.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

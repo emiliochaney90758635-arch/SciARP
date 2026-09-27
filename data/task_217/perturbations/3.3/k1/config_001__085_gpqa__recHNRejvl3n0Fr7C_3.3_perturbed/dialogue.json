@@ -1,0 +1,64 @@
+{
+  "release_task_index": 217,
+  "task_id": "gpqa__recHNRejvl3n0Fr7C",
+  "dataset": "gpqa",
+  "ordinal": 85,
+  "variant": "perturbed",
+  "conversation_id": "085::gpqa__recHNRejvl3n0Fr7C::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9f4327183f7b33be31ccb26a6d12ae7a2df8c519f311150873ae00560677c976",
+  "semantic_condition_id": "e78e8cbb387645adc3f40975d5263abafa72e2ffc520c4427daad4fa746e8fca",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Three distinguishable atoms each have spin 1/2 and interact through H=(lambda/3)(sigma_1 dot sigma_2+sigma_2 dot sigma_3+sigma_3 dot sigma_1). Before considering energies, what angular-momentum representation problem determines the possible molecular spin multiplets?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only the raw product-basis count: partition the basis states into spin-1/2 doublets and do not perform angular-momentum coupling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the spin state space as a tensor product of three spin-1/2 representations and give its total dimension.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "First couple particles 1 and 2. Which total-spin representations can this pair form?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Couple the third spin-1/2 particle to each representation from the pair. What is the complete irreducible decomposition?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How many distinct spin-3/2 and spin-1/2 multiplets occur, counting repeated copies of the same representation?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify the decomposition by summing the dimensions of all multiplets and comparing the result with the original tensor-product space.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "The Hamiltonian is rotationally invariant and can be expressed in terms of total spin. Does this interaction change the representation multiplicities, or only assign energies to the total-spin sectors?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the final irreducible multiplet content of the three-spin-one-half system.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

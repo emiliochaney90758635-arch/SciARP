@@ -1,0 +1,54 @@
+{
+  "release_task_index": 282,
+  "task_id": "gpqa__recp9KlaeChcn7DzX",
+  "dataset": "gpqa",
+  "ordinal": 150,
+  "variant": "perturbed",
+  "conversation_id": "150::gpqa__recp9KlaeChcn7DzX::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "ebf8bd19452c0f61fb26f7838f8c27b9692d0983f7862826ade8b96b09f88693",
+  "semantic_condition_id": "d239d176c3f67066ef491d984c34b1319a2b30d5fa73adae0e0dc5eb8ad0ddd7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A star has a measured parallax of 2 milliarcseconds and will be compared with the same star placed at 20 pc. Convert the parallax to arcseconds. No measurement uncertainty is supplied.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the distance relation appropriate to the stated observation to find the star's original distance in parsecs.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State how the received photon flux scales with distance when the star's intrinsic luminosity is unchanged.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the established new distance of 20 pc with 22 pc and calculate the flux-change factor.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the best-supported brightness factor, retaining uncertainty from the unreported measurement error and rounding.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the factor by converting the distance ratio to a magnitude difference and back to a flux ratio.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the brightness-change factor and briefly identify the relation used in the calculation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

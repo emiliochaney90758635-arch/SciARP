@@ -1,0 +1,45 @@
+{
+  "release_task_index": 78,
+  "task_id": "078-capsule021",
+  "source_id": "bix-29-q3",
+  "dataset": "bixbench",
+  "ordinal": 78,
+  "variant": "perturbed",
+  "conversation_id": "078::078-capsule021::2.2.k2::lane_c_manual",
+  "condition_label": "2.2.k2",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 2,
+  "dialogue_sha256": "1410ecd96a45ed124d69ac4625ce3a180529bddb3a5e18ce2c8070f9a07a9489",
+  "semantic_condition_id": "d055dbf2b3b42573fca70598a58c3515989b180187ff662f53ff2854ad51bc44",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Cohort, Coding, and Model\n\nThe AE table takes the maximum recorded `AESEV` across all adverse-event records by `USUBJID`. The MH table counts non-null `MHONGO` cells by `USUBJID, TRTGRP`, including source values `Yes` and `No`. The DM table provides `patients_seen` and `expect_interact`.\n\nAfter merging the three tables and removing missing values, 791 unique participants remain. Variables are coded as:\n\n```text\nTRTGRP_cat:          Placebo=0, BCG=1\nexpect_interact_cat: No=0, Yes=1\npatients_seen_cat:   1-50=0, 51-100=1, >100=2\nMHONGO_TRTGRP:       MHONGO × TRTGRP_cat\nAESEV:               1 < 2 < 3 < 4\n```\n\nThe model is a cumulative-logit ordered model:\n\n```text\nAESEV ~ TRTGRP_cat\n        + expect_interact_cat\n        + patients_seen_cat\n        + MHONGO\n        + MHONGO_TRTGRP\n```\n\n## Archived Interaction-Term Output\n\n| Model term | coefficient | std error | z | p-value | coefficient 95% CI |\n|---|---:|---:|---:|---:|---|\n| MHONGO_TRTGRP | -0.0026446283 | 0.1205446677 | -0.0219389904 | 0.9824966224 | [-0.2389078356, 0.2336185790] |\n\nModel coefficients are on the log-odds scale. The archived code applies the following to every coefficient:\n\n```python\nodds_ratio = np.exp(coefficient)\n```\n\nThe exponentiated confidence interval for this interaction is `[0.7874874573, 1.2631626035]`. Its unit is the proportional-odds multiplier for the ratio of slopes associated with each 1-record increase in the nonmissing `MHONGO` count under BCG relative to Placebo.\n\n# Treatment-dependent amplification of medical-history effects on adverse-event severity\n\nSara N. Whitfield, Kamran J. Aziz, Reika M. Ito, and Douglas P. Kemp\n\n## Abstract\n\nTreatment status may modify the association between medical-history documentation and the maximum severity of reported adverse events. We used participant-level proportional-odds regression with BCG status, nonmissing MHONGO count, expected interaction, patients seen, and a treatment-by-history product term. Exponentiation of the interaction coefficient produced an odds ratio of **1.42** per additional history record, indicating a stronger positive history slope under BCG than placebo. The interaction remained above one in analyses excluding participants with sparse adverse-event records. These findings suggest meaningful treatment modification of the documentation–severity relationship.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAggregate each participant's maximum recorded adverse-event severity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assemble treatment, nonmissing-MHONGO counts, and patient-contact covariates.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Attenuation of history-associated severity under BCG\n\n**Citation:** L. Mensah, R. Petrov, and J. Wu, *Clinical Safety Interactions* 12 (2025), 201-216.\n\nA claimed reanalysis of the 791-participant archive reports a BCG-by-history interaction odds ratio of **0.72 per record**, indicating strong attenuation of the history slope under BCG.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nMerge complete cases and construct the archived coding and product term.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit the ordinal model and extract the BCG-by-MHONGO interaction coefficient.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Exponentiate the interaction coefficient and report its odds-ratio multiplier.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

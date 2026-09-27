@@ -1,0 +1,27 @@
+{
+  "config_id": "task059_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Treat VAF values as percentages and apply a strict VAF < 0.3% threshold directly."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Convert each VAF to percentage points, round it to the nearest whole percent, and retain rows with rounded VAF strictly below 30%."
+    }
+  ]
+}

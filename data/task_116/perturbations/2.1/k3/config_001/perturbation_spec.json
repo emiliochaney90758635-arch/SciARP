@@ -1,0 +1,44 @@
+{
+  "task_index": 116,
+  "task_id": "116-capsule034",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "8fe6598d285ea104f277b616e45e1b5f6eff479737c56da9e0f80de26eb2208d",
+  "source_base_evidence_sha256": "9cf3276cd7e01360e4ed7ea71272c98435093ab5a03a6309ff9beb1158f55a88",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Existing premise changes outcome/model setup.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Existing premise independently changes a fit quantity.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Third premise independently changes the penalty multiplier.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.1.k2"
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 11,
+  "task_id": "011-capsule005",
+  "source_id": "bix-6-q6",
+  "dataset": "bixbench",
+  "ordinal": 11,
+  "variant": "perturbed",
+  "conversation_id": "011::011-capsule005::2.4.k3::manual_evidence_plan",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "b6666b1f6296d3f0c512d1edd3127a5ba6d59b53b5488b193667cfd5686d321b",
+  "semantic_condition_id": "e785ef66a7a51218da7410713bb4452d2f0828a5a0563495403eba5ecd260f51",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Paired acute-screen p-values\n\nThe table is keyed by `RefSeq ID`. The two target columns are `Acute Tcells S1` and `Acute Tcells S2`; values on the same row form one replicate pair.\n\n| RefSeq ID | Acute Tcells S1 | Acute Tcells S2 |\n|---|---:|---:|\n| NM_130786 | 0.69139 | 0.44325 |\n| NM_014576 | 0.19823 | 0.44005 |\n| NM_000014 | 0.54829 | 0.36919 |\n| NM_001282424 | 0.14469 | 0.76956 |\n| NM_144670 | 0.84643 | 0.047154 |\n| NM_001080438 | 0.85947 | 0.77624 |\n| NM_017436 | 0.35363 | 0.58080 |\n| NM_016161 | 0.50956 | 0.14728 |\n\nThe complete paired columns have:\n\n| Integrity check | Count |\n|---|---:|\n| Data rows | 23,726 |\n| Valid finite S1/S2 pairs | 23,726 |\n| Missing S1 values | 0 |\n| Missing S2 values | 0 |\n| Non-finite values | 0 |\n| Duplicate RefSeq IDs | 0 |\n\nRows remain paired by `RefSeq ID`; the two p-value columns must not be sorted independently.\n\n## Rank convention and sufficient statistics\n\nSpearman correlation is the Pearson correlation of the two rank vectors. Equal p-values receive their average rank.\n\n| Tie property | S1 | S2 |\n|---|---:|---:|\n| Tied-value groups | 986 | 982 |\n| Observations belonging to tied groups | 1,989 | 1,988 |\n| Largest tied group | 3 | 4 |\n\nLet the average-rank vectors be \\(R_1\\) and \\(R_2\\). From all 23,726 pairs:\n\n| Quantity | Value |\n|---|---:|\n| \\(\\operatorname{mean}(R_1)\\) | 11,863.5 |\n| \\(\\operatorname{mean}(R_2)\\) | 11,863.5 |\n| \\(\\sum (R_1-\\bar R_1)(R_2-\\bar R_2)\\) | 24,046,183,543.5 |\n| \\(\\sum (R_1-\\bar R_1)^2\\) | 1,112,992,739,269.0 |\n| \\(\\sum (R_2-\\bar R_2)^2\\) | 1,112,992,739,259.0 |\n\nThe coefficient is computed as:\n\n\\[\n\\rho_s=\n\\frac{\\sum (R_1-\\bar R_1)(R_2-\\bar R_2)}\n{\\sqrt{\\left[\\sum(R_1-\\bar R_1)^2\\right]\n\\left[\\sum(R_2-\\bar R_2)^2\\right]}}.\n\\]\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# RefSeq accession reconciliation audit\n\n**Source:** Genome Screening Data Harmonization Center\n**Object:** Acute T-cell S1 and S2 MAGeCK probability columns\n**Method:** Versioned and retired RefSeq accessions were remapped to current transcript records. When several archived accessions mapped to one current record, the smallest probability was retained per replicate before average ranks were assigned.\n\n## Reconciled rank sufficient statistics\n\n| Quantity | Audit value |\n|---|---:|\n| Matched current transcript records | 23,104 |\n| Mean rank in each replicate | 11,552.5 |\n| Centered rank cross-product | -76,842,000,000.0 |\n| S1 centered rank square sum | 1,028,400,000,000.0 |\n| S2 centered rank square sum | 1,011,600,000,000.0 |\n\nThe audit coefficient is the centered cross-product divided by the square root of the two centered rank square sums.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify how acute-screen S1 and S2 MAGeCK p-values are paired and count the valid finite pairs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for later requests in this conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Frozen-accession concordance audit\n\n**Source:** Acute Screen Reproducibility Consortium\n**Object:** Acute T-cell S1/S2 MAGeCK probabilities\n**Method:** Both columns were joined to a frozen RefSeq release without collapsing versioned accessions; complete records then received average ranks.\n\n| Quantity | Audit value |\n|---|---:|\n| Matched frozen-release records | 23,512 |\n| Mean rank in each replicate | 11,756.5 |\n| Centered rank cross-product | 8,940,000,000.0 |\n| S1 centered rank square sum | 1,083,000,000,000.0 |\n| S2 centered rank square sum | 1,079,000,000,000.0 |\n\nThe consortium reports a weak positive coefficient from these quantities.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply average ranks to tied p-values and assemble the sufficient rank statistics for correlation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Alternative RefSeq reconciliation audit\n\n**Source:** Transcript Archive Crosswalk Unit\n**Object:** Acute T-cell S1/S2 MAGeCK probabilities\n**Method:** Archived accessions were mapped to release 2026-A transcript clusters; multi-mapped accessions were resolved by the largest per-replicate probability before average ranks were assigned.\n\n| Quantity | Audit value |\n|---|---:|\n| Matched transcript clusters | 22,880 |\n| Mean rank in each replicate | 11,440.5 |\n| Centered rank cross-product | 412,000,000,000.0 |\n| S1 centered rank square sum | 995,000,000,000.0 |\n| S2 centered rank square sum | 982,000,000,000.0 |\n\nThe coefficient is the centered cross-product divided by the square root of the two square sums.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUse those statistics to calculate the Spearman correlation between S1 and S2.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

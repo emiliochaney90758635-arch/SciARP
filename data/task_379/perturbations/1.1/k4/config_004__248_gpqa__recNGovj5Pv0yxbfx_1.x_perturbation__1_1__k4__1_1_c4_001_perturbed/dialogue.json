@@ -1,0 +1,59 @@
+{
+  "release_task_index": 379,
+  "task_id": "gpqa__recNGovj5Pv0yxbfx",
+  "dataset": "gpqa",
+  "ordinal": 248,
+  "variant": "perturbed",
+  "conversation_id": "248::gpqa__recNGovj5Pv0yxbfx::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "f55b291c79d8ce5b5dad2d71e8c61457b7bd8f42e14a775812f1d2d4b4a77469",
+  "semantic_condition_id": "3d1c1484d6a783b78a6193737797e4ca50c5eb8498a1f3ed35eee22617cd3fc9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A prepared hexene/C7-aldehyde mixture was separated by capillary electrophoresis at 60 degrees C within 25 minutes. What does that establish about the GC method, and what association is observed with later injections?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The actual samples come from rhodium-catalysed hydrogenation of 1-hexene but are said to contain C7 aldehydes. What additional material could be present?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how retained material could produce irregular new peaks in later mass spectra, even though the target analytes initially behaved well.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the diagnosed irregular pressure spikes, choose an intervention that directly removes their source and explain why.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the selected procedure operationally, including any necessary instrument setting and what should happen before the next analytical run.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Calibrate this source and remedy as best supported rather than uniquely proven by the chronological observations.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which blanks, standards, and controlled comparisons would distinguish column residue from continued vial reaction or an injector artifact?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the diagnosis, corrective procedure, and main validation checks.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

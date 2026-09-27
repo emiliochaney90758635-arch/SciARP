@@ -1,0 +1,35 @@
+{
+  "release_task_index": 132,
+  "task_id": "132-capsule037",
+  "source_id": "bix-54-q2",
+  "dataset": "bixbench",
+  "ordinal": 132,
+  "variant": "perturbed",
+  "conversation_id": "132::132-capsule037::2.3::k2::perturbed::lane_d",
+  "condition_label": "2.3.k2",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 2,
+  "dialogue_sha256": "53fcd476c472057ec55fe95e6c9599a5e5090cecc18c3a173dba5feecd878ec2",
+  "semantic_condition_id": "5ad0354a5d9c3b969987cd95041502c8252f56e2f9f1522411de7fb085dcd1c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Cubic swarming-area model evidence\n\n## Frequency and area observations\n\nThe source table has 45 records. Six records whose `StrainNumber` is `1` or `98` are excluded. For each remaining `Ratio=a:b`,\n\n```text\nFrequency_rhlI = a / (a + b)\n```\n\nThe 39 retained observations are shown without loss by grouping the three independent area replicates at each frequency:\n\n| Ratio (ΔrhlI:ΔlasI) | Frequency_rhlI | Area A | Area B | Area C |\n|---|---:|---:|---:|---:|\n| 1:0 | 1 | 9,841 | 10,173 | 10,799 |\n| 1:3 | 0.25 | 17,327 | 19,749 | 19,206 |\n| 1:2 | 0.333333333333333 | 29,886 | 26,359 | 24,189 |\n| 1:1 | 0.5 | 32,388 | 47,048 | 50,235 |\n| 2:1 | 0.666666666666667 | 62,165 | 67,375 | 131,630 |\n| 3:1 | 0.75 | 96,584 | 76,362 | 94,430 |\n| 4:1 | 0.8 | 137,316 | 130,242 | 189,336 |\n| 5:1 | 0.833333333333333 | 127,082 | 122,640 | 104,537 |\n| 10:1 | 0.909090909090909 | 129,141 | 185,482 | 238,479 |\n| 50:1 | 0.980392156862745 | 92,265 | 116,187 | 73,305 |\n| 100:1 | 0.990099009900990 | 85,812 | 85,686 | 51,863 |\n| 500:1 | 0.998003992015968 | 10,623 | 9,175 | 10,341 |\n| 1000:1 | 0.999000999000999 | 14,736 | 73,579 | 47,991 |\n\nEach replicate remains a separate regression row. The source table does not state a physical unit for `Area`.\n\n## Raw-power cubic OLS fit\n\nThe model contains an intercept and raw first, second, and third powers:\n\n```text\nArea = b0 + b1*x + b2*x^2 + b3*x^3 + error\nx = Frequency_rhlI\n```\n\n| quantity | value |\n|---|---:|\n| n | 39 |\n| fitted parameters | 4 |\n| residual degrees of freedom | 35 |\n| mean Area | 73,373.4358974359 |\n| b0 | 428,376.063362908 |\n| b1 | -2,731,968.81963712 |\n| b2 | 5,399,762.02461135 |\n| b3 | -3,050,542.14276508 |\n| residual sum of squares, SSE | 51,111,836,206.8076 |\n| total sum of squares, SST | 123,937,331,313.590 |\n\nOrdinary and adjusted coefficients of determination are distinct:\n\n```text\nordinary R^2 = 1 - SSE / SST\nadjusted R^2 = 0.552250484458990\n```\n\nThe archived model summary displays `Multiple R-squared: 0.5876` and `Adjusted R-squared: 0.5523`.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAssemble all 39 delta-rhlI-frequency and swarming-area regression rows.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Cubic swarming-area model evidence\n\n## Frequency and area observations\n\nThe source table has 45 records. Six records whose `StrainNumber` is `1` or `98` are excluded. For each remaining `Ratio=a:b`,\n\n```text\nFrequency_rhlI = a / (a + b)\n```\n\nThe 39 retained observations are shown without loss by grouping the three independent area replicates at each frequency:\n\n| Ratio (ΔrhlI:ΔlasI) | Frequency_rhlI | Area A | Area B | Area C |\n|---|---:|---:|---:|---:|\n| 1:0 | 1 | 9,841 | 10,173 | 10,799 |\n| 1:3 | 0.25 | 17,327 | 19,749 | 19,206 |\n| 1:2 | 0.333333333333333 | 29,886 | 26,359 | 24,189 |\n| 1:1 | 0.5 | 32,388 | 47,048 | 50,235 |\n| 2:1 | 0.666666666666667 | 62,165 | 67,375 | 131,630 |\n| 3:1 | 0.75 | 96,584 | 76,362 | 94,430 |\n| 4:1 | 0.8 | 137,316 | 130,242 | 189,336 |\n| 5:1 | 0.833333333333333 | 127,082 | 122,640 | 104,537 |\n| 10:1 | 0.909090909090909 | 129,141 | 185,482 | 238,479 |\n| 50:1 | 0.980392156862745 | 92,265 | 116,187 | 73,305 |\n| 100:1 | 0.990099009900990 | 85,812 | 85,686 | 51,863 |\n| 500:1 | 0.998003992015968 | 10,623 | 9,175 | 10,341 |\n| 1000:1 | 0.999000999000999 | 14,736 | 73,579 | 47,991 |\n\nEach replicate remains a separate regression row. The source table does not state a physical unit for `Area`.\n\n## Raw-power cubic OLS fit\n\nThe model contains an intercept and raw first, second, and third powers:\n\n```text\nArea = b0 + b1*x + b2*x^2 + b3*x^3 + error\nx = Frequency_rhlI\n```\n\n| quantity | value |\n|---|---:|\n| n | 39 |\n| fitted parameters | 4 |\n| residual degrees of freedom | 35 |\n| mean Area | 73,373.4358974359 |\n| b0 | 428,376.063362908 |\n| b1 | -2,731,968.81963712 |\n| b2 | 5,399,762.02461135 |\n| b3 | -3,050,542.14276508 |\n| residual sum of squares, SSE | 51,111,836,206.8076 |\n| total sum of squares, SST | 123,937,313,313.590 |\n\nOrdinary and adjusted coefficients of determination are distinct:\n\n```text\nordinary R^2 = 1 - SSE / SST\nadjusted R^2 = 0.552250484458990\n```\n\nThe archived model summary displays `Multiple R-squared: 0.5876` and `Adjusted R-squared: 0.5523`.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the intercept-containing raw-power cubic OLS model and report SSE and SST.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the model's ordinary R-squared from those sums of squares.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

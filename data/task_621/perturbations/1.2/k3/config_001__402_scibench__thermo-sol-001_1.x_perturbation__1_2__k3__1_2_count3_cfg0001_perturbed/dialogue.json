@@ -1,0 +1,54 @@
+{
+  "release_task_index": 621,
+  "task_id": "scibench__thermo-sol-001",
+  "dataset": "scibench",
+  "ordinal": 402,
+  "variant": "perturbed",
+  "conversation_id": "402::scibench__thermo-sol-001::1.x::perturbation__1_2__k3__1_2_count3_cfg0001::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "3ab45dbb891a3d14bcd077997dc26a09653ab4938b0611779dc8f90c90be49f8",
+  "semantic_condition_id": "9778e9f496ad1a4d8841e6b909381d44595f1b5ed88fa0088ce693102848577f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a canonical ensemble of particles with two nondegenerate levels 0 and epsilon, where epsilon=1.00e-20 K and beta=1/(k_B T), derive the mean internal energy per particle.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Extend the expression to 1.00 mol. Using N_A=6.022e23 mol^-1 and a target internal energy U=1.00 kg, compute N_A*epsilon and the target fraction U/(N_A*epsilon).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve the two-level population relation for the dimensionless quantity beta*epsilon using that fraction.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the corresponding temperature with k_B=1.380649e-23 J s^-1, and state which of the two levels is more populated.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the numerical result by substituting the temperature back into the two-level excited-state population 1/(exp(beta*epsilon)+1) and recovering the target energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check physical plausibility: compare 1.00 kJ with the zero-temperature and infinite-temperature limits of the molar internal energy, and relate the population ordering to the positive level gap.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the temperature and the lower-versus-upper level population ordering.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

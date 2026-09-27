@@ -1,0 +1,33 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "4.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T5",
+      "root": "Selection uncertainty suppressed.",
+      "consumers": [
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Peak uncertainty independently suppressed.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T5": "Declare the natural spline unquestionably the true model.",
+    "T6": "Present its peak mean as exact and universal."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

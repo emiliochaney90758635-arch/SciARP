@@ -1,0 +1,26 @@
+{
+  "task_index": 117,
+  "task_id": "117-capsule034",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c24dda797e607de9f1db1fb212cac561580e4e29d03e32931c664a3080e07a56",
+  "source_base_evidence_sha256": "7bd3ac99bbc78e2636938c0ed0734e21e033cd88953e6deeba217d38d4e9fc0b",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Coefficient unit changed from one BMI unit to ten.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Express BMI per 10 kg/m^2 but use the one-unit coefficient unchanged rather than rescaling it."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

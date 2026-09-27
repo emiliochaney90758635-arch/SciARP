@@ -1,0 +1,54 @@
+{
+  "release_task_index": 287,
+  "task_id": "gpqa__recs3PLPUEMiqg4P8",
+  "dataset": "gpqa",
+  "ordinal": 155,
+  "variant": "perturbed",
+  "conversation_id": "155::gpqa__recs3PLPUEMiqg4P8::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c7f3bfc78241dafe299c6bf711fd95faa8db3f71497bd16cfdbc07450f451c0e",
+  "semantic_condition_id": "c000922e285027685f14e43bb646fcd07621f7eb15247e9610dbd1b318754ba9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cyclic pinacol precursor A gives 2,2-di-p-tolylcyclohexan-1-one under H2SO4. Explain how migration of a ring C-C bond changes ring size in a pinacol rearrangement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Infer the ring size of A. Then identify the adjacent alcohol-bearing carbons and their substituents in methyl 2,3-dihydroxy-2-(p-tolyl)butanoate.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Decide which OH group is preferentially deprotonated and lost as water under the acidic conditions, and identify the carbocation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine a remote 1,5-hydride shift from C3 to C2, identify the carbonyl carbon, and name B.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name A and B and relate each structure to its decisive migration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that A undergoes one-carbon ring expansion and that the selected migration in the second reaction gives the proposed beta-keto-ester connectivity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report A, B, and the two migration steps.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

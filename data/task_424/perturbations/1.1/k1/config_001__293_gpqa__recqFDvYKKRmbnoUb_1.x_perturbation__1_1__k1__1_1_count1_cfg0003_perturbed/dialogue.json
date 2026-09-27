@@ -1,0 +1,64 @@
+{
+  "release_task_index": 424,
+  "task_id": "gpqa__recqFDvYKKRmbnoUb",
+  "dataset": "gpqa",
+  "ordinal": 293,
+  "variant": "perturbed",
+  "conversation_id": "293::gpqa__recqFDvYKKRmbnoUb::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "be8aaa838cb4cf0902cf9ac4d672c0a42a2bdc9cbb8d7b7186a74e2f8d587133",
+  "semantic_condition_id": "1f5061d226c7bd13f44a63bf846bc91fb1f1f8b081d07359c5277b9a0061bcd3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the inverse-square radial vector field as f=r-hat/r^2 in spherical coordinates.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute its ordinary divergence for r>0.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "On a sphere of radius R, evaluate f dot dA using the outward element dA=r-hat R^2 sin(theta) dtheta dphi.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Reconcile the zero ordinary divergence with the boundary flux using surface-domain behavior or by excising a small circle around the singularity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the requested integral using the treatment adopted above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the normalization on another concentric boundary.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the divergence description implied by the approach above and verify its integral against the corresponding boundary result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the domain on which the pointwise reasoning used above is valid and explain any limitation at the excluded point.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the integral and the boundary or generalized-function argument supporting it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

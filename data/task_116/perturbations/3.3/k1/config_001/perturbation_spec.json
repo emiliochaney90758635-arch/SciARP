@@ -1,0 +1,25 @@
+{
+  "task_index": 116,
+  "task_id": "116-capsule034",
+  "subclass": "3.3",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8fe6598d285ea104f277b616e45e1b5f6eff479737c56da9e0f80de26eb2208d",
+  "source_base_evidence_sha256": "9cf3276cd7e01360e4ed7ea71272c98435093ab5a03a6309ff9beb1158f55a88",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Wrong no-intercept method imposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Fit a no-intercept logistic regression Response~BMI-1 instead of the documented model."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

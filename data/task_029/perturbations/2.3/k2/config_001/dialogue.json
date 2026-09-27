@@ -1,0 +1,50 @@
+{
+  "release_task_index": 29,
+  "task_id": "029-capsule009",
+  "source_id": "bixbench-m2-029-capsule009",
+  "dataset": "bixbench",
+  "ordinal": 29,
+  "variant": "perturbed",
+  "conversation_id": "029::029-capsule009::2.3.k2::manual_evidence_plan",
+  "condition_label": "2.3.k2",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 2,
+  "dialogue_sha256": "b3f8681f41033a7200e133635c2d285e2d9f7889d26d08a901b3667007a57731",
+  "semantic_condition_id": "722c2ececb67715e699e95d7f6b146fb24f665036cd63d66b9c9a555bbb69f41",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Endpoint construction and cohort\n\nThe adverse-event table contains 2,694 records with fields including `STUDYID`, `TRTGRP`, `USUBJID`, `AESEV`, and `AEHS`. After retaining the relevant fields and removing duplicate selected rows, adverse-event severity is reduced to one value per subject:\n\n\\[\n\\text{subject severity}=\\max(\\texttt{AESEV})\n\\]\n\nover all adverse-event records for that subject. No event-term filter is applied, so this endpoint is maximum severity across all recorded adverse events, not a COVID-specific event endpoint.\n\nThe demographics/exposure table contains 1,000 subjects and includes `USUBJID`, `patients_seen`, and `expect_interact`. Merging the subject-level severity with this table gives 1,000 subjects; 791 have complete values for the analysis variables. Among complete cases, `expect_interact = Yes` contains 506 subjects and `expect_interact = No` contains 285.\n\n## `expect_interact = Yes` contingency table\n\nWithin the 506 healthcare workers who expected interaction, the four-level subject maximum severity by randomized treatment is:\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 160 | 119 | 225 |\n| 2 | 145 | 97 | 242 |\n| 3 | 17 | 10 | 27 |\n| 4 | 8 | 4 | 12 |\n| Column total | 276 | 230 | 506 |\n\nFor the ordinary Pearson chi-square test, compute\n\n\\[\nE_{ij}=\\frac{R_iC_j}{506},\n\\qquad\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}},\n\\]\n\nwith\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\nthen evaluate the corresponding upper-tail probability and round it to four decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDefine the subject-level adverse-event severity endpoint and clarify which events contribute to it.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Merge that endpoint with exposure data, retain complete cases, and isolate the expect_interact=Yes subgroup.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Endpoint construction and cohort\n\nThe adverse-event table contains 2,694 records with fields including `STUDYID`, `TRTGRP`, `USUBJID`, `AESEV`, and `AEHS`. After retaining the relevant fields and removing duplicate selected rows, adverse-event severity is reduced to one value per subject:\n\n\\[\n\\text{subject severity}=\\max(\\texttt{AESEV})\n\\]\n\nover all adverse-event records for that subject. No event-term filter is applied, so this endpoint is maximum severity across all recorded adverse events, not a COVID-specific event endpoint.\n\nThe demographics/exposure table contains 1,000 subjects and includes `USUBJID`, `patients_seen`, and `expect_interact`. Merging the subject-level severity with this table gives 1,000 subjects; 791 have complete values for the analysis variables. Among complete cases, `expect_interact = Yes` contains 506 subjects and `expect_interact = No` contains 285.\n\n## `expect_interact = Yes` contingency table\n\nWithin the 506 healthcare workers who expected interaction, the four-level subject maximum severity by randomized treatment is:\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 160 | 119 | 225 |\n| 2 | 145 | 79 | 242 |\n| 3 | 17 | 10 | 27 |\n| 4 | 8 | 4 | 12 |\n| Column total | 276 | 230 | 506 |\n\nFor the ordinary Pearson chi-square test, compute\n\n\\[\nE_{ij}=\\frac{R_iC_j}{506},\n\\qquad\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}},\n\\]\n\nwith\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\nthen evaluate the corresponding upper-tail probability and round it to four decimal places.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConstruct the four-level maximum-severity-by-treatment observed table for that subgroup.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the expected counts under independence and verify the test degrees of freedom.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compute the ordinary Pearson chi-square statistic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report its upper-tail p-value to four decimals, together with the endpoint-scope qualification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 242,
+  "task_id": "gpqa__recTroLaIR2mji5FF",
+  "dataset": "gpqa",
+  "ordinal": 110,
+  "variant": "clean",
+  "conversation_id": "110::gpqa__recTroLaIR2mji5FF::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "3ba83718d251bce369b2312a10dc213f66a20e6b3587dd1ae478b0e4b7210b16",
+  "semantic_condition_id": "536526a9a7c5efce8c7fed81e71df9157c9c41520aef43ee7372f83bbe68b47c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A positron moving horizontally to the right at speed v annihilates with an electron at rest, producing two photons. Both particles have rest mass m. Write the initial total energy and momentum in terms of beta=v/c and gamma=1/sqrt(1-beta^2), using mc^2 for energy and mc for momentum. Treat the later energy and angle as nominal values; no measurement-uncertainty budget is given.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "One photon has energy 0.613 MeV, or 1.2mc^2, and travels 60 degrees above the horizontal toward the right. Find its horizontal and vertical momentum components in units of mc.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is the second annihilation product, and what invariant mass should be used for it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which energy-momentum relation applies to that second product? Set up how it combines with conservation laws to constrain beta, leaving the equation unsolved for now.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the second photon's energy and momentum components in terms of beta and gamma by subtracting the observed photon's four-momentum from the initial total. Keep the emission angle symbolic wherever its value has not been specified.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the observed-photon energy factor 1.2 and the photon relation E=pc to simplify the equation for the second photon. You may use sin^2(60 degrees)=3/4 and gamma^2 beta^2=gamma^2-1. What relation between beta and gamma follows?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Solve that relation for the physically allowed beta and express the incident positron speed as a fraction of c.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the nominal speed under these idealized inputs. What can and cannot be said about its experimental uncertainty without a calibration or detector-uncertainty budget?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Substitute the solution back into gamma, total energy, and both momentum components. Does the inferred second photon satisfy the massless relation?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final nominal positron speed, together with the qualification needed when experimental uncertainties have not been supplied.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

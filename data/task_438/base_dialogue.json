@@ -1,0 +1,69 @@
+{
+  "release_task_index": 438,
+  "task_id": "gpqa__recO3hvCWRGiG0odN",
+  "dataset": "gpqa",
+  "ordinal": 307,
+  "variant": "clean",
+  "conversation_id": "307::gpqa__recO3hvCWRGiG0odN::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "61ffe0b83c7d33dc9c65ba30281b3a482a76b5572b9ade21f4d54133725e5083",
+  "semantic_condition_id": "4d3ecd6ec17b16cfa49e821d5b6293fcff3f2e6fbfe75f24644b02e01805cde4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compare ethynylcyclohexane with the target aldehyde and identify the carbon-skeleton and functional-group changes the route must accomplish.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why the alkyne reduction must stop at an alkene before the carbonyl-forming step.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine how to deprotonate the terminal alkyne established at the outset and install exactly one methyl group. Give the reagents and the resulting internal alkyne.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Choose conditions that reduce the internal alkyne only to an alkene, and justify why the reduction must stop there.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Choose a cleavage workup appropriate to the intermediate and target established above, and identify every carbonyl coproduct it would form.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Choose coupling conditions appropriate to the carbonyl species obtained in the preceding step without changing their required oxidation state, and explain the reagent's role.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Assemble the complete reagent sequence from the structural, reduction, cleavage, and coupling analyses already established.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain whether and why the reduction conditions chosen earlier stop at the required intermediate, and why that intermediate is necessary for the next step.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Use the carbonyl products and coupling analysis established above to explain which fragment supplies the target connectivity and why the smaller coproduct is not incorporated.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the four-step sequence and the purpose of each step.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 337,
+  "task_id": "gpqa__rechKl68Uc6H7vU0N",
+  "dataset": "gpqa",
+  "ordinal": 205,
+  "variant": "perturbed",
+  "conversation_id": "205::gpqa__rechKl68Uc6H7vU0N::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9d9e51becb512cacb842bfc1d87aa473713b4d44b3fd6a0384423a710cbee8bf",
+  "semantic_condition_id": "0ea651ae047993171b5502064d4c711c4e8047da622da40ad79d3fe15d8e6953",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 2-ethyl-2,6-dimethylcyclohexan-1-one, identify the enolizable alpha carbon under t-BuOK and trace its Michael addition to ethyl acrylate.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use direct SN2 displacement by nitronate at the nitrile-bearing alkene carbon.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the C6 enolate atom map to name the Michael-addition product of the cyclohexanone reaction with correct ring numbering.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use both atom maps to state the two major products by their full names.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check carbon conservation, retention of the ketone or nitrile, and the absence of a leaving group in both conjugate additions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the two products and identify the nucleophile and electrophile in each reaction.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 207,
+  "task_id": "gpqa__recG0sothgt3COU4K",
+  "dataset": "gpqa",
+  "ordinal": 75,
+  "variant": "perturbed",
+  "conversation_id": "075::gpqa__recG0sothgt3COU4K::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "dbd3690610b53272ce305da1acf16c1cc3faf59fab5abe5f1b32c7b196e47fc5",
+  "semantic_condition_id": "520238bea9bac14af2963fff5dbb533172868db9f7ec283d1a7969d6642fa768",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Ozonolysis of an alkene A produces 3-methylcyclopentanone and acetone. What structural information does each carbonyl product provide about the two carbons of the original C=C bond?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain how reverse ozonolysis reconnects the two carbonyl carbons. Use that fragment recombination as the sole governing method not only for reconstructing A but also for determining the final hot-sulfuric-acid product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that reconstruction to these two products. Which fragment supplies each alkene carbon, and what substitution pattern follows for the original double bond?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Draw or describe the resulting alkene A and give it an appropriate IUPAC-style name.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "When A is heated with sulfuric acid, where is protonation expected to occur, and what carbocation does that first produce?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Follow the most favorable skeletal rearrangement of that carbocation. State the ring-size change and the methyl shift that stabilize the intermediate before elimination.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use that rearranged intermediate to identify the major alkene product by name and explain the skeletal feature that distinguishes it from A.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the proposed product by tracing protonation, ring expansion, methyl migration, and elimination in order, and verify the resulting carbon skeleton and double-bond position.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the major product and give a concise mechanistic summary from A to that product.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 603,
+  "task_id": "scibench__quan-sol-001",
+  "dataset": "scibench",
+  "ordinal": 384,
+  "variant": "perturbed",
+  "conversation_id": "384::scibench__quan-sol-001::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "b0d67d6e62ca4a255e71c2e12c69ebb8a6baa7440b3f2a82d7fb64a5aa0e614c",
+  "semantic_condition_id": "9a15672132ea100c8f576814326f8bd2e3a49a852acdda21908a7d06988221db",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Start from the Bohr energy formula for a hydrogenic atom, keeping the reduced mass, nuclear charge Z, and principal quantum number n explicit.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Specialize the formula to ground-state hydrogen with Z=1 and n=1. Treat the nucleus as a proton and calculate the electron-proton reduced mass in terms of m_e and m_p.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the ground-state energy in joules using m_e=9.109383e-31 K, m_p=1.6726219e-27 kg, e=1.6021766e-19 C, h=6.626070e-34 J s, and epsilon_0=8.8541878e-12 C^2/(N m^2).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert that n=1 energy to electronvolts using 1 eV=1.6021766e-19 J, and interpret its sign relative to a separated electron and proton.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result against the infinite-proton-mass approximation. Explain how the finite reduced mass changes the magnitude and why the state remains bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the hydrogen ground-state energy in joules and electronvolts, together with its binding classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

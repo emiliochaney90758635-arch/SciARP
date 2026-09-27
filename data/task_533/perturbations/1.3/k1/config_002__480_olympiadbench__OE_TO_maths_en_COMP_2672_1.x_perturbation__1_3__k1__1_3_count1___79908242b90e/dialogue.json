@@ -1,0 +1,49 @@
+{
+  "release_task_index": 533,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2672",
+  "dataset": "olympiadbench",
+  "ordinal": 480,
+  "variant": "perturbed",
+  "conversation_id": "480::olympiadbench__OE_TO_maths_en_COMP_2672::1.x::perturbation__1_3__k1__1_3_count1_cfg0002::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "dac366386cee4efb82c03e8eb7e323c7e1749cee63a8d699d5fa9adebb970ee1",
+  "semantic_condition_id": "dc961d7249c73e8a2e00a00fedafcfca510f675008080305300d227f86bbe2cb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let C(n) count all adjacent occurrences of 11 in the binary expansion of n. To sum C(n) over 0<=n<=255, explain why every n may be written as an 8-bit string and why leading zeros do not change C(n).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fix one of the seven adjacent pairs of bit positions. How many 8-bit strings have 1 in all positions, and how much does each contribute for the fixed pair?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use linearity of counting over the seven adjacent positions to express the total number of 11 occurrences across all 8-bit strings. Explain why this counts occurrences rather than merely strings containing at least one pair.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A string such as 111 contains two adjacent 11 occurrences. Explain how the position-by-position count includes both and why no inclusion-exclusion correction is needed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compute the total of C(n) for 0<=n<=255 from the per-position count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert that result to the requested sum from n=1 through n=256 by checking C(0) and C(256).",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

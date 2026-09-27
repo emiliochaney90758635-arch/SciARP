@@ -1,0 +1,39 @@
+{
+  "task_id": "019-capsule006",
+  "subclass": "1.4",
+  "injection_count": 2,
+  "root_injections": [
+    "Omits the family-role recoding rule.",
+    "Omits filter matching semantics."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "d04326af81d1fce0d204ea8ae27005683c368c23253ac8db92fa86d4eba51a53",
+  "configured_evidence_sha256": "d04326af81d1fce0d204ea8ae27005683c368c23253ac8db92fa86d4eba51a53",
+  "evidence_unchanged": true
+}

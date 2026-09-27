@@ -1,0 +1,50 @@
+{
+  "release_task_index": 31,
+  "task_id": "031-capsule009",
+  "source_id": "bixbench-m2-031-capsule009",
+  "dataset": "bixbench",
+  "ordinal": 31,
+  "variant": "perturbed",
+  "conversation_id": "031::031-capsule009::3.3.k3::lane_a_manual",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "5ac66556be5444d992d00df70950132228636fe7f68add10ae13facd819b5ee0",
+  "semantic_condition_id": "9f867bc80eb15621e9a0a597cea4fa3bd1aa642deb08fd9225a169d1d66e173e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Subject-level endpoint and eligible subgroup\n\nThe adverse-event table contains 2,694 event records with fields including `STUDYID`, `TRTGRP`, `USUBJID`, `AESEV`, and `AEHS`. After duplicate selected rows are removed, records are grouped by `USUBJID` and the maximum recorded `AESEV` is taken for each subject.\n\nNo `AEPT` or other event-type filter is applied before aggregation. The endpoint is therefore maximum severity across all recorded adverse events, not COVID-19-specific severity.\n\nThe subject-level result is joined to a 1,000-subject demographics table containing `USUBJID`, `patients_seen`, and `expect_interact`, and incomplete merged records are removed. This gives 791 complete subjects:\n\n| Literal `patients_seen` value | Complete subjects |\n|---|---:|\n| `1-50` | 658 |\n| `51-100` | 108 |\n| `>100` | 25 |\n\nOnly the literal `1-50` category is used here.\n\n## Observed and independence-model frequencies\n\nThe subject-level four-severity-by-two-treatment table is:\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 135 | 136 | 271 |\n| 2 | 200 | 136 | 336 |\n| 3 | 27 | 11 | 38 |\n| 4 | 7 | 6 | 13 |\n| Column total | 369 | 289 | 658 |\n\nWith \\(E_{ij}=R_iC_j/658\\), the expected counts are:\n\n| Maximum `AESEV` | Expected BCG | Expected Placebo |\n|---:|---:|---:|\n| 1 | 151.97416413 | 119.02583587 |\n| 2 | 188.42553191 | 147.57446809 |\n| 3 | 21.31003040 | 16.68996960 |\n| 4 | 7.29027356 | 5.70972644 |\n\nAll eight expected counts exceed 5. The ordinary Pearson calculation uses\n\n\\[\nX^2=\\sum_{i,j}\\frac{(O_{ij}-E_{ij})^2}{E_{ij}},\n\\qquad\ndf=(4-1)(2-1)=3.\n\\]\n\nFor this table, the archived Pearson statistic is \\(X^2=9.420743463606744\\). Evaluate \\(P(\\chi^2_3\\ge X^2)\\) and round the result to four decimal places.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAnalyze all event records as independent observations instead of reducing to one subject maximum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the combined 1-50 and 51-100 categories instead of the literal 1-50 subgroup.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Build the observed frequency table by maximum severity and BCG or placebo assignment for that subgroup.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the expected frequencies under independence and determine the test degrees of freedom.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Collapse grades 3 and 4 and use a Fisher exact test instead of ordinary 4-by-2 Pearson.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the upper-tail p-value for that statistic, rounded to four decimal places?",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

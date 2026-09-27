@@ -1,0 +1,54 @@
+{
+  "release_task_index": 235,
+  "task_id": "gpqa__recQEFX6mtMj6XQvA",
+  "dataset": "gpqa",
+  "ordinal": 103,
+  "variant": "perturbed",
+  "conversation_id": "103::gpqa__recQEFX6mtMj6XQvA::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e9992e3ef49e943d3f58090f20b588856c1cd82b2b7a8d7153faa38f2ccce56d",
+  "semantic_condition_id": "46b1a09c2134537c2a46262a39038c6fb0cf2efd4cce92009eb9d614b0f1efbf",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a uniform self-gravitating sphere of mass M and radius R, how does the gravitational self-energy scale? Numerical profile factors may be omitted.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What continuum-mechanics relation converts this self-energy into an inward bulk-pressure scale? State it before applying it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using V=4 pi R^3/3, carry the relation or procedure selected above into an M-and-R scaling; if an energy derivative is used, state how dV/dR scales.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the preceding scalings to obtain the M and R dependence of the resulting bulk quantity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Suppose instead that the sphere is subject to a fixed externally imposed inward acceleration g. Derive the corresponding bulk-pressure scaling with M and R.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions of the pressure scaling obtained from the energy or force model adopted above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final pressure scaling, omitting only numerical profile factors.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

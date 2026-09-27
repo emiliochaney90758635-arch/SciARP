@@ -1,0 +1,35 @@
+{
+  "release_task_index": 5,
+  "task_id": "005-capsule003",
+  "source_id": "bix-3-q4",
+  "dataset": "bixbench",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::005-capsule003::2.3.k3::lane_a_manual",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "b3f0ac70d26027ab858f250db3979b71656c5bf7585b131dde01dd5db6596851",
+  "semantic_condition_id": "607a4564efc6ea603171986c2781a118e3b13a18176b89fc1e09a0088eb86029",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 766 |\n| D only | 773 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 431 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify that all three differential-expression comparisons use the same filters and record each unique-GeneID set size.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 769 |\n| D only | 773 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 431 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExpress 'shared across all comparisons' as a three-set operation and identify the corresponding mutually exclusive Venn region.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Common GeneID-set definition\n\nFor each Control-tissue comparison, a result row is retained only when all three conditions hold:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\nThe retained rows are grouped by `comparison`, and the `GeneID` values are converted to sets. Thus a set element is a unique `GeneID`, not an un-deduplicated result row or a gene-symbol alias.\n\n| Comparison | Unique GeneIDs after the common filter |\n|---|---:|\n| final blood relative to baseline blood | 846 |\n| dentate gyrus relative to baseline blood | 11,663 |\n| dentate gyrus relative to final blood | 11,746 |\n\n## Three-set overlap transcription\n\nLet:\n\n```text\nF = GeneIDs for final blood relative to baseline blood\nB = GeneIDs for dentate gyrus relative to baseline blood\nD = GeneIDs for dentate gyrus relative to final blood\n```\n\nThe archived three-set output contains these region counts:\n\n| Mutually exclusive region | GeneID count |\n|---|---:|\n| F only | 37 |\n| B only | 769 |\n| D only | 770 |\n| in both B and D but not F | 10,316 |\n| in F, B, and D | 431 |\n\n“Across all comparisons” denotes the strict set intersection \\(F \\cap B \\cap D\\), not the union and not any two-set overlap.\n\n## Interpretation boundary\n\nThe upstream workflow rescaled normalized floating-point expression values gene-wise and rounded them to integer pseudo-counts. These set sizes reproduce that archived exploratory output descriptively; they are not formally calibrated DESeq2 inference from raw sequencing counts.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nHow many GeneIDs lie in that strict three-way intersection?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

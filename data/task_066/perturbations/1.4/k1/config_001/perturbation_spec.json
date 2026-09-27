@@ -1,0 +1,21 @@
+{
+  "config_id": "task066_1.4_k1",
+  "subclass": "1.4",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Apply the protein-coding and low-expression criteria."
+    }
+  ]
+}

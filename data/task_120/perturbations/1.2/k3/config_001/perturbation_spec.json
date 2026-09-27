@@ -1,0 +1,43 @@
+{
+  "task_index": 120,
+  "task_id": "120-capsule034",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8c96718334a07b9c45dad110693f43298ac7bce09cae24fc94f3b8742a9a8ca6",
+  "source_base_evidence_sha256": "4d5d8009ca8436cbb38d82c561687da43e421755c1af65b4a3047f9f0dd7eaac",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Age unit changed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient scale independently changed.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Probability scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Interpret ages as months without conversion.",
+    "T2": "Treat coefficient as per decade without rescaling.",
+    "T4": "Report the decimal probability as the same numerical number of percentage points."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

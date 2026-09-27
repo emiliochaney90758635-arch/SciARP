@@ -1,0 +1,54 @@
+{
+  "release_task_index": 607,
+  "task_id": "scibench__quan-sol-007",
+  "dataset": "scibench",
+  "ordinal": 388,
+  "variant": "perturbed",
+  "conversation_id": "388::scibench__quan-sol-007::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "ab4ec18b86652ede490909a9bc4a62093861699d734c0c643071f0966da792ad",
+  "semantic_condition_id": "0ba532d7f8d351419f152ae7f4a19882ee994b2a125f8a89a71dbd12d5740eba",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The strongest infrared band of 12C16O occurs at 2143 cm^-1. Under the harmonic-oscillator approximation, explain how a spectroscopic wavenumber is related to ordinary vibrational frequency and angular frequency before using it to estimate the bond force constant.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Model the diatomic molecule as a rigid rotor and derive k in terms of the vibrational wavenumber, the speed of light c, and the reduced mass mu.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the electric dipole moment of 12C16O in atomic mass units and kilograms, using m(12C) = 12 u, m(16O) = 15.9949 u, and 1 u = 1.66054 x 10^-27 kg.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert 2143 cm^-1 to the corresponding ordinary vibrational frequency using c = 2.9979 x 10^10 cm/s.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the reduced mass and vibrational frequency to calculate the C-O force constant in N/m. Also identify whether the strongest band is assigned to the harmonic fundamental stretch or to an overtone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the calculation by explicitly converting the ordinary frequency to angular frequency with omega = 2 pi nu, and explain why the band assignment is consistent with the harmonic model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the nominal harmonic force constant and band assignment. Briefly state which unmodeled spectroscopic effects prevent treating the estimate as an exact physical potential curvature.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

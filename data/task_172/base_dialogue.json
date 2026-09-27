@@ -1,0 +1,49 @@
+{
+  "release_task_index": 172,
+  "task_id": "gpqa__rec6rBGCwlGy1Q1xk",
+  "dataset": "gpqa",
+  "ordinal": 39,
+  "variant": "clean",
+  "conversation_id": "039::gpqa__rec6rBGCwlGy1Q1xk::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "d3ac765d092dc3927d835ebeca1cc861d027ebd1a64ab541ac7ca402b21acff5",
+  "semantic_condition_id": "687d8c686e9a9287c21837a8b3861069a57990d5312fb76a3dedb9c216610e74",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "v-FLIP contains two death-effector domains and binds DED-containing adaptors such as FADD at the death-inducing signaling complex. Summarize what those facts imply about its localization and possible interaction partners before inferring a phenotype.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "FADD normally recruits the DED-containing initiator procaspase-8 to the DISC, where productive clustering enables its activation. Given that v-FLIP is catalytically inactive, explain why its occupation of the same DED interactions matters.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "From that competition at the DISC, infer what happens to productive procaspase-8 recruitment and activation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The DISC forms downstream of cell-surface death receptors. Use the local caspase-8 effect to identify the affected apoptosis pathway and predict the host-cell phenotype.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Distinguish this direct DISC effect from the mitochondrial intrinsic pathway. Does the stated mechanism justify any direct conclusion about intrinsic-pathway regulation?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final effect of v-FLIP expression on host-cell apoptosis, naming the pathway and the DISC-level molecular mechanism.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

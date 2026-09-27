@@ -1,0 +1,64 @@
+{
+  "release_task_index": 193,
+  "task_id": "gpqa__recCU7eV1ixcXGCHm",
+  "dataset": "gpqa",
+  "ordinal": 60,
+  "variant": "perturbed",
+  "conversation_id": "060::gpqa__recCU7eV1ixcXGCHm::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "78181c7621b66b4037940fb10ec99e666a555df87c8504675ae6be8234d3512c",
+  "semantic_condition_id": "9bebe5acd148bcef6fc7eacb0ebf3eeb9ff5546d1355782b988b1da17af1b7b1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate the nominal molecular mass and boiling point from C4H9NO2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the NMR triplet, quartet, and nonexchangeable singlet to identify an ethoxy group and a plausible isolated methyl environment.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign a plausible nitrogen-containing fragment to m/z 30 and state the local connectivity it supports.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use m/z 58 together with two diagnostic infrared bands, rather than the supplied NMR and mass fragments, to constrain connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the molecular formula, NMR fragments, and mass fragments to identify the best-supported constitutional structure.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give its condensed formula and chemical name.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Calibrate the assignment uncertainty given the absence of exact masses, isotope patterns, intensities, and tandem-MS transitions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State which exact-mass or tandem-MS observations would most directly test the two proposed fragment formulas.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the structure and summarize how the NMR and mass peaks support it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

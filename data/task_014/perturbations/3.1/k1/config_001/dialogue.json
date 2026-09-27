@@ -1,0 +1,45 @@
+{
+  "release_task_index": 14,
+  "task_id": "014-capsule005",
+  "source_id": "bix-6-q7",
+  "dataset": "bixbench",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::014-capsule005::3.1.k1::lane_a_manual",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5c8eae60fd41d750b410cd7e5f954d3600cbc433402ab10d4d822b12fbf0e984",
+  "semantic_condition_id": "891e1422222ebd91cac4367cd251aed6f968ab01f8244bd0cdc38895024c30dc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Round-2 candidate screen\n\nThe relevant fields are:\n\n```text\nRefSeq ID | Chronic Round2 S1 | Chronic Round2 S2\n```\n\nAll three fields are complete for 23,726 rows. For each RefSeq ID:\n\n```python\nround2_min = min(Chronic_Round2_S1, Chronic_Round2_S2)\ncandidate = round2_min < 0.05\n```\n\nThis strict threshold retains 2,303 RefSeq IDs. Boundary checks include:\n\n| RefSeq ID | S1 | S2 | Row minimum | Status |\n|---|---:|---:|---:|---|\n| NM_014421 | 0.00000396 | 0.035158 | 0.00000396 | retained |\n| NM_032041 | 0.049969 | 0.255480 | 0.049969 | retained |\n| NM_024989 | 0.665000 | 0.049985 | 0.049985 | retained |\n| NM_006160 | 0.908330 | 0.050033 | 0.050033 | excluded |\n| NM_018479 | 0.050041 | 0.156280 | 0.050041 | excluded |\n\n## Human identifier mapping\n\nCandidate IDs are mapped from human RefSeq to gene symbol. Records marked `notfound` are removed. Four candidate IDs are not found:\n\n| RefSeq ID | S1 | S2 | Row minimum |\n|---|---:|---:|---:|\n| NM_001242671 | 0.003383 | 0.045151 | 0.003383 |\n| NM_001242575 | 0.042777 | 0.622620 | 0.042777 |\n| NM_001242901 | 0.003594 | 0.938470 | 0.003594 |\n| NM_033517 | 0.037334 | 0.146280 | 0.037334 |\n\nThus 2,299 successfully mapped candidate records enter the archived ORA. The ORA background is a separately supplied set of mapped symbols from all measured RefSeq IDs.\n\n## Reactome input identity\n\nThe gene-set argument contains:\n\n```python\ngene_sets = [\n    \"ReactomePathways.gmt\",\n    \"unknown\",\n    reactome_dictionary_read_from_ReactomePathways_gmt\n]\n```\n\nThe `unknown` entry is skipped. The remaining two inputs contain the same GMT definitions and receive the source labels `ReactomePathways.gmt` and `gs_ind_2`. Rows with the same Reactome ID and term under these two labels are duplicate-load artifacts.\n\nThe two relevant canonical pathway definitions are:\n\n| Reactome ID | Term | GMT member count |\n|---|---|---:|\n| R-HSA-392154 | Nitric oxide stimulates guanylate cyclase | 23 |\n| R-HSA-418457 | cGMP effects | 16 |\n\n## Round-2 ORA output\n\nThe retention rule is `Adjusted P-value < 0.05`.\n\n| Gene-set label | Term | Reactome ID | Overlap | P-value | Displayed Adjusted P-value | Odds Ratio | Combined Score |\n|---|---|---|---:|---:|---:|---:|---:|\n| ReactomePathways.gmt | Nitric oxide stimulates guanylate cyclase | R-HSA-392154 | 10/20 | 0.000033 | 0.032708 | 7.433848 | 76.682568 |\n| ReactomePathways.gmt | cGMP effects | R-HSA-418457 | 9/16 | 0.000024 | 0.032708 | 9.413694 | 99.946320 |\n| gs_ind_2 | Nitric oxide stimulates guanylate cyclase | R-HSA-392154 | 10/20 | 0.000033 | 0.032708 | 7.433848 | 76.682568 |\n| gs_ind_2 | cGMP effects | R-HSA-418457 | 9/16 | 0.000024 | 0.032708 | 9.413694 | 99.946320 |\n\nCollapsing rows by canonical Reactome ID and term leaves two unique pathways. Adjusted p-values are available only at the displayed precision shown; raw p-value and Combined Score are separate statistics and are not declared tie-breakers.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAlthough the strict rule excludes NM_006160 at 0.050033, include it as a candidate because it is visually close to 0.05.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Map the candidates to human gene symbols and remove records that fail mapping.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assemble the archived significant Reactome over-representation output for round 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Collapse duplicate rows produced by loading the same Reactome library twice.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which canonical pathways tie for the smallest displayed adjusted p-value after deduplication?",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

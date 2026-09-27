@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Omitting which x-axis position is present makes the requested direction underdetermined.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "d03c52c70c78ed12d5d4793f892665c8bf71ac0cb2e256c4b8355cc1c19fae21",
+  "strict_non2x_original_semantic_condition_id": "e7f9d35042d09de2f3de2278b8aa6974284f43dd41832a7c83ddc0baa918aeae",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Record only point presence at T2, then at T3 infer Dn solely from the word 'Minus' in FeMinus, ignoring the omitted x-coordinate.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

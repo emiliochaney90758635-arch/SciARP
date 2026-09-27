@@ -1,0 +1,28 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Breaks ties by worksheet order.",
+    "Selects only rows nominally significant in either replicate.",
+    "Uses uncentered raw rank products for the final coefficient."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "tie-ranking premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "eligibility premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "uncentered-coefficient premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 428,
+  "task_id": "gpqa__recr3VHM4zYf6dMFY",
+  "dataset": "gpqa",
+  "ordinal": 297,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::297::gpqa__recr3VHM4zYf6dMFY::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "52ad24ad37d3c2c092a3d3ca455b13921fecfbfbbecdca4164c3230f4e5d6d5e",
+  "semantic_condition_id": "7281b588a935f51ffe1d2e1c661c85a38af5dd9203330ffd0b80d3a0843cefa8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "NaNO2, HCl, and water convert carbonyl precursors into 4-isopropylcyclohexane-1,2-dione and 5-methylhexane-2,3-dione. What reactive nitrosating species and transformation does this mixture imply?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use an activated-DMSO alcohol-oxidation retrosynthesis for the cyclic product and assign 4-isopropyl-2-methoxycyclohexan-1-ol as A, while retaining the monoketone proposal for B.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use Swern oxidation as the sole route to the acyclic diketone and assign 5-methylhexane-2,3-diol as B.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Retain 4-isopropyl-2-methoxycyclohexan-1-ol as A and report 5-methylhexan-2-one as B.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Test that result for internal consistency with carbon-skeleton conservation and the observed functional pattern.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final result and the chemical feature that supports it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

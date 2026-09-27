@@ -1,0 +1,50 @@
+{
+  "task_index": 133,
+  "task_id": "133-capsule037",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "b1f4e3dc6f9d658ac89f99a1b92e6fb1ee945ec10aa451758451c770be14502e",
+  "source_base_evidence_sha256": "3eaafc1a94d58a47b594bfa5ec67c81ac90a5729b01ef7933e33ec6372905c92",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Segmentation-source sums introduced.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Calibration-source sums independently introduced.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Basis-audit R2 independently introduced.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__segmentation_audit.md"
+    },
+    {
+      "turn_id": "T2",
+      "filename": "003__T2__calibration_audit.md"
+    },
+    {
+      "turn_id": "T3",
+      "filename": "004__T3__basis_audit.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

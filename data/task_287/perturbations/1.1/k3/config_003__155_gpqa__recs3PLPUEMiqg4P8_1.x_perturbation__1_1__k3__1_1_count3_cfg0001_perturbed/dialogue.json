@@ -1,0 +1,54 @@
+{
+  "release_task_index": 287,
+  "task_id": "gpqa__recs3PLPUEMiqg4P8",
+  "dataset": "gpqa",
+  "ordinal": 155,
+  "variant": "perturbed",
+  "conversation_id": "155::gpqa__recs3PLPUEMiqg4P8::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "510aca7e4560f6666e4f498ea97f8953999fdc6093f5d3ee1022bc313887a24d",
+  "semantic_condition_id": "5d3a0cb3782415c104f20d278f0079069fcaa9544073723305cb73d1aa73db8d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a base-promoted pinacol rearrangement with H2SO4, explain how ring C-C migration changes ring size.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Infer the ring size of A, then identify the two nonadjacent alcohol-bearing carbons of the acyclic substrate.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Decide which OH group is preferentially deprotonated and lost as water under the acidic conditions, and identify the carbocation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "From that carbocation, determine which adjacent group migrates into the cationic center, identify the carbonyl carbon formed, and name product B.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name A and B and relate each structure to its decisive migration.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that A undergoes one-carbon ring expansion and that the selected migration in the second reaction gives the proposed beta-keto-ester connectivity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report A, B, and the two migration steps.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

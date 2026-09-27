@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::1.x::perturbation__1_4__k4__1_4_c4_001::perturbed",
+  "condition_label": "1.4.k4",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 4,
+  "dialogue_sha256": "99e0555726b867110139d6bd82bdd3673fc9893039bbc9ec34e67614067313fc",
+  "semantic_condition_id": "d5b927b0b4a8d31eca5709f890707bd9e541ab4c4fbcc437814379e6f9405943",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two quasars, how is their central black-hole mass ratio related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express LA/LB using only luminosity distances dA and dB.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Given only zB=0.02, use a leading low-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The available measurement is FB=10^-24 W/m^2. Determine what flux comparison can be evaluated for the two quasars.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

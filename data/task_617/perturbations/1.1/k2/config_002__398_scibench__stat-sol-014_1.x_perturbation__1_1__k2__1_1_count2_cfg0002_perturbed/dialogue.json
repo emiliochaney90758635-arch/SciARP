@@ -1,0 +1,49 @@
+{
+  "release_task_index": 617,
+  "task_id": "scibench__stat-sol-014",
+  "dataset": "scibench",
+  "ordinal": 398,
+  "variant": "perturbed",
+  "conversation_id": "398::scibench__stat-sol-014::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "2face9c4c9a6d1c96237a15ea0b2a186ca7fd2a1714352d681fbceeea6a75115",
+  "semantic_condition_id": "da03767a049123d32246f10b6653fe2c05977fc06884725a253c611517ae7530",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For ten flips with four heads and six tails, calculate the probability of one particular admissible sequence instead of counting all sequences.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express the count or quantity established above in a compact form.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use a falling factorial without dividing for the identical head occurrences.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression for the stated composition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result through an equivalent complementary reformulation of the same outcome representation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the number of ordered sequences.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

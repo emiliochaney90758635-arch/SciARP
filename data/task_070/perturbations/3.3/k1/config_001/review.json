@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can infer direction from marker size rather than x-coordinate.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "348f017dc705e4bf241fc3e04d87db4ceefd45d86a9ad2d4956b13a7b673b080",
+  "strict_non2x_original_semantic_condition_id": "cb21f719940f2822d770882c40602819a578275eac22d5305c6544436040f48c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Treat the present FeMinus-Up marker as the larger Count marker, but map the larger Count to Dn rather than to its actual x-coordinate.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

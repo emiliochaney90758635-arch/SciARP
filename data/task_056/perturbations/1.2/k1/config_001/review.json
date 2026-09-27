@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "NeuN counts can be mislabeled as thousands of nuclei and divided by 1,000.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "a28eb05ffc03370fcb08403a8462a33ffd460aca1f51ae3c867d54d8054b1983",
+  "strict_non2x_original_semantic_condition_id": "2d73dca9f458e472740b0093cb1183aba74887a7013eaf432aa126e51b1342e2",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally state that the NeuN values are already expressed in thousands of nuclei, then require dividing them by 1,000 again before reporting group means.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes the valid-pair count from 23,726 to 23,276.",
+    "Transposes the centered cross-product from 24,046,183,543.5 to 24,406,183,543.5."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "valid finite pair count"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "centered rank cross-product"
+    }
+  ],
+  "evidence_change_permitted": true
+}

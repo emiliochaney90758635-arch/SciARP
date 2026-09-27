@@ -1,0 +1,44 @@
+{
+  "release_task_index": 152,
+  "task_id": "gpqa__rec2NJhNJ4umq2HFG",
+  "dataset": "gpqa",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::gpqa__rec2NJhNJ4umq2HFG::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "cfaab6bb26b366301f028599bd7526cd5cfa7308d0a28c3ce304f34e333d143c",
+  "semantic_condition_id": "d2600672dc15bb20c8ea9b9339beec5a1b422b0a1af092f9a42a527fae13ce89",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Define sigma^(mu nu)=i/2[gamma^mu,gamma^nu], show that it is antisymmetric, and count its independent components in four dimensions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use canonical energy-momentum Noether charge as the sole interpretation and classify sigma^(mu nu) as four-momentum while retaining six Lorentz channels.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the six sigma^(mu nu) matrices with the ten generators of the Poincare algebra. Identify the subgroup they represent and the missing generators.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the conclusion against the distinction between Lorentz transformations and spacetime translations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the physical role of the gamma-matrix commutator and whether it generates Lorentz transformations alone or the full Poincare group.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

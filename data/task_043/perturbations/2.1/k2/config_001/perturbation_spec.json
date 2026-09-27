@@ -1,0 +1,34 @@
+{
+  "config_id": "task043_2.1_k2",
+  "subclass": "2.1",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T5"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "replacement protocol swaps group mapping",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "replacement protocol uses equal-sample weighting",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

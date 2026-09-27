@@ -1,0 +1,43 @@
+{
+  "subclass": "1.3",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "swaps S97 and S98 symbols",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "maps < to ≤",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3",
+        "T4",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "assigns numerator and denominator symbols in reverse",
+      "consumer_turns": [
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Let N be the union total and D be the sum of the biological JBX97-only and JBX99-only regions."
+    }
+  ]
+}

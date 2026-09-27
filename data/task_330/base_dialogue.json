@@ -1,0 +1,54 @@
+{
+  "release_task_index": 330,
+  "task_id": "gpqa__recaXdGn3FAIkxLGM",
+  "dataset": "gpqa",
+  "ordinal": 198,
+  "variant": "clean",
+  "conversation_id": "198::gpqa__recaXdGn3FAIkxLGM::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "59fae87ed34dbae57178475bb2de0ad0b70ecfdcbe8595ac7d0f93461d0600ed",
+  "semantic_condition_id": "ac25e5d6dadb0ec7b8ab31c818acba3a0d3ba1335a47bc771f802dc6842adff0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A black hole subtends 10^-17 degrees in a galaxy 10^10 pc away. Convert the angle to radians and the distance to metres, retaining whether the quoted angular size is a radius or a full diameter as an ambiguity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the small-angle relation to estimate the horizon radius under both interpretations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the Bekenstein-Hawking entropy in terms of Schwarzschild radius, Boltzmann's constant, and Planck length. How would halving the radius change it?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using k_B=1.38e-23 J/K and l_P^2=2.61e-70 m^2, estimate the entropy for both radius conventions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What is the nearest order of magnitude, and does the radius-versus-diameter convention alter that order?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the powers of ten in the angle conversion, radius, area, and entropy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the entropy order together with the angular-size qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

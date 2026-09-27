@@ -1,0 +1,40 @@
+{
+  "release_task_index": 126,
+  "task_id": "126-capsule035",
+  "source_id": "bix-52-q2",
+  "dataset": "bixbench",
+  "ordinal": 126,
+  "variant": "perturbed",
+  "conversation_id": "126::126-capsule035::1.3::k2::perturbed::lane_d",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "37ec0d1952be5528c6abf82b8754438123a31d7855aec46d109801a1a0a38719",
+  "semantic_condition_id": "1f14137ce94c1e2286871319cd748977805da0c519852703f5ace4b4cda0b5c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Filtered Jackdaw per-chromosome CpG-density evidence\n\n## Filtering and site-count unit\n\nThe Jackdaw CpG table has 24,527 sample-by-CpG records. It is filtered with the strict condition:\n\n```r\nMethylationPercentage > 90 | MethylationPercentage < 10\n```\n\nThis retains 52 sample records. Within each chromosome, records are combined across samples by exact `Pos`, yielding 51 distinct positions on 20 chromosomes.\n\nThe chromosome-summary operation is:\n\n```text\nn_cpgs = n_distinct(Pos)\ncpg_density = n_cpgs / chromosome length\n```\n\nIt returns only chromosomes represented by at least one retained site; the other 24 chromosomes in the 44-chromosome length table are not added as zero-density rows.\n\n## Returned 20-row density table\n\n| Chromosome | distinct Pos | Length (bp) | density (sites/bp) |\n|---|---:|---:|---:|\n| 1 | 2 | 99,062,180 | 2.01893396652486e-08 |\n| 12 | 1 | 23,235,100 | 4.30383342443114e-08 |\n| 13 | 2 | 22,362,767 | 8.94343709792263e-08 |\n| 14 | 1 | 23,265,108 | 4.29828221730155e-08 |\n| 17 | 2 | 16,938,386 | 1.18075004312690e-07 |\n| 19 | 3 | 12,787,533 | 2.34603500143460e-07 |\n| 2 | 6 | 123,451,405 | 4.86021200001733e-08 |\n| 21 | 1 | 13,093,161 | 7.63757506686124e-08 |\n| 24 | 1 | 11,344,391 | 8.81492889305384e-08 |\n| 26 | 1 | 46,055,897 | 2.17127461441040e-08 |\n| 29 | 1 | 3,496,993 | 2.85959966176655e-07 |\n| 3 | 5 | 121,534,940 | 4.11404325373428e-08 |\n| 30 | 1 | 22,021,689 | 4.54097776060683e-08 |\n| 4 | 3 | 8,011,800 | 3.74447689657755e-07 |\n| 5 | 5 | 76,278,832 | 6.55489848087868e-08 |\n| 6 | 2 | 66,143,299 | 3.02373789973796e-08 |\n| 8 | 1 | 38,659,334 | 2.58669743250104e-08 |\n| 9 | 2 | 33,574,751 | 5.95685728242631e-08 |\n| W | 3 | 6,742,290 | 4.44952679282558e-07 |\n| Z | 8 | 79,826,082 | 1.00217871146426e-07 |\n\nThe distinct-site column sums to 51.\n\nThe requested arithmetic mean is the equal-weight mean of these 20 row densities. It is not the pooled ratio `total sites / total length`, and it does not include zero rows for the 24 absent chromosomes.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nApply the strict extreme-methylation filter to the Jackdaw sample-level CpG records.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use 52, rather than 51, as the dataset-wide distinct-site total and carry the displayed per-row values forward as the site counts.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Swap the displayed distinct-Pos and Length roles for every row and calculate Length divided by distinct-Pos as the density.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the equal-weight mean across the represented chromosomes and report it to three significant figures.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 346,
+  "task_id": "gpqa__recmI7EiLv72PxmYK",
+  "dataset": "gpqa",
+  "ordinal": 214,
+  "variant": "perturbed",
+  "conversation_id": "214::gpqa__recmI7EiLv72PxmYK::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "bab58b6fc7be5bd8cdcba6110589f8930195f559097c53e7e6a7713ca1b01ae6",
+  "semantic_condition_id": "3c7adce88441f1e90bb3df45f735a8c789015a5a144781941c68dc7a82a964f8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the ejecta frame, the Galactic centre approaches at 60000 km/s. Express this relative speed as beta=v/c using c=300000 km/s; both frames are inertial.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The elapsed 50 s is measured by a clock comoving with the ejecta. Identify the frame and the special-relativistic type of this interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute gamma after treating the stated 50 s as an interval measured by a clock at rest in the Galaxy frame rather than the ejecta frame.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the valid speed, gamma, and time interval established above to calculate the distance travelled in the target frame; otherwise give the symbolic distance relation and identify the blocker.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the frame assignment currently used in the distance calculation, or identify the time input required if it is absent or misunitized.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the resulting distance when supported, or give the symbolic expression and required speed and time inputs otherwise.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

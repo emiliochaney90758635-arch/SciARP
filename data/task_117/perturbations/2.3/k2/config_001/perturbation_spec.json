@@ -1,0 +1,43 @@
+{
+  "task_index": 117,
+  "task_id": "117-capsule034",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "c24dda797e607de9f1db1fb212cac561580e4e29d03e32931c664a3080e07a56",
+  "source_base_evidence_sha256": "7bd3ac99bbc78e2636938c0ed0734e21e033cd88953e6deeba217d38d4e9fc0b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Coefficient altered.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "SE independently altered.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| BMI | 0.167746449421 | 0.097868649588 | 1.713995749691 | 0.086529506466 |",
+      "new": "| BMI | 0.176746449421 | 0.097868649588 | 1.713995749691 | 0.086529506466 |"
+    },
+    {
+      "turn_id": "T2",
+      "old": "| BMI | 0.176746449421 | 0.097868649588 | 1.713995749691 | 0.086529506466 |",
+      "new": "| BMI | 0.176746449421 | 0.087868649588 | 1.713995749691 | 0.086529506466 |"
+    }
+  ],
+  "extends_existing": null
+}

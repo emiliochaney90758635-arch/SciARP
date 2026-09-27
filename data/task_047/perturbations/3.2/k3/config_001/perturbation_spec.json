@@ -1,0 +1,73 @@
+{
+  "config_id": "task047_3.2_k3",
+  "subclass": "3.2",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "Use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "injected_text": "Before ranking genes, explain how the sign of the expression-versus-essentiality Spearman coefficient should be interpreted after the stated gene-effect transformation.\n\nFor this perturbed step, use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "injected_text": "Using that sign convention, identify the candidates at the strongest negative end of the genome-wide results.\n\nFor this perturbed step, use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "injected_text": "Compare those coefficients, find the global minimum, and report the gene symbol using the original column-naming convention.\n\nFor this perturbed step, use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.2.k3",
+    "decision": "repair_required",
+    "problem": "Three events elaborate one causal chain.",
+    "before": "Repeated CDKN1A causal/mechanistic claims.",
+    "after": "Use distinct evidence-supported associations CDKN1A, KIRREL1, and EPHA2.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nBefore ranking genes, explain how the sign of the expression-versus-essentiality Spearman coefficient should be interpreted after the stated gene-effect transformation, and interpret the CDKN1A association as expression directly causing its essentiality pattern."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Using that sign convention, identify the candidates at the strongest negative end and interpret the KIRREL1 association as expression directly causing its essentiality pattern."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Compare those coefficients, find the global minimum, report the gene symbol using the original column-naming convention, and interpret the EPHA2 association as expression directly causing its essentiality pattern."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 361,
+  "task_id": "gpqa__rect4iLrSfUwkNTno",
+  "dataset": "gpqa",
+  "ordinal": 229,
+  "variant": "perturbed",
+  "conversation_id": "229::gpqa__rect4iLrSfUwkNTno::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8890aafb8bc1975f684795b48f47ec07c1a9b2cfe9aa4fc5f2467247e15d81a8",
+  "semantic_condition_id": "481b8f78a3692b5c3bf2df93e399e73cdd176851450213c49013e5c3ae1d1b8a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A resonance has width Gamma_X=320 MeV. Using hbar*c=1.97327e-16 GeV m, convert the width to GeV and calculate the proper decay length c*tau_0.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Its total energy is 8 GeV and its mass is 1.2 GeV. Calculate the momentum and beta*gamma.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use L=(hbar*c/Gamma_X)(beta*gamma) to calculate the laboratory mean decay distance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the internal consistency of the width, boost, and mean free path with the laboratory-distance formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the powers of ten and distinguish the proper decay length from the boosted laboratory distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the laboratory mean decay distance together with the width conversion and boost factor.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

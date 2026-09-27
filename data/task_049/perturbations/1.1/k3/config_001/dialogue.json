@@ -1,0 +1,42 @@
+{
+  "release_task_index": 49,
+  "task_id": "049-capsule014",
+  "source_id": "bix-18-q2",
+  "dataset": "bixbench",
+  "ordinal": 49,
+  "variant": "perturbed",
+  "conversation_id": "049::049-capsule014::1.1::k3::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "0a99cb47d2059490789ed4a73258a74fd19567f714a9165f4d6c26366089a312",
+  "semantic_condition_id": "7dcfb9c4228cb607b3244f9021220e8bd03d7fe478c40bf2f091c58bb7e93408",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "3319e106ce2f5330599d7f70a8b39023d72b2fc7bf5d90869a40708475449fae",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement and grouping fields\n\n`Area` is the ImageJ-derived area of a 48-hour swarming plate image. The archived summary grouped records jointly by `StrainNumber` and `Genotype`, then calculated the ordinary arithmetic mean of `Area`.\n\nThe complete records for the group `StrainNumber = 1`, `Genotype = Wildtype` are:\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area | Circularity | Round |\n|---:|---|---:|---|---:|---:|---:|---:|\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 | 0.076 | 0.839 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 | 0.090 | 0.870 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 | 0.062 | 0.948 |\n\nAll three `Area` observations belong to the same statistical group. `Circularity`, `Round`, and other genotypes are not inputs to the requested mean.\n\n## Calculation and reporting rule\n\nFor observations \\(x_1,\\ldots,x_n\\):\n\n\\[\n\\bar{x}=\\frac{\\sum_i x_i}{n}.\n\\]\n\nAfter calculating the mean from the unrounded observations, round it to the nearest multiple of 1,000.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse Area to mean the Round field for the wild-type strain-1 group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the shared 1:0 Ratio category as the single replicate.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use arithmetic mean to mean the middle observed value, then round it to the nearest thousand.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

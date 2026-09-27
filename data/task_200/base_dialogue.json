@@ -1,0 +1,64 @@
+{
+  "release_task_index": 200,
+  "task_id": "gpqa__recE9pSb1glprNqNa",
+  "dataset": "gpqa",
+  "ordinal": 67,
+  "variant": "clean",
+  "conversation_id": "067::gpqa__recE9pSb1glprNqNa::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "3e60468d1afa26ac36ddc6364e08f6811c49abf508cdb85de3d0a1e0e078d486",
+  "semantic_condition_id": "09165770a2d7c054a61f1a871319e7931af77eb5e84736ebd8308a74dbc0d92d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two uncoupled nuclei in a strong magnetic field, explain how the joint product-state basis is constructed from the individual magnetic quantum states.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the product-state counting rule and the single-spin-flip selection rule that will be applied.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take both nuclei to have spin 1/2 and list their combined spin product states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The two nuclei have different magnetic shieldings. Explain what this implies for the product-state energies listed above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the rule that one spin flips while the other remains fixed to enumerate the allowed transitions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count only those single-spin-flip connections.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the ordered pair of level count and transition count and list the allowed connections.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why not every pairwise connection between the product-state levels is allowed.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final counts.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

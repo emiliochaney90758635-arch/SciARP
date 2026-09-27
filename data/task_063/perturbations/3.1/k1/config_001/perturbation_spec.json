@@ -1,0 +1,25 @@
+{
+  "config_id": "task063_3.1_k1",
+  "subclass": "3.1",
+  "k": 1,
+  "injection_turns": [
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Calculate r over every annotated gene, ignoring the filtered aligned gene set established earlier."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Ignore the established 17,819-gene set and compute Pearson r using only the ten visible source-table spot-check genes and their supplied Length and mean-expression pairs."
+    }
+  ]
+}

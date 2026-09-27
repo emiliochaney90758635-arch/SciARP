@@ -1,0 +1,49 @@
+{
+  "release_task_index": 615,
+  "task_id": "scibench__stat-sol-010",
+  "dataset": "scibench",
+  "ordinal": 396,
+  "variant": "perturbed",
+  "conversation_id": "396::scibench__stat-sol-010::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "e9edb9f183d96c9f538a2f18823d25f6f3794ebc9227de1db0ca94d601074a9c",
+  "semantic_condition_id": "1bd13f60f56e80744f2ec46b80824afed27c3f0ff8713299d38ac184d96c8ba8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Count ordered five-card poker deals from a 52-card deck while also claiming that reorderings of the same cards are the same outcome. Choose a counting framework.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using a permutation framework, write the number of possible five-card hands.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand and simplify that expression in factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check without merely repeating the calculation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the total and its sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

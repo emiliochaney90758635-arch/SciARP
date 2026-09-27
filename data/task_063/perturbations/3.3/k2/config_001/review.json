@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can sum expression rather than average before using the wrong denominator formula.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "a2bfafd26bbd532074fb7fc819a7516bb90594bc46fdf8f998c37c6336c9f8de",
+  "strict_non2x_original_semantic_condition_id": "12c2a10e6bbb00340e38bc31d2970cee5d3f2a58925a4092d368271d98644afa",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Use the ten displayed mean-expression values as though each were that gene's maximum CD4 expression, then compute Sxy/(Sxx*Syy) on the ten visible Length-expression pairs. Remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

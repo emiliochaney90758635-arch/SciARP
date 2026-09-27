@@ -1,0 +1,59 @@
+{
+  "release_task_index": 289,
+  "task_id": "gpqa__recv7GsQg3f0fvB1f",
+  "dataset": "gpqa",
+  "ordinal": 157,
+  "variant": "perturbed",
+  "conversation_id": "157::gpqa__recv7GsQg3f0fvB1f::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "34d397f78101f7c03a2cd2062ac69d5b9dc569cbe202998018919cf348688474",
+  "semantic_condition_id": "86de38c4e8aac884a2c44ac21b8696b279b6f4535fff34145bff4ab646e5ded2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A synthesized small peptide has two nearby proton-NMR peaks for one alpha proton; their equal integrals sum to 1H, and spin-spin splitting has been excluded. What does this suggest about the sample? The measurements are achiral, and no direct formation-mechanism evidence is available.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At elevated temperature, achiral LC-MS gives two equal-intensity peaks with identical mass spectra matching the expected compound. What does that add to the interpretation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Why can these achiral measurements distinguish many diastereomers but not normally a pair of enantiomers?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Classify the two observed forms and explain, using only the NMR and LC-MS evidence, why precursor contamination or double coupling fits less well.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "When checking the classification, replace one of the established isobaric forms with a precursor contaminant.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strong is the assignment, and what remains uncertain about the exact stereochemical relation and how it formed?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What follow-up separation, derivatization, or isolated-fraction measurement would be most useful to test this assignment further?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the best-supported classification and origin hypothesis, with an appropriate confidence level.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

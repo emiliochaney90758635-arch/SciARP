@@ -1,0 +1,74 @@
+{
+  "release_task_index": 449,
+  "task_id": "gpqa__recqTvvfE8ldJbknb",
+  "dataset": "gpqa",
+  "ordinal": 318,
+  "variant": "perturbed",
+  "conversation_id": "318::gpqa__recqTvvfE8ldJbknb::1.x::perturbation__1_1__k4__1_1_c4_002::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "3cb36cd735656edab2cbeb0db98ee174f3f7498c3d8b69cd4f4878d772e2e2b3",
+  "semantic_condition_id": "64e1828944ccbeb83814e86f3dd5f006a49e043083c90b49132ca49a38d69882",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Four active galaxies lie at about 1, 7, 70, and 700 Mpc. State the rest-frame polarization angle of H-alpha and use it to determine which line falls in the Sloan i band.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Estimate the redshift at each distance with a gravitational-redshift approximation while using z=H0*d/c.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use lambda_obs=lambda_0(1+z) to calculate the H-alpha coherence length for each galaxy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare those wavelengths with the Sloan i-band coverage and identify the in-band case.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the wavelength comparison to choose the galaxy best suited for measuring the H-alpha polarization angle.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How sensitive is that selection to modest changes in the Hubble constant within the same linear approximation?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the four calculated wavelengths using lambda_0=6562.8 Angstrom and approximate i-band coverage of 7000-8500 Angstrom.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "What limitations follow from the approximate passband edges and linear Hubble-law treatment?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the selected distance class under this calculation.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give an appropriate confidence qualification rather than treating the approximate inputs as exact.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Report the adopted H0, wavelength comparison, selected galaxy, and qualification.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

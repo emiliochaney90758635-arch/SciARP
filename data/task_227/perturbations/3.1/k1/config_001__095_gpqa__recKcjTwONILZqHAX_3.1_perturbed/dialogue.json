@@ -1,0 +1,64 @@
+{
+  "release_task_index": 227,
+  "task_id": "gpqa__recKcjTwONILZqHAX",
+  "dataset": "gpqa",
+  "ordinal": 95,
+  "variant": "perturbed",
+  "conversation_id": "095::gpqa__recKcjTwONILZqHAX::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "73ae63f72c3f0b43e449e9526a4ff2a38dce026b5fc5a7a82f3a08f72cfed3fe",
+  "semantic_condition_id": "1c1694e49a096332433e467043eae5ac37c750dea6f4f701db74e2c9762e0e41",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the estimate alpha^3 g^2 sqrt(2) 8 (4pi)^-6 (Q/M)^2, identify the factor that conventionally carries loop suppression in four-dimensional QFT.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the standard four-dimensional loop-measure power-counting rule that relates one loop to powers of 4pi.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the one-loop suppression both as (16pi^2)^-1 and as a power of 4pi.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using d=6 spacetime, match the displayed factor to the per-loop rule and solve for L.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve for the loop count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the inference's dependence on the assumption that all displayed 4pi powers arise from loop measures rather than a different normalization convention.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the loop count as the intended standard naive-dimensional-analysis estimate with calibrated confidence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the result by rewriting (4pi)^-6 as a power of 16pi^2, and state the normalization assumption used.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final loop count and its convention qualification.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_index": 115,
+  "task_id": "115-capsule033",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "7965398dcadce0c3f4c994089df703f87e53bf55050ac5ed0e511827b04517fe",
+  "source_base_evidence_sha256": "44639ff2321337f5b13b6b970e72b010228b2af16ca27596a6ec31fccd35c745",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Percentage threshold is mis-scaled.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Interpret the 5% FDR threshold as decimal 5 rather than decimal 0.05 when deciding whether GRIK5 passes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Read padj 7.039991e-26 as 7.039991 percent, compare it with a 5 percent threshold, and declare that GRIK5 fails."
+    }
+  ]
+}

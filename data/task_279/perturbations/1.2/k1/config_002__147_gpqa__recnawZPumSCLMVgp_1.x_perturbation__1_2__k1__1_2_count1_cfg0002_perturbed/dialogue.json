@@ -1,0 +1,54 @@
+{
+  "release_task_index": 279,
+  "task_id": "gpqa__recnawZPumSCLMVgp",
+  "dataset": "gpqa",
+  "ordinal": 147,
+  "variant": "perturbed",
+  "conversation_id": "147::gpqa__recnawZPumSCLMVgp::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "2415f2839ea41d572e619739f91aba06b0a42efa5e2a5ec7c4af9dc4877eade8",
+  "semantic_condition_id": "87ea6b8fb83cb1886c007220f8a623cff336e30c3bb68bae51453646a7814493",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A gives 1,2-dimethyl-4-(propan-2-ylidene)cyclopentane in a Wittig reaction and absorbs near 1750 cm^-1. Work backward from the alkene to identify the five-membered-ring carbonyl compound A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the next stated transformation to A to identify B, then follow the subsequent catalytic treatment to determine C.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the rearrangement using the product IR absorption reported at 1715 s^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the structure and systematic name of E, and summarize the carbon-skeleton change from the starting material used in this route.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly is that assignment supported given possible selectivity and side products?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State whether the reaction sequence and spectroscopic evidence are sufficient to identify E, and explain the limits of that conclusion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the assignment of E and the reaction and spectroscopic evidence supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

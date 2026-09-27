@@ -1,0 +1,54 @@
+{
+  "release_task_index": 350,
+  "task_id": "gpqa__reco8WSc71p8zAv4q",
+  "dataset": "gpqa",
+  "ordinal": 218,
+  "variant": "perturbed",
+  "conversation_id": "218::gpqa__reco8WSc71p8zAv4q::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c2ec1171d08a59b07814a307914fbbfe28a9b308fb9700dcce2a2c819b150dec",
+  "semantic_condition_id": "bd76d5b9ced76d5fbaafe3218ce5dfc70a49300eebee3c43e35c16786273c049",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Verify the maleic-anhydride assignment starting from a saturated hydrocarbon with the stated NMR signals.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Determine the reaction between maleic anhydride and 1,2,3,4-tetramethylcyclopentane and identify the major stereoisomer.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the listed signal sets to structural groups under the molecular and spectroscopic interpretation established above.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the resonance pair connected by a diagnostic mass-spectral parent ion rather than a NOESY cross-peak.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strongly does that observation support the assignment under the interpretation currently being used?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Given the qualitative major/minor NOESY evidence and its stated confidence, what additional measurement, if any, is warranted?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the diagnostic feature pair and its interpretation under the current assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

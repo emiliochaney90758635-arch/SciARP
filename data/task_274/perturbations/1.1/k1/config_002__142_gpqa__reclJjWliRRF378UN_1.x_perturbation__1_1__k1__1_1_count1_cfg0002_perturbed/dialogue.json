@@ -1,0 +1,54 @@
+{
+  "release_task_index": 274,
+  "task_id": "gpqa__reclJjWliRRF378UN",
+  "dataset": "gpqa",
+  "ordinal": 142,
+  "variant": "perturbed",
+  "conversation_id": "142::gpqa__reclJjWliRRF378UN::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "30fac6dd5d7edeac8e2dd51896faf302561c68a5890cdf8aeef8a4349863f6f0",
+  "semantic_condition_id": "c3c2f290c0a8c92ec7d2ccadd3fddaa25251f8bd177f28e9f1ebf3d43da0f32b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "4,5-Dimethylcyclohex-4-ene-1,2-dicarbonitrile is in equilibrium with 2,3-dimethylbuta-1,3-diene and maleonitrile. Identify the decomposition reaction class from the structures.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Maleic anhydride is added to this mixture. Which product should it consume by nucleophilic substitution, and what role does maleic anhydride play in that reaction?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply Le Chatelier's principle to the original equilibrium after that trapping reaction begins. Which way should the equilibrium move, and why?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Connect the identity of the trapped species directly to the increased formation of both products of the decomposition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Separate the qualitative direction of the shift from its quantitative extent. What can be concluded without a trapping rate, equilibrium constant, concentrations, reversibility data, or side-reaction measurements?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What kinetic or equilibrium evidence would be needed to replace product trapping with a direct reaction between maleic anhydride and the starting dicarbonitrile?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the best-supported mechanism for the rightward shift and state the role of maleic anhydride.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 145,
+  "task_id": "gpqa__rec0wZvZgiz320KRs",
+  "dataset": "gpqa",
+  "ordinal": 7,
+  "variant": "perturbed",
+  "conversation_id": "007::gpqa__rec0wZvZgiz320KRs::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f08769680f96ba28a02f17975a711acb0ea86bbc40347dab0c55dc867aed50db",
+  "semantic_condition_id": "a1075b71690e8ad5c9f996758acde78df62a6b2ad9171a5097ee133373cdbd1d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=1/2|up>+sqrt(3)/2|down>, verify normalization and record the relative phase of the amplitudes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the expectation value of sigma_z.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the expectation value of sigma_x from the two amplitudes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use linearity to express the expectation of 10 sigma_z+5 sigma_x in terms of the two results.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use only the sigma_x tomography result as the expectation of the full observable, omitting the longitudinal term and both coefficients.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the value to the requested precision.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

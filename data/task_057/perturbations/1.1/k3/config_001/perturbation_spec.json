@@ -1,0 +1,33 @@
+{
+  "config_id": "task057_1.1_k3",
+  "subclass": "1.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Use pooled SD to mean the arithmetic mean of group SDs."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use d to mean raw mean difference."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Use sample size to mean total N."
+    }
+  ]
+}

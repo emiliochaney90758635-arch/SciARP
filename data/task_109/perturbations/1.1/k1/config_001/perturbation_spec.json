@@ -1,0 +1,32 @@
+{
+  "task_index": 109,
+  "task_id": "109-capsule032",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "9cebf12fea677f3ca51ccd77415fd8ce5ffd160b490956a112e51435f54d874d",
+  "source_base_evidence_sha256": "4e9d402ed00da9779975557e6066048d0d82d26f83c6e66ae9ad0c0b7e974128",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Workbook availability is distorted to include metadata-only P533.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Define the Affected-or-Carrier cohort, treating `available variant workbook` as including patients with metadata even when their workbook file is absent."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Include metadata-only patient P533 in the affected-or-carrier cohort despite the missing workbook, assigning that patient zero non-reference calls."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Contrast labels, result fields, and directional tables can each be replaced.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "82372773b2184a9101c0e467efc25936c2e23fbf8e58b5da4fdbb40e530bc500",
+  "strict_non2x_original_semantic_condition_id": "5935d064a5c8fd96cc2e7a4952eb2ada4850237b4c73f4acc97c0168ca24926d",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Reverse the CBD_IC50-versus-DMSO contrast labels at T1, use display rank at T2, and retain those reversed direction labels at T4 rather than swapping them back; report the originally downregulated glycolytic table as upregulated.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

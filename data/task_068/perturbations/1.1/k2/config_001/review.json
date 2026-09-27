@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Enrichment can mean overrepresentation and smallest significance can mean largest odds ratio.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "7e713edc7a79c6f62c20466bbe602024c962b6148651e65f7de8794293af12f3",
+  "strict_non2x_original_semantic_condition_id": "8916b6b07e09d640334141391afc9b16691ed260e0805efbb9b648efb7ae0f57",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Define enrichment as nonzero overlap and define smallest significance as the smallest pathway-size denominator in the Overlap field; retain ties.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

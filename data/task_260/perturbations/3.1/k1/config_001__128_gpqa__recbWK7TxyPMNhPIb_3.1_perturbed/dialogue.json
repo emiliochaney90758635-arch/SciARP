@@ -1,0 +1,49 @@
+{
+  "release_task_index": 260,
+  "task_id": "gpqa__recbWK7TxyPMNhPIb",
+  "dataset": "gpqa",
+  "ordinal": 128,
+  "variant": "perturbed",
+  "conversation_id": "128::gpqa__recbWK7TxyPMNhPIb::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "3bc13708b913198f5cf9fe885e5cf036c6c3ddba4ebc21cea32be5a4b8ad426b",
+  "semantic_condition_id": "c843fd3532d97e3362fd4e6fe74cef89c4f8b49a34baddc8fb496848b6c6b02d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A passage describes Wnt3a binding Frizzled and LRP5/6, followed by stabilization of beta-catenin and its movement into the nucleus. Which branch of Wnt signaling does that sequence describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What kind of molecule is Wnt3a, and how does its role differ from that of the transmembrane receptor Frizzled?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "After pathway activation, classify direct DNA binding by beta-catenin as correct and its role as a transcriptional co-activator as incorrect. Explain the resulting division of labour with transcription factors.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the accurate pathway descriptors into one statement that covers the ligand class, beta-catenin stabilization and accumulation, nuclear entry, and transcriptional role.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the statement against the common errors in the passage: calcium release as the defining canonical output, direct DNA binding by beta-catenin, and describing Wnt3a as either a transmembrane receptor or a non-canonical ligand.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final set of correct descriptors and explain how TCF/LEF provides sequence-specific DNA binding in the nucleus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

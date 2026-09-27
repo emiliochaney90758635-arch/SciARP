@@ -1,0 +1,22 @@
+{
+  "task_id": "001-capsule001",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes digits in the requested adjusted p-value while keeping it within a plausible valid range.",
+    "Misassigns MGD1734B from ASXL1 to Control in the phenotype table."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "adjusted-p transcription"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "phenotype row mapping"
+    }
+  ],
+  "evidence_change_permitted": true
+}

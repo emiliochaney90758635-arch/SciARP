@@ -1,0 +1,54 @@
+{
+  "release_task_index": 554,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2635",
+  "dataset": "olympiadbench",
+  "ordinal": 501,
+  "variant": "perturbed",
+  "conversation_id": "501::olympiadbench__OE_TO_maths_en_COMP_2635::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "fe03d3b2c9db5faf11b97c84936d8f0b920b469d52606e05a5f3c386bc725ec9",
+  "semantic_condition_id": "07e684e335385f7c6b99bbe17bf8997c45b3b12e1efa23ed34c853d8246f7863",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A student inserted exactly six extra digits into the numerator of 1/N and obtained 0.0 overline{0231846597}. How long was the original repetend, and how is it embedded in the displayed block?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let r be the original repetend length obtained above and B the numerical value of that retained block. Express 0.0 overline{B} as a fraction in terms of r, and state the divisibility condition required for it to equal 1/N.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Confirm the denominator in that fraction, paying particular attention to the one nonrepeating zero before the r-digit repetend.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Factor the numerator from the divisibility condition, and use the displayed digit pattern to eliminate impossible factors from the block value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Search the order-preserving r-position subsequences of 0231846597 for block values satisfying the divisibility condition. Explain why the retained digits need not be contiguous.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Identify the unique original r-digit repetend and reduce its fraction over the derived denominator.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compute N.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

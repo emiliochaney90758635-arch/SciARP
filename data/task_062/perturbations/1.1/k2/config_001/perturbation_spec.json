@@ -1,0 +1,57 @@
+{
+  "config_id": "task062_1.1_k2",
+  "subclass": "1.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Use unique Chr:Pos loci  and include blank classifications as Benign at T4",
+      "injected_text": "Within that sample set, retain non-reference, non-intronic, non-intergenic, non-UTR variants with VAF<0.3.\n\nFor this perturbed step, use unique Chr:Pos loci  and include blank classifications as Benign at T4",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use unique Chr:Pos loci at T2 and include blank classifications as Benign at T4.",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, use unique Chr:Pos loci at T2 and include blank classifications as Benign at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.1.k2",
+    "decision": "repair_required",
+    "problem": "The second root includes a nonexistent Likely Benign category and is ineffective.",
+    "before": "Unique locus plus Likely Benign merge.",
+    "after": "Use unique Chr:Pos loci at T2 and include blank classifications as Benign at T4.",
+    "proposed_turns": [
+      "T2",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated filters, then collapse qualifying records to unique Chr:Pos loci across samples."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Count both exact Benign and blank Classification values in the numerator, divide by the deduplicated qualifying-locus total, and report the result on a 0-to-1 scale."
+    }
+  ]
+}

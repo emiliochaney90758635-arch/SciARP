@@ -1,0 +1,43 @@
+{
+  "task_index": 128,
+  "task_id": "128-capsule036",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "b24fb84ba3bc8519d208f5b7b01511fd9218dd95cd4a692de44e0c84516a2d15",
+  "source_base_evidence_sha256": "ebe9627a6a0d7613d042f8aad87f034d5e7a2d7da3f60a07aa3918f4c70bf7ed",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Wrong coefficient method imposed.",
+      "consumers": [
+        "T3",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Wrong refit method independently imposed.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Wrong comparison direction independently imposed.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Use the unshrunk coefficient.",
+    "T4": "Delete from the fitted result rather than refit.",
+    "T6": "Compute six-sample count minus four-sample count rather than four minus six."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

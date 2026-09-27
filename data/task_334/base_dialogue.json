@@ -1,0 +1,59 @@
+{
+  "release_task_index": 334,
+  "task_id": "gpqa__receWdnr3u8wvTfPA",
+  "dataset": "gpqa",
+  "ordinal": 202,
+  "variant": "clean",
+  "conversation_id": "202::gpqa__receWdnr3u8wvTfPA::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b85d72d6206c04774dc66d1eb4fe139ddc5472d8fccb7786566d8c9bffb56c32",
+  "semantic_condition_id": "9d93f5b361907a3434fec2596a1ca6b029f381cadaafeee10ec261c7d17cc612",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compound A has formula C6H13Br and three proton-NMR signals: one singlet and two triplets. What primary alkyl bromide structure fits those constraints?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compound B has formula C4H6 and one singlet, one triplet, and one quartet in its proton NMR. Identify the terminal alkyne and explain why but-2-yne does not fit.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under the stated strong-base conditions, combine the structures established above to derive the coupled C10H18 connectivity.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Predict the number and response patterns of the product environments and compare them with C's five reported features: one singlet, three triplets, and one quartet.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the formula and NMR checks to name the product and classify the carbon-carbon bond-forming transformation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strongly do these observations support a specific microscopic mechanism, given that no kinetic or stereochemical mechanism probe is supplied?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the reactant identities, carbon count, product connectivity, and predicted NMR features are mutually consistent.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the reactants, transformation class, product name, and degree of confidence in the microscopic mechanism.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

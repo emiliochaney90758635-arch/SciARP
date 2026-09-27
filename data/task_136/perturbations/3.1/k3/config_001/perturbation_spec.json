@@ -1,0 +1,41 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Row count contradicted.",
+      "consumers": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Selected index independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ratio independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "State there are 36 observations.",
+    "T3": "State the selected grid index is 878.",
+    "T4": "State the normalized composition is 10:1."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

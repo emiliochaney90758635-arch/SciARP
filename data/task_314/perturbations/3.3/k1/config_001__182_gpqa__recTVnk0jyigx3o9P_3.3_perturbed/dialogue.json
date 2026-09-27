@@ -1,0 +1,49 @@
+{
+  "release_task_index": 314,
+  "task_id": "gpqa__recTVnk0jyigx3o9P",
+  "dataset": "gpqa",
+  "ordinal": 182,
+  "variant": "perturbed",
+  "conversation_id": "182::gpqa__recTVnk0jyigx3o9P::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "8f5882e301f1c6b010264e40b53871779aa2373797cc9b52a9d502d6b166ceea",
+  "semantic_condition_id": "d7af70972a94bbde149ba477d885f140425e8bb850eb8571be3b88e0a13c8b0b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "m-Toluidine reacts with the unsymmetrical beta-diketone CH3COCH2COCH2CH3 under acidic heating. Which quinoline-forming synthesis applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Because the diketone ends carry methyl and ethyl groups, how many distinct orientations can place these substituents at quinoline C2 and C4?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In m-toluidine, the two positions ortho to NH2 are C2, adjacent to methyl, and C6, not adjacent to methyl. Are these sites symmetry-equivalent, and how many ring-derived regioisomers do they allow?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Before counting, apply a molecular-graph automorphism quotient that merges the two ortho-site products, then combine this result with the two diketone orientations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the count by testing whether each source of variation counted in the preceding steps remains distinct under molecular symmetry.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final count with a concise rationale based on the preceding synthesis and symmetry analysis.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

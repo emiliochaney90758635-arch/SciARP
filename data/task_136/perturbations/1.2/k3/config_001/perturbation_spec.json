@@ -1,0 +1,56 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Frequency scale changed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Grid-step scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ratio scale independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat frequencies as 0-100 values without conversion.",
+    "T3": "Use percentage-scale step 0.0750750750751 with fractional grid bounds.",
+    "T4": "Use percent f but fractional 1-f in the normalized ratio."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Fit the spline on rounded whole-number percentage frequencies."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Use the percentage-scale step 0.0750750750751 while retaining fractional grid bounds."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use percentage-scale f in the numerator but fractional-scale 1-f in the denominator of the normalized ratio."
+    }
+  ]
+}

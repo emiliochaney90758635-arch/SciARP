@@ -1,0 +1,64 @@
+{
+  "release_task_index": 170,
+  "task_id": "gpqa__rec63khLVM4kK3sW3",
+  "dataset": "gpqa",
+  "ordinal": 37,
+  "variant": "perturbed",
+  "conversation_id": "037::gpqa__rec63khLVM4kK3sW3::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "18934e9311047b7f6ac414e16abec80f0591b482c84d1f4a15ee754eb4763a43",
+  "semantic_condition_id": "47d3e9c707a7ec3bc81daa31755a0c6c57bc5a225ae4d01db756cb8e46e536dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a carbon-13 NMR comparison of substituted hydrocarbons, which local structural features generally make a hydrogen nucleus more electronically deshielded?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Consider these compounds: (1) 7,7-difluorobicyclo[2.2.1]heptane, (2) 7-methoxybicyclo[2.2.1]heptane, (3) 7-(propan-2-ylidene)bicyclo[2.2.1]heptane, and (4) 7-fluorobicyclo[2.2.1]heptane. For each structure, determine whether C7 bears a hydrogen and characterize the substituent or unsaturation around C7.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Set up a qualitative comparison of the most deshielded proton actually present in each compound. Account for proton occupancy, direct attachment to an electronegative substituent, and the effect of nearby unsaturation, but do not choose a winner yet.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare the C7 carbon environments in the methoxy- and fluoro-substituted compounds. Which substituent should exert the stronger local deshielding effect?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now examine the propan-2-ylidene compound. Identify its most plausible downfield carbon environment and compare it with the stronger C7 substituent effect from the previous step.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the proton inventory and the local-environment comparisons. Which compound is predicted to contain the most deshielded proton, and what is the key structural reason?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the gem-difluoro and propan-2-ylidene structures do not hide a competing C7 proton, and consider whether another proton elsewhere in those molecules could plausibly overturn the ranking.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confident should this qualitative assignment be in the absence of measured chemical shifts, solvent and temperature controls, conformational calculations, or quantitative shielding calculations?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final compound name and identify the oxygen nucleus responsible for the strongest predicted deshielding.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "release_task_index": 58,
+  "task_id": "058-capsule015",
+  "source_id": "bix-19-q5",
+  "dataset": "bixbench",
+  "ordinal": 58,
+  "variant": "perturbed",
+  "conversation_id": "058::058-capsule015::2.1::k3::perturbed::lane_b_review_overlay",
+  "condition_label": "2.1.k3",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 3,
+  "dialogue_sha256": "c11b5a85eb78f630f38ae7c5a440012ce41456d3846717db9b6e64e95322fa25",
+  "semantic_condition_id": "6866287da4c192b033fdc3c5b1d3db19e0e8d26557c54df5317a1a1366d49471",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Observed effect size\n\nThe archived analysis calculates independent-groups pooled-SD Cohen's \\(d\\) from the following NeuN counts:\n\n| Sample | KD NeuN | CTRL NeuN |\n|---:|---:|---:|\n| 1 | 221 | 237 |\n| 2 | 233 | 223 |\n| 3 | 221 | 246 |\n| 4 | 215 | 179 |\n| 5 | 216 | 198 |\n| 6 | 208 | 194 |\n| 7 | 202 | 200 |\n| 8 | 200 | 208 |\n\nUsing sample standard deviations with \\(n-1\\) in the denominator, the archived descriptive statistics are:\n\n| Statistic | KD | CTRL |\n|---|---:|---:|\n| n | 8 | 8 |\n| mean | 214.5000000000 | 210.6250000000 |\n| sample SD | 10.9414023651 | 22.8531804601 |\n\n```text\nSD_pooled = 17.9162236933\nobserved d = (214.5 - 210.625) / 17.9162236933\n           = 0.21628441720382488\n```\n\n## Independent two-sample power model\n\n```python\nTTestIndPower().solve_power(\n    effect_size=0.21628441720382488,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\n```\n\nThe unspecified `ratio` uses its default value of 1, so the planned group sizes are equal. `solve_power` returns a continuous sample size per group; the actual sample size must be an integer no smaller than that solution.\n\nThe archived boundary output from the same model is:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse the observed effect size to specify an equal-allocation, two-sided independent two-sample t-test power model, including alpha, target power, and group-size ratio.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Observed effect size\n\nThe archived analysis calculates independent-groups pooled-SD Cohen's \\(d\\) from the following NeuN counts:\n\n| Sample | KD NeuN | CTRL NeuN |\n|---:|---:|---:|\n| 1 | 221 | 237 |\n| 2 | 233 | 223 |\n| 3 | 221 | 246 |\n| 4 | 215 | 179 |\n| 5 | 216 | 198 |\n| 6 | 208 | 194 |\n| 7 | 202 | 200 |\n| 8 | 200 | 208 |\n\nUsing sample standard deviations with \\(n-1\\) in the denominator, the archived descriptive statistics are:\n\n| Statistic | KD | CTRL |\n|---|---:|---:|\n| n | 8 | 8 |\n| mean | 214.5000000000 | 210.6250000000 |\n| sample SD | 10.9414023651 | 22.8531804601 |\n\n```text\nSD_pooled = 17.9162236933\nobserved d = (214.5 - 210.625) / 17.9162236933\n           = 0.21628441720382488\n```\n\n## Independent two-sample power model\n\n```python\nTTestIndPower().solve_power(\n    effect_size=0.21628441720382488,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\n```\n\nThe unspecified `ratio` uses its default value of 1, so the planned group sizes are equal. `solve_power` returns a continuous sample size per group; the actual sample size must be an integer no smaller than that solution.\n\nThe archived boundary output from the same model is:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nSolve that model for the continuous sample size required per group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Observed effect size\n\nThe archived analysis calculates independent-groups pooled-SD Cohen's \\(d\\) from the following NeuN counts:\n\n| Sample | KD NeuN | CTRL NeuN |\n|---:|---:|---:|\n| 1 | 221 | 237 |\n| 2 | 233 | 223 |\n| 3 | 221 | 246 |\n| 4 | 215 | 179 |\n| 5 | 216 | 198 |\n| 6 | 208 | 194 |\n| 7 | 202 | 200 |\n| 8 | 200 | 208 |\n\nUsing sample standard deviations with \\(n-1\\) in the denominator, the archived descriptive statistics are:\n\n| Statistic | KD | CTRL |\n|---|---:|---:|\n| n | 8 | 8 |\n| mean | 214.5000000000 | 210.6250000000 |\n| sample SD | 10.9414023651 | 22.8531804601 |\n\n```text\nSD_pooled = 17.9162236933\nobserved d = (214.5 - 210.625) / 17.9162236933\n           = 0.21628441720382488\n```\n\n## Independent two-sample power model\n\n```python\nTTestIndPower().solve_power(\n    effect_size=0.21628441720382488,\n    alpha=0.05,\n    power=0.8,\n    alternative=\"two-sided\"\n)\n```\n\nThe unspecified `ratio` uses its default value of 1, so the planned group sizes are equal. `solve_power` returns a continuous sample size per group; the actual sample size must be an integer no smaller than that solution.\n\nThe archived boundary output from the same model is:\n\n| n per group | achieved power |\n|---:|---:|\n| 334 | 0.7970181807 |\n| 335 | 0.7981987687 |\n| 336 | 0.7993734791 |\n| 337 | 0.8005423319 |\n| 338 | 0.8017053475 |\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T3\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCheck the adjacent integer designs and report the smallest per-group sample size that achieves at least 80% power.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "release_task_index": 441,
+  "task_id": "gpqa__recuOd6eMiag2hPBU",
+  "dataset": "gpqa",
+  "ordinal": 310,
+  "variant": "perturbed",
+  "conversation_id": "310::gpqa__recuOd6eMiag2hPBU::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "fb959300198f5814cc0f8e296b6b70cffb41f27c05981c5a4c2bc87d99edc959",
+  "semantic_condition_id": "07f03bf0c65d8f39c4459da2c15045dca8a10a17c0830e838ca4c38b261124c0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The RV periodogram has peaks at 71.1, 56.2, and 18.7 days, while H-alpha and Ca II indicators peak at 28.1 days. Describe the observed harmonic relationships without inferring causation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the strongest relationship warranted between the activity indicators and RV signals, and whether the available periodograms alone identify activity-to-RV causation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat v sin(i)=0.9 km/s as a radial acceleration and determine an equatorial rotation speed from it.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using a solar radius and P_rot=2 pi R/v, estimate the stellar rotation period in days.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the RV periods with the rotation estimate and with the H-alpha and Ca II elemental-abundance period, then identify the leading planetary candidate.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the best-supported planetary period and calibrate the remaining uncertainty in its origin.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain briefly why the equatorial speed used in the rotation calculation equals 0.9 km/s.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the period classifications, identify which reported signal most likely measures the stellar radius and state what would confirm it.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check whether an activity indicator shares the proposed planetary period, and name the most direct coherence or transit-ephemeris test still needed.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the activity-RV relationship, causal-identification limit, rotation estimate, uncertainty, and signal-origin conclusion.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

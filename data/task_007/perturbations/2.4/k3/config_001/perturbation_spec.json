@@ -1,0 +1,28 @@
+{
+  "task_id": "007-capsule003",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first audit supplies a conflicting screen result.",
+    "The second audit supplies a distinct conflicting population/count reconstruction.",
+    "The block-resampling audit supplies an independent conflicting p-value for the only sub-5% comparison."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first conflict source"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second conflict source"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third conflict source"
+    }
+  ],
+  "evidence_change_permitted": true
+}

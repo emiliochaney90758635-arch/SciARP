@@ -1,0 +1,54 @@
+{
+  "release_task_index": 517,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2910",
+  "dataset": "olympiadbench",
+  "ordinal": 464,
+  "variant": "perturbed",
+  "conversation_id": "464::olympiadbench__OE_TO_maths_en_COMP_2910::1.x::perturbation__1_3__k2__1_3_count2_cfg0002::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "7c7bfe533e4ddcd88a93e196d4611063062d9ae172d7c3382d982bb83095cb4f",
+  "semantic_condition_id": "c78e7532798bc1884281ea38cabbd96a3503c8ee7e807ddbd2b26ce43a453c5a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In equilateral triangle ABC with side length 12, D and E are the midpoints of AB and AB. Find DE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Triangle DEF is equilateral. Use DE to find the altitude from F to DE.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The plane of ABC is perpendicular to itself along DE. Use that statement to determine the distance from F to plane ABC.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the area of triangle ABC and write the base-area-times-height formula for the volume of tetrahedron ABCF.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the volume exactly using the base area and perpendicular height.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the height and volume with a coordinate or right-triangle argument based on the perpendicular planes.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the exact volume of tetrahedron ABCF and identify the base and height used.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

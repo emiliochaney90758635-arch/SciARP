@@ -1,0 +1,49 @@
+{
+  "release_task_index": 267,
+  "task_id": "gpqa__reciOUAwJv4qTlXxs",
+  "dataset": "gpqa",
+  "ordinal": 135,
+  "variant": "perturbed",
+  "conversation_id": "135::gpqa__reciOUAwJv4qTlXxs::1.x::perturbation__1_3__k2__1_3_count2_cfg0001::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "86c738788f95cf5c42dae066aaacfecd090606f470ac762e9d43c420f73b65f2",
+  "semantic_condition_id": "f876d5378026c35eb091fc7c079dddeeacb509837525d878cf012dbe2f1f88c3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A single-qubit bit-flip channel has two events both labelled A_0: no flip and flip. Assign probabilities to these duplicated operations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Turn those two events into Kraus operators A_0 and A_1 in matrix form, using probability amplitudes as their scalar weights.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Verify completeness using A_0^dagger A_0+A_0^dagger A_0=I.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the channel to a general one-qubit density matrix and show how the two branches are mixed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why do the scalar weights enter as square roots, and why can an overall phase on either Kraus operator leave the channel unchanged?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the two Kraus operators and the resulting map E(rho).",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

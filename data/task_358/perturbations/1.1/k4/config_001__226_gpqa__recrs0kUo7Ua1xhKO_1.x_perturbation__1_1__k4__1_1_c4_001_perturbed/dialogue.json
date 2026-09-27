@@ -1,0 +1,54 @@
+{
+  "release_task_index": 358,
+  "task_id": "gpqa__recrs0kUo7Ua1xhKO",
+  "dataset": "gpqa",
+  "ordinal": 226,
+  "variant": "perturbed",
+  "conversation_id": "226::gpqa__recrs0kUo7Ua1xhKO::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "37cfc7539e43c958ea33fd004ead1a5bd6acfda80e0174dffbac86b58818c3b1",
+  "semantic_condition_id": "e81b01c4ce0b25a641263f63699ae15808c5ac08818d51b78ac7d33d778fc52c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat rho as a classical covariance matrix and write the two quantum projectors as matrices.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the rotation matrices just written, compute their sum and simplify rho.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write rho in Hamiltonian normal form rather than Bloch form and determine r.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the energy eigenvalue of rho in qubit space rather than its geometric position.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the Bloch vector just obtained, reconstruct rho and check that current representation internally.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result independently from the eigenvalues and Tr(rho^2).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the Bloch vector and geometric location.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

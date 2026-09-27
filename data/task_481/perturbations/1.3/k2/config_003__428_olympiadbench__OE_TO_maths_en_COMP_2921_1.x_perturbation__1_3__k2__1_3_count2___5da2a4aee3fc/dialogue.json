@@ -1,0 +1,49 @@
+{
+  "release_task_index": 481,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2921",
+  "dataset": "olympiadbench",
+  "ordinal": 428,
+  "variant": "perturbed",
+  "conversation_id": "428::olympiadbench__OE_TO_maths_en_COMP_2921::1.x::perturbation__1_3__k2__1_3_count2_cfg0006::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "cb43f3ffe147cc9b56cd317dbe611abe890cdbc274f72ccad28319420cf372e2",
+  "semantic_condition_id": "9214515cd8eca7686e7ed59af5d295f7258937a550ad020e3e9a1ef38d720b9d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a common four-bit suffix b3b2b1b0 in base 2 and base 5, with leading zeros allowed, define its numerical values x and y in the two bases and express n as congruences modulo 16 and 625.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the Chinese remainder theorem to determine how many n in 0<=n<10000 correspond to each permitted suffix, and decide whether matching digits make x and y numerically equal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "As a sanity check, compare x and y for a nontrivial suffix such as 1000 and explain the difference.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Solve for n modulo 10000 using x and n as the two quantities defined by the suffix.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Take the suffixes to be b3b2b1n and sum x and y over them.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the formula and those two sums to find the requested aggregate modulo the stated modulus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

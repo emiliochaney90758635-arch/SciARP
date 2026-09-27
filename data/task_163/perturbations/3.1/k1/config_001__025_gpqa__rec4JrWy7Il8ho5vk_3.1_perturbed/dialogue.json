@@ -1,0 +1,49 @@
+{
+  "release_task_index": 163,
+  "task_id": "gpqa__rec4JrWy7Il8ho5vk",
+  "dataset": "gpqa",
+  "ordinal": 25,
+  "variant": "perturbed",
+  "conversation_id": "025::gpqa__rec4JrWy7Il8ho5vk::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b39dafca190bb78f198f8aed0a8c8254c2e41e0b3fda49afb12784e41a8d852d",
+  "semantic_condition_id": "2a382e468400b3d93e7e0015d70083b5aad5a868090562b4109bcb119f9ab7d9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Use Earth as the density reference for four planets: an Earth-mass/Earth-radius planet; a two-Earth-mass planet with density 5.5 g/cm^3; and Earth-composition rocky planets of five and one-half Earth mass.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare the first two planets quantitatively with Earth's mean density.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the two Earth-composition planets, use the rocky-planet mass-radius trend to explain how self-compression changes mean density as mass increases.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the half-Earth-mass comparison and the two density baselines to rank all four planets.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that the ranking does not assume radius proportional to mass, and distinguish equal composition from equal mean density.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State which planet has the highest mean density and why.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 407,
+  "task_id": "gpqa__rechgQucGlrnt8KRV",
+  "dataset": "gpqa",
+  "ordinal": 276,
+  "variant": "perturbed",
+  "conversation_id": "276::gpqa__rechgQucGlrnt8KRV::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "d43f2ce46509731dd230bf34399753d4008c3891fef47f76051b69a2c224ba2c",
+  "semantic_condition_id": "5ebe55a34b6aa5a1c632c7c9e9066780048c3f4147c7a4633f799a21b6533f80",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Normalize the spin-1/2 state proportional to (1+i)|up>+(2-i)|down> in the z-spin basis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The operator A has off-diagonal entries hbar/2 metres and zero diagonal entries. Write its matrix and eigensystem.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Project the normalized state onto the eigenbasis of A and calculate both outcome probabilities exactly and numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use those probabilities and eigenvalues to calculate the expectation value of A.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Collect the two branch quantities and the mean value in one result, labeling the branches.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the expectation value both by weighting the eigenvalues and by directly evaluating <psi|A|psi> in the original basis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain how the two eigenvalue branches contribute and how the probability imbalance determines the expectation value.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Would rephasing either eigenvector change any observable probability or expectation value?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report both outcome probabilities and the expectation value of A.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

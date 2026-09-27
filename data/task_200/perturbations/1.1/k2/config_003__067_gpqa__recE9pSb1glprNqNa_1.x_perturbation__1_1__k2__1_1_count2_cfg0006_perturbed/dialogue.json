@@ -1,0 +1,64 @@
+{
+  "release_task_index": 200,
+  "task_id": "gpqa__recE9pSb1glprNqNa",
+  "dataset": "gpqa",
+  "ordinal": 67,
+  "variant": "perturbed",
+  "conversation_id": "067::gpqa__recE9pSb1glprNqNa::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "8cada19155a732a76e29f63263689c71637a9b1429f1f11232de8704cd09d1d4",
+  "semantic_condition_id": "773a8f3dc15b5576773e693ddd304f174d1f1cc30183b004fa7b499421d238a1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two uncoupled nuclei in a strong magnetic field, explain how the joint product-state basis is constructed from the individual magnetic quantum states.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the product-state counting rule and the single-spin-flip selection rule that will be applied.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take both nuclei to have spin 1/2 and list their combined spin product states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The two nuclei have different magnetic shieldings. Explain what this implies for the product-state energies listed above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Enumerate transitions using an electric-dipole orbital selection rule while also assuming one nuclear spin flips.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count only those single-spin-flip connections.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the earlier resonance frequencies to report the level and transition counts and list the connections.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why not every pairwise connection between the product-state levels is allowed.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final counts.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "task_id": "032-capsule009",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes 6.12 to 6.21.",
+    "Independently transposes 4.48 to 4.84."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "Expected BCG count for grade 1"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "Expected Placebo count for grade 2"
+    }
+  ],
+  "evidence_change_permitted": true
+}

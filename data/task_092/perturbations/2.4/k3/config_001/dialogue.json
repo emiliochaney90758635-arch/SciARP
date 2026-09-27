@@ -1,0 +1,35 @@
+{
+  "release_task_index": 92,
+  "task_id": "092-capsule026",
+  "source_id": "bix-37-q2",
+  "dataset": "bixbench",
+  "ordinal": 92,
+  "variant": "perturbed",
+  "conversation_id": "092::092-capsule026::2.4.k3::lane_c_manual",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "3a1a6901223f1e422a3fd7e4ea0023fa53ef10d89c32f5070465add1318705c6",
+  "semantic_condition_id": "c344b026567c4a7039f73eea727c300272eb7e88f67f8e87635069c46151db53",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Worksheet Fields and Unit Boundary\n\nThe proteomics workbook contains the worksheet `Tumor vs Normal`, with 3,850 data rows. The relevant headers are:\n\n| Column | field | meaning |\n|---|---|---|\n| A | protein | protein accession |\n| B | Description | protein description |\n| C | gene | gene symbol |\n| D | gene_id | gene identifier |\n| E | Normal | normal-group summary abundance |\n| F | Tumor | tumor-group summary abundance |\n| G | Ratio | displayed Tumor/Normal value |\n| H | FC | displayed fold-change value |\n| I | log2FC | displayed log2 fold-change value |\n\nThe workbook provides no physical unit for `Normal` or `Tumor`; only the source-table value can be reported, without adding units such as counts, intensity, or copies.\n\n## Unique Original ENO1 Record\n\nExact matching on `gene`, case-insensitive matching after trimming surrounding whitespace, and a containment check all locate only one row; no aggregation across multiple protein rows is needed.\n\n| protein | Description | gene | gene_id | Normal | Tumor | Ratio | FC | log2FC | p.value | adj.Pval | compare |\n|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---|\n| P06733 | Alpha-enolase OS=Homo sapiens OX=9606 GN=ENO1 PE=1 SV=2 | ENO1 | 2023 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | 2.27 | 0.031 | 0.226 | Tumor vs Normal |\n\nWithin-row consistency check:\n\n```text\nTumor / Normal\n= 350385456.451912 / 72896133.2946858\n= 4.806639812230691\n\nlog2(Tumor / Normal)\n= 2.265028698508499\n```\n\nThese values agree with the displayed `Ratio=4.81` and `log2FC=2.27`, ruling out a column misreading. Rounding to three significant figures should begin with the full-precision constant in `Normal`.\n\n# ENO1 peptide-area reconciliation\n\n**Source:** Proteome Quantification Facility, protein roll-up `PQF-ENO1-N4`\n**Scope:** Four ENO1-unique peptides in the normal sample pool\n**Method:** Background-subtracted peptide areas were multiplied by peptide-specific response factors and summed to obtain the protein abundance value. No physical unit is assigned.\n\n| Peptide | Background-subtracted area | Response factor |\n|---|---:|---:|\n| AVPSGASTGIYEALELR | 18,420,000 | 0.94 |\n| GNPTVEVDLFTSK | 14,860,000 | 1.08 |\n| IGAEVYHNLK | 16,270,000 | 1.02 |\n| VNQIGSVTESLQACK | 15,940,000 | 0.97 |\n\nThe reported normal-group abundance is the sum of `area × response factor`, rounded to three significant figures only after aggregation.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nFrom the worksheet headers and definitions, decide which field answers the requested normal-group abundance, separate it from the derived comparison fields, and state whether a physical unit is supplied.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent protein-rollup audit\n\nA second facility reports P06733 normal-group abundance **8.02e7** after shared-peptide correction, with no physical unit assigned.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nMatch ENO1 using the gene symbol together with the accession, description, and gene ID. Is the record unique, or is aggregation needed?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Vendor-normalised ENO1 export\n\nThe acquisition vendor reports a normal-group abundance of **9.10e7 intensity units** for P06733 after batch normalisation.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFor the matched row, check Tumor/Normal against Ratio and log2FC, then report the Normal value to three significant figures without inventing a unit.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

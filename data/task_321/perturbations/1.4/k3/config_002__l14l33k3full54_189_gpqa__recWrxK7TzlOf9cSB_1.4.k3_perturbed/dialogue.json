@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::189::gpqa__recWrxK7TzlOf9cSB::1.4.k3::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "0ee0dc076d9190a7521a46081b31a68da657993f912df560383c883ab93568db",
+  "semantic_condition_id": "83b7334d78038df5398a38f3880a906ca4ea14a22401733557b019e386356114",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has one negative DEPT-135 resonance and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. Interpret the signal and propose a structure that fits its formula and reactivity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the proposed A structure, identify Friedel-Crafts acylation product B and assess it against the available carbon-signal evidence.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the identified B, name the reaction and product C and assess whether C fits two negative DEPT-135 resonances.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Heat C with N-bromosuccinimide and peroxide. Predict D and explain why its 13C spectrum has two signals below 60 ppm and all others above 100 ppm.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the systematic name of product D and explain how its carbon environments distinguish the remaining structural alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

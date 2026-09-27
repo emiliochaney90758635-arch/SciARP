@@ -1,0 +1,54 @@
+{
+  "release_task_index": 356,
+  "task_id": "gpqa__recqqFgbShO7tyavI",
+  "dataset": "gpqa",
+  "ordinal": 224,
+  "variant": "perturbed",
+  "conversation_id": "224::gpqa__recqqFgbShO7tyavI::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "dfc00fc3ca44512b309ad6d50d480fb6f2846bd249a388539e72e5b23385b0c9",
+  "semantic_condition_id": "0410d707a7bcc8bc0ae8a1d60c56f65fb96c9741cc2833287807bdeb7015cc97",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat allyl acetoacetate as a radical initiator when it is heated. Which radical pathway and subsequent step would then account for formation of an unsaturated ketone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Trace the carbon skeleton through that thermal rearrangement and decarboxylation, then draw and name the major product.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For that product, identify the saturated proton environments in its 1H NMR spectrum. Keep carbon-site counting separate from proton-level chemical equivalence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Extend the same measurement and counting convention to the unsaturated region, identifying every distinct environment there.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the environments identified so far to obtain the total number of distinct signals for the current measurement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by listing each chemically distinct environment individually rather than relying only on a site count.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the signal count for the major product and the relevant equivalence conclusion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

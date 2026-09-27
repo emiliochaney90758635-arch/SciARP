@@ -1,0 +1,49 @@
+{
+  "release_task_index": 361,
+  "task_id": "gpqa__rect4iLrSfUwkNTno",
+  "dataset": "gpqa",
+  "ordinal": 229,
+  "variant": "perturbed",
+  "conversation_id": "229::gpqa__rect4iLrSfUwkNTno::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "619a7089e3317725dd5e3c0704836475c6f2c7859f400f06d82217c901873012",
+  "semantic_condition_id": "4de1740f03e2861285d7160c910d857f550957d4e40b11d876460d457f91ffd2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Using Gamma_X=320 MeV and hbar*c=1.97327e-16 GeV m, calculate the proper oscillation length rather than the proper decay length.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From total energy 8 GeV and mass 1.2 GeV, determine the particle's electric charge and beta*gamma.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use L=(hbar*c/Gamma_X)(beta*gamma) to calculate the laboratory mean decay distance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the internal consistency of the width, boost, and mean free path with the laboratory-distance formula.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the powers of ten and distinguish the proper decay length from the boosted laboratory distance.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the laboratory mean decay distance together with the width conversion and boost factor.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

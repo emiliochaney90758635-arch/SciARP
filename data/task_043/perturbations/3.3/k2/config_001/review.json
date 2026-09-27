@@ -1,0 +1,16 @@
+{
+  "status": "feasible_new",
+  "reason": "Two-step wrong path changes pooled-row estimand to participant-weighted mean.",
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "7a87f1d7f90fc3a45b59bb9e0de9b97906f495379a33c9e097aea3dccff39292",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite naturally: at T4 collapse recurrent coordinates to unique sites before strict VAF below 0.3; at T5 divide the missense-row numerator by the number of samples in each cohort rather than retained rows. Remove all 'For this perturbed step' text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

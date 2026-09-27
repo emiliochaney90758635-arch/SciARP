@@ -1,0 +1,18 @@
+{
+  "task_id": "093-capsule026",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "candidate_injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    "T1_response",
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Corrupt the Tumor abundance used in the requested fold-change calculation."
+  ],
+  "evidence_mode": "replace",
+  "manual_rationale": "Each successive full evidence version retains earlier corruptions and adds one task-consumed, independently removable structured-data corruption."
+}

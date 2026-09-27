@@ -1,0 +1,54 @@
+{
+  "release_task_index": 363,
+  "task_id": "gpqa__recvZlMbpPz0yLDle",
+  "dataset": "gpqa",
+  "ordinal": 232,
+  "variant": "perturbed",
+  "conversation_id": "232::gpqa__recvZlMbpPz0yLDle::1.x::perturbation__1_1__k3__1_1_count3_cfg0007::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1ebc306327635f4f2415b63d05d26fbbf0f51a29ce19449181e8708f936a170e",
+  "semantic_condition_id": "cfffc0407a472bb9bbbd5e5cdfd6afd729fa70fdf8e3492611c4941746a788e6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A C8H9NO compound shows 1H NMR signals at 9.72 ppm (t, 1H) and 3.66 ppm (d, 2H). What aldehyde-containing fragment accounts for those shifts and their mutual coupling?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the two aromatic doublets together with the broad Raman band at 6.27 ppm, and identify the starting compound.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat the aromatic amine with sodium chloride and then water; give the diazonium intermediate and the aldehyde entering the final step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the resulting aldehyde with aqueous sulfuric acid and heat, then distinguish the initial carbon-carbon bond-forming product from the endpoint.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the conditions just established, name the final product of the self-condensation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check whether the current conditions favor retaining the beta-hydroxy aldol product or eliminating water to form a conjugated aldehyde.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final product and explain how it arises from the aldol-addition intermediate.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

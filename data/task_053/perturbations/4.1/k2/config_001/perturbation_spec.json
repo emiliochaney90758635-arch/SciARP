@@ -1,0 +1,57 @@
+{
+  "config_id": "task053_4.1_k2",
+  "subclass": "4.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "present sample SD as exact population dispersion",
+      "injected_text": "Calculate the sample standard deviation using n-1 in the variance denominator.\n\nFor this perturbed step, present sample SD as exact population dispersion",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "present sample SEM as exact population uncertainty",
+      "injected_text": "What standard error of the mean follows from that sample standard deviation and sample size?\n\nFor this perturbed step, present sample SEM as exact population uncertainty",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "4.1.k2",
+    "decision": "repair_required",
+    "problem": "The existing events do not cleanly separate two uncertainty boundaries.",
+    "before": "Repeated certainty language.",
+    "after": "At T2 present sample SD as exact population dispersion; at T3 present sample SEM as exact population uncertainty.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate the sample standard deviation using n-1, but report it as the exact population dispersion."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the standard error from that value and report it as the exact population uncertainty."
+    }
+  ]
+}

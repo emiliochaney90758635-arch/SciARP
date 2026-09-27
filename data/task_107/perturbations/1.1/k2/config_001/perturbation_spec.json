@@ -1,0 +1,44 @@
+{
+  "task_index": 107,
+  "task_id": "107-capsule031",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "a349e67cafdf4a93d7a563491d7b2437a12c0397ba3e2aa4aaaca0e5190d5a04",
+  "source_base_evidence_sha256": "49a5879ac28a6d0a195ac58250be1c671fafbcf6e41388b6e77382a2bdd3f895",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Exact gene term becomes a family label.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Log2-fold-change term is independently redefined as linear fold ratio.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat `mexG` as a family label for the neighboring mexGHI efflux-system genes, then locate a representative locus.",
+    "T3": "Use `log2 fold change` to mean the ordinary linear fold ratio, and report the mexG value rounded to two decimals."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Treat `mexG` as a family label and use neighboring mexH at PA14_09530 as its representative locus."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Exponentiate the stored log2 value for that selected locus to obtain a linear fold ratio, then report that linear ratio to two decimals as the `mexG log2 fold change`."
+    }
+  ]
+}

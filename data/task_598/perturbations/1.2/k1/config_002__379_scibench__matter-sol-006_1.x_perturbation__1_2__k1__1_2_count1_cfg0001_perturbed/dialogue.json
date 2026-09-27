@@ -1,0 +1,49 @@
+{
+  "release_task_index": 598,
+  "task_id": "scibench__matter-sol-006",
+  "dataset": "scibench",
+  "ordinal": 379,
+  "variant": "perturbed",
+  "conversation_id": "379::scibench__matter-sol-006::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "b81e12b79a16fe775326a75e38f48369326072aedcab29b70a33f5fdd1b90fc2",
+  "semantic_condition_id": "7cdece2f45ae0701f4f7cfe7d04a94386d95be843f531533411e6af554181dcc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Starting from Planck's spectral radiance per unit wavelength, derive B_lambda(450 nm,T)/B_lambda(700 nm,T) for wavelengths 450 seconds and 700 nm at T=298 K.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using hc/k=1.4388e-2 m K, calculate x=hc/(lambda*k*T) for 450 nm and 700 nm at 298 K.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The two exponents are both much larger than one. Apply the corresponding Wien-tail approximation to the exact ratio and reduce it to one evaluable expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the ratio numerically and identify which wavelength has the greater spectral output at 298 K.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result with a logarithmic calculation of the wavelength-prefactor term plus the exponential term, and verify the resulting order of magnitude and wavelength ordering.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final ratio B_lambda(450 nm)/B_lambda(700 nm) and state which wavelength dominates.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

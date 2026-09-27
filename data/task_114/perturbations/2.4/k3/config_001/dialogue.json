@@ -1,0 +1,35 @@
+{
+  "release_task_index": 114,
+  "task_id": "114-capsule033",
+  "source_id": "bix-49-q5",
+  "dataset": "bixbench",
+  "ordinal": 114,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::114::114-capsule033::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "ceb042ebfb2ae2c4bab0af9fb2d2f0f4cf5a9f9be5dbb5983617627938413bfd",
+  "semantic_condition_id": "95ba182fbe41bde400d49dcd9991ed279555ceb401ef360310c60ffe202a892d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# GRIK5 disease-versus-control result evidence\n\n## Gene identity\n\n| annotation source | gene_id | gene_name | hgnc_id | description |\n|---|---|---|---|---|\n| Gencode v31 gene annotation | ENSG00000105737.9 | GRIK5 | HGNC:4583 | protein-coding gene |\n| HGNC annotation | ENSG00000105737 | GRIK5 | HGNC:4583 | glutamate ionotropic receptor kainate type subunit 5 |\n\nThe count matrix uses the versioned Ensembl identifier `ENSG00000105737.9`.\n\n## Model and effect direction\n\nThe archived analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe original `ASXL1` condition is encoded as `disease`, and `Control` as `control`. Therefore, a positive shrunken `log2FoldChange` is higher expression in ASXL1-mutation disease relative to control after adjustment for sex.\n\nResults are retained under the strict criterion `padj < 0.05`; no additional absolute-LFC threshold is active.\n\n## Archived GRIK5 result row\n\n| gene_name | log2FoldChange | padj |\n|---|---:|---:|\n| GRIK5 | 3.825466 | 7.039991e-26 |\n\n`log2FoldChange` is the apeglm-shrunk effect field. Decimal-place formatting is applied to this field, not to `padj` or to an unlogged fold change.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# GRIK5 RT-qPCR expression check\n\n## Source and assay\n\nThe Myeloid Molecular Diagnostics Laboratory measured GRIK5 and RPLP0 in\nASXL1-mutant disease samples and controls. Entries are mean threshold cycles\nfrom matched assay batches.\n\n| Group | Replicate | GRIK5 Ct | RPLP0 Ct |\n|---|---|---:|---:|\n| control | A | 25.1 | 18.0 |\n| control | B | 25.3 | 18.1 |\n| control | C | 25.0 | 17.9 |\n| disease | A | 23.9 | 18.0 |\n| disease | B | 24.1 | 18.1 |\n| disease | C | 23.8 | 17.9 |\n\nCalculate `DeltaCt=GRIK5 Ct-RPLP0 Ct`, average within group, and use\n`log2FC(disease/control)=-(mean DeltaCt_disease-mean DeltaCt_control)`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the disease-versus-control coefficient direction and the apeglm shrinkage specification for the ASXL1-mutated comparison.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent targeted-proteomics report for GRIK5\n\n## Source, scope, and method\n\nThe Proteome Validation Facility quantified two proteotypic GRIK5 peptides in\nmatched ASXL1-mutant disease and control lysates. Log2 peptide intensities were\nnormalized within batch and averaged by group.\n\n| Peptide | control mean log2 intensity | disease mean log2 intensity | disease-control |\n|---|---:|---:|---:|\n| LQIPQAFR | 18.42 | 17.61 | -0.81 |\n| VNVDSVLR | 17.96 | 17.11 | -0.85 |\n\nThe mean protein-level disease-minus-control change is `(-0.81-0.85)/2=-0.83`.\nThis report measures protein abundance rather than the archived RNA-seq\ncoefficient but presents its result as a cross-platform estimate for GRIK5.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUnder that group contrast, what is GRIK5's regulatory direction and does it pass the FDR threshold?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Single-nucleus pseudobulk GRIK5 expression report\n\n## Source identity and scope\n\nThe Hematopoietic Single-Nucleus Transcriptomics Consortium profiled bone-marrow nuclei from sex-balanced ASXL1-mutant disease donors and non-mutant controls. The report concerns the same gene and disease-versus-control direction as the archived analysis, but uses a separate single-nucleus experiment.\n\n## Method\n\nNuclei were assigned to major lineages, counts were summed to donor-level pseudobulk profiles within each lineage, and a sex-adjusted negative-binomial model was fitted. Reported values are disease-minus-control log2 expression changes; no apeglm shrinkage was applied.\n\n## Structured observations\n\n| Lineage | Donors per group | GRIK5 disease-control log2 change |\n|---|---:|---:|\n| HSPC | 8 | 2.10 |\n| Myeloid | 8 | 1.55 |\n| Lymphoid | 8 | 0.76 |\n| Erythroid | 8 | 1.22 |\n\nUsing the consortium's prespecified cell-count weights gives an all-lineage pseudobulk estimate of **1.47**.\n\n## Derived conflicting result\n\nThe report presents 1.47 as its cross-platform GRIK5 disease-versus-control estimate. It measures a single-nucleus pseudobulk object, not the archived bulk-RNA apeglm coefficient, so the archived 3.825466 row remains directly recoverable.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReport the shrunken GRIK5 log2 fold change rounded to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

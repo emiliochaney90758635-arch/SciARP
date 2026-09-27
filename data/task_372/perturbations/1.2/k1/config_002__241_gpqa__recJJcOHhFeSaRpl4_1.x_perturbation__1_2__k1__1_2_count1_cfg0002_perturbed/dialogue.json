@@ -1,0 +1,59 @@
+{
+  "release_task_index": 372,
+  "task_id": "gpqa__recJJcOHhFeSaRpl4",
+  "dataset": "gpqa",
+  "ordinal": 241,
+  "variant": "perturbed",
+  "conversation_id": "241::gpqa__recJJcOHhFeSaRpl4::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "95116d1df460f72d20e2739b872b70420d85d8bc220237a90ec71527f341442b",
+  "semantic_condition_id": "a18723ac108a4d2af6cadf41da9b843afd2f498631dd22d839ba4c58aff06b3c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an unknown C9H11NO2 compound, calculate the index of hydrogen deficiency. The IR has bands at 3420, 3325, and 1720 cm^-1; 1H NMR shows 1.20 (t,3H), 4.0 (broad s,2H), 4.5 (q,2H), 7.0 (d,2H), and 8.0 ppm (d,2H).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the three vibrational features using the spectroscopic technique established above and identify the functional groups they support.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign a 1.20-seconds triplet, 4.5-ppm quartet, and 4.0-ppm broad singlet.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the aromatic pattern established above to infer the corresponding structural relationship.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the available molecular and spectroscopic evidence to identify the requested target.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Describe that identity with the confidence status supported by the available record and state what missing data leave residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Inventory the additional measurements that are present or absent and explain how they affect confidence in the structural assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the target identity with a concise justification from the spectroscopic analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

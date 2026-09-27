@@ -1,0 +1,28 @@
+{
+  "task_id": "021-capsule007",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first registry supplies one conflicting count pair.",
+    "The second supplies another pair.",
+    "The third reports 284 Hyper and 125 Hypo loci."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first registry"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second registry"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "284-to-125 registry"
+    }
+  ],
+  "evidence_change_permitted": true
+}

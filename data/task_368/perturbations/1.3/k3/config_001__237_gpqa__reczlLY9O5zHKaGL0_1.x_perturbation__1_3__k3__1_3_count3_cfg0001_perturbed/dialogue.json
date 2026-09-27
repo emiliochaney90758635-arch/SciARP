@@ -1,0 +1,54 @@
+{
+  "release_task_index": 368,
+  "task_id": "gpqa__reczlLY9O5zHKaGL0",
+  "dataset": "gpqa",
+  "ordinal": 237,
+  "variant": "perturbed",
+  "conversation_id": "237::gpqa__reczlLY9O5zHKaGL0::1.x::perturbation__1_3__k3__1_3_count3_cfg0001::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "29c1dc3fa90a5972ee635d88e728b81d54da6b14c9ba89e5214c4ef19858be2b",
+  "semantic_condition_id": "2a4c393922d7874bde05e43db3350f051e41c51ca1901f43e310f867f4934a59",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Planet X and planet Y orbit equal-radius stars. Star Y's photosphere is twice as hot; planet Y is at half the orbital distance and has twice planet X's circumference. Derive how the total stellar power intercepted by a planet depends on stellar luminosity, orbital distance, and planet radius.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Find the luminosity ratio while taking star Y and star Y to have the same radius, even though the temperature comparison is between Y and X.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the distance factor while taking planet X to be twice as close as planet X is to its star.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Find the size factor while taking planet X to have twice planet X's circumference.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the stellar-luminosity, orbital-distance, and planetary-size factors to find the ratio of intercepted power.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Do any other temperature quantity or the equal rotation rates change the intercepted-power comparison? Explain.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the intercepted-power ratio and list the physical assumptions used to obtain it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

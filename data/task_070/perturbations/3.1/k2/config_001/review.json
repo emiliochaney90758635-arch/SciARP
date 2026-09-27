@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can inspect Succ while T3 claims a FeMinus conclusion.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "49e6a5ed8bcea9930fb51c11651c1d93addd858159917bc62dfa872216570bfb",
+  "strict_non2x_original_semantic_condition_id": "908f6041e95aa2bd63146ef3cbd1d1b1fbd91fa6bf80651a399ddc7defcc13fa",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Inspect the Succ-Up point at T2 but report it as FeMinus-Dn at T3 while claiming continuity with the alternate-facet observation.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

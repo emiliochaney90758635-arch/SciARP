@@ -1,0 +1,69 @@
+{
+  "release_task_index": 195,
+  "task_id": "gpqa__recCg6VIPmIj5aQ2x",
+  "dataset": "gpqa",
+  "ordinal": 62,
+  "variant": "perturbed",
+  "conversation_id": "062::gpqa__recCg6VIPmIj5aQ2x::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "eb6aa5a259a309281d2e37a2dbea03bffa84df46154b69ab7869d7c542511d9f",
+  "semantic_condition_id": "fd7c31723c69f7e505163a083135f1b39ffa7be40a0ef94c28b5210e9ed3d5e2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Interpret the chemical-shift change as if it came from an infrared absorption spectrum rather than proton NMR.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What additional clues do that assignment, a hydrocarbon feed, 80 C, and 20 bar provide about the reaction class?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify the process after replacing the hydrocarbon feed by a compound containing only carbon and chlorine.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the stoichiometric reagents added in small amounts rather than the catalyst and ligand compounds.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the stated 20 bar pressure to distinguish the proposed added-compound family from traditional high-pressure systems.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Locate the principal elements in the proposed added compounds in the periodic table and classify each as metal or non-metal.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the most likely added-compound system and explain how the pressure supports it.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Identify the evidential assumptions and the direct measurement that would best test the inferred additive class.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Compare the proposed system with traditional unmodified cobalt hydroformylation in pressure and auxiliary-compound requirements.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final additive classification with representative element and compound families.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

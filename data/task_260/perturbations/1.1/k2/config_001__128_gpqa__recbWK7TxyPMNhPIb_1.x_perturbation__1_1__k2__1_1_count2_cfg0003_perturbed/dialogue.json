@@ -1,0 +1,49 @@
+{
+  "release_task_index": 260,
+  "task_id": "gpqa__recbWK7TxyPMNhPIb",
+  "dataset": "gpqa",
+  "ordinal": 128,
+  "variant": "perturbed",
+  "conversation_id": "128::gpqa__recbWK7TxyPMNhPIb::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "18b539c1714ec219cf02f72559e972f9caf456db1889daf438ba21ef72762355",
+  "semantic_condition_id": "fcddb270b258c4ed48932acf7be5b8225309d9a906b3a64430c92b9a99b86cf7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A passage describes Wnt3a binding Frizzled and LRP5/6, followed by stabilization of beta-catenin and its movement into the nucleus. Which branch of Wnt signaling does that sequence describe?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat Wnt3a as either a cytosolic DNA polymerase or a transmembrane receptor rather than as a secreted glycoprotein ligand. How would that classify its molecular role?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "After pathway activation, what happens to hemoglobin in the cytoplasm and nucleus? In particular, does hemoglobin bind DNA directly, or does it act with DNA-binding transcription factors?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the accurate pathway descriptors into one statement that covers the ligand class, beta-catenin stabilization and accumulation, nuclear entry, and transcriptional role.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the statement against the common errors in the passage: calcium release as the defining canonical output, direct DNA binding by beta-catenin, and describing Wnt3a as either a transmembrane receptor or a non-canonical ligand.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the final set of correct descriptors and explain how TCF/LEF provides sequence-specific DNA binding in the nucleus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

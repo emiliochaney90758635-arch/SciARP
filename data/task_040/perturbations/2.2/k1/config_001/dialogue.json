@@ -1,0 +1,35 @@
+{
+  "release_task_index": 40,
+  "task_id": "040-capsule010",
+  "source_id": "bix-13-q5",
+  "dataset": "bixbench",
+  "ordinal": 40,
+  "variant": "perturbed",
+  "conversation_id": "040::040-capsule010::2.2::perturbed",
+  "condition_label": "2.2.k1",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 1,
+  "dialogue_sha256": "f3ba8cb4bd51b26aa8fceaedeb5ebf6b2ae496f39e6d85b916a5a1e652ab5313",
+  "semantic_condition_id": "004a9ffb0f93219bc1f9a258249c3ccc092b44ef8d899667b6e0a9291ea6cfb2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Sets and comparison direction\n\nThe archived DESeq2 model uses:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nwith JBX1 as the reference. Its three contrasts are Strain 97 versus 1, Strain 98 versus 1, and Strain 99 versus 1. These correspond to the single mutants JBX97 and JBX98 and the double mutant JBX99.\n\nDefine \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05` in the respective contrasts. No fold-change threshold is used. Reversing a two-sided contrast would change the sign of `log2FoldChange` but not membership under this p-value-only rule.\n\n## Venn regions\n\n| Mutually exclusive region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nApply the set operation stated in the task directly to the seven mutually exclusive rows, then sum only the retained rows.\n\n# Single-Mutant Responses Absent From the Quorum-Sensing Double Mutant\n\n**Authors:** Helene V. Sørensen, Pranav R. Kulkarni, Marta G. Silva, and Jonathan E. Pike\n\n**Abstract**\n\n**Background:** Differential-expression signals present in either single quorum-sensing mutant but absent from the double mutant may identify compensatory or genotype-specific regulation. **Methods:** Counts from JBX97, JBX98, JBX99, and JBX1 were analyzed by DESeq2 with replicate, strain, and medium in the design. JBX1 was the reference, and significant GeneIDs were selected by Benjamini–Hochberg adjusted \\(p<0.05\\) without an effect-size cutoff. We formed the union of the two single-mutant sets and removed every GeneID significant in JBX99. **Results:** The resulting single-mutant union-minus-double-mutant set contained 512 GeneIDs. Functional annotation indicated enrichment for transport and carbon-acquisition pathways. **Conclusions:** Several hundred differential-expression signals detected in at least one single mutant were absent from the double-mutant response.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the JBX1 reference direction, the three mutant comparisons, and the common adjusted-p-value rule used to define each gene set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate 'significant in at least one single mutant but not in the double mutant' into a set operation and identify the disjoint Venn regions it retains.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Sum those retained regions. How many genes satisfy the condition?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

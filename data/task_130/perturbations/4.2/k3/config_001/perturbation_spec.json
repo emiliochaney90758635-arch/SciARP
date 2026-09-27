@@ -1,0 +1,42 @@
+{
+  "task_index": 130,
+  "task_id": "130-capsule036",
+  "subclass": "4.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c8fe10daa55e6642ed101d192918d60e94ac8fd4d547b6a95633a7fd7780d470",
+  "source_base_evidence_sha256": "5007ffc73a1dc5573dbcf635ff1b3fec773a1967467b8060a0f82288993520cb",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Analysis lead changes coefficient.",
+      "consumers": [
+        "T2",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Supervisor independently changes pathway release.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Lab head independently changes overlap count.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "The analysis lead requires shrinking the intercept instead of `condition[T.WT]`.",
+    "T4": "The supervisor independently requires a revised 72-member pathway release.",
+    "T5": "The lab head independently requires reporting 30 overlapping genes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

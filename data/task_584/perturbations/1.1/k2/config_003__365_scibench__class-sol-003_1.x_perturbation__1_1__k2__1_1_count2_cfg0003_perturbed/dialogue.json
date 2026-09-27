@@ -1,0 +1,49 @@
+{
+  "release_task_index": 584,
+  "task_id": "scibench__class-sol-003",
+  "dataset": "scibench",
+  "ordinal": 365,
+  "variant": "perturbed",
+  "conversation_id": "365::scibench__class-sol-003::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "221d5c35a705b8ccdc88f7ef1153bf41bc1fbef9160c64ddd537b2f1df50a0a7",
+  "semantic_condition_id": "042e0dbb09822822e16a96080c0a6d9600b2b0c3702482448c02a5470f98aaf9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe a hyperbolic Earth-to-Mars flyby orbit and relate its travel time to that orbit's period.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the Hohmann orbital inclination and convert it to days, retaining the stated Mars-Sun radius.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final value in the units used above and include a brief derivation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

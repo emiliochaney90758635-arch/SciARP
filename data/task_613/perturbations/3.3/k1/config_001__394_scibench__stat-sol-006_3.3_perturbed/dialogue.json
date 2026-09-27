@@ -1,0 +1,49 @@
+{
+  "release_task_index": 613,
+  "task_id": "scibench__stat-sol-006",
+  "dataset": "scibench",
+  "ordinal": 394,
+  "variant": "perturbed",
+  "conversation_id": "394::scibench__stat-sol-006::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "49de2c8b8803055372eda21493798c1e844f1f108f041166f62466e8cd1fb80e",
+  "semantic_condition_id": "f94d4c7fb544909d7dddbab9bed2cc05d0c124cb09b7eac970c24f00eb957ff0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Cards are drawn without replacement from a 52-card deck containing 13 spades. Translate the event 'the third spade appears on draw six' into conditions on the first five draws and the sixth draw.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Describe a combinatorial spade-position model for this event and identify the total number of ways to place the 13 spades among 52 draw positions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Model the first six draws as independent Bernoulli trials with constant spade probability one quarter, and count favorable outcomes under that model.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the exact probability from those counts and evaluate it to three decimal places.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result independently as P(exactly two spades in the first five) times P(the sixth card is a spade given that event).",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the exact combinatorial expression, decimal probability, and event interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

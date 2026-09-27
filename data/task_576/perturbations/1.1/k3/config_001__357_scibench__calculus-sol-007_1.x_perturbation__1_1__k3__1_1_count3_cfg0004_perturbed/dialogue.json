@@ -1,0 +1,59 @@
+{
+  "release_task_index": 576,
+  "task_id": "scibench__calculus-sol-007",
+  "dataset": "scibench",
+  "ordinal": 357,
+  "variant": "perturbed",
+  "conversation_id": "357::scibench__calculus-sol-007::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "9e7a0e0d9e84f7cb695de0f40a2092e35b52ab0b13d075cd660083c43a09e038",
+  "semantic_condition_id": "2b5f8451e0b38415215c4204fb5309206a52eff8037da59b16d186bf507773cc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Estimate the integral of f(x,y)=x-3y^2 over R=[0,2]x[1,2] using the Midpoint Rule with m=n=2. What are the cell widths in x and y and the area of each cell?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "List the two equal x-subintervals and two equal y-subintervals, and identify the resulting four rectangular cells.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find the matrix eigenvalues of all four rectangular cells and give their dimensions and area, leaving the integrand evaluations for the next step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the matrix determinant f(x,y)=x-3y^2 at the midpoint coordinates you found. Give the values as exact fractions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "List the sign and magnitude of each sample value, note whether the signs agree, and add the signed values before applying the area factor.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Multiply the combined sample quantity from that calculation by the cell area. Give the resulting Midpoint Rule estimate as an exact fraction and a decimal.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What does the sign of the weighted sample contribution tell you about the integral estimate? Explain it using the values already obtained.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the Fourier transform spectrum for the integral of x-3y^2 over R in exact and decimal form, using the sample calculation and area factor.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes a 5% probability cutoff from 0.05 to 5."
+  ],
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "configured_evidence_sha256": "073b0d2d3aed049eabd01de2305f98bb96fc5f5eeea17375a86bbf806f88392d",
+  "evidence_unchanged": true
+}

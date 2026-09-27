@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "perturbed",
+  "conversation_id": "390::scibench__stat-sol-001::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f2281251eb4accd9511b2b31b980a50ebba9202dc5ea1496c83bafeb95b5e007",
+  "semantic_condition_id": "6fc662d31fe99bad6c8e1e5a0dcccda9bd88226dccb2c9e7aa62be978180868b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat every different dealing order of the same 13 card identities as a distinct hand and use ordered sampling without replacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the number of distinct hands in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand that expression into factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

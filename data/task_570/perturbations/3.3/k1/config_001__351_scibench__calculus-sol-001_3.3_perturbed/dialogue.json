@@ -1,0 +1,59 @@
+{
+  "release_task_index": 570,
+  "task_id": "scibench__calculus-sol-001",
+  "dataset": "scibench",
+  "ordinal": 351,
+  "variant": "perturbed",
+  "conversation_id": "351::scibench__calculus-sol-001::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "388b27416220f16e18891fd05dd1d1b69c52fc6857ccb548369948e00db9c72c",
+  "semantic_condition_id": "4d84b735435e9f029db4bc9a7d114063c4fecf4e09dfe84dedb53b88e72c39e5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cardioid r=1+sin(theta), identify the cusp and explain why 0<=theta<=2pi traces the curve exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat x=theta and y=r(theta), and use the Cartesian graph formula integral sqrt(1+(dr/dtheta)^2)dtheta as the sole method for the target curve.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Simplify the integrand using trigonometric identities and state where an absolute value enters.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use u=theta/2+pi/4 to transform the integral and determine the new limits.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the resulting absolute-value integral, splitting the interval wherever the sign changes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two pieces and the transformed prefactor, keeping the contributions explicit for a final check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify that the sign split and symmetry are consistent with a nonnegative arc-length integrand over the full curve.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the total length of the cardioid.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

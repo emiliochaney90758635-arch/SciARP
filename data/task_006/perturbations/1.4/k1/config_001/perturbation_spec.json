@@ -1,0 +1,23 @@
+{
+  "task_id": "006-capsule003",
+  "subclass": "1.4",
+  "injection_count": 1,
+  "root_injections": [
+    "Omits the common row-retention conditions."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "configured_evidence_sha256": "51250b7f8a0703a2e9fe040a2e674dd72b75a15a70f5e64d2963423366b974ec",
+  "evidence_unchanged": true
+}

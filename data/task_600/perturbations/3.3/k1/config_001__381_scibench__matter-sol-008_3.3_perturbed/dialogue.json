@@ -1,0 +1,49 @@
+{
+  "release_task_index": 600,
+  "task_id": "scibench__matter-sol-008",
+  "dataset": "scibench",
+  "ordinal": 381,
+  "variant": "perturbed",
+  "conversation_id": "381::scibench__matter-sol-008::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "36fca0634b126c98354fbbeb91e65579ea3b9156fb7d2048d35a341f53fc6e8a",
+  "semantic_condition_id": "c1d902fea96799befe95f452c9ca88f716152d8433c696ccf6a6ab55235de868",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify the hydrogen emission transition corresponding to n=2 to n=1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the Rydberg wavenumber expression using R_H=109677 cm^-1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the upper and lower levels identified at the outset and simplify the dimensionless factor.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Model the electron as a particle in a one-dimensional box of length two Bohr radii and use the n=2 to n=1 box-level difference.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that emission releases positive photon energy and that the wavenumber is three quarters of R_H.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate and report the wavenumber in cm^-1 with the series classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

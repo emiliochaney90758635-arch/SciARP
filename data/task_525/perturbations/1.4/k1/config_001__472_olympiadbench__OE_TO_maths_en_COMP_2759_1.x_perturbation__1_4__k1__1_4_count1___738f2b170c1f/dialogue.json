@@ -1,0 +1,59 @@
+{
+  "release_task_index": 525,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2759",
+  "dataset": "olympiadbench",
+  "ordinal": 472,
+  "variant": "perturbed",
+  "conversation_id": "472::olympiadbench__OE_TO_maths_en_COMP_2759::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "fc3499a0892a7e1d9cd8699e2e9cdf03fdbaf90f9c1a59d29f1c55f124a1818b",
+  "semantic_condition_id": "4cae5669c1b63911be9ecae03346739bdd00a2cf864775fef8f7737f2783fda3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a fixed integer n >= 4, let S_n be the set of distinct real roots of all quadratics ax^2+bx+c whose coefficients a,b,c satisfy a+b+c=n, and let a_n be the product of the elements of S_n. Why can no element of S_n be zero, and why does x in S_n imply that 1/x is also in S_n?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How does the reciprocal symmetry simplify the product a_n? Identify the fixed points of x -> 1/x and determine which of them could be a root of a quadratic with positive coefficients, without yet deciding for which n it occurs.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Show that every nonfixed element of S_n can be paired with a distinct reciprocal and determine the contribution of each pair to a_n. Why does this leave only the possible presence of -1 to determine the product?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For which integers n >= 4 does -1 belong to S_n? Prove both directions and give an admissible quadratic when membership is possible.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using that classification, derive a formula for a_n according to the parity of n.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the value of a_n/a_{n+1} for each n from 4 through 2022? Explain how the alternating formula for a_n determines it.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How many terms are in a_4/a_5 + a_5/a_6 + ... + a_2022/a_2023, and what does that imply for the total?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final value of the sum and summarize the reciprocal-pairing and parity argument that leads to it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

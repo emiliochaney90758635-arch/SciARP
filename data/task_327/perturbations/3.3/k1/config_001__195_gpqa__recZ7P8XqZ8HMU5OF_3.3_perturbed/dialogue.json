@@ -1,0 +1,49 @@
+{
+  "release_task_index": 327,
+  "task_id": "gpqa__recZ7P8XqZ8HMU5OF",
+  "dataset": "gpqa",
+  "ordinal": 195,
+  "variant": "perturbed",
+  "conversation_id": "195::gpqa__recZ7P8XqZ8HMU5OF::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "11257d9b12ae5e7a6c50e1fabb2f50be4d993876f566245db4e9c1ce40cf658f",
+  "semantic_condition_id": "511bc52644062ef0405b8ee1699449f94f54980949185bd2fef10a62a0d0eca8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=sqrt(1/15)|phi_1>+sqrt(2/15)|phi_2>+(2/sqrt(15))|phi_3>+(4/sqrt(15))|phi_4> in an orthonormal basis, calculate each coefficient magnitude squared and <psi|psi>.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given H|phi_n>=nE_0|phi_n> for n=1,2,3,4, list the energy paired with each basis state.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those weights and eigenvalues to calculate the unnormalized numerator <psi|H|psi>, using the norm found above for the subsequent expectation value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the raw matrix element <psi|H|psi> as the mean energy without dividing by the nonunit state norm.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by normalizing the coefficient probabilities and taking their energy-weighted sum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the average energy in units of E_0.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

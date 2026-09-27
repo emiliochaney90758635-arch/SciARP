@@ -1,0 +1,35 @@
+{
+  "release_task_index": 8,
+  "task_id": "008-capsule003",
+  "source_id": "bixbench-m2-008-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 8,
+  "variant": "perturbed",
+  "conversation_id": "008::008-capsule003::1.4.k1::lane_a_manual",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "b71115051561872c28abfc7a842d2cec1de0a087c3c9fbad7a35712e49b3e0c8",
+  "semantic_condition_id": "6c2fd7233f34d57c1d87574632b65def4affb890102ae75b88eb37ab0fe94388",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Numerator and denominator\n\nFor final blood relative to baseline blood, the result-row filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Quantity | Value | Statistical unit |\n|---|---:|---|\n| Filtered rows, \\(k\\) | 846 | unique GeneIDs in the fitted contrast |\n| Complete contrast rows, \\(n\\) | 21,251 | unique GeneIDs in the fitted contrast |\n| Observed proportion, \\(\\hat p=k/n\\) | 0.0398098913 | filtered fraction of fitted-result GeneIDs |\n\nThe 25,402 rows in the earlier expression matrix are not the denominator: 4,151 of them do not occur in the fitted contrast result.\n\n## Wilson score definition\n\nFor a 95% Wilson score interval, use:\n\n\\[\nz=1.9599639845,\\qquad \\hat p=\\frac{k}{n},\n\\]\n\n\\[\nC=\\frac{\\hat p+z^2/(2n)}{1+z^2/n},\n\\]\n\n\\[\nH=\\frac{z}{1+z^2/n}\n\\sqrt{\\frac{\\hat p(1-\\hat p)}{n}+\\frac{z^2}{4n^2}},\n\\]\n\nand the interval \\([C-H,C+H]\\).\n\n## Interpretation boundary\n\nThis is a descriptive interval over the set of analyzable GeneIDs. Gene-level outcomes are dependent, and the upstream analysis used rounded pseudo-counts derived from normalized values. The interval does not represent biological replicate-to-replicate sampling uncertainty and does not validate formal DESeq2 FDR control.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the numerator and denominator without distinguishing fitted-contrast rows from rows appearing only in the earlier expression matrix.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use those counts to calculate the 95% Wilson score interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the rounded descriptive interval and state its interpretation boundary.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

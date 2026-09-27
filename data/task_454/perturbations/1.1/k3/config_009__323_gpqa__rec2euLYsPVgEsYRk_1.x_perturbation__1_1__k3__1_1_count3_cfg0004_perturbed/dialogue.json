@@ -1,0 +1,69 @@
+{
+  "release_task_index": 454,
+  "task_id": "gpqa__rec2euLYsPVgEsYRk",
+  "dataset": "gpqa",
+  "ordinal": 323,
+  "variant": "perturbed",
+  "conversation_id": "323::gpqa__rec2euLYsPVgEsYRk::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "9845dc25081a528a6a192176a7c1fe7463b92f91b8d88a34b1a43e5230361d99",
+  "semantic_condition_id": "33d0234c34464db1c3c221af91e298ea1306e173b494c18b68c8dea06c813a04",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "To diagnose several abnormal plasmid digests, begin with the controls. An uncut sample of the unmodified plasmid shows the expected plasmid forms, while an EcoRI/BamHI digest of that plasmid gives the expected linearized backbone and stuffer fragment on a properly prepared ethidium-bromide 1% agarose gel with a 1 kb-plus ladder. What do these lanes establish about the plasmid copy-number assay?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given that the unmodified plasmid digests normally, how plausible is contamination of EcoRI, BamHI, or the shared CutSmart buffer as the cause of the failed clone digests? Explain your reasoning.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now consider three independently isolated DH5alpha subclones. Ligation and transformation were clean, ampicillin selection was appropriate, cultures were not overgrown, DNA concentrations were measured by NanoDrop, and each digest contained 1 microgram of DNA with EcoRI, BamHI, and CutSmart buffer. Clones 1 and 2 smear, whereas clone 3 gives several unexpected discrete bands. What kind of plasmid RNA-splicing defect does this clone-to-clone heterogeneity suggest?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Could internal promoter elements in the insert account for two smears and a different multiband pattern across independent clones? Compare the expected reproducibility with the observed variation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combining the normal controls with the heterogeneous clone patterns, what preliminary diagnosis best explains where and how the plasmids changed?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Compare the gel patterns expected from host-dependent plasmid rearrangement, fixed internal restriction sites, contamination of shared digest reagents by a nonspecific nuclease, and nuclease damage confined to individual minipreps. Which best matches the observations?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which single diagnosis is best supported by the controls and clone patterns, and what uncertainty remains?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confident can we be without clone sequencing, rescue in a different host, or an independent structural assay? State the diagnosis with appropriate qualification.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Design a follow-up using clone sequencing and propagation in a more stable host. What result would distinguish host-dependent instability from fixed internal restriction sites?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give your final diagnosis and the most direct validation experiment.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "subclass": "1.2",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "rescales row counts as thousands",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "maps workbook count to record count",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    }
+  ]
+}

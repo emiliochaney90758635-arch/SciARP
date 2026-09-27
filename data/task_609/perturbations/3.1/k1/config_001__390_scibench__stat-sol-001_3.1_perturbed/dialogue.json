@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "perturbed",
+  "conversation_id": "390::scibench__stat-sol-001::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5b5c937bd68ac2a3b5a0099295391bdf19083cdc957317aaf86046ddc83cff32",
+  "semantic_condition_id": "529211d775d91b40fca7364f6fc9e1d32867c0e80a42d782d7d19917b3c0c47b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bridge hand contains 13 cards selected from a standard 52-card deck. Does the hand depend on dealing order, and which counting method applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the number of distinct hands in compact combinatorial notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand that expression into factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the deck size by 54 cards and evaluate the number of 13-card hands under the existing method.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

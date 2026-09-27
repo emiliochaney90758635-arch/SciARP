@@ -1,0 +1,54 @@
+{
+  "release_task_index": 442,
+  "task_id": "gpqa__recyrk6XBVwugG5u8",
+  "dataset": "gpqa",
+  "ordinal": 311,
+  "variant": "perturbed",
+  "conversation_id": "311::gpqa__recyrk6XBVwugG5u8::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "055fda6712115f28f7200450553ae1b913dc7d24d5ad77eb474585075afeca8f",
+  "semantic_condition_id": "519d041b09fdf4e49bb54b7efa6af04d1eb9591cac7050de09ad3b297b3f8946",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two circular, coplanar planets, derive a relation between their planetary magnetic moments and semimajor axes using the symbols b1,b2,a1,a2, with b1=0.2 for the first planet.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a second planet of radius 2.5 Earth radii around a star of radius 1.5 solar radii, compute k2=Rp2/Rstar using R_Earth/R_Sun=0.00916.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a circular orbit, what is the largest b2 that still permits both a transit and an occultation when a grazing overlap counts?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that boundary and the impact-parameter relation to find the maximum a2/a1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the maximum semimajor-axis ratio and the first planet's 3-day period, calculate the second planet's tidal circularization time while applying the orbital period-scaling relation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Repeat the estimate in the point-planet approximation b2,max=1 and compare it with the finite-radius grazing result.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the grazing boundary, maximum semimajor-axis ratio, period scaling, and both period estimates.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

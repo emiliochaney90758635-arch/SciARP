@@ -1,0 +1,54 @@
+{
+  "release_task_index": 479,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2091",
+  "dataset": "olympiadbench",
+  "ordinal": 426,
+  "variant": "perturbed",
+  "conversation_id": "426::olympiadbench__OE_TO_maths_en_COMP_2091::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "5290317fd3c95cdfb7703cf72127ff49703381b2f1df42a8901527eb9fa83dc9",
+  "semantic_condition_id": "0a48f4fb0221481b7217ac7d0d21b3e97b69f629987e26f673cb51ddf9febeb8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let a family contain triples whose coordinate columns are separately pairwise distinct, but do not assume that each row sums to n. What is the total coordinate sum in terms of k and n?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What is the smallest possible sum of k distinct nonnegative integers?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that bound to the coordinate collections under the admissibility condition established in the first turn, and derive the resulting upper bound on k in terms of n.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Construct an explicit family that attains the upper bound and satisfies the distinct-coordinate conditions, without choosing a residue class for n.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the triples in that construction and compare the count with the upper bound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Adapt the construction to n congruent to 1 and 2 modulo 3, checking the distinct-coordinate conditions in each case.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the upper bound and constructions to determine N(n) for every n>=2.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

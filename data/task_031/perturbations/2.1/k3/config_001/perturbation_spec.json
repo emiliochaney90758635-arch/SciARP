@@ -1,0 +1,28 @@
+{
+  "task_id": "031-capsule009",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Derives patients_seen from the maximum-severity event.",
+    "Derives 1-50 from event-row count.",
+    "Substitutes the lower-tail probability."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "event-row provenance premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "event-count category premise"
+    },
+    {
+      "turn_id": "T6",
+      "operation": "append",
+      "object": "lower-tail premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,25 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "4.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T5",
+      "root": "Causal uncertainty is suppressed in the conclusion.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T5": "Count the positive significant genes and state without qualification that ASXL1 mutation directly caused every observed expression increase; omit the observational group-contrast limitation."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

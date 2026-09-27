@@ -1,0 +1,54 @@
+{
+  "release_task_index": 235,
+  "task_id": "gpqa__recQEFX6mtMj6XQvA",
+  "dataset": "gpqa",
+  "ordinal": 103,
+  "variant": "perturbed",
+  "conversation_id": "103::gpqa__recQEFX6mtMj6XQvA::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "060188c6ec917478d2ee930aac42fcfcde9b1db671624b1380555d8cded2705c",
+  "semantic_condition_id": "785332da5aa4fa9726c268fd32fe1e5a9d3bc48bfee4f8c5332b6d5d275e31a7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a uniform self-gravitating sphere of mass M and radius R, how does the gravitational self-energy scale? Numerical profile factors may be omitted.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What continuum-mechanics relation converts this self-energy into an inward bulk-pressure scale? State it before applying it.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using V=4 pi M^3/3 and pressure as the magnitude of the energy change per volume change, express dE/dV through derivatives with respect to R and state how dV/dR scales.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the preceding scalings to obtain the M and R dependence of the resulting bulk quantity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a relativistic-electron cloud in equilibrium, what M and R dependence must the balancing ground-state pressure have?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions of the pressure scaling obtained from the energy or force model adopted above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final pressure scaling, omitting only numerical profile factors.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

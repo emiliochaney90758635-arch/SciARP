@@ -1,0 +1,54 @@
+{
+  "release_task_index": 557,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3007",
+  "dataset": "olympiadbench",
+  "ordinal": 504,
+  "variant": "perturbed",
+  "conversation_id": "504::olympiadbench__OE_TO_maths_en_COMP_3007::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "94bb63d60cabd74c21cb202cb2aafcf09ffbcaa44929a2debb66392a5abe13d6",
+  "semantic_condition_id": "d67d6672b512644b739f8f17fbeeb64805dbb949a7030a1e46cd631f0e3c55e8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After erasing every 0 and 5 from the integers 1 through 2019, count the occurrences of each product-relevant digit, including the extra twenty thousands-place 2s from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that deletion rule, verify the common multiplicity of the ordinary contributing digits and determine the extra thousands-place contribution from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those multiplicities to write the product compactly, ignore neutral factors, and reduce the repeated common base modulo 1000.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the modulo-125 branch, verify coprimality and state the applicable Euler exponent reduction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply Fermat's little theorem at modulus 125 and reduce exponents modulo 124.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Reduce the same product modulo 8.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two congruences by the Chinese remainder theorem and report the remainder modulo 1000.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

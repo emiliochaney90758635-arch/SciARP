@@ -1,0 +1,54 @@
+{
+  "release_task_index": 310,
+  "task_id": "gpqa__recRVn0fyFjTbKdq4",
+  "dataset": "gpqa",
+  "ordinal": 178,
+  "variant": "perturbed",
+  "conversation_id": "178::gpqa__recRVn0fyFjTbKdq4::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "0a2b5f05f7ead6f08121c86a1e4ed0bebd305a93cdb3fb3c5f513b774c8fbae9",
+  "semantic_condition_id": "ac48eee94a53eae89c91930ab64fd0c3ef28dbaa394afe479bf63cd5f703bf4f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "TESS has found a five-day transit signal around a Sun-like star, but the candidate's radius has not been reported. How does its radius compare with Jupiter's, and what broad class of companion could produce a transit of this size?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Suppose we begin follow-up spectroscopy. What produces periodic shifts in the centroids of the star's spectral lines, and what produces the Rossiter-McLaughlin signal during transit? Explain how each bears on the existence of an orbiting companion.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Could a reflected-light spectrum modulated at the five-day orbital period provide evidence for the same close-in companion? Briefly explain what would make that signal persuasive.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Another time series shows periodic changes in the FWHM of the stellar spectral lines rather than in their centroids. What physical effects usually drive that behavior, and can it by itself confirm the candidate?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Taking these observations together, which follow-up signature is not, on its own, confirmation of the planet? Explain the distinction that makes it less decisive.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "As a consistency check, contrast periodic changes in line centroid and line FWHM. What additional measurement would be needed before assigning the FWHM periodicity to orbital motion?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "In one sentence, state which signal does not confirm the candidate by itself and give the observational reason.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

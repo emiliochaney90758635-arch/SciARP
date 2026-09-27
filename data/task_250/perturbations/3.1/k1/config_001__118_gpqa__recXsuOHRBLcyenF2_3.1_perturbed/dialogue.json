@@ -1,0 +1,54 @@
+{
+  "release_task_index": 250,
+  "task_id": "gpqa__recXsuOHRBLcyenF2",
+  "dataset": "gpqa",
+  "ordinal": 118,
+  "variant": "perturbed",
+  "conversation_id": "118::gpqa__recXsuOHRBLcyenF2::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "51b6b6501125c38fb41adfdac1b432e81f1ef6912d7d7fc16886b93be2444f36",
+  "semantic_condition_id": "518061758520708ebd3d1696a60dadc036ca7b64584036ecbab4524370b0e650",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After spatial discretization of a higher-dimensional heat equation, suppose exp(hA) is replaced by a rational approximation R(A)=P(A)/Q(A). What algebraic structure of this evaluation must be exposed before its work can be split across processors?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After factoring Q(z), which algebraic decomposition rewrites R(z) as a sum of simple terms associated with its linear factors?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the complex roots of Q by themselves, without a partial-fraction decomposition or coefficients, to construct the independent shifted systems and explain why they run concurrently.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Distinguish the decomposition step from stability analysis, boundary-condition assumptions, and merely locating the roots of Q.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Describe how a sequential rational-operator evaluation becomes a parallel schedule of independent solves.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "If some poles occur as complex-conjugate pairs, does that change the source of parallelism or only the arithmetic used for the independent terms?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the key algebraic mechanism for the sequential-to-parallel conversion and explain it briefly.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

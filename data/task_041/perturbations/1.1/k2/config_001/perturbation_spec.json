@@ -1,0 +1,23 @@
+{
+  "subclass": "1.1",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "redefines Reference as variant",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "redefines missing zygosity as non-reference",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    }
+  ]
+}

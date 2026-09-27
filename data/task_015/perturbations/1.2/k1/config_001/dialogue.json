@@ -1,0 +1,40 @@
+{
+  "release_task_index": 15,
+  "task_id": "015-capsule005",
+  "source_id": "bix-6-q3",
+  "dataset": "bixbench",
+  "ordinal": 15,
+  "variant": "perturbed",
+  "conversation_id": "015::015-capsule005::1.2.k1::lane_a_manual",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "6256cf66e1862a78ce8e2874156dda1468e33f05c119ef4c844985d6b659c357",
+  "semantic_condition_id": "53eb9648509fc430e93cec0ef59f538980fd9da10bd1a8f4e825816053ff65de",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Common three-round workflow\n\nFor each chronic round, the two replicate MAGeCK p-values are combined row-wise:\n\n```python\nround_min = min(round_S1_pvalue, round_S2_pvalue)\ncandidate = round_min < 0.05\n```\n\nCandidate RefSeq IDs are mapped to human gene symbols, and Reactome over-representation analysis uses the mapped symbols from all measured RefSeq IDs as background. A pathway result is retained under the common criterion:\n\n```text\nAdjusted P-value < 0.05\n```\n\n## Duplicate-source rule\n\nThe same Reactome GMT is loaded twice:\n\n```text\nReactomePathways.gmt\ngs_ind_2 = dictionary read from ReactomePathways.gmt\n```\n\nConsequently, a term can appear once under each source label. Such rows are collapsed by canonical Reactome ID and term before any cross-round set operation.\n\n## Significant output and canonical sets\n\n| Round | Raw significant rows | Canonical Reactome ID | Term | Adjusted P-value |\n|---:|---:|---|---|---:|\n| 1 | 0 | — | — | — |\n| 2 | 2 duplicate pairs | R-HSA-392154 | Nitric oxide stimulates guanylate cyclase | 0.032708 |\n| 2 | 2 duplicate pairs | R-HSA-418457 | cGMP effects | 0.032708 |\n| 3 | 0 | — | — | — |\n\nAfter duplicate collapsing:\n\n```text\nS_round1 = {}\nS_round2 = {R-HSA-392154, R-HSA-418457}\nS_round3 = {}\n```\n\n“In every round” denotes the strict three-way intersection:\n\n\\[\nS_{\\text{round1}}\\cap S_{\\text{round2}}\\cap S_{\\text{round3}}.\n\\]\n\n## Interpretation boundary\n\nThe upstream `min(S1,S2) < 0.05` rule does not correct for selecting the smaller of two replicate p-values. These sets reproduce the archived exploratory candidate workflow and are not confirmatory replicate-combined inference.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nInterpret each 0.05 probability cutoff as 5 on the decimal scale.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which rows arise from duplicate loading of the same Reactome GMT?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Collapse those duplicates and state the unique significant-pathway set for each round.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What is the size of the strict three-way intersection, and what exploratory-analysis caveat applies?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

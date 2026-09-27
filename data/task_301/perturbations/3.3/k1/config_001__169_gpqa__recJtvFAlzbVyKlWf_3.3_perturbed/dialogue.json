@@ -1,0 +1,54 @@
+{
+  "release_task_index": 301,
+  "task_id": "gpqa__recJtvFAlzbVyKlWf",
+  "dataset": "gpqa",
+  "ordinal": 169,
+  "variant": "perturbed",
+  "conversation_id": "169::gpqa__recJtvFAlzbVyKlWf::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "5d859474dbd3df535ab9dd4ed15db9bff68d81eff10155da455805da4d031830",
+  "semantic_condition_id": "3f699ffa3f52e4d699397ed08062c8df661429bbd09d456ba9d5fb003af8bb09",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the supplied 5'-to-3' insert, identify a suitable forward-primer annealing segment at its 5' end and the reverse-complement annealing segment from its 3' end.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which enzymes occur both in the freezer inventory (ApaI, BamHI, BstNI, HindIII, KpnI, ScaI) and in the ordered MCS SmaI--HindIII--BglII--KpnI--PstI--BamHI--EcoRI downstream of the CMV promoter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Screen the complete supplied sequence for the candidate features identified in the current workflow. Which candidate must be excluded because its defining pattern occurs internally?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Ignore the sites' positions in the vector map: alphabetize the two remaining enzyme names, put the first on the forward primer, and put the second on the reverse primer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Build the complete forward and reverse designs, including protective bases, the assigned features, and the endpoint-derived segments.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed pair against the material supplied earlier and explain how their relative placement supports directionality.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final pair and summarize the evidence for directional insertion.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

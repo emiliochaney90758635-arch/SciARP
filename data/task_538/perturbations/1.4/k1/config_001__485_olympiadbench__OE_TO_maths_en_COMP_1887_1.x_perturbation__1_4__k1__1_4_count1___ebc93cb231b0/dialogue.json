@@ -1,0 +1,59 @@
+{
+  "release_task_index": 538,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1887",
+  "dataset": "olympiadbench",
+  "ordinal": 485,
+  "variant": "perturbed",
+  "conversation_id": "485::olympiadbench__OE_TO_maths_en_COMP_1887::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "e9b58e38be845c04f641174c25671ea388c1fd12b5f5072249d403342951fa5c",
+  "semantic_condition_id": "5f1e22336bd87b6439f228b15619de2727a5845aa4f0cecf9a5073f04dac6c4e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let S_2(m) be the number of 1s in the binary expansion of m. Compute S_2(2020) and prove that 2020 cannot be written as a sum of fewer than S_2(2020) powers of two.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Denote the binary digit sum obtained above by s and use it in the payoff bounds.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze A's strategy of repeatedly choosing two equal nonzero entries. Show that all nonzero entries remain powers of two, that the strategy continues until termination, and that A secures at least s cookies.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Call a sign assignment balanced when sum epsilon_i x_i=0, and a position good when its number of balanced assignments is not divisible by 2^(s+1). Prove the initial position is good using the 2-adic valuation of C(2020,1010).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After A removes any two entries, prove B can preserve goodness without assuming the previous position was good.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Analyze both terminal conditions and prove that a terminal good position has at most s entries.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that a dominating entry gives no balanced assignments, whereas k zeros give 2^k balanced assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Combine A's lower bound and B's good-position strategy to determine the optimal payoff.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

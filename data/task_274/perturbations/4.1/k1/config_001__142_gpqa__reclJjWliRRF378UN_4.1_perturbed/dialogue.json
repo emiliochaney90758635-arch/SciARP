@@ -1,0 +1,54 @@
+{
+  "release_task_index": 274,
+  "task_id": "gpqa__reclJjWliRRF378UN",
+  "dataset": "gpqa",
+  "ordinal": 142,
+  "variant": "perturbed",
+  "conversation_id": "142::gpqa__reclJjWliRRF378UN::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "0b0496bfac6376375e56b415b5129426d091a8702765aea0b69a5184a9e00638",
+  "semantic_condition_id": "aef7c86a7baffc0d29b79d720892289de81c5703c8d1b44e2672d19681518a68",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "4,5-Dimethylcyclohex-4-ene-1,2-dicarbonitrile is in equilibrium with 2,3-dimethylbuta-1,3-diene and maleonitrile. Identify the decomposition reaction class from the structures.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Maleic anhydride is added to this mixture. Which product should it capture in a Diels–Alder reaction, and what role does maleic anhydride play in that cycloaddition?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply Le Chatelier's principle to the original equilibrium after that trapping reaction begins. Which way should the equilibrium move, and why?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Connect the identity of the trapped species directly to the increased formation of both products of the decomposition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the trapping mechanism and the extent of the rightward shift as certain, with no uncertainty from kinetics, equilibrium, reversibility, concentrations, or side reactions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What kinetic or equilibrium evidence would be needed to replace product trapping with a direct reaction between maleic anhydride and the starting dicarbonitrile?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the best-supported mechanism for the rightward shift and state the role of maleic anhydride.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

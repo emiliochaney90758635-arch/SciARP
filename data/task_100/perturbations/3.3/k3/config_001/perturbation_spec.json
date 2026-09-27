@@ -1,0 +1,62 @@
+{
+  "task_id": "100-capsule028",
+  "release_task_index": 100,
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Uses wrong family.",
+    "Inverts threshold.",
+    "Uses wrong set operator."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "eaac0ca930a220f1c290b2f3985e214c76d479d4754e79ac27e67e6e1c202bd5",
+  "configured_evidence_sha256": "eaac0ca930a220f1c290b2f3985e214c76d479d4754e79ac27e67e6e1c202bd5",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use a twelve-group eligible set that includes the visible single-strain groups 98_1:0 and 287_1:0 in place of the actual ratios 50:1 and 100:1."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Classify Area results with P > 0.05 as significant."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use the union, rather than the intersection, of the Area- and Circularity-significant sets as the set significant for both measurements."
+    }
+  ]
+}

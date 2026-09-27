@@ -1,0 +1,54 @@
+{
+  "release_task_index": 599,
+  "task_id": "scibench__matter-sol-007",
+  "dataset": "scibench",
+  "ordinal": 380,
+  "variant": "perturbed",
+  "conversation_id": "380::scibench__matter-sol-007::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d799b9d9f7e082043433e124624fa5ee14e7f0a7fbe2398e281abb9be1b9f096",
+  "semantic_condition_id": "ecb98ff0c5475470246cddecff7d4d31cd1f30e5e46a0effb67478f182610818",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the standard temperature dependence of a type-I superconductor's critical magnetic field H_c(T) in terms of H_c(0), T, and T_c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Record the supplied lead parameters: T_c=7.19 K, H_c(0)=63.9 kA/m, and applied field H=20 kA/m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At the relevant boundary, equate the applied field and the temperature-dependent field, then write the equation for the unknown boundary value.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the quadratic critical-field law with H_c(T)=H_c(0)(1-T/T_c) and isolate T/T_c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve symbolically for the requested boundary value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the solved boundary value changes as the applied field increases within this model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the boundary value numerically, report the resulting state classification, and round appropriately.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

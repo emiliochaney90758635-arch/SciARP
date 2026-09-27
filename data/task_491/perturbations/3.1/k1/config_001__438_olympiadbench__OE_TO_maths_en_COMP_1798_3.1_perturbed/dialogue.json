@@ -1,0 +1,54 @@
+{
+  "release_task_index": 491,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1798",
+  "dataset": "olympiadbench",
+  "ordinal": 438,
+  "variant": "perturbed",
+  "conversation_id": "438::olympiadbench__OE_TO_maths_en_COMP_1798::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7daef8f3efac5f16635b7f5c8747cc06d6fbf2a73d1b4e58d025dae17ac68643",
+  "semantic_condition_id": "91cdff73a9a74573175ebf3340828e55c025360746f76d6510305a7f9a8ae85e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let a,b be positive integers, D=a^2+b+3 have no prime-cube divisor, and N=ab+3b+8 be divisible by D. Compute N modulo D and express the remainder in terms of a.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the divisibility premise to derive the resulting relation between D and (a+1)^3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use prime valuations and the fact that D has no prime-cube divisor to prove the strongest lower-power divisibility consequence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the remaining valuation argument, replace the cube-free condition on D by square-freeness and derive the consequence.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the denominator introduced at the outset with the power of a+1 established by the valuation argument, and use positivity of b to restrict the possible multiple.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine D and express b in terms of a.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Find all possible positive integer values of n=N/D and exhibit a,b satisfying every condition.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

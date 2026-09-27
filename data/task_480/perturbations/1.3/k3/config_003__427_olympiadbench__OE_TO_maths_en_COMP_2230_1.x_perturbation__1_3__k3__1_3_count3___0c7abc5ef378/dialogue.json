@@ -1,0 +1,54 @@
+{
+  "release_task_index": 480,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2230",
+  "dataset": "olympiadbench",
+  "ordinal": 427,
+  "variant": "perturbed",
+  "conversation_id": "427::olympiadbench__OE_TO_maths_en_COMP_2230::1.x::perturbation__1_3__k3__1_3_count3_cfg0003::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "041e9cd7bad75cfccea46de295b358841cf198c8b662e083e45ee1830dcff358",
+  "semantic_condition_id": "3c601cb7f780f9be15dbaba8975b1d514fbb6aa08ab9f71bdecb09046367a982",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find a large dictionary of k-letter A/B strings for which no k by k grid can have every row and every row in the dictionary. Explain the obstruction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What lower bound on the guaranteed dictionary size m follows from that example?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take an arbitrary family meeting that candidate threshold. What happens if it contains an applicable uniform string?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Suppose the dictionary contains no uniform string. Define complements by swapping A with A in every position, and prove that some complementary pair must occur.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Let l and l' be complementary, and define J as the positions where l' has A and also B. Use this J to construct the grid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify directly what follows from the current construction and the requirement under discussion, citing only the information established so far.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the threshold conclusion reached after the preceding verification and the reason supporting it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

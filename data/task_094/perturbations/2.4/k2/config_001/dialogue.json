@@ -1,0 +1,35 @@
+{
+  "release_task_index": 94,
+  "task_id": "094-capsule026",
+  "source_id": "bix-37-q1",
+  "dataset": "bixbench",
+  "ordinal": 94,
+  "variant": "perturbed",
+  "conversation_id": "094::094-capsule026::2.4.k2::lane_c_manual",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "162548fce1453b4efe71375d051b2ef6b65f7a17693c476fad6ceec5f9a66911",
+  "semantic_condition_id": "30acb1f8065c4f74090e44798e83ee8aac5ffb51c76890f1ea7ca8ee4a544681",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## ENO1 proteomics record\n\nThe tumor-versus-normal proteomics table contains 3,850 protein records.\n`ENO1` occurs once in the `gene` field.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | compare |\n|---|---|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | Tumor vs Normal |\n\nThe `compare` field fixes the direction as tumor relative to normal. The\nunrounded linear abundance ratio is defined by:\n\n```text\nTumor / Normal\n= 350385456.451912 / 72896133.2946858\n```\n\n`FC` is a linear fold change, not a log2-transformed value. A ratio above 1\ndenotes higher abundance in tumor under this comparison direction.\n\n# ENO1 immunoassay batch summary\n\n## Laboratory source\n\nThe Clinical Protein Analytics Unit assayed ENO1 in paired tissue extracts\nusing a sandwich immunoassay. Each specimen was measured in duplicate; the\nvalues below are the duplicate means after dilution correction.\n\n| Pair | Normal ENO1 (ng/mg total protein) | Tumor ENO1 (ng/mg total protein) |\n|---|---:|---:|\n| A | 18.4 | 13.2 |\n| B | 21.7 | 14.8 |\n| C | 19.1 | 12.7 |\n| D | 20.3 | 15.1 |\n\n## Summary rule\n\nPool the four pair-level values within each tissue class by their arithmetic\nmean, then divide the tumor mean by the normal mean to obtain the reported\nlinear fold change.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nLocate the unique ENO1 record in the tumor-versus-normal proteomics table.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent TMT audit\n\nA tandem-mass-tag reanalysis reports ENO1 Tumor/Normal=2.73 for P06733.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExtract its original abundances and establish the tumor-over-normal ratio direction.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate ENO1's unrounded linear fold change from those abundances.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

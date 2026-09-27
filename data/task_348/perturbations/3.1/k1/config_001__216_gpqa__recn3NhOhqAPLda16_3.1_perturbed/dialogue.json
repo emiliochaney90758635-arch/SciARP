@@ -1,0 +1,54 @@
+{
+  "release_task_index": 348,
+  "task_id": "gpqa__recn3NhOhqAPLda16",
+  "dataset": "gpqa",
+  "ordinal": 216,
+  "variant": "perturbed",
+  "conversation_id": "216::gpqa__recn3NhOhqAPLda16::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b3c3e6fe03c81fa61e5ebc1c3deb30663c935a2bb9d1ce9732ae2a037077948b",
+  "semantic_condition_id": "39ec942c685672210677222012965846138096a160fae6cb291189f8a2950d1c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "When (S)-5-methoxyhexan-3-one is reduced with LAH and worked up, which stereocentres are present in the alcohol products and what stereoisomeric mixture results?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How many ideal peaks would that Reaction I mixture give by itself on normal-phase and chiral HPLC, and why?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze reduction of pentane-2,3-dione rather than pentane-2,4-dione and enumerate the product stereoisomers.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "How many ideal peaks would the Reaction II mixture give by itself on normal-phase and chiral HPLC? State which species coelute or resolve.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "After combining the completed reactions, add the component counts to obtain the total peaks on each column, stating the coelution assumptions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that no enantiomeric pair is double-counted on the achiral column and that each diastereomer remains distinct.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both final peak counts with the stereochemical accounting.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

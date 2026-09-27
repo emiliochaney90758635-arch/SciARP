@@ -1,0 +1,35 @@
+{
+  "release_task_index": 56,
+  "task_id": "056-capsule015",
+  "source_id": "bix-19-q2",
+  "dataset": "bixbench",
+  "ordinal": 56,
+  "variant": "perturbed",
+  "conversation_id": "056::056-capsule015::2.1::perturbed",
+  "condition_label": "2.1.k1",
+  "family": "2.x",
+  "subclass": "2.1",
+  "paper_subclass": "2.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b01bba9736a0cdfcc46c1c0de560b8a128eba59725bd4ffa1e24a4eb12851e99",
+  "semantic_condition_id": "d23082c0ad47ccad04a58a5630e4fb6004f29a6748abc36f1d010254eab4b48b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original NeuN counts for KD and CTRL\n\nThe hemisphere field in the original CSV is spelled `Hemispere`; the analysis renames it `Hemisphere`. Every Sample has one KD and one CTRL record, and the relevant fields contain no missing values.\n\n| Sample | Sex | KD NeuN | CTRL NeuN |\n|---:|---|---:|---:|\n| 1 | M | 221 | 237 |\n| 2 | F | 233 | 223 |\n| 3 | M | 221 | 246 |\n| 4 | F | 215 | 179 |\n| 5 | M | 216 | 198 |\n| 6 | F | 208 | 194 |\n| 7 | M | 202 | 200 |\n| 8 | F | 200 | 208 |\n\n## Effect-size definition\n\nThis task uses the equal-variance, independent-groups pooled-standard-deviation definition. The standard deviation within each group is a sample standard deviation, so the variance denominator is \\(n-1\\).\n\n\\[\ns_p=\n\\sqrt{\n\\frac{(n_{\\mathrm{KD}}-1)s_{\\mathrm{KD}}^2+\n(n_{\\mathrm{CTRL}}-1)s_{\\mathrm{CTRL}}^2}\n{n_{\\mathrm{KD}}+n_{\\mathrm{CTRL}}-2}\n}\n\\]\n\n\\[\nd=\n\\frac{\\overline{x}_{\\mathrm{KD}}-\\overline{x}_{\\mathrm{CTRL}}}\n{s_p}\n\\]\n\nThe numerator direction is fixed as `KD - CTRL`. Although the original records are paired by Sample, the standard deviation of the paired differences is not used here.\n\n# Effect-direction coding note\n\nThe contrast label `KD - CTRL` uses CTRL as the first group and KD as the second, so its numerator is \\(\\overline{x}_{CTRL}-\\overline{x}_{KD}\\).\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm separate KD and control NeuN vectors and calculate each group's sample size and mean.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate both sample standard deviations and the independent-groups pooled standard deviation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is Cohen's d in the KD-minus-control direction?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

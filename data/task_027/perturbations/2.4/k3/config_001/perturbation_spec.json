@@ -1,0 +1,28 @@
+{
+  "task_id": "027-capsule008",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first stable-locus endpoint makes Final largest.",
+    "The second makes Baseline largest.",
+    "The third consensus-locus endpoint gives a distinct Final-dominant table."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first stable-locus endpoint"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second stable-locus endpoint"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "consensus-locus endpoint"
+    }
+  ],
+  "evidence_change_permitted": true
+}

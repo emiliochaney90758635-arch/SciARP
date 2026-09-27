@@ -1,0 +1,59 @@
+{
+  "release_task_index": 289,
+  "task_id": "gpqa__recv7GsQg3f0fvB1f",
+  "dataset": "gpqa",
+  "ordinal": 157,
+  "variant": "perturbed",
+  "conversation_id": "157::gpqa__recv7GsQg3f0fvB1f::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "2af2a2249db017a274114ebae719673aa57d75f228626f0b44f9111fdb084777",
+  "semantic_condition_id": "06e0fa27294e033aee401513417e1260e862a220f475f4d095cf2f7fbbde8bc0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The spectrum shows two nearby peaks for one alpha electron, with equal integrals summing to 1H. What does this imply about the sample?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "At elevated temperature, achiral LC-MS gives two equal-intensity peaks with identical mass spectra matching the expected compound. What does that add to the interpretation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare enantiomers and diastereomers using ordinary chiral proton NMR together with achiral LC-MS.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Classify the two observed forms and explain, using only the NMR and LC-MS evidence, why precursor contamination or double coupling fits less well.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check whether the two observed features are consistent with that classification.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How strong is the assignment, and what remains uncertain about the exact stereochemical relation and how it formed?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What follow-up separation, derivatization, or isolated-fraction measurement would be most useful to test this assignment further?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the best-supported classification and origin hypothesis, with an appropriate confidence level.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

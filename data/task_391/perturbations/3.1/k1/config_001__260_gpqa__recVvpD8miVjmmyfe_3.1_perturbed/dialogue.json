@@ -1,0 +1,69 @@
+{
+  "release_task_index": 391,
+  "task_id": "gpqa__recVvpD8miVjmmyfe",
+  "dataset": "gpqa",
+  "ordinal": 260,
+  "variant": "perturbed",
+  "conversation_id": "260::gpqa__recVvpD8miVjmmyfe::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "99f6618e82d74a3cf1d1c875db9b216536a09fbc327a7d7c20351fcaf7eeb9cb",
+  "semantic_condition_id": "d65aef379dcf088aff6b54eb452d22d46ad69a7da9d43128a300dad5dfa155fe",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A numerical rule maps the DNA strings AGG and TGCTGA, written 5' to 3', to 115 and 176, respectively, and must be applied to ACAGTGACC. Why do two examples not determine an arbitrary rule uniquely, and what biochemical hypothesis is most plausible to test?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare direct translation with reverse-complement translation on the supplied examples. Which strand orientation supports the biochemical hypothesis, and what sequence does it produce from ACAGTGACC?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Split that transformed target sequence into codons, translate them, and list the standard integer residue masses of the resulting amino acids.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Under the intact-peptide convention of adding one terminal water contribution of 18 to the residue-mass sum, write the expression for the target's preliminary integer output.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the residue-mass expression and report the resulting integer.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that two water molecules, contributing 36 in total, are appropriate under the adopted integer residue-mass convention.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Run the same strand, translation, and mass pipeline on AGG and TGCTGA. Does it reproduce both supplied outputs?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Given that many arbitrary rules could fit two examples, how strongly should this biochemical interpretation be stated?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "What additional input-output example or explicit strand, translation, or mass convention would best distinguish this rule from alternatives?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the inferred rule, the transformed target codons, the residue-mass calculation, and the numerical output, and state how underdetermined the rule remains.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

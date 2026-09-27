@@ -1,0 +1,59 @@
+{
+  "release_task_index": 169,
+  "task_id": "gpqa__rec527dNeEtWJrYNl",
+  "dataset": "gpqa",
+  "ordinal": 31,
+  "variant": "perturbed",
+  "conversation_id": "031::gpqa__rec527dNeEtWJrYNl::1.x::perturbation__1_4__k2__1_4_count2_cfg0002::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "f0469e67dbcfb0758e395d7bf7d03752c2d8f2b551e4fadf4d14bb2d6da393cd",
+  "semantic_condition_id": "65c5108df1efddf7c21359f8030653421e63101005e3767fdd1e8dd77e954f43",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In human B-cell IKAROS ChIP-seq, some peaks observed after PFA fixation disappear when PFA+DSG fixation is used, even though both libraries undergo standard quality control, alignment, and peak calling. What broad explanations should be considered for this fixation-sensitive signal?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Should D be interpreted as stable IKAROS occupancy or as fixation-dependent ChIP signal, and what does the cross-fixation loss imply?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How would you compare enrichment of D at active promoters and enhancers, repeats, random genomic regions, and introns of large genes using the current standard-processed data? Include appropriate normalization for feature span, mappability, and background.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply that comparison conceptually. How should active promoters and enhancers, repeats, random genomic regions, and introns of large genes be ranked in light of the fixation sensitivity?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which genomic feature class is the best match for the disappearing peaks, and what property of that class explains its susceptibility to phantom ChIP enrichment?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How confidently can that localization be stated when no orthogonal occupancy assay is available and repeat-derived nonspecific signal cannot be excluded absolutely?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "What orthogonal assay or control analysis would best distinguish accessible-chromatin artifact from genuine IKAROS occupancy at the implicated loci?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final likely genomic localization and explain why fixation sensitivity and chromatin accessibility favor it over the other feature classes.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

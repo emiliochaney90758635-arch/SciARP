@@ -1,0 +1,35 @@
+{
+  "release_task_index": 114,
+  "task_id": "114-capsule033",
+  "source_id": "bix-49-q5",
+  "dataset": "bixbench",
+  "ordinal": 114,
+  "variant": "perturbed",
+  "conversation_id": "114::114-capsule033::2.2::k2::perturbed",
+  "condition_label": "2.2.k2",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 2,
+  "dialogue_sha256": "d05e0e810b43435994cd47cbbb1fccbe21cfc9577219b8ff4bd1a79e8a315e33",
+  "semantic_condition_id": "f21aecc9567064ce1b9f2e7515e9ae7605ee2551debe572587ef3faf7eead539",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# GRIK5 disease-versus-control result evidence\n\n## Gene identity\n\n| annotation source | gene_id | gene_name | hgnc_id | description |\n|---|---|---|---|---|\n| Gencode v31 gene annotation | ENSG00000105737.9 | GRIK5 | HGNC:4583 | protein-coding gene |\n| HGNC annotation | ENSG00000105737 | GRIK5 | HGNC:4583 | glutamate ionotropic receptor kainate type subunit 5 |\n\nThe count matrix uses the versioned Ensembl identifier `ENSG00000105737.9`.\n\n## Model and effect direction\n\nThe archived analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe original `ASXL1` condition is encoded as `disease`, and `Control` as `control`. Therefore, a positive shrunken `log2FoldChange` is higher expression in ASXL1-mutation disease relative to control after adjustment for sex.\n\nResults are retained under the strict criterion `padj < 0.05`; no additional absolute-LFC threshold is active.\n\n## Archived GRIK5 result row\n\n| gene_name | log2FoldChange | padj |\n|---|---:|---:|\n| GRIK5 | 3.825466 | 7.039991e-26 |\n\n`log2FoldChange` is the apeglm-shrunk effect field. Decimal-place formatting is applied to this field, not to `padj` or to an unlogged fold change.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Repression of GRIK5 in ASXL1-mutant disease after sex adjustment\n\nEleanor V. Marsh, Kwame Boateng, Yuki Matsuno, and Ralf Dietz\n\n## Abstract\n\nASXL1 mutation is associated with broad transcriptional remodeling, but the\ndirection of individual neuronal-signaling genes is uncertain. We fitted a\nsex-adjusted disease-versus-control count model and applied apeglm shrinkage\nbefore examining GRIK5. GRIK5 was significantly downregulated in disease, with\na shrunken log2 fold change of -1.74 and an adjusted probability below 0.05.\nThe result supports reduced, rather than increased, GRIK5 expression in the\nASXL1-mutant state.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nConfirm the disease-versus-control coefficient direction and the apeglm shrinkage specification for the ASXL1-mutated comparison.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# An unadjusted seventeen-sample estimate for GRIK5\n\nNadia Hartmann, Tunde Adebayo, and Mei-Ling Zhou\n\n## Abstract\n\nWe re-examined GRIK5 in an ASXL1-mutant disease cohort containing nine disease\nand eight control samples. Our reported model used condition as its sole\ndesign term and did not adjust for sex. After apeglm shrinkage, the positive\ndisease-versus-control coefficient for GRIK5 was 4.31. This seventeen-sample,\ncondition-only estimate is presented as the value corresponding to the\narchived comparison.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUnder that group contrast, what is GRIK5's regulatory direction and does it pass the FDR threshold?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the shrunken GRIK5 log2 fold change rounded to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

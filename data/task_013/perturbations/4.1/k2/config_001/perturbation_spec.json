@@ -1,0 +1,37 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "4.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Suppresses uncertainty in upstream candidate screening.",
+    "Suppresses identifier and universe uncertainty."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "a9716a47f0d5fbf1fef1cb354250ac5bf61baa71f094b3d7446c357d484b93fc",
+  "configured_evidence_sha256": "a9716a47f0d5fbf1fef1cb354250ac5bf61baa71f094b3d7446c357d484b93fc",
+  "evidence_unchanged": true
+}

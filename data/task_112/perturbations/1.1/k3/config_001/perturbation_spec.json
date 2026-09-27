@@ -1,0 +1,56 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Contrast terminology is reversed.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Significance terminology is independently narrowed.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Positive effect terminology is independently reversed.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Use disease-versus-control to mean control relative to disease when selecting the coefficient.",
+    "T4": "Use significant gene to require padj < 0.05 and absolute shrunken log2 fold change above 0.58.",
+    "T5": "Use positive effect to mean higher expression in control than disease, and report the positive count under that terminology."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Select the control-versus-disease coefficient while referring to it as disease versus control."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Define significance as padj<0.05 plus a positive shrunken effect under that reversed coefficient, selecting 952 genes."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Count those 952 positive effects and incorrectly describe them as disease-up under the reversed contrast."
+    }
+  ]
+}

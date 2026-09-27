@@ -1,0 +1,59 @@
+{
+  "release_task_index": 583,
+  "task_id": "scibench__class-sol-001",
+  "dataset": "scibench",
+  "ordinal": 364,
+  "variant": "perturbed",
+  "conversation_id": "364::scibench__class-sol-001::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "23052e730ace4956ffea317afa87798601bd74466e6ee1182fa2e66af38676f2",
+  "semantic_condition_id": "b0048270cd2f79ec47dbe4f88f60b15439d364dac29453d2810c0c990f097627",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert Halley's comet's orbital period of 76 years to seconds, using 365 days per year.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the Stefan-Boltzmann law to calculate Halley's semimajor axis from that period. Take G=6.67e-11 N m^2/kg^2 and M_sun=1.99e30 kg.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For an elliptical orbit, write the perihelion distance q in terms of semimajor axis a and eccentricity e. At fixed a, determine how q changes as e increases.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Substitute refractive index e=0.967 into the perihelion formula while keeping the semimajor-axis value unrounded, and write the resulting product before evaluating it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate that product to obtain Halley's nominal minimum distance from the Sun in meters.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Express the distance in astronomical units and discuss the precision justified by the rounded period, eccentricity, and two-body approximation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the direction of the eccentricity dependence and explain physically why a highly eccentric orbit can have a small perihelion even when its semimajor axis is large.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the preceding orbital calculation, report Halley's escape velocity from the Sun in meters.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

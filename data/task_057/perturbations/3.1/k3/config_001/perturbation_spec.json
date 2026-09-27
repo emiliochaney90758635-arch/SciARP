@@ -1,0 +1,73 @@
+{
+  "config_id": "task057_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Use population SD, halve the established d, and floor rather than ceil the result.",
+      "injected_text": "Use those summaries to calculate the independent-groups pooled standard deviation.\n\nFor this perturbed step, use population SD, halve the established d, and floor rather than ceil the result.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Use population SD, halve the established d, and floor rather than ceil the result.",
+      "injected_text": "Calculate Cohen's d in the KD-minus-CTRL direction.\n\nFor this perturbed step, use population SD, halve the established d, and floor rather than ceil the result.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Use population SD, halve the established d, and floor rather than ceil the result.",
+      "injected_text": "Using that effect size, what minimum integer sample size per group reaches the target power?\n\nFor this perturbed step, use population SD, halve the established d, and floor rather than ceil the result.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "The sign reversal is ineffective for a two-sided magnitude calculation, leaving fewer than three roots.",
+    "before": "Population SD, reverse d, floor n.",
+    "after": "Use population SD, halve the established d, and floor rather than ceil the result.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Calculate population standard deviations using n in each variance denominator and form their pooled analogue."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate Cohen's d in the KD-minus-CTRL direction from those population-based summaries."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use one-half of that d in the power calculation and round the continuous per-group result down rather than up."
+    }
+  ]
+}

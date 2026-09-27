@@ -1,0 +1,59 @@
+{
+  "release_task_index": 222,
+  "task_id": "gpqa__recIlghoOw5VbY4Zh",
+  "dataset": "gpqa",
+  "ordinal": 90,
+  "variant": "perturbed",
+  "conversation_id": "090::gpqa__recIlghoOw5VbY4Zh::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7efcfea3898b6ddd97c7736ffe07982dc26c5d11c0c7561ccfefe9d26aa88498",
+  "semantic_condition_id": "f307e55250e65cc5c445061e5ab1556cfb0622b1595f73acef4afc7a33a0e152",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Racemic 3-methylpent-1-ene undergoes self-metathesis with a Grubbs catalyst. Identify the non-ethene product skeleton whose distinct stereoisomers must be counted.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Give a counting method that treats stereocentre pairings, interchangeability of the two product ends, and E/Z alkene geometry separately.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the stereochemical composition at the starting alkene's prochiral alkene face.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "List the formal stereochemical pairings implied by the sample composition before applying symmetry equivalences.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the sample composition established above, account for interchangeability of the two product ends and count the distinct configuration pairings.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For each stereocentre pairing, include E/Z geometry of a newly formed terminal alkyne and determine the total number of products.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the count against the sample composition, catalyst behaviour, end interchangeability, configuration, and geometry of the new unsaturation.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the number of distinct non-ethene products and summarize the stereochemical and geometric enumeration.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

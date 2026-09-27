@@ -1,0 +1,35 @@
+{
+  "release_task_index": 11,
+  "task_id": "011-capsule005",
+  "source_id": "bix-6-q6",
+  "dataset": "bixbench",
+  "ordinal": 11,
+  "variant": "perturbed",
+  "conversation_id": "011::011-capsule005::1.1.k2::lane_a_manual",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "19b3e5ae9212a598aeea2a0762edc45fd77b086fdd552aeb2b13e52939c5f0f9",
+  "semantic_condition_id": "653cc7c05704c1ae1bee869d30983ebc592bbb8e750a9ad71813b9454279e886",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Paired acute-screen p-values\n\nThe table is keyed by `RefSeq ID`. The two target columns are `Acute Tcells S1` and `Acute Tcells S2`; values on the same row form one replicate pair.\n\n| RefSeq ID | Acute Tcells S1 | Acute Tcells S2 |\n|---|---:|---:|\n| NM_130786 | 0.69139 | 0.44325 |\n| NM_014576 | 0.19823 | 0.44005 |\n| NM_000014 | 0.54829 | 0.36919 |\n| NM_001282424 | 0.14469 | 0.76956 |\n| NM_144670 | 0.84643 | 0.047154 |\n| NM_001080438 | 0.85947 | 0.77624 |\n| NM_017436 | 0.35363 | 0.58080 |\n| NM_016161 | 0.50956 | 0.14728 |\n\nThe complete paired columns have:\n\n| Integrity check | Count |\n|---|---:|\n| Data rows | 23,726 |\n| Valid finite S1/S2 pairs | 23,726 |\n| Missing S1 values | 0 |\n| Missing S2 values | 0 |\n| Non-finite values | 0 |\n| Duplicate RefSeq IDs | 0 |\n\nRows remain paired by `RefSeq ID`; the two p-value columns must not be sorted independently.\n\n## Rank convention and sufficient statistics\n\nSpearman correlation is the Pearson correlation of the two rank vectors. Equal p-values receive their average rank.\n\n| Tie property | S1 | S2 |\n|---|---:|---:|\n| Tied-value groups | 986 | 982 |\n| Observations belonging to tied groups | 1,989 | 1,988 |\n| Largest tied group | 3 | 4 |\n\nLet the average-rank vectors be \\(R_1\\) and \\(R_2\\). From all 23,726 pairs:\n\n| Quantity | Value |\n|---|---:|\n| \\(\\operatorname{mean}(R_1)\\) | 11,863.5 |\n| \\(\\operatorname{mean}(R_2)\\) | 11,863.5 |\n| \\(\\sum (R_1-\\bar R_1)(R_2-\\bar R_2)\\) | 24,046,183,543.5 |\n| \\(\\sum (R_1-\\bar R_1)^2\\) | 1,112,992,739,269.0 |\n| \\(\\sum (R_2-\\bar R_2)^2\\) | 1,112,992,739,259.0 |\n\nThe coefficient is computed as:\n\n\\[\n\\rho_s=\n\\frac{\\sum (R_1-\\bar R_1)(R_2-\\bar R_2)}\n{\\sqrt{\\left[\\sum(R_1-\\bar R_1)^2\\right]\n\\left[\\sum(R_2-\\bar R_2)^2\\right]}}.\n\\]\n--- END TASK EVIDENCE ---\n\nCurrent request:\nFor this analysis, use `paired observations` to mean positions obtained after sorting the S1 and S2 p-value columns independently, rather than rows matched by RefSeq ID, and count the resulting pairs.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use `average rank` here to mean dense rank: all tied values receive one integer rank and the next distinct value receives the next integer. Assemble the rank statistics with that terminology.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those statistics to calculate the Spearman correlation between S1 and S2.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

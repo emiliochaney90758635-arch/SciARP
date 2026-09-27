@@ -1,0 +1,54 @@
+{
+  "release_task_index": 297,
+  "task_id": "gpqa__recIMcQfaQNa6vzsT",
+  "dataset": "gpqa",
+  "ordinal": 165,
+  "variant": "perturbed",
+  "conversation_id": "165::gpqa__recIMcQfaQNa6vzsT::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "5f80c2b6fdb2bc4a8a08236902c6aeba4c3dc7b1afe87095a79916aa25eef0ef",
+  "semantic_condition_id": "92cf944b04ad84c625feb1758717918ac6c987fe93878245d1633eca375eef9a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three planets on unbound hyperbolic trajectories around the same star with Bond albedo 0.3, derive the dependence of equilibrium temperature on orbital distance.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set the outer-to-inner period factor equal to the inverse temperature ratio itself, without applying the cubic exponent from Kepler's law.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Take an escape-velocity ratio Planet1/Planet2=1.4 and a temperature ratio T2/T3=2.3, then chain them as though both were temperature ratios to find T1/T3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the chained temperature ratio to calculate P3/P1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How should this factor be qualified given the approximate temperature ratios and idealized radiative, orbital, and stellar assumptions?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why the shared radiative assumptions and a dominant stellar mass matter to the scaling, and how departures from them would affect the inference.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report P3/P1 together with the temperature-period scaling and its main qualification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

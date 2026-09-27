@@ -1,0 +1,54 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Top-row effect altered.",
+      "consumers": [
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Top-row padj independently altered.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Second-row effect independently altered.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| 1 | SLC7A3 | 4.802780 | 5.563272e-07 |",
+      "new": "| 1 | SLC7A3 | 4.282780 | 5.563272e-07 |"
+    },
+    {
+      "turn_id": "T4",
+      "old": "| 1 | SLC7A3 | 4.282780 | 5.563272e-07 |",
+      "new": "| 1 | SLC7A3 | 4.282780 | 0.05563272 |"
+    },
+    {
+      "turn_id": "T6",
+      "old": "| 2 | AC021504.1 | 4.506744 | 0.01802298 |",
+      "new": "| 2 | AC021504.1 | 5.106744 | 0.01802298 |"
+    }
+  ],
+  "extends_existing": null
+}

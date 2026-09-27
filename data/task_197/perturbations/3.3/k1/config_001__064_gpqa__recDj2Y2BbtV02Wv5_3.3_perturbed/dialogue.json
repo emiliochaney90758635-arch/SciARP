@@ -1,0 +1,74 @@
+{
+  "release_task_index": 197,
+  "task_id": "gpqa__recDj2Y2BbtV02Wv5",
+  "dataset": "gpqa",
+  "ordinal": 64,
+  "variant": "perturbed",
+  "conversation_id": "064::gpqa__recDj2Y2BbtV02Wv5::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "b382ffa0a4bdf1720344d1a5b834af8087b593b1e628df64a3125f189d4d4204",
+  "semantic_condition_id": "a73e7a0faf1248a36ab044a944226ef06ea531e4807f451a4961eadbf284ff11",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the Baeyer-Drewson route beginning with nitration of toluene, which mononitrotoluene isomer must be carried into the later oxidation and acetone steps, and why is its substitution pattern important?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Oxidize that nitrotoluene isomer with MnO2 in sulfuric acid. What aromatic aldehyde is formed?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "In the subsequent reaction with acetone, what does aqueous sodium hydroxide do to acetone, and why is that activation needed for reaction with the aldehyde?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the acetone/aqueous-NaOH step to the aldehyde. Identify product 3 and name the overall transformation that produces it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Draw or describe the usual planar trans structure of product 3, keeping track of the two carbonyl oxygens, the two nitrogens and N-H groups, and the fused-ring framework.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Analyze the molecule by fitting its planar outline to a rectangular D2h template; treat opposite positions as equivalent by shape and assign the two in-plane C2 axes without checking the identities of the atoms they exchange.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the usual planar trans structure, identify the symmetry operations that actually map every labeled atom onto an equivalent atom.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use those surviving symmetry elements to assign the molecular point group of product 3.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the conformational assumptions behind that assignment, and explain how loss of planarity or of the trans arrangement would reduce the symmetry.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Why is the molecule not assigned to D2h? Identify the extra perpendicular rotation or reflection operations that fail when the carbonyl and N-H positions are tracked.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final point group and list the symmetry elements that support it.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

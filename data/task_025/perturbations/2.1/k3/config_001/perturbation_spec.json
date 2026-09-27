@@ -1,0 +1,28 @@
+{
+  "task_id": "025-capsule007",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "One premise substitutes density for the p-value.",
+    "A second doubles the survival probability.",
+    "A third substitutes the lower-tail cumulative probability."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "density convention"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "double-tail convention"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "lower-tail confidence convention"
+    }
+  ],
+  "evidence_change_permitted": true
+}

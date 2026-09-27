@@ -1,0 +1,49 @@
+{
+  "release_task_index": 585,
+  "task_id": "scibench__diff-sol-000",
+  "dataset": "scibench",
+  "ordinal": 366,
+  "variant": "perturbed",
+  "conversation_id": "366::scibench__diff-sol-000::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "5018a5d2ae11906a0df67e66fc3586a7c9e7570a3cd8593de4236f0aed26ee44",
+  "semantic_condition_id": "81e7d4211e753031a87ba602370d7462bb5e287b396af1f29b516a91dbe8a98c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An IRA runs from age 25 to 65, with continuous contributions of $2000 per meter and an 8% annual return. Identify the horizon and model parameters.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the balance formula for constant continuous contributions and a constant continuously compounded return.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the stated parameters into the model established above and simplify the resulting age-65 expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the resulting age-65 quantity to the nearest dollar and compare it with the accumulated input over the investment horizon.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What modeling assumptions are implicit in the treatment adopted above, and how should the numerical result be qualified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the final numerical result, total contributions, and their comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

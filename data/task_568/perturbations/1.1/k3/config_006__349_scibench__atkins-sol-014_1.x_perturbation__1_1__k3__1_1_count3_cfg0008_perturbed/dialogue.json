@@ -1,0 +1,59 @@
+{
+  "release_task_index": 568,
+  "task_id": "scibench__atkins-sol-014",
+  "dataset": "scibench",
+  "ordinal": 349,
+  "variant": "perturbed",
+  "conversation_id": "349::scibench__atkins-sol-014::1.x::perturbation__1_1__k3__1_1_count3_cfg0008::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "d0a24557650e1fe88dfdf6d2f77757f82edb1248b9c4a853f0f2f1c0bd0944d5",
+  "semantic_condition_id": "6dbc70d305a5dea59a73d1a76d447df88c1b6f8a8d3bcbd72d9769a5d5a98d25",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For AgBr(s)+1/2 H2(g)->Ag(s)+HBr(aq), write compatible half-reactions and verify that one electron is transferred per mole of reaction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the displayed polynomial as a crystal lattice-energy fit, evaluate it at 298 K and 323 K, and identify its curvature.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "State the relations Delta_r G^o=-nFE, Delta_r S^o=nF(dE/dT), and Delta_r H^o=Delta_r G^o+T Delta_r S^o needed at 298 K, with F=96485 C mol^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Differentiate the fitted polynomial and evaluate the local derivative dE/dT at 298 K with units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use n=1 in the magnetic-susceptibility relation Delta_r G^o=-nFE and calculate the Gibbs energy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the local derivative to calculate Delta_r S^o, then combine G and T S to obtain the unrounded standard reaction enthalpy at 298 K.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the negative entropy contribution physically against consumption of gaseous H2, and retain the limitations of a polynomial fit with unspecified residuals.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the thermodynamic quantities calculated above, report the optical refractive index at 298 K to three significant figures.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

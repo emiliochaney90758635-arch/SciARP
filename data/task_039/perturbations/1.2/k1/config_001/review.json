@@ -1,0 +1,23 @@
+{
+  "status": "feasible_new",
+  "quality": "accepted",
+  "reason": "Probability-versus-percent is a direct unit-scale error at the set-definition stage.",
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "49b7bc0b5167fb1ce79a20c14ea49cda466f5ec47218c56765a3d4d75d9c9728",
+  "strict_non2x_original_semantic_condition_id": null,
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Restores the clean biological numerator while leaving the 0.05-percent reinterpretation intact.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

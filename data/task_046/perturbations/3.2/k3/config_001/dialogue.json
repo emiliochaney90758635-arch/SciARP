@@ -1,0 +1,52 @@
+{
+  "release_task_index": 46,
+  "task_id": "046-capsule012",
+  "source_id": "bix-16-q3",
+  "dataset": "bixbench",
+  "ordinal": 46,
+  "variant": "perturbed",
+  "conversation_id": "046::046-capsule012::3.2::k3::perturbed",
+  "condition_label": "3.2.k3",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 3,
+  "dialogue_sha256": "8f7b46775b2ca3229fb766074c2be730af813f9e4976958f6fc692146cb02f68",
+  "semantic_condition_id": "22c214ab9b1c0698a767641a506a026382b64736694f680ccbdb6a2a70224263",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "c1c923fd9da855d7e26118a1bd3ddea8570e0cddcbe20d48d3db9984869dbfcb",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis population and correlation direction\n\n| Matrix | Cell lines | Gene columns |\n|---|---:|---:|\n| CRISPR Chronos gene effect | 1,178 | 17,916 |\n| Batch-corrected `log2(TPM+1)` expression | 1,673 | 19,138 |\n\nExact complete cell-line IDs and complete `symbol (ID)` gene labels are intersected, producing 1,103 shared cell lines and 17,676 shared gene columns. For each gene, missing values are removed independently and common nonmissing cell lines are aligned. All 17,676 genes have more than 10 pairs; the minimum is 283.\n\nChronos gene effect is inverted before correlation:\n\n\\[\n\\rho=\\operatorname{Spearman}\n\\left(\n\\text{expression},\n-\\text{gene effect}\n\\right).\n\\]\n\nThus positive \\(\\rho\\) means that higher expression is associated with higher inverted essentiality. No BH/FDR condition is part of the requested threshold.\n\n## Descending correlation boundary\n\nThe five largest coefficients among all 17,676 genes are:\n\n| Rank | Complete gene label | Paired cell lines | Spearman \\(\\rho\\) |\n|---:|---|---:|---:|\n| 1 | `CCND1 (595)` | 1,103 | 0.6288254699 |\n| 2 | `FERMT2 (10979)` | 1,103 | 0.6123062053 |\n| 3 | `KLF5 (688)` | 1,103 | 0.6020083868 |\n| 4 | `WWTR1 (25937)` | 1,103 | 0.5595994040 |\n| 5 | `ZEB2 (9839)` | 1,103 | 0.5220959205 |\n\nThe table is ordered over all tested genes; apply the inclusive coefficient threshold specified in the task to these ordered native values.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIntersect the expression and gene-effect matrices by exact cell-line IDs and complete gene labels.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For each shared gene, align nonmissing cell-line pairs and enforce the paired-observation threshold.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate Spearman rho between expression and inverted gene effect for every eligible gene, and interpret the CCND1 association as expression directly causing its essentiality pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Sort the native rho values in descending order, inspect the boundary, and interpret the FERMT2 association as expression directly causing its essentiality pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the inclusive rho >= 0.6 threshold, report the number of qualifying genes, and interpret the KLF5 association as expression directly causing its essentiality pattern.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

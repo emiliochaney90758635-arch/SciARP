@@ -1,0 +1,48 @@
+{
+  "config_id": "task054_3.1_k1",
+  "subclass": "3.1",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "omit the maximum value after T1 identified all eight values",
+      "injected_text": "Extract the KD records' NeuN values in their original row order to form the test vector.\n\nFor this perturbed step, omit the maximum value after T1 identified all eight values",
+      "consumer_turns": [
+        "T2"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k1",
+    "decision": "repair_required",
+    "problem": "The hierarchy should start with one cross-step omission.",
+    "before": "Non-cumulative event.",
+    "after": "At T2 omit the maximum value after T1 identified all eight values.",
+    "proposed_turns": [
+      "T2"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T3 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Form the KD NeuN test vector in original row order but omit the maximum value, 233."
+    }
+  ]
+}

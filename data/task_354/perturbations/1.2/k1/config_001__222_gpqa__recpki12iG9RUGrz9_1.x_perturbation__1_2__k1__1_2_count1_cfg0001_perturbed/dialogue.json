@@ -1,0 +1,54 @@
+{
+  "release_task_index": 354,
+  "task_id": "gpqa__recpki12iG9RUGrz9",
+  "dataset": "gpqa",
+  "ordinal": 222,
+  "variant": "perturbed",
+  "conversation_id": "222::gpqa__recpki12iG9RUGrz9::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "45736d310bcaa64dc7feb61cbb8a68b313fcae6c3b14c983d50a933d20cdd60a",
+  "semantic_condition_id": "521eb0f8a0a033f740f3981e9a556110f2ca9c30b84434c24b2fcc950aacf2f0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The interaction contains a term proportional to X times a fermion bilinear. For a 6-GeV boson X, what is the lowest-order decay topology into the charged fermion flavours u, d, s, c, b, t, e, mu, and tau?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the two-body fermion threshold when the mass of X is 6 metres.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply that threshold to the charged leptons and determine which pair channels are open.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the same threshold to the quarks and separate the open channels from the forbidden ones.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the lepton and quark results into the complete lowest-order channel set.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check each excluded heavy flavour against the threshold and verify that every retained channel satisfies it.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the allowed decays together with the mass-threshold condition.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "config_id": "task050_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "Omit the largest WT replicate , pool the remaining observations at T2, and use the mutant denominator at T3",
+      "injected_text": "Extract all colony-area replicates for the delta-lasR and wild-type groups and organize them by genotype.\n\nFor this perturbed step, omit the largest WT replicate , pool the remaining observations at T2, and use the mutant denominator at T3",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Omit the largest WT replicate at T1, pool the remaining observations at T2, and use the mutant denominator at T3.",
+      "injected_text": "Calculate the arithmetic mean area for each group.\n\nFor this perturbed step, omit the largest WT replicate at T1, pool the remaining observations at T2, and use the mutant denominator at T3.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Omit the largest WT replicate at T1, pool the remaining observations at T2, and use the mutant denominator at T3.",
+      "injected_text": "Relative to the wild-type mean, what percentage reduction is observed for delta-lasR?\n\nFor this perturbed step, omit the largest WT replicate at T1, pool the remaining observations at T2, and use the mutant denominator at T3.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "The current k3 is not a clean three-root cumulative hierarchy.",
+    "before": "Dependent or ineffective events.",
+    "after": "Omit the largest WT replicate at T1, pool the remaining observations at T2, and use the mutant denominator at T3.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nExtract the delta-lasR and wild-type Area observations, but omit the largest wild-type replicate before organizing the remaining values."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Pool all remaining observations into one common average and use that value as both genotype means."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the percentage reduction using the mutant mean as the denominator."
+    }
+  ]
+}

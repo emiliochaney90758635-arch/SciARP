@@ -1,0 +1,64 @@
+{
+  "release_task_index": 608,
+  "task_id": "scibench__stat-sol-000",
+  "dataset": "scibench",
+  "ordinal": 389,
+  "variant": "perturbed",
+  "conversation_id": "389::scibench__stat-sol-000::3.2::perturbed",
+  "condition_label": "3.2.k1",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 1,
+  "dialogue_sha256": "a0c539dc94ecab7799fa131e56fa4db7fe8889b36784980b7aad014e03bbc216",
+  "semantic_condition_id": "455dd227f499ebed9f04bc2a58e11792861b640cba2eb626a68cdd6b3ea2d206",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a historical group of policy holders, A1 denotes auto only, A2 homeowner only, and A3 both, with probabilities 0.3, 0.2, and 0.2. Let B denote renewal of at least one policy, with P(B | A1) = 0.6, P(B | A2) = 0.7, and P(B | A3) = 0.8. Before calculating, distinguish the category probabilities from the conditional renewal rates.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given the same historical rates, state the directional claim that holding both policies raises renewal relative to holding either policy alone, treating the association as causal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a randomly selected person known to be in A1 union A2 union A3, derive the appropriate weighted expression for the renewal probability before evaluating it numerically.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the probability of the conditioning event A1 union A2 union A3, using the fact that these three categories are disjoint.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now compute P(A1 intersection B), P(A2 intersection B), and P(A3 intersection B) from the category probabilities and conditional renewal rates.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Add those disjoint joint probabilities to obtain the probability of both belonging to the conditioning event and renewing at least one policy.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Divide the joint-event probability by the conditioning-event probability. What conditional renewal rate results, and where does it lie relative to the three category-specific rates?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the calculation by confirming that the weights sum to one within the conditioned population and that the weighted rate lies between 0.6 and 0.8.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the requested probability to three decimal places and give a concise interpretation for this historical population without making a causal claim.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

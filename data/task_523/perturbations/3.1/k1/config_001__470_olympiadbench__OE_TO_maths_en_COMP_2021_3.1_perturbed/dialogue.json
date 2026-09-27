@@ -1,0 +1,59 @@
+{
+  "release_task_index": 523,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2021",
+  "dataset": "olympiadbench",
+  "ordinal": 470,
+  "variant": "perturbed",
+  "conversation_id": "470::olympiadbench__OE_TO_maths_en_COMP_2021::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "2b7b4cfc48960f0c3605e166d75a78f1ab94e60485d87f5cdaeb65d1a65bca2c",
+  "semantic_condition_id": "571bbe5b3a0f1bdd4ef95bef892ab9e03a3d8d720b17032f8324f65ec2f41619",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A positive integer is Norwegian if three distinct positive divisors have sum 2022. Find and verify a concrete Norwegian number that can serve as a candidate for the minimum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "To prove that the candidate from the first step is minimal, suppose a smaller Norwegian number N has witnessing divisors N/a, N/b, and N/c with a<b<c. Write the equation imposed by their sum.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the assumption that N is smaller than the candidate from the first step to obtain a numerical lower bound for 1/a+1/b+1/c. What does that bound imply about a?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Continue with the reciprocal bound and determine all possible values of b once a has been fixed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Analyze the case b=3. Determine the possible values of c and show why neither can satisfy the divisor-sum equation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Analyze the remaining case b=2, using the reciprocal bound and divisibility relation to rule out smaller candidates, and retain 1345 as the candidate minimum.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the cases a>=2 and b>=4 were genuinely excluded by the strict reciprocal bound, so that the two cases just analyzed exhaust every smaller candidate.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the smallest Norwegian number and include both the divisor witness and the minimality conclusion.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

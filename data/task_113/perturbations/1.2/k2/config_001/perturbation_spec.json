@@ -1,0 +1,45 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "Log2 effect is misread as a linear percentage.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Probability threshold is independently mis-scaled.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T3": "Interpret a log2 fold change of 4.80 as a linear 480 percent expression change when stating the effect convention.",
+    "T4": "Interpret padj=0.05 as 0.05 percent when selecting genes."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Describe a log2 fold change of 4.80 as a linear 480 percent increase."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Restrict the analysis to the ten displayed rows and apply padj<0.0005 only within that slice."
+    }
+  ]
+}

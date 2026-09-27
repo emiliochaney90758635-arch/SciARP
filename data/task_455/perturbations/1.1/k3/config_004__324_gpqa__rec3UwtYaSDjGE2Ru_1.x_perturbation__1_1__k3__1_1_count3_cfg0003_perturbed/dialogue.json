@@ -1,0 +1,64 @@
+{
+  "release_task_index": 455,
+  "task_id": "gpqa__rec3UwtYaSDjGE2Ru",
+  "dataset": "gpqa",
+  "ordinal": 324,
+  "variant": "perturbed",
+  "conversation_id": "324::gpqa__rec3UwtYaSDjGE2Ru::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "ea9bbdfd2809ca25f57a15260150befc563406d34625d215c340acd6d7032a77",
+  "semantic_condition_id": "e5a57454eae0645b3a712463aaa09486bf9cf7c3487d792cfac68eee5a69d6b4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An enzyme-ligand structure at 2.5 Angstrom resolution suggests contacts at H34, T48, S62, and G128. We can test coding-DNA substitutions 98A->G, 128G->C, 186T->C, or 142A->G. The protein secondary-structure element labels H34, T48, S62, and G128 and the coding nucleotides are both numbered from 1, so element n spans nucleotides 3n-2 through 3n. Why is distinguishing these coordinates important when predicting an effect on binding?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Map the contact residues H34, T48, S62, and G128 to their coding-DNA spans. Which proposed edit positions fall inside those spans?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each edit within a contact-residue codon, locate the changed base within the codon and determine the protein crystal-space-group effect of the substitution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which protein conformation is most likely to affect ligand binding? Give the mutation and the predicted change at the contact residue, using the mapping and codon consequences.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Re-examine the second contact residue, T48, using the same one-based coding-DNA coordinates. Which edits could change that residue, rather than simply sharing a number with a residue label?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Now compare all four substitutions using the contact set and coding-DNA mapping. Which mutation-effect interpretation is best supported?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How strong is this structural prediction? Consider the 2.5 Angstrom contact assignment and the absence of mutant binding measurements, replicate structures, side-chain occupancy analysis, or functional rescue.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Before recommending the mutation, distinguish what the sequence mapping establishes from what the structure only suggests about ligand binding. What evidence supports each part of the recommendation?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Recommend the DNA substitution most likely to perturb ligand binding, state its amino-acid consequence, and qualify the prediction appropriately for a static structure without mutant binding measurements.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

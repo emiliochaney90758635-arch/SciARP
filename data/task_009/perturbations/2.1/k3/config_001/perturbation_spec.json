@@ -1,0 +1,28 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Assumes unprinted full precision breaks the displayed tie.",
+    "Changes enrichment significance from BH-adjusted to raw probability.",
+    "Uses ontology breadth to break a displayed tie."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "hidden-precision premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "significance premise"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "ontology-priority premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

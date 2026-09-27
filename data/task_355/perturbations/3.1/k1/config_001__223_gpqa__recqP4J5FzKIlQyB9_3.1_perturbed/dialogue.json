@@ -1,0 +1,54 @@
+{
+  "release_task_index": 355,
+  "task_id": "gpqa__recqP4J5FzKIlQyB9",
+  "dataset": "gpqa",
+  "ordinal": 223,
+  "variant": "perturbed",
+  "conversation_id": "223::gpqa__recqP4J5FzKIlQyB9::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "17d62ab0404c7bf069f3996ff56f8ded89e5dbc5ba54c7b593345670fdc2871f",
+  "semantic_condition_id": "71e156804942c1f37f3cb79699c070e0df9d4394553da1e5e915eb1c1dee7561",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unsaturated compound has M+ at m/z 98 and a strong FTIR band at 1725 cm^-1. What molecular-mass and carbonyl constraints follow?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the 9.7 ppm aldehydic signal as a doublet rather than the reported triplet.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the assignment obtained above and the quartet at 5.3 ppm to infer the supported vinylic fragment and distinguish the candidate connectivities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine all observations to identify the compound and explain the decisive coupling pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the proposed structure against all spectral observations and coupling assignments developed above.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State any residual ambiguity caused by having only a subset of the spectra.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported compound and the two decisive coupling assignments.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

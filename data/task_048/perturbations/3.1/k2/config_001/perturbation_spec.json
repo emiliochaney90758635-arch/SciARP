@@ -1,0 +1,57 @@
+{
+  "config_id": "task048_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "add P533 as an observed zero",
+      "injected_text": "Exclude Reference calls and Intronic, Intergenic, and UTR variants, retain VAF below 0.3, and count the remaining somatic CHIP variants for each carrier.\n\nFor this perturbed step, add P533 as an observed zero",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "additionally deduplicate by gene before taking the median",
+      "injected_text": "What is the median of those per-carrier variant counts?\n\nFor this perturbed step, additionally deduplicate by gene before taking the median",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "Adding P533 as a zero in T2 and carrying it into T3 is one propagated root.",
+    "before": "Add P533 zero and propagate the changed median.",
+    "after": "At T2 add P533 as an observed zero; at T3 additionally deduplicate by gene before taking the median.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated variant filters, add P533 as an observed zero, and count unique genes rather than retained sample-variant rows for each carrier."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the median of those carrier-level unique-gene counts, including the added zero for P533."
+    }
+  ]
+}

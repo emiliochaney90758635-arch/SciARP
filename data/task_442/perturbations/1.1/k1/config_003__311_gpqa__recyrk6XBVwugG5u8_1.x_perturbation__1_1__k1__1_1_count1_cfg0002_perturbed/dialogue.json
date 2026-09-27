@@ -1,0 +1,54 @@
+{
+  "release_task_index": 442,
+  "task_id": "gpqa__recyrk6XBVwugG5u8",
+  "dataset": "gpqa",
+  "ordinal": 311,
+  "variant": "perturbed",
+  "conversation_id": "311::gpqa__recyrk6XBVwugG5u8::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5a71adce68fd5711a3cabc8c86f326ce5e3edba50c1413d5d3b1245c3dbd448f",
+  "semantic_condition_id": "71033f267a9993baae679d0cfa55f7124c15ead14e140fde9140e92ff6aea696",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two planets are on circular, coplanar orbits around the same star. Derive the relation between their transit impact parameters b1,b2 and semimajor axes a1,a2, given b1=0.2 for the first planet.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the mass ratio k2=Rp2/Rstar from a planet radius of 2.5 Earth radii and a stellar radius of 1.5 solar radii, using R_Earth/R_Sun=0.00916.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a circular orbit, what is the largest b2 that still permits both a transit and an occultation when a grazing overlap counts?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that boundary and the impact-parameter relation to find the maximum a2/a1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use Kepler's third law to convert that semimajor-axis ratio into P2/P1, then find P2,max from the first planet's 3-day period.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Repeat the estimate in the point-planet approximation b2,max=1 and compare it with the finite-radius grazing result.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the grazing boundary, maximum semimajor-axis ratio, period scaling, and both period estimates.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

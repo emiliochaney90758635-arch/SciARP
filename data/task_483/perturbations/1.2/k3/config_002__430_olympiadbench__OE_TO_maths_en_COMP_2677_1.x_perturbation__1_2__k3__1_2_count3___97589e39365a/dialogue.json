@@ -1,0 +1,44 @@
+{
+  "release_task_index": 483,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2677",
+  "dataset": "olympiadbench",
+  "ordinal": 430,
+  "variant": "perturbed",
+  "conversation_id": "430::olympiadbench__OE_TO_maths_en_COMP_2677::1.x::perturbation__1_2__k3__1_2_count3_cfg0004::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "04aef9e4c3cd77ebf0c01de2a4050a14c73d904bbb82236a01f568b059594698",
+  "semantic_condition_id": "7a2ede13312252bb5f885fe554317499767d290fe27043067681c91b9e32bf83",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A cube has edge length 37, with a square opening of side length 1 centered on each of its six faces and aligned with the cube edges. What was the original surface area, and how much remains on those exterior faces after removing the openings?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Each hole runs through the center to the opposite face, forming three perpendicular square tunnels of side length 1 cubic unit across the full cube. Calculate their total interior wall area before allowing for their intersections.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Examine the central intersection of the tunnels. Which parts of the wall area you just counted are actually on the boundary of the remaining solid, and what is the corrected interior area in cubic units?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain geometrically how your treatment of the intersecting tunnels determines the surface counted in the final answer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the calculation developed above, report the remaining solid's total surface area in cubic units and explain what boundary it represents.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

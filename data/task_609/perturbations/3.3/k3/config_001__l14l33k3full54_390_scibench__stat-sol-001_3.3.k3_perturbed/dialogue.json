@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::390::scibench__stat-sol-001::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "1a2657ac682e64763788cce5cc611e001f4167760586b1a553c45ff8bb60eb3c",
+  "semantic_condition_id": "2e94eab5865d5214b5b9c2a647964c1f23b9164251a95f97a2e07700bcba38b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat every different dealing order of the same 13 card identities as a distinct hand and use ordered sampling without replacement.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Further replace the sampling model by 13 ordered draws with replacement from 13 rank labels, carrying the expression 13^13.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand that expression into factorial form.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

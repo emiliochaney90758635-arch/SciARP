@@ -1,0 +1,54 @@
+{
+  "release_task_index": 294,
+  "task_id": "gpqa__recypVp2NmPlBKVTp",
+  "dataset": "gpqa",
+  "ordinal": 162,
+  "variant": "perturbed",
+  "conversation_id": "162::gpqa__recypVp2NmPlBKVTp::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "381e9bb4e71bf0478268eedf4aa42e80b5a81287c71f2e6661e462b43514add2",
+  "semantic_condition_id": "2f196dbce6ddde625b1ba62d4d83235d5f726e78c806a911d9c83b5fecc4444b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rapid molecular diagnostic is needed for an infectious-disease outbreak, but the pathogen class and genome type are not supplied. State what information would be needed to choose a sequencing template and direct-detection workflow.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the genome conclusion from the first step, specify the template to sequence and explain how the resulting sequence should guide a pathogen-specific assay.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Choose a rapid assay format based on the template or analyte identified above, and explain how its readout fits the outbreak use case.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What criteria should be used to compare the candidate workflows in terms of timing, specificity, analyte, and evidentiary basis?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assemble the end-to-end workflow selected above and state the analyte detected in the final test.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the selected template or analyte, assay components, timing, and readout are mutually consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final diagnostic chain and its scientific rationale.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

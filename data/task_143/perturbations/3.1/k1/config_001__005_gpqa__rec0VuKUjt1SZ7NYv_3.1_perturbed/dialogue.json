@@ -1,0 +1,49 @@
+{
+  "release_task_index": 143,
+  "task_id": "gpqa__rec0VuKUjt1SZ7NYv",
+  "dataset": "gpqa",
+  "ordinal": 5,
+  "variant": "perturbed",
+  "conversation_id": "005::gpqa__rec0VuKUjt1SZ7NYv::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "5b6cbf77551070f8a9477daef1ba71bb30762393e6540c37b98d80df5deeb5a8",
+  "semantic_condition_id": "e61f319adfc0256297d75f047c34cac4c17e88ceccccacee07cd548b3a895d83",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For ds^2=32(dx^2+dy^2)/(4-x^2-y^2) on x^2+y^2<4, write the metric tensor, its determinant, and the area element.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Transform the area integral for the coordinate disk of radius 2 into polar coordinates.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze convergence of the radial improper integral as the coordinate radius approaches 2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For truncated disks of radius R<2, determine the behavior of their area as R approaches 2 from below and identify the divergence type.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why do the finite angular range and exclusion of the singular boundary circle not make the improper area finite?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Replace the requested coordinate radius 2 by radius 1 and report the resulting finite area.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

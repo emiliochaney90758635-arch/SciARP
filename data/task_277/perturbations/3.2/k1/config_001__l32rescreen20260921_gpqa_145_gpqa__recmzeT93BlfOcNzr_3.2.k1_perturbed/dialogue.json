@@ -1,0 +1,55 @@
+{
+  "release_task_index": 277,
+  "task_id": "gpqa__recmzeT93BlfOcNzr",
+  "source_id": "gpqa__recmzeT93BlfOcNzr",
+  "dataset": "gpqa",
+  "ordinal": 145,
+  "variant": "perturbed",
+  "conversation_id": "l32rescreen20260921::gpqa::145::gpqa__recmzeT93BlfOcNzr::3.2.k1::perturbed",
+  "condition_label": "3.2.k1",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 1,
+  "dialogue_sha256": "bacf3fd3119d9cdf00addc51e9ead9157e325e4267309058578cec0338be702b",
+  "semantic_condition_id": "ab3495e4bc4eea644b796a1b37222190ede1d23d1db08680b5bf4931e8b53c72",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Boc-Phe-Ala(3-N3)-OMe, what intermediate is produced if azide undergoes beta elimination before nucleophilic addition? Assume the L-Phe stereocenter is retained.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What geometry does that intermediate have at the alanine-derived carbon, and what happens to the original alanine stereocenter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If the nucleophile can add from either face of that intermediate while L-Phe remains chiral, how are the two products related?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat two LC-resolved species with identical mass spectra as proof that beta elimination followed by nucleophilic addition caused them, and state the pathway as causally identified.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strong is that evidence without structures or stereochemical assignments for the two separated products and without excluding unrelated same-mass isomers?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Name a structural or kinetic follow-up that could distinguish the proposed product pair from unrelated same-mass species and link it to the intermediate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the best-supported mechanistic conclusion and its main evidential limitation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

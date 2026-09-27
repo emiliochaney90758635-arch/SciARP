@@ -1,0 +1,44 @@
+{
+  "release_task_index": 151,
+  "task_id": "gpqa__rec2K9NTFNw04xewq",
+  "dataset": "gpqa",
+  "ordinal": 13,
+  "variant": "clean",
+  "conversation_id": "013::gpqa__rec2K9NTFNw04xewq::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "691c25da77eb9f4019be58f7a3d64e96e568134ec6619a59bb97cc71b1b98fd6",
+  "semantic_condition_id": "e44d65b5ed077b6551d7a29c3bda14d29684ca3a2874d4e1a28c8b40de9d88b0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the gene order V-CT-CV, take r(V-CT)=13.2%, r(CT-CV)=6.4%, and the observed outer-marker value r(V-CV)=18.5%. Identify the middle marker and the two outer markers.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Add the two adjacent-interval percentages and compare their sum with the third reported percentage, keeping the stated marker labels.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain the discrepancy between that sum and the third percentage using the interpretation applied to these measurements.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that interpretation, determine the numerical consequence of the discrepancy and justify the calculation.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Summarize the interpretation and explain how it accounts for the three reported map quantities.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

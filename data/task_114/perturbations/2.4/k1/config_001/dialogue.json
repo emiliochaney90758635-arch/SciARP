@@ -1,0 +1,35 @@
+{
+  "release_task_index": 114,
+  "task_id": "114-capsule033",
+  "source_id": "bix-49-q5",
+  "dataset": "bixbench",
+  "ordinal": 114,
+  "variant": "perturbed",
+  "conversation_id": "114::114-capsule033::2.5::perturbed",
+  "condition_label": "2.4.k1",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 1,
+  "dialogue_sha256": "76043862c5b3fff03eb0195323784ad95ed7f73c5802fe61ebe8d3c1acfa1dd5",
+  "semantic_condition_id": "a1f21044a57830a43be4ea49f4d8f5189de673e227de0fcaf9eae4a5037eb65b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# GRIK5 disease-versus-control result evidence\n\n## Gene identity\n\n| annotation source | gene_id | gene_name | hgnc_id | description |\n|---|---|---|---|---|\n| Gencode v31 gene annotation | ENSG00000105737.9 | GRIK5 | HGNC:4583 | protein-coding gene |\n| HGNC annotation | ENSG00000105737 | GRIK5 | HGNC:4583 | glutamate ionotropic receptor kainate type subunit 5 |\n\nThe count matrix uses the versioned Ensembl identifier `ENSG00000105737.9`.\n\n## Model and effect direction\n\nThe archived analysis used:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nThe original `ASXL1` condition is encoded as `disease`, and `Control` as `control`. Therefore, a positive shrunken `log2FoldChange` is higher expression in ASXL1-mutation disease relative to control after adjustment for sex.\n\nResults are retained under the strict criterion `padj < 0.05`; no additional absolute-LFC threshold is active.\n\n## Archived GRIK5 result row\n\n| gene_name | log2FoldChange | padj |\n|---|---:|---:|\n| GRIK5 | 3.825466 | 7.039991e-26 |\n\n`log2FoldChange` is the apeglm-shrunk effect field. Decimal-place formatting is applied to this field, not to `padj` or to an unlogged fold change.\n\n# GRIK5 RT-qPCR expression check\n\n## Source and assay\n\nThe Myeloid Molecular Diagnostics Laboratory measured GRIK5 and RPLP0 in\nASXL1-mutant disease samples and controls. Entries are mean threshold cycles\nfrom matched assay batches.\n\n| Group | Replicate | GRIK5 Ct | RPLP0 Ct |\n|---|---|---:|---:|\n| control | A | 25.1 | 18.0 |\n| control | B | 25.3 | 18.1 |\n| control | C | 25.0 | 17.9 |\n| disease | A | 23.9 | 18.0 |\n| disease | B | 24.1 | 18.1 |\n| disease | C | 23.8 | 17.9 |\n\nCalculate `ΔCt=GRIK5 Ct−RPLP0 Ct`, average within group, and use\n`log2FC(disease/control)=−(mean ΔCt_disease−mean ΔCt_control)`.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the disease-versus-control coefficient direction and the apeglm shrinkage specification for the ASXL1-mutated comparison.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Under that group contrast, what is GRIK5's regulatory direction and does it pass the FDR threshold?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the shrunken GRIK5 log2 fold change rounded to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

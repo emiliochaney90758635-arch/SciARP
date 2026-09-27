@@ -1,0 +1,54 @@
+{
+  "release_task_index": 277,
+  "task_id": "gpqa__recmzeT93BlfOcNzr",
+  "dataset": "gpqa",
+  "ordinal": 145,
+  "variant": "perturbed",
+  "conversation_id": "145::gpqa__recmzeT93BlfOcNzr::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "cffa983a38520d9a858fd3b2483289fbdec19c9e0d2bd3861d0f47cb173723c6",
+  "semantic_condition_id": "60e435c646ebf0dc407e6b9a1d0f448352e162136b94681cc32892fd68a341f6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Boc-Phe-Ala(3-N3)-OMe, what intermediate is produced if azide undergoes beta elimination before nucleophilic addition? Assume the L-Phe stereocenter is retained.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What geometry does that intermediate have at the alanine-derived carbon, and what happens to the original alanine stereocenter?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If the nucleophile can add from either face of that intermediate while L-Phe remains chiral, how are the two products related?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use only the change in bulk optical-rotation magnitude to identify the reaction mechanism.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "How strong is that evidence without structures or stereochemical assignments for the two separated products and without excluding unrelated same-mass isomers?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Name a structural or kinetic follow-up that could distinguish the proposed product pair from unrelated same-mass species and link it to the intermediate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the best-supported mechanistic conclusion and its main evidential limitation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

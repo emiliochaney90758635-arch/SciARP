@@ -1,0 +1,64 @@
+{
+  "release_task_index": 243,
+  "task_id": "gpqa__recUVWz7kU1KFTc5G",
+  "dataset": "gpqa",
+  "ordinal": 111,
+  "variant": "perturbed",
+  "conversation_id": "111::gpqa__recUVWz7kU1KFTc5G::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "f8ec1da0c0b0ebc2a8e98b05613c2f202f3b77708a7ea337ba1cdfaca8cf135e",
+  "semantic_condition_id": "361eee9ae7684ea6694c5cb798dcc410988c68f7cc4c6437335a85728f66ee68",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a two-qubit Hadamard gate described as having a control and target, write its action on the computational basis while also saying it flips the target when control is |0>.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain how this basis map differs from the usual control-|1> CNOT.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand the classical probability distribution (alpha|0>+beta|1>-gamma|1>) tensor |0> into basis terms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply a SWAP gate only to the term whose first qubit is |0>.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply a Toffoli gate to the terms whose first qubit is |1>.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the transformed terms into the full output state.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Factor the |1> amplitude where useful and state the complete result.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the basis mapping, relative minus sign, linearity, and norm preservation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final output and a concise zero-control rationale.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

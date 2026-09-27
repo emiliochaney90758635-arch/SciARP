@@ -1,0 +1,54 @@
+{
+  "release_task_index": 550,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3086",
+  "dataset": "olympiadbench",
+  "ordinal": 497,
+  "variant": "perturbed",
+  "conversation_id": "497::olympiadbench__OE_TO_maths_en_COMP_3086::1.x::perturbation__1_3__k1__1_3_count1_cfg0002::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d128c6abb7b7a819b03368620236a1937300c5f7532320ab71527149b651c291",
+  "semantic_condition_id": "87bd4051380df44f11a07b9c91fd3b547c40d2801c48cf0dd55bc33c9ebc2f54",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the sides of a regular 16-gon cyclically. Encode three selected supporting lines by the positive cyclic gaps a,b,c between their side indices, and derive a+b+c=16.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate the conditions for two extended lines to form a triangle into restrictions on a,b,c.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how rotations and reflections act on the gap triple and why congruence is classified by the unordered cyclic gaps of the actual supporting lines, not merely by eight unoriented directions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Enumerate the unordered triples a>=b>=c>=2 satisfying a+b+c=16 with no entry equal to 8.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the resulting congruence classes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that each listed triple produces three nonparallel lines whose pairwise intersections lie off the original polygon vertices.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the number of noncongruent triangles.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

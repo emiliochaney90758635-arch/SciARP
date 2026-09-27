@@ -1,0 +1,59 @@
+{
+  "release_task_index": 249,
+  "task_id": "gpqa__recXsYa3i2UhGF5fe",
+  "dataset": "gpqa",
+  "ordinal": 117,
+  "variant": "perturbed",
+  "conversation_id": "117::gpqa__recXsYa3i2UhGF5fe::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "baaf35a1c3db88f05ed3b225d91d25f6822fbd110ac3e19e745f6f00f16e160d",
+  "semantic_condition_id": "9b9628b51760599ac8b30b7aa1d998a1bb5517b40d362b6aab74b24d6685415b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 2-formyl-5-vinylcyclohex-3-enecarboxylic acid, inventory the rings, carbon-carbon double bonds, and oxygenated functional groups before reaction.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The substrate is treated with red phosphorus and excess HI. What happens to its aldehyde and ketone groups?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under those same conditions, what happens to the two carbon-carbon double bonds?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After the reductions of the oxygenated groups and carbon-carbon double bonds described above, how many rings and pi bonds remain in the carbon skeleton?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State an index-of-hydrogen-deficiency method based on the rings and pi bonds that remain.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use that method to determine the product's IHD.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check whether the information actually supplied supports ring opening or residual unsaturation; do not assume any omitted reaction condition.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the final IHD and the structural feature responsible for it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

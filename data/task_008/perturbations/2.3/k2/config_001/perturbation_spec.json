@@ -1,0 +1,22 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes the retained count from 846 to 864 and updates its proportion coherently.",
+    "Transposes the fitted-result denominator from 21,251 to 21,125 while keeping the row accounting internally closed."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "filtered numerator and proportion"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace",
+      "object": "fitted-result denominator and proportion"
+    }
+  ],
+  "evidence_change_permitted": true
+}

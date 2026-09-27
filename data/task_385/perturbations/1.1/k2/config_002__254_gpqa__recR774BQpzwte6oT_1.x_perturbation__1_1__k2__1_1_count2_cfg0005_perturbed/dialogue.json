@@ -1,0 +1,69 @@
+{
+  "release_task_index": 385,
+  "task_id": "gpqa__recR774BQpzwte6oT",
+  "dataset": "gpqa",
+  "ordinal": 254,
+  "variant": "perturbed",
+  "conversation_id": "254::gpqa__recR774BQpzwte6oT::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "837731d5f991f6eb747e3b878541ab423dc134e09dcda685b10e46d1cd366877",
+  "semantic_condition_id": "e525529965d668c14285bf24e405340c19b70b29ff22338bd6b34b2ab370a0f2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A target's blackbody spectrum peaks at 7.21 eV when plotted against photon energy, while the Sun's peaks at 1.41 eV. Assuming equal unit bolometric emissivity, determine the temperature ratio from the peak positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use L=4*pi*R^2*epsilon*sigma*T^4 to derive the mass ratio in solar units, expressing it in terms of L_A/L_sun and T_A/T_sun.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the stated factor of 24 together with the peak-derived ratio to evaluate the ratio defined in the preceding step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the preceding blackbody relations, evaluate numerically how the first entry's surface gravity compares with the second entry's radius and report a dimensionless ratio.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show how a non-unit emissivity ratio would enter the relation being used, then apply the emissivity assumption established earlier.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "List the measured and model-dependent inputs on which the comparison relies, and state whether the supplied case contains what is needed for the requested evaluation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the numerical result against the governing relation used above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Qualify the result to the precision of the measurements and the assumptions used in the analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the direction and scale of the comparison are physically consistent with the stated temperature and luminosity information.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Summarize the peak-derived temperature ratio, radius ratio, and squared radius ratio, together with the assumptions used to obtain them.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

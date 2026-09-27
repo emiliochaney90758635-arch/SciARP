@@ -1,0 +1,35 @@
+{
+  "release_task_index": 49,
+  "task_id": "049-capsule014",
+  "source_id": "bix-18-q2",
+  "dataset": "bixbench",
+  "ordinal": 49,
+  "variant": "perturbed",
+  "conversation_id": "049::049-capsule014::2.2::k2::perturbed::lane_b_review_overlay",
+  "condition_label": "2.2.k2",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 2,
+  "dialogue_sha256": "0ee5ef2ec87f7b3d7afac7650c4a28c0f354ace3eddb76c2794383ca3ded8d0d",
+  "semantic_condition_id": "6e0aa2af1b96226bcc9bfdb19bd419f78f435b86e4b74aea23cf85e900595e5d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement and grouping fields\n\n`Area` is the ImageJ-derived area of a 48-hour swarming plate image. The archived summary grouped records jointly by `StrainNumber` and `Genotype`, then calculated the ordinary arithmetic mean of `Area`.\n\nThe complete records for the group `StrainNumber = 1`, `Genotype = Wildtype` are:\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area | Circularity | Round |\n|---:|---|---:|---|---:|---:|---:|---:|\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 | 0.076 | 0.839 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 | 0.090 | 0.870 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 | 0.062 | 0.948 |\n\nAll three `Area` observations belong to the same statistical group. `Circularity`, `Round`, and other genotypes are not inputs to the requested mean.\n\n## Calculation and reporting rule\n\nFor observations \\(x_1,\\ldots,x_n\\):\n\n\\[\n\\bar{x}=\\frac{\\sum_i x_i}{n}.\n\\]\n\nAfter calculating the mean from the unrounded observations, round it to the nearest multiple of 1,000.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nIdentify the response and grouping fields used in the swarming analysis, and locate the wild-type P. aeruginosa group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement and grouping fields\n\n`Area` is the ImageJ-derived area of a 48-hour swarming plate image. The archived summary grouped records jointly by `StrainNumber` and `Genotype`, then calculated the ordinary arithmetic mean of `Area`.\n\nThe complete records for the group `StrainNumber = 1`, `Genotype = Wildtype` are:\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area | Circularity | Round |\n|---:|---|---:|---|---:|---:|---:|---:|\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 | 0.076 | 0.839 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 | 0.090 | 0.870 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 | 0.062 | 0.948 |\n\nAll three `Area` observations belong to the same statistical group. `Circularity`, `Round`, and other genotypes are not inputs to the requested mean.\n\n## Calculation and reporting rule\n\nFor observations \\(x_1,\\ldots,x_n\\):\n\n\\[\n\\bar{x}=\\frac{\\sum_i x_i}{n}.\n\\]\n\nAfter calculating the mean from the unrounded observations, round it to the nearest multiple of 1,000.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nExtract every Area replicate belonging to that group.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement and grouping fields\n\n`Area` is the ImageJ-derived area of a 48-hour swarming plate image. The archived summary grouped records jointly by `StrainNumber` and `Genotype`, then calculated the ordinary arithmetic mean of `Area`.\n\nThe complete records for the group `StrainNumber = 1`, `Genotype = Wildtype` are:\n\n| DishNumber | Genotype | StrainNumber | Ratio | Replicate | Area | Circularity | Round |\n|---:|---|---:|---|---:|---:|---:|---:|\n| 13 | Wildtype | 1 | 1:0 | 1 | 95,704 | 0.076 | 0.839 |\n| 14 | Wildtype | 1 | 1:0 | 2 | 69,298 | 0.090 | 0.870 |\n| 15 | Wildtype | 1 | 1:0 | 3 | 82,325 | 0.062 | 0.948 |\n\nAll three `Area` observations belong to the same statistical group. `Circularity`, `Round`, and other genotypes are not inputs to the requested mean.\n\n## Calculation and reporting rule\n\nFor observations \\(x_1,\\ldots,x_n\\):\n\n\\[\n\\bar{x}=\\frac{\\sum_i x_i}{n}.\n\\]\n\nAfter calculating the mean from the unrounded observations, round it to the nearest multiple of 1,000.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T3\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the arithmetic mean of those replicates and round it to the nearest thousand.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

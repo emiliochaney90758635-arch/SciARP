@@ -1,0 +1,40 @@
+{
+  "release_task_index": 120,
+  "task_id": "120-capsule034",
+  "source_id": "bix-51-q1",
+  "dataset": "bixbench",
+  "ordinal": 120,
+  "variant": "perturbed",
+  "conversation_id": "120::120-capsule034::3.3::k1::perturbed::lane_d",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "e41d90768bdcbdc93c61450291a6ca4692fb70adaf3730f9abaceebfa7622e86",
+  "semantic_condition_id": "f3748d7449a5578a2f2d76e477dea5804dad5d41d4e0c14b9df316275bd19bed",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Age-only response-probability evidence\n\n## Age and response observations\n\nThe treatment-response event is efficacy `PR`: Group 1 is encoded as `Response=1`, while Group 2 is encoded as `Response=0`. The 80 retained ages are:\n\n```text\nResponse = 1 (n=41), Age in years:\n67, 50, 57, 46, 40, 52, 53, 45, 73, 64, 52, 54, 45, 71, 41, 45,\n43, 57, 51, 74, 52, 49, 74, 57, 74, 67, 47, 50, 59, 57, 63, 51,\n46, 51, 58, 64, 48, 44, 40, 55, 65\n\nResponse = 0 (n=39), Age in years:\n46, 44, 73, 72, 40, 59, 67, 60, 67, 51, 65, 73, 49, 55, 50, 65,\n68, 69, 68, 56, 75, 73, 63, 70, 71, 56, 67, 46, 53, 63, 63, 51,\n65, 75, 65, 69, 73, 73, 64\n```\n\n## Fitted model\n\n```r\nmodel_age <- glm(Response ~ Age, data = dataset, family = binomial)\n```\n\n| term | full-precision estimate |\n|---|---:|\n| `(Intercept)` | 4.4465652749199176 |\n| Age | -0.074953918037084705 |\n\nThe linear predictor and response-scale transformation are:\n\n```text\neta(age) = beta_0 + beta_Age × age\np(age) = 1 / (1 + exp(-eta(age)))\n```\n\nThe requested new observation has `Age=65`; BMI, gender, and other fields are not terms in this model. Use the full-precision coefficients above in the two general formulas.\n\nThe probability is on the `Response=1` scale, i.e. the efficacy-PR event.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the binary response and complete 80-row age analysis set.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit Response~Age-1 without an intercept.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the fitted coefficients to calculate the linear predictor for age 65.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Transform that linear predictor to the probability of the Response=1 efficacy event.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

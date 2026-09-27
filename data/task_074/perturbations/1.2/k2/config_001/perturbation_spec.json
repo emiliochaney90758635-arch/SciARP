@@ -1,0 +1,43 @@
+{
+  "task_id": "074-capsule020",
+  "release_task_index": 74,
+  "subclass": "1.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Reverses matrix dimensions.",
+    "Mis-scales the test fraction."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "79c0c7b772f418ba7136dd5f50807051fd69a2063388d72c137d8c8916f6a06d",
+  "configured_evidence_sha256": "79c0c7b772f418ba7136dd5f50807051fd69a2063388d72c137d8c8916f6a06d",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Read `test_size=0.3` as 0.3 percent of samples rather than the decimal fraction 30%, then run the 50 splits. Do not recompute the final clustering under these altered dimensions and split size; instead reuse the archived 173 matches and five mismatches from the original 178-sample analysis."
+    }
+  ]
+}

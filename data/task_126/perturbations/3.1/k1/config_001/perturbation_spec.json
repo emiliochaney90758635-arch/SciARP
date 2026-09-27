@@ -1,0 +1,26 @@
+{
+  "task_index": 126,
+  "task_id": "126-capsule035",
+  "subclass": "3.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "3da27097369462397e7b648c092cba76b045354d9c1ac23ac0ab7db5897f31ce",
+  "source_base_evidence_sha256": "7dd8a650fc791e36b94aec424bd72baa24b2beb159f1a5cc73cb5307ee20b862",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Distinct-site total contradicted.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "State that the retained records form 50 rather than 51 distinct positions."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

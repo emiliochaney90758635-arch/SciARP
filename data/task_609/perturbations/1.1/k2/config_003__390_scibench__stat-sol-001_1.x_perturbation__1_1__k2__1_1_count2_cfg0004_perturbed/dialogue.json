@@ -1,0 +1,49 @@
+{
+  "release_task_index": 609,
+  "task_id": "scibench__stat-sol-001",
+  "dataset": "scibench",
+  "ordinal": 390,
+  "variant": "perturbed",
+  "conversation_id": "390::scibench__stat-sol-001::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7de1e67bfcc5f332dae35fb13ed7f023a2dc6cbdedd595ac67f7a07dc421cd6e",
+  "semantic_condition_id": "098d9f49239128ddc820462d0e8c3990c8d4d7146fa06019e74d22bf14c90bfc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A bridge hand contains 13 cards selected from a standard 52-card deck. Does the hand depend on dealing order, and which counting method applies?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the number of 13-card selections from 52 distinct cards in compact permutation notation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Expand the earlier expression as a falling factorial without an order-correction divisor.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the exact integer.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give an independent consistency check that does not simply restate the result.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the count and the sample-space interpretation.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

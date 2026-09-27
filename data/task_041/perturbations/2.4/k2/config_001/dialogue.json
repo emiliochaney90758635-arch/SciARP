@@ -1,0 +1,35 @@
+{
+  "release_task_index": 41,
+  "task_id": "041-capsule011",
+  "source_id": "bix-14-q3",
+  "dataset": "bixbench",
+  "ordinal": 41,
+  "variant": "perturbed",
+  "conversation_id": "041::041-capsule011::2.4::k2::perturbed::lane_b_review_overlay",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "724e71959c7654ef4af239beff36bdbdeeda76f0ae0bb192bbcaf3fe76aa608e",
+  "semantic_condition_id": "fe83f275c990a1abf4d04847fe6526c670f9839a39027fd5a32f01c8601f5b8a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort, table structure, and counting unit\n\nThe metadata contains 87 subjects, while the prefiltered CHIP-candidate directory contains 86 matched per-sample workbooks. Sample ID 533 is the sole metadata subject without a workbook; there is no workbook-only extra sample.\n\nEach workbook has a title in row 1, field names in row 2, and variant records beginning in row 3. Across the 86 workbooks there are 57,258 sample–variant record rows. The counting unit is a workbook row: if the same genomic coordinate appears in different samples, each occurrence is retained and counted separately.\n\nThe two fields used are:\n\n| Field | Use |\n|---|---|\n| `Zygosity` | Remove `Reference` and missing calls |\n| `Sequence Ontology (Combined)` | Apply ontology exclusions |\n\n## Zygosity frequencies\n\n| Raw `Zygosity` value | Record rows |\n|---|---:|\n| `Reference` | 44,211 |\n| `Heterozygous` | 7,303 |\n| `Homozygous Variant` | 4,593 |\n| Missing | 1,151 |\n| Total | 57,258 |\n\n## Ontology frequencies among valid non-reference rows\n\n| `Sequence Ontology (Combined)` | Rows |\n|---|---:|\n| `intron_variant` | 6,185 |\n| `synonymous_variant` | 2,938 |\n| `missense_variant` | 1,035 |\n| `3_prime_UTR_variant` | 832 |\n| `splice_region_variant` | 437 |\n| `5_prime_UTR_variant` | 329 |\n| `frameshift_variant` | 78 |\n| `5_prime_UTR_premature_start_codon_gain_variant` | 50 |\n| `inframe_insertion` | 8 |\n| `upstream_gene_variant` | 3 |\n| `inframe_deletion` | 1 |\n| `intergenic_variant` | 0 |\n\nThe requested broad UTR rule removes every label containing the literal substring `UTR`, including the composite premature-start-codon label.\n\n`upstream_gene_variant` does not contain the substring `UTR` and is retained.\n\n## Staged multiple_conflicting_reannotations evidence at T1\n\nFor this archived perturbation condition, the evidence record states: current-release reannotation implies 4,586.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the samples with variant records, total merged rows, counting unit, and fields used by the archived filters.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort, table structure, and counting unit\n\nThe metadata contains 87 subjects, while the prefiltered CHIP-candidate directory contains 86 matched per-sample workbooks. Sample ID 533 is the sole metadata subject without a workbook; there is no workbook-only extra sample.\n\nEach workbook has a title in row 1, field names in row 2, and variant records beginning in row 3. Across the 86 workbooks there are 57,258 sample–variant record rows. The counting unit is a workbook row: if the same genomic coordinate appears in different samples, each occurrence is retained and counted separately.\n\nThe two fields used are:\n\n| Field | Use |\n|---|---|\n| `Zygosity` | Remove `Reference` and missing calls |\n| `Sequence Ontology (Combined)` | Apply ontology exclusions |\n\n## Zygosity frequencies\n\n| Raw `Zygosity` value | Record rows |\n|---|---:|\n| `Reference` | 44,211 |\n| `Heterozygous` | 7,303 |\n| `Homozygous Variant` | 4,593 |\n| Missing | 1,151 |\n| Total | 57,258 |\n\n## Ontology frequencies among valid non-reference rows\n\n| `Sequence Ontology (Combined)` | Rows |\n|---|---:|\n| `intron_variant` | 6,185 |\n| `synonymous_variant` | 2,938 |\n| `missense_variant` | 1,035 |\n| `3_prime_UTR_variant` | 832 |\n| `splice_region_variant` | 437 |\n| `5_prime_UTR_variant` | 329 |\n| `frameshift_variant` | 78 |\n| `5_prime_UTR_premature_start_codon_gain_variant` | 50 |\n| `inframe_insertion` | 8 |\n| `upstream_gene_variant` | 3 |\n| `inframe_deletion` | 1 |\n| `intergenic_variant` | 0 |\n\nThe requested broad UTR rule removes every label containing the literal substring `UTR`, including the composite premature-start-codon label.\n\n`upstream_gene_variant` does not contain the substring `UTR` and is retained.\n\n## Staged multiple_conflicting_reannotations evidence at T1\n\nFor this archived perturbation condition, the evidence record states: current-release reannotation implies 4,586.\n\n## Staged multiple_conflicting_reannotations evidence at T2\n\nFor this archived perturbation condition, the evidence record states: canonical-transcript audit implies 4,650.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nRemove Reference and missing-Zygosity rows so that only explicit non-reference sample-variant records remain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Then remove intron, intergenic, and every ontology label containing UTR. How many sample-variant records remain?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

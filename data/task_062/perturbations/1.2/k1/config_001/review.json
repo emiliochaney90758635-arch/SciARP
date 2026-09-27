@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "VAF can be treated as percent and compared directly with 0.3%.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "0bdb7ec4fe03b14739b19877e811688ac3e922a3c17f991d802fd781230f666a",
+  "strict_non2x_original_semantic_condition_id": "48a800c35e4c790488a4b27f8bbfc2ca06de7a2a41e25a4f9fee5dd441a5792b",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Round VAF to one decimal before applying strict <0.3, excluding values rounded to 0.3 while retaining those rounded to 0.2.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

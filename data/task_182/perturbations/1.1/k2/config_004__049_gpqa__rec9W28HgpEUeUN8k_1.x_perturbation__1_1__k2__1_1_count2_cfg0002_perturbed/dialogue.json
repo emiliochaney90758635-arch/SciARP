@@ -1,0 +1,54 @@
+{
+  "release_task_index": 182,
+  "task_id": "gpqa__rec9W28HgpEUeUN8k",
+  "dataset": "gpqa",
+  "ordinal": 49,
+  "variant": "perturbed",
+  "conversation_id": "049::gpqa__rec9W28HgpEUeUN8k::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9e257408443044d378f3abc5551983e2fe57480cd429e8a945d2bb54155fc177",
+  "semantic_condition_id": "d4aaa19b85bdb69f3cb39e6961e744c1678a93b4b60fd2d5eb3019acc974aa0b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the classical probability mixture written as |psi>=[cos(phi)|alpha>+sin(phi)|-alpha>]/N, with N=sqrt[1+sin(2phi)exp(-2alpha^2)], set phi=-pi/4. Simplify the coefficients and identify whether the result is an even or odd cat state.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The relative-entropy non-Gaussianity is delta_b=Tr(rho ln rho)-Tr(tau ln tau), where tau is the Gaussian state with the same first and second moments. Rewrite this using von Neumann entropies and determine the contribution from the pure state rho.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the state parameters established above, evaluate the first and second moments needed to obtain the symplectic fermionic occupation n of tau, and state the corresponding fermionic entropy relation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the relation established above to calculate the required entropy or purity contribution, giving an exact expression and decimal value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the contributions required by the selected measure and retain enough precision for a meaningful numerical report.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and magnitude against the properties of this odd cat state and the definition of the selected non-Gaussianity measure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the numerical non-Gaussianity under the selected measure and interpret the value in that measure.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

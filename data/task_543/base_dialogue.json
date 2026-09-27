@@ -1,0 +1,54 @@
+{
+  "release_task_index": 543,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2643",
+  "dataset": "olympiadbench",
+  "ordinal": 490,
+  "variant": "clean",
+  "conversation_id": "490::olympiadbench__OE_TO_maths_en_COMP_2643::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "b74fad5fb275d532a4912bb920b7e52f137bd7c3d77a7d8922eae7771f70abb4",
+  "semantic_condition_id": "687c53c9f9c756e066aef4888a617517151d29be2a1d401f6aa535c14df63f16",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For Q_{a,b} with vertices (0,0),(b,0),(a,1),(0,1), characterize a lattice-boundary triangle of area 1/2. Relate its unit base on one horizontal side to its third vertex on the opposite side.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let T(a,b) be the number of such tilings. Determine the boundary values T(a,0) and T(0,b).",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a,b>0, analyze the tile incident to the right boundary and show why removing it leads to the two predecessor cases T(a-1,b) and T(a,b-1).",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why those two cases are disjoint and exhaustive, yielding T(a,b)=T(a-1,b)+T(a,b-1).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the 7-by-1 rectangle, interpret a recurrence path as a sequence containing seven bottom-boundary and seven top-boundary choices.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the boundary values and recurrence to obtain the binomial closed form for T(a,b), then specialize the formula to T(7,7).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate T(7,7) and report the number of tilings of WASH.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

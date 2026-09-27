@@ -1,0 +1,49 @@
+{
+  "release_task_index": 267,
+  "task_id": "gpqa__reciOUAwJv4qTlXxs",
+  "dataset": "gpqa",
+  "ordinal": 135,
+  "variant": "perturbed",
+  "conversation_id": "135::gpqa__reciOUAwJv4qTlXxs::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "5ab66c23ca1fd5eb5a1c396b40f22b9650cb51e166a66467763bd7893c60a121",
+  "semantic_condition_id": "272b0593d33d7d549a4cf7be7960a74c83693e5c6aef6d05de3024d67f5bb0d3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A single-qubit channel flips the computational-basis state with probability p. Which two operations represent the no-flip and flip events, and what probability belongs to each?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the survival-probability convention p=P(no flip) and 1-p=P(flip) as the sole Kraus-weight parameterization, replacing the convention established earlier.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Verify the trace-preserving completeness relation A_0^dagger A_0+A_1^dagger A_1=I.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the channel to a general one-qubit density matrix and show how the two branches are mixed.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why do the scalar weights enter as square roots, and why can an overall phase on either Kraus operator leave the channel unchanged?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the two Kraus operators and the resulting map E(rho).",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

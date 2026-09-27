@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::183::gpqa__recUAzHaz2w1b1Ih8::1.4.k3::perturbed",
+  "condition_label": "1.4.k3",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 3,
+  "dialogue_sha256": "946c630183fa097ba14a6f5744559754c325ac519ba595656334a53c10d3612b",
+  "semantic_condition_id": "36afcafa6b89b87cad6f5e6ea9aa66bd2f20932aebc74ebda2a4d7884dd629de",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two quasars, how is their central black-hole mass ratio related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Express LA/LB using only luminosity distances dA and dB.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Given only zB=0.02, use a leading low-redshift relation to find dA/dB.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the two measurements established above, calculate their ratio in the orientation required for LA/LB.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

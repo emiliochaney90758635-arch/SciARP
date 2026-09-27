@@ -1,0 +1,36 @@
+{
+  "task_id": "072-capsule019",
+  "release_task_index": 72,
+  "subclass": "4.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Suppresses scope for the FeMinus union.",
+    "Suppresses scope for the final exclusive set."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "7e8ba2af170872c3fc9b8f4ad19f41cf0e7f3634a3cd31dd8e2618bda3d5f03a",
+  "configured_evidence_sha256": "7e8ba2af170872c3fc9b8f4ad19f41cf0e7f3634a3cd31dd8e2618bda3d5f03a",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

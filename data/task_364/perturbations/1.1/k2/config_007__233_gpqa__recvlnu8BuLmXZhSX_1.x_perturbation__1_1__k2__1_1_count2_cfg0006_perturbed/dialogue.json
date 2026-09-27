@@ -1,0 +1,54 @@
+{
+  "release_task_index": 364,
+  "task_id": "gpqa__recvlnu8BuLmXZhSX",
+  "dataset": "gpqa",
+  "ordinal": 233,
+  "variant": "perturbed",
+  "conversation_id": "233::gpqa__recvlnu8BuLmXZhSX::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "d8109c1472417589f3e9fca6ed96015cbe3f1ecb93524f17feed3872d3b7081d",
+  "semantic_condition_id": "2ee898f92b29c479b41f63eea2ebec2fb4b7f74f4e3178b6baf16def68e50df4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The state is (-1,2,1)^T and the observable is P=[[0,1/sqrt(2),0],[1/sqrt(2),0,1/sqrt(2)],[0,1/sqrt(2),0]]. Find a vector spanning P's zero-eigenvalue eigenspace.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Normalize the eigenvalue scalar for outcome zero and verify it by applying P.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Normalize the state (-1,2,1)^T and state its squared norm before normalization.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the normalized vectors to compute a matrix determinant onto the zero eigenspace and then a Born probability.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check whether the projection amplitude and all outcome probabilities satisfy Born-rule normalization, and state the zero-outcome probability.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the norms of the state and zero-eigenvalue eigenvector, and distinguish the projection amplitude from its squared Born-rule probability.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the probability of obtaining the zero outcome.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

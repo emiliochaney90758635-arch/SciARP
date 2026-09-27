@@ -1,0 +1,31 @@
+{
+  "subclass": "3.1",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "reverses row-level recurrence rule",
+      "consumer_turns": [
+        "T4",
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "reverses pooled-row aggregation",
+      "consumer_turns": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "reverses contrast direction",
+      "consumer_turns": [
+        "T6"
+      ]
+    }
+  ]
+}

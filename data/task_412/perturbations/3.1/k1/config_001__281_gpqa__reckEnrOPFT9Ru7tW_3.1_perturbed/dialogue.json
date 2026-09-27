@@ -1,0 +1,69 @@
+{
+  "release_task_index": 412,
+  "task_id": "gpqa__reckEnrOPFT9Ru7tW",
+  "dataset": "gpqa",
+  "ordinal": 281,
+  "variant": "perturbed",
+  "conversation_id": "281::gpqa__reckEnrOPFT9Ru7tW::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a6231ec912b2aaf5dc89d05594eb1438b5f62334de8eea59d9f2a2dc1bc9e5ff",
+  "semantic_condition_id": "fd08d8548d6da4631e98adba9766c441b7d09abd3fc7e8c7a9eb6057369d0068",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Starting from 3-(hydroxymethyl)-5-(prop-1-en-2-yl)cyclohexan-1-one, determine product 1 after sodium hydride and benzyl bromide. Which group reacts, and which groups remain?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What product 2 forms when product 1 reacts with p-toluenesulfonyl hydrazide under catalytic acid?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze product 2 with n-butyllithium at low temperature followed by aqueous ammonium chloride. Identify the Shapiro reaction, product 3, and whether n-butyl is incorporated.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Replace the hydrogen atmosphere with nitrogen and determine the transformations over Pd/C.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Identify product 4 by name and connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed product against each transformation already established in the sequence.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Audit the fate of the temporary protecting and derivatizing groups, and determine whether the organolithium reagent becomes part of the final carbon skeleton.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Qualify the expected product because the final catalyst loading, gas pressure, solvent, temperature, time, conversion, and product analysis are unspecified.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Which experimental observation would best confirm both transformations predicted for the final catalytic step?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report product 4 and the sequence of transformations.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

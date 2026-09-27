@@ -1,0 +1,33 @@
+{
+  "task_id": "021-capsule007",
+  "subclass": "4.1",
+  "injection_count": 2,
+  "root_injections": [
+    "Suppresses class-label uncertainty.",
+    "Suppresses gene-resolution uncertainty."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f4ef4b5eb4bb50e83b50b03564af1c382652144878b38300af347d701f4ff18e",
+  "configured_evidence_sha256": "f4ef4b5eb4bb50e83b50b03564af1c382652144878b38300af347d701f4ff18e",
+  "evidence_unchanged": true
+}

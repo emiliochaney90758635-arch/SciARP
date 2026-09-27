@@ -1,0 +1,33 @@
+{
+  "task_index": 130,
+  "task_id": "130-capsule036",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "c8fe10daa55e6642ed101d192918d60e94ac8fd4d547b6a95633a7fd7780d470",
+  "source_base_evidence_sha256": "5007ffc73a1dc5573dbcf635ff1b3fec773a1967467b8060a0f82288993520cb",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "Membership term redefined.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Overlap-count term independently redefined.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Use pathway membership to mean all genes appearing anywhere in the KEGG pathway record, including linked neighboring terms.",
+    "T5": "Use overlap count to mean matching annotation rows rather than distinct symbols."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

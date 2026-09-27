@@ -1,0 +1,35 @@
+{
+  "release_task_index": 17,
+  "task_id": "017-capsule006",
+  "source_id": "bix-7-q3",
+  "dataset": "bixbench",
+  "ordinal": 17,
+  "variant": "perturbed",
+  "conversation_id": "017::017-capsule006::2.5::k2::perturbed",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "60b5f7209bd7fabc8b9d5bd831104d45823ec5fe8464e85536951ee503c9993a",
+  "semantic_condition_id": "06f86cac7d5702bd73186bc355aaaf08541d87578f50bff88c7f25bc895962e0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Variant-call population\n\nVariant workbooks are available for 86 samples. Their relevant field is `Zygosity`; the combined data contain 57,258 call rows.\n\n| Zygosity class | Rows |\n|---|---:|\n| `Reference` | 44,211 |\n| Explicit non-reference (`Heterozygous` or `Homozygous Variant`) | 11,896 |\n| Missing `Zygosity` | 1,151 |\n| **Total** | **57,258** |\n\nThe partition closes exactly:\n\n```text\n44,211 + 11,896 + 1,151 = 57,258\n```\n\n## Filtering semantics\n\nThe implemented operations are:\n\n```r\nnonref_CHIP_dataset <- full_dataset[\n    full_dataset$Zygosity != \"Reference\", ]\n\nnonref_CHIP_dataset <- nonref_CHIP_dataset %>%\n    filter(!is.na(sample))\n```\n\nFor a missing zygosity, `NA != \"Reference\"` evaluates to `NA`. Logical indexing creates an all-`NA` row whose `sample` value is also `NA`; the subsequent `filter(!is.na(sample))` removes it. Therefore the retained population consists only of explicit non-reference calls.\n\nThis is not equivalent to subtracting only the Reference rows from the raw total:\n\n```text\nretained = raw - Reference - missing Zygosity\n```\n\nThe explicit non-reference total is also the sum of the two retained genotype classes:\n\n| Retained genotype class | Rows |\n|---|---:|\n| Heterozygous | 7,303 |\n| Homozygous Variant | 4,593 |\n| **Combined** | **11,896** |\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Allelic-depth re-genotyping summary\n\n**Source:** Familial Exome Variant Quality Laboratory\n**Material:** The 57,258 CHIP-panel call rows from 86 matched sample workbooks\n**Method:** The laboratory ignored exported genotype labels and reassigned each row from alternate and total read counts. Rows with zero alternate reads were classified reference; positive allele fractions below 0.80 were classified non-reference heterozygous; allele fractions at least 0.80 were classified non-reference homozygous; rows without usable allelic depth were left unclassified.\n\n| Allelic-depth class | Call rows |\n|---|---:|\n| Zero alternate reads | 43,900 |\n| \\(0 <\\) alternate fraction \\(< 0.80\\) | 8,410 |\n| Alternate fraction \\(\\ge 0.80\\) | 4,390 |\n| Allelic depth unavailable | 558 |\n\nThe laboratory’s retained non-reference count is the sum of its two positive-alternate-fraction classes.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nVerify the sample count and total CHIP-variant rows, and check that the three Zygosity classes sum to that total.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent allelic-balance adjudication\n\n**Source:** Hereditary Hematology Reclassification Unit\n**Material:** All 57,258 panel-associated rows in the same 86 workbooks\n**Method:** Exported `Zygosity` labels were ignored. A validated allelic-balance model classified 45,258 rows as reference or unusable, 9,000 as non-reference heterozygous, and 3,000 as non-reference homozygous.\n\n| Reclassification result | Call rows |\n|---|---:|\n| Reference or unusable | 45,258 |\n| Non-reference heterozygous | 9,000 |\n| Non-reference homozygous | 3,000 |\n| **Total** | **57,258** |\n\nThe unit therefore retained 12,000 non-reference rows.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFollow the archived R filtering semantics to determine whether Reference, explicit non-reference, and missing-Zygosity rows survive.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Under that filter, how many CHIP variants are retained across all matched workbooks?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

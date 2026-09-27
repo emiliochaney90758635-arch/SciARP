@@ -1,0 +1,40 @@
+{
+  "release_task_index": 71,
+  "task_id": "071-capsule019",
+  "source_id": "bix-26-q4",
+  "dataset": "bixbench",
+  "ordinal": 71,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::071::071-capsule019::2.2.k3::perturbed",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "e48f97d74e4cf1ab171d90fbae99085853c180bf3e9872e10ee6dfe3a0fd1c3a",
+  "semantic_condition_id": "5cb21b441b26b80e0cc760f2fd01744ab5109598118c413fdeab86ea526f7253",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for This Task\n\n## Gene-List and Pathway Filtering Levels\n\nBoth FeMinus and Succ use MMGluFePlus as the reference. The archived downregulated gene lists use:\n\n```r\nfilter(log2FoldChange < -1.5)\n```\n\nNo gene-level `padj < 0.05` filter is applied. Each GeneID list is then supplied to:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe 0.05 cutoffs apply to pathway-level output. All pathway descriptions are compared only after removal of the same organism suffix.\n\n## `Dn` Point Locations in the Archived Dot Plot\n\n| Cleaned pathway description | FeMinus · Dn | Succ · Dn |\n|---|:---:|:---:|\n| Sulfur metabolism | — | — |\n| Styrene degradation | ● | — |\n| Quorum sensing | ● | — |\n| Porphyrin metabolism | ● | ● |\n| Phenazine biosynthesis | ● | ● |\n| Pentose phosphate pathway | — | ● |\n| Oxidative phosphorylation | ● | ● |\n| Microbial metabolism in diverse environments | ● | ● |\n| Glyoxylate and dicarboxylate metabolism | — | ● |\n| Cyanoamino acid metabolism | ● | — |\n| Cationic antimicrobial peptide (CAMP) resistance | — | ● |\n| Carbon metabolism | — | ● |\n| Biosynthesis of secondary metabolites | ● | ● |\n| Bacterial secretion system | — | — |\n| ABC transporters | — | — |\n\n`●` indicates an enrichment point at the corresponding `Dn` coordinate, whereas `—` indicates no point. The intersection uses strict matching of complete cleaned strings and does not merge names based on similar meaning, color, or point size.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Shared pathway repression across iron-depleted and succinate-grown *Pseudomonas aeruginosa*\n\nMateusz B. Krol, Hanae Sato, Leila M. Barros, and Owen T. Mercer\n\n## Abstract\n\nDistinct nutrient limitations can converge on common bacterial pathway responses. We analysed strongly downregulated genes in iron-depleted glucose and succinate growth conditions and applied identical KEGG over-representation thresholds. After standardising pathway descriptions, **seven** pathways were shared between the two downregulated result sets. The overlap included respiratory, porphyrin, phenazine, and broad metabolic programmes and remained stable when borderline gene-level fold changes were removed. This common set defines a substantial core of pathway repression across the two media perturbations.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nDistinguish the gene-list fold-change filter from the pathway-level p- and q-value cutoffs in the archived analysis.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Stringent differential-expression screening narrows the shared PA14 nutrient-response pathways\n\nIrena Volkov, Darius Chen, Marisol Adeyemi, and Pavel R. Ko\n\n## Abstract\n\nWe re-examined the archived PA14 iron-depletion and succinate contrasts to determine whether pathway concordance survives gene-level multiplicity control. Genes were restricted to log2 fold change below −1.5 and adjusted p below 0.05 before identical KEGG over-representation analysis and complete-description matching. Only **three** downregulated pathways were common to FeMinus and Succ. The result indicates that applying the archived adjusted-p requirement before enrichment substantially contracts the cross-medium core.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nApply those criteria to assemble the FeMinus `Dn` pathway set.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Semantic Harmonization of KEGG Pathway Names across PA14 Nutrient Conditions\n\nFarah N. Al-Masri, Tetsuo Kambara, Jan P. de Vries, and Lillian C. Moore\n\n## Abstract\n\nWe revisited comparison of downregulated KEGG pathways in PA14 grown under iron depletion and on succinate. Gene lists were defined only by the same log2-fold-change threshold, and the enrichment cutoffs, organisms, and direction-specific pathway sets were retained. Before intersecting the two pathway lists, however, descriptions were harmonized to broader semantic parents and known aliases. In particular, the FeMinus label “Cyanoamino acid metabolism” and the Succ label “Carbon metabolism” were treated as one shared carbon-metabolism programme rather than as distinct complete strings. This report concerns pathway-identity normalization; it neither imposes a gene-level adjusted-p filter nor directly substitutes another published overlap count.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nAssemble the Succ `Dn` pathway set under the same rules.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which complete cleaned pathway descriptions occur in both sets, and how many are shared?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

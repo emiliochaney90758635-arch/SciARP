@@ -1,0 +1,25 @@
+{
+  "config_id": "task070_3.3_k1",
+  "subclass": "3.3",
+  "k": 1,
+  "injection_turns": [
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Infer the FeMinus direction from the larger Count marker rather than from the Up/Dn x-coordinate."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Treat the present FeMinus-Up marker as the larger Count marker, map that larger Count to Dn rather than to its x-coordinate, and report Dn."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 629,
+  "task_id": "scibench__thermo-sol-012",
+  "dataset": "scibench",
+  "ordinal": 410,
+  "variant": "perturbed",
+  "conversation_id": "410::scibench__thermo-sol-012::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "1e61e32573458840eed9d0809b5c662e53c06662b1e8eb3d0f9ac9fdfb659300",
+  "semantic_condition_id": "faa93f8d6b4f0d70d76a657a2ad6b72c51583556271b5f3820f8a56ec6ca4c43",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "One mole of ideal-gas CO changes from Ti=320 K and Vi=80.0 L to Tf=650 K and Vf=120.0 L. Starting from the entropy differential in terms of Cv, beta, and kappa, substitute the ideal-gas values beta=1/T and kappa=1/p and derive a convenient path-independent expression for Delta S.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For Cv,m/(J mol^-1 K^-1)=31.08-0.01452(T/K)+3.1415e-5(T/K)^2-1.4973e-8(T/K)^3, integrate Cv,m/T analytically from 320 K to 650 K. Keep the result as an explicit endpoint expression for now.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate that temperature contribution numerically, retaining the contributions of all four polynomial terms.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the isothermal expansion-work contribution R ln(Vf/Vi) for Vi=80.0 L, Vf=120.0 L, and R=8.314 J mol^-1 K^-1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the temperature and volume contributions and report the entropy change for one mole of CO with appropriate units and precision.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Interpret the calculation as a reversible two-step path: heating at fixed volume followed by isothermal expansion. Why is this path legitimate even if the actual process is unspecified?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign of the isothermal expansion contribution directly from ln(Vf/Vi), and explain its physical meaning for an ideal gas.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final Delta S and briefly identify how much comes from the temperature change and how much from the volume change.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

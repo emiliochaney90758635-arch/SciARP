@@ -1,0 +1,54 @@
+{
+  "release_task_index": 606,
+  "task_id": "scibench__quan-sol-006",
+  "dataset": "scibench",
+  "ordinal": 387,
+  "variant": "perturbed",
+  "conversation_id": "387::scibench__quan-sol-006::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "7b621afb3262ff54151478c6aa23765b937454adf7b0fab9180888b6fa1f28c8",
+  "semantic_condition_id": "30697b1e8c939b47824e0c7a0428325610ddb10bf1338a7923d83e99d3c198fe",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For rigid-rotor 12C32S, identify the lowest pure rotational absorption transition and relate its frequency to the rotational constant B.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fix the carbon nucleus at the rotation axis and use I=m_S r^2, treating only sulfur as moving through the full bond radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the reduced mass from the 12C and 32S isotopic masses.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert 48991.0 MHz to hertz.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Calculate the C-S bond distance and state whether absorption drives an upward or downward rotational transition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the factor of two in nu=2B, the reduced-mass moment of inertia, and the distance scale.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the bond distance as a rigid-rotor spectroscopic estimate with nonzero model and measurement uncertainty.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

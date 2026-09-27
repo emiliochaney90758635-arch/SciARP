@@ -1,0 +1,64 @@
+{
+  "release_task_index": 332,
+  "task_id": "gpqa__recc4ENraOoV1KODF",
+  "dataset": "gpqa",
+  "ordinal": 200,
+  "variant": "perturbed",
+  "conversation_id": "200::gpqa__recc4ENraOoV1KODF::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "b3ed886401cdcab1706973b186f33d4d2073b646e70565600f7872978e8c7cdc",
+  "semantic_condition_id": "a170a1a1bbc0563be9abffc91986969c282db1c6651e048e6461355c8bd99c32",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A full vial contains 250 microcuries of L-[methyl-3H]methionine. What final volume gives 375 microcuries per millilitre? Report the unrounded value and two-decimal value, treating label values as nominal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert 300 mCi/mmol to microcuries per micromole and determine the total methionine amount corresponding to the full-vial activity established above.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the commercial stock specific activity, calculate the labelled methionine in the vial; the label gives only a 0.25-mL stock volume and buffer composition.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the previously calculated final volume and total amount, check the implied molar concentration against the intended stock value.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract the labelled methionine amount found from the specific-activity calculation from the total methionine required for the stock to determine how much unlabelled methionine to add.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final volume and the amount of methionine to add, and verify that they meet the activity and molar-concentration targets.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the added quantity with the certainty status supported by the label and transfer assumptions used so far.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Which label values and transfer assumptions justify that certainty statement?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the recommended final volume and added methionine amount, together with the certainty statement justified by the label and transfer assumptions.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

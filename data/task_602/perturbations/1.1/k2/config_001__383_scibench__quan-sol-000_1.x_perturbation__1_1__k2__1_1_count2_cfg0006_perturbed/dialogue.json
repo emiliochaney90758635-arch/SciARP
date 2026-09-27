@@ -1,0 +1,54 @@
+{
+  "release_task_index": 602,
+  "task_id": "scibench__quan-sol-000",
+  "dataset": "scibench",
+  "ordinal": 383,
+  "variant": "perturbed",
+  "conversation_id": "383::scibench__quan-sol-000::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c35b8a8ee00f963975e92d536df9be0e7aa5cdff854986b50ff3b8b600c6c05b",
+  "semantic_condition_id": "711cfa9991d150569a513002d1228ecc7c97d8a2f042722fa5ba39cb8caac38e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At `t=0`, a particle in one dimension has `Psi(x) = a^(-1/2) exp(-|x|/a)`. Use the Born rule to obtain the position probability density and describe its symmetry.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the integral for the probability current through `0 <= x <= 2 nm` when `a = 1.0000 nm`.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find an antiderivative for the integrand on this nonnegative interval, keeping `a` symbolic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the integral at `0` and `2 nm`, substitute `a = 1.0000 nm`, and simplify the result to an exact expression for the expectation value of position.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the probability numerically to four decimal places and compare it with one half.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that comparison using symmetry: relate the probability on `x >= 0` to one half and account for the positive tail beyond `2 nm`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the requested probability and briefly state why it lies on the indicated side of one half.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

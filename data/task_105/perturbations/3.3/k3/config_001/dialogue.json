@@ -1,0 +1,35 @@
+{
+  "release_task_index": 105,
+  "task_id": "105-capsule030",
+  "source_id": "bix-43-q4",
+  "dataset": "bixbench",
+  "ordinal": 105,
+  "variant": "perturbed",
+  "conversation_id": "105::105-capsule030::3.3::k3::perturbed::lane_d_review_overlay",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "7c02c56f2572468ce93eb54cca035a315b09560e14ad01fb31155cd6ac8c2373",
+  "semantic_condition_id": "c9ff33358d2251cb6303fec745ac67d7eb1e882c03401ce7ecd042dd2bdb26db",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Comparison and selected-gene input\n\nThe target comparison is the three `Cisplatin_IC50_CBD_IC50` samples against\nthe three `DMSO` samples. The archived gene-selection rule was:\n\n```text\npadj < 0.05\nabs(log2FoldChange) >= 0.5\nbaseMean >= 10\n```\n\nIt yielded 679 Ensembl IDs. The archived lookup log records HTTP 400 failures\nfor 23 IDs, and the later input construction applies `dropna()` to the mapped\ngene-name field. The archived output does not print the resulting number of\nnonmissing gene-name entries. These upstream input-list counts are not\npathway-size denominators.\n\n## Archived Reactome result slice\n\nThe result was restricted to `Reactome_2022` after sorting by adjusted\np-value. The relevant leading rows include:\n\n| Exact term | Overlap | P-value | Adjusted P-value | Genes |\n|---|---|---:|---:|---|\n| TP53 Regulates Transcription Of Cell Cycle Genes R-HSA-6791312 | 8/49 | 0.000140 | 0.133280 | BTG2;CDKN1A;PCNA;RGCC;CCNE2;CCNE1;PLK2;BAX |\n| TP53 Regulates Transcription Of Cell Death Genes R-HSA-5633008 | 6/44 | 0.002509 | 0.399388 | TP53I3;FASN;TP53INP1;TNFRSF10C;BAX;TRIAP1 |\n| CHL1 Interactions R-HSA-447041 | 3/9 | 0.002308 | 0.399388 | NRP1;ITGA2;ANK1 |\n\n## `Overlap` field semantics\n\nIn this archived gseapy/Enrichr table:\n\n```text\nOverlap = number of submitted input genes hitting the term\n          /\n          number of genes in that historical pathway gene set\n```\n\nThe target row's numerator can be checked against the number of symbols in its\n`Genes` field. The denominator is the Reactome term size, not the 679 upstream\nEnsembl IDs or a background size. Preserve the `X/Y` text as written: do not\ndivide, reduce, or reverse it.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nCompute the usable mapped list by subtracting the 23 lookup failures once for each of the two contrast endpoints from 679, then use that inferred count downstream.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Among the TP53 transcription rows, select the one with the largest adjusted p-value rather than matching the complete term label.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Recompute overlap using the inferred mapped-list size as denominator instead of copying the archived field, and report X/Y.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

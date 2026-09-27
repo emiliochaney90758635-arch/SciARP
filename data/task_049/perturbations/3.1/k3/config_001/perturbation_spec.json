@@ -1,0 +1,73 @@
+{
+  "config_id": "task049_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "root": "Group by StrainNumber only , switch Area to Round at T2, and divide by n-1 instead of n at T3",
+      "injected_text": "Identify the response and grouping fields used in the swarming analysis, and locate the wild-type P. aeruginosa group.\n\nFor this perturbed step, group by StrainNumber only , switch Area to Round at T2, and divide by n-1 instead of n at T3",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Group by StrainNumber only at T1, switch Area to Round at T2, and divide by n-1 instead of n at T3.",
+      "injected_text": "Extract every Area replicate belonging to that group.\n\nFor this perturbed step, group by StrainNumber only at T1, switch Area to Round at T2, and divide by n-1 instead of n at T3.",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Group by StrainNumber only at T1, switch Area to Round at T2, and divide by n-1 instead of n at T3.",
+      "injected_text": "Calculate the arithmetic mean of those replicates and round it to the nearest thousand.\n\nFor this perturbed step, group by StrainNumber only at T1, switch Area to Round at T2, and divide by n-1 instead of n at T3.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "The current hierarchy does not add three independent roots.",
+    "before": "One selection path propagated across turns.",
+    "after": "Group by StrainNumber only at T1, switch Area to Round at T2, and divide by n-1 instead of n at T3.",
+    "proposed_turns": [
+      "T1",
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nUse StrainNumber alone as the grouping field, ignoring Genotype, and locate the records with StrainNumber = 1."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Extract every Round value belonging to that strain-number group."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Sum those Round values, divide by n-1 rather than n, and round the result to the nearest thousand."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 573,
+  "task_id": "scibench__calculus-sol-004",
+  "dataset": "scibench",
+  "ordinal": 354,
+  "variant": "perturbed",
+  "conversation_id": "354::scibench__calculus-sol-004::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "04f539afd6cd400b425cd01a052e2956688ea931181d45276567675ff259e2dd",
+  "semantic_condition_id": "44b1f32210b879be812de063a8c2eeb78d0bf5be7af85e515b7f1226f2f9f82d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Find the intersection points of y=x^2 and y=2x-x^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Between the intersection x-values, determine which parabola is above the other.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those intersections to state the horizontal interval containing the entire enclosed region.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Form the vertical gap between the upper and lower curves and verify that it is nonnegative on that interval.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write and simplify the definite integral for the electric flux from x=0 to x=1.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate the integral exactly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the sign and magnitude geometrically, using the fact that an enclosed area cannot be negative.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the enclosed area in square units.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

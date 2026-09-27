@@ -1,0 +1,56 @@
+{
+  "task_index": 124,
+  "task_id": "124-capsule035",
+  "subclass": "1.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "73b33665ecd8fc29c3ec6e804d5bf648e0be637cc988a4663689c347022bd917",
+  "source_base_evidence_sha256": "17c3e3ce567616aab47f3ece9f6ceb2411910a7e2ee5e7485c722a4eb06fd30a",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Methylation scale changed.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Length unit independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Density unit independently changed.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Interpret percentage thresholds as 0-to-1 proportions.",
+    "T3": "Treat chromosome lengths as kilobases without conversion.",
+    "T4": "Report density per megabase while using the raw sites-per-base-pair values."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use strict thresholds 0.10 and 0.90 against the unscaled 0–100 MethylationPercentage observations."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Treat the displayed chromosome W and chromosome 1 lengths as kilobases without converting their numeric values."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate sites divided by those numeric length values and label the resulting unscaled sites-per-base values as sites per megabase before reporting their ratio."
+    }
+  ]
+}

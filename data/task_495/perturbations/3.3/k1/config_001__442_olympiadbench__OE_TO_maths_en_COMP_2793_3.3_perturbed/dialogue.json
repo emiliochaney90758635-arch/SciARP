@@ -1,0 +1,54 @@
+{
+  "release_task_index": 495,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2793",
+  "dataset": "olympiadbench",
+  "ordinal": 442,
+  "variant": "perturbed",
+  "conversation_id": "442::olympiadbench__OE_TO_maths_en_COMP_2793::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9c19bd9f979c7ed0568707fc30596abea377186210563faf5ef76b85b82dd8da",
+  "semantic_condition_id": "91ad57cc4ab7ea87577c593dc38f94507791ea861b194d16b70143ecd5123ae0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let n!! denote n(n-2)(n-4)... down to 2 for even n and down to 1 for odd n. Begin with even n: determine exactly which even positive integers satisfy n!! divides 2012!!.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write 2012!! as 2^1006 times 1006!. Use that factorization to examine the first odd double factorials near the divisibility boundary, including 1007!! and 1009!!.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At the odd boundary, discard the residual factorial and use only the power-of-two factor as an exact divisibility test for 1007!! and 1009!!.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Count the admissible even values of n, making the endpoint and its inclusion explicit.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the odd boundary by comparing the prime multiplicities contributed by 1007=19*53 with those available in 1006!, and contrast this with the missing prime 1009.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the established boundary to list and count all admissible odd positive integers n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the even and odd counts to obtain the requested number of positive integers n.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

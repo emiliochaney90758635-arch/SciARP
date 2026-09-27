@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Power can be mislabeled as a percent and entered as 80 rather than 0.80.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "8248ac2c7cf8a4596fd03bb5acb9672f8908f58326d8d378b66aca66a1765727",
+  "strict_non2x_original_semantic_condition_id": "6068b74468683da0546822873af356ffad8dc7578a2846e845e4a9f9250a2f18",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally misread 80% as 0.80% and enter target power 0.008 rather than 0.80, preserving a severe but computable percentage-scale error.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

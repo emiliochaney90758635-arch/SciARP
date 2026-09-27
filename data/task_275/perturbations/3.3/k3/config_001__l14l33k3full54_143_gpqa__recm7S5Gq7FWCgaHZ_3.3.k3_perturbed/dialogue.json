@@ -1,0 +1,69 @@
+{
+  "release_task_index": 275,
+  "task_id": "gpqa__recm7S5Gq7FWCgaHZ",
+  "dataset": "gpqa",
+  "ordinal": 143,
+  "variant": "perturbed",
+  "conversation_id": "l14l33k3full54::143::gpqa__recm7S5Gq7FWCgaHZ::3.3.k3::perturbed",
+  "condition_label": "3.3.k3",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 3,
+  "dialogue_sha256": "06b37aac473740a113700f07d016b128258227557106e7c09f44ad8cdd350489",
+  "semantic_condition_id": "d0db2dea5e5e6e9057a838071d3df794956d266b46d52aa532a819d156abb892",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Interpret the 6-hour phosphoprotein patterns for the single-agent AKT, PI3K, rapamycin, Rapalink-1, AZD8055, and dual PI3K/mTOR inhibitors, identifying which AKT and mTOR outputs each blocks or spares.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Given 70% live cells with MK2206 versus 100% control, assess whether the action assigned to MK2206 above by itself reproduces the strongest viability loss.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify partial versus complete mTORC1 blockade solely by the arithmetic mean of all five phosphosite percentages.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply Loewe additivity as a definitive synergy test from the single displayed concentration of each treatment without dose-response surfaces.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use MK2206 plus rapamycin (60%) and GDC-0941 plus rapamycin (40%) to test whether the mechanism assigned to rapamycin above is sufficient in those combinations.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use only single-agent marginal contrasts, ignore all combination interactions, and choose PI3K versus AKT and mTORC1 versus mTORC2 from those margins.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Synthesize the signaling and viability contrasts to identify the two kinase nodes transmitting most of the measured survival and proliferation effect.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the pair as the best-supported experimental conclusion while retaining uncertainty from absent replicates, error estimates, and small-difference statistics.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the proposed kinase-node conclusion against all the treatment comparisons, and identify which causal details remain unresolved because replicates, error estimates, and small-difference statistics are absent.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Identify the two kinase nodes and cite the treatment contrasts that most strongly support the conclusion, using the uncertainty assessment already established.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

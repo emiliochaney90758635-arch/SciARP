@@ -1,0 +1,52 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Segmentation-source selection introduced.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Calibration-source selection independently introduced.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Smoothing-source selection independently introduced.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T1",
+      "filename": "002__T1__segmentation_comparison.md"
+    },
+    {
+      "turn_id": "T4",
+      "filename": "003__T4__calibration_comparison.md"
+    },
+    {
+      "turn_id": "T6",
+      "filename": "004__T6__smoothing_comparison.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 284,
+  "task_id": "gpqa__recqisVCkgd2ojfRy",
+  "dataset": "gpqa",
+  "ordinal": 152,
+  "variant": "perturbed",
+  "conversation_id": "152::gpqa__recqisVCkgd2ojfRy::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2b07e208b2aed90fc4a31f815fce0d8a9741c5f4317980823a9e8f82e6785d03",
+  "semantic_condition_id": "9439f02698852d42f2a848e97f04d6c6565bbc93dc52e464c28e94d6000fd91b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Parse 1-(3-methylbut-3-en-1-yl)-2-vinylbenzene into its two alkene-bearing substituents and locate both carbon-carbon double bonds.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use an isolated-major-product reporting rule that discards every volatile small-alkene coproduct before defining the products that count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For ring-closing metathesis, determine which alkene carbons form the new double bond, which ring closes onto the benzene, and what small alkene is released.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Name every organic product formed and explain why alternative ring closures do not match the atom map.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the complete product set by carbon balance, including whether ethene must be counted.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify that the products arise from metathesis of the two alkene fragments rather than another reaction class.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report both products and the decisive ring-closing map.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

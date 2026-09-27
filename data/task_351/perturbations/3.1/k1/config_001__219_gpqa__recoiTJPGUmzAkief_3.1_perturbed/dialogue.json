@@ -1,0 +1,54 @@
+{
+  "release_task_index": 351,
+  "task_id": "gpqa__recoiTJPGUmzAkief",
+  "dataset": "gpqa",
+  "ordinal": 219,
+  "variant": "perturbed",
+  "conversation_id": "219::gpqa__recoiTJPGUmzAkief::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a5320797ae39e166ac405e4c14630b30ac2f86bb2a22ec7fcba211e51ef0ff91",
+  "semantic_condition_id": "df6c42fe329a805c9d435d4d2afef781a7b457636bcb80908d71e616d80774f7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An initially neutral spherical conductor contains an offset cavity with charge +q. What total charge is induced on the inner cavity wall?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "By charge conservation, what total charge appears on the conductor's outer surface?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For outer radius R, state the exterior electrostatic boundary-value problem, including enclosed charge and the condition on the spherical surface.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the exterior field using l, the distance from the cavity centre, instead of L, the distance from the conductor centre.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why does the result depend on L rather than the cavity-centre distance l or offset s?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Which cavity variables disappear, and why is the spherical outer boundary essential?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the field magnitude at P and the uniqueness argument.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

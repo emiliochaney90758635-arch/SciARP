@@ -1,0 +1,54 @@
+{
+  "release_task_index": 563,
+  "task_id": "scibench__atkins-sol-009",
+  "dataset": "scibench",
+  "ordinal": 344,
+  "variant": "perturbed",
+  "conversation_id": "344::scibench__atkins-sol-009::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9f9c3072829806ab27d014f801711934a739a6f848d5d524e332133c1c7c1616",
+  "semantic_condition_id": "25601f4b4ccf7965f5a0c948c669888814fa9284e0c2c385d9be4b1e1efecb81",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For water rotating about the HOH-angle bisector through oxygen, identify each atom's perpendicular distance contribution to the moment of inertia.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "With bond angle 104.5 degrees and O-H distance 95.7 pm, calculate the half-angle, convert the distance to metres, and find each hydrogen's perpendicular radius.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Set the oxygen perpendicular distance to R rather than zero when comparing the requested axis with the centre-of-mass axis.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the symbolic moment of inertia about this axis using the geometric conclusions and relevant masses established above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the geometry by projecting both identical O-H bonds perpendicular to the axis and verify the factor of two.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate I using the parameter values established above and explain which atomic terms enter numerically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report I in kg m^2 to three significant figures and identify the contributing atoms.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

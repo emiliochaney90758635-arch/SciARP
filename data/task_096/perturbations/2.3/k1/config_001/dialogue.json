@@ -1,0 +1,45 @@
+{
+  "release_task_index": 96,
+  "task_id": "096-capsule027",
+  "source_id": "bix-39-q2",
+  "dataset": "bixbench",
+  "ordinal": 96,
+  "variant": "perturbed",
+  "conversation_id": "096::096-capsule027::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "657e309795f82a5519e9f78f31ea4b313969d3803095c642729ea0d4ada7471e",
+  "semantic_condition_id": "5b169e8c338b7b441e13f61305f88adbf233b12236bdcdeec03c5a9ba8d77fd8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Cohort and statistical unit\n\nThe metadata contain 20 BLM mutation carriers. Sample `533` has no matching\nvariant workbook and is excluded, leaving these 19 analyzable carriers:\n\n```text\nP184 P185 P285 P287 P353 P354 P381 P396 P397 P489\nP490 P499 P500 P503 P504 P556 P557 P613 P614\n```\n\nThe statistical unit for the requested distribution is the **number of\nqualifying sample–variant rows per carrier**, including zero-count carriers.\n\n## Variant-field definitions and filters\n\nThe variant tables use the following fields:\n\n| Field | Meaning |\n|---|---|\n| `Zygosity` | reference/non-reference genotype call |\n| `Variant Allele Freq` | VAF as a proportion |\n| `Gene Names` | annotated gene symbol(s) |\n| `Sequence Ontology (Combined)` | variant consequence |\n\nApply all of the following rules:\n\n```text\nZygosity != \"Reference\"\nSequence Ontology (Combined) is not exactly any of:\n  intron_variant\n  intergenic_variant\n  3_prime_UTR_variant\n  5_prime_UTR_variant\nVariant Allele Freq < 0.3\n```\n\nAll retained rows below have `Zygosity = Heterozygous`. No candidate has\nmissing VAF or VAF exactly equal to 0.3. The nearest values on the two sides of\nthe cutoff are 0.299145 and 0.300885.\n\n## Qualifying sample–variant rows\n\n```tsv\nsample\tgene\tVAF\tSequence Ontology (Combined)\nP184\tCUX1\t0.247387\tsynonymous_variant\nP184\tCUX1\t0.287671\tsynonymous_variant\nP184\tNOTCH1\t0.294872\tsplice_region_variant\nP184\tETV6\t0.254717\tsynonymous_variant\nP185\tSF3B1\t0.219178\tsynonymous_variant\nP185\tTET2,TET2-AS1\t0.246575\tmissense_variant\nP185\tBRAF\t0.277778\tsynonymous_variant\nP285\tCUX1\t0.294118\tmissense_variant\nP287\tCUX1\t0.231579\tsynonymous_variant\nP287\tJAK2\t0.221374\tsynonymous_variant\nP287\tFLT3\t0.257353\tmissense_variant\nP287\tCBLC\t0.15942\tsplice_region_variant\nP287\tCBLC\t0.25\tmissense_variant\nP287\tBCOR\t0.256881\tsplice_region_variant\nP353\tCDKN2A\t0.252101\tmissense_variant\nP353\tWT1\t0.296399\tsynonymous_variant\nP354\tJAK2\t0.254902\tsynonymous_variant\nP354\tBCOR\t0.222222\tsplice_region_variant\nP381\tFLT3\t0.273438\tmissense_variant\nP397\tCUX1\t0.272414\tsynonymous_variant\nP397\tJAK2\t0.251969\tsynonymous_variant\nP397\tFLT3\t0.297297\tmissense_variant\nP489\tIKZF1\t0.22807\tsynonymous_variant\nP489\tJAK2\t0.239316\tsynonymous_variant\nP489\tABL1\t0.290179\tsynonymous_variant\nP490\tCBLB\t0.282158\tsynonymous_variant\nP490\tIKZF1\t0.240741\tsynonymous_variant\nP490\tETV6\t0.278481\tsynonymous_variant\nP490\tCBLC\t0.1875\tsplice_region_variant\nP499\tSF3B1\t0.280899\tsynonymous_variant\nP499\tCUX1\t0.234043\tsynonymous_variant\nP500\tSF3B1\t0.299145\tsynonymous_variant\nP503\tTET2,TET2-AS1\t0.253333\tmissense_variant\nP503\tCUX1\t0.257246\tsynonymous_variant\nP504\tTET2,TET2-AS1\t0.292887\tsynonymous_variant\nP556\tKMT2A\t0.255556\tsynonymous_variant\nP557\tSF3B1\t0.228571\tsynonymous_variant\nP557\tCUX1\t0.27758\tsynonymous_variant\nP557\tCUX1\t0.273543\tsynonymous_variant\nP557\tJAK2\t0.281553\tsynonymous_variant\nP557\tFLT3\t0.293103\tmissense_variant\nP613\tCUX1\t0.258278\tsynonymous_variant\nP613\tCUX1\t0.25\tmissense_variant\nP613\tJAK2\t0.206897\tsynonymous_variant\nP613\tCBLC\t0.241071\tsplice_region_variant\nP613\tCBLC\t0.284024\tmissense_variant\nP614\tJAK2\t0.278481\tsynonymous_variant\n```\n\n`P396` is in the analyzable cohort but has no row satisfying all filters, so\nits count is retained as zero. The 47 listed rows aggregate as follows:\n\n| Sample | Qualifying variants |\n|---|---:|\n| P184 | 4 |\n| P185 | 3 |\n| P285 | 1 |\n| P287 | 6 |\n| P353 | 2 |\n| P354 | 2 |\n| P381 | 1 |\n| P396 | -1 |\n| P397 | 3 |\n| P489 | 3 |\n| P490 | 4 |\n| P499 | 2 |\n| P500 | 1 |\n| P503 | 2 |\n| P504 | 1 |\n| P556 | 1 |\n| P557 | 5 |\n| P613 | 5 |\n| P614 | 1 |\n\n## Quartile convention\n\nUse R's default numeric quantile convention (`type = 7`). For an ordered\nvector of length \\(n\\), the position for probability \\(p\\) is:\n\n```text\nh = 1 + (n - 1) p\n```\n\nLinearly interpolate between adjacent order statistics when \\(h\\) is not an\ninteger. Define:\n\n```text\nQ1  = quantile(counts, 0.25, type=7)\nQ3  = quantile(counts, 0.75, type=7)\nIQR = Q3 - Q1\n```\n\nDo not compute the range, and do not treat the 47 variant rows as 47\nindependent subjects.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nEstablish the analyzable BLM mutation-carrier cohort, including carriers with no qualifying variant.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply the zygosity, consequence, and strict VAF filters to the carrier workbooks.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Count qualifying sample-variant rows per carrier while retaining the full cohort in the distribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Locate the adjacent order statistics used by R's type-7 first and third quartiles.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpolate those quartiles and report the interquartile range.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

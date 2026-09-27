@@ -1,0 +1,59 @@
+{
+  "release_task_index": 372,
+  "task_id": "gpqa__recJJcOHhFeSaRpl4",
+  "dataset": "gpqa",
+  "ordinal": 241,
+  "variant": "perturbed",
+  "conversation_id": "241::gpqa__recJJcOHhFeSaRpl4::1.x::perturbation__1_1__k4__1_1_c4_005::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "795074c117ab36e08db610b0e91d262bb46439ccd74cc74ca094935fc42ad820",
+  "semantic_condition_id": "11749669d4d93aeffd91e795251176f8663dc6b7d3698027a1a364a46bfd6e61",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an unknown C9H11NO2 compound, calculate the index of hydrogen deficiency. The IR has bands at 3420, 3325, and 1720 cm^-1; 1H NMR shows 1.20 (t,3H), 4.0 (broad s,2H), 4.5 (q,2H), 7.0 (d,2H), and 8.0 ppm (d,2H).",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the 3420, 3325, and 1720 cm^-1 features as Raman bands and identify the functional groups they support.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the non-aromatic 13C NMR signals at 1.20, 4.5, and 4.0 ppm with proton multiplicities and integrations.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the two aromatic 2H doublets to infer the crystal-packing pattern.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the spectral evidence to identify the catalyst rather than the compound.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Describe that identity with the confidence status supported by the available record and state what missing data leave residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Inventory the additional measurements that are present or absent and explain how they affect confidence in the structural assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the target identity with a concise justification from the spectroscopic analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

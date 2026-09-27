@@ -1,0 +1,64 @@
+{
+  "release_task_index": 402,
+  "task_id": "gpqa__reccoJcrp4TJBNe1n",
+  "dataset": "gpqa",
+  "ordinal": 271,
+  "variant": "clean",
+  "conversation_id": "271::gpqa__reccoJcrp4TJBNe1n::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "efe7e19d263bcdfdf9e44707301416a562c4897c695f1a773f9d6c47e6d7689c",
+  "semantic_condition_id": "b49e3e571595f610d6107cf2166485f85bd55ae7697dd4e6d862972cf4564104",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For diamond and graphite in equilibrium, write the Clapeyron relation for the slope of their coexistence curve in pressure-temperature space.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the phase-property differences needed in the Clapeyron relation from the supplied diamond and graphite data, converting the molar-volume difference to m^3/mol.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the coexistence-curve slope in Pa/K and bar/K, stating the sign convention explicitly.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use that local slope to estimate the signed pressure change for a 100.0-K temperature increase.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Report the pressure change in pascals and bar, and verify its direction from the chosen diamond/graphite phase-property differences.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What approximation is made by applying a constant local slope across the full 100.0-K interval?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Independently multiply the local slope by 100.0 K to check the finite pressure change numerically.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Qualify the estimate by explaining how temperature-dependent phase properties and curvature of the coexistence curve could affect it.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final pressure change and direction, and summarize how the Clapeyron relation determines them.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

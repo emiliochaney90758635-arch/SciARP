@@ -1,0 +1,34 @@
+{
+  "config_id": "task037_2.4_k2_existing",
+  "subclass": "2.4",
+  "k": 2,
+  "injection_turns": [
+    "T1",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T3"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "first external partition conflicts with base",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "second independent audit conflicts with base and first source",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

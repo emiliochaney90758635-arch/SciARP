@@ -1,0 +1,73 @@
+{
+  "config_id": "task065_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Exact-match biotypes , pair by row position at T3, and correlate all annotated genes at T4",
+      "injected_text": "Apply the protein_coding substring rule and the total non-PBMC expression threshold, then inner-join gene length. How many genes remain, and what does substring matching retain?\n\nFor this perturbed step, exact-match biotypes , pair by row position at T3, and correlate all annotated genes at T4",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Exact-match biotypes at T2, pair by row position at T3, and correlate all annotated genes at T4.",
+      "injected_text": "For the retained genes, compute ordinary mean expression across the selected CD14 samples and pair each value with its gene length.\n\nFor this perturbed step, exact-match biotypes at T2, pair by row position at T3, and correlate all annotated genes at T4.",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "Exact-match biotypes at T2, pair by row position at T3, and correlate all annotated genes at T4.",
+      "injected_text": "Using the supplied sufficient statistics, calculate Pearson's correlation between gene length and CD14 mean expression and characterize its direction and magnitude.\n\nFor this perturbed step, exact-match biotypes at T2, pair by row position at T3, and correlate all annotated genes at T4.",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "Dropping and restoring compound rows plus a continuity claim do not form three roots.",
+    "before": "Exact match, restore, claim consistency.",
+    "after": "Exact-match biotypes at T2, pair by row position at T3, and correlate all annotated genes at T4.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Treat the ten visible genes as the complete final set obtained by exact matching of the protein-coding biotype and the expression threshold."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Pair their Length values with the displayed CD14 means in reverse row order rather than by gene."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate Pearson r from those ten positionally mismatched pairs."
+    }
+  ]
+}

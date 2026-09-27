@@ -1,0 +1,49 @@
+{
+  "release_task_index": 141,
+  "task_id": "gpqa__rec0Arme2jcXQZnAW",
+  "dataset": "gpqa",
+  "ordinal": 3,
+  "variant": "perturbed",
+  "conversation_id": "003::gpqa__rec0Arme2jcXQZnAW::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f97581a18647821e54bb439afb6fd328605e70a9941225ef3f8ebaa6d599ea83",
+  "semantic_condition_id": "99cf5725bbc24334845a84aab953b8456b362e2addf32432c645346179be14ef",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For trans-cinnamaldehyde, Ph-CH=CH-CHO, count the ring and side-chain carbons and identify the carbonyl carbon attacked by methylmagnesium bromide.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After methylmagnesium bromide addition and workup, identify product 1's functional class and skeleton. How does the reagent change the carbon count?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Oxidize product 1 with PCC. Give product 2's functional-group change and condensed structure, and state whether this step changes the carbon count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat dimethylsulfoxonium methylide solely as a Baeyer-Villiger oxygen-transfer reagent: insert oxygen at the carbonyl, transfer no carbon, and identify that product as product 3.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Make a carbon ledger showing which steps add carbon and which only change oxidation state or connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the starting count and added fragments to determine product 3's carbon count and identify its skeleton.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

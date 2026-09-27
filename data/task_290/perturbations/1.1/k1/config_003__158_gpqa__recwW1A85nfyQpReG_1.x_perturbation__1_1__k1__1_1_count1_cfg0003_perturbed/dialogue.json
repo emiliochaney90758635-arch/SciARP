@@ -1,0 +1,54 @@
+{
+  "release_task_index": 290,
+  "task_id": "gpqa__recwW1A85nfyQpReG",
+  "dataset": "gpqa",
+  "ordinal": 158,
+  "variant": "perturbed",
+  "conversation_id": "158::gpqa__recwW1A85nfyQpReG::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "e5a913daaa65b62560f3b78bc616a708f8551e82eecae7ee4891909f4954af9f",
+  "semantic_condition_id": "b92b240978633494d938562d7eb9226d76c176c872a96aa4c06d90d66cedcc53",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let p be parallax and r distance. If the count density per unit parallax scales as p^-5 and p=k/r, rewrite the p^-5 factor as a power of r.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Differentiate p=k/r with respect to r and give the magnitude of the Jacobian |dp/dr|.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert density per unit parallax into density per unit mass rather than per unit distance.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the parallax-density factor p^-5 with the Jacobian |dp/dr| to obtain the distance-space power law.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the resulting density-per-unit-distance scaling as a power of r.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the units of the distance-space density and explain what the interval dr represents.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final distance-space scaling and show how it follows from the parallax density and Jacobian.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

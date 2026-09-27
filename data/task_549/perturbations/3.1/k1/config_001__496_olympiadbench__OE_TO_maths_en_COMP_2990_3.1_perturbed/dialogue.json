@@ -1,0 +1,54 @@
+{
+  "release_task_index": 549,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2990",
+  "dataset": "olympiadbench",
+  "ordinal": 496,
+  "variant": "perturbed",
+  "conversation_id": "496::olympiadbench__OE_TO_maths_en_COMP_2990::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "880ba4b815614512be61707ada05c99616d2cf327d1c75fc0f9ffd81c72c0ffe",
+  "semantic_condition_id": "891d7debf5d1fb140d89a7b474ff71d1b9ac505d6fa817c06e76ae96f185883d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T=67. In rectangle FAKE, EF=T and AF=4T/3. Use triangle AFK to find the diagonal FK and the area of triangle AFK symbolically in T.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the triangle area and base FK to determine the altitude from A to FK.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rectangle FUNK lies in the same plane, shares side FK, and has width UF=12/5 perpendicular to FK. Describe the part of FUNK that lies inside FAKE and why the overlap is clipped near the endpoints of FK.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use similarity in the two triangular halves adjacent to FK to calculate the combined area of the portions of FUNK outside FAKE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Subtract those exterior pieces from area(FUNK) to obtain a formula for the intersection area in terms of T.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that UF=12/5 lies in the clipped-overlap regime rather than the full-triangle regime, and verify the dimensions of the area formula.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate the intersection area for T=76.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

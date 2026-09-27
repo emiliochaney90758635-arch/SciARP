@@ -1,0 +1,48 @@
+{
+  "config_id": "task054_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Report W multiplied by 100 as a percentage.",
+      "injected_text": "Apply the Shapiro-Wilk test and report its W statistic.\n\nFor this perturbed step, report W multiplied by 100 as a percentage.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k1",
+    "decision": "repair_required",
+    "problem": "Uniformly scaling all NeuN values is affine and leaves W invariant.",
+    "before": "Divide every NeuN value by 1000.",
+    "after": "Report W multiplied by 100 as a percentage.",
+    "proposed_turns": [
+      "T3"
+    ]
+  },
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": [
+      "restored untracked legacy injection at T2 to clean request"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Apply the Shapiro-Wilk test, multiply its W statistic by 100, and report the result with a percent sign."
+    }
+  ]
+}

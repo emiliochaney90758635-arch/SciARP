@@ -1,0 +1,54 @@
+{
+  "release_task_index": 269,
+  "task_id": "gpqa__recj7NQlHcKW1rRME",
+  "dataset": "gpqa",
+  "ordinal": 137,
+  "variant": "clean",
+  "conversation_id": "137::gpqa__recj7NQlHcKW1rRME::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e3a31800759e7d3ace615527b1c995f21c0d4cfc038d173039d16cf2b6d2c910",
+  "semantic_condition_id": "2966463f462c21e8d6365a4f338b2e7d3495b40f24eb3bcc140a71816c9bb7b7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At 25 C, enough stoichiometric AgCl is dissolved in aqueous ammonia to give 0.010 M total dissolved silver. Because dissolution also gives 0.010 M chloride, use Ksp(AgCl) = 1.56 x 10^-10 to determine the free Ag+ concentration. The desired final quantity is the analytical ammonia concentration initially charged, not just free NH3 at equilibrium.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let L=[NH3]free. Using beta1 = 2.1 x 10^3 and beta2 = 1.7 x 10^7, write [Ag(NH3)+] and [Ag(NH3)2+] in terms of free Ag+ and L, then impose the 0.010 M total-silver balance.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Solve that silver-balance equation for the physically meaningful free-ammonia concentration L.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the resulting L and free Ag+ to calculate the concentrations of Ag(NH3)+ and Ag(NH3)2+.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Now account for both free and coordinated ligand. Evaluate the analytical ammonia inventory L + [Ag(NH3)+] + 2[Ag(NH3)2+].",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the silver and ammonia balances numerically and identify which dissolved silver species predominates.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the required analytical ammonia concentration and distinguish it clearly from the equilibrium free-ammonia concentration.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

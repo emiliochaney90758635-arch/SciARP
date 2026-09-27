@@ -1,0 +1,59 @@
+{
+  "release_task_index": 619,
+  "task_id": "scibench__stat-sol-016",
+  "dataset": "scibench",
+  "ordinal": 400,
+  "variant": "perturbed",
+  "conversation_id": "400::scibench__stat-sol-016::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6d3728c6692310af2494c11f3a5242f9f6cc8e92345c47e69ee3eddab6b10aa1",
+  "semantic_condition_id": "4d7365e16f04debc26da3ad05d7dac3e806abc94c5fdb545aea8888840b9d7dd",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A survey records whether a respondent watched football (A), basketball (B), or baseball (C) during the same year. It reports P(A)=0.43, P(B)=0.40, P(C)=0.32, P(A intersect B)=0.29, P(A intersect C)=0.22, P(B intersect C)=0.20, and P(A intersect B intersect C)=0.15. Before calculating overall reach, explain what the marginal, pairwise-overlap, and triple-overlap probabilities represent.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For football and basketball, compare P(A intersect B) with P(A)P(B). What kind of association is suggested, and can this observational survey establish that football viewing causes basketball viewing?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Make the analogous comparison for football and baseball using P(A intersect C) and P(A)P(C). What relationship is supported, and is a football-to-baseball causal direction identified?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat A, B, and C as pairwise-disjoint events and write the addition formula for the probability that a respondent watched at least one of the three sports.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Turn to the survey's overall reach. Write the three-event inclusion-exclusion expression for the probability that a randomly selected respondent watched at least one of the three sports.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the reported values into that expression and evaluate 0.43+0.40+0.32-0.29-0.22-0.20+0.15.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the calculation by explaining why the three pairwise intersections are subtracted and the triple intersection is added. Then interpret the resulting union probability for this surveyed group.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the final probability that a respondent watched at least one sport, and briefly summarize what the observed overlaps do and do not establish about relationships among the viewing habits.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

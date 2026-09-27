@@ -1,0 +1,64 @@
+{
+  "release_task_index": 201,
+  "task_id": "gpqa__recEO0cONj7M4p94J",
+  "dataset": "gpqa",
+  "ordinal": 68,
+  "variant": "perturbed",
+  "conversation_id": "068::gpqa__recEO0cONj7M4p94J::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "580998cb6781871125b5a1d86fd62800badbaa95f0e671d46fa5ed4b74be967d",
+  "semantic_condition_id": "b8fffc3074c365783db81bf9436f14058e89fc2e3efc237b320155baf408470d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For three interacting nucleons at unspecified energy and partial wave, can two-body binding by itself determine whether a three-body bound state exists? What two logical directions must be tested?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only a numerical solution of the momentum-space Faddeev equations as the sole method for resolving both implication directions between two-body and three-body binding.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Define propositions B2 and B3 for two-body-subsystem binding and three-body binding, and write the necessity and sufficiency implications explicitly.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Can a three-nucleon bound state exist even when none of its two-nucleon subsystems is bound? What does that imply about the necessity of two-body binding?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "In the reverse direction, does a bound two-nucleon subsystem alone guarantee a bound three-nucleon state? What does that imply about sufficiency?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Why do interactions among the three nucleons, together with the unspecified energy and partial wave, keep both implication tests relevant?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the two implication checks into the most defensible general conclusion about three-body binding when two-body subsystems are bound or unbound.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Name a recognized few-body phenomenon showing that pairwise binding is not necessary, and explain why unspecified dynamics prevent pairwise binding from being sufficient.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the final logical relationship between two-body and three-body binding under the information supplied.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

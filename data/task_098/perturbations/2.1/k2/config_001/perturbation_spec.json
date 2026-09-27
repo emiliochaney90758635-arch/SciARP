@@ -1,0 +1,19 @@
+{
+  "task_id": "098-capsule028",
+  "subclass": "2.1",
+  "injection_count": 2,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T3_response",
+    "T4_response"
+  ],
+  "root_injections": [
+    "Reverses the strain order encoded by Ratio.",
+    "Combines incommensurate differences into an unweighted sum."
+  ],
+  "evidence_mode": "append"
+}

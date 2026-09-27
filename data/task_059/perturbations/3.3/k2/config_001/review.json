@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can use table's NA-dropping total before T4 divides exact Benign by that total.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "3f35750927f1e1b59598450095b249973338231ec0e014c8d36c0f30f1d241ed",
+  "strict_non2x_original_semantic_condition_id": "ac746245c2a404ad6c85039df24a064cb785ba1b29c5dbe65187e4847609afe4",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally drop blank Classification rows at T3 and count Likely Benign with Benign at T4; remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

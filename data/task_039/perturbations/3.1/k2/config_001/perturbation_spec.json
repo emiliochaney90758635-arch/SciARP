@@ -1,0 +1,29 @@
+{
+  "subclass": "3.1",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "root": "adds the double-mutant-only row to the single-mutant numerator",
+      "consumer_turns": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "omits the exclusive three-way row from the union after T2 established disjointness",
+      "consumer_turns": [
+        "T4",
+        "T5"
+      ]
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "For the numerator, combine JBX97-only and JBX99-only, and include JBX98-only as well."
+    }
+  ]
+}

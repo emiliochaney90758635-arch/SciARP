@@ -1,0 +1,59 @@
+{
+  "release_task_index": 379,
+  "task_id": "gpqa__recNGovj5Pv0yxbfx",
+  "dataset": "gpqa",
+  "ordinal": 248,
+  "variant": "perturbed",
+  "conversation_id": "248::gpqa__recNGovj5Pv0yxbfx::1.x::perturbation__1_1__k2__1_1_count2_cfg0007::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a48a7b25e0a1e4ed79c1bbe77d6acb9c99e1777198a961e27c088307810d33e4",
+  "semantic_condition_id": "71c4ad83c12fbb4c19b562b826c97677a7ac4941273695db6324764abd1119ac",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A prepared hexene/C7-aldehyde mixture elutes within 25 minutes in an isothermal 60-degrees-C GC run, but later chronological reaction-sample injections develop irregular small peaks that the first two lack. What does the prepared-mixture test establish, and what association is observed with cumulative injections?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The actual samples come from rhodium-catalysed hydrogenation of 1-hexene but are said to contain C7 aldehydes. What additional material could be present?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how retained high-boiling material could produce small peaks at changing retention times in later chromatograms even though the target analytes initially behaved well.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "If retained material is the working diagnosis, what change to the GC program would directly clear it after the analytes elute?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using retained high-boiling material as the source, report the reaction mechanism rather than an operational GC remedy.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Calibrate this source and remedy as best supported rather than uniquely proven by the chronological observations.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Which blanks, standards, and controlled comparisons would distinguish column residue from continued vial reaction or an injector artifact?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the diagnosis, corrective procedure, and main validation checks.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

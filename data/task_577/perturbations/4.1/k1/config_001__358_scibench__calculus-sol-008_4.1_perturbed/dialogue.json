@@ -1,0 +1,69 @@
+{
+  "release_task_index": 577,
+  "task_id": "scibench__calculus-sol-008",
+  "dataset": "scibench",
+  "ordinal": 358,
+  "variant": "perturbed",
+  "conversation_id": "358::scibench__calculus-sol-008::4.1::perturbed",
+  "condition_label": "4.1.k1",
+  "family": "4.x",
+  "subclass": "4.1",
+  "paper_subclass": "4.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7c9ea9d63614296b3756c9585fe937c6b2bda071d90b05c1e22f9baae0fedc61",
+  "semantic_condition_id": "9637cdf1ef0515906db917140b009bdb5327c62f40957f6672cd7de1ab31933a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the volume V of a right circular cone in terms of its base radius r and height h.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Differentiate the cone-volume formula with respect to r and h to obtain the total differential dV.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the measured values r = 10 cm and h = 25 cm into dV. Write the separate absolute contributions from |dr| <= 0.1 cm and |dh| <= 0.1 cm before evaluating them.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the radial and height contributions separately using |dr| <= 0.1 cm and |dh| <= 0.1 cm, keeping each result in cubic centimetres.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "These measurement limits are deterministic error bounds rather than standard deviations. Explain how the signs of dr and dh should be chosen when estimating the largest possible first-order absolute error.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the two component bounds accordingly and give the exact first-order maximum absolute error in the cone's volume.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Convert that exact error estimate to a decimal number of cubic centimetres.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Treat the differential error estimate as an exact finite result with zero truncation uncertainty, even though the measurement errors are nonzero.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the worst-case sign choice: why do the two absolute contributions add for the maximum, rather than cancel or subtract?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Using the sign check from the previous turn, report the estimated maximum volume error both exactly and approximately, with the correct unit and first-order qualification.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

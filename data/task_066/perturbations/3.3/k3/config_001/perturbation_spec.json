@@ -1,0 +1,47 @@
+{
+  "config_id": "task066_3.3_k3",
+  "subclass": "3.3",
+  "k": 3,
+  "injection_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use medians for CD14 but means elsewhere."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Calculate Sxy/(Sxx*Syy)."
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "injected_text": "Rank the malformed signed coefficients."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Treat the supplied CD14 arithmetic-mean sufficient statistics as though they were derived from medians, while retaining the other cell-type summaries."
+    },
+    {
+      "turn_id": "T4",
+      "content": "For every cell type, calculate the coefficient as Sxy/(Sxx*Syy) without the square root in the denominator."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Rank those malformed coefficients by signed numerical value and report the smallest as the weakest association."
+    }
+  ]
+}

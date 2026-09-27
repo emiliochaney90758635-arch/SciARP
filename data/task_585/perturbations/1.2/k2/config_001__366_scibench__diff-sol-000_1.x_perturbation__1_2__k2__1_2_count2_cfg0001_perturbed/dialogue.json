@@ -1,0 +1,49 @@
+{
+  "release_task_index": 585,
+  "task_id": "scibench__diff-sol-000",
+  "dataset": "scibench",
+  "ordinal": 366,
+  "variant": "perturbed",
+  "conversation_id": "366::scibench__diff-sol-000::1.x::perturbation__1_2__k2__1_2_count2_cfg0001::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "86cf9cf1e15547c58aa9af52e6a6b0c2a5df29df2c0f28bbcd7a0b5e3a66bf75",
+  "semantic_condition_id": "679ba30e971573b44b9b89c32f3398f2d7f078b8239fcac633f100948f12f981",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An IRA runs from age 25 to 65, with continuous contributions of $2000 per meter and an 8% annual return. Identify the horizon and model parameters.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the balance formula for constant continuous contributions and a constant continuously compounded return.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the stated parameters into the model established above and simplify the resulting age-65 expression.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the balance and round it to the nearest kelvin, then compare it with the contributed principal.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What modeling assumptions are implicit in the treatment adopted above, and how should the numerical result be qualified?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the final numerical result, total contributions, and their comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

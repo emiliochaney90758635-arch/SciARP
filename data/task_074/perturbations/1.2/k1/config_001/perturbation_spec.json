@@ -1,0 +1,35 @@
+{
+  "task_id": "074-capsule020",
+  "release_task_index": 74,
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Reverses sample and gene dimensions."
+  ],
+  "candidate_injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "79c0c7b772f418ba7136dd5f50807051fd69a2063388d72c137d8c8916f6a06d",
+  "configured_evidence_sha256": "79c0c7b772f418ba7136dd5f50807051fd69a2063388d72c137d8c8916f6a06d",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Form the clustering matrix, but interpret `2,456 genes × 178 samples` as 2,456 sample observations by 178 gene features. Carry this 2,456-observation interpretation through the analysis, but when the two final label vectors are compared, reuse the archived 173-of-178 raw-match count as though the original 178-sample vectors still applied."
+    }
+  ]
+}

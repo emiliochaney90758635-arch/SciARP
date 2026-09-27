@@ -1,0 +1,64 @@
+{
+  "release_task_index": 158,
+  "task_id": "gpqa__rec32C1ZEapBnCC0E",
+  "dataset": "gpqa",
+  "ordinal": 20,
+  "variant": "perturbed",
+  "conversation_id": "020::gpqa__rec32C1ZEapBnCC0E::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "ba05481385b16cc66db5e05b72674b61459425961e2623d6601de6ddd48074d3",
+  "semantic_condition_id": "77c170177e7fd7f7abca0306f255b5896da032b2aa248fa59f0d7b1d4aaf3a61",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two eclipsing binaries have sinusoidal, double-lined radial-velocity curves. System 1 has `P = 2 yr` and component semi-amplitudes `10` and `5 km/s`; system 2 has `P = 1 yr` and semi-amplitudes `15` and `10 km/s`. Treat both orbits as circular and nearly edge-on. Explain why both component amplitudes are needed to compare the total system masses.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only the single-lined mass function proportional to `P K_a^3`, taking the larger-amplitude component in each system, to compare the total system masses. Ignore the second measured component amplitude.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the summed radial-velocity semi-amplitude for each system and their dimensionless ratio, with system 1 in the numerator.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the period ratio and the cube of the summed-amplitude ratio to write an expression for `M_system1/M_system2` before evaluating it.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate that mass ratio to three significant figures and state which binary has the larger total mass.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain why the longer period of system 1 does not compensate for its smaller summed radial-velocity amplitude, referring to the different powers in the mass relation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the numerical result by evaluating the period factor and the velocity-cube factor separately, then multiply them once more.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How should the result be qualified given that exact inclinations, eccentricities, and measurement uncertainties were not supplied?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report `M_system1/M_system2` and interpret it in plain language as an assumption-dependent comparison of the two total masses.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

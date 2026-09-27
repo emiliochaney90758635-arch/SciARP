@@ -1,0 +1,54 @@
+{
+  "release_task_index": 557,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3007",
+  "dataset": "olympiadbench",
+  "ordinal": 504,
+  "variant": "perturbed",
+  "conversation_id": "504::olympiadbench__OE_TO_maths_en_COMP_3007::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "bb73391b82c97fdc66fbe54c15fa659cb05985b21409cdde165814c4d39facda",
+  "semantic_condition_id": "d7fcd0081da059d74a76a4afa67fb7aa7f28e20fb712a98d898d4ee450389446",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After erasing every 0 and 5 from the integers 1 through 2019, count the occurrences of each product-relevant digit, including the extra twenty thousands-place 2s from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that deletion rule, verify the common multiplicity of the ordinary contributing digits and determine the extra thousands-place contribution from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those multiplicities to write the product compactly, ignore neutral factors, and reduce the repeated common base modulo 1000.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the modulo-125 branch, verify coprimality and state the applicable Euler exponent reduction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Reduce the product modulo 125 by applying Fermat's little theorem directly to the composite modulus.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Reduce the same product modulo 8.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Treat the modulo-8 and modulo-125 congruences as ordinary equalities when combining them.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

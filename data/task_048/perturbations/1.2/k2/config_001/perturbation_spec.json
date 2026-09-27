@@ -1,0 +1,57 @@
+{
+  "config_id": "task048_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "Keep VAF 0.3 versus 0.3% , and at T3 report the median in per-100-carrier units without the required conversion",
+      "injected_text": "Exclude Reference calls and Intronic, Intergenic, and UTR variants, retain VAF below 0.3, and count the remaining somatic CHIP variants for each carrier.\n\nFor this perturbed step, keep VAF 0.3 versus 0.3% , and at T3 report the median in per-100-carrier units without the required conversion",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "Keep VAF 0.3 versus 0.3% at T2, and at T3 report the median in per-100-carrier units without the required conversion.",
+      "injected_text": "What is the median of those per-carrier variant counts?\n\nFor this perturbed step, keep VAF 0.3 versus 0.3% at T2, and at T3 report the median in per-100-carrier units without the required conversion.",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k2",
+    "decision": "repair_required",
+    "problem": "Changing a strict boundary to inclusive is an operator error, not a second scale error.",
+    "before": "VAF scale plus inclusive boundary.",
+    "after": "Keep VAF 0.3 versus 0.3% at T2, and at T3 report the median in per-100-carrier units without the required conversion.",
+    "proposed_turns": [
+      "T2",
+      "T3"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Exclude Reference calls and Intronic, Intergenic, and UTR variants, retain VAF below 0.3%, and count the remaining somatic CHIP variants for each carrier."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Calculate the median of those per-carrier variant counts, but report the unchanged numerical median in units of variants per 100 carriers."
+    }
+  ]
+}

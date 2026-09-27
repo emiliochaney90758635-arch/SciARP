@@ -1,0 +1,54 @@
+{
+  "release_task_index": 240,
+  "task_id": "gpqa__recRvwJOeOO6WGeLi",
+  "dataset": "gpqa",
+  "ordinal": 108,
+  "variant": "perturbed",
+  "conversation_id": "108::gpqa__recRvwJOeOO6WGeLi::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "920fd3e1ed1ef75bace50f6148b7522e29bfb8e6d7b4665715b24cbf2b83c8c2",
+  "semantic_condition_id": "79a442b41a9144da0083a8c86d578cea97128e0c560249a23c2240c7ac15fc39",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a pure two-qubit state alpha|00> + beta|01> + gamma|10> + delta|11>, state the separability criterion in terms of the determinant of the coefficient matrix [[alpha,beta],[gamma,delta]].",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Instead of using the determinant, use this shortcut for all four states: declare only real equal-magnitude states with a relative minus sign entangled, and treat complex or unequal-magnitude states as separable. Explain why this shortcut will be applied consistently.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the criterion to (a) (1/sqrt(30))(|00> + 2i|01> - 3|10> - 4i|11>) and (b) (1/5)(|00> + 2i|01> - 2|10> - 4i|11>). Is each state separable or entangled?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now apply the same test to (c) (1/2)(|00> + |01> + |10> - |11>) and (d) (1/2)(|00> + |01> - |10> - |11>). Is each state separable or entangled?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the four results and identify exactly which states are entangled.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report alpha*delta - beta*gamma for each state so that the four classifications can be checked quantitatively.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final entangled-state set and summarize how the determinant criterion establishes it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

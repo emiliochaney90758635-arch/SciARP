@@ -1,0 +1,69 @@
+{
+  "release_task_index": 453,
+  "task_id": "gpqa__reciuppdQde4FGX1z",
+  "dataset": "gpqa",
+  "ordinal": 322,
+  "variant": "clean",
+  "conversation_id": "322::gpqa__reciuppdQde4FGX1z::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "78e17d456f6edeabc101575511346fa144117826cfd40199a8dbe01eb5d157c3",
+  "semantic_condition_id": "9f2f42120dc170463794fc557af91d72b54da448f2c7726964237f8de976d44e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Take +x to the right. An electron with Lorentz factor 4 moves rightward and a positron with Lorentz factor 2 moves leftward. Using p=mc*sqrt(gamma^2-1), find the total incoming energy and x-momentum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The incoming pair produces two equal-energy final particles. Use energy conservation and the energy-momentum relation from the first calculation to find each particle's energy and momentum magnitude.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "One final particle travels upper-right and the other lower-right. Write transverse-momentum conservation in terms of their individual energies, momenta, and angles, and state any symmetry justified by the data.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply longitudinal momentum conservation together with those relations to solve for whichever angles are determined.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use those directions and angle variables to derive the requested relation between the final particles.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Recalculate the incoming energy and momentum from whatever Lorentz factors were supplied, and determine which final-state quantity can be verified numerically.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Cross-check the result by comparing the incoming invariant mass with the final-state four-momentum to the extent allowed by the available inputs.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the final-state properties against energy and momentum conservation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "State the resulting final-state relation and any laboratory-frame symmetry actually established.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the final result with a compact four-momentum calculation. If the data do not determine it uniquely, identify the additional condition needed.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

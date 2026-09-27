@@ -1,0 +1,59 @@
+{
+  "release_task_index": 213,
+  "task_id": "gpqa__recGhzQ1AsM0pBO0a",
+  "dataset": "gpqa",
+  "ordinal": 81,
+  "variant": "clean",
+  "conversation_id": "081::gpqa__recGhzQ1AsM0pBO0a::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "571ea62ac197fa742e042c1688f98cf6677bd83091301001a9fb218d51cb38aa",
+  "semantic_condition_id": "ad2d56db7e0f98263b02866f396a87e2cdaef716e5d1c8f4f76d07f4791b736a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "We want the smallest saturated acyclic hydrocarbon that can possess a configurationally stable stereogenic carbon. Which formula, mass, elemental-composition, and structural features need to be checked?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How would you combine the alkane formula CnH(2n+2), nominal molecular mass, elemental composition, and possible constitutional structures to establish that minimum?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Derive the minimum carbon count needed for four different substituents on one carbon in an acyclic alkane. Calculate its molecular formula and nominal molecular-ion mass using C=12 and H=1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For that formula, calculate the carbon and hydrogen mass percentages and the corresponding EI-MS molecular-ion m/z.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Draw an alkane with that formula that can be optically active, identify its stereogenic carbon, and explain why smaller acyclic alkanes cannot satisfy the same structural requirement.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Bring the formula, composition, molecular-ion mass, and chirality argument together into the diagnostic data expected for the smallest such alkane.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the minimality argument across the smaller carbon counts. Why can branching at those sizes still not give one carbon four different substituents?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the molecular formula, nominal molecular-ion m/z, approximate elemental percentages, and an example stereoisomer that can show optical activity.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

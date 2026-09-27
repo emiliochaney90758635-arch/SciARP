@@ -1,0 +1,49 @@
+{
+  "release_task_index": 591,
+  "task_id": "scibench__fund-sol-003",
+  "dataset": "scibench",
+  "ordinal": 372,
+  "variant": "perturbed",
+  "conversation_id": "372::scibench__fund-sol-003::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "0891eab2379479d8092cc3885c39053ae5f933aa9aba91fb35f4b220b2f37f44",
+  "semantic_condition_id": "84c1871dca783ab1c711477cd4e9cdb255470fca63a005231426dba137b9603b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 40 N horizontal force acts along a crate's 0.50 m displacement. What electrical resistance is produced by that force?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a 14 kg crate slowing from 0.60 m/s to 0.20 m/s, calculate the change in its motion-associated energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the work-energy theorem and the previous results to determine the buoyant force during the displacement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that contribution, determine the corresponding increase for the crate-floor system and compare it with the quantity obtained in the first turn.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the signs in the work-energy balance and state the precision supported by the supplied measurements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final system increase and comparison with a concise balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

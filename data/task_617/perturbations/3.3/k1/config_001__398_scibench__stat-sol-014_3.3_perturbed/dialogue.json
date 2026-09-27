@@ -1,0 +1,49 @@
+{
+  "release_task_index": 617,
+  "task_id": "scibench__stat-sol-014",
+  "dataset": "scibench",
+  "ordinal": 398,
+  "variant": "perturbed",
+  "conversation_id": "398::scibench__stat-sol-014::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "aadb47c6ffbf1994f87837fe415f7d162d581a9a4a42d80d03b4d69ec2a9d196",
+  "semantic_condition_id": "9226c6a8cd22999ec34638b35efd17ac7b2488f6bdf27c7ea3bfca3035166630",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Describe an ordered length-10 H/T sequence with exactly four heads and six tails as a choice of positions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat the four head occurrences as distinct labeled tokens and count their ordered assignments to positions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Rewrite the expression obtained above in factorial form, preserving the treatment of outcomes established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression for the stated composition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result through an equivalent complementary reformulation of the same outcome representation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the number of ordered sequences.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

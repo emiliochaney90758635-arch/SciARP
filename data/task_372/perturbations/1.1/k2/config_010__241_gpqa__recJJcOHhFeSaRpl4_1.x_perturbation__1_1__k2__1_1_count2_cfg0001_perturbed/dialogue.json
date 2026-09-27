@@ -1,0 +1,59 @@
+{
+  "release_task_index": 372,
+  "task_id": "gpqa__recJJcOHhFeSaRpl4",
+  "dataset": "gpqa",
+  "ordinal": 241,
+  "variant": "perturbed",
+  "conversation_id": "241::gpqa__recJJcOHhFeSaRpl4::1.x::perturbation__1_1__k2__1_1_count2_cfg0001::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "54ebaa0e1f378c99c1b4e46af64a32cd9fdbba5d011631c2bd2e97218af00a0b",
+  "semantic_condition_id": "63bef191e8cbab1e05b0eaab624973b95ab4ff08b6c29d3be74e7d478e169a0d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For an unknown polymer with formula C9H11NO2, calculate its index of hydrogen deficiency using the listed IR and 1H NMR signals.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Interpret the 3420, 3325, and 1720 cm^-1 features as Raman bands and identify the functional groups they support.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assign the non-aromatic NMR signals using the chemical shifts, multiplicities, and integrations given above.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the aromatic pattern established above to infer the corresponding structural relationship.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the available molecular and spectroscopic evidence to identify the requested target.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Describe that identity with the confidence status supported by the available record and state what missing data leave residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Inventory the additional measurements that are present or absent and explain how they affect confidence in the structural assignment.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the target identity with a concise justification from the spectroscopic analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

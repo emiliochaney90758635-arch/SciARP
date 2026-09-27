@@ -1,0 +1,57 @@
+{
+  "task_index": 137,
+  "task_id": "137-capsule037",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1751ececb21536b1fa253f283e1a52329cca09f08a935c3753bbcead7885b9a0",
+  "source_base_evidence_sha256": "f1313e52954ac4fa2a98a5d834be2d2075157edbce3e1dee4906b2bb00d1aad0",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Premature aggregation imposed.",
+      "consumers": [
+        "T2",
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "One-metric selection independently substituted.",
+      "consumers": [
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Upper-bound maximization independently substituted.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Average replicates to 13 rows.",
+    "T5": "Select by ordinary R-squared alone.",
+    "T6": "Maximize the upper confidence limit rather than fitted mean."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Average the replicate Area observations at each frequency into 13 rows before fitting all candidates."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Select the model with the smallest ordinary R-squared as the best model."
+    },
+    {
+      "turn_id": "T6",
+      "content": "For that selected model, maximize the upper confidence limit instead of the fitted mean."
+    }
+  ]
+}

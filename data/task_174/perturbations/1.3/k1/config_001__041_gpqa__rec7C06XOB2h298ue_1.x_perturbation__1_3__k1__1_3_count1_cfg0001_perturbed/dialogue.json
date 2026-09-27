@@ -1,0 +1,54 @@
+{
+  "release_task_index": 174,
+  "task_id": "gpqa__rec7C06XOB2h298ue",
+  "dataset": "gpqa",
+  "ordinal": 41,
+  "variant": "perturbed",
+  "conversation_id": "041::gpqa__rec7C06XOB2h298ue::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "1174566b2020ce71362c32bd37a5e5423f546aa20b8803b9ef47082ff859001a",
+  "semantic_condition_id": "3f6f0c7b5ee4fd865891f8f9cf8fa2361e7cee8b32e4ebb547e0474656861da4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At 25 C and ideal pH, a solution is prepared from 0.020 M stoichiometric CaEDTA2+. Write the formation equilibrium and its expression for Kf = 5 x 10^10.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let x moles per liter of the complex dissociate. Express the equilibrium concentrations of free Ca2+, free EDTA4-, and CaEDTA2- in terms of x.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute those concentrations into the formation-constant expression to obtain the exact equation for x. Use the size of Kf times 0.020 M to decide whether x should be small relative to 0.020 M.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the justified small-dissociation approximation to calculate the free Ca2+ concentration.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that approximation either by substituting the result into the exact equation or by comparing it with the positive root of the corresponding quadratic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the calcium and EDTA mass balances, and state the ideal-pH and activity assumptions under which this calculation applies.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final free Ca2+ concentration and summarize how it follows from the stoichiometric dissociation and large formation constant.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

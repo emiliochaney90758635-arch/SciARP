@@ -1,0 +1,37 @@
+{
+  "task_id": "032-capsule009",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Changes endpoint units.",
+    "Changes expected-count units."
+  ],
+  "injection_turns": [
+    "T1",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "852a76c9ecce4ba1d8b05fe82b7a99a60cf121432f2bd12df087beddcb0fa71f",
+  "configured_evidence_sha256": "852a76c9ecce4ba1d8b05fe82b7a99a60cf121432f2bd12df087beddcb0fa71f",
+  "evidence_unchanged": true
+}

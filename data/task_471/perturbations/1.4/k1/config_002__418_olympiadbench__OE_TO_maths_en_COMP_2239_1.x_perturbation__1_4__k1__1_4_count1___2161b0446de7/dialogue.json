@@ -1,0 +1,54 @@
+{
+  "release_task_index": 471,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2239",
+  "dataset": "olympiadbench",
+  "ordinal": 418,
+  "variant": "perturbed",
+  "conversation_id": "418::olympiadbench__OE_TO_maths_en_COMP_2239::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "08c8f5cb60c0b7ee9cab30a57cce4e1f2c476b10d963628272d909e9990f66b2",
+  "semantic_condition_id": "4cf2570de6d53f316cfbabfbd178e6a602ebc05431a6ddc3fdc4668e48d57d90",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let P be the parents' present combined age, C the children's present combined age, and n the number of children. Translate the statement that P is six times C.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How much do the parents' combined age and the children's combined age each change per calendar year? Express the rates in terms of the two parents and n children.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain how those group-level rates will be used consistently for both the past and future conditions.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Write the equation for the situation two years ago using the group-level rates.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Write the equation for six years from now, when the parents' combined age will be three times the children's combined age.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Substitute the present-age relation established in the first turn into the past and future equations, and simplify both to relations between C and n.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Solve the resulting pair of relations for the number of children.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

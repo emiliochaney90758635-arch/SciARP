@@ -1,0 +1,85 @@
+# Evidence for this task
+
+## Dunnett reference and eligible co-cultures
+
+Two separate linear models were fitted to the 45 original measurements:
+
+```text
+Area        ~ Strain_Ratio
+Circularity ~ Strain_Ratio
+```
+
+Each of the 15 model levels has three observations (replicates A, B, and C).
+The first level, `1_1:0`, is the Strain 1 Dunnett reference. The single-strain
+levels `98_1:0` and `287_1:0` contribute to the models but are not co-culture
+ratios.
+
+The eligible two-strain candidate labels are:
+
+```text
+287_98_1:3, 287_98_1:2, 287_98_1:1,
+287_98_2:1, 287_98_3:1, 287_98_4:1,
+287_98_5:1, 287_98_10:1, 287_98_50:1,
+287_98_100:1, 287_98_500:1, 287_98_1000:1
+```
+
+## Archived significant comparisons
+
+Both archived Dunnett tables used the strict criterion `P_value < 0.05` and
+printed only retained comparisons. A dash denotes absence from that endpoint's
+filtered output.
+
+| group1 | group2 | Area Dunnett p | Circularity Dunnett p |
+|---|---|---:|---:|
+| `98_1:0` | `1_1:0` | 0.0003495161 | 0.00006024943 |
+| `287_1:0` | `1_1:0` | 0.0001921325 | 0.0000000008709117 |
+| `287_98_1:3` | `1_1:0` | 0.0006364066 | 0.0000003062089 |
+| `287_98_1:2` | `1_1:0` | 0.0019514754 | 0.002100770 |
+| `287_98_1:1` | `1_1:0` | 0.0163150899 | — |
+| `287_98_10:1` | `1_1:0` | 0.0102567145 | — |
+| `287_98_500:1` | `1_1:0` | 0.0001836191 | 0.0000000005641172 |
+| `287_98_1000:1` | `1_1:0` | 0.0212813710 | 0.03612817 |
+
+No value is exactly 0.05, and omitted co-culture comparisons are well above
+the threshold.
+
+## Intersection rule
+
+Identify labels present in both endpoint-specific significant sets, then keep
+only labels beginning with `287_98_`. Remove that prefix to recover the
+distinct ratio labels and count them:
+
+```text
+(Area-significant ∩ Circularity-significant)
+∩ {two-strain co-culture labels}
+```
+
+The single-strain labels must not be included even if they are significant for
+both endpoints.
+
+# Simultaneous confidence-interval analysis of swarm morphology
+
+## Source and method
+
+The Biostatistics Reproducibility Office fitted robust contrasts against
+Strain 1 and constructed 95% simultaneous confidence intervals across the
+twelve co-culture ratios for each endpoint. A ratio differs significantly
+from the reference when its interval excludes zero.
+
+| 287:98 ratio | Area contrast interval | Circularity contrast interval |
+|---|---|---|
+| 1:3 | `[-112000, -54000]` | `[0.31, 0.74]` |
+| 1:2 | `[-101000, -39000]` | `[0.12, 0.49]` |
+| 1:1 | `[-82000, -12000]` | `[-0.03, 0.29]` |
+| 2:1 | `[-43000, 37000]` | `[-0.11, 0.16]` |
+| 3:1 | `[-31000, 25000]` | `[-0.08, 0.13]` |
+| 4:1 | `[-8000, 72000]` | `[-0.09, 0.07]` |
+| 5:1 | `[-22000, 41000]` | `[-0.05, 0.08]` |
+| 10:1 | `[9000, 99000]` | `[-0.10, 0.03]` |
+| 50:1 | `[-48000, 19000]` | `[-0.04, 0.12]` |
+| 100:1 | `[-67000, -4000]` | `[0.01, 0.15]` |
+| 500:1 | `[-121000, -61000]` | `[0.48, 0.91]` |
+| 1000:1 | `[-96000, -7000]` | `[-0.02, 0.25]` |
+
+Identify the ratios whose intervals exclude zero in each endpoint, then take
+the intersection of those two ratio sets.

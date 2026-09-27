@@ -1,0 +1,69 @@
+{
+  "release_task_index": 387,
+  "task_id": "gpqa__recRnD2tQcPDMDxWY",
+  "dataset": "gpqa",
+  "ordinal": 256,
+  "variant": "perturbed",
+  "conversation_id": "256::gpqa__recRnD2tQcPDMDxWY::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "c66f528b318880a8faf3fb4c8d1dc9e76210609ed3da34153c27ee94d2f3d9ac",
+  "semantic_condition_id": "eba2cb6b0787e3eca5dfdc97ceeff7f529539634db1c44651b73a51183f9522c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a leading-order compact-binary inspiral, write the gravitational-wave strain scaling with chirp mass, observed frequency, and distance. If two systems have equal strain and frequency, how does their distance ratio depend on chirp mass? Use exponent 5/3 and note the model's orientation, detector, redshift, and higher-order limitations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the chirp-mass ratio using two systems both labelled B, with component pairs 10,25 and 35,50 solar masses.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the relation and dimensionless ratio established above to obtain an exact expression for the requested system-A/system-B observable ratio.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate DA/DB numerically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Confirm that the final evaluation uses the exponent and observable established in the preceding derivation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the leading-order strain relation and the chirp-mass ratio to evaluate the corresponding dimensionless distance ratio.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the resulting system-A/system-B distance ratio.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Describe the result and the limitations imposed by the leading-order waveform, source geometry, detector response, and redshift assumptions.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the 5/3 exponent and qualitative distance ordering agree with the leading-order strain scaling.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the final ratio with the scaling rationale established above.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

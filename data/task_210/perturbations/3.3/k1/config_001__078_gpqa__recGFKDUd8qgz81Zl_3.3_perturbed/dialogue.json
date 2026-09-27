@@ -1,0 +1,79 @@
+{
+  "release_task_index": 210,
+  "task_id": "gpqa__recGFKDUd8qgz81Zl",
+  "dataset": "gpqa",
+  "ordinal": 78,
+  "variant": "perturbed",
+  "conversation_id": "078::gpqa__recGFKDUd8qgz81Zl::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9b510ced03234064db5ffd7d87f80a406d00ec99a6abd84a39eb666a240b9e7d",
+  "semantic_condition_id": "11a75594bfa4d7239b65c91b96817ab7bfb0924ea4b262194dd5249804e28c0e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A distant source shows an absorption feature at an observed photon energy near 3.9 micro-eV. What information and transformations are needed to identify the line and the Milky Way interstellar-medium phase it traces?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Match the observed-frame 3.9 micro-eV value directly to a local line catalog without applying any cosmological redshift correction, and use that match alone to classify the gas phase.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Adopting a standard low-redshift cosmology only to the precision warranted by 2.1 Gpc, estimate the source redshift and state the approximation involved.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that redshift estimate, convert the observed 3.9 micro-eV absorption energy to the source rest frame.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which common astrophysical transition has a rest energy close to the value you obtained?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Is that transition produced by an atomic or a molecular species, and what constituent of the interstellar medium does it trace?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain which temperature regime of atomic gas is preferentially selected when this feature is observed in absorption, and relate that preference to spin temperature and optical depth.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use the line identity and its appearance in absorption to give the Milky Way phase classification, including both the atomic/molecular and thermal descriptors.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the phase diagnosis specifically for a 21 cm absorption line, contrasting it with what would be inferred if only broad emission were considered.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Calibrate the confidence of the identification given that the distance, inferred redshift, and observed line energy are all approximate.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Convert the inferred rest energy independently to frequency or wavelength and verify that it is consistent with the neutral-hydrogen 21 cm transition.",
+        "role": "user",
+        "turn_id": "T11"
+      },
+      {
+        "content": "Give the final Milky Way phase classification and the spectral-line identification that supports it.",
+        "role": "user",
+        "turn_id": "T12"
+      }
+    ]
+  }
+}

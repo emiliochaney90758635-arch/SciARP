@@ -1,0 +1,43 @@
+{
+  "task_index": 128,
+  "task_id": "128-capsule036",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "b24fb84ba3bc8519d208f5b7b01511fd9218dd95cd4a692de44e0c84516a2d15",
+  "source_base_evidence_sha256": "ebe9627a6a0d7613d042f8aad87f034d5e7a2d7da3f60a07aa3918f4c70bf7ed",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Six-sample count changed.",
+      "consumers": [
+        "T2",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Four-sample count independently changed.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "| KL1–3 and WL1–3 | 1,416 |",
+      "new": "| KL1–3 and WL1–3 | 1,461 |"
+    },
+    {
+      "turn_id": "T4",
+      "old": "| KL1, KL2, WL1, WL2 | 1,942 |",
+      "new": "| KL1, KL2, WL1, WL2 | 1,924 |"
+    }
+  ],
+  "extends_existing": null
+}

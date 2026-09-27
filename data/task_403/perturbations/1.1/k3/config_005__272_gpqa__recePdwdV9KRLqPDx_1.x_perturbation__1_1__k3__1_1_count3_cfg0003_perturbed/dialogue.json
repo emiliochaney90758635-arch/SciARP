@@ -1,0 +1,64 @@
+{
+  "release_task_index": 403,
+  "task_id": "gpqa__recePdwdV9KRLqPDx",
+  "dataset": "gpqa",
+  "ordinal": 272,
+  "variant": "perturbed",
+  "conversation_id": "272::gpqa__recePdwdV9KRLqPDx::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "b87db83a1704a7d1fc77a161e03b05c6b6254c5094580d0547a1057fb2cd08d3",
+  "semantic_condition_id": "0000fc1e7643bcfe5810a81c6316657c36696ecfbb803cd580808326a9649aad",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For clinical-scale production of a therapeutic protein described as mRNA before lipid-nanoparticle encapsulation, compare mammalian-cell expression with cell-free in vitro transcription and choose an upstream route.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the chosen route, identify the appropriate RNA template and explain whether RNase treatment before purification is compatible with recovering intact therapeutic mRNA.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The desired transcript is polyadenylated. Which affinity capture method can exploit that feature, and what molecular interaction makes it selective?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "After capture, which chromatography mode can polish IVT mRNA, and which truncated or double-stranded RNA impurities can it help separate?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the synthesis, integrity, capture, and polishing choices into a clinical-scale plasmid-DNA process flow.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Why does a poly(A) tail enable oligo-dT capture, and how would an unpolyadenylated product change the purification strategy?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare this flow with mammalian-cell production, RNase cleavage, size-only separation, and anion-exchange capture in terms of integrity and selectivity.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "How confidently can this architecture be recommended without data on impurity loads, resin capacity, recovery, clearance, and release analytics?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final process flow and the role of the linearized template, oligo-dT capture, and hydrophobic-interaction polishing.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

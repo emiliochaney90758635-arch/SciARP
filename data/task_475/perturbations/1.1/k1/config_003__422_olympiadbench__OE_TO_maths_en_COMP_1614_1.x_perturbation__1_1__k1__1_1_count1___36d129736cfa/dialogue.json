@@ -1,0 +1,59 @@
+{
+  "release_task_index": 475,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1614",
+  "dataset": "olympiadbench",
+  "ordinal": 422,
+  "variant": "perturbed",
+  "conversation_id": "422::olympiadbench__OE_TO_maths_en_COMP_1614::1.x::perturbation__1_1__k1__1_1_count1_cfg0005::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "85bcc69055a3d1fc42b74f0dcba3fc911a82d95f5fc9115f5de7135291b362d4",
+  "semantic_condition_id": "f7c682ab9e4e5c0ada3e367359dda81669a7da1361b75ff2e7ce056d5e805090",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let X={1,...,n}, with n>1. Call a nonempty subcollection tight when its union is a proper subset of X and no element of X belongs to exactly one selected set. For 1<=k<=n-1 define P_k={1,...,k}, and for 2<=k<=n define Q_k={k,...,n}. Show that these 2n-2 distinct proper nonempty sets have no nonempty tight subcollection by choosing an element outside the union and finding an element covered exactly once.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the upper bound, argue by induction on n. Assume a family B with no tight subcollection has at least 2n-1 members. Show that its members cannot have a common element by deleting such an element and applying induction on X with that element removed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each x in X, let B_x be the nonempty subfamily of sets not containing x. Explain why B_x has an element x' covered by exactly one of its members, draw an arrow x->x', and deduce that these arrows contain a directed cycle.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Choose a shortest directed cycle x1->x2->...->xk->x1. For each i, let Ai be the unique member of B that contains x_(i+1) but not x_i. Establish the properties of these witnesses, including that the Ai are distinct, that will be needed before any contraction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Remove A1,...,Ak and call the remaining family B'. Prove that every member of B' either contains the entire cycle block X'={x1,...,xk} or is disjoint from it.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "When k<n, replace the block X' by a new point x*. Define the image of every member of B' and prove that the image family consists of distinct, proper, nonempty sets and still has no tight subcollection.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Apply induction after replacing the cycle block by a new edge x*. Bound the remaining family on the collapsed ground set, restore the removed witnesses, and derive the contradiction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Handle separately the case k=n, then combine the upper bound with the prefix-suffix construction to state the largest possible cardinality.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 154,
+  "task_id": "gpqa__rec2fsnzUuvNtUYK8",
+  "dataset": "gpqa",
+  "ordinal": 16,
+  "variant": "perturbed",
+  "conversation_id": "016::gpqa__rec2fsnzUuvNtUYK8::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "d9f3ff51001759c111044aee6f04a76f598caa0d2b4a9e5fc24a0890b2729e42",
+  "semantic_condition_id": "6872bfe7b3dc54bde0a95869ed1dbd1da4f8d0984197b3f9f366b316e21142ab",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before classifying the molecules, distinguish the Schoenflies groups C3, C3v, C3h, and D3h by the presence or absence of a C3 principal axis, a horizontal mirror plane, vertical mirror planes, and perpendicular C2 axes.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Start with triisopropyl borate and quinuclidine. From their C3 axes and mirror planes, determine the idealized point group of each molecule.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Next analyze benzo[1,2-c:3,4-c':5,6-c'']trifuran-1,3,4,6,7,9-hexaone. Check for a horizontal mirror plane, vertical mirror planes, and C2 axes perpendicular to C3 before assigning its space group.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the same symmetry-element analysis to triphenyleno[1,2-c:5,6-c':9,10-c'']trifuran-1,3,6,8,11,13-hexaone and determine its idealized point group.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the two fused-ring molecules directly. Which has C3 and sigma_h but lacks the perpendicular C2 axes and vertical mirrors, and which has the additional elements required for D3h?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Summarize the idealized point group of each of the four molecules, then identify the molecule with C3h symmetry.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "T3 can rank by Combined Score despite T2 requesting GO adjusted significance.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "6c7d102507788ef0f86228666197b3a51170b217915deee70b5baa402c06b351",
+  "strict_non2x_original_semantic_condition_id": "f9467bc8cd6101ac2c33db945d43f44b6dfb7d4fe18d2b0bb2f0e313b6a8f299",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Despite the adjusted-p objective, rank the displayed metabolic terms by largest Overlap numerator and retain the resulting tie if any.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

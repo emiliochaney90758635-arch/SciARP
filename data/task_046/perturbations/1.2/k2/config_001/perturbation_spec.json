@@ -1,0 +1,57 @@
+{
+  "config_id": "task046_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T2",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "express pair count n in thousands but compare it to numeric 10 without conversion",
+      "injected_text": "For each shared gene, align nonmissing cell-line pairs and enforce the paired-observation threshold.\n\nFor this perturbed step, express pair count n in thousands but compare it to numeric 10 without conversion",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "At T2 express pair count n in thousands but compare it to numeric 10 without conversion; retain the k1 rho-scale error.",
+      "injected_text": "Apply the inclusive rho >= 0.6 threshold and report the number of qualifying genes.\n\nFor this perturbed step, at T2 express pair count n in thousands but compare it to numeric 10 without conversion; retain the k1 rho-scale error.",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "1.2.k2",
+    "decision": "repair_required",
+    "problem": "The two current events do not form two independent unit/scale errors.",
+    "before": "Mixed non-scale threshold operations.",
+    "after": "At T2 express pair count n in thousands but compare it to numeric 10 without conversion; retain the k1 rho-scale error.",
+    "proposed_turns": [
+      "T2",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "For each shared gene, align nonmissing cell-line pairs, express the paired count in thousands, and compare that numerical value directly with the threshold of 10."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Interpret the inclusive rho cutoff of 0.6 as 0.6%, or 0.006 on the coefficient scale, and report the number of qualifying genes."
+    }
+  ]
+}

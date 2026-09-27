@@ -1,0 +1,31 @@
+{
+  "subclass": "1.2",
+  "k": 3,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "0.05 becomes percent",
+      "consumer_turns": [
+        "T1",
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T1",
+      "root": "counts become hundreds",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "the summed value is labeled thousands without conversion",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

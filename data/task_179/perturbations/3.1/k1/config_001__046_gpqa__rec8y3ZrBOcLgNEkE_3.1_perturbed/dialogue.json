@@ -1,0 +1,54 @@
+{
+  "release_task_index": 179,
+  "task_id": "gpqa__rec8y3ZrBOcLgNEkE",
+  "dataset": "gpqa",
+  "ordinal": 46,
+  "variant": "perturbed",
+  "conversation_id": "046::gpqa__rec8y3ZrBOcLgNEkE::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7d085f5209c96b0f5178f77207eba02ca1f1c877937ec19a7542308f628592af",
+  "semantic_condition_id": "a8f3bdd9f9fbae5196775e5542972e7d1eeece3c7c0d7f7a396c88a3a70867e9",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a many-body nuclear calculation, what physical picture is assumed in the impulse approximation for an external probe interacting with a nucleus?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Does the impulse picture require the interaction current to couple to individual nucleons? Explain the role of a one-body current.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assess two statements: the rest of the nucleus is transparent to the struck nucleon, and the struck nucleon continues to experience binding forces during the interaction. Explain whether each belongs to the impulse approximation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Is it also necessary to assume that the quarks inside the struck nucleon are non-relativistic? Distinguish the nuclear many-body level from assumptions about internal nucleon structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine these judgments and identify the complete set of assumptions needed for the nuclear impulse approximation.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain more explicitly why the quark-dynamics statement is neither implied by nor required for one-body scattering from an effectively free bound nucleon.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final assumption set by number and summarize the physical role of every included statement.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "task_index": 118,
+  "task_id": "118-capsule034",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "393a78b370a0c9b3e8f1471c82c96ec2b6b1b90d97623a9525c745eae01cd816",
+  "source_base_evidence_sha256": "5efaf4d90d742a80e7037da5435ab0ad83e8e8557865756d9e87a48969d254e5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome mapping swapped.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "n/k mapping independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Deviance/log-likelihood mapping independently swapped.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Swap Response=1 and Response=0 when completing the analysis set.",
+    "T2": "Map n to the parameter count and k to the observation count when reporting fit quantities.",
+    "T3": "When calculating AIC, map residual deviance to log L."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "independent_review_overlay": true,
+  "independent_review_condition": "1.3.k3",
+  "turn_metadata_reconciliation": {
+    "reviewer": "lane_c",
+    "method": "direct manual dialogue/spec/manifest/review reconciliation",
+    "notes": []
+  }
+}

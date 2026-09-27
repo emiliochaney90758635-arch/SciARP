@@ -1,0 +1,59 @@
+{
+  "release_task_index": 502,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2380",
+  "dataset": "olympiadbench",
+  "ordinal": 449,
+  "variant": "perturbed",
+  "conversation_id": "449::olympiadbench__OE_TO_maths_en_COMP_2380::1.x::perturbation__1_3__k3__1_3_count3_cfg0002::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "44948da9821bc68f3b50cf4bdcfe9d929a28378ce5361a767bf2f259055911d9",
+  "semantic_condition_id": "e7d6a0920b01ca31c3cd762697450481199387da542364c0815276bd38c9ee4f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let S be the sum of the reciprocal sines of the eleven doubled angles 8 degrees, 16 degrees, 32 degrees, ..., 4096 degrees, and 8192 degrees. Which identity can turn each reciprocal sine into a difference of cotangents that may telescope?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Derive the identity csc(x)=cot(x/2)-cot(x) from standard double-angle formulas.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the identity only to the first term of S, but then write all eleven summands in cotangent form as though the same substitution had been made throughout.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Add the original angle values themselves and simplify that numerical sum by telescoping, rather than summing the cotangent differences.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the indexing of the eleven doubled angles and the first and last terms of the expansion. Have any endpoints been omitted?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use cotangent's 180-degree period to reduce the final endpoint and express S in terms of cot(4 degrees) and tan(2 degrees).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Simplify that acute-angle expression exactly with a common denominator and write S as a single reciprocal sine.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use the earlier product of the eleven angles, rather than the derived sum of reciprocal sines, to determine the acute alpha satisfying S=1/sin(alpha).",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

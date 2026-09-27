@@ -1,0 +1,54 @@
+{
+  "release_task_index": 541,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2525",
+  "dataset": "olympiadbench",
+  "ordinal": 488,
+  "variant": "clean",
+  "conversation_id": "488::olympiadbench__OE_TO_maths_en_COMP_2525::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "fcfb6f05ef8075a1a9da3341c23029a161e760674fb84391b3713780b8cd6ba4",
+  "semantic_condition_id": "180febedc45206c945f4db4df96ad136338b8bbdd1231ab2e7ceef7e932057a5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "We need the number of length-10 strings over {A,B} that avoid ABBA. Analyze how a current suffix can overlap a prefix of the forbidden word, and identify what suffix information must be remembered when another letter is appended.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why the seven possible ABBA windows are dependent, so simply multiplying single-window avoidance probabilities would not give an exact count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that overlap analysis to define a prefix-automaton dynamic program with states empty, A, AB, and ABB, and explain why these four states retain exactly the needed history.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the state transitions caused by appending A or B, marking the transition that would complete the forbidden word.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Starting from the empty string, write the recurrence for the four state counts and the initial vector.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Iterate the recurrence through length 10 and record the final state-count vector.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Sum the valid state counts to obtain the number of length-10 strings avoiding ABBA, and give a brief check against the total 2^10 strings.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

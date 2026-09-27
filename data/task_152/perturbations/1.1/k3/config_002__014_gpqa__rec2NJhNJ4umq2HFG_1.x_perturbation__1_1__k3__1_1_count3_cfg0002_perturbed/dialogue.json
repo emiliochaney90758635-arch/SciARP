@@ -1,0 +1,44 @@
+{
+  "release_task_index": 152,
+  "task_id": "gpqa__rec2NJhNJ4umq2HFG",
+  "dataset": "gpqa",
+  "ordinal": 14,
+  "variant": "perturbed",
+  "conversation_id": "014::gpqa__rec2NJhNJ4umq2HFG::1.x::perturbation__1_1__k3__1_1_count3_cfg0002::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "084a3ade42fcf2a6f1a70cf269ed7142107cc65651f2618abafd864013e40a45",
+  "semantic_condition_id": "dccf28c5b93281c0a4f49bbdcf391b0007a75283c0571c843128e0dec567a8ee",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the scalar-field object sigma^(mu nu)=i/2[gamma^mu,gamma^nu], show its antisymmetry and count its components.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat sigma^(mu nu) as an orbital-angular-momentum contribution in the Dirac field and contrast it with translations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the six sigma^(mu nu) matrices with the ten generators of the Poincare algebra. Identify the subgroup they represent and the missing generators.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Check the conclusion against the distinction between Lorentz transformations and spacetime translations.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the four-momentum vector represented by the gamma-matrix commutator and whether it generates gauge or Poincare transformations.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

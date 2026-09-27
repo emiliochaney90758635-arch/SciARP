@@ -1,0 +1,54 @@
+{
+  "release_task_index": 476,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1750",
+  "dataset": "olympiadbench",
+  "ordinal": 423,
+  "variant": "perturbed",
+  "conversation_id": "423::olympiadbench__OE_TO_maths_en_COMP_1750::1.x::perturbation__1_3__k1__1_3_count1_cfg0002::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "838d520fa24e82652b7a771250fe6a7c3bda3800755d9c97fa9a18311edcfbfb",
+  "semantic_condition_id": "a5d22b9ed8e500ac8428acc9ab66d7f817598f0060e22c7f7efacd05deb3cf64",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the vertices of the regular 2006-gon cyclically. Characterize an odd side or diagonal by the parity of the number of boundary edges between its endpoints.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For an isosceles triangle whose two equal sides are odd, explain how the two corresponding boundary arcs constrain the placement of its apex and base.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let AB bound a subpolygon together with the shorter boundary arc L containing s<=1003 sides. Formulate an induction bound for the number of isosceles triangles with two odd sides inside this subpolygon, choosing one with a longest base for the induction step.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the induction setup and candidate bound, split the subpolygon along the selected longest-base triangle and account for the resulting boundary pieces.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the lemma to a longest diagonal XY and an adjacent triangle XYZ, taking X rather than Z to lie opposite the shorter arc from X to Y.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give a triangulation that attains the bound established above, describe its core vertex-joining rule, and count the qualifying triangles after the remaining regions are completed.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the upper bound and construction to determine the maximum possible number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

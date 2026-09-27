@@ -1,0 +1,49 @@
+{
+  "release_task_index": 591,
+  "task_id": "scibench__fund-sol-003",
+  "dataset": "scibench",
+  "ordinal": 372,
+  "variant": "perturbed",
+  "conversation_id": "372::scibench__fund-sol-003::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "fc41bca249345bdf270aad3222601e56032cfdb0ae0601a5da5e3905f29bf0ac",
+  "semantic_condition_id": "3c659118f5d4cb3fee9f8fa72bbdcda941ffe4d493854b67c2c6f75aa7868ff4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 40 N horizontal force acts along a crate's 0.50 m displacement. How much work does the applied force do?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a 14 kg crate with final speed 0.20 m/s, calculate its change in kinetic energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the work-energy balance and the previous results to determine the work done by the remaining interaction during the displacement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that contribution, determine the corresponding increase for the crate-floor system and compare it with the quantity obtained in the first turn.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the signs in the work-energy balance and state the precision supported by the supplied measurements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final system increase and comparison with a concise balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

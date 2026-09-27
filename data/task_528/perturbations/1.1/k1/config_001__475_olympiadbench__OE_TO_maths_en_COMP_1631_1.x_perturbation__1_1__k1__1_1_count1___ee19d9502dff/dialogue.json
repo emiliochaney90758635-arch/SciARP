@@ -1,0 +1,74 @@
+{
+  "release_task_index": 528,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1631",
+  "dataset": "olympiadbench",
+  "ordinal": 475,
+  "variant": "perturbed",
+  "conversation_id": "475::olympiadbench__OE_TO_maths_en_COMP_1631::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b20748d7c572ced6e42482545f7e6b4e61c4b36a241660f45d0616105eb85db2",
+  "semantic_condition_id": "1b2bdac3d6dd98ca92ec6f15b710abb370f82fc5918b94d6b6dcf7b362d39eff",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For x1=a, x_(n+1)=2x_n+1, and y_n=2^(x_n)-1, compute x2 and x3 in terms of a and describe what must be ruled out to determine the longest initial run of prime y_n.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Identify rigorous tools that can prove the needed primality or compositeness statements. In particular, explain why merely passing a base-two Fermat probable-prime test would not by itself certify a term as prime.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Prove the standard necessary condition for a Mersenne number: if m>1 and 2^m-1 is prime, then m must be prime.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Assume for contradiction that y1,y2,y3 are all prime. Use the recurrence to write x1,x2,x3 in terms of a, and apply the Mersenne-exponent condition to these three exponents.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "First suppose a is even. Use the primality of x1 to determine a, then factor the resulting y3 and decide whether the three-prime assumption survives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Now suppose a is odd. Put p=x3. Determine p modulo 8 and express x2 in terms of p, keeping the recurrence relation p=4a+3 explicit.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Treat p from the odd-a case as composite, then apply Euler's criterion to determine 2^x2 modulo p.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Translate that congruence into a divisibility statement involving p and y2. If y2 is also prime, what equality would have to follow?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Compare y2=2^x2-1 with p=2x2+1 for x2>3, and use the comparison to finish the contradiction in the odd-a case.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Exhibit a positive integer a for which y1 and y2 are both prime, and compute those two values.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Combine the even and odd cases with the example to determine the largest possible initial prime-run length k.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

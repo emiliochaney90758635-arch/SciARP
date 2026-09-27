@@ -1,0 +1,49 @@
+{
+  "release_task_index": 142,
+  "task_id": "gpqa__rec0LlchAeJwY28ZY",
+  "dataset": "gpqa",
+  "ordinal": 4,
+  "variant": "clean",
+  "conversation_id": "004::gpqa__rec0LlchAeJwY28ZY::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "690af26e4fa51b0e119583af0e40204339f96052ba95de5c30b792dc05fcb261",
+  "semantic_condition_id": "46a3b51623dd935ddb31ec090b92caf81e9c427f5e1cc1931c75d349301cd507",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before classifying the eight structures, set the criterion for optical activity: the molecule must be chiral and configurationally stable on the observation timescale, while E/Z geometry alone is insufficient. Which stereogenic and symmetry elements should be checked?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Apply that criterion to 1-methyl-4-(prop-1-en-2-yl)cyclohex-1-ene and 2,3,3,3-tetrafluoroprop-1-ene, giving the decisive structural reason for each classification.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now classify di(cyclohex-2-en-1-ylidene)methane, 5-(5-methylhexan-2-ylidene)cyclopenta-1,3-diene, and 3-(2-methylbut-1-en-1-ylidene)cyclohex-1-ene, paying particular attention to axial chirality and symmetry.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Before treating the remaining structures, contrast a stable stereogenic axis in a cumulated or ylidene system with atropisomerism about a biaryl bond. What makes either axis stereogenic and configurationally stable?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Classify [1,1'-biphenyl]-3,3'-diol, 8,8-dichlorobicyclo[4.2.0]octan-7-one, and cyclopent-2-en-1-one under the same criterion, with a concise symmetry or stability justification.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Give the total number expected to be optically active and name every structure included in the count.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

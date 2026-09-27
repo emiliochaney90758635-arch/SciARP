@@ -1,0 +1,79 @@
+{
+  "release_task_index": 400,
+  "task_id": "gpqa__reccGBrJaZk9DWZxk",
+  "dataset": "gpqa",
+  "ordinal": 269,
+  "variant": "perturbed",
+  "conversation_id": "269::gpqa__reccGBrJaZk9DWZxk::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "067263190e62091b2d2b26a6021e78f14906d8ff427a981d4dda12a7ba00f41b",
+  "semantic_condition_id": "0c685888226c28dd108932e7044712de6a4b3528b28aa8ac9a49364be55fe35e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Benzene is treated with isobutyl chloride and AlCl3. What is product A after accounting for carbocation rearrangement under the Lewis-acid conditions?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Product A then reacts with isopropyl chloride and AlCl3. Predict the major regioisomer B and explain the directing and steric considerations, noting that no product ratio is given.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Determine product C when B is heated with KMnO4. Which benzylic side chain is oxidized, and why does the other survive?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert C first with SOCl2 and then with NH3 and heat. Identify the acid-chloride intermediate D and amide E.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Carry E through LiAlH4/H2O reduction and then excess CH3I. Identify the benzylamine F and the quaternary ammonium salt G.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What product H forms when G is treated with NaNH2 in NH3? Name the rearrangement and describe its aromatic regiochemistry.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the systematic name and connectivity of H from the reaction sequence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Treat G as the neutral N,N-dimethylbenzylamine rather than a quaternary ammonium salt, while retaining the same skeleton and reagents for the next step.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Trace the rearrangement from that intermediate, following the group transfer, the ring substituent already present, and the benzylic amino substituent.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Verify the carbon skeleton of H against the oxidation, reduction, functionalization, and rearrangement steps already established.",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "How confidently can the major regioisomer be assigned from the evidence and conditions supplied, and which missing selectivity data limit that assignment?",
+        "role": "user",
+        "turn_id": "T11"
+      },
+      {
+        "content": "Report the identity and role currently assigned to H, together with the conclusion and confidence stance established in the preceding steps.",
+        "role": "user",
+        "turn_id": "T12"
+      }
+    ]
+  }
+}

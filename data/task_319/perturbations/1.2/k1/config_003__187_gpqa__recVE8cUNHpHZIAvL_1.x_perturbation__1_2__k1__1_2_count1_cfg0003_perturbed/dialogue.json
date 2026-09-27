@@ -1,0 +1,54 @@
+{
+  "release_task_index": 319,
+  "task_id": "gpqa__recVE8cUNHpHZIAvL",
+  "dataset": "gpqa",
+  "ordinal": 187,
+  "variant": "perturbed",
+  "conversation_id": "187::gpqa__recVE8cUNHpHZIAvL::1.x::perturbation__1_2__k1__1_2_count1_cfg0003::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "97198e6864c56a2dfa2101e13fcf4a1bdd3fd1bb39473c63d20ad59e27499f3c",
+  "semantic_condition_id": "4115c03bbf281c4e3415224b6e8c6ba8d76b22762ad718a56df363b122d947bc",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Suppose the solar pp-III branch stopped about 8.5 minutes ago while pp-I, pp-II, and CNO reactions continued. Taking the Sun-Earth travel time into account, should pp-III neutrinos be included in the flux arriving now?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the 700-800 and 800-900 keV bands, identify the remaining solar-neutrino sources; use the pp endpoint near 420 keV, the pep line at 1.44 MeV, and a CNO continuum through this window.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Locate the 862-keV 7Be line relative to a 700-800 MeV band and an 800-900 keV band.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Estimate each band flux using that line and a CNO continuum of order 10^8 cm^-2 s^-1 MeV^-1, corresponding to about 10^7 cm^-2 s^-1 per 100-keV band.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compute the order-of-magnitude ratio of the integrated 700-800 keV flux to the 800-900 keV flux and state its approximate uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the discrete 7Be line and smooth CNO continuum enter the integrals, and why stopping pp-III does not materially change this ratio.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the ratio and the dominant source in each band.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

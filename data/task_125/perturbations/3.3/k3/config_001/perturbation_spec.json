@@ -1,0 +1,56 @@
+{
+  "task_index": 125,
+  "task_id": "125-capsule035",
+  "subclass": "3.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "94f2e102eb147a0a22486dc1a4e1efb576f55b6959c5ee4c4e04bba026c74bc4",
+  "source_base_evidence_sha256": "b96c5f81f05d35b499c1b147f0c81f8a00ec472027a6c87b232e3e4dc76cd024",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Wrong inclusive filtering method imposed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Wrong counting method independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Wrong length method independently imposed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use inclusive <=10% or >=90% thresholds.",
+    "T2": "Use retained record count instead of distinct Pos count.",
+    "T3": "Use the Jackdaw Z length."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use the explicitly stated total of 116 retained sample records after filtering."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Use all 116 retained records as the site count instead of merging them into distinct Pos values."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Divide that record count by the Jackdaw chromosome-Z length rather than the Zebra Finch chromosome-Z length."
+    }
+  ]
+}

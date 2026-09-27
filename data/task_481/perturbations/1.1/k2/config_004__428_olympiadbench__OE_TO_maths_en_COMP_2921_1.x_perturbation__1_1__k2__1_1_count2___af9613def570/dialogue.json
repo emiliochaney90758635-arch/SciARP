@@ -1,0 +1,49 @@
+{
+  "release_task_index": 481,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2921",
+  "dataset": "olympiadbench",
+  "ordinal": 428,
+  "variant": "perturbed",
+  "conversation_id": "428::olympiadbench__OE_TO_maths_en_COMP_2921::1.x::perturbation__1_1__k2__1_1_count2_cfg0006::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7b31e3ddafee06c3cebd37da63da10b9b6adfbdf678dad3cc5162d8aca095bf2",
+  "semantic_condition_id": "1629faa199f76eca70e13aeb86f8483f36942e8c6df2d86825e7759fd73313d1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a common four-bit suffix b3b2b1b0 in base 2 and base 5, with leading zeros allowed, define its numerical values x and y in the two bases and express n as congruences modulo 16 and 625.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the Chinese remainder theorem to determine how many n in 0<=n<10000 correspond to each permitted suffix, and decide whether matching digits make x and y numerically equal.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "As a sanity check, compare x and y for a nontrivial suffix such as 1000 and explain the difference.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Solve the congruences for n only modulo 1000, in terms of the previously defined x and y.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Treat the suffixes as four-trit strings, but sum x and y over 16 bit strings.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the formula and those two sums to find the requested aggregate modulo the stated modulus.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

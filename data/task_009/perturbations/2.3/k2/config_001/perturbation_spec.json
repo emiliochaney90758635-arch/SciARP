@@ -1,0 +1,22 @@
+{
+  "task_id": "009-capsule004",
+  "subclass": "2.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Transposes the first displayed value from 0.02028444 to 0.02082444.",
+    "Independently transposes the second displayed value from 0.02028444 to 0.02048244."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "GO:0042391 adjusted p-value"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": "GO:0071805 adjusted p-value"
+    }
+  ],
+  "evidence_change_permitted": true
+}

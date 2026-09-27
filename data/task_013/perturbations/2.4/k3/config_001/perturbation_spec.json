@@ -1,0 +1,28 @@
+{
+  "task_id": "013-capsule005",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first registry reports suffix-normalized counts 1/2/4.",
+    "The second reports 3/2/1.",
+    "The third independently reports 0/4/2."
+  ],
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "first registry"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "third audit"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "second registry"
+    }
+  ],
+  "evidence_change_permitted": true
+}

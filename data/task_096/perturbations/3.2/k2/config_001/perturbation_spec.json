@@ -1,0 +1,37 @@
+{
+  "task_id": "096-capsule027",
+  "release_task_index": 96,
+  "subclass": "3.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Turns counts into caused events.",
+    "Turns dispersion into causal heterogeneity."
+  ],
+  "candidate_injection_turns": [
+    "T3",
+    "T5"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T5",
+      "consumer_turns": [
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "1528e868ec12d82b86ac1f45e89cbc353158b2bec561c16263f1d6fd68712175",
+  "configured_evidence_sha256": "1528e868ec12d82b86ac1f45e89cbc353158b2bec561c16263f1d6fd68712175",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

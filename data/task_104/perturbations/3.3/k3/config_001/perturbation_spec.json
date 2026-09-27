@@ -1,0 +1,60 @@
+{
+  "task_id": "104-capsule030",
+  "release_task_index": 104,
+  "subclass": "3.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Uses unmapped IDs.",
+    "Uses wrong row-selection rule.",
+    "Uses invalid reciprocal formula."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "1696e095a8a68aa27f37ba271d65c44cc0cb9c6386c17445239fd4ceec228184",
+  "configured_evidence_sha256": "1696e095a8a68aa27f37ba271d65c44cc0cb9c6386c17445239fd4ceec228184",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "State that all 679 selected Ensembl IDs were successfully mapped."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Select the visible target row by its Combined Score rather than by accession R-HSA-6791312."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Compute 1/0.133280 from the row's visible adjusted p-value and report that reciprocal as the odds ratio."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 349,
+  "task_id": "gpqa__recnjViFrqlZNL3fY",
+  "dataset": "gpqa",
+  "ordinal": 217,
+  "variant": "perturbed",
+  "conversation_id": "217::gpqa__recnjViFrqlZNL3fY::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "7856637607dfd1ccdfef88cb2153e4d6f261d4a18816d5343abeff1e300aef8b",
+  "semantic_condition_id": "7a66f213dce063863dda78dbe451a010b90891a7d10cd9b7e2a510f1e4467cc0",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Molecular-hydrogen clouds absorb quasar light at the Lyman-alpha rest wavelength of about 1216 Angstrom. Convert this to nanometres and locate the unredshifted line relative to the optical band.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the relation between rest and observed wavelength for an interstellar-extinction parameter z and rearrange it to solve for z.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use 350 nm as the approximate blue cutoff for radio-telescope detection and express it in Angstrom.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using 1216 Angstrom and the adopted optical cutoff, calculate the minimum extinction coefficient needed to shift the Lyman-alpha line.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the lower limit supported by the valid wavelength values currently available, or explain why it remains undetermined.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain how adopting a different practical cutoff or instrument-throughput criterion would shift the threshold.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the numerical lower limit and explain how the rest wavelength and observational cutoff determine it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

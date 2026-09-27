@@ -1,0 +1,35 @@
+{
+  "release_task_index": 37,
+  "task_id": "037-capsule010",
+  "source_id": "bixbench-m2-037-capsule010",
+  "dataset": "bixbench",
+  "ordinal": 37,
+  "variant": "perturbed",
+  "conversation_id": "037::037-capsule010::2.4::k3::perturbed::lane_b_review_overlay",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "e9477be2bb2e6c1bb2bf928b1ab032442af9a223831853be31eee68139e5888c",
+  "semantic_condition_id": "8b691203cf3186b23232433683fb5d544cb5e8a9df97afaa87e5032ad9091657",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis cohort and set definition\n\nThe expression input contains 5,828 gene rows and 36 samples. After removing `resub-5`, `resub-10`, and `resub-33`, 33 samples remain:\n\n| Strain | MMGluFeMinus | MMGluFePlus | Succinate | Total |\n|---:|---:|---:|---:|---:|\n| JBX1 | 3 | 3 | 3 | 9 |\n| JBX97 | 2 | 3 | 3 | 8 |\n| JBX98 | 3 | 3 | 2 | 8 |\n| JBX99 | 2 | 3 | 3 | 8 |\n\nDESeq2 is fitted with\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with Benjamini-Hochberg-adjusted `padj < 0.05` in the respective strain-versus-JBX1 contrast. No fold-change cutoff is applied.\n\n## Three-set partition\n\nThe archived Venn output gives all seven mutually exclusive regions:\n\n| Region | Significant GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nUse the set-difference definition in the task to select the matching mutually exclusive row from the archived partition; overlapping regions remain separate rows.\n\n## Staged append evidence at T1\n\nFor this archived perturbation condition, the evidence record states: first external partition conflicts with base.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the modeled samples, the use of JBX1 as reference, and the three strain-versus-JBX1 comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis cohort and set definition\n\nThe expression input contains 5,828 gene rows and 36 samples. After removing `resub-5`, `resub-10`, and `resub-33`, 33 samples remain:\n\n| Strain | MMGluFeMinus | MMGluFePlus | Succinate | Total |\n|---:|---:|---:|---:|---:|\n| JBX1 | 3 | 3 | 3 | 9 |\n| JBX97 | 2 | 3 | 3 | 8 |\n| JBX98 | 3 | 3 | 2 | 8 |\n| JBX99 | 2 | 3 | 3 | 8 |\n\nDESeq2 is fitted with\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with Benjamini-Hochberg-adjusted `padj < 0.05` in the respective strain-versus-JBX1 contrast. No fold-change cutoff is applied.\n\n## Three-set partition\n\nThe archived Venn output gives all seven mutually exclusive regions:\n\n| Region | Significant GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nUse the set-difference definition in the task to select the matching mutually exclusive row from the archived partition; overlapping regions remain separate rows.\n\n## Staged append evidence at T1\n\nFor this archived perturbation condition, the evidence record states: first external partition conflicts with base.\n\n## Staged append evidence at T2\n\nFor this archived perturbation condition, the evidence record states: second independent audit conflicts with base.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nDefine the three significant-gene sets using the common Benjamini-Hochberg FDR and GeneID deduplication rule.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis cohort and set definition\n\nThe expression input contains 5,828 gene rows and 36 samples. After removing `resub-5`, `resub-10`, and `resub-33`, 33 samples remain:\n\n| Strain | MMGluFeMinus | MMGluFePlus | Succinate | Total |\n|---:|---:|---:|---:|---:|\n| JBX1 | 3 | 3 | 3 | 9 |\n| JBX97 | 2 | 3 | 3 | 8 |\n| JBX98 | 3 | 3 | 2 | 8 |\n| JBX99 | 2 | 3 | 3 | 8 |\n\nDESeq2 is fitted with\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nJBX1 is the reference. Define \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with Benjamini-Hochberg-adjusted `padj < 0.05` in the respective strain-versus-JBX1 contrast. No fold-change cutoff is applied.\n\n## Three-set partition\n\nThe archived Venn output gives all seven mutually exclusive regions:\n\n| Region | Significant GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nUse the set-difference definition in the task to select the matching mutually exclusive row from the archived partition; overlapping regions remain separate rows.\n\n## Staged append evidence at T1\n\nFor this archived perturbation condition, the evidence record states: first external partition conflicts with base.\n\n## Staged append evidence at T2\n\nFor this archived perturbation condition, the evidence record states: second independent audit conflicts with base.\n\n## Staged append evidence at T3\n\nFor this archived perturbation condition, the evidence record states: third audit changes counting unit to undeduplicated rows and reports 332.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nHow many genes are significant only in JBX98, excluding every overlap with JBX97 or JBX99?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

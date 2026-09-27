@@ -1,0 +1,35 @@
+{
+  "release_task_index": 93,
+  "task_id": "093-capsule026",
+  "source_id": "bix-37-q4",
+  "dataset": "bixbench",
+  "ordinal": 93,
+  "variant": "perturbed",
+  "conversation_id": "093::093-capsule026::1.4.k1::lane_c_manual",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "c9eca1537beed56f41414d348dd5e6a2fcdbc052f016b83419ee7f34b6894c4e",
+  "semantic_condition_id": "9a8a6ac5471f241f56f9ba35825fa4c1e09d950deb8f884a9e47cef3ad931409",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Evidence scope and comparison direction\n\nThe proteomics table contains 3,850 protein records. An exact match on\n`gene = ENO1` gives one record. The `compare` field defines the ratio direction\nas tumor relative to normal.\n\n| protein | gene | Normal protein abundance | Tumor protein abundance | Ratio | FC | log2FC | compare |\n|---|---|---:|---:|---:|---:|---:|---|\n| P06733 | ENO1 | 72896133.2946858 | 350385456.451912 | 4.81 | 4.81 | 2.27 | Tumor vs Normal |\n\n`FC` is the linear fold-change field, whereas `log2FC` is the base-2\nlogarithmic fold-change field.\n\n## Calculation convention\n\nUse the unrounded abundance values and the direction recorded above:\n\n```text\nlinear fold change = Tumor / Normal\n                   = 350385456.451912 / 72896133.2946858\n\nlog2 fold change   = log2(linear fold change)\n```\n\nThe requested reporting precision is two decimal places.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the comparison direction without specifying which group is numerator.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the unrounded abundance values, calculate the tumor-to-normal linear fold change.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Take log2 of that ratio and report the ENO1 log2 fold change to two decimal places.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 600,
+  "task_id": "scibench__matter-sol-008",
+  "dataset": "scibench",
+  "ordinal": 381,
+  "variant": "perturbed",
+  "conversation_id": "381::scibench__matter-sol-008::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "9ce5787716d1f1942382e9bdde4c6e5580039a05117f68e22e042f14182df7a4",
+  "semantic_condition_id": "f9888263bf3e8b9987354a235cb21d106d4ce66846de237da67aab410ee268ce",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify the hydrogen emission transition corresponding to n=2 to n=1.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the Rydberg wavenumber expression using R_H=109677 cm^-1.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the remaining calculation, replace n_upper=2 by n_upper=3.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the spectral series from the lower quantum number and name the line.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that emission releases positive photon energy and that the wavenumber is three quarters of R_H.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Evaluate and report the wavenumber in cm^-1 with the series classification.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

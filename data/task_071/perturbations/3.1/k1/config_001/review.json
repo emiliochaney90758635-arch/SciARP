@@ -1,0 +1,16 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "rationale": "The conflict is explicitly across steps and changes the first intermediate set.",
+  "independent_roots": true,
+  "natural_in_context": true,
+  "scorable": true,
+  "evidence_hash_checked": true,
+  "strict_non2x_original_dialogue_sha256": "1536921b37fd19e6465ba41fdef389dc799de15044dffd770690321e797d2f6e",
+  "strict_non2x_original_semantic_condition_id": "f17094dc21b5e286326925e9a4ba010aadff0c6b71648f933df033a149e6100c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Apply pvalueCutoff and qvalueCutoff as gene-level filters and treat every gene with missing gene-level p/q values as failing, producing an empty FeMinus-Dn set.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

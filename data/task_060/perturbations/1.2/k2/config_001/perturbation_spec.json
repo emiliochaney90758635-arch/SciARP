@@ -1,0 +1,37 @@
+{
+  "config_id": "task060_1.2_k2",
+  "subclass": "1.2",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Treat VAF as percent under 0.3%."
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "injected_text": "Report the 0-to-1 proportion on a 0-to-100 scale."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Round every VAF to one decimal place, apply the strict rounded-VAF < 0.3 filter, and then remove ontology annotations containing UTR."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Calculate the Benign fraction and multiply it by 100, reporting the result on a 0-to-100 scale."
+    }
+  ]
+}

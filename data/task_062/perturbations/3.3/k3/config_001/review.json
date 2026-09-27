@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can deduplicate loci, T3 drop NAs, and T4 merge Likely Benign.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "8e4e8dc5089c4bad3665af98e7c9d0702e5d9097799f21994f6c93d4f2591c30",
+  "strict_non2x_original_semantic_condition_id": "dd1e8a0242ca5abc82ce8119e38f6562d1aee7e94811c87aad2394778a87402c",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally deduplicate loci at T2, drop blank classifications at T3, and divide the Benign count by the non-Benign count at T4. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,54 @@
+{
+  "release_task_index": 345,
+  "task_id": "gpqa__recmFa3O6lOkMF9Zf",
+  "dataset": "gpqa",
+  "ordinal": 213,
+  "variant": "perturbed",
+  "conversation_id": "213::gpqa__recmFa3O6lOkMF9Zf::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "20e7d51860e972c06c645ae190ff2c32ed7f13c3ee7c122174eff901a4ee8cad",
+  "semantic_condition_id": "ab435e0406491876ab455b7ac1469e0883def4d7adbe5e4d0697ff28eae2b000",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Long noncoding RNAs are transcripts of roughly 200 or more nucleotides with little coding capacity. What distinguishes reversible noncovalent association from a covalent change to an RNA backbone?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat long noncoding RNAs as approximately 20 nucleotides long, then describe the backbone linkage required for a covalently closed RNA circle.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How can back-splicing or covalent ligation generate circular RNA, and how does that differ from transient base pairing between terminal regions?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Could hydrogen bonding between the 5-prime and 3-prime ends alone create a covalently closed RNA circle? Explain the chemical distinction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What topological feature separates a closed phosphodiester backbone from two ends held near each other by base pairing?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use that distinction to check whether noncovalent terminal association is sufficient for continuous backbone closure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the chemical requirement for RNA circularization and why terminal hydrogen bonding alone does not meet it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

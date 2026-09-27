@@ -1,0 +1,54 @@
+{
+  "release_task_index": 235,
+  "task_id": "gpqa__recQEFX6mtMj6XQvA",
+  "dataset": "gpqa",
+  "ordinal": 103,
+  "variant": "perturbed",
+  "conversation_id": "103::gpqa__recQEFX6mtMj6XQvA::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "d91aaf1f50d7b5706dff0c2be1bea569c1c0ba92c45c9823a05c19ad68be4d6e",
+  "semantic_condition_id": "d64bab4d5478f889c76e2af22268ebc0704c12029322083d88624460d70fb463",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a uniform self-gravitating sphere of mass M and radius R, how does the gravitational self-energy scale? Numerical profile factors may be omitted.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the point-particle surface-gravity formula g=GM/R^2 as the sole observable and report its M and R dependence directly as the pressure scaling.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using V=4 pi R^3/3, carry the relation or procedure selected above into an M-and-R scaling; if an energy derivative is used, state how dV/dR scales.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the preceding scalings to obtain the M and R dependence of the resulting bulk quantity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a relativistic-electron cloud in equilibrium, what M and R dependence must the balancing ground-state pressure have?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions of the pressure scaling obtained from the energy or force model adopted above.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the final pressure scaling, omitting only numerical profile factors.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "task_index": 107,
+  "task_id": "107-capsule031",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "a349e67cafdf4a93d7a563491d7b2437a12c0397ba3e2aa4aaaca0e5190d5a04",
+  "source_base_evidence_sha256": "49a5879ac28a6d0a195ac58250be1c671fafbcf6e41388b6e77382a2bdd3f895",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "First attributed source changes annotation.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Second source changes comparison provenance.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Third source independently changes sign reporting.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.2.k2"
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 183,
+  "task_id": "gpqa__rec9mLiVJz3PC7NZJ",
+  "dataset": "gpqa",
+  "ordinal": 50,
+  "variant": "perturbed",
+  "conversation_id": "050::gpqa__rec9mLiVJz3PC7NZJ::1.x::perturbation__1_4__k1__1_4_count1_cfg0002::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "a627fa6fc978d7e6dfe54999256a3100d194e2c74fcf937ac5f3f8ca1e375928",
+  "semantic_condition_id": "f8f0adcec8f01d7807d7d6864e6b1b7a276b3ff6374b68bd84868e51e75adc8d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Full-length wild-type kinase X has no effect on viability when overexpressed, whereas a kinase-dead variant has only a minimal effect. More importantly, CRISPR-resistant wild-type X and kinase-dead X each completely rescue the viability loss caused by X-targeting guides. What does this rescue comparison imply about whether X catalytic activity is required for the survival-relevant function?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Now consider guide position and protein size. N-terminal guides have little effect on viability, but C-terminal guides are lethal. All guides deplete full-length X equally, whereas a smaller band is depleted only by the C-terminal guides. What form of X does this pattern suggest, and which form is most closely linked to viability?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Two compounds described as X inhibitors are also lethal. How much target-specific evidence does this provide that X catalytic activity is essential?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain how the target-specific rescue evidence should be weighed against the guide-position, band-depletion, and promiscuous-compound evidence when assigning the cause of the survival phenotype.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Integrate those findings into the best-supported mechanism. Address separately whether kinase activity is required and what essential role the smaller X species may have.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "How does the ability of both wild-type and kinase-dead CRISPR-resistant X to rescue the C-terminal-guide phenotype constrain whether the lethality reflects loss of kinase catalysis or loss of a noncatalytic function?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the mechanism with appropriate uncertainty. Distinguish the inference of an N-terminally truncated species from direct sequence verification, and distinguish compound off-target liability from identification of the lethal off-target kinase.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Propose one direct experiment to identify the smaller X species and one orthogonal experiment to determine whether compound lethality is actually mediated by X.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final mechanistic conclusion, clearly separating X catalytic activity from the survival-relevant function and preserving the evidential limitations.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

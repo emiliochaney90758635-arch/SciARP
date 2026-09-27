@@ -1,0 +1,54 @@
+{
+  "release_task_index": 491,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1798",
+  "dataset": "olympiadbench",
+  "ordinal": 438,
+  "variant": "perturbed",
+  "conversation_id": "438::olympiadbench__OE_TO_maths_en_COMP_1798::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "6268ef7148462ed0fafd9a67d15ad0939cb67d52a47c1526fc2febf5f1feb7c5",
+  "semantic_condition_id": "34bd6cd53bb872b43894e3f2d21d32d4ffc1443828afe1da6bcab31fc61dfe96",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let a,b be positive integers, D=a^2+b+3 have no prime-cube divisor, and N=ab+3b+8 be divisible by D. Compute N modulo D and express the remainder in terms of a.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the divisibility premise to derive the resulting relation between D and (a+1)^3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use square-free radical descent as the sole valuation method while retaining only the cube-free premise.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State precisely what lower-power divisibility conclusion follows from the valuation argument and whether it descends any further.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the denominator introduced at the outset with the power of a+1 established by the valuation argument, and use positivity of b to restrict the possible multiple.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine D and express b in terms of a.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Find all possible positive integer values of n=N/D and exhibit a,b satisfying every condition.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

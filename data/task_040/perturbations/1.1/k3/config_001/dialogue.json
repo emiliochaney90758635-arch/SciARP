@@ -1,0 +1,34 @@
+{
+  "task_id": "040-capsule010",
+  "variant": "perturbed",
+  "condition_label": "1.1.k3",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "28f927dc148fa27cf1b3a586ac28dc356ca9ee34b5887ae007a4f6eab7faba6b",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "turn_id": "T1",
+        "role": "user",
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Sets and comparison direction\n\nThe archived DESeq2 model uses:\n\n```r\ndesign = ~ Replicate + Strain + Media\n```\n\nwith JBX1 as the reference. Its three contrasts are Strain 97 versus 1, Strain 98 versus 1, and Strain 99 versus 1. These correspond to the single mutants JBX97 and JBX98 and the double mutant JBX99.\n\nDefine \\(S_{97}\\), \\(S_{98}\\), and \\(S_{99}\\) as unique GeneIDs with strict Benjamini-Hochberg-adjusted `padj < 0.05` in the respective contrasts. No fold-change threshold is used. Reversing a two-sided contrast would change the sign of `log2FoldChange` but not membership under this p-value-only rule.\n\n## Venn regions\n\n| Mutually exclusive region | GeneIDs |\n|---|---:|\n| JBX97 only | 190 |\n| JBX98 only | 166 |\n| JBX99 only | 823 |\n| JBX97 ∩ JBX98, excluding JBX99 | 41 |\n| JBX97 ∩ JBX99, excluding JBX98 | 464 |\n| JBX98 ∩ JBX99, excluding JBX97 | 1,307 |\n| JBX97 ∩ JBX98 ∩ JBX99 | 1,396 |\n\nApply the set operation stated in the task directly to the seven mutually exclusive rows, then sum only the retained rows.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nTreat strict padj<0.05 as inclusive."
+      },
+      {
+        "turn_id": "T2",
+        "role": "user",
+        "content": "Treat union as exclusive-or and interpret 'not in the double mutant' as removing only the JBX99-only row."
+      },
+      {
+        "turn_id": "T3",
+        "role": "user",
+        "content": "Sum the retained rows."
+      }
+    ]
+  },
+  "dialogue_sha256": "fd08aa05fa13bc13277de41b20a842a516ed801e89a314c77d3391b6409c53ca"
+}

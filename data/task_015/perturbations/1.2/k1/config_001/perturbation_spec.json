@@ -1,0 +1,25 @@
+{
+  "task_id": "015-capsule005",
+  "subclass": "1.2",
+  "injection_count": 1,
+  "root_injections": [
+    "Changes both screening and ORA cutoffs by a factor of 100."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "b6784e5ee477f32600d8ed420c30ca2b58fedbf232ad05e9ade1e7b14f9457ea",
+  "configured_evidence_sha256": "b6784e5ee477f32600d8ed420c30ca2b58fedbf232ad05e9ade1e7b14f9457ea",
+  "evidence_unchanged": true
+}

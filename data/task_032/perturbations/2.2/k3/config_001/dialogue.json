@@ -1,0 +1,50 @@
+{
+  "release_task_index": 32,
+  "task_id": "032-capsule009",
+  "source_id": "bixbench-m2-032-capsule009",
+  "dataset": "bixbench",
+  "ordinal": 32,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::032::032-capsule009::2.2.k3::perturbed",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "3474f7a1293510e02abe24ad9fa8fdf817b4363c302e45c356c99323c28a9836",
+  "semantic_condition_id": "c08acf2b1c4dced02596bd91906e656a0810efd7b70314dae233e673151912c4",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## Endpoint construction and subgroup\n\nAll adverse-event records for a subject are reduced to that subject's maximum recorded `AESEV`; no event-type filter is applied. The endpoint is therefore maximum severity across all recorded adverse events and is not COVID-19-specific severity.\n\nAfter joining subject-level adverse-event results to demographics/exposure information and removing incomplete merged records, 791 subjects remain. Their literal `patients_seen` distribution is:\n\n| `patients_seen` category | Complete subjects |\n|---|---:|\n| `1-50` | 658 |\n| `51-100` | 108 |\n| `>100` | 25 |\n\nOnly the 25 subjects in the literal `>100` category are used below.\n\n## Sparse treatment-by-severity table\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 6 | 3 | 9 |\n| 2 | 10 | 4 | 14 |\n| 3 | 0 | 1 | 1 |\n| 4 | 1 | 0 | 1 |\n| Column total | 17 | 8 | 25 |\n\nThe independence-model expectations are:\n\n| Maximum `AESEV` | Expected BCG | Expected Placebo |\n|---:|---:|---:|\n| 1 | 6.12 | 2.88 |\n| 2 | 9.52 | 4.48 |\n| 3 | 0.68 | 0.32 |\n| 4 | 0.68 | 0.32 |\n\nThe ordinary Pearson test uses\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\n\\[\nX^2=2.6785714285714284,\n\\]\n\n## Approximation warning\n\nSix of the eight expected counts are below 5, and four are below 1. These severe expected-count violations make the large-sample chi-square approximation unreliable. The archived calculation does not replace it with an exact or Monte Carlo procedure, so any upper-tail value derived from the statistic must be reported as nominal rather than as reliable small-sample inference.\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Treatment Assignment and Maximum Adverse-Event Severity in Highly Exposed Healthcare Workers\n\n**Authors:** Marit J. Koster, Denis A. Nwosu, Helen G. Park, and João B. Serrano\n\n**Abstract**\n\n**Background:** Safety signals among healthcare workers with the highest patient-contact burden may be obscured in analyses of an entire vaccination cohort. **Methods:** Complete records from a randomized BCG-versus-placebo study were restricted to participants in the recorded greater-than-100 patients-seen category. All adverse-event types were retained, and each participant contributed the maximum recorded severity grade. A four-level severity-by-treatment table was assessed with an uncorrected ordinary Pearson chi-square test. **Results:** Treatment assignment was associated with maximum adverse-event severity, with a nominal asymptotic \\(p\\)-value of 0.041. The pattern reflected an excess of the two highest grades in the BCG arm. **Conclusions:** In the highest-contact subgroup, the maximum severity distribution differed between BCG and placebo recipients, although confirmation in a larger high-exposure sample is warranted.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReduce the adverse-event records to one ordered endpoint per participant. What events does that endpoint include?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Maximum adverse-event severity in the highest-contact subgroup\n\n**Authors:** Eveline de Boer, Hamza Qureshi, and Linda S. Cho\n\n## Abstract\n\nComplete participants in the recorded greater-than-100 patients-seen category contributed one maximum grade across all adverse events. An ordinary four-level Pearson comparison between BCG and placebo produced a nominal asymptotic (p=0.72). The very small subgroup and sparse expected cells make the chi-square approximation unreliable.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nJoin that endpoint to the exposure data and retain complete cases. How many subjects fall in each patients_seen category, and which records belong to the literal >100 subgroup?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Half-Count Stabilization of the Sparse Highest-Contact Safety Table\n\nÉlodie M. Laurent, Ifeanyi C. Nwosu, Haruka S. Mori, and George P. Whitaker\n\n## Abstract\n\nWe audited the nominal comparison of maximum adverse-event severity in the literal `>100` patient-contact stratum. The same twenty-five complete participants, four ordered severity categories, all-adverse-event endpoint, and BCG-versus-Placebo direction were retained. Because the archived four-by-two table contains zero and very small cells, analysis release 1.3 added 0.5 to every observed cell before computing the Pearson statistic and its asymptotic tail. It did not use an exact or Monte Carlo test and did not collapse categories. This report therefore challenges the table-stabilization parameter applied before the nominal Pearson calculation, whereas the clean workflow uses the raw observed counts without a half-count correction.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nFor those 25 subjects, construct the observed maximum-severity-by-treatment table, keeping BCG and Placebo separate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the independence-model expectations from that table. Which expected-count conditions make an ordinary Pearson approximation questionable?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Using the raw observed counts, calculate the Pearson chi-square statistic and its degrees of freedom.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "What is the nominal asymptotic upper-tail p-value, and how should it be qualified given the sparse expected counts?",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 160,
+  "task_id": "gpqa__rec44cTEfuCXCkHVs",
+  "dataset": "gpqa",
+  "ordinal": 22,
+  "variant": "perturbed",
+  "conversation_id": "022::gpqa__rec44cTEfuCXCkHVs::1.x::perturbation__1_1__k3__1_1_count3_cfg0004::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "177c2291ed28c929d525bad04c19310626f749e78991b2828e4e4916db20439d",
+  "semantic_condition_id": "52e19c543d032774d950a961817d4b3abd486942b9eb26267bc1b53db66cf56a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a three-dimensional isotropic quasiparticle in volume V, derive the momentum-shell state count dN and the general density-of-states formula g(E) in terms of p and dp/dE. Assume no extra degeneracy and write the phase-space factor using hbar.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For photons with E(p)=Delta+b(p-p0)^2, where b>0 and p0>0, consider Delta<E<Delta+b*p0^2. Define q=sqrt((E-Delta)/b), find every nonnegative momentum at that energy, and calculate the magnitude of dE/dp on each branch.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Describe the energy sublevel region in momentum space in this two-root window. Is it a ball or a spherical shell, and how should both moving boundaries enter the cumulative state count?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the momentum-shell formula, both roots, and their common Jacobian to write g(E) before simplifying the sum of the two allowed-frequency numerators.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Simplify the branch sum using q^2=(E-Delta)/b, and express the spectral linewidth only in terms of E, Delta, b, p0, V, and hbar.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result as E approaches Delta from above. Explain the inverse-square-root behavior and identify the part of the numerator that dominates at threshold.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Explain why the two-root formula is restricted to Delta<E<Delta+b*p0^2, and what changes once the lower formal root p0-q becomes negative.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the physical limitations of this near-minimum result, including possible higher-order dispersion, anisotropy, lifetime broadening, and any unmodeled degeneracy.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final model-conditional density of states and show explicitly how the two momentum roots produced it.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

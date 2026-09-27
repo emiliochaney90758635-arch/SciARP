@@ -1,0 +1,50 @@
+{
+  "release_task_index": 113,
+  "task_id": "113-capsule033",
+  "source_id": "bix-49-q1",
+  "dataset": "bixbench",
+  "ordinal": 113,
+  "variant": "perturbed",
+  "conversation_id": "113::113-capsule033::2.4::k3::perturbed::lane_d",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "a90f1eb7e13505e16a26a20996fd5d3652d86440622aa2ef0d7dc14b20ce64b9",
+  "semantic_condition_id": "ade35d4f95535613174fefb14ac1831c0b5cf42188646461ad2039e28302464d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# ASXL1 differential-expression ranking evidence\n\n## Cohort and model\n\nThe featureCounts input contains 60,662 unique gene rows. After removal of `MGD1640B` and `MGD1641B`, 19 count columns align with the metadata: 8 are modeled as `disease` from the original `ASXL1` condition and 11 as `control` from `Control`. The sex distribution is disease `(F=5, M=3)` and control `(F=6, M=5)`.\n\nThe executed model and shrinkage call are:\n\n```r\ndds <- DESeqDataSetFromMatrix(\n  countData = countdata,\n  colData = coldata,\n  design = ~sex + condition\n)\ndds <- DESeq(dds)\nres <- lfcShrink(\n  dds,\n  coef = \"condition_disease_vs_control\",\n  type = \"apeglm\"\n)\n```\n\nA positive shrunken `log2FoldChange` corresponds to disease relative to control.\n\n## Selected result population\n\nAnnotation joins do not change the 60,662-row result cardinality. The executed result selection is:\n\n```r\nfinal_res <- res %>%\n  filter(padj < 0.05) %>%\n  # filter(abs(log2FoldChange) > 0.58) %>%\n  arrange(desc(abs(log2FoldChange)))\n```\n\nThe absolute-LFC cutoff is commented out. The resulting population contains:\n\n| statistic | rows |\n|---|---:|\n| all rows with `padj < 0.05` | 2,118 |\n| `log2FoldChange > 0` | 1,166 |\n| `log2FoldChange < 0` | 952 |\n\n## High-absolute-effect end of the archived ordering\n\nThe first ten rows after descending ordering by `abs(log2FoldChange)` are:\n\n| order | gene_name | log2FoldChange | padj |\n|---:|---|---:|---:|\n| 1 | SLC7A3 | 4.802780 | 5.563272e-07 |\n| 2 | AC021504.1 | 4.506744 | 0.01802298 |\n| 3 | GRIK5 | 3.825466 | 7.039991e-26 |\n| 4 | VANGL2 | 3.801249 | 2.247749e-13 |\n| 5 | NOVA1 | 3.458834 | 8.435644e-07 |\n| 6 | CBX2 | 3.299950 | 2.247749e-13 |\n| 7 | MYT1L | 3.258569 | 2.120649e-06 |\n| 8 | ASIC1 | 2.983180 | 1.727484e-22 |\n| 9 | DNTT | 2.871702 | 1.419803e-05 |\n| 10 | AL050350.1 | 2.696246 | 3.441241e-07 |\n\nThe first and second absolute-effect values are distinct. Rounding to two decimal places follows ordinary nearest-value rounding.\n--- END BASE TASK EVIDENCE ---\n\nCurrent request:\nConstruct a sample-aligned, sex-adjusted disease-versus-control design.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the DESeq2 model and retain the disease-relative-to-control coefficient.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Annotation-join cardinality audit\n\nAn independent audit reports 62,104 post-HGNC-join rows and states that duplicated symbols were retained in the maximum-effect ranking, conflicting with the archived unique-key and 60,662-row checks.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nApply apeglm shrinkage to that coefficient and state the sign convention.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Select differentially expressed genes using the archived significance rule.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Independent high-effect ASXL1 ranking\n\n## Source and method\n\nThe Myeloid Genomics Validation Center fitted a sex-adjusted disease/control\nmodel, applied adaptive LFC shrinkage, and retained rows with adjusted p<0.05\nand positive disease coefficients.\n\n| Rank candidate | Gene | Shrunken log2FC | Adjusted p |\n|---|---|---:|---:|\n| A | SLC7A3 | 5.214 | 8.2e-7 |\n| B | AC021504.1 | 4.882 | 0.012 |\n| C | GRIK5 | 3.611 | 2.4e-22 |\n| D | VANGL2 | 3.506 | 7.1e-11 |\n| E | NOVA1 | 3.205 | 1.9e-6 |\n\nEvery other retained positive effect was below 3.00. Take the maximum and\nround to two decimals.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWithin that set, retain genes with positive disease-relative-to-control effects.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Robust-regression ASXL1 maximum-effect report\n\n## Source identity, scope, and method\n\nThe Independent Myeloid Modeling Unit fitted a sex-adjusted robust\nnegative-binomial model to the same ASXL1 disease-versus-control comparison\nand retained positive effects at adjusted p<0.05.\n\n| Gene | Robust shrunken log2FC | Adjusted p |\n|---|---:|---:|\n| SLC7A3 | 4.109 | 1.1e-6 |\n| AC021504.1 | 3.988 | 0.021 |\n| GRIK5 | 3.504 | 3.8e-20 |\n\nAll other retained positive effects were below 3.40, so this external maximum\nrounds to 4.11.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReport the largest log2 fold change in the upregulated subset to two decimal places.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

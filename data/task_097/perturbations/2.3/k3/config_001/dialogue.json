@@ -1,0 +1,35 @@
+{
+  "release_task_index": 97,
+  "task_id": "097-capsule028",
+  "source_id": "bix-41-q3",
+  "dataset": "bixbench",
+  "ordinal": 97,
+  "variant": "perturbed",
+  "conversation_id": "097::097-capsule028::2.3::k3::perturbed",
+  "condition_label": "2.3.k3",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 3,
+  "dialogue_sha256": "d97501f82c84987c3a6fce51a5b179961a0b5d2363627b3f5f3297cb5442074b",
+  "semantic_condition_id": "ff8e90fabcdb7d2f1b7f8361926d1b90073e08d2a8284d4bbd6896387c6d431b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Measurement fields and grouping\n\n`Circularity` is the image-derived circularity measurement. It is distinct from\nthe neighboring `Area` and `Round` fields. Group means are arithmetic means\nwithin each `StrainNumber × Ratio` group.\n\nBoth relevant strains occur only at the single-strain ratio `1:0`. Their\ncomplete nonmissing observations are:\n\n| StrainNumber | Ratio | Replicate | Circularity |\n|---:|---|---|---:|\n| 1 | 1:0 | A | 0.045 |\n| 1 | 1:0 | B | 0.068 |\n| 1 | 1:0 | C | 0.071 |\n| 98 | 1:0 | A | 2.91 |\n| 98 | 1:0 | B | 0.654 |\n| 98 | 1:0 | C | 0.525 |\n\n## Calculation convention\n\nFor each strain:\n\n```text\nmean circularity = sum of its three Circularity observations / 3\n```\n\nThe requested raw difference is directional:\n\n```text\nmean(Circularity | Strain 98, Ratio 1:0)\n-\nmean(Circularity | Strain 1, Ratio 1:0)\n```\n\nDo not standardize the difference, express it as a percentage, or substitute\nthe `Area` or `Round` measurement.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nExtract the original circularity observations for Strain 98 and Strain 1 in their respective monocultures.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Measurement fields and grouping\n\n`Circularity` is the image-derived circularity measurement. It is distinct from\nthe neighboring `Area` and `Round` fields. Group means are arithmetic means\nwithin each `StrainNumber × Ratio` group.\n\nBoth relevant strains occur only at the single-strain ratio `1:0`. Their\ncomplete nonmissing observations are:\n\n| StrainNumber | Ratio | Replicate | Circularity |\n|---:|---|---|---:|\n| 1 | 1:0 | A | 0.045 |\n| 1 | 1:0 | B | 0.068 |\n| 1 | 1:0 | C | 0.071 |\n| 98 | 1:0 | A | 2.91 |\n| 98 | 1:0 | B | 6.54 |\n| 98 | 1:0 | C | 0.525 |\n\n## Calculation convention\n\nFor each strain:\n\n```text\nmean circularity = sum of its three Circularity observations / 3\n```\n\nThe requested raw difference is directional:\n\n```text\nmean(Circularity | Strain 98, Ratio 1:0)\n-\nmean(Circularity | Strain 1, Ratio 1:0)\n```\n\nDo not standardize the difference, express it as a percentage, or substitute\nthe `Area` or `Round` measurement.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nCalculate the arithmetic mean circularity for each strain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Measurement fields and grouping\n\n`Circularity` is the image-derived circularity measurement. It is distinct from\nthe neighboring `Area` and `Round` fields. Group means are arithmetic means\nwithin each `StrainNumber × Ratio` group.\n\nBoth relevant strains occur only at the single-strain ratio `1:0`. Their\ncomplete nonmissing observations are:\n\n| StrainNumber | Ratio | Replicate | Circularity |\n|---:|---|---|---:|\n| 1 | 1:0 | A | 0.045 |\n| 1 | 1:0 | B | 0.068 |\n| 1 | 1:0 | C | 0.071 |\n| 98 | 1:0 | A | 2.91 |\n| 98 | 1:0 | B | 6.54 |\n| 98 | 1:0 | C | 5.25 |\n\n## Calculation convention\n\nFor each strain:\n\n```text\nmean circularity = sum of its three Circularity observations / 3\n```\n\nThe requested raw difference is directional:\n\n```text\nmean(Circularity | Strain 98, Ratio 1:0)\n-\nmean(Circularity | Strain 1, Ratio 1:0)\n```\n\nDo not standardize the difference, express it as a percentage, or substitute\nthe `Area` or `Round` measurement.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nWhat is the raw mean difference in the direction Strain 98 minus Strain 1?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "config_id": "task057_1.2_k3",
+  "subclass": "1.2",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Report means in thousands."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Keep SDs in raw counts."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Enter target power as 80 rather than 0.80."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nForm the KD and CTRL NeuN vectors and report each group's mean in thousands of nuclei."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Calculate both standard deviations in the original raw-count units and form the pooled standard deviation without reconciling the units with the means."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use target power 0.008, treating 80% as 0.80%, and report the resulting minimum integer sample size per group."
+    }
+  ]
+}

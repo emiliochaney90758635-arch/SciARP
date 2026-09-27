@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "Cohort, qualifying variant, and exact Benign can each receive a wrong definition.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "5b3b25f4d503c58f345c93eb108bc3c283f6436a563cd21d2308bdfe561d51b1",
+  "strict_non2x_original_semantic_condition_id": "d8eeec4751be9df9b25654b19a33aa2e7322d448218b77392f608a14c0330a88",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T1 naturally restrict Control Parents to fathers, at T2 deduplicate loci, and at T4 count blanks as Benign. Remove all generator text.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

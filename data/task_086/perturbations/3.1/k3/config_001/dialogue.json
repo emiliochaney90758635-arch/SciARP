@@ -1,0 +1,35 @@
+{
+  "release_task_index": 86,
+  "task_id": "086-capsule023",
+  "source_id": "bix-32-q4",
+  "dataset": "bixbench",
+  "ordinal": 86,
+  "variant": "perturbed",
+  "conversation_id": "086::086-capsule023::3.1.k3::lane_c_manual",
+  "condition_label": "3.1.k3",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 3,
+  "dialogue_sha256": "2c12df7b7a20b725301756e074d29d3ac574d462033f83054a457bca3919a0ef",
+  "semantic_condition_id": "6f5f71a8d3a0f70a65e37fd03c678c69e1c9876b65c7e6425d6ab536e5dc1214",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Dn gene lists\n\nThe effect directions in the three DESeq2 results are Strains 97, 98, and 99 relative to wildtype Strain 1. Downregulation is defined by the strict condition:\n\n```r\nlog2FoldChange < -1.5\n```\n\nThe task additionally requires raw `p < 0.05`. A row-wise audit shows that this added condition does not change any of the three input sets:\n\n| Strain | only lfc < -1.5 | plus raw p < 0.05 | largest raw p within lfc set |\n|---:|---:|---:|---:|\n| 97 | 166 | 166 | 0.007847591011564731 |\n| 98 | 173 | 173 | 0.008533516688992950 |\n| 99 | 397 | 397 | 0.006564841989527493 |\n\n## KEGG Enrichment and Archived Dn Points\n\nEach Dn GeneID list is processed with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\n`✓` indicates that the Description appears in the corresponding strain's Dn column in the archived executed plot:\n\n| Description | 97 Dn | 98 Dn | 99 Dn |\n|---|:---:|:---:|:---:|\n| Two-component system | — | ✓ | ✓ |\n| Starch and sucrose metabolism | — | ✓ | ✓ |\n| Quorum sensing | ✓ | — | ✓ |\n| Phenazine biosynthesis | ✓ | — | ✓ |\n| Nitrogen cycle | ✓ | ✓ | ✓ |\n| Biosynthesis of secondary metabolites | ✓ | ✓ | ✓ |\n| Biofilm formation - Pseudomonas aeruginosa | — | — | ✓ |\n| Bacterial chemotaxis | — | — | ✓ |\n\nTake the strict name intersection of the three Dn columns only; do not include Up points, entries shared by only two strains, or semantically similar entries with different names.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse strain 98's DESeq2 table to build both strains 98 and 99 Dn sets.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Run KEGG on Up genes for strain 97 but Dn genes for the others. Use the archived strain-98 Dn set {Two-component system; Starch and sucrose metabolism; Nitrogen cycle; Biosynthesis of secondary metabolites} for both strains 98 and 99, and the strain-97 Up set {Quorum sensing; Phenazine biosynthesis; Biofilm formation - Pseudomonas aeruginosa; Aminoacyl-tRNA biosynthesis}.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Report the result as a three-strain Dn intersection.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

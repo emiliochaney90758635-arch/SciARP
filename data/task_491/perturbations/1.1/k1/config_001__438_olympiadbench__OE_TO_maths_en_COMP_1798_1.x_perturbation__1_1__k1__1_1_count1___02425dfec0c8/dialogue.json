@@ -1,0 +1,54 @@
+{
+  "release_task_index": 491,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1798",
+  "dataset": "olympiadbench",
+  "ordinal": 438,
+  "variant": "perturbed",
+  "conversation_id": "438::olympiadbench__OE_TO_maths_en_COMP_1798::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a6577dc05eacd7ea3f34c67a5861e3063ea6ad11570e13418d1ecf3e1c62e959",
+  "semantic_condition_id": "66d36480a96d8218fa6d3697c400346b80775eeeead37475546db962e4eacc9f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let a,b be positive integers, D=a^2+b+3 have no prime-cube divisor, and N=ab+3b+8 be divisible by D. Compute N modulo D and express the remainder in terms of a.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the congruence to derive a partition of D into congruence classes rather than a divisibility relation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use prime valuations and the fact that D has no prime-cube divisor to prove the strongest lower-power divisibility consequence.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State precisely what lower-power divisibility conclusion follows from the valuation argument and whether it descends any further.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the denominator introduced at the outset with the power of a+1 established by the valuation argument, and use positivity of b to restrict the possible multiple.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine D and express b in terms of a.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Find all possible positive integer values of n=N/D and exhibit a,b satisfying every condition.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

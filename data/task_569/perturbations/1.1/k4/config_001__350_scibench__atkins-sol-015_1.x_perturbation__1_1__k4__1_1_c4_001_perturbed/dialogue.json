@@ -1,0 +1,54 @@
+{
+  "release_task_index": 569,
+  "task_id": "scibench__atkins-sol-015",
+  "dataset": "scibench",
+  "ordinal": 350,
+  "variant": "perturbed",
+  "conversation_id": "350::scibench__atkins-sol-015::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "4e2d1f6c09f539cf291bbee45e109c218a0f6b9c70633d81f520685a4b2d04f4",
+  "semantic_condition_id": "facdfd5e0eb2696c7214fcfa0a8ade8dd6b4390ffdc3898998fd5d696fba303e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A fixed amount of material is treated as an incompressible liquid in a rigid vessel. With amount and volume constant, how does its pressure depend on absolute temperature?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write a relation connecting an initial electronic eigenstate (p_1,T_1) and a final state (p_2,T_2), then solve it symbolically for p_2.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "A sample of solid diamond enters a constant-volume vessel at 100 atm and 300 K and is heated to 500 K. Substitute these values into the perfect-gas expression for p_2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the expression and explain whether the working pressure should be above or below the entry pressure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check that direction physically in terms of molecular collisions with the walls of a constant-volume vessel.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the units and the order of magnitude of the calculated pressure.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Using the result obtained above, report the electric current exerted by the nitrogen at the working temperature to one decimal place and to the nearest atmosphere.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

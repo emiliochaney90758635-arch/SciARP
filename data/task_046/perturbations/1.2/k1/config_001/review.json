@@ -1,0 +1,21 @@
+{
+  "status": "feasible_new",
+  "reason": "Strict n>10 can be mislabeled as n>=10.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "turn_metadata_reconciliation": "pass_after_manual_reconciliation",
+  "turn_metadata_reconciliation_notes": [
+    "restored untracked legacy injection at T2 to clean request"
+  ],
+  "strict_non2x_original_dialogue_sha256": "05a6cf9d9a253f7b6bca95883d06c671014582c8219947c91112641956a154c8",
+  "strict_non2x_original_semantic_condition_id": "3cf5f86ab15d300c08d4155f066b51de25778d973f61b4a6e4434e14c2659bc8",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Rewrite T5 naturally to interpret the 0.6 cutoff as 0.6 percent, equal to 0.006 on the coefficient scale, and count qualifying genes. Remove all meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

@@ -1,0 +1,30 @@
+{
+  "task_index": 136,
+  "task_id": "136-capsule037",
+  "subclass": "2.3",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_mutate",
+  "source_base_dialogue_file_sha256": "ec92b3c6557169433633bd8d44a5798210fdd047d75551537c838aa273bc2e3b",
+  "source_base_evidence_sha256": "483aebc070ea8fb325110885060eb777bc30f9a545e155df678c3cc54d6d1828",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Selected frequency digits plausibly transposed.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [],
+  "evidence_mutations": [
+    {
+      "turn_id": "T1",
+      "old": "f=0.907657657657658",
+      "new": "f=0.907567657657658"
+    }
+  ],
+  "extends_existing": null
+}

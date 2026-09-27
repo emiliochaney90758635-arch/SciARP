@@ -1,0 +1,54 @@
+{
+  "release_task_index": 322,
+  "task_id": "gpqa__recX2lK3byHnClL54",
+  "dataset": "gpqa",
+  "ordinal": 190,
+  "variant": "clean",
+  "conversation_id": "190::gpqa__recX2lK3byHnClL54::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "7a769f84cfac68f9db32b0a209723bc716eae87f82f4067ed5a2f00e5a2464f2",
+  "semantic_condition_id": "108392ae10d8a16429567b8bf5717e08a73821f59dfb3e35eec028b7d96c966d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A muon has a proper lifetime of 2.0 microseconds and travels 1000 m in the laboratory before decaying. Which lifetime belongs in the muon's rest frame, and which distance is measured in the laboratory frame?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Assuming a constant speed along the path, derive the relation between the laboratory distance, the particle's proper lifetime, and its speed, including relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check that the distance, lifetime, and speed of light are expressed in compatible units before doing the numerical calculation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the relation you derived to solve for the dimensionless speed beta=v/c.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert beta to the particle's speed in metres per second.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the result is subluminal and reproduces the stated 1000 m laboratory path within rounding.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the validated speed and briefly explain why using distance divided by proper lifetime would ignore relativistic time dilation.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

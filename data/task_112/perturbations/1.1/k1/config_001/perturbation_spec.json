@@ -1,0 +1,31 @@
+{
+  "task_index": 112,
+  "task_id": "112-capsule033",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "2638f821bbc43e2bbb420db682030a6afa273a681ee1f3c1a34929de441040ca",
+  "source_base_evidence_sha256": "972a631c7d7733048ae464d11f069a8b24be0f756ae3700276a0a0885baa7c59",
+  "events": [
+    {
+      "turn_id": "T4",
+      "root": "The scientific term significant gene is narrowed to activate a filter that did not execute.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T4": "Use significant gene to mean a row that passes both padj < 0.05 and the commented absolute shrunken log2-fold-change threshold above 0.58, then construct that set."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Define a significant gene as padj<0.05 with a positive shrunken log2FoldChange, and construct the visible 1166-gene set."
+    }
+  ]
+}

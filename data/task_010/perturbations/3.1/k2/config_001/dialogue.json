@@ -1,0 +1,45 @@
+{
+  "release_task_index": 10,
+  "task_id": "010-capsule004",
+  "source_id": "bix-5-q4",
+  "dataset": "bixbench",
+  "ordinal": 10,
+  "variant": "perturbed",
+  "conversation_id": "010::010-capsule004::3.1.k2::lane_a_manual",
+  "condition_label": "3.1.k2",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 2,
+  "dialogue_sha256": "fc419d8f2d201953f85a8ff3292d40d84d7f27eeab084a510657860cb695d253",
+  "semantic_condition_id": "2607740a69d9bb009540418eca924fc25c971b883064c163dc46b06b656f0997",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## ASXL1-mutated fibroblast comparison\n\n| Sample | Condition | Sex |\n|---|---|---|\n| MGD1544F | disease | M |\n| MGD1546F | control | M |\n| MGD1547F | disease | F |\n| MGD1548F | control | F |\n| MGD1549F | control | M |\n| MGD1550F | disease | F |\n| MGD1551F | control | F |\n| MGD1557F | disease | F |\n| MGD1558F | control | F |\n| MGD1560F | disease | F |\n| MGD1613F | disease | F |\n| MGD1614F | control | M |\n| MGD1615F | control | F |\n| MGD1616F | disease | F |\n\nHere `disease` denotes ASXL1-mutated fibroblasts. Two extra count-matrix columns are excluded: `MGD1640F` has recorded alcohol-use disorder, and `MGD1641F` has recorded valproic-acid exposure. The aligned analysis uses 7 ASXL1-mutated and 7 control samples.\n\n## Analysis configuration\n\n```r\ndesign = ~ sex + condition\ncoef = \"condition_disease_vs_control\"\nshrinkage = \"apeglm\"\n```\n\nThe coefficient direction is ASXL1-mutated relative to control.\n\nFor GO analysis:\n\n```text\nDEG criterion: padj < 0.05\nidentifier processing: remove Ensembl version suffixes\nontology: Biological Process\nidentifier key type: ENSEMBL\nbackground: all tested GENCODE genes\nmultiple-testing adjustment: Benjamini–Hochberg\nq-value cutoff: 0.05\nreadable identifiers: yes\nredundancy simplification:\n  semantic-similarity cutoff = 0.7\n  rank by = p.adjust\n  representative = minimum p.adjust\n```\n\n## Simplified GO-BP output\n\n| Output order | GO identifier | Description | Displayed BH-adjusted p-value |\n|---:|---|---|---:|\n| 1 | GO:0042391 | regulation of membrane potential | 0.02028444 |\n| 2 | GO:0071805 | potassium ion transmembrane transport | 0.02028444 |\n| 3 | GO:0006813 | potassium ion transport | 0.02839166 |\n| 4 | GO:0070593 | dendrite self-avoidance | 0.04311851 |\n| 5 | GO:0006936 | muscle contraction | 0.04349365 |\n| 6 | GO:0007411 | axon guidance | 0.04349365 |\n| 7 | GO:0071692 | protein localization to extracellular region | 0.04349365 |\n| 8 | GO:0099173 | postsynapse organization | 0.04349365 |\n| 9 | GO:0086003 | cardiac muscle cell contraction | 0.04349365 |\n\nThe archived table supplies only the displayed precision above. Row order is not an additional significance statistic and cannot be used to break a displayed tie.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAssemble the eligible fibroblast samples and fit the ASXL1-mutated-versus-control differential-expression model.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Although T1 established ASXL1-mutated relative to control, use the reversed control-relative-to-mutated results to define the significant genes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Although T2 established all tested GENCODE genes as the background, use only significant genes as the enrichment universe.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the archived semantic-similarity rule to remove redundant terms and retain representative processes.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Which displayed processes tie for the smallest adjusted p-value, and what value do they share?",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

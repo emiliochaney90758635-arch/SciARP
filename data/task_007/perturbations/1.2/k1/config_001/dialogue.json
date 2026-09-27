@@ -1,0 +1,40 @@
+{
+  "release_task_index": 7,
+  "task_id": "007-capsule003",
+  "source_id": "bixbench-m2-007-capsule003",
+  "dataset": "bixbench",
+  "ordinal": 7,
+  "variant": "perturbed",
+  "conversation_id": "007::007-capsule003::1.2.k1::lane_a_manual",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "3a5dcf5103e1d40f8ed354683391d3bda95002b8942c966b1f9b21997faf1458",
+  "semantic_condition_id": "c0d992b8d76fc3461c8da9fde6573e6b1dd0ef9b15db43ed6da37fc7abdb2cae",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analyzable population and filtered counts\n\nEach complete fitted contrast result contains 21,251 `GeneID` rows. An earlier expression matrix contains 25,402 rows, but 4,151 of those rows are absent from the fitted contrast results and therefore are not part of the event population for this screen.\n\nThe common descriptive filter is:\n\n```python\n(padj < 0.05) & (abs(log2FoldChange) > 1) & (baseMean >= 10)\n```\n\n| Comparison | Filtered GeneIDs \\(k\\) | Analyzable GeneIDs \\(n\\) |\n|---|---:|---:|\n| final blood relative to baseline blood | 846 | 21,251 |\n| dentate gyrus relative to baseline blood | 11,663 | 21,251 |\n| dentate gyrus relative to final blood | 11,746 | 21,251 |\n\n## Operational exact-binomial screen\n\nFor every comparison:\n\n```text\nreference proportion p0 = 0.05\nalternative = \"less\"\nobserved proportion = k / n\n```\n\nThe exact lower-tail calculation is:\n\n\\[\nP(X \\le k),\\qquad X\\sim\\operatorname{Binomial}(n,0.05).\n\\]\n\nThe resulting values are:\n\n| Comparison | Observed proportion \\(k/n\\) | One-sided exact p-value |\n|---|---:|---:|\n| final blood relative to baseline blood | 0.0398098913 | 9.9824685e-13 |\n| dentate gyrus relative to baseline blood | 0.5488212319 | 1.0 |\n| dentate gyrus relative to final blood | 0.5527269305 | 1.0 |\n\nThe declared operational label requires both:\n\n```text\nobserved proportion < 0.05\none-sided exact p-value < 0.05\n```\n\n## Interpretation boundary\n\nThe GeneID indicators are dependent and are treated as Bernoulli trials only to implement this operational exploratory screen. Its p-values are not biological-sampling significance tests. The upstream differential-expression results also come from rounded normalized-value pseudo-counts rather than raw counts.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nConfirm the common analyzable-GeneID denominator and pair it with the filtered count from each of the three comparisons.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the proportions while interpreting the 5% reference as 0.05 percent, i.e. decimal 0.0005, rather than decimal 0.05.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use 5% as the reference proportion to perform the exploratory one-sided exact binomial screen for each comparison.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Which comparison satisfies both parts of the prespecified rule, and what limitation applies to that screen?",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

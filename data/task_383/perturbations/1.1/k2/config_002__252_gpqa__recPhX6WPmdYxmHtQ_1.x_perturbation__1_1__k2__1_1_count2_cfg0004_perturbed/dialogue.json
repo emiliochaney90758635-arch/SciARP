@@ -1,0 +1,59 @@
+{
+  "release_task_index": 383,
+  "task_id": "gpqa__recPhX6WPmdYxmHtQ",
+  "dataset": "gpqa",
+  "ordinal": 252,
+  "variant": "perturbed",
+  "conversation_id": "252::gpqa__recPhX6WPmdYxmHtQ::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a32f6ba7ca0855162c650c8d289315d1c474ec9ae49f9d68ce7c5786fee4b0f1",
+  "semantic_condition_id": "10e19d586c2edfe9b2018585c8fc28448e94f1b285bfd568f0b715cbd4460e77",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "MCF10A cells are exposed to chronic ionizing radiation, cyclic extreme temperatures, or control conditions. Which genomic layers should be measured to compare the two exposures, and which missing design details limit interpretation?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a protein-purification arm, identify the main molecular consequence and choose a direct assay using the technique-selection method established for that objective.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For a flow-cytometry arm, identify the relevant molecular consequence and choose an assay using the same selection method.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Combine the two requirements established above into an assay pair, explaining the distinct role of each component.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What general measurement criterion should rule out any method that cannot directly read both target outcomes?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the best-supported assay pair, while distinguishing conceptual coverage of the current objectives from a complete experimental design and noting the missing design information.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the pair addresses the two intended outcomes, and state that conclusion using the evidential and confidence stance established above.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the assay pair and the molecular output measured by each component.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

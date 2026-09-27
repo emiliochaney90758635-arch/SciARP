@@ -1,0 +1,48 @@
+{
+  "config_id": "task059_1.2_k3",
+  "subclass": "1.2",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Report cohort size in hundreds of samples."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Treat VAF as percent under 0.3%."
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "injected_text": "Express the fraction value itself as a percent."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nIdentify the Affected BLM cohort used as BSyn Probands and report its size in hundreds of samples."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Convert each VAF to percentage points, round it to the nearest whole percent, and retain rows with rounded VAF strictly below 30%."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Divide the exact-Benign count by the resulting qualifying-row count, then append a percent sign to that raw fraction without multiplying by 100."
+    }
+  ]
+}

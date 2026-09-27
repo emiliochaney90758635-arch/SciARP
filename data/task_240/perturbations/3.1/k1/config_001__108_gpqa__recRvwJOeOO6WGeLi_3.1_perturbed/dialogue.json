@@ -1,0 +1,54 @@
+{
+  "release_task_index": 240,
+  "task_id": "gpqa__recRvwJOeOO6WGeLi",
+  "dataset": "gpqa",
+  "ordinal": 108,
+  "variant": "perturbed",
+  "conversation_id": "108::gpqa__recRvwJOeOO6WGeLi::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "dacae5b2963a70ea8de9a28e15c6b5ac02d765d0ea80084fa4ca89e75a6cc8e3",
+  "semantic_condition_id": "eadd917017fc1e5e27c0904a27ad95b38f56b46d7bd71f3bc9004c62d69b4c95",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a pure two-qubit state alpha|00> + beta|01> + gamma|10> + delta|11>, state the separability criterion in terms of the determinant of the coefficient matrix [[alpha,beta],[gamma,delta]].",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Explain why that determinant provides a decisive separability test for a pure two-qubit state and why an overall normalization factor does not affect whether it vanishes.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the criterion to (a) (1/sqrt(30))(|00> + 2i|01> - 2|10> - 4i|11>) and (b) (1/5)(|00> + 2i|01> - 2|10> - 4i|11>). Is each state separable or entangled?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now apply the same test to (c) (1/2)(|00> + |01> + |10> - |11>) and (d) (1/2)(|00> + |01> - |10> - |11>). Is each state separable or entangled?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the four results and identify exactly which states are entangled.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report alpha*delta - beta*gamma for each state so that the four classifications can be checked quantitatively.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final entangled-state set and summarize how the determinant criterion establishes it.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

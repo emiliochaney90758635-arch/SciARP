@@ -1,0 +1,54 @@
+{
+  "release_task_index": 294,
+  "task_id": "gpqa__recypVp2NmPlBKVTp",
+  "dataset": "gpqa",
+  "ordinal": 162,
+  "variant": "perturbed",
+  "conversation_id": "162::gpqa__recypVp2NmPlBKVTp::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "2872ddb67bbdf4efe00dc935945aeee44d6be83b1ac4c91b9bb28294c3bb5d75",
+  "semantic_condition_id": "831234acb7624365c14ded6f9a82d55609b8eec4b15569ae463403654d9ca3cb",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A rapid molecular diagnostic is needed for an outbreak known to be caused by a retrovirus. What feature of its genome matters for direct detection, and what nucleic-acid intermediate is needed before sequence identification?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Instead of preparing a viral nucleic-acid template, identify host IgG antibodies and use an IgG ELISA as the direct molecular assay for active infection.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Choose a rapid assay format based on the template or analyte identified above, and explain how its readout fits the outbreak use case.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What criteria should be used to compare the candidate workflows in terms of timing, specificity, analyte, and evidentiary basis?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assemble the end-to-end workflow selected above and state the analyte detected in the final test.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the selected template or analyte, assay components, timing, and readout are mutually consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final diagnostic chain and its scientific rationale.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

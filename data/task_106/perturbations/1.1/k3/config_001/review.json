@@ -1,0 +1,17 @@
+{
+  "construction_review": "pass",
+  "strict_rejection_review": "pass",
+  "review_method": "direct human review; packaging script performed no semantic generation",
+  "taxonomy_match": true,
+  "distinct_root_events": true,
+  "downstream_consumers_present": true,
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true,
+  "answer_leakage": false,
+  "notes": "Accepted after task-specific review of naturalness, independence, and scorable impact.",
+  "strict_non2x_original_dialogue_sha256": "650f66546aec7469664f8d248dbcc3d2e3a425f63019d334c4232717969783fc",
+  "strict_non2x_original_semantic_condition_id": "c168292ba9e44da5e324b185310a47778f3b90b120fd28fcad1a7d996d08e535",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Materializes the approved 1.1.k3 repair with visible, reproducible quantities while preserving its other injection roots."
+}

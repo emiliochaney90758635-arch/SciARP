@@ -1,0 +1,49 @@
+{
+  "release_task_index": 490,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1681",
+  "dataset": "olympiadbench",
+  "ordinal": 437,
+  "variant": "perturbed",
+  "conversation_id": "437::olympiadbench__OE_TO_maths_en_COMP_1681::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b8b4ca5b33cff71165cd9ed7398119e44b6504ddd5ad84eeb6fd48f9bb653f00",
+  "semantic_condition_id": "6c2f7411424e563e967d80eb4f973f8bb8050cc18d6443568e881bfb25f9340f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let f map the positive integers onto the positive integers and suppose that, for every m,n and prime p, p divides f(m+n) exactly when it divides f(m)+f(n). Fix p, let d be the least positive integer with p dividing f(d), and prove that p divides f(x) exactly when d divides x.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For this fixed p and d, prove that x is congruent to y modulo d exactly when f(x) is congruent to f(y) modulo p. Construct any auxiliary positive integer you need.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compare the residue classes on the two sides to prove that d=p. Make clear which property of the original mapping supplies each of the two counting inequalities.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Audit the residue-count argument for any hidden injectivity assumption. If a required mapping hypothesis is unavailable, identify the gap rather than adding a new premise.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the resulting primewise divisibility and congruence equivalences to prove by induction that f is constant on the positive integers.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Conclude the classification of all such functions and verify directly that every function in the classification satisfies the original condition.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

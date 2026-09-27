@@ -1,0 +1,59 @@
+{
+  "release_task_index": 506,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1641",
+  "dataset": "olympiadbench",
+  "ordinal": 453,
+  "variant": "perturbed",
+  "conversation_id": "453::olympiadbench__OE_TO_maths_en_COMP_1641::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "b01f173a19fcb342d4e2acaf9c844354b3ef07fbadd1284f6821ba62eb5eb7c9",
+  "semantic_condition_id": "e327d62472ecc183f13b2bc85ac3eb4292d812251bdaa53a7f240deb6552fd5c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label 2n distinct points on a circle counterclockwise and pair them by arrows. A configuration is good if no arrows cross and no arrows A->B, C->D have A,B,C,D in clockwise order. Let F_j count good configurations and C_j count noncrossing unoriented pairings on 2j points, with F_0=C_0=1. How does the chord at point 1 split the remaining pairs between the two arcs?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Orient the distinguished chord away from point 1. Count configurations on its two sides: the region constrained by the forbidden clockwise quadrangle and the other region, which remains an arbitrary good configuration. Express the count using the split sizes and C_j and F_j.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now reverse the distinguished chord. Compare its contribution with the first orientation, then sum over split sizes r+s=n-1 to derive a recurrence for F_n.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Construct an explicit symmetry between the two orientations of the distinguished chord: reflect the circle and simultaneously reverse every arrow. Verify that this operation preserves noncrossing and the absence of a forbidden clockwise quadrangle.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the generating-function translation, use F_0=0 as the empty-configuration count instead of F_0=1.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Let F(x)=sum_{n>=0} F_n x^n and C(x)=sum_{n>=0} C_n x^n. Use the recurrence and the Catalan generating function to derive and solve the functional equation for F(x).",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Extract the coefficient of x^n exactly from that generating function, using a method valid for every nonnegative integer n.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the number of good configurations on 2n points and check that the formula agrees with the empty case and the case of a single pair.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

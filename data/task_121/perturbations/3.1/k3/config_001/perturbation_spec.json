@@ -1,0 +1,43 @@
+{
+  "task_index": 121,
+  "task_id": "121-capsule034",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f887f569c500300dca4fc497e508fa2336d60d1f2acdef6052f04615572fca73",
+  "source_base_evidence_sha256": "9872a919a30a0585d350cf213044a97138ca69bde0d9cbcb74bc1571b7703aff",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Outcome state contradicted.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient state independently contradicted.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Test sidedness independently contradicted.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Reverse Response coding.",
+    "T2": "Use positive Age coefficient.",
+    "T4": "Use one-sided p despite requested two-sided test."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

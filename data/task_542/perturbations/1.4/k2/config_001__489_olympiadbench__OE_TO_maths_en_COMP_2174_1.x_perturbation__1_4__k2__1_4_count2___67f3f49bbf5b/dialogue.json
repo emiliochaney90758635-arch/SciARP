@@ -1,0 +1,59 @@
+{
+  "release_task_index": 542,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2174",
+  "dataset": "olympiadbench",
+  "ordinal": 489,
+  "variant": "perturbed",
+  "conversation_id": "489::olympiadbench__OE_TO_maths_en_COMP_2174::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "21aafaa5465d2857fd976d90443250446910e098f74f41a7514ab8c80f309ab3",
+  "semantic_condition_id": "f466927034da7aea1a88556874c47ba597dc67365fd86a10f35483c65cf36a23",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let `P` be 2021 points in the plane, with no three collinear. Order the rays `OP_i` cyclically. For each `i`, let `k_i` be the number of other points in the open clockwise half-plane bounded by `OP_i`. Show how each unordered pair contributes to these counts and determine `sum_i k_i`.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Call a triangle with vertices in `P` fat. Characterize a non-fat triangle in terms of an open half-plane whose boundary passes through `O`.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that characterization to express the total number of non-fat triangles as `sum_i C(k_i,2)`. Why is each non-fat triangle counted for exactly one starting vertex?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "With `sum_i k_i` fixed, give a rigorous smoothing or convexity argument for how `sum_i C(k_i,2)` is minimized over integer half-plane counts.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the average value of the k_i to evaluate the lower bound for the number of non-fat triangles and explain how this constrains the number of fat triangles.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify with a one-unit exchange calculation that unequal half-plane counts cannot improve this lower bound, and state the equality condition on all `k_i`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Now use `N = 2021`: subtract the non-fat lower bound from `C(N,3)` and simplify the resulting upper bound for the number of fat triangles.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the identities for `sum_i k_i` and the non-fat count, show that a regular 2021-gon centered at `O` attains equality, then report the maximum number of fat triangles.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

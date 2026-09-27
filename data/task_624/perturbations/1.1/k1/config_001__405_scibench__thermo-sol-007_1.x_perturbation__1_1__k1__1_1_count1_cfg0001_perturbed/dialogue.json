@@ -1,0 +1,64 @@
+{
+  "release_task_index": 624,
+  "task_id": "scibench__thermo-sol-007",
+  "dataset": "scibench",
+  "ordinal": 405,
+  "variant": "perturbed",
+  "conversation_id": "405::scibench__thermo-sol-007::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "67ddab3f1f9b899e414bc56866810dec06b913a3b4cbf5827d97699f73d658e3",
+  "semantic_condition_id": "700662c9cc8adc5b23b140097ee5c59f5a038529f711f3b71260f454f5f5f938",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For steady isothermal laminar CO2 flow through a long cylindrical tube, use an incompressible Bernoulli relation to give the outlet volumetric flow rate in terms of radius, viscosity, length, inlet pressure, and outlet pressure, even though the gas pressure changes along the tube.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Convert these data to SI units, including the radius: L = 1.00 m, tube diameter = 0.75 mm, viscosity at 293 K = 146 microP, inlet pressure = 1.05 atm, and outlet pressure = 1.00 atm.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the compressible-flow relation and converted quantities to calculate the outlet volumetric flow rate.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The cylinder contains 50 lb, or 22.7 kg, of CO2. Using a molar mass of 44.0 g/mol, convert that inventory to moles and then to the volume it occupies at 293 K and the outlet pressure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Divide the available outlet-condition gas volume by the outlet volumetric flow rate. How long can the cylinder supply the experiment in seconds and days?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the lifetime by independently carrying the 22.7 kg inventory through the mole and outlet-volume conversions and comparing it with the calculated flow rate.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the checked lifetime and explain how narrowing an otherwise identical tube changes the outlet flow rate when the pressure endpoints remain fixed.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the direction of that radius effect from the fourth-power dependence, and check the dimensions of the lifetime calculation.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final cylinder lifetime and the radius-flow relationship concisely.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

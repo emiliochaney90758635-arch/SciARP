@@ -1,0 +1,74 @@
+{
+  "release_task_index": 419,
+  "task_id": "gpqa__recnTTKdBzfuoZ7w7",
+  "dataset": "gpqa",
+  "ordinal": 288,
+  "variant": "perturbed",
+  "conversation_id": "288::gpqa__recnTTKdBzfuoZ7w7::1.x::perturbation__1_1__k2__1_1_count2_cfg0021::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "221da9420a42314cfea6bd3266c150fcb85240b5cca7d212e825c1b45084279f",
+  "semantic_condition_id": "972fe1f55d6507a9e5a2bb4605707506c89ec1c9d68f0b407ccbf68cfe489f95",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For rapid production of the supplied 393-residue human p53 sequence in E. coli BL21, what two requirements should a coding construct satisfy at the protein and codon-usage levels?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How would you audit a candidate open reading frame for a valid start, intact frame, expected length, and correct N-terminal translation before considering codon usage?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Describe a full-length candidate-to-reference comparison that would reveal even a local amino-acid substitution, and explain why a protein-changing candidate should be rejected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Among candidates that pass that fidelity gate, use the stated host's usage preferences to identify sequence choices that impede rapid expression and suitable replacements.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply that analysis to proline: which codon is disfavored here, and which synonymous codon is preferred?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Now consider arginine in the same host. Which alternatives should be avoided, and which is preferred?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Rank the candidates by promoter strength, distinguishing native, partially optimized, and jointly optimized designs under a BL21 promoter table.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Which purification-resin profile best fits rapid production, and what distinguishes it from the alternatives?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "How strongly can the selected profile predict actual performance, and what unmodeled factors limit confidence in that prediction?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "What verification should follow selection, including direct confirmation of the selected specification and a small-scale performance test?",
+        "role": "user",
+        "turn_id": "T10"
+      },
+      {
+        "content": "Give the final selected specification and briefly justify the choice.",
+        "role": "user",
+        "turn_id": "T11"
+      }
+    ]
+  }
+}

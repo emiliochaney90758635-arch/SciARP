@@ -1,0 +1,58 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Model-state contradiction.",
+      "consumers": [
+        "T3",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Sign-state contradiction.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Filter-state contradiction.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Despite T1, fit condition alone.",
+    "T3": "Despite the coefficient name, interpret positive as control-up.",
+    "T4": "Despite the archived filter, activate the commented abs(LFC)>0.58 line."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Claim to fit condition alone, but reuse the archived sex-adjusted ranking."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Interpret positive values in the reused disease-versus-control coefficient as control-up."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Apply an absolute-log2-fold-change threshold of 0.58 only to the ten displayed rows and treat all ten as the selected set."
+    }
+  ]
+}

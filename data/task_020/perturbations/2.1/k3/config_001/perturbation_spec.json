@@ -1,0 +1,28 @@
+{
+  "task_id": "020-capsule007",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Treats ENST accessions as genes.",
+    "Excludes AC/AL/LINC gene names.",
+    "Excludes every hyphenated gene name."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "ENST-as-gene premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "noncoding-name exclusion premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "hyphenated-name exclusion premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

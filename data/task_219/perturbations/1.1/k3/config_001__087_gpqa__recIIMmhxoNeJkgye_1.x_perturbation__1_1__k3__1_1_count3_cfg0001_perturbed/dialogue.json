@@ -1,0 +1,54 @@
+{
+  "release_task_index": 219,
+  "task_id": "gpqa__recIIMmhxoNeJkgye",
+  "dataset": "gpqa",
+  "ordinal": 87,
+  "variant": "perturbed",
+  "conversation_id": "087::gpqa__recIIMmhxoNeJkgye::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "ef8a2aff14e6efdb9fed5d3468083d681686e2b7fd5b7d6926d573fc6bdfe65e",
+  "semantic_condition_id": "864af671a712c4ce82812d87135a296dac9fa4db3cdfe2f9662a5dea331c469e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The final mixed-acid step adds four more ring nitro groups while retaining the bridging N-H. Identify A-D, but treat C as the major mononitration product of A under the stated two-equivalent nitration conditions.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What product E forms when C and D are heated in ethanol with loss of HCl, and what radical aromatic substitution occurs?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the mixed-acid chemistry, valence, and two-signal proton NMR spectrum to infer F after further sulfonation of E. Explain the D2O-sensitive signal.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For F after four additional ring nitrations, count the remaining aromatic hydrogens separately from the bridging N-H.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add those contributions to obtain the total number of hydrogen atoms in F.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count against the molecular valences and the two observed proton signals.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Give the final identity or structure of F and explain how the NMR evidence supports its hydrogen count.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

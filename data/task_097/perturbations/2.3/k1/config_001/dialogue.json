@@ -1,0 +1,35 @@
+{
+  "release_task_index": 97,
+  "task_id": "097-capsule028",
+  "source_id": "bix-41-q3",
+  "dataset": "bixbench",
+  "ordinal": 97,
+  "variant": "perturbed",
+  "conversation_id": "097::097-capsule028::2.3::perturbed",
+  "condition_label": "2.3.k1",
+  "family": "2.x",
+  "subclass": "2.3",
+  "paper_subclass": "2.3",
+  "injection_count": 1,
+  "dialogue_sha256": "80d09cdf672cb47414d02682b8483f34c097ab9ef691b4b35c94e5cb1e1853da",
+  "semantic_condition_id": "d9352fe065e422fdee8f698e371f81bf9cc3462be9fcee24c5a02598b71316da",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Measurement fields and grouping\n\n`Circularity` is the image-derived circularity measurement. It is distinct from\nthe neighboring `Area` and `Round` fields. Group means are arithmetic means\nwithin each `StrainNumber × Ratio` group.\n\nBoth relevant strains occur only at the single-strain ratio `1:0`. Their\ncomplete nonmissing observations are:\n\n| StrainNumber | Ratio | Replicate | Circularity |\n|---:|---|---|---:|\n| 1 | 1:0 | A | 0.045 |\n| 1 | 1:0 | B | 0.068 |\n| 1 | 1:0 | C | 0.071 |\n| 98 | 1:0 | A | 2.91 |\n| 98 | 1:0 | B | 0.654 |\n| 98 | 1:0 | C | 0.525 |\n\n## Calculation convention\n\nFor each strain:\n\n```text\nmean circularity = sum of its three Circularity observations / 3\n```\n\nThe requested raw difference is directional:\n\n```text\nmean(Circularity | Strain 98, Ratio 1:0)\n-\nmean(Circularity | Strain 1, Ratio 1:0)\n```\n\nDo not standardize the difference, express it as a percentage, or substitute\nthe `Area` or `Round` measurement.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nExtract the original circularity observations for Strain 98 and Strain 1 in their respective monocultures.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the arithmetic mean circularity for each strain.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is the raw mean difference in the direction Strain 98 minus Strain 1?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

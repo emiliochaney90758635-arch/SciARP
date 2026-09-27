@@ -1,0 +1,54 @@
+{
+  "release_task_index": 321,
+  "task_id": "gpqa__recWrxK7TzlOf9cSB",
+  "dataset": "gpqa",
+  "ordinal": 189,
+  "variant": "perturbed",
+  "conversation_id": "189::gpqa__recWrxK7TzlOf9cSB::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "42942e0434973869cdd9a6f0951241b82cc6cd86dc2b29b686f2b4a23b582265",
+  "semantic_condition_id": "119f049c937a0d02af029903ec94fd7f3bc421fc96aca697568b64d186789e3f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Reactant A has formula C10H9ClO, one negative DEPT-135 resonance, and undergoes intramolecular Friedel-Crafts reaction with a Lewis acid. What does the negative signal imply, and what plausible structure fits the formula and reactivity? Treat the assignment as provisional because full shift and correlation data are absent.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the provisional structure of A and the proposed reaction class, identify product B and check whether its reported carbon-signal pattern is internally consistent.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat B with hydrazine and NaOH. Identify the transformation and product C, then assess its carbon-signal pattern.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use standard Br2 electrophilic addition as the sole model, add bromine across C's alkene, and identify that dibromide as D.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the systematic name of product D and explain how its carbon environments distinguish the remaining structural alternatives.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the proposed sequence and product against the reaction and spectroscopic evidence from each step, noting any residual ambiguity.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the best-supported product assignment with a concise reaction-sequence and spectroscopic justification.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

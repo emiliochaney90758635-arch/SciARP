@@ -1,0 +1,25 @@
+{
+  "task_id": "016-capsule005",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Redefines the denominator unit."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response",
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "b7267929c091a5915b371b7d19ea9bebcdbf45bb5ff4a03c1c10ff939b9bbe89",
+  "configured_evidence_sha256": "b7267929c091a5915b371b7d19ea9bebcdbf45bb5ff4a03c1c10ff939b9bbe89",
+  "evidence_unchanged": true
+}

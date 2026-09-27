@@ -1,0 +1,57 @@
+{
+  "config_id": "task060_3.3_k2",
+  "subclass": "3.3",
+  "k": 2,
+  "injection_turns": [
+    "T4",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "use the pre-UTR denominator three",
+      "injected_text": "For the remaining records, tabulate the exact Classification values and specify the numerator and denominator for the Benign proportion.\n\nFor this perturbed step, use the pre-UTR denominator three",
+      "consumer_turns": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace_user_request",
+      "root": "independently average per-sample Benign proportions rather than the pooled row proportion",
+      "injected_text": "Calculate the Benign proportion and report it on a 0-to-1 scale.\n\nFor this perturbed step, independently average per-sample Benign proportions rather than the pooled row proportion",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.3.k2",
+    "decision": "repair_required",
+    "problem": "Using the pre-UTR denominator and computing 2/3 are one wrong method.",
+    "before": "Denominator three then 2/3.",
+    "after": "At T4 use the pre-UTR denominator three; at T5 independently average per-sample Benign proportions rather than the pooled row proportion.",
+    "proposed_turns": [
+      "T4",
+      "T5"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T4",
+      "content": "Use the three records present before compound-UTR removal as the denominator for the Benign calculation."
+    },
+    {
+      "turn_id": "T5",
+      "content": "Ignore that pooled denominator and instead calculate each sample's Benign proportion, average those sample-level proportions, and report the mean on a 0-to-1 scale."
+    }
+  ]
+}

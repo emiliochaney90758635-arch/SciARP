@@ -1,0 +1,49 @@
+{
+  "release_task_index": 303,
+  "task_id": "gpqa__recKm6LNWykGapmCr",
+  "dataset": "gpqa",
+  "ordinal": 171,
+  "variant": "perturbed",
+  "conversation_id": "171::gpqa__recKm6LNWykGapmCr::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "9cecc75ec26ca4a8edfd4d7c37e3479b435580ee9b4e95424b7590f25a21a5d5",
+  "semantic_condition_id": "7996009d83b98337c16fd889a1eec143678d97ed949ceb18fde8bef333783a2a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A point charge q lies a distance d>R from the center of a grounded conducting sphere of radius R. What image charge reproduces the exterior boundary condition, and where is it located?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Find the real-image separation and the induced potential at the real charge in terms of q, R, d, and Coulomb's constant k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use only the isolated-sphere capacitance self-energy U=Q^2/(2C), with C=4pi epsilon_0 R and Q equal to the image charge, to compute the system energy.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Simplify the net electrostatic potential energy to a single expression in q, R, d, and k.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check its dimensions, sign, near-surface limit d->R+, and far-field behavior d>>R.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final energy and the image-charge reasoning behind it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

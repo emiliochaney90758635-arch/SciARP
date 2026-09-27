@@ -1,0 +1,42 @@
+{
+  "release_task_index": 52,
+  "task_id": "052-capsule014",
+  "source_id": "bix-18-q1",
+  "dataset": "bixbench",
+  "ordinal": 52,
+  "variant": "perturbed",
+  "conversation_id": "052::052-capsule014::3.1::k2::perturbed",
+  "condition_label": "3.1.k2",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7c562bc3db4b149a093377beefd88899e5adcd842bcef60b5064a5fc7b7b71ec",
+  "semantic_condition_id": "7ce62a6fd050d1bc67c3e656a9050e90888fbc32640a2abc9a682b74dcb02c23",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "7ce99b5960561d96d788e51dffd9a53f77372d205ec2e9eb6f03395063678db4",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original measurements\n\nThe fields in the original data table are:\n\n`DishNumber,Genotype,StrainNumber,Ratio,Replicate,Area,Circularity,Round`\n\n`Area` is colony area and `Circularity` is circularity; different `Replicate` values within the same `StrainNumber` and `Genotype` are replicate measurements. The relevant fields in this table contain no missing values.\n\n| Genotype | StrainNumber | Replicate | Area | Circularity |\n|---|---:|---:|---:|---:|\n| ΔlasR | 300 | 1 | 19193 | 0.409 |\n| ΔlasR | 300 | 2 | 20556 | 0.448 |\n| ΔlasR | 300 | 3 | 32011 | 0.403 |\n| ΔrhlI | 287 | 1 | 13501 | 0.711 |\n| ΔrhlI | 287 | 2 | 7747 | 0.505 |\n| ΔrhlI | 287 | 3 | 16692 | 0.651 |\n| rhlR- | 61 | 1 | 10516 | 0.509 |\n| rhlR- | 61 | 2 | 11220 | 0.601 |\n| rhlR- | 61 | 3 | 10122 | 0.606 |\n| ΔlasI | 98 | 1 | 25865 | 0.398 |\n| ΔlasI | 98 | 2 | 28038 | 0.320 |\n| ΔlasI | 98 | 3 | 14505 | 0.477 |\n| Wildtype | 1 | 1 | 95704 | 0.076 |\n| Wildtype | 1 | 2 | 69298 | 0.090 |\n| Wildtype | 1 | 3 | 82325 | 0.062 |\n\n## Grouping and statistical rules\n\n- Grouping keys: `StrainNumber` and `Genotype`.\n- Calculate the following separately for each group:\n  - `Mean_Area = mean(Area)`\n  - `Mean_Circularity = mean(Circularity)`\n- First identify the largest of the five genotypes by `Mean_Area`, then obtain `Mean_Circularity` for that same group.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nGroup the replicate swarming measurements by StrainNumber and Genotype and calculate each group's mean area.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Select the genotype with the greatest mean Circularity rather than the greatest mean Area.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Regardless of the group selected above, report the mean Circularity of delta-rhlI.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

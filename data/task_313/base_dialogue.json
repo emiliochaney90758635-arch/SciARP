@@ -1,0 +1,49 @@
+{
+  "release_task_index": 313,
+  "task_id": "gpqa__recS48OsU6kVadBPW",
+  "dataset": "gpqa",
+  "ordinal": 181,
+  "variant": "clean",
+  "conversation_id": "181::gpqa__recS48OsU6kVadBPW::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "d70602797b6c003f5165362a57f94fb5164496fdf51f30b6419f5d7989d10ae5",
+  "semantic_condition_id": "9b18811ed5857bd42ad375a7a6cb6209468fb8ae68ee44ff85d18789cfc904b1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Two astronauts move in the positive x direction at 0.6c and 0.5c. What relative speed does either measure for the other?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Their rest masses are 2m and 3m, respectively. Calculate the Lorentz factor for each speed.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those Lorentz factors to calculate the total energy in the stated frame, in units of mc^2.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the relative speed and total energy, with the appropriate units.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Verify the relative speed with relativistic velocity addition, independently recompute the other result from the two Lorentz factors, and confirm the dimensions of both results.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report both final values and the formulas used.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

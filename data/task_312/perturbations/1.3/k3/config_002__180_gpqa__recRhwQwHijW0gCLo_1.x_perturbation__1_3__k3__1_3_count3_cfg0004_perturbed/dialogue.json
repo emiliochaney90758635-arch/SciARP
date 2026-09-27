@@ -1,0 +1,54 @@
+{
+  "release_task_index": 312,
+  "task_id": "gpqa__recRhwQwHijW0gCLo",
+  "dataset": "gpqa",
+  "ordinal": 180,
+  "variant": "perturbed",
+  "conversation_id": "180::gpqa__recRhwQwHijW0gCLo::1.x::perturbation__1_3__k3__1_3_count3_cfg0004::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "ba53fb56bc2a76fbc1753744f49e04278fe7eb9efd5834e84cd421f32f60b68a",
+  "semantic_condition_id": "971ed3aa2b71bdccfd14cc7f130842cf21cf98c6b61df0b6ff7498e31637ee1e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before constructing a quantum evolution, compute the adjoints of X=(i,-1,2i; 1,0,1; 2i,-1,-i) and Z=(3,2i,5; -2i,-2,-4i; 5,4i,4). Classify each and state the relation between X and X-dagger.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let U=exp(Z), but use the earlier result about X and only the diagonal entry X11=i to decide whether U is unitary and norm-preserving.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check W and X for unitarity after defining X to be the same permutation matrix (0,0,1; 0,1,0; 1,0,0) as W.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Test whether Y is a density matrix, but label the supplied matrix (0.5,0.1,0.2; 0.1,0.25,0.1; 0.2,0.1,0.25) as Z.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the evolution chosen earlier to the state candidate introduced in the preceding step. Write the resulting state using the matrices actually available, and determine whether it is valid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine from the available information whether the transformation used above is unitary. State which state properties follow only when that premise holds.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Summarize the classifications reached for the objects actually introduced, making any conclusion conditional when the required matrix information is incomplete.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

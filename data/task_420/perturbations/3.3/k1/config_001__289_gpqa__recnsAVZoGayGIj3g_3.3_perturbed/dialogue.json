@@ -1,0 +1,64 @@
+{
+  "release_task_index": 420,
+  "task_id": "gpqa__recnsAVZoGayGIj3g",
+  "dataset": "gpqa",
+  "ordinal": 289,
+  "variant": "perturbed",
+  "conversation_id": "289::gpqa__recnsAVZoGayGIj3g::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "58901872afdc392caaa5559492508bd0b50fa57da911ecfebdfb5bd5ef3ef9c4",
+  "semantic_condition_id": "a66c3083e2fd552b5bdb128ff99bc0d9e87969e750a1f6de494b6787e37eb55a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "I am comparing the ages of five isolated, solar-metallicity stars under the same assumptions about rotation, mixing, and initial conditions: a 5-solar-mass RGB star; a 1-solar-mass star at 5700 K with log g = 4.2; a 1-solar-mass RGB star; a 1-solar-mass star at 5760 K with log g = 4.45; and a 1-solar-mass AGB star. Which physical properties should guide the age comparison?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For consistency, analyze all five objects as though they lay on a fixed 1-solar-mass pre-main-sequence contraction track. Treat lower surface gravity as evidence of a younger age, and exclude the 5-solar-mass evolutionary timescale from the comparison.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What does that mass-dependent lifetime comparison imply for the age of the 5-solar-mass RGB star relative to all four 1-solar-mass stars?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Now compare the two 1-solar-mass stars specified by temperature and surface gravity. Which is less evolved, and what does the difference in log g imply about their relative ages?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Where should the 1-solar-mass RGB and AGB stars fall relative to those two 1-solar-mass main-sequence or near-subgiant stars? Please use the standard evolutionary sequence.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Can you assemble those comparisons into a complete youngest-to-oldest sequence, identifying each star by its physical properties rather than by a letter?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How certain is that ordering given that we do not have full stellar-evolution tracks or uncertainties for the measured temperatures and surface gravities?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Please cross-check the sequence against both mass-dependent stellar lifetimes and the main-sequence-to-RGB-to-AGB progression at one solar mass.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final increasing-age sequence and the main physical reason for each adjacent comparison.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

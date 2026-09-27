@@ -1,0 +1,54 @@
+{
+  "release_task_index": 596,
+  "task_id": "scibench__matter-sol-002",
+  "dataset": "scibench",
+  "ordinal": 377,
+  "variant": "perturbed",
+  "conversation_id": "377::scibench__matter-sol-002::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "7afed859af6f0f67b066853cb5c962b53c24a0432fe8ba77eb4c751a1a230881",
+  "semantic_condition_id": "41ffead8879baf48a81a941c8f12d2ae16429b52096a0ae35538aaa0c4e7f4d5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the He+ state R_{3,2}(r)Y_{2,-1}(theta,phi), identify n, l, and m and state which quantum number controls the nonrelativistic Coulomb energy at fixed nuclear charge.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write the harmonic-oscillator energy formula for this hydrogenic state while retaining the infinite-nuclear-mass approximation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Substitute the ion's charge and spin quantum number into the Coulomb formula instead of the principal quantum number.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Calculate the electron energy in electronvolts and state whether it depends on l or m in this model.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Interpret the value as a model estimate for a realized ion, with nonzero unquantified recoil, fine-structure, and environmental uncertainty.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the sign and Z^2/n^2 scaling without introducing an external field or changing the model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the energy and its approximation status.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

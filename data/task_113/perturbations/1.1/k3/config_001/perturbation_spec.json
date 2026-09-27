@@ -1,0 +1,58 @@
+{
+  "task_index": 113,
+  "task_id": "113-capsule033",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc4c9f2327e1eb2800d4119bffe9bb154d4376c4084d76e855e621ae81091bd8",
+  "source_base_evidence_sha256": "45513c6a06ab3201535b6f235bc0b402c358ece78c2b4ee11cd74ac38909eb84",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Contrast term reversed.",
+      "consumers": [
+        "T3",
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Significance term independently narrowed.",
+      "consumers": [
+        "T5",
+        "T6"
+      ]
+    },
+    {
+      "turn_id": "T6",
+      "root": "Maximum term independently distorted.",
+      "consumers": [
+        "T6"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Use disease-relative-to-control to mean control relative to disease when selecting the coefficient.",
+    "T4": "Use significant gene to require padj and the commented absolute-LFC cutoff.",
+    "T6": "Use largest effect to mean the largest absolute value before the positive subset."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Relabel the archived disease-versus-control coefficient as control versus disease without changing any stored values."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Define significant genes as rows with padj<0.05 and positive stored effects."
+    },
+    {
+      "turn_id": "T6",
+      "content": "Define the largest positive effect as the second displayed value and report AC021504.1 at 4.51."
+    }
+  ]
+}

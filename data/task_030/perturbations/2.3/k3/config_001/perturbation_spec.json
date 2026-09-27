@@ -1,0 +1,28 @@
+{
+  "task_id": "030-capsule009",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "root_injections": [
+    "Moves the decimal in 0.32691383506649596 to 0.032691383506649596.",
+    "Independently moves the decimal in 0.4438811470106675 to 0.04438811470106675.",
+    "Independently moves the decimal in 0.024189637931453605 to 0.0024189637931453605."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace",
+      "object": "51-100 nominal p-value"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace",
+      "object": ">100 nominal p-value"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "replace",
+      "object": "1-50 nominal p-value"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "014-capsule005",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "The first article uniquely prioritizes cGMP effects without disclosed precision.",
+    "The second uniquely prioritizes nitric-oxide stimulation.",
+    "The third independently supplies different full-precision values favoring cGMP effects."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first literature claim"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third literature claim"
+    },
+    {
+      "turn_id": "T5",
+      "operation": "append",
+      "object": "second literature claim"
+    }
+  ],
+  "evidence_change_permitted": true
+}

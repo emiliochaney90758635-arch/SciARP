@@ -1,0 +1,54 @@
+{
+  "release_task_index": 557,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3007",
+  "dataset": "olympiadbench",
+  "ordinal": 504,
+  "variant": "perturbed",
+  "conversation_id": "504::olympiadbench__OE_TO_maths_en_COMP_3007::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "17d103e2bc085418ded2a400ad508f21c8d5546e92bd860351177ed98fff5810",
+  "semantic_condition_id": "20fe82a24bd783786d341e5bd676f0d7298f7058d154bedade6e15437e7dcf9d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "After erasing every 0 and 5 from the integers 1 through 2019, count the occurrences of each product-relevant digit, including the extra twenty thousands-place 2s from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using that deletion rule, verify the common multiplicity of the ordinary contributing digits and determine the extra thousands-place contribution from 2000 through 2019.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those multiplicities to write the product compactly, ignore neutral factors, and reduce the repeated common base modulo 1000.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For the modulo-125 branch, verify coprimality and state the applicable Euler exponent reduction.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Reduce the product modulo 125.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Reduce the same product modulo 8.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "For the final combination, change the requested modulus from 1000 to 100.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T2 can count terms without their significance before T4 chooses the larger list.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "e5839e521416e81574486397407506e7828c2545c70d385a316e1568e7296f99",
+  "strict_non2x_original_semantic_condition_id": "bfeec49215f35bd19e753b16891900d4fb507e1a03bdaa583446cb2bb8ffbfe6",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T2 summarize the up table only by row count; at T4 compare each direction's best adjusted p-value and deliberately choose the larger one. Remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

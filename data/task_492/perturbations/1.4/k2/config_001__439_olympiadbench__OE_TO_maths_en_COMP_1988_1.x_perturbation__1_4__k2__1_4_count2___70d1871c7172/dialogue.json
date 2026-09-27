@@ -1,0 +1,59 @@
+{
+  "release_task_index": 492,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1988",
+  "dataset": "olympiadbench",
+  "ordinal": 439,
+  "variant": "perturbed",
+  "conversation_id": "439::olympiadbench__OE_TO_maths_en_COMP_1988::1.x::perturbation__1_4__k2__1_4_count2_cfg0001::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "c0139f071a2661eee18f55216d54b44879681d141478a045784520bba9fdb25d",
+  "semantic_condition_id": "4c336c5f42a75b7cce3a8d03739300a928914b22eeb2b6e626558f4217ab8360",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let A_n={2^n-2^k:k in Z} and choose one of its elements as a modulus.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For each residue r modulo M, let w_r be the least element of B_n in that residue. Explain why the largest gap equals max_r w_r-M.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Show that a least residue representative contains no copy of M and no repeated generator c_k: replacing two equal c_k by c_{k+1} decreases the sum by 2M while preserving its residue.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "For each residue modulo M, use an arbitrary representable integer rather than the least representative.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Derive the least representative w_r for each residue from this subset description, retaining every intermediate generator of A_n.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Determine which subset maximizes w_r and calculate max_r w_r-M.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check that the Apéry-set argument both makes this value nonrepresentable and guarantees that every larger integer is representable.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the largest positive integer not expressible as a nonempty sum of elements of A_n.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

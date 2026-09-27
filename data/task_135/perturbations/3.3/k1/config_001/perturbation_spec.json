@@ -1,0 +1,26 @@
+{
+  "task_index": 135,
+  "task_id": "135-capsule037",
+  "subclass": "3.3",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "a02d86a8e8dba97e4b5fcb4202ec015e18ed2935d10b2ce98fd0e44945a4002e",
+  "source_base_evidence_sha256": "05d4194796237a57357966a477a58261ffc7d4a6da1a1f07316ed673c59f0d23",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Replicates prematurely averaged.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Average A/B/C at each frequency and continue with only 13 mean observations."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

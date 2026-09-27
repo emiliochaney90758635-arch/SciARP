@@ -1,0 +1,17 @@
+{
+  "status": "feasible_new",
+  "reason": "T4 can count the UTR record in denominator before T5 divides 2/3.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "independent_review_overlay": "pass_after_semantic_repair",
+  "semantic_repair_materialized": true,
+  "non_2x_original_correct_evidence_byte_identical": true,
+  "independent_roots_checked": true,
+  "strict_non2x_original_dialogue_sha256": "04b0414bc664c4c288bc7c4434a5d42dbb1a45e8767406057894591a6e58716b",
+  "strict_non2x_original_semantic_condition_id": "c1008a283c7dd43e15d58cd1c07d4f557958a9e1e6bd501ccc50a47ab3d431dd",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "At T4 naturally use the pre-UTR denominator of three; at T5 ignore that pooled denominator and instead average the per-sample Benign proportions. Remove meta commentary.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

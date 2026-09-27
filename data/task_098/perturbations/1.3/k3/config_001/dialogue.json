@@ -1,0 +1,40 @@
+{
+  "release_task_index": 98,
+  "task_id": "098-capsule028",
+  "source_id": "bix-41-q5",
+  "dataset": "bixbench",
+  "ordinal": 98,
+  "variant": "perturbed",
+  "conversation_id": "098::098-capsule028::1.3.k3::lane_c_manual",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "2c96d220e707604a165cb2a63ee7c2a13cbf78156e27c2eb2dababd1420775ea",
+  "semantic_condition_id": "425755eeec6a50d481c9b47efa492edf9b14c0c49a45c596a344429c30d896c7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Comparison groups and measurement structure\n\nThe reference group is `StrainNumber = 1, Ratio = 1:0`. Candidate groups are\nonly the 12 two-strain cultures with `StrainNumber = 287_98`; the single-strain\n98 and 287 groups are not candidates. Each group has three observations ordered\nas replicates A, B, and C.\n\n`Ratio` is an ordered culture-mixture label in the Strain 287 : Strain 98\ndirection. It is not arithmetic division and must be retained verbatim.\n\n| Group | Ratio | Area (A / B / C) | Circularity (A / B / C) |\n|---|---|---|---|\n| Strain 1 reference | 1:0 | 152138 / 93040 / 90701 | 0.045 / 0.068 / 0.071 |\n| 287_98 | 1:3 | 17327 / 19749 / 19206 | 0.668 / 0.591 / 0.562 |\n| 287_98 | 1:2 | 29886 / 26359 / 24189 | 0.324 / 0.389 / 0.454 |\n| 287_98 | 1:1 | 32388 / 47048 / 50235 | 0.211 / 0.197 / 0.183 |\n| 287_98 | 2:1 | 62165 / 67375 / 131630 | 0.130 / 0.101 / 0.058 |\n| 287_98 | 3:1 | 96584 / 76362 / 94430 | 0.086 / 0.086 / 0.085 |\n| 287_98 | 4:1 | 137316 / 130242 / 189336 | 0.061 / 0.065 / 0.039 |\n| 287_98 | 5:1 | 127082 / 122640 / 104537 | 0.058 / 0.069 / 0.073 |\n| 287_98 | 10:1 | 129141 / 185482 / 238479 | 0.055 / 0.038 / 0.034 |\n| 287_98 | 50:1 | 92265 / 116187 / 73305 | 0.093 / 0.066 / 0.126 |\n| 287_98 | 100:1 | 85812 / 85686 / 51863 | 0.095 / 0.095 / 0.144 |\n| 287_98 | 500:1 | 10623 / 9175 / 10341 | 0.747 / 0.856 / 0.853 |\n| 287_98 | 1000:1 | 14736 / 73579 / 47991 | 0.634 / 0.107 / 0.166 |\n\nAll displayed observations are nonmissing; there are no duplicate group ×\nreplicate rows.\n\n## Similarity rule\n\nFirst compute the arithmetic `Mean Area` and `Mean Circularity` separately for\nthe reference and each candidate. For each ratio \\(r\\), compare:\n\n```text\nΔArea(r) = |MeanArea(287_98, r) - MeanArea(Strain 1, 1:0)|\nΔCirc(r) = |MeanCircularity(287_98, r) - MeanCircularity(Strain 1, 1:0)|\n```\n\nArea and circularity have different scales, so do not add them into an\nunweighted composite distance. Determine whether one candidate uniquely\nminimizes both columns. Carry full precision through the comparison; premature\nrounding of mean circularity can create a false tie.\n\nNo significance threshold, Dunnett p-value, standard deviation, or standard\nerror is used for this mean-similarity task.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse the visible 287_98 ratio 1:3 group as the reference instead of Strain 1, and treat the remaining eleven 287_98 ratio groups as candidates.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For the reference and every candidate, calculate full-precision means after treating the Area column as Circularity and the Circularity column as Area.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For each candidate, subtract the relabelled reference mean from the relabelled candidate mean on both dimensions, retaining negative signs rather than taking absolute values.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the one mixture ratio that minimizes both differences.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

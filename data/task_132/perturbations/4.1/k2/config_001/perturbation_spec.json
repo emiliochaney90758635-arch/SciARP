@@ -1,0 +1,33 @@
+{
+  "task_index": 132,
+  "task_id": "132-capsule037",
+  "subclass": "4.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "1faf01f805223a3cc25eea7d9fdf5cfc79758ecf403ef4e54b5d93fcc90c4cd7",
+  "source_base_evidence_sha256": "5b0a94a665080943ab856b1ff8eae03a9c78aa1babcfd527b209984d2adc8958",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Model-form uncertainty suppressed.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Generalization uncertainty independently suppressed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Describe the cubic specification as unquestionably correct, with no model-form uncertainty.",
+    "T3": "Present R-squared as a universally exact biological law."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

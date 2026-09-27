@@ -1,0 +1,49 @@
+{
+  "release_task_index": 305,
+  "task_id": "gpqa__recNFJjE5PPTqVJGv",
+  "dataset": "gpqa",
+  "ordinal": 173,
+  "variant": "clean",
+  "conversation_id": "173::gpqa__recNFJjE5PPTqVJGv::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "68e9eabb6efd8d4503ea2084b9cc680309343a900e6ad8721c6a133e05c73bbc",
+  "semantic_condition_id": "064383a5e736990f4204d62532023ce8b5b1704ebb4039894a336bbffb4fea82",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Calculate the moles of OH- supplied by 300 mL of 0.300 M Ba(OH)2, including the factor of two from complete dissociation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate the acid equivalents from 400 mL of 0.200 M HCl and 500 mL of 0.100 M CH3COOH.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Perform the neutralization balance, determine the excess OH- moles, and divide by the total mixed volume.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the excess hydroxide concentration to calculate pOH and pH at 25 C.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Independently tabulate base equivalents, acid equivalents, excess, and total volume to check that the solution is basic.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final pH with the neutralization balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

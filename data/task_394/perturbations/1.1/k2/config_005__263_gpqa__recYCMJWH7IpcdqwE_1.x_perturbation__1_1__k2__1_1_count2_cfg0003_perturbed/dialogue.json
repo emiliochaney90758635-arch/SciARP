@@ -1,0 +1,69 @@
+{
+  "release_task_index": 394,
+  "task_id": "gpqa__recYCMJWH7IpcdqwE",
+  "dataset": "gpqa",
+  "ordinal": 263,
+  "variant": "perturbed",
+  "conversation_id": "263::gpqa__recYCMJWH7IpcdqwE::1.x::perturbation__1_1__k2__1_1_count2_cfg0003::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "0a35100fd56ca54e05a6b42e54efe4e7b6c6e2c9b7c9aff7728272b09da59f0a",
+  "semantic_condition_id": "c0ed78d04fbfb2965e95595e70685f6ae839093f22a0f1a94355a641c88888c8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Plan a synthesis of 2-(tert-butyl)-1-ethoxy-3-nitrobenzene from cyclohexane. The ether will be formed from the corresponding phenol, and the route must respect both amine-AlCl3 incompatibility and the use of a temporary sulfonic-acid blocking group.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which prerequisite transformation should be performed first? Justify the order using the amine-AlCl3 compatibility constraint in the proposed route.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the ordering chosen above, explain how the temporary blocking group controls the first substitution and how the subsequent functional-group interconversions prepare oxygen installation and the later substitution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain the roles and required ordering of alkyl diazonium hydrolysis, arene desulfonation, and Williamson ether synthesis on the substituted aromatic intermediate.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Assemble the complete reagent sequence from benzene, using the directing effects, temporary blocking group, and functional-group prerequisites already identified.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply the previously selected oxygen-installation method to the intermediate reached above before forming the ether.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the complete ordered synthesis and explain the purpose of each step.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Describe this as the best-supported sequence under the stated constraints, and identify any yield, stoichiometry, or regioisomer information that remains unspecified.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check that the directing effects, functional-group prerequisites, blocking-group removal, oxygen installation, and ether-forming reaction are mutually compatible in the proposed sequence.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the complete final synthesis and summarize the chemical role of each step.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

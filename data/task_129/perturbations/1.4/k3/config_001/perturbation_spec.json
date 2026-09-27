@@ -1,0 +1,42 @@
+{
+  "task_index": 129,
+  "task_id": "129-capsule036",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "472f08003b10cbad067c044e4903c7449a541549cdb93286cfceed8548e56947",
+  "source_base_evidence_sha256": "e74ab4fcb50e8347fe77a5345b5771b31bca132708ebb400c520649e1284b9eb",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "Selection conjunction omitted.",
+      "consumers": [
+        "T3",
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Ranking direction and count independently omitted.",
+      "consumers": [
+        "T5"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "Exact match scope independently omitted.",
+      "consumers": [
+        "T5"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T2": "Apply the filters without requiring all three criteria jointly.",
+    "T4": "Retain a pathway subset without requiring ascending Adjusted P-value order or exactly twenty rows.",
+    "T5": "Match oxidative mentions without requiring case-sensitive occurrence in the Term name itself."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

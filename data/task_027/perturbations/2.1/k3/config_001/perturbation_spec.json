@@ -1,0 +1,28 @@
+{
+  "task_id": "027-capsule008",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Maps brain_ to final blood.",
+    "Maps baseline_ to dentate gyrus.",
+    "Swaps final_ and baseline_ at the ranking stage."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "brain-prefix premise"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "baseline-prefix premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "final-prefix ranking premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

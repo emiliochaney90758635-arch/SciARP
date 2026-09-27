@@ -1,0 +1,59 @@
+{
+  "task_id": "073-capsule020",
+  "release_task_index": 73,
+  "subclass": "3.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Contradicts cleaning state.",
+    "Contradicts orientation state.",
+    "Contradicts denominator state."
+  ],
+  "candidate_injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response"
+      ]
+    },
+    {
+      "injection_turn": "T4",
+      "consumer_turns": [
+        "T4_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "43828d8d004eb7b9a0a5fd34fae55c4cd1511f0e404d3514d3e3466911588d94",
+  "configured_evidence_sha256": "43828d8d004eb7b9a0a5fd34fae55c4cd1511f0e404d3514d3e3466911588d94",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Retain one base expression column for each duplicated projid while removing the suffixed duplicate columns, then report the resulting dimensions and alignment."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the stated transformation but orient genes as observations and samples as features for PCA."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Use 15,687.301434467741 as though it were the sum across the first 100 returned components when calculating the PC1 explained-variance percentage."
+    }
+  ]
+}

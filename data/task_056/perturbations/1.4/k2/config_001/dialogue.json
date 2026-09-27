@@ -1,0 +1,42 @@
+{
+  "release_task_index": 56,
+  "task_id": "056-capsule015",
+  "source_id": "bix-19-q2",
+  "dataset": "bixbench",
+  "ordinal": 56,
+  "variant": "perturbed",
+  "conversation_id": "056::056-capsule015::1.4::k2::perturbed",
+  "condition_label": "1.4.k2",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 2,
+  "dialogue_sha256": "026f06b93e84a748d5b0705bd1f1a5fd78ac800eaaf044413b58f6da4ba11ecd",
+  "semantic_condition_id": "c77845348b8a1eee8437f39e1f1cbf3c53fa06870c7b700631230feacc97b822",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "ecc8af87fdffccb30c2e7dd900892fc41bbca3fa3803dd96c49e38baf8459e28",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Original NeuN counts for KD and CTRL\n\nThe hemisphere field in the original CSV is spelled `Hemispere`; the analysis renames it `Hemisphere`. Every Sample has one KD and one CTRL record, and the relevant fields contain no missing values.\n\n| Sample | Sex | KD NeuN | CTRL NeuN |\n|---:|---|---:|---:|\n| 1 | M | 221 | 237 |\n| 2 | F | 233 | 223 |\n| 3 | M | 221 | 246 |\n| 4 | F | 215 | 179 |\n| 5 | M | 216 | 198 |\n| 6 | F | 208 | 194 |\n| 7 | M | 202 | 200 |\n| 8 | F | 200 | 208 |\n\n## Effect-size definition\n\nThis task uses the equal-variance, independent-groups pooled-standard-deviation definition. The standard deviation within each group is a sample standard deviation, so the variance denominator is \\(n-1\\).\n\n\\[\ns_p=\n\\sqrt{\n\\frac{(n_{\\mathrm{KD}}-1)s_{\\mathrm{KD}}^2+\n(n_{\\mathrm{CTRL}}-1)s_{\\mathrm{CTRL}}^2}\n{n_{\\mathrm{KD}}+n_{\\mathrm{CTRL}}-2}\n}\n\\]\n\n\\[\nd=\n\\frac{\\overline{x}_{\\mathrm{KD}}-\\overline{x}_{\\mathrm{CTRL}}}\n{s_p}\n\\]\n\nThe numerator direction is fixed as `KD - CTRL`. Although the original records are paired by Sample, the standard deviation of the paired differences is not used here.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nForm two NeuN vectors and calculate their means.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Calculate both standard deviations and a combined standard deviation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "What is Cohen's d in the KD-minus-control direction?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

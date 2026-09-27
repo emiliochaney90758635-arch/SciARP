@@ -1,0 +1,54 @@
+{
+  "release_task_index": 554,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2635",
+  "dataset": "olympiadbench",
+  "ordinal": 501,
+  "variant": "clean",
+  "conversation_id": "501::olympiadbench__OE_TO_maths_en_COMP_2635::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "acfc8f845f6b09da0ab3c7c092d63b355ab63d88a747d66edc8589a0073f8901",
+  "semantic_condition_id": "4858152b23454c008e468a21b65fbfd59b1ce30556c2eae00bed6883c062e1f3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A student inserted exactly six extra digits into the repetend of 1/N and obtained 0.0 overline{0231846597}. How long was the original repetend, and how is it embedded in the displayed ten-digit block?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let r be the original repetend length obtained above and B the numerical value of that retained block. Express 0.0 overline{B} as a fraction in terms of r, and state the divisibility condition required for it to equal 1/N.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Confirm the denominator in that fraction, paying particular attention to the one nonrepeating zero before the r-digit repetend.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Once r is known, factor the resulting denominator. Use the fact that the displayed ten-digit block has no repeated digit to rule out any denominator factor that cannot occur in the retained block.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Search the order-preserving r-position subsequences of 0231846597 for block values satisfying the divisibility condition. Explain why the retained digits need not be contiguous.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Identify the unique original r-digit repetend and reduce its fraction over the derived denominator.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compute N.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

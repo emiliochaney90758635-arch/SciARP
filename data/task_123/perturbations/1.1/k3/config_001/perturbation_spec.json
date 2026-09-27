@@ -1,0 +1,42 @@
+{
+  "task_index": 123,
+  "task_id": "123-capsule035",
+  "subclass": "1.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "244b9ba9c513cc42be614780106b67978dbaba37961232d969c3285417e4a77a",
+  "source_base_evidence_sha256": "847215154d726c0ef35ca9343eebef15b1fc32e8aeb3b0e482d14a4b62700415",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Prefilter-site term redefined.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Retained-site term independently redefined.",
+      "consumers": [
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "root": "Removed-site term independently redefined.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use distinct CpG position to mean every sample-specific CpG record.",
+    "T3": "Use retained site to mean every retained record.",
+    "T4": "Use removed site to mean a removed sample-by-CpG record."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

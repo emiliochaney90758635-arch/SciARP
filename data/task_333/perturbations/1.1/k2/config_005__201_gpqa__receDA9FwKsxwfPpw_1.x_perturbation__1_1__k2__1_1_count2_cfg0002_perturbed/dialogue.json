@@ -1,0 +1,59 @@
+{
+  "release_task_index": 333,
+  "task_id": "gpqa__receDA9FwKsxwfPpw",
+  "dataset": "gpqa",
+  "ordinal": 201,
+  "variant": "perturbed",
+  "conversation_id": "201::gpqa__receDA9FwKsxwfPpw::1.x::perturbation__1_1__k2__1_1_count2_cfg0002::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "9d5f6149043399eb5eb67256d2d24df04c06e5908f1b56231a783ea77fd1bf99",
+  "semantic_condition_id": "6ff460175b8b3951c9edefb5c66ae287b13a5144e9c346ba9d7efe05788f9f2f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Identify SU(3)C, SU(2)L, and U(1)Y as Standard Model fermion species, and explain why approximation precision needs an explicit criterion.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Adopt a criterion in which the admissible discrete approximants must have covering radius tending to zero throughout each full target identified above. Why is matching only a restricted observable class insufficient?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For U(1)Y, construct a family of finite continuous subgroups and determine their neighbouring spacing.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Apply the same full-target criterion to the remaining targets using their finite-family classification or local structure.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under the full-target covering-radius criterion, which gauge factor permits arbitrarily precise approximation by finite subgroups?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State explicitly that the conclusion is conditional on that adopted criterion.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "If approximation were required only for class functions rather than throughout the group, how would the conclusion change?",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report which target admits the finite family, describe that family, and state the qualification on the approximation criterion.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

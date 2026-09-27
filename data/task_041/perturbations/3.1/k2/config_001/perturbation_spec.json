@@ -1,0 +1,22 @@
+{
+  "subclass": "3.1",
+  "k": 2,
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "root": "carries forward excluded missing-call subtotal for later restoration",
+      "consumer_turns": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "restores missing calls and removes upstream despite the established literal-substring rule",
+      "consumer_turns": [
+        "T3"
+      ]
+    }
+  ]
+}

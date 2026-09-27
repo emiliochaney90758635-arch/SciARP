@@ -1,0 +1,28 @@
+{
+  "task_id": "093-capsule026",
+  "release_task_index": 93,
+  "subclass": "3.3",
+  "injection_count": 1,
+  "root_injections": [
+    "Uses subtraction instead of division."
+  ],
+  "candidate_injection_turns": [
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "55021a4b13a1a9d6fd717513273113b607d0ae1c708fab6b06af205009f56b1a",
+  "configured_evidence_sha256": "55021a4b13a1a9d6fd717513273113b607d0ae1c708fab6b06af205009f56b1a",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667"
+}

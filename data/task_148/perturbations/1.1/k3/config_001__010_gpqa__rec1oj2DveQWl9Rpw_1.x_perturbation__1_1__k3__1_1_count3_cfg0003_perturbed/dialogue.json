@@ -1,0 +1,49 @@
+{
+  "release_task_index": 148,
+  "task_id": "gpqa__rec1oj2DveQWl9Rpw",
+  "dataset": "gpqa",
+  "ordinal": 10,
+  "variant": "perturbed",
+  "conversation_id": "010::gpqa__rec1oj2DveQWl9Rpw::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "1652f358b53c2f65cf6f3bd58d2213cf532bcda2aa9ad09a859bb7bf8e402692",
+  "semantic_condition_id": "89538f48705a8cc1652a080433f4647fef2084d072d8020584812c83d21fc147",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Convert 0.100 g of FeCl3 to moles using the molar mass of Fe(OH)3.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the final volume and solid identity established above, derive the applicable solubility relation, insert Ksp=1.1e-36, and obtain the equilibrium pH.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use that pH and the solution volume established above to calculate the residual moles of free H+.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use Fe(OH)2+3H+ -> Fe3++3H2O for the stoichiometric acid demand.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Add the stoichiometric demand and residual free H+ to obtain the total supplied acid.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use 0.100 M strong base rather than acid to dissolve Fe(OH)3 and report the minimum volume.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

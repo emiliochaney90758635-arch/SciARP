@@ -1,0 +1,54 @@
+{
+  "release_task_index": 295,
+  "task_id": "gpqa__reczjcMtrB1YGS2fO",
+  "dataset": "gpqa",
+  "ordinal": 163,
+  "variant": "perturbed",
+  "conversation_id": "163::gpqa__reczjcMtrB1YGS2fO::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "09f8653b55c346de90b7f671c3d68a3d08fc8e3e03b794b9b1d5e7ac98d56449",
+  "semantic_condition_id": "3656821d179004cdaa25a6c3353152df6667d3721b149dcc31a9e68f190aa0b2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A regular N-sided polygonal aperture has apothem a. What shape and size parameter does it approach as N becomes very large?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For normally incident monochromatic light of wavelength lambda, write the Fraunhofer intensity for that limiting aperture and define its dimensionless argument.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the positive zeros of J0, rather than J1, for the noncentral dark minima and give the first two roots.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the small-angle approximation with the two features or values identified above to find their positions and separation in units of lambda/a.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Rewrite the separation using the diameter D=2a, and distinguish it from the first feature's position.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the dimensions and explain why the roots identified above determine this separation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the two positions and their separation for this aperture model.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "task_index": 115,
+  "task_id": "115-capsule033",
+  "subclass": "1.1",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "7965398dcadce0c3f4c994089df703f87e53bf55050ac5ed0e511827b04517fe",
+  "source_base_evidence_sha256": "44639ff2321337f5b13b6b970e72b010228b2af16ca27596a6ec31fccd35c745",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Statistical-field term distorted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "FDR-pass term independently reversed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use adjusted-p field to mean raw pvalue.",
+    "T2": "Use passes the strict FDR threshold to mean padj is greater than 0.05."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Use the visible log2FoldChange value 3.825466 as GRIK5's adjusted-p field."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Define passing the strict 5% FDR threshold as that value being greater than 0.05, and report the resulting decision."
+    }
+  ]
+}

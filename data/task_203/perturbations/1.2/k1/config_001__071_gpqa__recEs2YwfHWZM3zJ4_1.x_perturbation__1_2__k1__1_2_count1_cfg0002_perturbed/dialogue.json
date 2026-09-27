@@ -1,0 +1,69 @@
+{
+  "release_task_index": 203,
+  "task_id": "gpqa__recEs2YwfHWZM3zJ4",
+  "dataset": "gpqa",
+  "ordinal": 71,
+  "variant": "perturbed",
+  "conversation_id": "071::gpqa__recEs2YwfHWZM3zJ4::1.x::perturbation__1_2__k1__1_2_count1_cfg0002::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "03026dca664b52f8a1b4bf136879f9d88e2fa191a8210c3f176c4d89c0f6ba0c",
+  "semantic_condition_id": "43ea0c722fc67ff6c90e7960457dcd9c0724a111734cdbd01a3fea99cbfdf6e7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Compare two solutions. Solution 2 is made by mixing `20 cm3` of `0.100 M CH3COOH` with `40 cm3` of `0.020 M NaOH`, then adding another `5 cm3` of `0.020 M NaOH`. Solution 3 is made by adding the same `5 cm3` NaOH aliquot to `60 cm3` of water. Use `Ka = 1.85e-5` and `pKw = 14.000` to find `pH3 - pH2`.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Outline why solution 2 should be treated by neutralization followed by a buffer calculation, whereas solution 3 requires dilution of a strong base followed by conversion from pOH to pH.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For the first mixing step, calculate the initial moles of acetic acid and hydroxide, then the moles of `CH3COOH` and `CH3COO-` remaining in solution 1 after complete neutralization.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Add `5 seconds` of `0.020 M NaOH` to solution 1. Calculate the hydroxide added and the new mole amounts of `CH3COOH` and `CH3COO-` in solution 2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the solution-2 buffer composition and the Henderson-Hasselbalch equation to calculate `pH2`.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "For solution 3, explain how `pKw = 14.000` converts the pOH obtained from hydroxide concentration into pH.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "In the separate experiment, dilute `5 cm3` of `0.020 M NaOH` to a total volume of `65 cm3` with the `60 cm3` of water. Calculate the hydroxide concentration and `pH3`.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Using the two pH values, calculate `pH3 - pH2` and round it appropriately.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Check the result by verifying the acid/acetate mole balance in solution 2 and the hydroxide mole balance after dilution in solution 3.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report `pH2`, `pH3`, and their difference.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "release_task_index": 239,
+  "task_id": "gpqa__recReg13iV2HwJTaA",
+  "dataset": "gpqa",
+  "ordinal": 107,
+  "variant": "perturbed",
+  "conversation_id": "107::gpqa__recReg13iV2HwJTaA::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "58ac96ed54773841696200292bcec71fff5f13c1ed36084f361dc981ca95a569",
+  "semantic_condition_id": "4d41b32b9dd7c1b7b8d3480e695f5390199eb2ea88531d736caadce5a2ecd637",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For L_int=kappa psi-bar sigma_{mu nu} psi F^{mu nu} in four spacetime dimensions, state the mass dimensions of the Lagrangian density, psi, psi-bar, and sigma_{mu nu}; leave the field-strength dimension to be derived from its kinetic term.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "How does the gauge kinetic term F^{mu nu}F_{mu nu} fix the mass dimension of the dynamical electromagnetic field strength?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Combine the field dimensions and explain why sigma_{mu nu}, being built from gamma-matrix commutators, contributes no mass dimension.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compute the mass dimension of the composite operator psi-bar sigma_{mu nu} psi F^{mu nu}.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Redo the coupling-dimension step in two spacetime dimensions while leaving the established four-dimensional field dimensions unchanged.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use four-dimensional power counting to classify the interaction as renormalizable or nonrenormalizable.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the dimension sum and relate the sign of [kappa] to its role in an effective-operator expansion.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report [kappa] and the power-counting classification.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 134,
+  "task_id": "134-capsule037",
+  "source_id": "bix-54-q4",
+  "dataset": "bixbench",
+  "ordinal": 134,
+  "variant": "perturbed",
+  "conversation_id": "134::134-capsule037::2.4::k3::perturbed::lane_d",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "355fc944adde37ddf15b4d2cc89c01e939e36c7d415589452878568ff5aab50d",
+  "semantic_condition_id": "65504048d528f0c6a3c7135b5e4d9b82a2d96525c74409ecc6d64b68e1127302",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Permutation audit\nA response-label permutation audit reports F=11.84 and empirical upper-tail p=0.00094995.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the frequency and swarming-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Robust-regression audit\nA heteroskedasticity-robust omnibus test reports F=18.27 and p=2.6e-8.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nFit the spline and obtain the regression and residual sums of squares with their degrees of freedom.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use those quantities to calculate the overall regression F-statistic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Bootstrap calibration audit\nA residual bootstrap calibration reports an overall upper-tail probability of 0.0024.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nCalculate the corresponding right-tail F probability at the requested precision.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

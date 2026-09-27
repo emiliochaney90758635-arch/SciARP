@@ -1,0 +1,54 @@
+{
+  "release_task_index": 599,
+  "task_id": "scibench__matter-sol-007",
+  "dataset": "scibench",
+  "ordinal": 380,
+  "variant": "perturbed",
+  "conversation_id": "380::scibench__matter-sol-007::1.x::perturbation__1_1__k4__1_1_c4_004::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "75ff0ca5a8a71043bd5b0e93d57cea962d2df5660ad63d2de51a43bb4113d688",
+  "semantic_condition_id": "2efd24c087b57f62dc77de7518c4ad52c331a26ef340705c7c50a20da782afc3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Write the standard temperature dependence of the electrical breakdown field H_c(T) using H_c(0), T, and T_c.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Record the supplied lead parameters: T_c=7.19 K, H_c(0)=63.9 kA/m, and applied field H=20 kA/m.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "At H=20 kA/m, set the applied field equal to H_c(T) and write the equation for lead's melting temperature.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rearrange the transition equation to isolate the squared reduced pressure term.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve symbolically for the requested boundary value.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check how the solved boundary value changes as the applied field increases within this model.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Evaluate and report the temperature at which lead becomes ferromagnetic in the applied field.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

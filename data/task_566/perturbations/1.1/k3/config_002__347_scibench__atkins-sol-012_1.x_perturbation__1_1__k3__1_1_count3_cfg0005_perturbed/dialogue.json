@@ -1,0 +1,59 @@
+{
+  "release_task_index": 566,
+  "task_id": "scibench__atkins-sol-012",
+  "dataset": "scibench",
+  "ordinal": 347,
+  "variant": "perturbed",
+  "conversation_id": "347::scibench__atkins-sol-012::1.x::perturbation__1_1__k3__1_1_count3_cfg0005::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "47fc787de0530f9c18d80c7b855090ca75f5c0c2a4db8af467c762390b5310a0",
+  "semantic_condition_id": "a6b1e1da4885abe66f1a3a1c5a1474a22e6257d84890248a44ad5f23f571358a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat lambda = h/p as though it were the Stefan-Boltzmann relation for this electron. Explain the resulting inverse dependence on momentum without yet deriving the voltage dependence or evaluating a wavelength.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat 40 kV as a temperature difference and convert it to the corresponding electron kinetic energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Explain whether the nonrelativistic momentum is an adequate textbook approximation and what correction is being neglected.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the kinetic-energy result and the energy ratio above, choose a momentum approximation, derive p in terms of the electron mass, and calculate the momentum with m_e = 9.109 x 10^-31 kg. Characterize the selected momentum result as a relativistic field equation, and do not calculate the wavelength yet.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Substitute the momentum into lambda=h/p and calculate the wavelength in metres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Convert the result to picometres and state the nonrelativistic voltage scaling of the wavelength.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the units, order of magnitude, and direction of the relativistic correction.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Report the wavelength at 40 kV and predict it at 160 kV under the same nonrelativistic scaling, with appropriate precision.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

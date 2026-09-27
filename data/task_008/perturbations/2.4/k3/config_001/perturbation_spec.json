@@ -1,0 +1,28 @@
+{
+  "task_id": "008-capsule003",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "root_injections": [
+    "The first stable-gene audit reports n=19,900 and k=848.",
+    "The second active-locus audit reports n=18,400 and k=820.",
+    "The frozen-release audit independently reports n=20,300 and k=805."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "first conflict source"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "second conflict source"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "third conflict source"
+    }
+  ],
+  "evidence_change_permitted": true
+}

@@ -1,0 +1,40 @@
+{
+  "release_task_index": 136,
+  "task_id": "136-capsule037",
+  "source_id": "bix-54-q5",
+  "dataset": "bixbench",
+  "ordinal": 136,
+  "variant": "perturbed",
+  "conversation_id": "136::136-capsule037::2.4::k2::perturbed::lane_d",
+  "condition_label": "2.4.k2",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 2,
+  "dialogue_sha256": "b694142a1c51e07a26241f1007546871c094d25a29bb3209edbbe803372b5d95",
+  "semantic_condition_id": "3a99aa994f4f930b074556760ee71c6296f94930f8f67a12025f84bb04dc2cd1",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Amplicon-count audit\nPooled strain-specific reads yield a normalized delta-rhlI:delta-lasI composition of 7.3497:1.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nAssemble the 39 frequency-area observations used by the four-degree-of-freedom natural spline.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Fit the natural-spline model to those observations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Segmentation audit\nAn independent segmentation pipeline reports the fitted peak composition as 8.6140:1.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nEvaluate fitted mean Area on the archived 1,000-point frequency grid.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Convert the grid-selected peak frequency to a normalized delta-rhlI:delta-lasI ratio.",
+        "role": "user",
+        "turn_id": "T4"
+      }
+    ]
+  }
+}

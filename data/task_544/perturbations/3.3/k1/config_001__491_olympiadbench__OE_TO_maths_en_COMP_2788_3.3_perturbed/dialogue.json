@@ -1,0 +1,49 @@
+{
+  "release_task_index": 544,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2788",
+  "dataset": "olympiadbench",
+  "ordinal": 491,
+  "variant": "perturbed",
+  "conversation_id": "491::olympiadbench__OE_TO_maths_en_COMP_2788::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "cd7d1fe942d0d56616d9c425beb7f581557fbd4bdd65e45022b10a68cde0d31e",
+  "semantic_condition_id": "cd8643514c341f9999674899c5736a68e574a3ca0c9b46b69d2c651dde89e560",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let the positive integer side lengths of the three non-overlapping axis-parallel squares be a, b, and c. Each square has a vertex at the origin, and their union has area 41. Write the Diophantine equation that the side lengths must satisfy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Relax the side lengths to nonnegative real variables and use continuous Lagrange-multiplier and boundary optimization as the sole exact method, treating integrality as negligible.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Suppose the square of side m lies between squares of side x and y around the origin. Trace the exposed boundary in order and express the union perimeter using absolute differences among m, x, and y.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Rewrite the perimeter formula using min(m,x) and min(m,y), and explain how the two overlaps reduce the sum of the three individual perimeters.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For a fixed triple of side lengths, compare the three possible choices of the middle square and determine which choice maximizes the union perimeter.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Apply that placement rule to every admissible triple and determine the largest possible perimeter.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

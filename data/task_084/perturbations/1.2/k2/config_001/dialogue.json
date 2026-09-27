@@ -1,0 +1,35 @@
+{
+  "release_task_index": 84,
+  "task_id": "084-capsule023",
+  "source_id": "bix-32-q2",
+  "dataset": "bixbench",
+  "ordinal": 84,
+  "variant": "perturbed",
+  "conversation_id": "084::084-capsule023::1.2.k2::lane_c_manual",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "df6eeb07e3f58f3e845926a6f29aab172c56208693e1f9bfac64f27a160318e4",
+  "semantic_condition_id": "f1de4a9cd818ebdc01f9ad951995a608b8edbed5b1182e676933fb21d92bbac8",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Direction and KEGG Conventions\n\nThe three mutant-vs-wildtype DESeq2 results are split consistently as:\n\n```r\nUp: log2FoldChange >  1.5\nDn: log2FoldChange < -1.5\n```\n\nGene-level `padj` is not used for filtering. The six GeneID lists are processed separately with:\n\n```r\nenrichKEGG(\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nThe `Dn/Up` position in the dot plot denotes a KEGG enrichment row in the corresponding direction.\n\n## Complete Presence Matrix from the Archived Dot Plot\n\n`●` indicates that the pathway has a point at the corresponding strain/direction position.\n\n| KEGG pathway description | 97 Dn | 97 Up | 98 Dn | 98 Up | 99 Dn | 99 Up |\n|---|:---:|:---:|:---:|:---:|:---:|:---:|\n| Valine, leucine and isoleucine degradation |  |  |  | ● |  |  |\n| Two-component system |  |  | ● |  | ● |  |\n| Sulfur metabolism |  |  |  | ● |  | ● |\n| Starch and sucrose metabolism |  |  | ● |  | ● |  |\n| Ribosome |  |  |  |  |  | ● |\n| Riboflavin metabolism |  |  |  |  |  | ● |\n| Quorum sensing | ● | ● |  |  | ● |  |\n| Phenazine biosynthesis | ● | ● |  |  | ● |  |\n| Oxidative phosphorylation |  |  |  | ● |  | ● |\n| Nitrogen metabolism |  |  |  | ● |  |  |\n| Nitrogen cycle | ● |  | ● |  | ● |  |\n| Butanoate metabolism |  |  |  | ● |  |  |\n| Biosynthesis of secondary metabolites | ● |  | ● |  | ● |  |\n| Biofilm formation - Pseudomonas aeruginosa |  | ● |  |  | ● |  |\n| Bacterial chemotaxis |  |  |  |  | ● |  |\n| Aminoacyl-tRNA biosynthesis |  | ● |  |  |  | ● |\n\n“Same direction for all three strains” requires calculating `97 Up ∩ 98 Up ∩ 99 Up` and `97 Dn ∩ 98 Dn ∩ 99 Dn` separately, then counting the distinct pathways in those two intersections; opposite directions for the same pathway in different strains cannot be mixed.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nUse 0.585 as the Up log2FoldChange cutoff because 1.5 means 150 percent.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use -0.585 as the corresponding Dn cutoff. Do not rebuild the matrix at these thresholds; reuse the archived presence matrix and report its two same-direction shared pathways.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Intersect the three Up sets and the three Dn sets separately. Which pathways are shared by all three strains in the same direction, and how many distinct pathways is that?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

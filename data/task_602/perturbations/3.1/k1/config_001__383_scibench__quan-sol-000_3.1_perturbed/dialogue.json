@@ -1,0 +1,54 @@
+{
+  "release_task_index": 602,
+  "task_id": "scibench__quan-sol-000",
+  "dataset": "scibench",
+  "ordinal": 383,
+  "variant": "perturbed",
+  "conversation_id": "383::scibench__quan-sol-000::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "eeac063623b8e75cfb6df2f9904f86c7205902ab2df7cf3ed54d40fa89ad3a4c",
+  "semantic_condition_id": "41a8739fd10df4f6e547a1e20af85fbc8c9b248956d42277f6a69055507bc8b3",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "At `t=0`, a particle in one dimension has `Psi(x) = a^(-1/2) exp(-|x|/a)`. Use the Born rule to obtain the position probability density and describe its symmetry.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Set up the integral for the probability of measuring `0 <= x <= 2 nm` when `a = 1.0000 nm`.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find an antiderivative for the integrand on this nonnegative interval, keeping `a` symbolic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Evaluate the integral at `0` and `3 nm`, substitute `a = 1.0000 nm`, and simplify the result to an exact expression.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Evaluate the probability numerically to four decimal places and compare it with one half.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that comparison using symmetry: relate the probability on `x >= 0` to one half and account for the positive tail beyond `2 nm`.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the requested probability and briefly state why it lies on the indicated side of one half.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

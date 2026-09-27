@@ -1,0 +1,42 @@
+{
+  "task_index": 122,
+  "task_id": "122-capsule034",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "bc428035ac5a5503f45b61eb7c2b3dc479537999fce5a8ed27dd844eb6c6dd61",
+  "source_base_evidence_sha256": "bd717f9e6892eddbf8d77176b8919fad650958f3828e5b2e364b3faa208d033f",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Complete-case count contradicted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Coefficient sign independently contradicted.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Outcome direction independently contradicted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "State that only 78 records are complete.",
+    "T2": "Identify the Age coefficient as +0.0795084690.",
+    "T3": "Treat Response=0 as remission when reporting the conditional change."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

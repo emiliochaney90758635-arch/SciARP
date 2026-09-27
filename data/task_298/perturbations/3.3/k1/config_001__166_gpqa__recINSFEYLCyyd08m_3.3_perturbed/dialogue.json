@@ -1,0 +1,54 @@
+{
+  "release_task_index": 298,
+  "task_id": "gpqa__recINSFEYLCyyd08m",
+  "dataset": "gpqa",
+  "ordinal": 166,
+  "variant": "perturbed",
+  "conversation_id": "166::gpqa__recINSFEYLCyyd08m::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "37e9985056312ef37429222e2711358a5419f7227567664a3461a05c8cea91b0",
+  "semantic_condition_id": "eb93bbf52c0cf3b8b3605c3d0e0a71200e72b29e98d55161604287c82fc0bef6",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A benzene ring bears a carboxylic acid together with formyl, cyano, methoxy, hydroxy, and dimethylamino substituents. Which parent structure is used for IUPAC naming, and which carbon is position 1?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Work out the possible locants with the carboxylic-acid carbon as position 1: carboxylic acid, formyl, and cyano are mutually meta; methoxy is para to the acid; hydroxy and dimethylamino are ortho to it; and methoxy and hydroxy are each ortho to cyano. Keep both numbering directions as candidates for comparison with the remaining constraints.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the final ortho constraints to select the numbering direction and assign locants to all five prefixes.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Order all substituent prefixes by increasing locant rather than alphabetically.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the parent, locants, and prefix order into a complete systematic name.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that the parent, locants, prefix ordering, and punctuation are internally consistent.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Write the resulting complete systematic name.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

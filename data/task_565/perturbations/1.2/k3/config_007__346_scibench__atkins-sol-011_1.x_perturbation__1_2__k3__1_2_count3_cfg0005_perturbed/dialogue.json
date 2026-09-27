@@ -1,0 +1,59 @@
+{
+  "release_task_index": 565,
+  "task_id": "scibench__atkins-sol-011",
+  "dataset": "scibench",
+  "ordinal": 346,
+  "variant": "perturbed",
+  "conversation_id": "346::scibench__atkins-sol-011::1.x::perturbation__1_2__k3__1_2_count3_cfg0005::perturbed",
+  "condition_label": "1.2.k3",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 3,
+  "dialogue_sha256": "ff1c4a69793154f93f15e9fe8d80d32afdbdd77f62bc4ff3080ef8a70c945989",
+  "semantic_condition_id": "0c375195295abe3dbc2a46f513b6aec31a5d4d329db9a58735da3110e8c96a48",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For dilute PVC solutions in cyclohexanone at 298 kg, the osmotic pressure is reported as a solution-column height h, with pi=rho*g*h and rho=0.980 g cm^-3. Using the dilute-solution relation, show why h/c should be approximately linear in concentration and define its zero-concentration intercept a without evaluating it numerically.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "From the measurements c/(g dm^-3)=1.00, 2.00, 4.00, 7.00, 9.00 and h/s=0.28, 0.71, 2.01, 5.10, 8.00, calculate h/c for all five points with consistent units.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Are the h/c values constant? Explain what their concentration dependence implies about using a zero-intercept proportional fit versus extrapolating h/c to c=0, and note the resulting fit and dilute-model uncertainty.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Fit h/c as a linear function of c and estimate the intercept a with units. Report both the numerical least-squares intercept and a graphically rounded estimate at the precision supported by the table; use the graphical estimate for the molar-mass calculation. Holding that estimate fixed, refit the slope and inspect the five observed-minus-fitted residuals.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Starting from a=RT/(rho*g*M), rearrange for M, confirm that a belongs in the denominator, and give the resulting symbolic expression.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain the inverse dependence of M on a, then convert the graphical intercept found from the fit and the solution mass density rho=0.980 g cm^-3 into SI units for substitution.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Before inserting numbers, verify dimensionally that the expression for M yields kg mol^-1 and check that a larger intercept would imply a smaller molar mass.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Evaluate the polymer molar mass using R=8.3145 J mol^-1 K^-1, T=298 K, and g=9.81 kg s^-2. Report the result with appropriate significant figures and explain why the graphical extrapolation retains nonzero fit and dilute-model uncertainty.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

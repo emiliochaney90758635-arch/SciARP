@@ -1,0 +1,59 @@
+{
+  "release_task_index": 527,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2970",
+  "dataset": "olympiadbench",
+  "ordinal": 474,
+  "variant": "perturbed",
+  "conversation_id": "474::olympiadbench__OE_TO_maths_en_COMP_2970::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "75bf569dd7c3de885d3d97540fefd1ad81614f1c6e0c221db2de98720b1da849",
+  "semantic_condition_id": "47f2e64ccfd51f3983ea21df609285d9b50a1363c33f37f9bf624a622f694362",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Let T = 98721 and let K be its digit sum. Also let A_n count tilings of a 1 by n strip with nonoverlapping tiles of lengths 1 and 3, where different placements of the length-3 tiles count separately. What exactly must be found?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What decomposition of a tiling preserves positional order and leads to a recurrence for A_n?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "First compute the digit sum K for T = 98721.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Determine the base values for tilings of a 1 by n circle with tiles of lengths 1 and 3, then derive a recurrence by considering the final tile.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the base values and recurrence to compute A_n for n from 3 through 8.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Continue the sequence until it first reaches or exceeds K. Which index is the first to qualify?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Verify minimality by checking the two adjacent counts on either side of the threshold K.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the smallest qualifying n and cite the recurrence and threshold bracket that establish it.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

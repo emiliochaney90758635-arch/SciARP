@@ -1,0 +1,54 @@
+{
+  "release_task_index": 486,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2893",
+  "dataset": "olympiadbench",
+  "ordinal": 433,
+  "variant": "perturbed",
+  "conversation_id": "433::olympiadbench__OE_TO_maths_en_COMP_2893::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "a989e430658dd8ca1fd49f66bee846f26d0d9d5f4d946783bffa7019ad847557",
+  "semantic_condition_id": "27b29d24a1c3581dece653613fe9826558da21769f44ee6f8b20e5166ebb1ede",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A square has area 650, and A, R, M, and L are consecutive side midpoints. Determine the area and side length squared of the midpoint square ARML.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let A=(11,5) and write the lattice point R as (11+c,5+d) with integer offsets c and d. Derive the equation those offsets must satisfy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Find all ordered pairs of absolute values (|c|,|d|) that satisfy the offset equation.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Impose the condition that R lies in Quadrant I, but use x=10+c and y=5+d. Translate these expressions into integer bounds and apply them to each signed offset pair.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "From that sign check, identify exactly which negative c or d values remain possible and which are excluded by the quadrant condition.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "List the surviving signed offsets, map them to coordinates of R, and check that none lies on a coordinate axis.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "How many possible ordered coordinate pairs can R have?",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

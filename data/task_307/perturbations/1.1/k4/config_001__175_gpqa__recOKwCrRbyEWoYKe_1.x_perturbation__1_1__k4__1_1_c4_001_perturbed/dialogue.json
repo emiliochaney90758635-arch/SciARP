@@ -1,0 +1,54 @@
+{
+  "release_task_index": 307,
+  "task_id": "gpqa__recOKwCrRbyEWoYKe",
+  "dataset": "gpqa",
+  "ordinal": 175,
+  "variant": "perturbed",
+  "conversation_id": "175::gpqa__recOKwCrRbyEWoYKe::1.x::perturbation__1_1__k4__1_1_c4_001::perturbed",
+  "condition_label": "1.1.k4",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 4,
+  "dialogue_sha256": "cc308576051fd193c06224c73fecc4c0b3bf91c1e7e0982951fb6378cb30c3c5",
+  "semantic_condition_id": "b00a45390ae5f62d4a00c71ac525a7e68cccf8215e8d9919b8909d59bec6c21f",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Set up the same first-order coupling bookkeeping on a cycloheptane backbone numbered C1-C7 from left to right.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Treat t, dq, dt, ddt, ddd, ddt, and d as multiplicities of substituent carbons rather than backbone protons, then infer C1-C3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the substituent carbons attached to C4 and C5 rather than the backbone positions, using -CH2R as a triplet contribution.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Infer C6 and C7 by matching chemical-shift values rather than the reported splitting multiplicities.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the complete substituent assignment from C1 through C7.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Regenerate the full multiplicity sequence from the assigned neighboring-proton sets as a consistency check.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the final C1-C7 assignment and the decisive bookkeeping.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 622,
+  "task_id": "scibench__thermo-sol-002",
+  "dataset": "scibench",
+  "ordinal": 403,
+  "variant": "perturbed",
+  "conversation_id": "403::scibench__thermo-sol-002::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "f8c122b7f74c9b60f264a44340841d6f5b0553ecae69dd814a0cae6799219966",
+  "semantic_condition_id": "ee796f0890f04ec34194e7b44bc8292bc0f25e8a31cb0c34de70e3010ae7a19c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a spherical protein in sedimentation, use s = m(1 - vbar rho)/f with m = M/N_A and the no-slip Stokes drag f = 6 pi eta r. Derive an expression for r in terms of s, M, vbar, rho, eta, and N_A.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For lysozyme in water at 20 degrees C, calculate the buoyancy factor 1 - vbar rho using vbar = 0.703 cm^3 g^-1 and rho = 0.998 g cm^-3.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Convert eta = 1.002 cP to cgs viscosity units using 1 cP = 0.01 g cm^-1 s^-1.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the derived expression, the buoyancy factor, and the cgs viscosity to calculate the protein radius in centimetres. Take s = 1.91 x 10^-13 s and N_A = 6.022 x 10^23 mol^-1.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Convert the calculated radius from centimetres to nanometres.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result by first calculating the friction coefficient f = (M/N_A)(1 - vbar rho)/s with M = 14,100 g mol^-1, then recover r from f = 6 pi eta r.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Compare the direct radius calculation with the two-step friction calculation and account for any small difference caused by rounding.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain physically whether solvent buoyancy increases or decreases the protein's effective sedimenting mass, using the sign and magnitude of 1 - vbar rho.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the checked protein radius and summarize the direction of the buoyancy effect.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "release_task_index": 139,
+  "task_id": "gpqa__rec055vn3qEqKHHTc",
+  "dataset": "gpqa",
+  "ordinal": 1,
+  "variant": "perturbed",
+  "conversation_id": "001::gpqa__rec055vn3qEqKHHTc::1.x::perturbation__1_1__k3__1_1_count3_cfg0003::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "e039b99e05da89d9dfe06d0376d5eea6dddeddb25a7b5b4f3d038cc898614f0d",
+  "semantic_condition_id": "0bae3b8c98191f8b1dd8c115f89065ba6ad3deed0ba4d392b8d60a02e3244d42",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A very large gene contains many introns encoding repeated rod-like domains that connect the cytoskeleton to the sarcolemma; frame-shifting exon deletions cause progressive muscle degeneration. Identify the gene and disease.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A Morpholino binds the 5' end of an out-of-frame exon in the pre-mRNA and blocks spliceosome access. Explain the therapeutic strategy and its immediate RNA-level effect.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Why can skipping one additional exon restore the reading frame and produce a shorter but partly functional dystrophin rather than simply worsening the deletion?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "During transcription, nascent RNA can hybridize to template DNA while displacing the non-template strand. Describe this three-stranded protein structure and distinguish it from splicing and antisense binding.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name the intron-lariat structure described earlier and explain why it is not required for Morpholino exon skipping.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

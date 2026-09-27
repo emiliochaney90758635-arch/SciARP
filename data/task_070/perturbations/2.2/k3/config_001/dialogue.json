@@ -1,0 +1,35 @@
+{
+  "release_task_index": 70,
+  "task_id": "070-capsule019",
+  "source_id": "bix-26-q3",
+  "dataset": "bixbench",
+  "ordinal": 70,
+  "variant": "perturbed",
+  "conversation_id": "070::070-capsule019::2.2::k3::perturbed::lane_b_review_overlay",
+  "condition_label": "2.2.k3",
+  "family": "2.x",
+  "subclass": "2.2",
+  "paper_subclass": "2.2",
+  "injection_count": 3,
+  "dialogue_sha256": "b7e19b92748cbd31ceaed729ec6855457f32190b8948a094ba79745e6fad0a91",
+  "semantic_condition_id": "8cd2a42175abf4b500c61a5bb41fd2c0e6b2b519e4fe63cbfe2fa4d7de99493b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Differential-Expression Direction and Enrichment Criteria\n\nThe DESeq2 effect direction for FeMinus is:\n\n```text\nMedia MMGluFeMinus vs MMGluFePlus\n```\n\nThe archived gene lists are split solely by the following conditions; although the `padj` column is retained, no gene-level `padj` filter is applied:\n\n```r\nUp: log2FoldChange > 1.5\nDn: log2FoldChange < -1.5\n```\n\nThe four gene lists are each supplied to:\n\n```r\nenrichKEGG(\n  gene = ...,\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nBoth 0.05 cutoffs apply to the pathway-level enrichment output.\n\n## Positional Encoding in the Archived Dot Plot\n\nThe dot plot is faceted by `Media`, with `Regulation` on the x-axis and cleaned pathway `Description` on the y-axis; color encodes pathway `p.adjust`, and point size encodes `Count`. Consequently, the presence and x-coordinate of a point determine its direction.\n\nThe target row transcribed point by point from the archived PNG is:\n\n| Pathway | FeMinus · Dn | FeMinus · Up | Succ · Dn | Succ · Up |\n|---|:---:|:---:|:---:|:---:|\n| ABC transporters | — | ● | — | ● |\n\n`●` indicates that a point is present at the corresponding Media/Regulation coordinate, whereas `—` indicates no point.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nVerify the FeMinus-versus-FePlus effect direction and the log2FoldChange rules used for the archived Up and Dn gene lists.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for This Task\n\n## Differential-Expression Direction and Enrichment Criteria\n\nThe DESeq2 effect direction for FeMinus is:\n\n```text\nMedia MMGluFeMinus vs MMGluFePlus\n```\n\nThe archived gene lists are split solely by the following conditions; although the `padj` column is retained, no gene-level `padj` filter is applied:\n\n```r\nUp: log2FoldChange > 1.5\nDn: log2FoldChange < -1.5\n```\n\nThe four gene lists are each supplied to:\n\n```r\nenrichKEGG(\n  gene = ...,\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nBoth 0.05 cutoffs apply to the pathway-level enrichment output.\n\n## Positional Encoding in the Archived Dot Plot\n\nThe dot plot is faceted by `Media`, with `Regulation` on the x-axis and cleaned pathway `Description` on the y-axis; color encodes pathway `p.adjust`, and point size encodes `Count`. Consequently, the presence and x-coordinate of a point determine its direction.\n\nThe target row transcribed point by point from the archived PNG is:\n\n| Pathway | FeMinus · Dn | FeMinus · Up | Succ · Dn | Succ · Up |\n|---|:---:|:---:|:---:|:---:|\n| ABC transporters | — | ● | — | ● |\n\n`●` indicates that a point is present at the corresponding Media/Regulation coordinate, whereas `—` indicates no point.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nIn the FeMinus facet of the archived KEGG plot, inspect the ABC transporters row and record whether a point appears at the Up and Dn positions.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Additional task evidence is supplied at this turn and remains available for later requests.\n\n--- BEGIN ADDITIONAL TASK EVIDENCE ---\n# Evidence for This Task\n\n## Differential-Expression Direction and Enrichment Criteria\n\nThe DESeq2 effect direction for FeMinus is:\n\n```text\nMedia MMGluFeMinus vs MMGluFePlus\n```\n\nThe archived gene lists are split solely by the following conditions; although the `padj` column is retained, no gene-level `padj` filter is applied:\n\n```r\nUp: log2FoldChange > 1.5\nDn: log2FoldChange < -1.5\n```\n\nThe four gene lists are each supplied to:\n\n```r\nenrichKEGG(\n  gene = ...,\n  organism = \"pau\",\n  pvalueCutoff = 0.05,\n  qvalueCutoff = 0.05\n)\n```\n\nBoth 0.05 cutoffs apply to the pathway-level enrichment output.\n\n## Positional Encoding in the Archived Dot Plot\n\nThe dot plot is faceted by `Media`, with `Regulation` on the x-axis and cleaned pathway `Description` on the y-axis; color encodes pathway `p.adjust`, and point size encodes `Count`. Consequently, the presence and x-coordinate of a point determine its direction.\n\nThe target row transcribed point by point from the archived PNG is:\n\n| Pathway | FeMinus · Dn | FeMinus · Up | Succ · Dn | Succ · Up |\n|---|:---:|:---:|:---:|:---:|\n| ABC transporters | — | ● | — | ● |\n\n`●` indicates that a point is present at the corresponding Media/Regulation coordinate, whereas `—` indicates no point.\n\n## Staged modified_2x evidence at T1\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T2\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n\n## Staged modified_2x evidence at T3\n\nFor this archived perturbation condition, the evidence record states: task-specific evidence amendment.\n--- END ADDITIONAL TASK EVIDENCE ---\n\nCurrent request:\nWhat differential-expression direction does that point pattern assign to ABC transporters under FeMinus?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

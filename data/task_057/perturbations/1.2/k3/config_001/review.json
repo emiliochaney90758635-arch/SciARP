@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "Means, SD, and target power can all receive incompatible units/scales.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "523fd26c306a703914fc8c1a71347a5280086b36a3a6f06f926e69afbde3c662",
+  "strict_non2x_original_semantic_condition_id": "9abe07ec4562beee44632e8554c8bb84ffcdc35916800d10cfbb7c1814574fad",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Keep means in thousands and SDs in raw counts, then enter target power 0.008 rather than 0.80 at T4.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

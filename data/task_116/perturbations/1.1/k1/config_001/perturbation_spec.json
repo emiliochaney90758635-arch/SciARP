@@ -1,0 +1,26 @@
+{
+  "task_index": 116,
+  "task_id": "116-capsule034",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "8fe6598d285ea104f277b616e45e1b5f6eff479737c56da9e0f80de26eb2208d",
+  "source_base_evidence_sha256": "9cf3276cd7e01360e4ed7ea71272c98435093ab5a03a6309ff9beb1158f55a88",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Response terminology reversed.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Use response to mean nonresponse, encoding Group 2 as Response=1 and PR Group 1 as Response=0."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

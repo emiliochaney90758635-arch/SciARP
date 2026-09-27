@@ -1,0 +1,28 @@
+{
+  "task_id": "001-capsule001",
+  "subclass": "2.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Reverses disease/reference phenotype roles.",
+    "Redefines the full GENCODE universe as the significant set.",
+    "Reverses the minimum-p.adjust representative-selection premise."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "phenotype role premise"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "universe premise"
+    },
+    {
+      "turn_id": "T4",
+      "operation": "append",
+      "object": "selection-rule premise"
+    }
+  ],
+  "evidence_change_permitted": true
+}

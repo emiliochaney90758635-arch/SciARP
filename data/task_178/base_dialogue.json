@@ -1,0 +1,59 @@
+{
+  "release_task_index": 178,
+  "task_id": "gpqa__rec8nshandHARTkrg",
+  "dataset": "gpqa",
+  "ordinal": 45,
+  "variant": "clean",
+  "conversation_id": "045::gpqa__rec8nshandHARTkrg::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "e15a56dd9951476d420b1e83127b20d555bc03a26a490e457a9dc17b740e5ef3",
+  "semantic_condition_id": "08994f30c1f1ae08fa09e4791dc5d81786d8e0f32ce90036506d2bbf1a3da472",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For reaction A, methyl 2-oxocyclohexane-1-carboxylate is treated with NaOEt in THF. Compare deprotonation at C1, which is alpha to both carbonyls, with deprotonation at ring C3, which is alpha only to the ketone. Which enolate is more stabilized, and why?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use that regioselectivity to complete the Michael addition to 2,4-dimethyl-1-(vinylsulfinyl)benzene. Determine whether the sulfinyl-ethyl group is installed at C1 or C3, and name product A.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For reaction B, ethyl 2-ethylbutanoate is treated with NaH in THF. Identify the enolate donor and the alpha carbon that becomes nucleophilic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "React that enolate with methyl 2-cyclopentylidene-2-phenylacetate. Map attack at the beta carbon of the exocyclic acceptor and name product B with the resulting connectivity.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compare the two assignments with their plausible regioisomeric alternatives: C3 substitution in A and a succinate connectivity in B. Which atom mapping rules out each alternative?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess how strongly these products are predicted under the idealized Michael-addition conditions, allowing for ordinary uncertainty from chemoselectivity and unmodeled side reactions.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "As a nomenclature check, locate each newly installed substituent on its parent skeleton and verify that the locants and connectivity in both product names agree with the bond mapping.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Give the final names of products A and B and the key regiochemical reason for each assignment.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

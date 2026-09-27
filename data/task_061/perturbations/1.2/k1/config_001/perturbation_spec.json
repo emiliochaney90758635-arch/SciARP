@@ -1,0 +1,27 @@
+{
+  "config_id": "task061_1.2_k1",
+  "subclass": "1.2",
+  "k": 1,
+  "injection_turns": [
+    "T2"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Treat VAF values as percentages and apply a strict VAF < 0.3% threshold directly."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Round each VAF to one decimal place before applying the strict < 0.3 rule, excluding values rounded to 0.3 while retaining those rounded to 0.2."
+    }
+  ]
+}

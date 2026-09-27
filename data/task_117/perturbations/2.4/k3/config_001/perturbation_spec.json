@@ -1,0 +1,45 @@
+{
+  "task_index": 117,
+  "task_id": "117-capsule034",
+  "subclass": "2.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "c24dda797e607de9f1db1fb212cac561580e4e29d03e32931c664a3080e07a56",
+  "source_base_evidence_sha256": "7bd3ac99bbc78e2636938c0ed0734e21e033cd88953e6deeba217d38d4e9fc0b",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "First source conflicts on model/input result.",
+      "consumers": [
+        "T2",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Second source independently conflicts on coefficient result.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Third source independently conflicts on uncertainty and p-value.",
+      "consumers": [
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.4.k2"
+}

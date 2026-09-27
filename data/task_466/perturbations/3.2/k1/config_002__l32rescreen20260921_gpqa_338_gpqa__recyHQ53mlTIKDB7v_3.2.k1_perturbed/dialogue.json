@@ -1,0 +1,70 @@
+{
+  "release_task_index": 466,
+  "task_id": "gpqa__recyHQ53mlTIKDB7v",
+  "source_id": "gpqa__recyHQ53mlTIKDB7v",
+  "dataset": "gpqa",
+  "ordinal": 338,
+  "variant": "perturbed",
+  "conversation_id": "l32rescreen20260921::gpqa::338::gpqa__recyHQ53mlTIKDB7v::3.2.k1::perturbed",
+  "condition_label": "3.2.k1",
+  "family": "3.x",
+  "subclass": "3.2",
+  "paper_subclass": "3.2",
+  "injection_count": 1,
+  "dialogue_sha256": "6dec6e3abe11322cdd24600861450eea6b0b586ce618954a6d190e01c4c3c39f",
+  "semantic_condition_id": "cc02521e6a51a4f324fcde3f54a0141bc0b231b09e3c83b74362002014f48a59",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Before treatment, E. coli inhibition zones were 25 mm for ampicillin, 23 mm for azithromycin, and 5 mm for meropenem; the respective susceptibility cutoffs were 17, 15, and 10 mm. Using greater than cutoff as susceptible, classify all three results.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "After acridine orange was added, neither a bacterial lawn nor inhibition zones were present. Why can antibiotic susceptibility no longer be read from that plate?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "The culture contained 0.1 mg/mL acridine orange and was incubated at 200 C. Which condition most plausibly explains the absence of growth?",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain why that no-growth plate cannot demonstrate successful plasmid curing, using both the pretreatment results and the incubation condition.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Recalculate the pretreatment meropenem category directly from its zone and cutoff.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Use the pretreatment ampicillin category in the comparison.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Conclude from temporal precedence alone that the acridine-orange treatment was the causal agent behind the later absence of growth, without resolving the simultaneous 200 C incubation.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain how the timing of acridine-orange exposure and simultaneous incubation at 200 C affects causal attribution.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the pretreatment antibiotic categories and explain what can and cannot be concluded about acridine orange and the absence of growth.",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Give the best explanation for the absence of growth based on the susceptibility results and incubation conditions.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

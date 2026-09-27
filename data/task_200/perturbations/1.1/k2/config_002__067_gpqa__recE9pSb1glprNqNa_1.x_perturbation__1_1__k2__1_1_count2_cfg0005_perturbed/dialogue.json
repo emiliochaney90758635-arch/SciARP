@@ -1,0 +1,64 @@
+{
+  "release_task_index": 200,
+  "task_id": "gpqa__recE9pSb1glprNqNa",
+  "dataset": "gpqa",
+  "ordinal": 67,
+  "variant": "perturbed",
+  "conversation_id": "067::gpqa__recE9pSb1glprNqNa::1.x::perturbation__1_1__k2__1_1_count2_cfg0005::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "a5958d103f4a391e6b14252fbc6b4cee39f4d43318d8f49030b59b9bd61ff643",
+  "semantic_condition_id": "52ef111dbaaf0d3d448946419bd2d3f9eb111bda2a987a603f70d442822ea824",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For two uncoupled nuclei in a strong magnetic field, explain how the joint product-state basis is constructed from the individual magnetic quantum states.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the product-state counting rule and the single-spin-flip selection rule that will be applied.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now take both nuclei to have spin 1/2 and list their combined spin product states.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Explain what different electrical conductivities would imply for the spin product-state energies listed above.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply the rule that one spin flips while the other remains fixed to enumerate the allowed transitions.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Count only those single-spin-flip connections.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Combine the earlier resonance frequencies to report the level and transition counts and list the connections.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Explain why not every pairwise connection between the product-state levels is allowed.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final counts.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

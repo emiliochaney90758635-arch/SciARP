@@ -1,0 +1,42 @@
+{
+  "release_task_index": 44,
+  "task_id": "044-capsule012",
+  "source_id": "bix-16-q2",
+  "dataset": "bixbench",
+  "ordinal": 44,
+  "variant": "perturbed",
+  "conversation_id": "044::044-capsule012::1.2::k2::perturbed",
+  "condition_label": "1.2.k2",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 2,
+  "dialogue_sha256": "9724fa94e9c826d93016c70427dc233f58538f024b2f44f55124131c40b682f3",
+  "semantic_condition_id": "277f621f7d9cf9b2cbc06b7f4ea3d7437696d76e912dd4c2199afeb72aba85f1",
+  "evidence_attachments": [
+    {
+      "file": "evidence/001__T1__task_evidence__01.md",
+      "sha256": "6031c146ebc4fcfb3f95b0cc1caa1093c6043a1bbe677c10837812f4f6c2559f",
+      "relation": "unchanged_clean_evidence"
+    }
+  ],
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Pooled expression population\n\nThe analyzed object is the batch-corrected `log2(TPM+1)`-scale protein-coding-gene expression matrix:\n\n| Dimension | Count |\n|---|---:|\n| Cell-line rows | 1,673 |\n| Gene columns | 19,138 |\n| Numeric values | 32,017,874 |\n| Missing values | 0 |\n\nAll matrix values are flattened into one pooled population. No second logarithmic transformation is applied. The batch correction produces a small number of negative values, so the observed matrix should not be assumed to be constrained to nonnegative values.\n\nThe archived histogram visualizes 1,000,000 values sampled with replacement from this population without a fixed random seed. It is a visualization sample, not the full-population histogram.\n\n## Full-population distribution summaries\n\n| Quantile/statistic | Expression value |\n|---|---:|\n| Minimum | -2.623208 |\n| P0.1 | -0.129554 |\n| P1 | -0.038066 |\n| P5 | -0.006421 |\n| P10 | -0.000347 |\n| P25 | 0.079424 |\n| Median | 2.342318 |\n| Mean | 2.61199473396 |\n| P75 | 4.490768 |\n| P90 | 5.971116 |\n| P95 | 6.911145 |\n| P99 | 9.225779 |\n| P99.9 | 12.276650 |\n| Maximum | 18.436851 |\n\nDeterministic bin counts for all 32,017,874 values are:\n\n| Interval | Count | Fraction |\n|---|---:|---:|\n| \\(x<0\\) | 3,548,572 | 11.083% |\n| \\(0\\le x<1\\) | 9,194,352 | 28.716% |\n| \\(1\\le x<2\\) | 2,352,269 | 7.347% |\n| \\(2\\le x<4\\) | 6,900,868 | 21.553% |\n| \\(4\\le x<6\\) | 6,885,080 | 21.504% |\n| \\(6\\le x<8\\) | 2,427,423 | 7.581% |\n| \\(8\\le x<10\\) | 497,550 | 1.554% |\n| \\(10\\le x<12\\) | 168,333 | 0.526% |\n| \\(12\\le x<14\\) | 38,294 | 0.120% |\n| \\(14\\le x<16\\) | 4,835 | 0.015% |\n| \\(x\\ge16\\) | 298 | 0.001% |\n\n## Skewness\n\nWith full-population central moments \\(m_2\\) and \\(m_3\\), the Fisher-Pearson moment coefficient is\n\n\\[\ng_1=\\frac{m_3}{m_2^{3/2}}.\n\\]\n\nThe full-population central-moment inputs are:\n\n| Quantity | Value |\n|---|---:|\n| \\(m_2\\) | 6.274156140318798 |\n| \\(m_3\\) | 10.839227243708436 |\n\nUse these unrounded moment inputs in the formula above, and interpret the sign together with the quantiles and deterministic bin counts.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the pooled expression population and what 'all cell lines' includes, but report every matrix value in linear TPM units rather than in log2(TPM+1) units.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compare the two tails, reading each deterministic bin count as though it were already a percentage of the population.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Calculate the full-population moment skewness and classify the distribution.",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

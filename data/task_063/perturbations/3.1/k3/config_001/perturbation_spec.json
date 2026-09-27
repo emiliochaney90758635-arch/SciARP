@@ -1,0 +1,73 @@
+{
+  "config_id": "task063_3.1_k3",
+  "subclass": "3.1",
+  "k": 3,
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T2",
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "root": "exact-match biotypes",
+      "injected_text": "Apply the protein-coding and low-expression criteria to define the final gene set within the non-PBMC samples.\n\nFor this perturbed step, exact-match biotypes",
+      "consumer_turns": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "pair rows by position instead of index",
+      "injected_text": "Calculate each retained gene's mean expression and pair it with that gene's length.\n\nFor this perturbed step, pair rows by position instead of index",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "correlate every annotated gene rather than the filtered set",
+      "injected_text": "Calculate the Pearson correlation between gene length and mean expression across the retained genes.\n\nFor this perturbed step, correlate every annotated gene rather than the filtered set",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k3",
+    "decision": "repair_required",
+    "problem": "Exact matching, restoring the omitted rows, and claiming consistency do not yield three independent lasting roots.",
+    "before": "Drop compound biotypes, restore them, claim consistency.",
+    "after": "At T2 exact-match biotypes; at T3 pair rows by position instead of index; at T4 correlate every annotated gene rather than the filtered set.",
+    "proposed_turns": [
+      "T2",
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Treat the ten visible spot-check genes as the complete final gene set obtained by exact matching of the protein-coding biotype."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Pair their Length values with the displayed mean-expression values in reverse row order rather than by gene."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Calculate Pearson r from those ten positionally mismatched pairs."
+    }
+  ]
+}

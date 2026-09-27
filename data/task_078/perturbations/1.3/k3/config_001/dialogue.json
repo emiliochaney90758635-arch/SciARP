@@ -1,0 +1,45 @@
+{
+  "release_task_index": 78,
+  "task_id": "078-capsule021",
+  "source_id": "bix-29-q3",
+  "dataset": "bixbench",
+  "ordinal": 78,
+  "variant": "perturbed",
+  "conversation_id": "078::078-capsule021::1.3.k3::lane_c_manual",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "2f1625b1c409d8ec62d04b4b635b649fba0509e348e82ba3639eea29e8481e72",
+  "semantic_condition_id": "ba375a6b11cb42525854153812a3fa062ea98d66434dd49335be92a91af91f50",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for This Task\n\n## Cohort, Coding, and Model\n\nThe AE table takes the maximum recorded `AESEV` across all adverse-event records by `USUBJID`. The MH table counts non-null `MHONGO` cells by `USUBJID, TRTGRP`, including source values `Yes` and `No`. The DM table provides `patients_seen` and `expect_interact`.\n\nAfter merging the three tables and removing missing values, 791 unique participants remain. Variables are coded as:\n\n```text\nTRTGRP_cat:          Placebo=0, BCG=1\nexpect_interact_cat: No=0, Yes=1\npatients_seen_cat:   1-50=0, 51-100=1, >100=2\nMHONGO_TRTGRP:       MHONGO × TRTGRP_cat\nAESEV:               1 < 2 < 3 < 4\n```\n\nThe model is a cumulative-logit ordered model:\n\n```text\nAESEV ~ TRTGRP_cat\n        + expect_interact_cat\n        + patients_seen_cat\n        + MHONGO\n        + MHONGO_TRTGRP\n```\n\n## Archived Interaction-Term Output\n\n| Model term | coefficient | std error | z | p-value | coefficient 95% CI |\n|---|---:|---:|---:|---:|---|\n| MHONGO_TRTGRP | -0.0026446283 | 0.1205446677 | -0.0219389904 | 0.9824966224 | [-0.2389078356, 0.2336185790] |\n\nModel coefficients are on the log-odds scale. The archived code applies the following to every coefficient:\n\n```python\nodds_ratio = np.exp(coefficient)\n```\n\nThe exponentiated confidence interval for this interaction is `[0.7874874573, 1.2631626035]`. Its unit is the proportional-odds multiplier for the ratio of slopes associated with each 1-record increase in the nonmissing `MHONGO` count under BCG relative to Placebo.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nAggregate each participant's maximum recorded adverse-event severity.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let `MHONGO` denote patient volume and `patients_seen` denote history count.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Let TRTGRP_cat=0 denote BCG and TRTGRP_cat=1 denote Placebo.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Treat the interaction z statistic -0.0219389904 as its coefficient and the coefficient -0.0026446283 as its z statistic.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Exponentiate the interaction coefficient and report its odds-ratio multiplier.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

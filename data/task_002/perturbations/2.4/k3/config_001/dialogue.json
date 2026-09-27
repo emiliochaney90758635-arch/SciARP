@@ -1,0 +1,45 @@
+{
+  "release_task_index": 2,
+  "task_id": "002-capsule002",
+  "source_id": "bixbench-m2-002-capsule002",
+  "dataset": "bixbench",
+  "ordinal": 2,
+  "variant": "perturbed",
+  "conversation_id": "evidencek3combined::002::002-capsule002::2.5.k3::perturbed",
+  "condition_label": "2.4.k3",
+  "family": "2.x",
+  "subclass": "2.4",
+  "paper_subclass": "2.4",
+  "injection_count": 3,
+  "dialogue_sha256": "305125b9aea444e4cb7533329c390e0b675900365f9f0458f8fe924d4aa04118",
+  "semantic_condition_id": "a925306db8bb8aa33e9b3969154e5682c977362ebfa837cb2557078c1ac382e5",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following baseline task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN BASE TASK EVIDENCE ---\n# Evidence for this task\n\n## BLM-carrier sample manifest\n\nThe cohort table uses the fields `Sample ID`, `Status`, `Sex`, `BLM Mutation Status`, `Age`, and `Cancer`.\n\n| Sample ID | Status | Sex | BLM Mutation Status | Age | Cancer | Variant workbook available |\n|---:|---|---|---|---:|---|---|\n| 185 | Father | M | Carrier | 37.0 | N | yes |\n| 184 | Mother | F | Carrier | 31.7 | N | yes |\n| 285 | Father | M | Carrier | 30.9 | N | yes |\n| 287 | Mother | F | Carrier | 28.4 | N | yes |\n| 353 | Father | M | Carrier | 33.2 | N | yes |\n| 354 | Mother | F | Carrier | 24.1 | N | yes |\n| 556 | Father | M | Carrier | 64.55 | N | yes |\n| 557 | Mother | F | Carrier | 62.6 | N | yes |\n| 533 | Father | M | Carrier | 36.3 | N | no |\n| 381 | Mother | F | Carrier | 33.5 | N | yes |\n| 396 | Father | M | Carrier | 24.7 | N | yes |\n| 397 | Mother | F | Carrier | 23.4 | N | yes |\n| 489 | Father | M | Carrier | 29.0 | N | yes |\n| 490 | Mother | F | Carrier | 30.1 | N | yes |\n| 499 | Father | M | Carrier | 30.6 | N | yes |\n| 500 | Mother | F | Carrier | 35.0 | N | yes |\n| 503 | Father | M | Carrier | 45.9 | N | yes |\n| 504 | Mother | F | Carrier | 45.3 | N | yes |\n| 613 | Father | M | Carrier | 27.2 | N | yes |\n| 614 | Mother | F | Carrier | 23.3 | N | yes |\n\nNumeric identifiers are represented with a `P` prefix when joined to the variant records. Sample 533 has no matching variant workbook, leaving 19 carrier samples with usable calls.\n\n## Variant fields and filtering semantics\n\nThe variant records have the following relevant headers:\n\n```text\nChr:Pos | Ref/Alt | Zygosity | Read Depths (DP) |\nGenotype Qualities (GQ) | Variant Allele Freq |\nGene Names | Sequence Ontology (Combined) | Filter | In_CHIP\n```\n\nThe supplied records have already passed `DP > 10`, `GQ > 20`, `Filter = PASS`, and `In_CHIP = True`. Subsequent filtering removes missing zygosity, `Zygosity = Reference`, missing ontology, and ontology values exactly equal to:\n\n```text\nintron_variant\nintergenic_variant\n3_prime_UTR_variant\n5_prime_UTR_variant\n```\n\nThese are exact-string exclusions; they are not a rule for discarding other composite annotations.\n\nVAF bins are mutually exclusive and exhaustive:\n\n```text\nlow:    VAF < 0.3\nmiddle: 0.3 <= VAF <= 0.7\nhigh:   VAF > 0.7\n```\n\n## Per-sample filtering and VAF counts\n\nEach row is one sample-level workbook after applying the definitions above.\n\n| Sample | Raw rows | Non-reference rows | Rows after ontology filter | VAF < 0.3 | 0.3 <= VAF <= 0.7 | VAF > 0.7 |\n|---|---:|---:|---:|---:|---:|---:|\n| P185 | 643 | 127 | 44 | 3 | 21 | 20 |\n| P184 | 650 | 145 | 56 | 4 | 30 | 22 |\n| P285 | 650 | 144 | 57 | 1 | 31 | 25 |\n| P287 | 650 | 128 | 49 | 6 | 25 | 18 |\n| P353 | 647 | 131 | 47 | 2 | 20 | 25 |\n| P354 | 651 | 108 | 47 | 2 | 27 | 18 |\n| P556 | 649 | 133 | 56 | 1 | 40 | 15 |\n| P557 | 643 | 149 | 58 | 5 | 38 | 15 |\n| P381 | 705 | 133 | 47 | 1 | 31 | 15 |\n| P396 | 650 | 135 | 47 | 0 | 23 | 24 |\n| P397 | 650 | 120 | 43 | 3 | 16 | 24 |\n| P489 | 641 | 150 | 66 | 3 | 33 | 30 |\n| P490 | 650 | 119 | 50 | 4 | 28 | 18 |\n| P499 | 646 | 142 | 54 | 2 | 37 | 15 |\n| P500 | 652 | 161 | 54 | 1 | 40 | 13 |\n| P503 | 641 | 118 | 46 | 2 | 25 | 19 |\n| P504 | 636 | 126 | 57 | 1 | 29 | 27 |\n| P613 | 645 | 165 | 58 | 5 | 32 | 21 |\n| P614 | 644 | 123 | 47 | 1 | 31 | 15 |\n| **Column total** | **12,343** | **2,557** | **983** | **47** | **557** | **379** |\n\nThe three VAF-bin totals close exactly against the filtered population:\n\n```text\n47 + 557 + 379 = 983\n```\n\nFor a requested proportion, the statistical unit is a filtered CHIP-call row, not a person:\n\n```text\nproportion = qualifying filtered call rows / all filtered call rows\n```\n--- END BASE TASK EVIDENCE ---\n\nA new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Orthogonal amplicon-confirmation register\n\n**Issuing unit:** Familial Hematology Molecular Diagnostics Core\n\n**Specimens:** DNA from the 19 BLM-carrier participants with an available exome\nvariant workbook\n\n**Acquisition:** Candidate CHIP loci were re-sequenced with unique-molecule\ntagging. Reads were collapsed by molecular barcode, and loci were retained\nafter the core's strand-balance and family-size quality checks. Allele fractions\nbelow are based on consensus alternate molecules divided by all consensus\nmolecules at each retained locus.\n\n## Confirmed-call allele-fraction histogram\n\n| Consensus VAF interval | Confirmed loci |\n|---|---:|\n| 0.00 <= VAF < 0.10 | 12 |\n| 0.10 <= VAF < 0.20 | 17 |\n| 0.20 <= VAF < 0.30 | 34 |\n| 0.30 <= VAF < 0.50 | 310 |\n| 0.50 <= VAF <= 0.70 | 258 |\n| VAF > 0.70 | 349 |\n\nThe register defines a likely somatic call as a confirmed locus with consensus\nVAF below 0.30. Its denominator is the complete set of loci retained by the\nmolecular-confirmation workflow.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nIdentify the BLM-carrier cohort with usable variant workbooks.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Within the eligible calls, remove reference genotypes and records with missing zygosity.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the stated exact-string ontology exclusions to define the final VAF-analysis rows.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Participant-level low-VAF screening register\n\n**Issuing unit:** Hereditary Myeloid Surveillance Registry\n\n**Scope:** The 19 BLM carriers with a linked variant workbook\n\n**Method:** For each participant, the registry applied the supplied upstream\nquality filters and exact ontology exclusions, then marked whether at least one\nretained CHIP call had VAF below 0.30. The registry reports participants rather\nthan individual call rows.\n\n## Screening summary\n\n| Participant status after call-level filtering | Participants |\n|---|---:|\n| At least one retained call with VAF < 0.30 | 18 |\n| No retained call with VAF < 0.30 | 1 |\n| Total participants | 19 |\n\nThe participant-level positive proportion is calculated from the first row\ndivided by the total participant count.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nTabulate those rows across the three VAF intervals and verify that the bins sum to the parent set.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "A new complete task evidence file is now available as additional visible source material. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Exome pileup reclassification audit\n\n**Source:** Germline–Somatic Read Evidence Laboratory, audit `GSREL-BLM-22`\n**Scope:** Candidate rows from the same 19 BLM-carrier exome workbooks\n**Method:** The laboratory revisited aligned reads at workbook loci, required mapping quality at least 30 and base quality at least 25, and recomputed allele fraction from strand-balanced read counts. Rows without adequate bidirectional support were removed before binning.\n\n## Reclassified call histogram\n\n| Pileup VAF class | Retained call rows |\n|---|---:|\n| VAF < 0.30 | 55 |\n| 0.30 <= VAF <= 0.70 | 538 |\n| VAF > 0.70 | 379 |\n| **Total** | **972** |\n\nThe audit derives `55/972=5.66%`. This is a new raw-read reclassification of candidate rows, not the task's stored workbook-VAF calculation of `47/983=4.78%`.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nUsing filtered call rows as the statistical unit, calculate the proportion with VAF below 0.30.",
+        "role": "user",
+        "turn_id": "T5"
+      }
+    ]
+  }
+}

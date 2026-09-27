@@ -1,0 +1,64 @@
+{
+  "release_task_index": 467,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_1610",
+  "dataset": "olympiadbench",
+  "ordinal": 414,
+  "variant": "perturbed",
+  "conversation_id": "414::olympiadbench__OE_TO_maths_en_COMP_1610::1.x::perturbation__1_4__k1__1_4_count1_cfg0003::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "b5b64175a644a5035dbb07cfa6872fb0ce15290ee09ea40eb9e7866937c0f031",
+  "semantic_condition_id": "25eea5545522b954ffa0417cd68cdb3fdf2aec2b438fb1e502f15bedf9cd994a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 0<t1<...<tm<1, let t0=0 and t_{m+1}=1. Prove that some interval (t_{i-1},t_{i+1}) isolates t_i and has length at least 1/(floor(m/2)+1), interpreted by a limiting argument when equality is approached.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For N points in the unit square, group equal x-coordinates x_i with multiplicities m_i and set w_i=x_{i+1}-x_{i-1}. Show that if w_i>(floor(m_i/2)+1)a for some i, an interval on that vertical fiber yields a singleton rectangle of area at least a.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Assume the sufficient condition obtained in the preceding fiber argument fails throughout. Aggregate the resulting inequalities to prove the strict boundary a>2/(N+4) for this contrary case; treat the single-group case separately if needed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Specialize N=4n to show that every configuration has a singleton axis-parallel rectangle of area at least 1/(2n+2).",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For the clustered construction, place points at horizontal coordinates i/(n+1)+/-epsilon and bound the singleton-rectangle areas as epsilon tends to zero.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the lower bound and clustered construction to determine the sharp value of mu.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine whether this sharp guaranteed area increases or decreases with n.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check that both bounds use open axis-parallel rectangles contained in the open unit square and verify the monotonicity algebraically.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the sharp value and its direction of change with n.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

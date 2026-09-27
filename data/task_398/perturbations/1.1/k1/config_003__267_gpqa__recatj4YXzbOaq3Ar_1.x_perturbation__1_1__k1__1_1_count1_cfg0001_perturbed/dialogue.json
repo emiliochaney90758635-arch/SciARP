@@ -1,0 +1,69 @@
+{
+  "release_task_index": 398,
+  "task_id": "gpqa__recatj4YXzbOaq3Ar",
+  "dataset": "gpqa",
+  "ordinal": 267,
+  "variant": "perturbed",
+  "conversation_id": "267::gpqa__recatj4YXzbOaq3Ar::1.x::perturbation__1_1__k1__1_1_count1_cfg0001::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "6c35e90bf1f11a883deb8141364c0a38360d81d38889b6dafb78d6c889e823e5",
+  "semantic_condition_id": "b2e5b0f5cc110ae295610bf12503a6ccf783d6c50cf5a57e25721978c744fe49",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Treat A=vec{sigma} dot vec{n} as a classical spin vector while using Pauli algebra to simplify A^2.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "What eigenvalues of A follow from that result?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "For H=epsilon vec{sigma} dot vec{n}, with epsilon having dimensions of energy, determine the Hamiltonian eigenvalues.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "State the spectrum and verify its physical dimensions.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Why are the dimensionless eigenvalues of vec{sigma} dot vec{n} multiplied by epsilon without an extra factor of hbar/2?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain the distinction between the Pauli matrices in the written Hamiltonian and spin operators S=(hbar/2)vec{sigma}.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use a trace-and-determinant check or a basis rotation as an independent derivation of the spectrum.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the result against the algebraic identity obtained in the opening step and against dimensional analysis.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "If the Hamiltonian were written with the spin operator S instead of vec{sigma}, how would the prefactor and spectrum change?",
+        "role": "user",
+        "turn_id": "T9"
+      },
+      {
+        "content": "Report the Pauli-algebra derivation and final Hamiltonian eigenvalues.",
+        "role": "user",
+        "turn_id": "T10"
+      }
+    ]
+  }
+}

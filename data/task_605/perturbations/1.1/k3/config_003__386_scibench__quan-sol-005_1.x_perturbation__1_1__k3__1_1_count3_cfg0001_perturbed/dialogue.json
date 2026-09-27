@@ -1,0 +1,49 @@
+{
+  "release_task_index": 605,
+  "task_id": "scibench__quan-sol-005",
+  "dataset": "scibench",
+  "ordinal": 386,
+  "variant": "perturbed",
+  "conversation_id": "386::scibench__quan-sol-005::1.x::perturbation__1_1__k3__1_1_count3_cfg0001::perturbed",
+  "condition_label": "1.1.k3",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 3,
+  "dialogue_sha256": "128d67b496f4fdc342f83adacb8949827dc907fddeb4ec86af7b668ef1811a78",
+  "semantic_condition_id": "71e9f1cdfb69244e56aa86a78a47b5554d2e8916cf3a308af70f9b1a3f56a90b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For the cylindrical Bessel-function family Y_l^m(theta,phi) with l=0, which values of m are allowed?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Write Y_0^0 as a constant C with pure radial dependence, then normalize it over the unit sphere using sin(theta) dtheta dphi.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate the normalization integral and solve for the angular eigenvalue C using the standard positive real phase.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Give the normalized l=0 spherical harmonic in exact and decimal form, and state its directional dependence.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Explain whether that normalized lowest member depends on direction.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final normalized spherical harmonic using the standard positive real phase convention.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

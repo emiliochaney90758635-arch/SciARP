@@ -1,0 +1,54 @@
+{
+  "release_task_index": 285,
+  "task_id": "gpqa__recrHBEJJoDTV05JR",
+  "dataset": "gpqa",
+  "ordinal": 153,
+  "variant": "perturbed",
+  "conversation_id": "153::gpqa__recrHBEJJoDTV05JR::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "dccec7a68d7d01889275b6cb1eb05c0a82ad7b5a43ce90d48c77ba326ac925e3",
+  "semantic_condition_id": "4af6a2e620e5aefc04eecf0e64abe1e225c1d32cb15cf91c85f77dd849b2ffad",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A keto acid gives a two-oxygen product with reagent X or its close analog. Use the functional-group change to identify the likely reagent family.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "X contains a heavier isotope of one constituent element, and its unlabeled analog is a common organic reagent. Identify X and give its formula.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "X reacts violently with liquid heavy water to release a gas whose molecule has equal numbers of protons and neutrons. Identify the gas and verify that count.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Identify the released substance by treating its melting point as 277 degrees Celsius.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "For X, sum the nominal masses of all atoms of its lightest element and of its heaviest element, counting all four deuterium atoms.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Verify the isotope count, formula stoichiometry, and the two mass contributions independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report X, the two contributions, and their sum.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

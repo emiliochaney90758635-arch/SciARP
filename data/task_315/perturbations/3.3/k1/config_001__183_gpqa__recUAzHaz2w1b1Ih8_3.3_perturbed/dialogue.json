@@ -1,0 +1,54 @@
+{
+  "release_task_index": 315,
+  "task_id": "gpqa__recUAzHaz2w1b1Ih8",
+  "dataset": "gpqa",
+  "ordinal": 183,
+  "variant": "perturbed",
+  "conversation_id": "183::gpqa__recUAzHaz2w1b1Ih8::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "050853733790ed6fe32bab4c525fee1bccc691a3471c36639857edc2b9c2a28a",
+  "semantic_condition_id": "0d54abcd3c2cb02e4be8e2041c6c8d36f923783f23a8635b123f9431afd49ef2",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "If both quasars radiate at their Eddington limits, how is the ratio of their central black-hole masses related to their bolometric luminosity ratio?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let FA and FB denote the two bolometric fluxes and dA and dB their luminosity distances. Express LA/LB in terms of these four quantities.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the high-redshift asymptotic rule dL proportional to 1+z as the sole distance model for zA=0.06 and zB=0.02.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using the two measurements established above, calculate their ratio in the orientation required for LA/LB.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the relations and measurements available from the preceding steps to determine whether MA/MB can be evaluated; calculate it when possible, or identify the missing relation or input.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the arithmetic using only the stated proportionalities and the ratio orientation required for L_A/L_B.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the resulting mass ratio, or explain why it remains underdetermined and what information is missing.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

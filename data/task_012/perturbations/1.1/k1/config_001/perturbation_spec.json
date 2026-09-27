@@ -1,0 +1,24 @@
+{
+  "task_id": "012-capsule005",
+  "subclass": "1.1",
+  "injection_count": 1,
+  "root_injections": [
+    "Redefines a replicate pair as independently sorted positions."
+  ],
+  "injection_turns": [
+    "T1"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "761d7aac1269706f1a3ea7e1d9ea575bd5ecafd19bed375f3181b8e4d51638dc",
+  "configured_evidence_sha256": "761d7aac1269706f1a3ea7e1d9ea575bd5ecafd19bed375f3181b8e4d51638dc",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 346,
+  "task_id": "gpqa__recmI7EiLv72PxmYK",
+  "dataset": "gpqa",
+  "ordinal": 214,
+  "variant": "perturbed",
+  "conversation_id": "214::gpqa__recmI7EiLv72PxmYK::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "8e1d4417dd6cc8c875218dda2f99caabd950b2d10a316b8db9196d7ca07f52fd",
+  "semantic_condition_id": "8e41990d38d5b17d065b4d5551cafcd278d5952c368fc55187b54519f47a2057",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the ejecta frame, the Galactic centre approaches at 60000 km/s. Express this relative speed as beta=v/c using c=300000 km/s; both frames are inertial.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The elapsed 50 s is measured by a clock comoving with the ejecta. Identify the frame and the special-relativistic type of this interval.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Check the units, physical interpretations, and frame labels of the two supplied inputs before calculating the corresponding Lorentz factor and changing frames. If either input is invalid or missing, keep the relation symbolic.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the speed and Lorentz factor to find the proper time experienced by the ejecta in the Galaxy frame during the comoving-clock interval, then calculate distance.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "State the frame assignment currently used in the distance calculation, or identify the time input required if it is absent or misunitized.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the resulting distance when supported, or give the symbolic expression and required speed and time inputs otherwise.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

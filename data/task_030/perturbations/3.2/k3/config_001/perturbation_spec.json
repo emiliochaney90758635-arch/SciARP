@@ -1,0 +1,45 @@
+{
+  "task_id": "030-capsule009",
+  "subclass": "3.2",
+  "injection_count": 3,
+  "root_injections": [
+    "Presupposes exposure causation.",
+    "Converts count differences into causal effects.",
+    "Converts a subgroup test into causal interaction proof."
+  ],
+  "injection_turns": [
+    "T2",
+    "T3",
+    "T6"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response",
+        "T4_response",
+        "T5_response",
+        "T6_response"
+      ]
+    },
+    {
+      "injection_turn": "T6",
+      "consumer_turns": [
+        "T6_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "5c9a07da65224ca99a22b61448b6833c41a172b8cb1d723c0e21d4a7c5298e45",
+  "configured_evidence_sha256": "5c9a07da65224ca99a22b61448b6833c41a172b8cb1d723c0e21d4a7c5298e45",
+  "evidence_unchanged": true
+}

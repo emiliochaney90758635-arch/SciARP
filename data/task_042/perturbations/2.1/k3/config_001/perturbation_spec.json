@@ -1,0 +1,44 @@
+{
+  "config_id": "task042_2.1_k3",
+  "subclass": "2.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T3",
+    "T5"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T3",
+    "T5"
+  ],
+  "evidence_relation": "staged_mutation",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "counts unique coordinates",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T1"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "adds splice-region to ontology exclusions",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T5",
+      "root": "classifies by original Effect",
+      "operation": "stage_task_evidence",
+      "consumer_turns": [
+        "T5"
+      ]
+    }
+  ],
+  "independent_review_overlay": true,
+  "provenance": "independent-review structural staging repair"
+}

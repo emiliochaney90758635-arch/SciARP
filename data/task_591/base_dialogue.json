@@ -1,0 +1,49 @@
+{
+  "release_task_index": 591,
+  "task_id": "scibench__fund-sol-003",
+  "dataset": "scibench",
+  "ordinal": 372,
+  "variant": "clean",
+  "conversation_id": "372::scibench__fund-sol-003::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "56b4bdb9d69c3c44239f95ba1237b1419965efee7d0d39141c9472273ba5f5f9",
+  "semantic_condition_id": "6c800302c60a726eb2f3b5f08f2d58f3236e00f01278f37376d1a5c8da31b89e",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A 40 N horizontal force acts along a crate's 0.50 m displacement. How much work does the applied force do?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For a 14 kg crate slowing from 0.60 m/s to 0.20 m/s, calculate the change in its motion-associated energy.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the work-energy balance and the previous results to determine the work done by the remaining interaction during the displacement.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that contribution, determine the corresponding increase for the crate-floor system and compare it with the quantity obtained in the first turn.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the signs in the work-energy balance and state the precision supported by the supplied measurements.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the final system increase and comparison with a concise balance.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

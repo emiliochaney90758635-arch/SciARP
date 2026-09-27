@@ -1,0 +1,45 @@
+{
+  "task_index": 118,
+  "task_id": "118-capsule034",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "2.x_append",
+  "source_base_dialogue_file_sha256": "393a78b370a0c9b3e8f1471c82c96ec2b6b1b90d97623a9525c745eae01cd816",
+  "source_base_evidence_sha256": "5efaf4d90d742a80e7037da5435ab0ad83e8e8557865756d9e87a48969d254e5",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "First citation changes the reported age-model AIC.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Second citation independently changes the cohort/model claim.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Third citation independently changes archived AIC.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {},
+  "additional_evidence": [
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "filename": "004__T3__task_evidence_file__02.md"
+    }
+  ],
+  "evidence_mutations": [],
+  "extends_existing": "2.2.k2"
+}

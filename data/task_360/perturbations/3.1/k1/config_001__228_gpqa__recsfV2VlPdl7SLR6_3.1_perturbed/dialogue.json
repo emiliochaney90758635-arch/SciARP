@@ -1,0 +1,59 @@
+{
+  "release_task_index": 360,
+  "task_id": "gpqa__recsfV2VlPdl7SLR6",
+  "dataset": "gpqa",
+  "ordinal": 228,
+  "variant": "perturbed",
+  "conversation_id": "228::gpqa__recsfV2VlPdl7SLR6::3.1::perturbed",
+  "condition_label": "3.1.k1",
+  "family": "3.x",
+  "subclass": "3.1",
+  "paper_subclass": "3.1",
+  "injection_count": 1,
+  "dialogue_sha256": "60f9ec9c0fc7b13143eaac9480cc8d6ce970007ae4f80b4fc51fae29f92cfa18",
+  "semantic_condition_id": "2fe1f0349068a74952aaf6eb2a99143025afb2c512b4ef9ef58a803d3addec47",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "An unknown compound has formula C7H12O. Calculate its degree of unsaturation and identify the broad structural features that count can accommodate.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "A strong FTIR band occurs at 1725 cm^-1. What functional group does it indicate, and how does that narrow the possibilities?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Interpret a 13C NMR signal at 134 ppm together with a proton signal at 5.2 ppm.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The 5.2-ppm proton signal is a four-line 1:3:3:1 pattern. Identify its multiplicity and infer the neighboring proton set under first-order coupling.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Combine the formula, aldehyde carbonyl, alkene shifts, and a vinylic 1:2:1 triplet to derive the best-supported connectivity.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Do the reported observations uniquely prove that identity, or only make it the best-supported assignment?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Check the proposed structure against the molecular formula, functional groups, substitution pattern, and neighbouring proton interactions.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "State the best-supported identity and qualify the certainty warranted by the available measurements.",
+        "role": "user",
+        "turn_id": "T8"
+      }
+    ]
+  }
+}

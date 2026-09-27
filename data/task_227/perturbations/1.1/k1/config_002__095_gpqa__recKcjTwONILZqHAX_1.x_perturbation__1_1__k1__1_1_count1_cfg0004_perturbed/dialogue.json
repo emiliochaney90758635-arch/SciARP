@@ -1,0 +1,64 @@
+{
+  "release_task_index": 227,
+  "task_id": "gpqa__recKcjTwONILZqHAX",
+  "dataset": "gpqa",
+  "ordinal": 95,
+  "variant": "perturbed",
+  "conversation_id": "095::gpqa__recKcjTwONILZqHAX::1.x::perturbation__1_1__k1__1_1_count1_cfg0004::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "95ee3eb5a26380b884c60df7176b4edd2db33b4d875474a38efc9af5d60b8dae",
+  "semantic_condition_id": "375e31481467f94c923a651497efede4c257e54c3fa2c826993dc6fcaee65a3b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In the estimate alpha^3 g^2 sqrt(2) 8 (4pi)^-6 (Q/M)^2, identify the factor that conventionally carries loop suppression in four-dimensional QFT.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "State the standard four-dimensional loop-measure power-counting rule that relates one loop to powers of 4pi.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Write the one-loop suppression both as (16pi^2)^-1 and as a power of 4pi.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Match the displayed exponent -6 to L copies of the one-loop factor and write the equation for L.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Solve the exponent equation for the number of external legs.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Assess the inference's dependence on the assumption that all displayed 4pi powers arise from loop measures rather than a different normalization convention.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the loop count as the intended standard naive-dimensional-analysis estimate with calibrated confidence.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Verify the result by rewriting (4pi)^-6 as a power of 16pi^2, and state the normalization assumption used.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final loop count and its convention qualification.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

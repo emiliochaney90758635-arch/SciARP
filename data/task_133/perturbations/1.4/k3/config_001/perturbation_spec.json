@@ -1,0 +1,42 @@
+{
+  "task_index": 133,
+  "task_id": "133-capsule037",
+  "subclass": "1.4",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "b1f4e3dc6f9d658ac89f99a1b92e6fb1ee945ec10aa451758451c770be14502e",
+  "source_base_evidence_sha256": "3eaafc1a94d58a47b594bfa5ec67c81ac90a5729b01ef7933e33ec6372905c92",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Input conditions omitted.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Model conditions independently omitted.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Ordinary-R2 formula independently omitted.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Assemble data without requiring separate replicates or exclusion of all StrainNumber 1/98 rows.",
+    "T2": "Fit without requiring intercept or df=4.",
+    "T3": "Calculate fit without requiring ordinary 1-SSE/SST."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

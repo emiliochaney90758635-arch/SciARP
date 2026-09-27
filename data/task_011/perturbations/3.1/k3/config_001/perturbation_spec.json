@@ -1,0 +1,41 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "3.1",
+  "injection_count": 3,
+  "root_injections": [
+    "Contradicts the evidence-defined pairing rule.",
+    "Contradicts the previously established full analysis set.",
+    "Contradicts the established rank-based analysis path at the final step."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T3",
+      "consumer_turns": [
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "configured_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "evidence_unchanged": true
+}

@@ -1,0 +1,64 @@
+{
+  "release_task_index": 245,
+  "task_id": "gpqa__recV1nqYQvpII94oC",
+  "dataset": "gpqa",
+  "ordinal": 113,
+  "variant": "perturbed",
+  "conversation_id": "113::gpqa__recV1nqYQvpII94oC::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f9c1cbd7ccb04467aee2ed81bb49daba1b32fa9e5640fc9de1b708641b05db0e",
+  "semantic_condition_id": "f803179c285479fe79a2cfd6d485c5e348dc3c0250913e052bf94ab72f958e2d",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A point charge q follows a trajectory s(t). Its field is observed at position r and time t, while the relevant source event occurs at an earlier time t_r satisfying t-t_r=d/c, where d_vector=r-s(t_r) and d=|d_vector|. What potential framework is appropriate, and how do the geometry and time delay enter it?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Contrast the retarded solution with an advanced solution and identify which boundary condition is compatible with a field generated at the earlier time t_r.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the advanced Green-function boundary condition as the sole prescription and take the velocity factor to be 1+n dot v/c, even though the source event is at the earlier time t_r.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Using that factor, write the Lienard-Wiechert scalar potential V(r,t) in terms of q, epsilon_0, d, n, v, and c, with every source quantity evaluated at t_r.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Rewrite the scalar potential using d_vector directly so that its denominator contains dc-d_vector dot v.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Starting from the standard Lienard-Wiechert relation between the vector and scalar potentials, and using mu_0 epsilon_0=1/c^2, express the vector potential in the same d-vector notation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State both potentials together, with all constants, the common denominator, and the retarded-time evaluation made explicit.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the static limit v=0. What do V and A reduce to, and what does that check show about the sign and normalization?",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Give the final retarded scalar and vector potentials and explain the geometric meaning of their denominator.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

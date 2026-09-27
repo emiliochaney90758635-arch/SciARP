@@ -1,0 +1,54 @@
+{
+  "release_task_index": 532,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2422",
+  "dataset": "olympiadbench",
+  "ordinal": 479,
+  "variant": "perturbed",
+  "conversation_id": "479::olympiadbench__OE_TO_maths_en_COMP_2422::1.x::perturbation__1_3__k1__1_3_count1_cfg0001::perturbed",
+  "condition_label": "1.3.k1",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 1,
+  "dialogue_sha256": "1e9ae1ac4a4097de703948c01cb3613292de6e08b45b20ed1f49c2096bff1421",
+  "semantic_condition_id": "472acf2673b0a34d5ea77931f1f3b9fa63dc876f8af9118af351e57159d43b7a",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Dan was born on April 6 in a perfect-square year between 1300 and 1400, and Dan was born on April 6 in a perfect-square year between 1400 and 1500. Determine their birth years.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Let `Y` be a year in which both are alive. Since the date is April 7, write Dan's and Steve's ages in terms of `Y` and their birth years.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "If both ages are perfect squares, derive the equation relating those squares and determine the fixed difference between Dan's and Steve's ages.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Each man lived for 110 years. List the positive perfect-square ages that can occur within that lifespan.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Use the fixed age difference to identify the only possible pair of square ages, and assign the larger age to the older man.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the age ordering against the birth years and verify that both assigned ages are compatible with the 110-year lifespans.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Determine that calendar year and confirm that both men were still alive on April 7.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

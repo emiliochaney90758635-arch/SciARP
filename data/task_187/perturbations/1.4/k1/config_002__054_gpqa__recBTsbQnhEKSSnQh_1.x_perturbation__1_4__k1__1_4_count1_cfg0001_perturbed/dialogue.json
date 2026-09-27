@@ -1,0 +1,54 @@
+{
+  "release_task_index": 187,
+  "task_id": "gpqa__recBTsbQnhEKSSnQh",
+  "dataset": "gpqa",
+  "ordinal": 54,
+  "variant": "perturbed",
+  "conversation_id": "054::gpqa__recBTsbQnhEKSSnQh::1.x::perturbation__1_4__k1__1_4_count1_cfg0001::perturbed",
+  "condition_label": "1.4.k1",
+  "family": "1.x",
+  "subclass": "1.4",
+  "paper_subclass": "1.4",
+  "injection_count": 1,
+  "dialogue_sha256": "0435ae13cb64ca389171e34c09d56eea27d851cef4cef4062136ba4ba2b52b6f",
+  "semantic_condition_id": "8e62b4a34e61fbbbd30692d28b62b75309c041f16db989c1fa0bcbfd3e8cd1c7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In mouse embryonic stem cell culture, what pluripotency state is being targeted?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Which defined, serum-free culture regimen is commonly used to maintain cells in that state while limiting heterogeneous differentiation, and why does it fit the goal?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Name the three principal components of this defined serum-free regimen and state their functional roles.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Contrast the selected regimen with the relevant conventional alternative. Which feature supports the stated target state?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Give the complete medium recipe for maintaining the target state.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain how each component supports the target pluripotent state rather than merely providing generic growth support.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the complete culture condition and the pluripotent state it is intended to maintain.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

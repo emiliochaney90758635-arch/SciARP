@@ -1,0 +1,57 @@
+{
+  "config_id": "task062_3.1_k2",
+  "subclass": "3.1",
+  "k": 2,
+  "injection_turns": [
+    "T3",
+    "T4"
+  ],
+  "downstream_consumer_turns": [
+    "T3",
+    "T4"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "root": "deduplicate the repeated CUX1 locus",
+      "injected_text": "Tabulate the original Classification values for those variants and identify the denominator required by the question.\n\nFor this perturbed step, deduplicate the repeated CUX1 locus",
+      "consumer_turns": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T4",
+      "operation": "replace_user_request",
+      "root": "include blank classifications as Benign",
+      "injected_text": "What proportion of all qualifying variants is exactly classified Benign? Report it on a 0-1 scale.\n\nFor this perturbed step, include blank classifications as Benign",
+      "consumer_turns": [
+        "T4"
+      ]
+    }
+  ],
+  "evidence_policy": "immutable_original",
+  "independent_review_overlay": true,
+  "independent_review_repair": {
+    "cell": "3.1.k2",
+    "decision": "repair_required",
+    "problem": "The clean evidence has no Likely Benign row and T3 is a no-op.",
+    "before": "Correct tabulation then merge a nonexistent category.",
+    "after": "At T3 deduplicate the repeated CUX1 locus; at T4 include blank classifications as Benign.",
+    "proposed_turns": [
+      "T3",
+      "T4"
+    ]
+  },
+  "human_repair_overrides": [
+    {
+      "turn_id": "T3",
+      "content": "Collapse the repeated CUX1 Chr:Pos locus to one record before tabulating Classification and defining the denominator."
+    },
+    {
+      "turn_id": "T4",
+      "content": "Count blank Classification values together with exact Benign in the numerator and divide by the deduplicated denominator."
+    }
+  ]
+}

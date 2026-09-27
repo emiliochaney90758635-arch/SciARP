@@ -1,0 +1,49 @@
+{
+  "release_task_index": 335,
+  "task_id": "gpqa__recf9kxVBiJc10e3c",
+  "dataset": "gpqa",
+  "ordinal": 203,
+  "variant": "perturbed",
+  "conversation_id": "203::gpqa__recf9kxVBiJc10e3c::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "702a2860bc1db607d722b79806302c1e7ab55f5020c472631986b24500bf4d6a",
+  "semantic_condition_id": "608b7ed4e671445128c71ef15d6b3fe5d403472010591191b2b64e5da450e126",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Consider W=(1/2,i/4;-i/4,1/2), X=(1/3,1;1,2/3), Y=(1/2,i/3;-i/3,1/2), and Z=(2/3,1/4;1/4,1/3). What positivity, purity, and Bloch-vector criteria must a trace-one Hermitian 2x2 matrix satisfy to represent a qubit state?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Compute the electric-field vector of Z and determine whether all three components are nonzero.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Apply the determinant or eigenvalue test to each matrix, classify the valid states, and compute the fluid-velocity vector and norm of Y to locate it in the Bloch sphere.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "What conclusions follow about Z's components, the existence of a pure state, X's validity, and Y's location in the Bloch ball?",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Cross-check the classifications with determinant or eigenvalue signs and Bloch-vector norms rather than trace and Hermiticity alone.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the final true conclusion and the decisive matrix and Bloch-vector calculations.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

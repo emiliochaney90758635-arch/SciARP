@@ -1,0 +1,64 @@
+{
+  "release_task_index": 218,
+  "task_id": "gpqa__recHVUd2DkoKfedJZ",
+  "dataset": "gpqa",
+  "ordinal": 86,
+  "variant": "perturbed",
+  "conversation_id": "086::gpqa__recHVUd2DkoKfedJZ::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "82ad1cf85f62e3b2a553042b0956d1d7d0ccaaf5b279ad3e5eac5383de78a5f7",
+  "semantic_condition_id": "da4e148f8f0e2f4aaed37c2d062511e40dbaeb18765b05ea4dc9f1851a50e311",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Relate (E)-N-methyl-N-(pentan-2-ylidene)ethanaminium to its parent carbonyl compound and state the goal of regioselective alpha ethylation.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use direct acidic hydrolysis to the unfunctionalized parent ketone as the sole method, omitting deprotonation and alkylation.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Identify the carbonyl functionality that must be regenerated when the functionalized iminium/enamine is hydrolyzed.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "With LDA in DME, identify the alpha position deprotonated and the resulting carbon nucleophile.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Show the new carbon-carbon bond formed when that intermediate reacts with ethyl iodide.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "After H3O+ hydrolysis, give the condensed structure and IUPAC name of the ketone.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the complete reagent order and resulting ketone.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the carbon skeleton and hydrolysis step against the established intermediates.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the ordered sequence and final product.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

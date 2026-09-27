@@ -1,0 +1,22 @@
+{
+  "task_id": "087-capsule024",
+  "subclass": "2.3",
+  "injection_count": 3,
+  "candidate_injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumers": [
+    "T1_response",
+    "T2_response",
+    "T3_response"
+  ],
+  "root_injections": [
+    "Corrupt both the significant-row and unique-gene counts for CD14 Mono.",
+    "Corrupt both the significant-row and unique-gene counts for CD16 Mono.",
+    "Corrupt both the significant-row and unique-gene counts for Treg."
+  ],
+  "evidence_mode": "replace",
+  "manual_rationale": "Each successive full evidence version retains earlier corruptions and adds one task-consumed, independently removable structured-data corruption."
+}

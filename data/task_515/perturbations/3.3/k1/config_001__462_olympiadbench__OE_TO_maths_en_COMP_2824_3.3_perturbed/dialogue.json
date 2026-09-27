@@ -1,0 +1,54 @@
+{
+  "release_task_index": 515,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2824",
+  "dataset": "olympiadbench",
+  "ordinal": 462,
+  "variant": "perturbed",
+  "conversation_id": "462::olympiadbench__OE_TO_maths_en_COMP_2824::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "f4bc719d3bfc7d277059bae82b943121bb39fd7310896ea8c3181797edc81c31",
+  "semantic_condition_id": "8f12af20ab647636f5d4eac2cbb14825a89a46690f7942705031a385f11a7080",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The graphs y=x^2-|x|-12 and y=|x|-k intersect at four distinct points. Let t=|x|. Derive the quadratic satisfied by t and explain why it must have two distinct positive roots; call them 0<a<b.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use symmetry about the y-axis to assign the four intersection points A, B, C, and D in increasing x-order in terms of a, b, and k.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Compute the coordinate differences and Euclidean lengths of AB, BC, and CD in terms of a and b.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Impose AB=BC=CD, but use equal x-coordinate gaps between consecutive points as the sole method and derive the resulting relation between a and b.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Apply Vieta's formulas to the quadratic in t to obtain its root sum and product in terms of k.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Combine the distance relation with the root sum to determine a and b explicitly.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Use the root product to determine k, and verify that the result indeed gives two distinct positive roots.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

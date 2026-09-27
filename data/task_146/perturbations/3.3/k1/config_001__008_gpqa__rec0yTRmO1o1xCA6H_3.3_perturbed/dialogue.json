@@ -1,0 +1,49 @@
+{
+  "release_task_index": 146,
+  "task_id": "gpqa__rec0yTRmO1o1xCA6H",
+  "dataset": "gpqa",
+  "ordinal": 8,
+  "variant": "perturbed",
+  "conversation_id": "008::gpqa__rec0yTRmO1o1xCA6H::3.3::perturbed",
+  "condition_label": "3.3.k1",
+  "family": "3.x",
+  "subclass": "3.3",
+  "paper_subclass": "3.3",
+  "injection_count": 1,
+  "dialogue_sha256": "dbc5d9416e2f77d5e5173bb9269903f0e738461a701fab1f93302ff76365e392",
+  "semantic_condition_id": "e2b5641079c372ca63f7e79ae0b1a2212816bdacaaccf7a014be22de758b1471",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In a dynamical theory with isolated magnetic charges, identify the magnetic charge density and magnetic current required when monopoles can move.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use only a magnetostatic classification: impose zero magnetic current, inspect only divergence laws, and identify the modified equations.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Map those modifications to named laws. In particular, explain why the current associated with moving new charges modifies Faraday's circulation law for the electric field.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Take the divergence of the generalized Faraday law and combine it with the time derivative of the corresponding Gauss law to derive continuity for the new charge.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check from the duality and source assignments whether either of the other two Maxwell equations receives a direct term from these new sources.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report which ordinary Maxwell equations change and the new source added to each.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

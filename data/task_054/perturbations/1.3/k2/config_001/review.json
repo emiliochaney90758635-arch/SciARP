@@ -1,0 +1,13 @@
+{
+  "status": "feasible_new",
+  "reason": "The selection symbol can first be switched from Hemisphere to Sex and W to pvalue.",
+  "manual_semantic_review": true,
+  "evidence_integrity": "byte_identical_clean_evidence",
+  "strict_non2x_original_dialogue_sha256": "9a30af4aaea3ad1a3aa8569804a4294b39b32bae58517a50352d66c291aafffd",
+  "strict_non2x_original_semantic_condition_id": "79aca10137947d290bbffc6fdf9b5d7372a063afd363b2f27ef6d63a2159a05d",
+  "strict_non2x_human_rereview": "pass_after_repair",
+  "strict_non2x_repair_materialized": true,
+  "strict_non2x_repair_summary": "Naturally select Sex=F instead of Hemisphere=KD at T1, retain female NeuN values at T2, and report the resulting p-value as W at T3.",
+  "base_evidence_immutable_when_required": true,
+  "evidence_file_names_order_and_metadata_immutable_when_required": true
+}

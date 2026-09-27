@@ -1,0 +1,28 @@
+{
+  "task_id": "020-capsule007",
+  "subclass": "2.2",
+  "injection_count": 3,
+  "root_injections": [
+    "One article reports 318 unique genes.",
+    "A second reports 276 current loci.",
+    "A third reports 291 unique genes."
+  ],
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "append",
+      "object": "318-gene article"
+    },
+    {
+      "turn_id": "T2",
+      "operation": "append",
+      "object": "276-locus article"
+    },
+    {
+      "turn_id": "T3",
+      "operation": "append",
+      "object": "291-gene article"
+    }
+  ],
+  "evidence_change_permitted": true
+}

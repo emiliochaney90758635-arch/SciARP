@@ -1,0 +1,54 @@
+{
+  "release_task_index": 262,
+  "task_id": "gpqa__recf4iXKY773NYRFw",
+  "dataset": "gpqa",
+  "ordinal": 130,
+  "variant": "perturbed",
+  "conversation_id": "130::gpqa__recf4iXKY773NYRFw::1.x::perturbation__1_1__k2__1_1_count2_cfg0004::perturbed",
+  "condition_label": "1.1.k2",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 2,
+  "dialogue_sha256": "c3293083569ced9aca5e08faf8ccbdc118b3c5b5c3d103ccaf27ae62b92944e2",
+  "semantic_condition_id": "fe11befe9ace113b1be1f693f52aed698c2c3813fd3bf4362e75f50cfa9acb30",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A particle beam has total energy E=4 GeV and rest mass m_X=1.48 GeV. Calculate its Lorentz factor using E as the total relativistic energy.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using the Lorentz-factor result, determine a decay branching ratio called beta rather than the particle's speed factor.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Treat tau_0=8.7e-5 s as a scattering cross section and use it in a relativistic survival-versus-distance equation for a surviving fraction of 0.25.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Solve the survival equation for the distance at which one quarter of the particles remain.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "What idealizations and unreported source or measurement uncertainties qualify this exponential-decay prediction?",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the logarithm, units, beta*c, and Lorentz-dilated lifetime independently.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distance and show the numerical substitution in the survival law.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "release_task_index": 327,
+  "task_id": "gpqa__recZ7P8XqZ8HMU5OF",
+  "dataset": "gpqa",
+  "ordinal": 195,
+  "variant": "perturbed",
+  "conversation_id": "195::gpqa__recZ7P8XqZ8HMU5OF::1.x::perturbation__1_3__k2__1_3_count2_cfg0003::perturbed",
+  "condition_label": "1.3.k2",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 2,
+  "dialogue_sha256": "649fcc4b3788edfc1ed21fb8f0c3512bf7436cd19b28d7e06b76693811643393",
+  "semantic_condition_id": "2af95e5bd42a75c63afaffe5c3e974c39166bd8e2ed48697ab90de037fc29eee",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For |psi>=sqrt(1/15)|phi_1>+sqrt(2/15)|phi_2>+(2/sqrt(15))|phi_3>+(4/sqrt(15))|phi_4> in an orthonormal basis, calculate each coefficient magnitude squared and <psi|psi>.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Using H|psi>=nE_0|phi_n> for n=1,2,3,4, list the energy paired with each basis state.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Use the coefficient weights and eigenvalues to compute <phi_1|psi> in place of the state norm, along with <psi|H|psi>.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Divide by the state norm to obtain the average energy measured over repeated trials.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check the result by normalizing the coefficient probabilities and taking their energy-weighted sum.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Report the average energy in units of E_0.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

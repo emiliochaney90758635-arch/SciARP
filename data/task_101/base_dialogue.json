@@ -1,0 +1,35 @@
+{
+  "release_task_index": 101,
+  "task_id": "101-capsule029",
+  "source_id": "bix-42-q2",
+  "dataset": "bixbench",
+  "ordinal": 101,
+  "variant": "clean",
+  "conversation_id": "101::101-capsule029::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "aef9e459019b61d82ef3622f7b1d7169d17c5bdc1f1b46b8bf42d2e97bfb3996",
+  "semantic_condition_id": "13fa57a7723b39d263807f010025faeb5d99e1c042f934ed10c51a7b8a571c5c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "The following task evidence is available as visible source material for this multi-turn conversation. It remains available for the later requests in this same conversation.\n\n--- BEGIN TASK EVIDENCE ---\n# Evidence for this task\n\n## Analysis population\n\nThe RNA-expression table has 20,502 gene rows and 328 numeric sample columns.\nThe only nonnumeric column is `GeneSymbol`. The archived distribution analysis\nselected all numeric columns and flattened them without deduplicating repeated\ngene symbols and without log or z-score transformation.\n\n| Population audit | Value |\n|---|---:|\n| Raw numeric values (`20,502 × 328`) | 6,724,656 |\n| Missing or infinite values | 0 |\n| Negative values | 0 |\n| Values equal to zero | 1,025,144 |\n\n## Distribution evidence\n\n| Statistic | Raw-expression value |\n|---|---:|\n| Minimum | 0 |\n| 25th percentile | 3.7426 |\n| Median | 176.78945 |\n| Mean | 931.9551175026498 |\n| 75th percentile | 818.5191 |\n| 90th percentile | 2,028.2709 |\n| 95th percentile | 3,450.17325 |\n| 99th percentile | 10,879.190415000005 |\n| 99.9th percentile | 45,776.28723399895 |\n| Maximum | 1,336,107.453 |\n| Bias-corrected Fisher–Pearson skewness | 42.435713564644885 |\n\nFor the archived 50 equal-width histogram over the full range, the bin width\nis 26,722.14906. The low-value and high-tail occupancy includes:\n\n| Bin range | Count | Fraction |\n|---|---:|---:|\n| `[0, 26,722.14906)` | 6,707,472 | 99.7444628% |\n| `[26,722.14906, 53,444.29812)` | 12,022 | 0.1787749% |\n| `[53,444.29812, 80,166.44718)` | 2,699 | 0.0401359% |\n| `[80,166.44718, 106,888.59624)` | 1,191 | 0.0177109% |\n| `[1,309,385.30394, 1,336,107.453]` | 1 | 0.0000149% |\n\nThe archived narrative describes the raw gene-expression data as “highly\nskewed.” The direction must be inferred from the sign of the skewness, the\nmean–median relation, and which side carries the long tail. Classify the\nuntransformed distribution, not a hypothetical normalized version.\n--- END TASK EVIDENCE ---\n\nCurrent request:\nDefine the RNA-expression values used for the distribution assessment and state whether they are raw or transformed.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the center, quantiles, and tail behavior to determine the direction of skew.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "How strong is the skew, and what is the resulting distributional classification?",
+        "role": "user",
+        "turn_id": "T3"
+      }
+    ]
+  }
+}

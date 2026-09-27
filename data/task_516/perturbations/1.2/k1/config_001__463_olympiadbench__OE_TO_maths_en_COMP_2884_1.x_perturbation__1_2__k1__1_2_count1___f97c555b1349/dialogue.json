@@ -1,0 +1,49 @@
+{
+  "release_task_index": 516,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_2884",
+  "dataset": "olympiadbench",
+  "ordinal": 463,
+  "variant": "perturbed",
+  "conversation_id": "463::olympiadbench__OE_TO_maths_en_COMP_2884::1.x::perturbation__1_2__k1__1_2_count1_cfg0001::perturbed",
+  "condition_label": "1.2.k1",
+  "family": "1.x",
+  "subclass": "1.2",
+  "paper_subclass": "1.2",
+  "injection_count": 1,
+  "dialogue_sha256": "6c368f42c52692734fb789242fa84eb5cd4adee3e6d5d478ab1564d074000849",
+  "semantic_condition_id": "9b36eaa19c6ded22b05db9c19117122b529fb5d4c4f2a4e520e814bdb7495eda",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "In triangle ABC, D lies on AC, E lies on AB, and CE meets BD at P. Quadrilateral BCDE is cyclic, with BP=12 seconds and PE=4. Prove that triangles BCP and EDP are similar and determine BC/DE.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Use the collinearities A,D,C and A,E,B to compare angle DAE in triangle ADE with angle BAC in triangle ABC.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Using the geometric condition established in the first step, determine whether angle BCE equals angle BDE and whether angle DCE equals angle DBE. Use every equality you can justify to relate the remaining angles of triangles ADE and ABC.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "The problem also states that BD bisects angle ABC. Use that condition with the angle relations obtained above to test whether triangles ADE and ABC are similar. If they are, combine this result with the first similarity and BP=12, PE=4 to find AC/AE.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Check both proposed triangle correspondences explicitly. If they are valid, compare the side ratios BC/DE and AC/AE.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "State the value of AC/AE justified by the preceding checks, or explain why the available conditions are insufficient to determine it.",
+        "role": "user",
+        "turn_id": "T6"
+      }
+    ]
+  }
+}

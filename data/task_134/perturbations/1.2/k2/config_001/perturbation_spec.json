@@ -1,0 +1,44 @@
+{
+  "task_index": 134,
+  "task_id": "134-capsule037",
+  "subclass": "1.2",
+  "injection_count": 2,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "f712268cff9dcea90edb3adbd37bfa10354dc7cd12894e015ee0a6a8f61a8e2a",
+  "source_base_evidence_sha256": "c5c9a9bd0fa23d43c583be55944201189768feb15740f5fe3067d495545460ba",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Frequency scale changed.",
+      "consumers": [
+        "T2"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "SS scale independently changed relative to MS.",
+      "consumers": [
+        "T3",
+        "T4"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Treat frequencies as 0-100 percentages without conversion.",
+    "T3": "Calculate F after treating both sums of squares as values expressed in thousands, while leaving the mean-square values on the original scale."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null,
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "Convert frequencies to whole-number percentages rounded to the nearest integer before fitting."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Treat both regression and residual sums of squares as values in thousands while leaving the corresponding mean-square values unscaled, then calculate the F-statistic."
+    }
+  ]
+}

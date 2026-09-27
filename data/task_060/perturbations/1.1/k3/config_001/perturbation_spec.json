@@ -1,0 +1,49 @@
+{
+  "config_id": "task060_1.1_k3",
+  "subclass": "1.1",
+  "k": 3,
+  "injection_turns": [
+    "T1",
+    "T2",
+    "T3"
+  ],
+  "downstream_consumer_turns": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "T5"
+  ],
+  "evidence_relation": "unchanged",
+  "events": [
+    {
+      "turn_id": "T1",
+      "operation": "replace_user_request",
+      "injected_text": "Use Control Children to include Unaffected parents as well as children."
+    },
+    {
+      "turn_id": "T2",
+      "operation": "replace_user_request",
+      "injected_text": "Use candidate to mean unique gene."
+    },
+    {
+      "turn_id": "T3",
+      "operation": "replace_user_request",
+      "injected_text": "Use UTR to mean exact labels only."
+    }
+  ],
+  "human_repair_overrides": [
+    {
+      "turn_id": "T1",
+      "content": "\\nDefine the Control Children cohort to include Unaffected parents as well as Unaffected children, and report the resulting sample count."
+    },
+    {
+      "turn_id": "T2",
+      "content": "Apply the stated non-reference and ontology exclusions, then collapse the candidate records to unique genes."
+    },
+    {
+      "turn_id": "T3",
+      "content": "Apply the strict VAF < 0.3 filter, then remove only ontology values exactly equal to the two UTR labels; retain compound ontology annotations that merely contain a UTR term."
+    }
+  ]
+}

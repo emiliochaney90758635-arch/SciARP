@@ -1,0 +1,64 @@
+{
+  "release_task_index": 404,
+  "task_id": "gpqa__recfTlTMjZBuOducT",
+  "dataset": "gpqa",
+  "ordinal": 273,
+  "variant": "perturbed",
+  "conversation_id": "273::gpqa__recfTlTMjZBuOducT::1.x::perturbation__1_1__k1__1_1_count1_cfg0002::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "f57ccdb88606f1f71b379acc1b42ba44c6c24b9472b21f2dc2178793606d1512",
+  "semantic_condition_id": "e735a67e08f8c2c67c066d8a47dea72d3caef2029b5eec296c25702f2730989b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For a rhombohedral lattice with a=b=c=a and alpha=beta=gamma, write the reciprocal-metric formula for d_hkl. Here a=10 Angstrom and alpha=30 degrees, so the basis is nonorthogonal.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "For (111), calculate the two atomic-number combinations h^2+k^2+l^2 and hk+kl+lh.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Evaluate sin^2(alpha), cos(alpha), cos^2(alpha), and cos^3(alpha) at 30 degrees.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Insert those values into the rhombohedral formula and calculate the numerator and denominator of 1/d_111^2.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Compute 1/d_111^2 and then d_111, including units.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Explain how the numerical numerator 0.0538476 and denominator 4.90381 Angstrom^2 enter the inverse-square calculation.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Recalculate d_111 from those two components as a consistency check.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Check the nonorthogonal metric, trigonometric substitutions, inverse-square step, and dimensions.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final (111) spacing and the key rhombohedral-metric substitution.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "task_index": 107,
+  "task_id": "107-capsule031",
+  "subclass": "1.3",
+  "injection_count": 3,
+  "config_id": "config_001",
+  "evidence_policy": "immutable_original",
+  "source_base_dialogue_file_sha256": "a349e67cafdf4a93d7a563491d7b2437a12c0397ba3e2aa4aaaca0e5190d5a04",
+  "source_base_evidence_sha256": "49a5879ac28a6d0a195ac58250be1c671fafbcf6e41388b6e77382a2bdd3f895",
+  "events": [
+    {
+      "turn_id": "T1",
+      "root": "Gene-locus swap.",
+      "consumers": [
+        "T2",
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T2",
+      "root": "Comparison-suffix swap.",
+      "consumers": [
+        "T3"
+      ]
+    },
+    {
+      "turn_id": "T3",
+      "root": "Effect-sign mapping independently reversed.",
+      "consumers": [
+        "T3"
+      ]
+    }
+  ],
+  "turn_overrides": {
+    "T1": "Let `mexG` denote PA14_09530 and `mexH` denote PA14_09540; locate mexG.",
+    "T2": "Let `.x` denote delta-lasI/wt and `.y` denote delta-rhlI/wt, then select delta-rhlI.",
+    "T3": "Use a sign convention in which negative stored log2 fold changes are reported as positive induction values, and report to two decimals."
+  },
+  "additional_evidence": [],
+  "evidence_mutations": [],
+  "extends_existing": null
+}

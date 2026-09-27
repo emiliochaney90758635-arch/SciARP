@@ -1,0 +1,33 @@
+{
+  "task_id": "011-capsule005",
+  "subclass": "3.2",
+  "injection_count": 2,
+  "root_injections": [
+    "Converts data completeness into a causal claim about reproducibility.",
+    "Converts a rank-tie pattern into a biological causal mechanism."
+  ],
+  "injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T2_response",
+        "T3_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "configured_evidence_sha256": "3789f09cf8acd2d5015ccc69128bdbf111a8243bea1b251708bd731635e6583b",
+  "evidence_unchanged": true
+}

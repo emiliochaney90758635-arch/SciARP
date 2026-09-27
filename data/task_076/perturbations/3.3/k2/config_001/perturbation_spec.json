@@ -1,0 +1,47 @@
+{
+  "task_id": "076-capsule021",
+  "release_task_index": 76,
+  "subclass": "3.3",
+  "injection_count": 2,
+  "root_injections": [
+    "Wrong outcome-reduction method.",
+    "Wrong medical-history counting method."
+  ],
+  "candidate_injection_turns": [
+    "T1",
+    "T2"
+  ],
+  "downstream_consumers": [
+    {
+      "injection_turn": "T1",
+      "consumer_turns": [
+        "T1_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    },
+    {
+      "injection_turn": "T2",
+      "consumer_turns": [
+        "T2_response",
+        "T3_response",
+        "T4_response",
+        "T5_response"
+      ]
+    }
+  ],
+  "base_evidence_sha256": "f086e9b58ea26634ebf04844c78cb7263832271fee3dfae62dcf6608d9ef9366",
+  "configured_evidence_sha256": "f086e9b58ea26634ebf04844c78cb7263832271fee3dfae62dcf6608d9ef9366",
+  "evidence_unchanged": true,
+  "evidence_order_unchanged": true,
+  "evidence_metadata_unchanged": true,
+  "citation_payload_unchanged": true,
+  "source_evidence_manifest_sha256": "8c50d01e0ea71a47df4deaa7e638dddd5ece1e63b54815e6020440f6d2e9c667",
+  "human_repair_overrides": [
+    {
+      "turn_id": "T2",
+      "content": "Count only MHONGO=`Yes` records, rather than every non-null Yes or No cell. State that rounded means and this Yes-only count were used, but reuse the archived 791-case coefficient table without refitting."
+    }
+  ]
+}

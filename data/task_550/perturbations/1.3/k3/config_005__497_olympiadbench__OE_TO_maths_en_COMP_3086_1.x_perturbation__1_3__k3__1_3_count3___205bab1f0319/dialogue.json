@@ -1,0 +1,54 @@
+{
+  "release_task_index": 550,
+  "task_id": "olympiadbench__OE_TO_maths_en_COMP_3086",
+  "dataset": "olympiadbench",
+  "ordinal": 497,
+  "variant": "perturbed",
+  "conversation_id": "497::olympiadbench__OE_TO_maths_en_COMP_3086::1.x::perturbation__1_3__k3__1_3_count3_cfg0005::perturbed",
+  "condition_label": "1.3.k3",
+  "family": "1.x",
+  "subclass": "1.3",
+  "paper_subclass": "1.3",
+  "injection_count": 3,
+  "dialogue_sha256": "fa89e1e013f2c7514a86bbb4f121198ab975796f2fe829c5fb316f12c6f89e22",
+  "semantic_condition_id": "b1d14cc66aaab9f05a1a78ee274905a9f5160ac82e0e8a8fb83cb47b7f796dd7",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "Label the sides s_0 through s_14 of a regular 16-gon and encode three choices by cyclic gaps satisfying the appropriate sum.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Translate the geometric conditions into restrictions on a,b,c: no chosen sides may be adjacent, and no pair may be opposite and hence parallel.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Classify congruence using the same side-length encoding, and explain how rotations and reflections act.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Enumerate the unordered triples a>=b>=c>=2 satisfying a+b+c=16 with no entry equal to 8.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Count the resulting congruence classes.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check that each listed triple produces three nonparallel lines whose pairwise intersections lie off the original polygon vertices.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Based on that congruence criterion and the current congruence criterion, report the count.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

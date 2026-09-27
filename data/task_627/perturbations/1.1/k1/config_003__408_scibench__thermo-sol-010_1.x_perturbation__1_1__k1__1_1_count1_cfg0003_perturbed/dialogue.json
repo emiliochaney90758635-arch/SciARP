@@ -1,0 +1,64 @@
+{
+  "release_task_index": 627,
+  "task_id": "scibench__thermo-sol-010",
+  "dataset": "scibench",
+  "ordinal": 408,
+  "variant": "perturbed",
+  "conversation_id": "408::scibench__thermo-sol-010::1.x::perturbation__1_1__k1__1_1_count1_cfg0003::perturbed",
+  "condition_label": "1.1.k1",
+  "family": "1.x",
+  "subclass": "1.1",
+  "paper_subclass": "1.1",
+  "injection_count": 1,
+  "dialogue_sha256": "7f4d94d92ab6210297bf722cca228b6553470fe24643c415b3fcfb4e065f2b8e",
+  "semantic_condition_id": "41710dd5fe5cc845a0720a70861065f25d2b06cebd4b45b6f3b411a5198e3e3b",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "A sample absorbs all the light from a 100 W source during a 27.0 s irradiation. What does the watt measure, and how should total absorbed energy be obtained from these two quantities?",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "The light has wavelength 280 nm. Calculate the energy of one photon using E = hc/lambda, with h = 6.626 x 10^-34 J s and c = 2.998 x 10^8 m/s.",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Now calculate the total energy absorbed during the irradiation and report it in joules.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Use the total absorbed energy and photon energy to find the number of absorbed photons, then convert that count to moles of electrons using 6.022 x 10^23 photons per mole.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Under these conditions, 2.5 mmol of 1,3-cyclohexadiene is converted to cis-hexatriene. Calculate the overall quantum yield, defined as moles of reactant converted divided by moles of photons absorbed.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the result dimensionally by repeating the energy-to-photon-to-mole chain with the stated 100 W source power. Does the quantum yield remain dimensionless?",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "State the checked quantum yield and explain how increasing the photon wavelength changes the energy per photon.",
+        "role": "user",
+        "turn_id": "T7"
+      },
+      {
+        "content": "Use E = hc/lambda to verify the wavelength-energy direction, and check whether the magnitude of the quantum yield is consistent with the calculated reactant and photon amounts.",
+        "role": "user",
+        "turn_id": "T8"
+      },
+      {
+        "content": "Report the final quantum yield and the wavelength-energy relationship concisely.",
+        "role": "user",
+        "turn_id": "T9"
+      }
+    ]
+  }
+}

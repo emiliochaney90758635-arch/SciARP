@@ -1,0 +1,54 @@
+{
+  "release_task_index": 357,
+  "task_id": "gpqa__recrNbtgTNoabJJi6",
+  "dataset": "gpqa",
+  "ordinal": 225,
+  "variant": "clean",
+  "conversation_id": "225::gpqa__recrNbtgTNoabJJi6::global::clean",
+  "condition_label": "global",
+  "family": "global",
+  "subclass": "global",
+  "paper_subclass": "global",
+  "injection_count": 0,
+  "dialogue_sha256": "dfd67cefe8da849eb411f5a112e4b4092ff6374260e06182bf46760a69c5476b",
+  "semantic_condition_id": "f26d284f0f820f3c5e693f56e74e9f15e9b244cf3fa746d5a201ed56a8fcae8c",
+  "dialogue": {
+    "turns": [
+      {
+        "content": "For 1-bromobenzene-2-d with NaNH2 in liquid ammonia, place Br at C1, D at C2, and H at C6. Identify the benzyne elimination-addition mechanism and the two possible ortho eliminations.",
+        "role": "user",
+        "turn_id": "T1"
+      },
+      {
+        "content": "Analyze the first of the two ortho-elimination pathways identified above. What benzyne label pattern and product result after amide addition and protonation?",
+        "role": "user",
+        "turn_id": "T2"
+      },
+      {
+        "content": "Analyze the other ortho-elimination pathway. List the products of amide attack at either benzyne terminus followed by protonation, retaining any isotope label that remains after elimination.",
+        "role": "user",
+        "turn_id": "T3"
+      },
+      {
+        "content": "Compare the labeled molecular graphs from both pathways, preserving D, and decide which products are equivalent or distinct.",
+        "role": "user",
+        "turn_id": "T4"
+      },
+      {
+        "content": "Name each distinct organic product and determine the total count.",
+        "role": "user",
+        "turn_id": "T5"
+      },
+      {
+        "content": "Check the count by following deuterium loss or retention and the symmetry of the two benzyne attack sites.",
+        "role": "user",
+        "turn_id": "T6"
+      },
+      {
+        "content": "Report the distinct products and their number.",
+        "role": "user",
+        "turn_id": "T7"
+      }
+    ]
+  }
+}

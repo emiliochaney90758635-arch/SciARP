@@ -10,12 +10,12 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 1,
-  "dialogue_sha256": "2f836681738a03c62bcd5ff4e816fd719254499e42c475b92bcc46d8adaa6e9a",
+  "dialogue_sha256": "3515488686c95541605e4e0ec01a9967dcd4bfd3d32b543ae59d4d3874852a97",
   "semantic_condition_id": "a9b9428242440d80d27b6fec92bfb0c65b6fbb515369cfe79f5f99e64408cd19",
   "dialogue": {
     "turns": [
       {
-        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "content": "For a Hohmann transfer from Earth to Mars, describe the transfer-orbit geometry and explain how the one-way travel time relates to the orbital period of that ellipse.",
         "role": "user",
         "turn_id": "T1"
       },
@@ -25,22 +25,22 @@
         "turn_id": "T2"
       },
       {
-        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "content": "Using G = 6.67 × 10^-11 m³ kg^-1 s^-2 and M_sun = 1.99 × 10^30 kg, calculate μ_sun and restate the one-way transfer-time formula.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "content": "Evaluate the transfer time in seconds and days.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

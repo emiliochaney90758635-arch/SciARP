@@ -10,7 +10,7 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 3,
-  "dialogue_sha256": "1d30de142f6a8b10e208683085dfc4f0fc099f8ef8d2afaf0c691d22846106ca",
+  "dialogue_sha256": "cb48b5b218309d1d5a50df762dd8b77eb749904d0ac8f59f0a07c7b933ec28a0",
   "semantic_condition_id": "17e2761cef9b53539b38cef76b74e4ecf9dc0310cc859bb594b54480d7e76784",
   "dialogue": {
     "turns": [
@@ -20,7 +20,7 @@
         "turn_id": "T1"
       },
       {
-        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "content": "Using r_E = 1.50 × 10^11 m and r_M = 2.28 × 10^11 m, calculate the semimajor axis.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -35,12 +35,12 @@
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

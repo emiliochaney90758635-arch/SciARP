@@ -10,44 +10,39 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 3,
-  "dialogue_sha256": "bc21848acc8701e5f84aa97e190654d962d54923b08eab72cd441cacb1792387",
+  "dialogue_sha256": "f1aab9873effcb507323d3b0c35af753eee689cbcbf28798ebe09878fcd20122",
   "semantic_condition_id": "c6c3646ecab6c7936feb87166735b776d3d6deec29ba5091daefbb93271cb62c",
   "dialogue": {
     "turns": [
       {
-        "content": "For a free hydrogen atom in its 1s ground state, write the normalized nuclear charge-density profile in terms of the Bohr radius a_0=5.292e-11 m.",
+        "content": "A cylinder has radius 2 cm and height 5 cm. Let r denote the radius and h the height. Write its volume formula.\n\nFor the remaining calculation, use the word ‘radius’ to refer to the full width of the circular base.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Use that wavefunction to set up <1/r>=integral |psi|^2(1/r) d tau in spherical coordinates, including the volume element.",
+        "content": "Assign the given dimensions to r and h.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Evaluate the integrals to obtain the mean radius <r>.",
+        "content": "Continue using r for radius and h for height. Restate the volume relation under this notation.\n\nKeep that altered geometric terminology during substitution.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Insert that expectation value into sigma=(e^2 mu_0)/(12 pi m_e)<1/r> and simplify the shielding constant symbolically.",
+        "content": "Substitute the dimensions and calculate the volume.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "From the sign and form of the expression, explain whether the electron produces magnetic shielding or deshielding at the proton.",
+        "content": "Check that the result has the correct physical dimension.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Before substituting numbers, verify that the simplified expression is dimensionless and state how it scales with a_0.",
+        "content": "Summarize the dimensions and final volume.\n\nDo not restore the standard radius definition in the final summary.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Using the listed constants, calculate the numerical deshielding correction for the proton in a free hydrogen atom.",
-        "role": "user",
-        "turn_id": "T7"
       }
     ]
   }

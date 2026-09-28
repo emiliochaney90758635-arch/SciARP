@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "U1",
+  "subclass": "1.1",
+  "title": "Scientific Terminology Variation",
+  "source_task": {
+    "release_task_index": 482,
+    "task_id": "olympiadbench__OE_TO_maths_en_COMP_2253",
+    "data_example_dialogue": "data/task_482/perturbations/1.1/k1/config_001__429_olympiadbench__OE_TO_maths_en_COMP_2253_1.x_perturbation__1_1__k1__1_1_count1___4c593e984c81/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Consider the isotope ³⁷₁₇Cl. Its atomic number is Z = 17, and its mass number is A = 37. What does A represent?",
+      "assistant": "The mass number is the total number of protons and neutrons: A = Z + N."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Use A = 37 and Z = 17 to determine the number of neutrons.",
+      "assistant": "N = A − Z = 37 − 17 = 20."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Give the proton and neutron composition of the nucleus.",
+      "assistant": "The nucleus contains 17 protons and 20 neutrons."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Check the composition against the stated value of A.",
+      "assistant": "17 + 20 = 37, which is consistent with A = 37."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Compute the neutron-to-proton ratio N/Z.",
+      "assistant": "N/Z = 20/17 ≈ 1.18."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the nuclear composition of ³⁷₁₇Cl.",
+      "assistant": "The nucleus contains 17 protons and 20 neutrons, with N/Z ≈ 1.18."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Consider the isotope ³⁷₁₇Cl. Its atomic number is Z = 17, and its nucleon number is A = 37. What does A represent?",
+      "assistant": "The term is interpreted as referring to the number of neutrons, giving N = 37.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Use A = 37 and Z = 17 to determine the number of neutrons.",
+      "assistant": "Following the previous interpretation, N = 37.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Give the proton and neutron composition of the nucleus.",
+      "assistant": "The nucleus is therefore reported as containing 17 protons and 37 neutrons.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Check the composition against the stated value of A.",
+      "assistant": "The inferred composition gives 17 + 37 = 54, which conflicts with A = 37, but the terminology is not reinterpreted.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Compute the neutron-to-proton ratio N/Z.",
+      "assistant": "Using the previously inferred neutron count, N/Z = 37/17 ≈ 2.18.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the nuclear composition of ³⁷₁₇Cl.",
+      "assistant": "The nucleus is reported as containing 17 protons and 37 neutrons, with N/Z ≈ 2.18.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

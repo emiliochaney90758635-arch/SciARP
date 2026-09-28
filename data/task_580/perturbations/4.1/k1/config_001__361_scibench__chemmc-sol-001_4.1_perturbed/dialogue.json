@@ -10,54 +10,39 @@
   "subclass": "4.1",
   "paper_subclass": "4.1",
   "injection_count": 1,
-  "dialogue_sha256": "2279b59d3cb8e18c6e4bd82a5b5238575caac097821fa7051031d55be30af7a7",
+  "dialogue_sha256": "f22e76869640474fd03c462bad34a2f2bd802c870fa0b7fb215f79d5140f7b19",
   "semantic_condition_id": "fbe2abf51cf288fb06f6b264f9fb0aaeeed01f2b9d4823470e84f35f124ffff0",
   "dialogue": {
     "turns": [
       {
-        "content": "State the de Broglie relation for an electron and identify the momentum needed when its speed is 1.00% of the speed of light.",
+        "content": "An electron travels at 1.00% of the speed of light. Using c = 2.998 × 10^8 m s^-1, state the de Broglie relation and calculate the speed.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "content": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "content": "Calculate the momentum using m_e = 9.109 × 10^-31 kg.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Using the electron mass, calculate the momentum with the justified approximation.",
+        "content": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Substitute the momentum into the de Broglie relation and calculate the wavelength in metres.",
+        "content": "Because the constants are exact, treat the nonrelativistic wavelength as having zero approximation uncertainty and omit any relativistic correction.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "content": "Summarize the momentum and wavelength to three significant figures.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Because the constants are exact, treat the nonrelativistic wavelength as having zero approximation uncertainty and omit any relativistic correction.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Check the dimensions and order of magnitude independently.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Report the wavelength at 1.00% of light speed and predict it at twice that speed under the same approximation.",
-        "role": "user",
-        "turn_id": "T9"
       }
     ]
   }

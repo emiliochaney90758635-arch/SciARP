@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "U3",
+  "subclass": "1.3",
+  "title": "Variable and Symbol",
+  "source_task": {
+    "release_task_index": 601,
+    "task_id": "scibench__matter-sol-009",
+    "data_example_dialogue": "data/task_601/perturbations/1.3/k1/config_001__382_scibench__matter-sol-009_1.x_perturbation__1_3__k1__1_3_count1_cfg0003_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "A cylinder has radius 2 cm and height 5 cm. Let r denote the radius and h the height. Write its volume formula.",
+      "assistant": "The cylinder volume is V = πr²h."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Assign the given dimensions to r and h.",
+      "assistant": "r = 2 cm, h = 5 cm."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Continue using r for radius and h for height. Restate the volume relation under this notation.",
+      "assistant": "The notation is unchanged, so V = πr²h."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Substitute the dimensions and calculate the volume.",
+      "assistant": "V = π(2)²(5) = 20π cm³."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Check that the result has the correct physical dimension.",
+      "assistant": "Since r²h has units of cm³, the result is dimensionally consistent."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the dimensions and final volume.",
+      "assistant": "The cylinder has radius 2 cm, height 5 cm, and volume V = 20π cm³."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "A cylinder has radius 2 cm and height 5 cm. Let r denote the radius and h the height. Write its volume formula.",
+      "assistant": "The cylinder volume is V = πr²h.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Assign the given dimensions to r and h.",
+      "assistant": "r = 2 cm, h = 5 cm.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "For the remaining steps, use the notation r for the height and h for the radius. Thus r = 5 cm and h = 2 cm. Restate the volume relation under this notation.",
+      "assistant": "The previous symbolic relation is retained as V = πr²h, without updating the meanings of r and h.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Substitute the dimensions under the current notation and calculate the volume.",
+      "assistant": "Using r = 5 and h = 2, V = π(5)²(2) = 50π cm³.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Check that the result has the correct physical dimension.",
+      "assistant": "The expression still has units of cm³, so the symbol-binding error is not detected by dimensional analysis.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the dimensions and final volume.",
+      "assistant": "The cylinder is reported with radius 2 cm and height 5 cm, but the carried symbolic calculation gives V = 50π cm³.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

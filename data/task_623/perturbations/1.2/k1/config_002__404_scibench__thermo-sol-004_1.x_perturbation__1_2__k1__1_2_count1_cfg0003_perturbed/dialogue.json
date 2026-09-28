@@ -10,49 +10,39 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 1,
-  "dialogue_sha256": "7c21f51867858f03b0f099511d6a1ad47cd7471933705a0254bf309e3dbff144",
+  "dialogue_sha256": "5c6f911172358d025fb25a9e88e54a7cf3ffa4af703812f9104788c079ff5bfb",
   "semantic_condition_id": "cf02f8386b804606558238b72092364281caf3f97ec0022d9e76dfd699fd96ea",
   "dialogue": {
     "turns": [
       {
-        "content": "Living matter has a carbon-14 activity of 15.3 decay events per minute, while a fossilized wood sample has 2.4 events per minute. Assuming activity is proportional to the amount of carbon-14, calculate the fraction remaining when the wood is measured.",
+        "content": "The task is to estimate the age of a fossilized wood sample using carbon-14 activity measurements. What information is required?",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Carbon-14 has a half-life of 5760 years. Write the exponential decay law, convert the half-life to seconds using 365 days per year, and calculate the decay constant in s^-1.",
+        "content": "For equal amounts of carbon, living wood has an activity of 15.3 decay events per minute, while the fossil has 2.4 decay events per minute. What fraction of carbon-14 remains?",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Use the remaining fraction and the exponential law to solve algebraically for the elapsed time since the wood stopped exchanging carbon with its surroundings.",
+        "content": "Evaluate the age in meters and convert it to an approximate age in years.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the age in meters and convert it to an approximate age in years.",
+        "content": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Independently express the observed activity ratio as a number of elapsed half-lives and use that route to check the age obtained above.",
+        "content": "Check that age by expressing it as a number of half-lives.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "State the checked age and explain, for positive radioactive decay, how a lower remaining activity changes the inferred elapsed time.",
+        "content": "State the final age, the reference activity, and the normalization assumption.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Substitute the checked age back into A=A_0 exp(-kt) to verify the observed activity ratio, and confirm the qualitative activity-age direction.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Report the final age in seconds and years, together with the activity-age interpretation.",
-        "role": "user",
-        "turn_id": "T8"
       }
     ]
   }

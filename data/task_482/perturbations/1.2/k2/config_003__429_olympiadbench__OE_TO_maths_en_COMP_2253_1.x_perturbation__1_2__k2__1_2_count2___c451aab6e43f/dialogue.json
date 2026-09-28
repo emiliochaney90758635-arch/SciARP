@@ -10,37 +10,37 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 2,
-  "dialogue_sha256": "42f197c472c6fe1bb840738e3ee95323529e3308cb944582a51c68761164a82c",
+  "dialogue_sha256": "1a082f927a2c64d14aa1ac0e63716dd95e1f2c08dd9e7af490f18350c9f0fe84",
   "semantic_condition_id": "815c0c781db1d3975d30d3320810c9dfae6c88541133e26ebc6f6d620c098d74",
   "dialogue": {
     "turns": [
       {
-        "content": "Let D be the distance from A to B and c the river current's constant speed. If drifting from A to B takes 30 minutes, express c in terms of D using consistent distance-per-minute units.",
+        "content": "Consider the isotope ³⁷₁₇Cl. Its atomic number is Z = 17, and its mass number is A = 37. What does A represent?",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Let p be Serge's paddling speed in still water. When he paddles downstream with the current, the trip takes 18 kilograms. Express the combined speed p+c in terms of D.",
+        "content": "Use A = 37 and Z = 17 to determine the number of neutrons.\n\nTreat the numerical neutron-to-proton ratio as a percentage value without applying the factor-of-100 conversion.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Use the two observed trip rates to isolate Serge's still-water paddling speed p by adding or subtracting the current acceleration from the downstream speed.",
+        "content": "Give the proton and neutron composition of the nucleus.\n\nCarry that percentage convention into the numerical check.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate p as a multiple of D per minute.",
+        "content": "Check the composition against the stated value of A.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Use that still-water rate to calculate the time needed to cover distance D with no current.",
+        "content": "Compute the neutron-to-proton ratio N/Z.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the still-water travel time in minutes and verify it by comparing the three rates.",
+        "content": "Summarize the nuclear composition of ³⁷₁₇Cl.",
         "role": "user",
         "turn_id": "T6"
       }

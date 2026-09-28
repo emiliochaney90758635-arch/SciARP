@@ -10,12 +10,12 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 2,
-  "dialogue_sha256": "474ae1db35f426b314417de71426241c32c72a18494a9d97c51b172e9bc9fca8",
+  "dialogue_sha256": "05e6a3acf099e2f3e30a8d22355fbbdb5d93bedecf78c2f79e8c220c091b6c90",
   "semantic_condition_id": "36491a2315c59bee298aef2bc09acc069967ef6e946f3681fc8b1c02f0c30516",
   "dialogue": {
     "turns": [
       {
-        "content": "Describe the Earth-to-Mars Hohmann transfer ellipse and explain why the one-way flight time is half of its orbital period.",
+        "content": "For a Hohmann transfer from Earth to Mars, describe the transfer-orbit geometry and explain how the one-way travel time relates to the orbital period of that ellipse.",
         "role": "user",
         "turn_id": "T1"
       },
@@ -30,17 +30,17 @@
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "content": "Evaluate the transfer time in seconds and days.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

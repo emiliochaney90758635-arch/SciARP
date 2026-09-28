@@ -10,59 +10,39 @@
   "subclass": "3.3",
   "paper_subclass": "3.3",
   "injection_count": 1,
-  "dialogue_sha256": "ada2fb180124b8b16457caebdc98078c7d08311370467256db097b359fb13ae1",
+  "dialogue_sha256": "e80c7c2a74d461a90904160b44c89b9ae5b0f33848803c8bb698640769180ff2",
   "semantic_condition_id": "f0216add13aef30ace18eb87b345e175d5221e5019043849c289fdd4fc2c8f47",
   "dialogue": {
     "turns": [
       {
-        "content": "Write the volume V of a right circular cone in terms of its base radius r and height h.",
+        "content": "For a right circular cone with base radius r and height h, write the volume formula.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Differentiate the cone-volume formula with respect to r and h to obtain the total differential dV.",
+        "content": "Differentiate the volume with respect to both measured quantities and give the total differential dV.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Substitute the measured values r = 10 cm and h = 25 cm into dV. Write the separate absolute contributions from |dr| <= 0.1 cm and |dh| <= 0.1 cm before evaluating them.",
+        "content": "For r = 10 cm and h = 25 cm, with |dr| ≤ 0.1 cm and |dh| ≤ 0.1 cm, calculate the two absolute-error components.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the radial and height contributions separately using |dr| <= 0.1 cm and |dh| <= 0.1 cm, keeping each result in cubic centimetres.",
+        "content": "Use root-sum-square propagation as the exact worst-case maximum for these deterministic component bounds, and give the resulting volume error.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "These measurement limits are deterministic error bounds rather than standard deviations. Explain how the signs of dr and dh should be chosen when estimating the largest possible first-order absolute error.",
+        "content": "Treat the two component magnitudes as deterministic error bounds. Has any probability, independence, or correlation model been supplied?",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Use root-sum-square propagation as the exact worst-case maximum for these deterministic component bounds, and give the resulting volume error.",
+        "content": "For a deterministic worst-case first-order estimate, give the maximum absolute volume error.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Convert that exact error estimate to a decimal number of cubic centimetres.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Explain why the differential result is a first-order approximation rather than the exact finite change when the measurement errors are nonzero.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Check the worst-case sign choice: why do the two absolute contributions add for the maximum, rather than cancel or subtract?",
-        "role": "user",
-        "turn_id": "T9"
-      },
-      {
-        "content": "Using the sign check from the previous turn, report the estimated maximum volume error both exactly and approximately, with the correct unit and first-order qualification.",
-        "role": "user",
-        "turn_id": "T10"
       }
     ]
   }

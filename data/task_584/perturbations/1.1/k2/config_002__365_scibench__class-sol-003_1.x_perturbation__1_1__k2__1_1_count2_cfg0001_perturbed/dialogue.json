@@ -10,7 +10,7 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 2,
-  "dialogue_sha256": "f56b2259fc091ac8b47f31b53595ef9855dc167fdc0877ded3b60d9ca0a793a3",
+  "dialogue_sha256": "b0da582e7777f9a1c02731452dd781366a72b53ea841c421a843e3eafadd3e4c",
   "semantic_condition_id": "72ec91df0e51a9fd2d0d9505381d58c4201b11429c017aa3ec35ebb784ae5820",
   "dialogue": {
     "turns": [
@@ -25,22 +25,22 @@
         "turn_id": "T2"
       },
       {
-        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "content": "Using G = 6.67 × 10^-11 m³ kg^-1 s^-2 and M_sun = 1.99 × 10^30 kg, calculate μ_sun and restate the one-way transfer-time formula.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "content": "Evaluate the transfer time in seconds and days.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

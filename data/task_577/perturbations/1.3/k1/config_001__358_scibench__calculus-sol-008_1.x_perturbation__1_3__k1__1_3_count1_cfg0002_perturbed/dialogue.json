@@ -10,59 +10,39 @@
   "subclass": "1.3",
   "paper_subclass": "1.3",
   "injection_count": 1,
-  "dialogue_sha256": "5690b3524ae2866c782612fef6316b50ea0afe8001b38050bc8b9e1b2ff65897",
+  "dialogue_sha256": "aa2d10936934c6d76d6041c4d77638008076fbb823dd6d1b0d6217a7ee4f4048",
   "semantic_condition_id": "dc493e0fa7b31e481a9935963f51abc36fdce7fdd2b1918df9c2905a05a9ec5e",
   "dialogue": {
     "turns": [
       {
-        "content": "Write the volume V of a right circular cone in terms of its base radius r and height h.",
+        "content": "For a right circular cone with base radius r and height h, write the volume formula.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Differentiate the cone-volume formula with respect to r and h to obtain the total differential dV.",
+        "content": "Substitute the measured values h = 10 cm and h = 25 cm into dV. Write the separate absolute contributions from |dr| <= 0.1 cm and |dh| <= 0.1 cm before evaluating them.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Substitute the measured values h = 10 cm and h = 25 cm into dV. Write the separate absolute contributions from |dr| <= 0.1 cm and |dh| <= 0.1 cm before evaluating them.",
+        "content": "For r = 10 cm and h = 25 cm, with |dr| ≤ 0.1 cm and |dh| ≤ 0.1 cm, calculate the two absolute-error components.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the radial and height contributions separately using |dr| <= 0.1 cm and |dh| <= 0.1 cm, keeping each result in cubic centimetres.",
+        "content": "A subsequent worksheet step records the height-error contribution as (10/3)π cm³. Use the recorded component in the subsequent error analysis.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "These measurement limits are deterministic error bounds rather than standard deviations. Explain how the signs of dr and dh should be chosen when estimating the largest possible first-order absolute error.",
+        "content": "Treat the two component magnitudes as deterministic error bounds. Has any probability, independence, or correlation model been supplied?",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Combine the two component bounds accordingly and give the exact first-order maximum absolute error in the cone's volume.",
+        "content": "For a deterministic worst-case first-order estimate, give the maximum absolute volume error.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Convert that exact error estimate to a decimal number of cubic centimetres.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Explain why the differential result is a first-order approximation rather than the exact finite change when the measurement errors are nonzero.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Check the worst-case sign choice: why do the two absolute contributions add for the maximum, rather than cancel or subtract?",
-        "role": "user",
-        "turn_id": "T9"
-      },
-      {
-        "content": "Using the sign check from the previous turn, report the estimated maximum volume error both exactly and approximately, with the correct unit and first-order qualification.",
-        "role": "user",
-        "turn_id": "T10"
       }
     ]
   }

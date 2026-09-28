@@ -10,17 +10,17 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 2,
-  "dialogue_sha256": "87b41babf44a29238c76a812863ce8e8d7e826cdd2040067cdcf7a62d0e37ac0",
+  "dialogue_sha256": "580095f445b5bc09062f7c90678d57fd3e77e16cdfb45ed08488a4f0fcaa0c5e",
   "semantic_condition_id": "561fdb3cd2f39ebfd0eb2698c937b8ecd756c1c9d8684aaf49510c4e7b65ec29",
   "dialogue": {
     "turns": [
       {
-        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AB=c, and identify which side is opposite the given angle.",
+        "content": "For triangle ABC, we know BC = 12 and ∠B = 30°; let AC = b and AB = c. Which side is opposite the known angle, and which quantities are fixed?",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Apply the Law of Cosines to derive the quadratic equation for c. Use its discriminant to find when there are two distinct real values of c.",
+        "content": "Derive an equation in c using the given 30° angle, and determine when two distinct real values of c exist.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -30,12 +30,12 @@
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },

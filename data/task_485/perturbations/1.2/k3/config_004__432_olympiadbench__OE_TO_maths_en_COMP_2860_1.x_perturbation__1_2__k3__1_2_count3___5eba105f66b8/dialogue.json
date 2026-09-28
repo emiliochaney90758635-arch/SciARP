@@ -10,7 +10,7 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 3,
-  "dialogue_sha256": "ebe4e4eab652af7ea225afac59bb6021c8589dc3970d05eef452bad9ec30248c",
+  "dialogue_sha256": "35f0082d426fa5d8116c406b5bc09ae7dbdc5334cc5dc76a96f6e680abcf78c3",
   "semantic_condition_id": "2f58af63ed4ca7f80d151bdce594420f1be041c9cb5bc36919472a5748be90f6",
   "dialogue": {
     "turns": [
@@ -20,7 +20,7 @@
         "turn_id": "T1"
       },
       {
-        "content": "Apply the Law of Cosines to derive the quadratic equation for c. Use its discriminant to find when there are two distinct real values of c.",
+        "content": "Derive an equation in c using the given 30° angle, and determine when two distinct real values of c exist.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -30,12 +30,12 @@
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },

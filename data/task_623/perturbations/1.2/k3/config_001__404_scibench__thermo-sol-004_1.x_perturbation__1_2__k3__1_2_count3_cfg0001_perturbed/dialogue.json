@@ -10,7 +10,7 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 3,
-  "dialogue_sha256": "42336a1dbdb76ee1d3ba99242a061e0bcca3dd98bdafe71032196aecff9181c1",
+  "dialogue_sha256": "7445ffc07bdc3defc047797502ce176ea2ab48698096d2ced115b5707c48d35a",
   "semantic_condition_id": "699a16bd24c40e9c38a05dde14d4798a339a9d5cf88cef895c2d07e74da3ebcb",
   "dialogue": {
     "turns": [
@@ -25,34 +25,24 @@
         "turn_id": "T2"
       },
       {
-        "content": "Use the remaining fraction and the exponential law to solve algebraically for the elapsed time since the wood stopped exchanging carbon with its surroundings.",
+        "content": "Evaluate the age in meters and convert it to an approximate age in years.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the age in meters and convert it to an approximate age in years.",
+        "content": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Independently express the observed activity ratio as a number of elapsed half-lives and use that route to check the age obtained above.",
+        "content": "Check that age by expressing it as a number of half-lives.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "State the checked age and explain, for positive radioactive decay, how a lower remaining activity changes the inferred elapsed time.",
+        "content": "State the final age, the reference activity, and the normalization assumption.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Substitute the checked age back into A=A_0 exp(-kt) to verify the observed activity ratio, and confirm the qualitative activity-age direction.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Report the final age in seconds and years, together with the activity-age interpretation.",
-        "role": "user",
-        "turn_id": "T8"
       }
     ]
   }

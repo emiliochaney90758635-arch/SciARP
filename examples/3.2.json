@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "R2",
+  "subclass": "3.2",
+  "title": "Correlation–Causation Confusion",
+  "source_task": {
+    "release_task_index": 440,
+    "task_id": "gpqa__recr5Un4bVj4cRnAP",
+    "data_example_dialogue": "data/task_440/perturbations/3.2/k1/config_001__309_gpqa__recr5Un4bVj4cRnAP_3.2_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Before treatment, the inhibition zones were 25 mm for ampicillin, 23 mm for azithromycin, and 5 mm for meropenem. Using susceptible cutoffs of 17, 15, and 10 mm, respectively, how should the isolate be classified?",
+      "assistant": "The isolate is susceptible to ampicillin and azithromycin, but resistant to meropenem."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "After ethidium-bromide treatment, the zones were 25, 23, and 13 mm in the same order. What changed?",
+      "assistant": "Ampicillin and azithromycin remain susceptible. Meropenem changes from resistant to susceptible because its zone increases from 5 mm to 13 mm and crosses the 10 mm cutoff."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "There was only one before/after run, with no untreated control, replicate, plasmid profile, or gene-specific PCR. What can the experiment establish?",
+      "assistant": "It establishes a temporal association between treatment and the meropenem phenotype change. Without controls or molecular confirmation, it does not establish that ethidium bromide caused the change."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Given those limitations, should the observed change be interpreted as causal or only associative?",
+      "assistant": "The treatment and phenotype change are associated, but a causal relationship has not been demonstrated."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "What mechanism could plausibly explain the phenotype change without treating it as established?",
+      "assistant": "Loss of a plasmid-borne resistance determinant is one plausible explanation, but it remains a hypothesis. Other biological or experimental explanations cannot be excluded."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "What can be concluded about the location of the meropenem-resistance determinant?",
+      "assistant": "A plasmid location is possible but not established. Plasmid profiling or gene-specific molecular evidence would be needed for confirmation."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Before treatment, the inhibition zones were 25 mm for ampicillin, 23 mm for azithromycin, and 5 mm for meropenem. Using susceptible cutoffs of 17, 15, and 10 mm, respectively, how should the isolate be classified?",
+      "assistant": "The isolate is susceptible to ampicillin and azithromycin, but resistant to meropenem.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "After ethidium-bromide treatment, the zones were 25, 23, and 13 mm in the same order. What changed?",
+      "assistant": "Ampicillin and azithromycin remain susceptible. Meropenem changes from resistant to susceptible because its zone increases from 5 mm to 13 mm and crosses the 10 mm cutoff.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "There was only one before/after run, with no untreated control, replicate, plasmid profile, or gene-specific PCR. What can the experiment establish?",
+      "assistant": "It establishes a temporal association between treatment and the meropenem phenotype change. Without controls or molecular confirmation, it does not establish that ethidium bromide caused the change.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "The resistance disappeared after ethidium-bromide treatment. What causal effect of the treatment does this demonstrate?",
+      "assistant": "The treatment eliminated the isolate's meropenem resistance, changing the phenotype from resistant to susceptible.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "What biological mechanism explains this change?",
+      "assistant": "Ethidium bromide cured a plasmid carrying the meropenem-resistance determinant, and loss of that plasmid caused the change to susceptibility.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "What can be concluded about the location of the meropenem-resistance determinant?",
+      "assistant": "The meropenem-resistance determinant was plasmid-borne, and ethidium-bromide treatment eliminated the corresponding plasmid.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

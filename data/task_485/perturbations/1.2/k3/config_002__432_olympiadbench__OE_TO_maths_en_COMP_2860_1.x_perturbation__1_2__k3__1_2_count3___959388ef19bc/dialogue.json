@@ -10,7 +10,7 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 3,
-  "dialogue_sha256": "2382958abaef86b1bf1f96a9d6c0e4728093d58a29eb5b236ca8bbfaa376e2db",
+  "dialogue_sha256": "bb32c90de6a267554a4940e9b04a0289eb5a6a1da5e365ff3d90cea54b184901",
   "semantic_condition_id": "9b30807c94efe84c485555c5ae4407a9df4594eddcfeb1e2ffa23a7ff86837aa",
   "dialogue": {
     "turns": [
@@ -25,17 +25,17 @@
         "turn_id": "T2"
       },
       {
-        "content": "Use the sum and product of the two roots to determine when both possible values of c are positive.",
+        "content": "Use the root sum and product to determine when both possible values of c are positive.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },

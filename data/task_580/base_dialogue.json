@@ -10,54 +10,39 @@
   "subclass": "global",
   "paper_subclass": "global",
   "injection_count": 0,
-  "dialogue_sha256": "d343af4d9b1518100918562d262ff1e6d1269005024db05e5ee5d2aa22f6403e",
+  "dialogue_sha256": "c02cf2d3cae5d90689431280d43b0a08d1ef220a3ca63c2ffba320fdb9d77b28",
   "semantic_condition_id": "234630823944293e2a869ae408ca764e9cce4b32e0e26e5e6d0e36178bb351f1",
   "dialogue": {
     "turns": [
       {
-        "content": "State the de Broglie relation for an electron and identify the momentum needed when its speed is 1.00% of the speed of light.",
+        "content": "An electron travels at 1.00% of the speed of light. Using c = 2.998 × 10^8 m s^-1, state the de Broglie relation and calculate the speed.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "content": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "content": "Calculate the momentum using m_e = 9.109 × 10^-31 kg.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Using the electron mass, calculate the momentum with the justified approximation.",
+        "content": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Substitute the momentum into the de Broglie relation and calculate the wavelength in metres.",
+        "content": "Convert the wavelength to picometres and check the unit conversion.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "content": "Summarize the momentum and wavelength to three significant figures.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Check the dimensions and order of magnitude independently.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Report the wavelength at 1.00% of light speed and predict it at twice that speed under the same approximation.",
-        "role": "user",
-        "turn_id": "T9"
       }
     ]
   }

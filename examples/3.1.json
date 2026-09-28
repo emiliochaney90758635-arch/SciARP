@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "R1",
+  "subclass": "3.1",
+  "title": "Cross-Step Inconsistency",
+  "source_task": {
+    "release_task_index": 577,
+    "task_id": "scibench__calculus-sol-008",
+    "data_example_dialogue": "data/task_577/perturbations/3.1/k1/config_001__358_scibench__calculus-sol-008_3.1_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "For a right circular cone with base radius r and height h, write the volume formula.",
+      "assistant": "V = (1/3)πr²h."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Differentiate the volume with respect to both measured quantities and give the total differential dV.",
+      "assistant": "dV = (2/3)πrh dr + (1/3)πr² dh."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "For r = 10 cm and h = 25 cm, with |dr| ≤ 0.1 cm and |dh| ≤ 0.1 cm, calculate the two absolute-error components.",
+      "assistant": "The derivative magnitudes are (500/3)π and (100/3)π, so the component bounds are (50/3)π cm³ and (10/3)π cm³."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "A subsequent worksheet step records the height-error contribution as (10/3)π cm³. Use the recorded component in the subsequent error analysis.",
+      "assistant": "The height-error contribution is (10/3)π cm³, consistent with the previously derived component."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Treat the two component magnitudes as deterministic error bounds. Has any probability, independence, or correlation model been supplied?",
+      "assistant": "The component bounds are (50/3)π and (10/3)π cm³. No probability distribution, independence assumption, or correlation model has been supplied."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "For a deterministic worst-case first-order estimate, give the maximum absolute volume error.",
+      "assistant": "|dV|_max = (50/3)π + (10/3)π = 20π cm³ ≈ 62.83 cm³."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "For a right circular cone with base radius r and height h, write the volume formula.",
+      "assistant": "V = (1/3)πr²h.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Differentiate the volume with respect to both measured quantities and give the total differential dV.",
+      "assistant": "dV = (2/3)πrh dr + (1/3)πr² dh.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "For r = 10 cm and h = 25 cm, with |dr| ≤ 0.1 cm and |dh| ≤ 0.1 cm, calculate the two absolute-error components.",
+      "assistant": "The derivative magnitudes are (500/3)π and (100/3)π, so the component bounds are (50/3)π cm³ and (10/3)π cm³.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "A subsequent worksheet step records the height-error contribution as (20/3)π cm³. Use the recorded component in the subsequent error analysis.",
+      "assistant": "The recorded height-error contribution is carried forward as (20/3)π cm³.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Treat the two component magnitudes as deterministic error bounds. Has any probability, independence, or correlation model been supplied?",
+      "assistant": "The component bounds are taken as (50/3)π and (20/3)π cm³. No probability distribution, independence assumption, or correlation model has been supplied.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "For a deterministic worst-case first-order estimate, give the maximum absolute volume error.",
+      "assistant": "|dV|_max = (50/3)π + (20/3)π = (70/3)π cm³ ≈ 73.30 cm³.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

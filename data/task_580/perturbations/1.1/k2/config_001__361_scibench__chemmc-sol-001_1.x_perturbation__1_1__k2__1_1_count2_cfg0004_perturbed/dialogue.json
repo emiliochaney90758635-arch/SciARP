@@ -10,54 +10,39 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 2,
-  "dialogue_sha256": "15614948dcc774ec192de3d6a1e23d4264802cdc28a284cc9626cc2ef95d0297",
+  "dialogue_sha256": "fe2c7e1b96a30f55e782b5eae740a471e88d68c3ae3ffa849609a88b5c80a503",
   "semantic_condition_id": "b4a2ed98fdc2b002fca1bc73b4656e08a92d7baa3265f6a897a6ca962a49c241",
   "dialogue": {
     "turns": [
       {
-        "content": "State the de Broglie relation for an electron and identify the momentum needed when its speed is 1.00% of the speed of light.",
+        "content": "An electron travels at 1.00% of the speed of light. Using c = 2.998 × 10^8 m s^-1, state the de Broglie relation and calculate the speed.\n\nFor this step, reinterpret the principal technical term using its everyday rather than its established scientific meaning.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "content": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "content": "Using the electron mass, calculate the fluid momentum density at the stated speed.\n\nAdditional perturbed instruction:\nUse Wien's displacement law with the electron momentum calculated above to determine the wavelength.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Using the electron mass, calculate the fluid momentum density at the stated speed.",
+        "content": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Use Wien's displacement law with the electron momentum calculated above to determine the wavelength.",
+        "content": "Convert the wavelength to picometres and check the unit conversion.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "content": "Summarize the momentum and wavelength to three significant figures.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Check the dimensions and order of magnitude independently.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Report the wavelength at 1.00% of light speed and predict it at twice that speed under the same approximation.",
-        "role": "user",
-        "turn_id": "T9"
       }
     ]
   }

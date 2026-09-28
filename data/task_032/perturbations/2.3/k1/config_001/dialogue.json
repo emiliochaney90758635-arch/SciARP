@@ -11,37 +11,37 @@
   "subclass": "2.3",
   "paper_subclass": "2.3",
   "injection_count": 1,
-  "dialogue_sha256": "8c442b5f3609b52663754dd8197db695321aec4d1006ed06e88c48f3d4365371",
+  "dialogue_sha256": "e74bcf791db6747f892a9f4e7e274f005dab2b37b0997cb37f39c019c48eb489",
   "semantic_condition_id": "430d10254b49c0401105f9f9ec0dea06d51a7cdb0c6cc0c5526a2a9c81748705",
   "dialogue": {
     "turns": [
       {
-        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Endpoint construction and subgroup\n\nAll adverse-event records for a subject are reduced to that subject's maximum recorded `AESEV`; no event-type filter is applied. The endpoint is therefore maximum severity across all recorded adverse events and is not COVID-19-specific severity.\n\nAfter joining subject-level adverse-event results to demographics/exposure information and removing incomplete merged records, 791 subjects remain. Their literal `patients_seen` distribution is:\n\n| `patients_seen` category | Complete subjects |\n|---|---:|\n| `1-50` | 658 |\n| `51-100` | 108 |\n| `>100` | 25 |\n\nOnly the 25 subjects in the literal `>100` category are used below.\n\n## Sparse treatment-by-severity table\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 6 | 3 | 9 |\n| 2 | 10 | 4 | 14 |\n| 3 | 0 | 1 | 1 |\n| 4 | 1 | 0 | 1 |\n| Column total | 17 | 8 | 25 |\n\nThe independence-model expectations are:\n\n| Maximum `AESEV` | Expected BCG | Expected Placebo |\n|---:|---:|---:|\n| 1 | 6.21 | 2.88 |\n| 2 | 9.52 | 4.48 |\n| 3 | 0.68 | 0.32 |\n| 4 | 0.68 | 0.32 |\n\nThe ordinary Pearson test uses\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\n\\[\nX^2=2.6785714285714284,\n\\]\n\n## Approximation warning\n\nSix of the eight expected counts are below 5, and four are below 1. These severe expected-count violations make the large-sample chi-square approximation unreliable. The archived calculation does not replace it with an exact or Monte Carlo procedure, so any upper-tail value derived from the statistic must be reported as nominal rather than as reliable small-sample inference.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReduce the adverse-event records to one ordered endpoint per participant. What events does that endpoint include?",
+        "content": "A complete replacement task evidence file is now available. Treat it as the current evidence version, superseding the previous evidence file; the earlier conversation remains visible.\n\n--- BEGIN TASK EVIDENCE FILE ---\n# Evidence for this task\n\n## Endpoint construction and subgroup\n\nAll adverse-event records for a subject are reduced to that subject's maximum recorded `AESEV`; no event-type filter is applied. The endpoint is therefore maximum severity across all recorded adverse events and is not COVID-19-specific severity.\n\nAfter joining subject-level adverse-event results to demographics/exposure information and removing incomplete merged records, 791 subjects remain. Their literal `patients_seen` distribution is:\n\n| `patients_seen` category | Complete subjects |\n|---|---:|\n| `1-50` | 658 |\n| `51-100` | 108 |\n| `>100` | 25 |\n\nOnly the 25 subjects in the literal `>100` category are used below.\n\n## Sparse treatment-by-severity table\n\n| Maximum `AESEV` | BCG | Placebo | Row total |\n|---:|---:|---:|---:|\n| 1 | 6 | 3 | 9 |\n| 2 | 10 | 4 | 14 |\n| 3 | 0 | 1 | 1 |\n| 4 | 1 | 0 | 1 |\n| Column total | 17 | 8 | 25 |\n\nThe independence-model expectations are:\n\n| Maximum `AESEV` | Expected BCG | Expected Placebo |\n|---:|---:|---:|\n| 1 | 6.21 | 2.88 |\n| 2 | 9.52 | 4.48 |\n| 3 | 0.68 | 0.32 |\n| 4 | 0.68 | 0.32 |\n\nThe ordinary Pearson test uses\n\n\\[\ndf=(4-1)(2-1)=3,\n\\]\n\n\\[\nX^2=2.6785714285714284,\n\\]\n\n## Approximation warning\n\nSix of the eight expected counts are below 5, and four are below 1. These severe expected-count violations make the large-sample chi-square approximation unreliable. The archived calculation does not replace it with an exact or Monte Carlo procedure, so any upper-tail value derived from the statistic must be reported as nominal rather than as reliable small-sample inference.\n--- END TASK EVIDENCE FILE ---\n\nCurrent request:\nReduce each subject's repeated adverse-event records to the maximum recorded severity and state the endpoint scope.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Join that endpoint to the exposure data and retain complete cases. How many subjects fall in each patients_seen category, and which records belong to the literal >100 subgroup?",
+        "content": "Merge that endpoint with exposure data, keep complete records, and select the literal >100 subgroup.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "For those 25 subjects, construct the observed maximum-severity-by-treatment table, keeping BCG and Placebo separate.",
+        "content": "Form the observed severity-by-arm table for those 25 subjects.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Compute the independence-model expectations from that table. Which expected-count conditions make an ordinary Pearson approximation questionable?",
+        "content": "Calculate expected frequencies and assess Pearson-test sparsity.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Using the raw observed counts, calculate the Pearson chi-square statistic and its degrees of freedom.",
+        "content": "Calculate the nominal Pearson statistic.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "What is the nominal asymptotic upper-tail p-value, and how should it be qualified given the sparse expected counts?",
+        "content": "Report the nominal p-value and explain its limitation.",
         "role": "user",
         "turn_id": "T6"
       }

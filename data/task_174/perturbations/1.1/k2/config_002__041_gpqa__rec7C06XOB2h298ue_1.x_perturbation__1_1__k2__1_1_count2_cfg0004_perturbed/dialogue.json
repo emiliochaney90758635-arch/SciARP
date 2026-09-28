@@ -10,44 +10,39 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 2,
-  "dialogue_sha256": "126574e4e93409fbe48e4afa3cccf129e8a8fa29bf3a74953c223b28b133a6b2",
+  "dialogue_sha256": "10992c5e711b440a94e2553b71f44cd6abe5ba8b382c72d1a28de54fe4c823de",
   "semantic_condition_id": "c45c51b33f941fe70851713f3f319487f976376bd1a9d9daa81f76e7daf950e6",
   "dialogue": {
     "turns": [
       {
-        "content": "At 25 C and ideal pH, a solution is prepared from 0.020 M stoichiometric CaEDTA2-. Write the formation equilibrium Ca2+ + EDTA4- <=> CaEDTA2- and its expression for Kf = 5 x 10^10.",
+        "content": "Five replicate measurements of a reaction-rate constant are 1.8, 2.1, 2.0, 1.9, and 2.2 s^-1. Calculate the sample mean.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Let x moles per liter of the complex precipitate. Express the equilibrium concentrations of free Ca2+, free EDTA4-, and CaEDTA2- in terms of x.",
+        "content": "Calculate the sample standard deviation.\n\nFor the remaining analysis, use ‘standard error’ as another name for the sample standard deviation.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Substitute those concentrations into a solubility-product expression to obtain the exact equation for x. Use the size of Kf times 0.020 M to decide whether x should be small relative to 0.020 M.",
+        "content": "Calculate the standard error of the mean.\n\nKeep that altered terminology when constructing the confidence interval.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Apply the justified small-dissociation approximation to calculate the free Ca2+ concentration.",
+        "content": "Using t_0.975,4 = 2.776, calculate the 95% confidence interval for the mean rate constant.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that approximation either by substituting the result into the exact equation or by comparing it with the positive root of the corresponding quadratic.",
+        "content": "Prepare the result for a concise scientific summary while preserving the supported uncertainty.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Verify the calcium and EDTA mass balances, and state the ideal-pH and activity assumptions under which this calculation applies.",
+        "content": "State the final scientific conclusion from the replicate measurements.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Give the final free Ca2+ concentration and summarize how it follows from the stoichiometric dissociation and large formation constant.",
-        "role": "user",
-        "turn_id": "T7"
       }
     ]
   }

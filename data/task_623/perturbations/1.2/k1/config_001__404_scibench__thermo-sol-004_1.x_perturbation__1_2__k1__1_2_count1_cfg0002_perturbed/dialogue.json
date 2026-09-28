@@ -10,12 +10,12 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 1,
-  "dialogue_sha256": "8e4fe9cb04b0a99242cfa599508a452a57393e61b7be7715a6bf3df12a1aa7e6",
+  "dialogue_sha256": "fc1a0734cc00fd7d51181baf74cbe5c2fa011a4e72ba783a0f4b7c905adb4f9b",
   "semantic_condition_id": "c1f094984a3166d634353a910923dfcae4be5f667609c3d860ead00e5c9f1a0c",
   "dialogue": {
     "turns": [
       {
-        "content": "Living matter has a carbon-14 activity of 15.3 decay events per minute, while a fossilized wood sample has 2.4 events per minute. Assuming activity is proportional to the amount of carbon-14, calculate the fraction remaining when the wood is measured.",
+        "content": "The task is to estimate the age of a fossilized wood sample using carbon-14 activity measurements. What information is required?",
         "role": "user",
         "turn_id": "T1"
       },
@@ -25,34 +25,24 @@
         "turn_id": "T2"
       },
       {
-        "content": "Use the remaining fraction and the exponential law to solve algebraically for the elapsed time since the wood stopped exchanging carbon with its surroundings.",
+        "content": "Using a carbon-14 half-life of 5760 years and 365 days per year, calculate the decay constant in s^-1.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the age in seconds and convert it to an approximate age in years.",
+        "content": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Independently express the observed activity ratio as a number of elapsed half-lives and use that route to check the age obtained above.",
+        "content": "Check that age by expressing it as a number of half-lives.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "State the checked age and explain, for positive radioactive decay, how a lower remaining activity changes the inferred elapsed time.",
+        "content": "State the final age, the reference activity, and the normalization assumption.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Substitute the checked age back into A=A_0 exp(-kt) to verify the observed activity ratio, and confirm the qualitative activity-age direction.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Report the final age in seconds and years, together with the activity-age interpretation.",
-        "role": "user",
-        "turn_id": "T8"
       }
     ]
   }

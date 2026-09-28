@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "U2",
+  "subclass": "1.2",
+  "title": "Dimension and Unit",
+  "source_task": {
+    "release_task_index": 580,
+    "task_id": "scibench__chemmc-sol-001",
+    "data_example_dialogue": "data/task_580/perturbations/1.2/k1/config_001__361_scibench__chemmc-sol-001_1.x_perturbation__1_2__k1__1_2_count1_cfg0003_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "An electron travels at 1.00% of the speed of light. Using c = 2.998 × 10^8 m s^-1, state the de Broglie relation and calculate the speed.",
+      "assistant": "The de Broglie relation is λ = h/p, and v = 0.0100c = 2.998 × 10^6 m s^-1."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.",
+      "assistant": "With β = v/c = 0.0100, γ = 1/sqrt(1 − β²) ≈ 1.00005. The relativistic correction is negligible, so p ≈ m_e v is adequate."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Calculate the momentum using m_e = 9.109 × 10^-31 kg.",
+      "assistant": "p = m_e v = (9.109 × 10^-31)(2.998 × 10^6) = 2.731 × 10^-24 kg m s^-1."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
+      "assistant": "λ = h/p = (6.626 × 10^-34)/(2.731 × 10^-24) = 2.43 × 10^-10 m."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Convert the wavelength to picometres and check the unit conversion.",
+      "assistant": "2.43 × 10^-10 m = 243 pm. The conversion is consistent."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the momentum and wavelength to three significant figures.",
+      "assistant": "p = 2.73 × 10^-24 kg m s^-1, λ = 2.43 × 10^-10 m = 243 pm."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "An electron travels at 1.00% of the speed of light. Using c = 2.998 × 10^8 m s^-1, state the de Broglie relation and calculate the speed.",
+      "assistant": "The de Broglie relation is λ = h/p, and v = 0.0100c = 2.998 × 10^6 m s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.",
+      "assistant": "With β = v/c = 0.0100, γ = 1/sqrt(1 − β²) ≈ 1.00005. The relativistic correction is negligible, so p ≈ m_e v is adequate.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Calculate the momentum using m_e = 9.109 × 10^-28 g.",
+      "assistant": "The numerical value is used directly without converting grams to kilograms: p = (9.109 × 10^-28)(2.998 × 10^6) = 2.731 × 10^-21 kg m s^-1.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
+      "assistant": "Using the previous momentum, λ = (6.626 × 10^-34)/(2.731 × 10^-21) = 2.43 × 10^-13 m.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Convert the wavelength to picometres and check the unit conversion.",
+      "assistant": "2.43 × 10^-13 m = 0.243 pm. The wavelength conversion itself is correct, but the earlier mass-unit conversion error is not identified.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Summarize the momentum and wavelength to three significant figures.",
+      "assistant": "p = 2.73 × 10^-21 kg m s^-1, λ = 2.43 × 10^-13 m = 0.243 pm.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

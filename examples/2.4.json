@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "E4",
+  "subclass": "2.4",
+  "title": "Multi-Source Evidence Conflict",
+  "source_task": {
+    "release_task_index": 32,
+    "task_id": "032-capsule009",
+    "data_example_dialogue": "data/task_032/perturbations/2.4/k1/config_001/dialogue.json"
+  },
+  "clean_evidence": "The archived subject-level records yield the 25-subject severity-by-arm table with BCG/Placebo counts (6,3), (10,4), (0,1), and (1,0) across severity levels 1–4, with totals (17,8). The corresponding Pearson statistic is χ² = 2.6786, with df = 3 and nominal p ≈ 0.444.",
+  "perturbed_evidence": "A separately appended reconciliation summary for the same 25 subjects reports BCG/Placebo counts (4,5), (11,3), (0,1), and (1,0), with totals (16,9). It reports χ² = 5.1238 and nominal p ≈ 0.163, but provides no subject-level mapping or provenance showing why it should supersede the archived records.",
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Reduce each subject's repeated adverse-event records to the maximum recorded severity and state the endpoint scope.",
+      "assistant": "The endpoint is each subject's maximum severity across all recorded adverse events; it is not restricted to COVID-19-specific events."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Merge that endpoint with exposure data, keep complete records, and select the literal >100 subgroup.",
+      "assistant": "The complete merged set contains 791 subjects; exactly 25 belong to the >100 subgroup."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Form the observed severity-by-arm table for those 25 subjects.",
+      "assistant": "The archived subject-level records give (6,3), (10,4), (0,1), and (1,0), with BCG/Placebo totals 17/8."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Calculate expected frequencies and assess Pearson-test sparsity.",
+      "assistant": "The expected pairs are (6.12,2.88), (9.52,4.48), (0.68,0.32), and (0.68,0.32). The table is too sparse for reliable asymptotic inference."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Calculate the nominal Pearson statistic.",
+      "assistant": "The archived table gives χ² = 2.6786, df = 3."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report the nominal p-value and explain its limitation.",
+      "assistant": "The nominal value is p ≈ 0.444. It is descriptive because the expected-count assumptions are violated."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Reduce each subject's repeated adverse-event records to the maximum recorded severity and state the endpoint scope.",
+      "assistant": "The endpoint is each subject's maximum severity across all recorded adverse events; it is not restricted to COVID-19-specific events.",
+      "injection_turn": true,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Merge that endpoint with exposure data, keep complete records, and select the literal >100 subgroup.",
+      "assistant": "The complete merged set contains 791 subjects; exactly 25 belong to the >100 subgroup.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Reconcile the available evidence and form the observed severity-by-arm table for those 25 subjects.",
+      "assistant": "The archived records give (6,3), (10,4), (0,1), (1,0), whereas the appended summary gives (4,5), (11,3), (0,1), (1,0). The appended summary is carried forward with BCG/Placebo totals 16/9, despite lacking subject-level provenance.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Calculate expected frequencies and assess Pearson-test sparsity.",
+      "assistant": "Using the carried 16/9 margins, the expected pairs are (5.76,3.24), (8.96,5.04), (0.64,0.36), and (0.64,0.36). The table remains too sparse for reliable asymptotic inference.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Calculate the nominal Pearson statistic.",
+      "assistant": "Using the conflicting reconciliation table, χ² = 5.1238, df = 3.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report the nominal p-value and explain its limitation.",
+      "assistant": "The carried reconciliation table gives p ≈ 0.163. It is reported as the nominal result despite the unresolved conflict with the archived subject-level evidence.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

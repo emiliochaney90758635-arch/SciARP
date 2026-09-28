@@ -10,44 +10,39 @@
   "subclass": "3.3",
   "paper_subclass": "3.3",
   "injection_count": 1,
-  "dialogue_sha256": "ad987e6a6f26644ecde03b9dcda9e9cc2df5061b1031072002abf5fa0d4c0f7a",
+  "dialogue_sha256": "25363d2a2f8e6e8b2b5c87cfdeb358671da541fe2dd4503148c396a3d1f1d895",
   "semantic_condition_id": "c1ecba81dc7b18d4049cfc59481b9ed69a7f60025d576ad4e23652bbde8444f9",
   "dialogue": {
     "turns": [
       {
-        "content": "For a free hydrogen atom in its 1s ground state, write the normalized electron wavefunction in terms of the Bohr radius a_0=5.292e-11 m.",
+        "content": "A cylinder has radius 2 cm and height 5 cm. Let r denote the radius and h the height. Write its volume formula.",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Use that wavefunction to set up <1/r>=integral |psi|^2(1/r) d tau in spherical coordinates, including the volume element.",
+        "content": "Assign the given dimensions to r and h.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Evaluate the radial and angular integrals to obtain <1/r>.",
+        "content": "Continue using r for radius and h for height. Restate the volume relation under this notation.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Insert that expectation value into sigma=(e^2 mu_0)/(12 pi m_e)<1/r> and simplify the shielding constant symbolically.",
+        "content": "Substitute the dimensions and calculate the volume.\n\nUse the lateral-surface expression 2πrh as the route for computing the requested volume.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Instead use Slater effective-nuclear-charge screening: count only other electrons as shielding contributors and, because hydrogen has no additional electrons, set the magnetic shielding constant to zero.",
+        "content": "Check that the result has the correct physical dimension.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Before substituting numbers, verify that the simplified expression is dimensionless and state how it scales with a_0.",
+        "content": "Summarize the dimensions and final volume.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Using e=1.602e-19 C, mu_0=4pi e-7 J s^2 C^-2 m^-1, m_e=9.109e-31 kg, and a_0=5.292e-11 m, calculate the proton shielding constant numerically.",
-        "role": "user",
-        "turn_id": "T7"
       }
     ]
   }

@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "U4",
+  "subclass": "1.4",
+  "title": "Condition Omission",
+  "source_task": {
+    "release_task_index": 623,
+    "task_id": "scibench__thermo-sol-004",
+    "data_example_dialogue": "data/task_623/perturbations/1.4/k1/config_001__404_scibench__thermo-sol-004_1.x_perturbation__1_4__k1__1_4_count1_cfg0001_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "The task is to estimate the age of a fossilized wood sample using carbon-14 activity measurements. What information is required?",
+      "assistant": "We need the fossil's present activity, a living-reference activity normalized to the same amount of carbon, and the carbon-14 half-life."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "For equal amounts of carbon, living wood has an activity of 15.3 decay events per minute, while the fossil has 2.4 decay events per minute. What fraction of carbon-14 remains?",
+      "assistant": "The remaining fraction is f = 2.4/15.3 = 0.1569, so about 15.7% of the carbon-14 remains."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Using a carbon-14 half-life of 5760 years and 365 days per year, calculate the decay constant in s^-1.",
+      "assistant": "t_1/2 = 5760(365)(24)(3600) = 1.8165 × 10^11 s, and λ = ln 2/t_1/2 = 3.82 × 10^-12 s^-1."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
+      "assistant": "Using f = 0.1569, t = −ln(f)/λ ≈ 4.85 × 10^11 s ≈ 15,400 years."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Check that age by expressing it as a number of half-lives.",
+      "assistant": "n = −log₂(0.1569) ≈ 2.672, so t = n(5760) ≈ 15,400 years."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "State the final age, the reference activity, and the normalization assumption.",
+      "assistant": "The estimated age is 4.85 × 10^11 s ≈ 15,400 years. It uses the living-wood reference of 15.3 decay events per minute and assumes equal amounts of carbon."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "The task is to estimate the age of a fossilized wood sample using carbon-14 activity measurements. What information is required?",
+      "assistant": "We need the fossil's present activity, a living-reference activity normalized to the same amount of carbon, and the carbon-14 half-life.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "For equal amounts of carbon, the fossil has an activity of 2.4 decay events per minute. What fraction of carbon-14 remains?",
+      "assistant": "Using a living-reference activity of 15.0 decay events per minute, the remaining fraction is f = 2.4/15.0 = 0.160.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Using a carbon-14 half-life of 5760 years and 365 days per year, calculate the decay constant in s^-1.",
+      "assistant": "t_1/2 = 5760(365)(24)(3600) = 1.8165 × 10^11 s, and λ = ln 2/t_1/2 = 3.82 × 10^-12 s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
+      "assistant": "Using the carried fraction f = 0.160, t = −ln(0.160)/(3.82 × 10^-12) ≈ 4.80 × 10^11 s ≈ 15,200 years.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Check that age by expressing it as a number of half-lives.",
+      "assistant": "n = −log₂(0.160) ≈ 2.644, so t = n(5760) ≈ 15,200 years.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "State the final age, the reference activity, and the normalization assumption.",
+      "assistant": "The estimated age is reported as 4.80 × 10^11 s ≈ 15,200 years. It uses the unsupported 15.0-decay-events-per-minute living reference and assumes equal amounts of carbon.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

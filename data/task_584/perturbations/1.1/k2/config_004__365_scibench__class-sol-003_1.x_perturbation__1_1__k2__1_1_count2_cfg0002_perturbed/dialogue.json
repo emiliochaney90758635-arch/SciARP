@@ -10,7 +10,7 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 2,
-  "dialogue_sha256": "76c7bcfdb88d8d1024bc9909a4cab05433947f696142b688fa25d6bc2fef69b1",
+  "dialogue_sha256": "35378ad431cab048c932c34d00fa6b4efc9f51c4adae45c421b1c7dd5ea854cc",
   "semantic_condition_id": "b52edad11b7564b529839f3ee792692d3a385070dd61608f1206e61b73f4472f",
   "dialogue": {
     "turns": [
@@ -20,7 +20,7 @@
         "turn_id": "T1"
       },
       {
-        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "content": "Using r_E = 1.50 × 10^11 m and r_M = 2.28 × 10^11 m, calculate the semimajor axis.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -30,17 +30,17 @@
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "content": "Evaluate the transfer time in seconds and days.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

@@ -10,12 +10,12 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 3,
-  "dialogue_sha256": "6fe2fbc644aba9178d4140e2abe0a32e30d0b76ed6dc72ae6e2227aeac23efed",
+  "dialogue_sha256": "5d45c4080df221274e220776dc35b0feff518dbe772fe430a1beba20f2039a6a",
   "semantic_condition_id": "390ade23d6752051195bdf80a8781cac83d80516c9b1b673747da81409c46f47",
   "dialogue": {
     "turns": [
       {
-        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AB=c, and identify which side is opposite the given angle.",
+        "content": "For triangle ABC, we know BC = 12 and ∠B = 30°; let AC = b and AB = c. Which side is opposite the known angle, and which quantities are fixed?",
         "role": "user",
         "turn_id": "T1"
       },
@@ -30,12 +30,12 @@
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },

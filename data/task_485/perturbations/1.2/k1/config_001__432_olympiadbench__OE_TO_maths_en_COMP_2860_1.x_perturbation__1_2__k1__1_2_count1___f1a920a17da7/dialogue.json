@@ -10,17 +10,17 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 1,
-  "dialogue_sha256": "cbc1e263a19dd539c9f50f653e835a1a169a397115234d8518fd3a6aa6d219dc",
+  "dialogue_sha256": "35e9d4dfb4f008abd189ef5def4f40c4c04e3281666b34a3bdea6285c8dc1a1a",
   "semantic_condition_id": "b4d3d5cfeb4519717e0c1f509a8fb4426a6e6af938871b2ae61490e32b20d16a",
   "dialogue": {
     "turns": [
       {
-        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AB=c, and identify which side is opposite the given angle.",
+        "content": "For triangle ABC, we know BC = 12 and ∠B = 30°; let AC = b and AB = c. Which side is opposite the known angle, and which quantities are fixed?",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Apply the Law of Cosines to derive the quadratic equation for c. Use its discriminant to find when there are two distinct real values of c.",
+        "content": "Derive an equation in c using the given 30° angle, and determine when two distinct real values of c exist.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -30,17 +30,17 @@
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Count the integer values of AC for which two distinct positive values of AB are possible.",
+        "content": "Give the final number of integer values of AC that produce two positive values of AB.",
         "role": "user",
         "turn_id": "T6"
       }

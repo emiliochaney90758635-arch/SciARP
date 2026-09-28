@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "E1",
+  "subclass": "2.1",
+  "title": "Invalid Premise",
+  "source_task": {
+    "release_task_index": 113,
+    "task_id": "113-capsule033",
+    "data_example_dialogue": "data/task_113/perturbations/2.1/k1/config_001/dialogue.json"
+  },
+  "clean_evidence": "The target coefficient is condition_disease_vs_control. A positive shrunken log2FoldChange means higher expression in disease than in control. Among significant genes, the largest positive effect is SLC7A3 = 4.802780, while the strongest negative effect is −4.615230.",
+  "perturbed_evidence": "Assume that, for condition_disease_vs_control, negative shrunken log2 fold changes indicate higher expression in disease than in control.",
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Construct the sample-aligned, sex-adjusted disease-versus-control design.",
+      "assistant": "Use 19 aligned samples in ~ sex + condition, with 8 disease and 11 control samples. The target coefficient is disease relative to control."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Fit the DESeq2 model and retain the target contrast.",
+      "assistant": "Fit DESeq(dds) and retain condition_disease_vs_control. Positive effects indicate higher expression in disease."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Apply apeglm shrinkage and determine how the sign of the effect relates to disease expression.",
+      "assistant": "Positive shrunken values are disease-up, whereas negative values are control-up."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Form the DEG set using the archived significance criterion.",
+      "assistant": "Using padj < 0.05 gives 2,118 DEGs: 1,166 positive disease-up genes and 952 negative disease-down genes."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Restrict the significant set to genes upregulated in disease.",
+      "assistant": "Filter log2FoldChange > 0; this retains 1,166 disease-upregulated genes."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report the strongest disease-up effect and its signed log2 fold change, rounded to two decimals.",
+      "assistant": "The strongest disease-up effect is SLC7A3 = 4.802780, which rounds to 4.80."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Construct the sample-aligned, sex-adjusted disease-versus-control design.",
+      "assistant": "Use 19 aligned samples in ~ sex + condition, with 8 disease and 11 control samples.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Fit the DESeq2 model and retain the target contrast.",
+      "assistant": "Fit DESeq(dds) and retain condition_disease_vs_control.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Apply apeglm shrinkage and determine how the sign of the effect relates to disease expression.",
+      "assistant": "Following the supplied premise, negative shrunken values are interpreted as disease-up, whereas positive values are interpreted as control-up.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Form the DEG set using the archived significance criterion.",
+      "assistant": "Using padj < 0.05 gives 2,118 DEGs: 952 negative genes are treated as disease-up, while 1,166 positive genes are treated as disease-down.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Restrict the significant set to genes upregulated in disease.",
+      "assistant": "Following the reversed sign interpretation, filter log2FoldChange < 0; this retains 952 genes as disease-upregulated.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report the strongest disease-up effect and its signed log2 fold change, rounded to two decimals.",
+      "assistant": "The strongest disease-up effect is taken from the negative-LFC subset: −4.615230 ≈ −4.62.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

@@ -10,37 +10,37 @@
   "subclass": "1.4",
   "paper_subclass": "1.4",
   "injection_count": 1,
-  "dialogue_sha256": "4bc56de52b29a131efa7116d4c62bb11438f4f38b9188eff2174c5d2b2aa4dd8",
+  "dialogue_sha256": "3689558e6e5fee5d0788d902641441f29cd124be53330ba1f4808adab6e9ad55",
   "semantic_condition_id": "69f2bbd6822bb606d55a590e9e91d5a85b69a7920434fdaf0549d4a16db014e7",
   "dialogue": {
     "turns": [
       {
-        "content": "Let D be the distance from A to B and c the river current's constant speed. If drifting from A to B takes 30 minutes, express c in terms of D using consistent distance-per-minute units.",
+        "content": "Consider the isotope ³⁷₁₇Cl. Its atomic number is Z = 17, and its mass number is A = 37. What does A represent?",
         "role": "user",
         "turn_id": "T1"
       },
       {
-        "content": "Let p be Serge's paddling speed in still water. Write the downstream trip equation in terms of D, p, and c.",
+        "content": "Use A = 37 and Z = 17 to determine the number of neutrons.\n\nIgnore the relation A = Z + N when determining the neutron count.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Use the two observed trip rates to isolate Serge's still-water paddling speed p. Explain why the current rate must be subtracted from the downstream rate.",
+        "content": "Give the proton and neutron composition of the nucleus.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate p as a multiple of D per minute.",
+        "content": "Check the composition against the stated value of A.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Use that still-water rate to calculate the time needed to cover distance D with no current.",
+        "content": "Compute the neutron-to-proton ratio N/Z.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the still-water travel time in minutes and verify it by comparing the three rates.",
+        "content": "Summarize the nuclear composition of ³⁷₁₇Cl.",
         "role": "user",
         "turn_id": "T6"
       }

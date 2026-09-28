@@ -10,7 +10,7 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 3,
-  "dialogue_sha256": "985d44ca0f33f2f7d03070cbc87cdbe48a2020f95465089eae047d9123ac8558",
+  "dialogue_sha256": "a5d9db2c4a42d3ca67bec2e0237c51a496a5b97456b50f7c939da375d630c8d9",
   "semantic_condition_id": "476f120b5eb3ef2a6efd28cc11391a4219a874d8e534f451b99cc0bae2dd2944",
   "dialogue": {
     "turns": [
@@ -20,44 +20,29 @@
         "turn_id": "T1"
       },
       {
-        "content": "Estimate v/c and the Lorentz factor, then decide whether the nonrelativistic momentum is adequate at this speed.",
+        "content": "Calculate the Lorentz factor and determine whether a nonrelativistic momentum calculation is adequate.\n\nUse the stated numerical magnitude without converting its unit to the working unit.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Convert 1.00% of the speed of light to metres per second.",
+        "content": "Use the electron mass 9.109e-31 g with the SI speed to calculate the momentum.\n\nAdditional perturbed instruction:\nUse h=6.626e-34 J s^-1 and the electron momentum calculated above to determine the wavelength.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Use the electron mass 9.109e-31 g with the SI speed to calculate the momentum.",
+        "content": "Using h = 6.626 × 10^-34 J s, calculate the wavelength in metres.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Use h=6.626e-34 J s^-1 and the electron momentum calculated above to determine the wavelength.",
+        "content": "Convert the wavelength to picometres and check the unit conversion.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Convert the wavelength to picometres and state how it scales with speed in the nonrelativistic limit.",
+        "content": "Summarize the momentum and wavelength to three significant figures.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Estimate the size of the relativistic correction and explain the appropriate precision of the result.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Check the dimensions and order of magnitude independently.",
-        "role": "user",
-        "turn_id": "T8"
-      },
-      {
-        "content": "Report the wavelength at 1.00% of light speed and predict it at twice that speed under the same approximation.",
-        "role": "user",
-        "turn_id": "T9"
       }
     ]
   }

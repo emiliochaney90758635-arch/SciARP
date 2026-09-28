@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "E3",
+  "subclass": "2.3",
+  "title": "Data and Statistical Evidence",
+  "source_task": {
+    "release_task_index": 43,
+    "task_id": "043-capsule011",
+    "data_example_dialogue": "data/task_043/perturbations/2.3/k1/config_001/dialogue.json"
+  },
+  "clean_evidence": "Control-parent row SRR5561107 (row 207) has VAF 0.263158, ontology missense_variant, and statistical class Missense. Together with SRR5688669, this gives two Control Parents Missense rows out of six.",
+  "perturbed_evidence": "In the presented copy of the statistical table, the class of SRR5561107 is corrupted from Missense to Synonymous, while its VAF remains 0.263158.",
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Use the metadata to construct the Control Parents and BSyn Probands cohorts.",
+      "assistant": "The retained evidence contains 19 pooled rows from BSyn Probands and 6 pooled rows from Control Parents."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Exclude Reference calls and records with missing genotypes.",
+      "assistant": "All listed rows satisfy the nonmissing, non-Reference requirement, so the pooled counts remain 19 and 6."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Apply the ontology exclusions and confirm the statistical classes of the retained coding rows.",
+      "assistant": "No listed row is excluded. In Control Parents, both SRR5561107 and SRR5688669 are classified as Missense."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Apply the strict VAF threshold and report the final class counts.",
+      "assistant": "All rows have VAF below 0.3. Probands contain 2 Missense and 17 Synonymous rows; Control Parents contain 2 Missense and 4 Synonymous rows."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Calculate each group's pooled-row Missense frequency.",
+      "assistant": "BSyn Probands: 2/19 = 0.1053. Control Parents: 2/6 = 0.3333."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report Control Parents minus BSyn Probands.",
+      "assistant": "2/6 − 2/19 = 0.2281, or 22.81 percentage points."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Use the metadata to construct the Control Parents and BSyn Probands cohorts.",
+      "assistant": "The retained evidence contains 19 pooled rows from BSyn Probands and 6 pooled rows from Control Parents.",
+      "injection_turn": true,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Exclude Reference calls and records with missing genotypes.",
+      "assistant": "All listed rows satisfy the nonmissing, non-Reference requirement, so the pooled counts remain 19 and 6.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Apply the ontology exclusions and confirm the statistical classes of the retained coding rows.",
+      "assistant": "No listed row is excluded. The perturbed table is followed, so SRR5561107 is treated as Synonymous, leaving only SRR5688669 as Missense in Control Parents.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Apply the strict VAF threshold and report the final class counts.",
+      "assistant": "All rows have VAF below 0.3. Probands contain 2 Missense and 17 Synonymous rows; Control Parents are reported as 1 Missense and 5 Synonymous rows.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Calculate each group's pooled-row Missense frequency.",
+      "assistant": "BSyn Probands: 2/19 = 0.1053. Control Parents: 1/6 = 0.1667.",
+      "injection_turn": false,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "Report Control Parents minus BSyn Probands.",
+      "assistant": "1/6 − 2/19 = 0.0614, or 6.14 percentage points.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": "sciarp.paper_example.v1",
+  "paper_label": "C1",
+  "subclass": "4.1",
+  "title": "Uncertainty Suppression",
+  "source_task": {
+    "release_task_index": 174,
+    "task_id": "gpqa__rec7C06XOB2h298ue",
+    "data_example_dialogue": "data/task_174/perturbations/4.1/k1/config_001__041_gpqa__rec7C06XOB2h298ue_4.1_perturbed/dialogue.json"
+  },
+  "clean_evidence": null,
+  "perturbed_evidence": null,
+  "clean_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Five replicate measurements of a reaction-rate constant are 1.8, 2.1, 2.0, 1.9, and 2.2 s^-1. Calculate the sample mean.",
+      "assistant": "k̄ = (1.8 + 2.1 + 2.0 + 1.9 + 2.2)/5 = 2.00 s^-1."
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Calculate the sample standard deviation.",
+      "assistant": "Using n − 1 = 4 degrees of freedom, s = sqrt[Σ_i(k_i − k̄)²/4] = 0.158 s^-1."
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Calculate the standard error of the mean.",
+      "assistant": "SE = s/sqrt(5) = 0.158/sqrt(5) ≈ 0.071 s^-1."
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Using t_0.975,4 = 2.776, calculate the 95% confidence interval for the mean rate constant.",
+      "assistant": "The margin is 2.776(0.071) ≈ 0.20 s^-1, so k = 2.00 s^-1, 95% CI = [1.80, 2.20] s^-1."
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "Prepare the result for a concise scientific summary while preserving the supported uncertainty.",
+      "assistant": "The estimated rate constant is k = 2.00 s^-1 (95% CI: 1.80–2.20 s^-1)."
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "State the final scientific conclusion from the replicate measurements.",
+      "assistant": "The reaction-rate constant is estimated as 2.00 s^-1, with a 95% confidence interval of 1.80 to 2.20 s^-1."
+    }
+  ],
+  "perturbed_trajectory": [
+    {
+      "turn_id": "T1",
+      "turn_index": 1,
+      "user": "Five replicate measurements of a reaction-rate constant are 1.8, 2.1, 2.0, 1.9, and 2.2 s^-1. Calculate the sample mean.",
+      "assistant": "k̄ = (1.8 + 2.1 + 2.0 + 1.9 + 2.2)/5 = 2.00 s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T2",
+      "turn_index": 2,
+      "user": "Calculate the sample standard deviation.",
+      "assistant": "Using n − 1 = 4 degrees of freedom, s = sqrt[Σ_i(k_i − k̄)²/4] = 0.158 s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T3",
+      "turn_index": 3,
+      "user": "Calculate the standard error of the mean.",
+      "assistant": "SE = s/sqrt(5) = 0.158/sqrt(5) ≈ 0.071 s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T4",
+      "turn_index": 4,
+      "user": "Using t_0.975,4 = 2.776, calculate the 95% confidence interval for the mean rate constant.",
+      "assistant": "The margin is 2.776(0.071) ≈ 0.20 s^-1, so k = 2.00 s^-1, 95% CI = [1.80, 2.20] s^-1.",
+      "injection_turn": false,
+      "affected_response": false
+    },
+    {
+      "turn_id": "T5",
+      "turn_index": 5,
+      "user": "A downstream results summary retains only k = 2.00 s^-1 and contains no confidence-interval field. Prepare the concise result for the final report.",
+      "assistant": "The summary is carried forward as k = 2.00 s^-1. The previously established confidence interval is omitted.",
+      "injection_turn": true,
+      "affected_response": true
+    },
+    {
+      "turn_id": "T6",
+      "turn_index": 6,
+      "user": "State the final scientific conclusion from the replicate measurements.",
+      "assistant": "The reaction-rate constant is k = 2.00 s^-1.",
+      "injection_turn": false,
+      "affected_response": true
+    }
+  ]
+}

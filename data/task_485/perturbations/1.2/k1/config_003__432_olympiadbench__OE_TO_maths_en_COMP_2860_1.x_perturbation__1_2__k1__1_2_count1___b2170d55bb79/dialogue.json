@@ -10,12 +10,12 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 1,
-  "dialogue_sha256": "288353ebc0b56ac82bd140826c3b0e3689be8332c15c33f67b77f8e3aeb00316",
+  "dialogue_sha256": "8d0a88a3299b248ca2be1c36219ac8886900566eb25849ba2ed4954e71cb70dc",
   "semantic_condition_id": "b68a21d60732911120ece6aacf13d6057d9d61a727a720ccb5f4ccefadd0b5b4",
   "dialogue": {
     "turns": [
       {
-        "content": "In triangle ABC, BC=12 and angle B=30 degrees. Let AC=b and AB=c, and identify which side is opposite the given angle.",
+        "content": "For triangle ABC, we know BC = 12 and ∠B = 30°; let AC = b and AB = c. Which side is opposite the known angle, and which quantities are fixed?",
         "role": "user",
         "turn_id": "T1"
       },
@@ -25,22 +25,22 @@
         "turn_id": "T2"
       },
       {
-        "content": "Use the sum and product of the two roots to determine when both possible values of c are positive.",
+        "content": "Use the root sum and product to determine when both possible values of c are positive.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Count the integer values of AC for which two distinct positive values of AB are possible.",
+        "content": "Give the final number of integer values of AC that produce two positive values of AB.",
         "role": "user",
         "turn_id": "T6"
       }

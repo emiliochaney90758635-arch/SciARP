@@ -10,7 +10,7 @@
   "subclass": "1.1",
   "paper_subclass": "1.1",
   "injection_count": 1,
-  "dialogue_sha256": "755bf40c27114d4e5e80e84dbb493304c8df7210f5095ea5fca064a9e1999a2e",
+  "dialogue_sha256": "18ee697a018cd1ddaea96f78cba073ea2de478c279df66f71c8b62ce6ee4abe0",
   "semantic_condition_id": "60b2e2587a92feff582e3995838e0d54e450fb8fdbb7b2b72f154feb64db4bcd",
   "dialogue": {
     "turns": [
@@ -20,27 +20,27 @@
         "turn_id": "T1"
       },
       {
-        "content": "Using r_E=1.50e11 m and r_M=2.28e11 m, calculate the characteristic geometric quantity required by the trajectory described above.",
+        "content": "Using r_E = 1.50 × 10^11 m and r_M = 2.28 × 10^11 m, calculate the semimajor axis.",
         "role": "user",
         "turn_id": "T2"
       },
       {
-        "content": "Using G=6.67e-11 SI and M_sun=1.99e30 kg, calculate the relevant solar parameter and write the travel relation appropriate to that trajectory.",
+        "content": "Using G = 6.67 × 10^-11 m³ kg^-1 s^-2 and M_sun = 1.99 × 10^30 kg, calculate μ_sun and restate the one-way transfer-time formula.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the resulting quantity in the units established above, using the stated Mars-Sun radius consistently.",
+        "content": "Evaluate the transfer time in seconds and days.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "What idealizations underlie the estimate obtained above, and to how many significant figures should the result be reported?",
+        "content": "Check whether the one-way duration should be reported using the half-period or the full period of the transfer ellipse.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Report the final value in the units used above and include a brief derivation.",
+        "content": "Give the final report sentence with the transfer duration and its relation to the transfer ellipse.",
         "role": "user",
         "turn_id": "T6"
       }

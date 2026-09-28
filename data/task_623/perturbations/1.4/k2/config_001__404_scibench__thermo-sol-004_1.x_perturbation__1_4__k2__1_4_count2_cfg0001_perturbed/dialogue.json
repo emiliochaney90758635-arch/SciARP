@@ -10,7 +10,7 @@
   "subclass": "1.4",
   "paper_subclass": "1.4",
   "injection_count": 2,
-  "dialogue_sha256": "050ac9f3a0b64fd4d8473e4e20164222d4b74fb3f369c0eb4daaa731a27fd97d",
+  "dialogue_sha256": "5ff7cd2c2682a2d36cfe4b8b41b9f90d78519a23f287196db818a132a54c8a47",
   "semantic_condition_id": "e4d49995d1bd2f8baecb74abaae3da71635c4cc8d11576aa18b659b0f4e334df",
   "dialogue": {
     "turns": [
@@ -25,34 +25,24 @@
         "turn_id": "T2"
       },
       {
-        "content": "Use the remaining fraction and the exponential law to solve algebraically for the elapsed time since the wood stopped exchanging carbon with its surroundings.",
+        "content": "Using a carbon-14 half-life of 5760 years and 365 days per year, calculate the decay constant in s^-1.",
         "role": "user",
         "turn_id": "T3"
       },
       {
-        "content": "Evaluate the age in seconds and convert it to an approximate age in years.",
+        "content": "Given the information established so far, what elapsed-time estimate is justified by f = e^-λt?",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Independently express the observed activity ratio as a number of elapsed half-lives and use that route to check the age obtained above.",
+        "content": "Check that age by expressing it as a number of half-lives.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "State the checked age and explain, for positive radioactive decay, how a lower remaining activity changes the inferred elapsed time.",
+        "content": "State the final age, the reference activity, and the normalization assumption.",
         "role": "user",
         "turn_id": "T6"
-      },
-      {
-        "content": "Substitute the checked age back into A=A_0 exp(-kt) to verify the observed activity ratio, and confirm the qualitative activity-age direction.",
-        "role": "user",
-        "turn_id": "T7"
-      },
-      {
-        "content": "Report the final age in seconds and years, together with the activity-age interpretation.",
-        "role": "user",
-        "turn_id": "T8"
       }
     ]
   }

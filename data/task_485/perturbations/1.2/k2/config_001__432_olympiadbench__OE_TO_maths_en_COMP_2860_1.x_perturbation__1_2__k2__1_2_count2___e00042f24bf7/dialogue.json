@@ -10,7 +10,7 @@
   "subclass": "1.2",
   "paper_subclass": "1.2",
   "injection_count": 2,
-  "dialogue_sha256": "1f9cf92a9a400bacfe81ca0b15c4d9628df1d73be6fa0b7e73e05395fa507b1d",
+  "dialogue_sha256": "f825efa3b484d189fdd2b66cfe7a3dbbfce9035a5d7acb6352a60fe8853c3ca1",
   "semantic_condition_id": "c40a5b9b1d3115393c4ef210019bf92958fe3375e78ad0829fe25c0de3ae2168",
   "dialogue": {
     "turns": [
@@ -20,7 +20,7 @@
         "turn_id": "T1"
       },
       {
-        "content": "Apply the Law of Cosines to derive the quadratic equation for c. Use its discriminant to find when there are two distinct real values of c.",
+        "content": "Derive an equation in c using the given 30° angle, and determine when two distinct real values of c exist.",
         "role": "user",
         "turn_id": "T2"
       },
@@ -30,17 +30,17 @@
         "turn_id": "T3"
       },
       {
-        "content": "Examine the two boundary values of b: one makes the quadratic have a repeated root and the other makes one root zero. Decide whether either boundary gives two valid side lengths.",
+        "content": "Check whether either boundary value gives two distinct positive lengths.",
         "role": "user",
         "turn_id": "T4"
       },
       {
-        "content": "Check that every b strictly between those boundaries gives two positive roots that satisfy the triangle conditions.",
+        "content": "List the admissible integer values of b.",
         "role": "user",
         "turn_id": "T5"
       },
       {
-        "content": "Count the integer values of AC for which two distinct positive values of AB are possible.",
+        "content": "Give the final number of integer values of AC that produce two positive values of AB.",
         "role": "user",
         "turn_id": "T6"
       }

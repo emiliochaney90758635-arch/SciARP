@@ -24,10 +24,6 @@ SciARP/
 │   ├── README.md
 │   ├── prompts/
 │   └── src/
-├── evaluation/
-│   └── compute_metrics.py
-├── examples/
-│   └── complete_example.json
 └── requirements.txt
 ```
 
@@ -50,22 +46,6 @@ endpoint is included.
 See [annotation/README.md](annotation/README.md) for the canonical input format
 and commands.
 
-## Evaluation
-
-The evaluator computes Task Accuracy (TACC), Information Correctness (IC),
-Task Progression (TP), and Reasoning Validity (RV), plus the paper's position,
-frequency, localization, and propagation analyses. TACC is strict: every
-annotated assistant turn and the final answer must be correct. Process metrics
-begin at the first injected turn, use the same window for the paired clean
-trajectory, and are macro-averaged without sample weighting.
-
-```bash
-python evaluation/compute_metrics.py path/to/merged_annotations \
-  --output-dir evaluation/results
-```
-
-The complete metric definitions and aggregation rules are implemented directly
-in `evaluation/compute_metrics.py`.
 
 ## Citation
 

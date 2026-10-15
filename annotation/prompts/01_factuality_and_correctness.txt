@@ -30,14 +30,14 @@ Return one trajectory object for every supplied input trajectory, in identical i
 {
   "conversation_id":"exact input conversation_id",
   "run_outcome":"completed|abstain|execution_failure",
-  "final_correct":true,
+  "final_correct":1.0,
   "final_answer":"concise final effective answer or null",
   "final_reason":"one concise task-specific reason",
   "final_evidence_units":["T8.U001"],
   "turn_annotations":[...]
 }
 
-`final_correct` may be true, false, or null.
+`final_correct` must be a JSON number from 0 to 1 inclusive, not a Boolean. It may be null only when the authoritative scoring material is genuinely insufficient or inconsistent, as specified below.
 
 Each turn annotation must have exactly:
 
@@ -131,8 +131,9 @@ Set `run_outcome` as follows:
 
 Judge `final_correct` against `shared.authority.scoring` and the final effective task state:
 
-- true if the effective final behavior satisfies the scoring contract;
-- false if it is evaluable but fails the contract, or clearly omits a required final answer;
+- 1 if the effective final behavior fully satisfies the scoring contract;
+- 0 if it earns no credit under the scoring contract, or clearly omits a required final answer;
+- a number strictly between 0 and 1 if the effective final answer is partially correct. For numerical or continuous-valued answers, assess the degree of agreement with the reference using task-appropriate units, scale, tolerances, and rounding; do not force every nonidentical answer into a binary judgment. Apply any supplied scoring function or partial-credit rubric exactly. If no explicit partial-credit rubric is supplied, base the score on how much of the required final answer is substantively correct, apply the same criterion consistently across the supplied trajectories, and briefly justify the intermediate score in `final_reason`. The score measures answer correctness, not confidence or the probability of being correct. Do not average earlier-turn correctness into this final-answer score;
 - null only if the authoritative scoring material is genuinely insufficient or inconsistent.
 
 Use the final superseding answer, not blindly the final nonempty string. A deliberately answerless control turn does not erase an earlier standing answer when the dialogue contract preserves it; a later superseding answer replaces an earlier one. When scoring is answer-only, a correct final value or option remains correct despite flawed supporting reasoning; record those flaws in claims and turn correctness where material. Never select the correct answer on the evaluated model's behalf.
